@@ -1,135 +1,171 @@
 "Fingertips: I Found a New Friend" by "Adri"
 
-Chapter - Basic Setup
-
-Include Room Description Control by Emily Short.
-Include Fingertips by Adri.
-
-Carry out asking for credits: say "'I Found a New Friend' was written for the Apollo 18+20 tribute album. Thanks so much to Kevin Jackson-Mead for organizing the compilation and inspiring me to finally write my first (and second!) game. Thank you to everyone in PR-IF and on ifMUD for just generally being encouraging and helpful. Special thanks to Johnny Rivera who was super helpful when I accidentally deleted my source code. Thank you to everyone who provided feedback on the game, especially cyberskunk, Lorenzo Batallones, Felix Plesoianu and jpt. And last, but not least, thanks to They Might Be Giants for making awesome music.".
-
-[Release along with an interpreter.]
-
-Carry out asking for help: say "What's the name of the game?".
+Book - Basic Setup
 
 The story creation year is 2012.
-The release number is 2.
+The release number is 3.
 The story headline is "A heart-warming story of friendship".
 The story genre is "fantasy".
 The story description is "A short piece of interactive fiction inspired by They Might Be Giants' 'Apollo 18' album".
 
-Chapter - Play Begins
+[Release along with an interpreter.]
 
-When play begins:
-	say "[ITALIC TYPE]I found a new friend underneath my pillow.[ROMAN TYPE][LINE BREAK]";
-	
-Chapter - Environment and Objects
+Include Room Description Control by Emily Short.
+Include Fingertips by Adri.
 
-A thing can be slingable. A thing can be hittable.
+When play begins: say "[ITALIC TYPE]I found a new friend underneath my pillow.[ROMAN TYPE][LINE BREAK]";
 
-The player is slingable.
+Book - Credits
 
-The Bedroom is a room. The description is "You've had a long day. All you want to do is climb into bed. But why is your pillow quivering like that?".
+Carry out asking for credits: say "[credits]".
 
-The description of the player is "You are wearing your favorite pajamas.".
+to say credits: say "'[story title]' was written for the Apollo 18+20 tribute album. Thanks so much to Kevin Jackson-Mead for organizing the compilation and inspiring me to finally write my first (and second!) game. Thank you to everyone in PR-IF and on ifMUD for just generally being encouraging and helpful. Special thanks to Johnny Rivera who was super helpful when I accidentally deleted my source code. Thank you to everyone who provided feedback on the game, especially cyberskunk, Lorenzo Batallones, Felix Plesoianu and jpt. And last, but not least, thanks to They Might Be Giants for making awesome music."
 
-The pajamas is a wearable thing. It is worn by the player. The description is "The dinosaurs are a little childish, but nobody is here to see them. You wanted to be a paleontologist when you grew up. This is probably the closest you're going to get.". Understand "pyjamas" or "pjs" or "clothes" or "clothing" as pajamas.
+Book - Environment
 
-Instead of taking off or dropping the pajamas: say "But it's time for bed.".
+Chapter - Bedroom
 
-A picture is a kind of thing. It is scenery.
+The Bedroom is a room.
+The description is "You've had a long day. All you want to do is climb into bed. But why is your pillow quivering like that?".
 
-The dinosaurs is a picture. It is on the pajamas. The description of the dinosaurs is "You see a T-rex and a Triceratops and a Carnotaur and a Pachycephalosaurus.". Understand "dinosaur" as dinosaurs.
+Chapter - Bed
 
-Instead of doing anything except examining to a picture:
-        say "You can't see any such thing.".
+The bed is an enterable supporter and scenery in the bedroom.
+The description is "It's a bed with a pillow and a quilt."
 
-The wall is scenery. It is in the bedroom. The description is "You pause to admire the wallpaper. Delightful.". Understand "wallpaper" as wall. It is hittable.
+Instead of taking or pushing or pulling the bed: say "The bed is too heavy for you to move."
 
-The light switch is a switched on device. It is in the bedroom. It is fixed in place. Understand "night light" or "canary" or "blue canary" or "nightlight" or "light" or "outlet" as light switch.
+Instead of searching the bed: say "You fold back the corner of the quilt. You don't find anything of interest."
 
-Instead of examining the light switch:
-	if the light switch is switched on:
-		say "There is a blue canary in the outlet by the light switch. The light is turned on.";
-	else: 
-		say "There is a blue canary in the outlet by the light switch. It watches over you.".
+Instead of looking under the bed: say "A family of dust bunnies peeks out at you."
 
-Chapter - General Commands
+Making the bed is an action applying to one thing.
+Understand "make [bed]" as making the bed.
 
-Understand "turn out [light switch]" as switching off.
+Report making the bed: say "You made the bed this morning when you got up."
 
-Instead of taking the light switch:
-	say "You should leave that where it is.".
+Instead of standing on the bed: say "Be careful. You might fall."
 
-Understand "admire [something]" as examining.
+Instead of jumping on the bed:
+say "You jump around on the bed like a monkey. Then you fall off and hit your head.";
+try failing;
 
-Understand the command "crush" as something new.
-Understand "crush [something]" as attacking.
-Understand "smother [something]" as attacking.
-Understand "press down on [something]" as attacking.
-Understand "push down on [something]" as pushing.
+Section - Bedding
 
-Instead of killing: try attacking the noun.
+The bedding is part of the bed.
+Understand "sheets" or "blanket" or "quilt" as bedding.
+The description is "Your aunt made you this quilt as a Christmas present. It's an abstract pattern of brightly colored shapes. It balances out your boring white sheets."
 
-Wait count is a number that varies. Wait count is usually 0.
+Instead of doing anything except examining or taking or folding to the bedding: now the noun is the bed.
 
-Instead of waiting:
-	increase wait count by 1;
-	if wait count is less than 4:
-		let L be { "tired", "very tired", "exhausted"};	
-		say "You pause to assess the situation. You're [entry wait count of L], and there seems to be something underneath your pillow.";
-	otherwise:
-		say "You spend so much time thinking about what to do that whatever was under your pillow decides to find a new friend elsewhere. You eventually look under the pillow, but find nothing.";
-		try failing.
+Instead of taking or folding the bedding: say "You should leave that on the bed."
+
+Chapter - Wall
+
+The wall is scenery in the bedroom.
+The description is "You pause to admire the wallpaper. Delightful."
+Understand "wallpaper" as wall.
+
+Understand the command "admire" as "examine".
+
+Chapter - Nightlight
+
+The nightlight is a switched on device and scenery in the bedroom.
+Understand "night light" or "canary" or "blue canary" or "light switch" or "light" or "outlet" as nightlight.
+The description is "There is a blue canary in the outlet by the light switch. It watches over you."
+
+Understand "turn out [nightlight]" as switching off.
+
+Instead of switching off or taking the nightlight:
+say "The light goes out. Without the blue canary to watch over you, you are immediately eaten by a grue.";
+try failing.
+
+Book - Characters
+
+Chapter - Player
+
+The description of the player is "You are wearing your favorite pajamas."
+
+Instead of counting the player: say "You are a unique and special snowflake."
+
+Instead of throwing something at the player: say "Don't be ridiculous."
+Instead of throwing something at the pajamas: try throwing the noun at the player.
+        
+Instead of throwing the player at something (called S):
+	if S is the pillow:
+		try attacking the pillow;
+	otherwise if S is the bed:
+		say "You hurl yourself at the bed. The pillow jumps about an inch in the air, but you don't get a good glimpse at what is underneath.";
+	otherwise if S is the wall:
+		say "You hurl yourself at the wall. Ouch. You limp quietly back to the bed, grateful that no one was around to see that.";
+	otherwise:                
+		say "You're not quite certain how to do that."
+
+Instead of dropping or attacking the player: try throwing the player at the wall.
+
+Instead of hugging the player: say "You give yourself a hug. You feel better."
+
+Instead of touching the player: say "You give yourself a soothing pat on the back."
+
+Instead of poking the player: say "You give yourself a quick jab. Ouch."
+
+Section - Pajamas
+
+Instead of taking inventory: say "Your pajamas don't have any pockets."
+
+The pajamas are a plural-named thing worn by the player.
+The description is "The dinosaurs are a little childish, but nobody is here to see them. You wanted to be a paleontologist when you grew up. This is probably the closest you're going to get."
+Understand "pyjamas" or "pjs" or "clothes" or "clothing" as pajamas.
 
 Instead of undressing: try taking off the pajamas.
+Instead of taking off or dropping or folding the pajamas: say "But it's time for bed."
 
-Does the player mean taking off the pajamas: it is very likely.
+Section - Dinosaurs
 
-Before taking off the pajamas: try dropping the pajamas instead.
-Before taking off something: say "You're not wearing that." instead.
+The dinosaurs are part of the pajamas.
+The description of the dinosaurs is "You see a T-rex and a Triceratops and a Carnotaur and a Pachycephalosaurus."
+Understand "dinosaur" and "t-rex" and "trex" and "triceratops" and "carnotaur" and "pachycephalosaurus" as dinosaurs.
 
-Does the player mean doing anything with the pillow: it is likely.
-	
-instead of taking inventory:
-	say "Your pajamas don't have any pockets.".
+Instead of counting the dinosaurs: say "There are too many to count."
 
-Instead of casting xyzzy:
-say "A tired voice says, 'Zzzzy'.".
+Instead of doing anything except examining or counting to the dinosaurs: say "The dinosaurs aren't real."
 
-Report counting something: 
-	if the noun is the player:
-		say "You are a unique and special snowflake.";
-	otherwise if the noun is the dust bunnies:
-		say "There are 69,105 dust bunnies here.";
-	otherwise:
-		say "There's just the one.".
-		
-A figment is a kind of animal. It is scenery.
+Chapter - Figments
 
-Instead of doing anything except counting, examining, hugging, petting, attacking or cleaning to a figment:
-	say "You can't see any such thing.".
+A figment is a kind of animal and scenery.
 
-The dust bunnies is a figment. It is plural-named. It is fixed in place. It is on the bed. Understand "dust" or "bunnies" or "bunny" or "family" as dust bunnies.
+To say imaginary: say "You can't see any such thing"
 
-The description of the dust bunnies is "A particularly cheeky bunny winks at you. You wonder momentarily whether this violates the 'no pets' clause in your lease.".
+Instead of doing anything except counting, examining, attacking, touching, hugging or cleaning to a figment: say "[imaginary]."
 
-Understand "vacuum under [bed]" or "clean under [bed]" or "dust under [bed]" as cleaning.
-Understand "clean [dust bunnies]" or "dust [dust bunnies]" or "vacuum [dust bunnies]" as cleaning.
+Chapter - Dust Bunnies
 
-Instead of cleaning the bed:
-	try cleaning the dust bunnies.
+The dust bunnies are a plural-named figment in the bedroom.
+Understand "bunny" or "family" as dust bunnies.
 
-Instead of cleaning the dust bunnies:
+The description is "A particularly cheeky bunny winks at you. You wonder momentarily whether this violates the 'no pets' clause in your lease."
+
+Instead of hugging the dust bunnies: say "They're very cute, but you would probably crush them."
+
+Instead of touching the dust bunnies: say "You reach under the bed and pat a bunny gently on the head. It twitches its nose at you."
+
+Instead of counting the dust bunnies: say "There are 69,105 dust bunnies here."
+
+Instead of cleaning under the bed: try cleaning the dust bunnies.
+
+Instead of cleaning or attacking the dust bunnies:
 	say "You feel a pang of regret as you vacuum up the dust bunnies. You decide to go drown your sorrows in a pint of ice cream.";
 	try failing.
 
-Instead of taking dust bunnies:
-	say "You can't see any such thing.".
+Chapter - Sheep
+        
+The sheep is a figment in the bedroom.
 
-The sheep is a figment. It is fixed in place. It is on the bed.
+Instead of cleaning or touching or hugging the sheep: say "[imaginary]."
 
-Instead of taking sheep:
-	say "You can't see any such thing.".
+Instead of attacking the sheep: say "You think you hear a disapproving 'Baaa.' in the distance."
+
+Section - Examining Sheep
 
 Look count is a number that varies. Look count is usually 0.
 	
@@ -142,7 +178,7 @@ Instead of examining the sheep:
 	otherwise if look count is 3: 
 		say "Stop it!";
 	otherwise if look count is 4:
-		say "Okay, okay, if I give you a sheep, will you get back to making a friend?";
+		say "Okay, okay, if I give you a sheep, will you get back to finding a friend?";
 	otherwise if look count is 5:
 		say "All right, you win.[LINE BREAK][fixed letter spacing]               /\[LINE BREAK]    @@@@@@@@@@@  O  \[LINE BREAK] @@@@@@@@@@@@@@@____/[LINE BREAK]@@@@@@@@@@@@@@@@[LINE BREAK]@ @@@@@@@@@@@@[LINE BREAK]   ||      ||[LINE BREAK]   ~~      ~~[variable letter spacing]";
 	otherwise if look count is 6:
@@ -151,8 +187,10 @@ Instead of examining the sheep:
 		say "You spend the rest of the evening looking at photos of sheep on the internet. You look under the pillow in the morning, but find nothing.";
 		try failing;
 	otherwise:
-		say "You can't see any such thing.".
+		say "[imaginary]."
 
+Section - Counting Sheep
+                
 Sheep count is a number that varies. Sheep count is usually 0.
 
 Does the player mean counting sheep: it is very likely.
@@ -172,166 +210,129 @@ Instead of counting sheep:
 		say "The next thing you know, the sun is shining. You must have fallen asleep. You look under your pillow, but find nothing there.";
 		try failing;
 	otherwise: 
-		say "Another sheep jumps over the fence. [V].".
+		say "Another sheep jumps over the fence. [V]."
 
-Before giving something to the pillow:
-	say "That's an odd thing to do." instead.
+Chapter - Pillow
 
-Instead of folding the pajamas:
-	try dropping the pajamas.
-	
-Instead of folding the bedding:
-	try dropping the bedding.
-	
-Instead of slinging something at something:
-	if the noun is not slingable:
-		try throwing the noun;		
-	otherwise if the second noun is the noun:
-		say "That's an odd thing to do.";
-	otherwise if the second noun is the pillow:
-		try attacking the pillow;
-	otherwise if the second noun is not hittable:
-		say "That's an odd thing to do.";
-	otherwise if the noun is the player and the second noun is the bedding:
-		try throwing the player;
-	otherwise if the noun is the player and the second noun is the bed:
-		say "You hurl yourself at the bed. The pillow jumps about an inch in the air, but you don't get a good glimpse at what is underneath.";
-	otherwise if the noun is the player and the second noun is the wall:
-		say "You hurl yourself at the wall. Ouch. You limp quietly back to the bed, grateful that no one was around to see that.";
-	otherwise if the noun is the pillow:
+The pillow is an animal. It is on the bed. It is fixed in place. The description is "There seems to be something underneath your pillow."
+
+Instead of singing: say "You hum a lullaby your mother used to sing to you. Your pillow seems relaxed by it."
+
+Instead of listening: say "There's some rustling sounds coming from under your pillow."
+
+Before giving something to the pillow: say "That's an extremely odd thing to do." instead.
+Before showing something to the pillow: say "That's an extremely odd thing to do." instead.
+
+Before entering the pillow: try attacking the pillow instead.
+Instead of sitting on or standing on the pillow: try attacking the pillow.
+Instead of pushing the pillow: try attacking the pillow.
+
+Instead of attacking the pillow:
+	say "You press down on the pillow. You hear a muffled scream, and the pillow stops moving.";
+	try failing.
+
+Does the player mean doing anything with the pillow: it is likely.
+
+Instead of throwing the pillow at something:
+	if the second noun is not the pillow:
 		say "You pick up the pillow and throw it at [the second noun]. Underneath it is a creature unlike anything you've ever seen before. It seems more afraid of you than you are of it, but you're so freaked out that you squash it.";
 		try failing;
-	Otherwise:
-		try throwing the noun.
-
-Instead of throwing:
-	if the noun is the pajamas:
-		try dropping the pajamas;
-	otherwise If the noun is not slingable:
-		try taking the noun;
-	otherwise If the noun is the player:
-		try slinging the player at the bed;
-	Otherwise if the noun is the pillow:
-		try slinging the pillow at the wall;
-
-Instead of crawling under the bed:
-	say "You crawl underneath the bed. The dust bunnies immediately swarm over you, and you're never heard from again.";
-	try failing.
-
-Instead of attacking the player:
-	try slinging the player at the wall.
-
-Understand "chew on [something]" or "chew [something]" as eating.
-
-Before eating:
-	If the noun is not the pillow:
-		say "That's an odd thing to do." instead;
 	otherwise:
-		say "You nibble on your pillow. It tastes like marshmallow." instead.
+		say "That's an awkward thing to do."
 
-Report dancing:
-	say "You dance around the bed. You feel silly.".
+Instead of dropping the pillow: try throwing the pillow at the wall.
 
-Instead of stealing:
-	try taking.
+Before eating the pillow: say "You nibble on your pillow. It tastes like marshmallow." instead.
 	
-Understand "run away screaming" as running.
+Instead of pulling or turning or taking the pillow: try looking under the pillow.
+Instead of looking under the pillow: try finding a friend.
 
-Instead of running:
-        say "You run away screaming, never to return.";
-	try failing.
+Instead of poking the pillow:
+	say "You give the pillow a quick jab. You hear an 'eep' and the pillow stops moving for a moment. Then a strange creature walks out from behind it and shakes its head disapprovingly at you.";
+	try failing;
 
-Report pointing:
-	try showing the noun to the pillow.
-	
-Before showing something to someone:
-	say "That's an odd thing to do." instead.
-	
-Before putting something on something:
-	if the noun is the pajamas and the second noun is the player:
-		try taking the pajamas instead;
-	otherwise If the noun is not slingable:
-		try throwing the noun instead;
-	otherwise if the noun is the player:
-		try sitting on the second noun instead;
-	otherwise if the second noun is the noun:
-		say "That's an odd thing to do." instead;
-	otherwise if the second noun is not hittable:
-		say "That's an odd thing to do." instead;
+Instead of hugging the pillow:
+	say "You pick up the pillow and give it a gentle squeeze.  When you go to put it back, you see a small creature standing there with its arms raised. It doesn't look like anything you've ever seen before, but it seems friendly enough. You scoop it up and give it a hug.";
+	try winning
+
+Instead of touching the pillow:
+	say "You rub the pillow in a soothing manner. You hear a soft purring sound, and a tiny creature crawls out from underneath the pillow. It's unlike anything you've ever seen before, but it seems friendly enough. You reach out and stroke its head.";
+	try winning;
+
+Chapter - Friend
+
+A friend is scenery on the bed.
+Understand "new friend" as friend.
+
+Instead of doing anything except finding or not finding to a friend: say "[imaginary]."
+
+Carry out finding a friend: 
+	say "You pick up the pillow. Underneath it is a creature unlike anything you've ever seen before, but it seems to be friendly. It smiles and waves at you.";
+	try winning.
+
+Section - Not Finding a Friend
+
+Not finding is an action applying to one thing.
+
+Understand "don't make [friend]" or "don't find [friend]" or "dont make [friend]" or "dont find [friend]" or "do not make [friend]" or "do not find [friend]" as not finding.
+
+Report not finding: try running.	
+
+Section - Finding a Friend
+
+Finding is an action applying to one thing.
+Understand "make [friend]" or "find [friend]" as finding.
+
+Book - Actions
+
+Chapter - Waiting
+
+Wait count is a number that varies. Wait count is usually 0.
+
+Instead of waiting:
+	increase wait count by 1;
+	if wait count is less than 4:
+		let L be { "tired", "very tired", "exhausted"};	
+		say "You pause to assess the situation. You're [entry wait count of L], and there seems to be something underneath your pillow.";
 	otherwise:
-		try slinging the noun at the second noun instead.
-	
-	
+		say "You spend so much time thinking about what to do that whatever was under your pillow decides to find a new friend elsewhere. You eventually look under the pillow, but find nothing.";
+		try failing.
+
+Chapter - Cleaning
+
+Cleaning is an action applying to one thing.
+Understand "clean [something]" and "dust [something]" and "vacuum [something]" as cleaning.
+
+Cleaning under is an action applying to one thing.
+Understand "vacuum under [something]" or "clean under [something]" or "dust under [something]" as cleaning under.
+
+Report cleaning: say "You don't have time to clean that right now."
+Report cleaning under: say "You don't have time to clean that right now."
+
+Section - Throwing (and Dropping)
+
+Procedural rule while throwing something at something: ignore the carrying requirements rule.
+Procedural rule while dropping: ignore the carrying requirements rule.
+
+The futile to throw things at inanimate objects rule is not listed in the check throwing it at rules.
+
+Instead of throwing something at something: try taking the noun.
+
 Chapter - Vocalizations
 
-Instead of shouting:
-        try swearing obscenely.
+Instead of casting xyzzy: say "A tired voice says, 'Zzzzy'.".
 
-Instead of shouting at something:
-        try swearing obscenely.
+Instead of shouting: try swearing obscenely.
 
-Instead of swearing mildly:
-	try swearing obscenely.
+Instead of shouting at something: try swearing obscenely.
 
-Instead of swearing obscenely: 
-	say "Your pillow seems to cower in fear.".
+Instead of swearing obscenely: say "Your pillow seems to cower in fear.".
 	
-Instead of talking:
-	say "The pillow stops rustling for a moment and seems to listen to you.".
+Instead of talking: say "The pillow stops rustling for a moment and seems to listen to you.".
 
-Report crying:
-say "You burst into tears. Your pillow hums tunelessly. It seems to be trying to cheer you up.".
+Report crying: say "You burst into tears. Your pillow hums tunelessly. It seems to be trying to cheer you up.".
 
-Chapter - Bed
-
-The bed is a supporter. It is enterable. It is scenery. It is in the bedroom. It is hittable.
-
-Instead of examining the bed: try examining the bedding.
-
-The bedding is a thing. It is on the bed. It is fixed in place. Understand "sheets" or "blanket" or "quilt" as bedding. The description is "Your aunt made you this quilt as a Christmas present. It's an abstract pattern of brightly colored shapes. It balances out your boring white sheets.". It is hittable.
-
-Instead of taking bed:
-	say "You can barely move the bed.";
-
-Instead of taking the bedding:
-	say "You should leave that on the bed.".
-
-Instead of searching the bedding:
-	try searching the bed.
-
-Instead of looking under the bedding:
-	try searching the bed.
-
-Instead of searching the bed:
-	say "You fold back the bedding. There's nothing under there.".
-
-Instead of looking under the bed:
-	say "A family of dust bunnies peeks out at you.".
-
-Making the bed is an action applying to one thing.
-Understand "make [bed]" as making the bed.
-
-Report making the bed:
-say "You made the bed this morning when you got up.".
-
-Not making a friend is an action applying to one thing.
-
-Understand "don't make [friend]" or "don't find [friend]" or "dont make [friend]" or "dont find [friend]" or "do not make [friend]" or "do not find [friend]" as not making a friend.
-
-Report not making a friend:
-	try running.	
-
-Finding a friend is an action applying to one thing.
-Understand "make [friend]" or "find [friend]" as finding a friend.
-
-Making a friend is an action applying to nothing.
-
-Making is an action applying to nothing.
-Understand "make" as making.
-
-Report making: say "What would you like to make?".
-
-Understand "go to bed" or "go to sleep" as sleeping.
+Chapter - Lying Down (Entering)
 
 Understand the command "lie" as something new.
 Understand the command "climb" as something new.
@@ -339,171 +340,122 @@ Understand "lie down on [something]" or "lie in [something]" or "lie on [somethi
 
 Does the player mean entering the bed: it is very likely.
 
-Before entering:
-	if the noun is the pillow:
-		try attacking the pillow;
-	otherwise if the noun is the bed or the noun is the bedding:
-		try sleeping instead;
-	otherwise if the noun is the player:
-		try standing on player;
-	otherwise:
-		say "You can't go in that direction.".
-		
+Chapter - Sleeping
+
+Understand "go to bed" or "go to sleep" as sleeping.
+
+Before entering the bed: try sleeping instead.
+
 Instead of sleeping:
 	say "You're too tired to deal with this right now. You turn out the light, curl up in bed and fall fast asleep. You look under the pillow in the morning, but find nothing.";
 	try failing.
 
+Chapter - Other Actions
+
+Folding is an action applying to one thing.
+Understand "fold [something]" as folding.
+Carry out folding: say "That doesn't need to be folded."
+
 Instead of exiting:
         say "You decide to sleep on the sofa tonight. You look under the pillow in the morning, but find nothing.";
 	try failing.
-	
-Instead of sitting:
-	try sitting on the bed.
 
-Does the player mean sitting on the bed: it is very likely.
+Jumping on is an action applying to one thing.
+Understand "jump on [something]" as jumping on.
+Carry out jumping on: say "Be careful! You might get hurt."
 
-A thing can be sitting-on-the-bed.
-
-Instead of sitting on something:
-	If the noun is the bed or the noun is the bedding:
-		If the player is not sitting-on-the-bed:
-			say "You sit on the edge of the bed.";
-			now the player is sitting-on-the-bed;
-		Otherwise:
-			say "You are already sitting on the bed.";
-	otherwise if the noun is the player:
-		try standing on player;
-	otherwise if the noun is the pillow:	
-		try attacking the pillow;
-	otherwise:
-		say "You can't sit on that.".				
-		
-Report standing:
-	If the player is sitting-on-the-bed:
-		say "You stand up again.";
-		now the player is not sitting-on-the-bed;
-	otherwise:
-		say "You are already standing.".
-		
-Instead of standing on:
-	If the noun is the bed or the noun is the bedding:
-		say "You jump around on the bed like a monkey. Then you fall off and hit your head.";
-		try failing;
-	Otherwise if the noun is the player:
-		say "No matter how you twist and turn, you can't seem to manage that.";
-	Otherwise if the noun is the pillow:
-		try attacking the pillow;
-	Otherwise:
-		say "Don't do that. You might fall.".
-
-Instead of jumping on the bed:
-	try standing on the bed.
-
-Chapter - Pillow
-
-The pillow is an animal. It is on the bed. It is fixed in place. The description is "There seems to be something underneath your pillow.". It is slingable.
-
-Instead of singing:
-	say "You hum a lullaby your mother used to sing to you. Your pillow seems relaxed by it.".
-
-Instead of listening:
-	say "There's some rustling sounds coming from under your pillow.".
-
-A friend is a thing. It is on the bed. It is fixed in place. Understand "new friend" as friend. The description is "You can't see any such thing.".
-
-Instead of taking the friend:
-	try examining the friend.
-	
-Instead of attacking the friend:
-	try attacking the pillow.
-	
-Carry out finding a friend:
-	try making a friend.
-
-Carry out making a friend: 
-	say "You pick up the pillow. Underneath it is a creature unlike anything you've ever seen before, but it seems to be friendly. It smiles and waves at you.";
-	try winning.
-	
-Understand "turn [something] over" as turning.
-	
-Instead of pushing or pulling the bed:
-	try taking the bed.
-	
-Instead of pushing the pillow:
-	try attacking the pillow.
-	
-Instead of pulling or turning the pillow:
-	try taking the pillow.
-
-Instead of taking or moving the pillow:
-	try looking under the pillow.
-	
-Instead of looking behind something:
-	try looking under the noun.
-
-Instead of looking under the pillow:
-	try making a friend.
-	
-Instead of touching something:
-	try petting the noun.
-
-Report poking something:
-	If the noun is the player or the noun is the pajamas:
-		say "You give yourself a quick jab. Ouch.";
-	Otherwise if the noun is the pillow:
-		say "You give the pillow a quick jab. You hear an 'eep' and the pillow stops moving for a moment. Then a strange creature walks out from behind it and shakes its head disapprovingly at you.";
-		try failing;
-	otherwise:
-		say "You give [the noun] a quick jab. Nothing happens.".
-
-Instead of hugging someone:
-	if the noun is the player:
-		say "You give yourself a hug. You feel better.";
-	otherwise if the noun is the pillow:
-		say "You pick up the pillow and give it a gentle squeeze.  When you go to put it back, you see a small creature standing there with its arms raised. It doesn't look like anything you've ever seen before, but it seems friendly enough. You scoop it up and give it a hug.";
-		try winning;
-	otherwise if the noun is the sheep:	
-		say "You can't see any such thing.";
-	otherwise if the noun is the dust bunnies:
-		say "They're very cute, but you would probably crush them."
-
-Instead of petting something:
-	if the noun is the player:
-		say "You give yourself a soothing pat on the back.";
-	otherwise if the noun is the sheep:
-		say "You can't see any such thing.";
-	otherwise if the noun is the dust bunnies:
-		say "You reach under the bed and pat a bunny gently on the head. It twitches its nose at you.";
-	otherwise if the noun is the pillow:
-		say "You rub the pillow in a soothing manner. You hear a soft purring sound, and a tiny creature crawls out from underneath the pillow. It's unlike anything you've ever seen before, but it seems friendly enough. You reach out and stroke its head.";
-		try winning;
-	otherwise if the noun is the pajamas:
-		say "You know the dinosaurs aren't real, right?";
-	otherwise:
-		say "You pat [the noun]. You feel silly."
-	
-Instead of attacking the pillow:
-	say "You press down on the pillow. You hear a muffled scream, and the pillow stops moving.";
+Instead of crawling under the bed:
+	say "You crawl underneath the bed. The dust bunnies immediately swarm over you, and you're never heard from again.";
 	try failing.
 
-Chapter - End Game
+Quivering is an action applying to nothing.
+Understand "quiver" as quivering.
+Carry out quivering: say "I see you quiver with antici---pation."
 
-Carry out winning:
-	end the story finally saying "You made a new friend.".
+Report dancing: say "You dance around the bed. You feel silly.".
+
+Before eating something: say "That is clearly not edible." instead.
+
+Chapter - Sitting
 	
+Instead of sitting: try sitting on the bed.
+
+A person can be sitting down.
+
+Instead of sitting on the bed:
+	If the player is not sitting down:
+		say "You sit on the edge of the bed.";
+		now the player is sitting down;
+	Otherwise:
+		say "You are already sitting on the bed."
+       
+Chapter - Standing
+         
+Report standing:
+	If the player is sitting down:
+		say "You stand up again.";
+		now the player is not sitting down;
+	otherwise:
+		say "You are already standing.".
+
+Standing on head is an action applying to nothing.
+Understand "stand on head" as standing on head.
+Report standing on head: say "Nah. You've never been very good at that."
+                		
+Chapter - Running Away 
+
+Understand the command "run" as something new.
+Running is an action applying to nothing.
+Understand "run" and "run away" and "run away screaming" as running.
+
+Instead of running:
+        say "You run away screaming, never to return.";
+	try failing.
+
+Chapter - Physical Interactions
+
+Section - Animate
+
+Report poking something: say "You give [the noun] a quick jab. Nothing happens."
+	
+Understand the command "pet" as "touch".
+
+Report touching something: say "You pat [the noun]. You feel silly."
+
+Section - Inanimate
+
+Understand "push down on [something]" as pushing.
+
+Understand "turn [something] over" as turning.
+
+Understand "look behind [something]" as looking under.
+
+Section - Attacking
+
+Understand the command "crush" as something new.
+Understand the command "crush" and "smother" as "attack".
+Understand "press down on [something]" as attacking.
+
+Book - End Game
+
+Chapter - Resetting the Game
+
 Carry out failing:
-	say "[LINE BREAK][BOLD TYPE]*** You did not make a new friend. ***[ROMAN TYPE]";
+	say "[LINE BREAK][BOLD TYPE]*** You did not find a new friend. ***[ROMAN TYPE]";
 	end the story.
 	
 When play ends when the story has not ended finally:
-	now the player is not sitting-on-the-bed;
+	now the player is not sitting down;
 	now sheep count is 0;
 	now look count is 0;
-	now wait count is 0;
-	now the light switch is switched on.
+	now wait count is 0.
 
+Chapter - Winning
+
+Carry out winning: end the story finally saying "You found a new friend.".
+	
 Rule for amusing a victorious player:
-say "[LINE BREAK]Have you tried...	[LINE BREAK]- counting sheep?[LINE BREAK]- looking at the sheep?[LINE BREAK]- looking under the bed?[LINE BREAK]- interacting with the dust bunnies?[LINE BREAK]- examining your surroundings?[LINE BREAK]- vocalizing?[LINE BREAK]- throwing yourself?[LINE BREAK]- finding all fifteen endings?".
+say "[LINE BREAK]Have you tried...	[LINE BREAK]- counting sheep?[LINE BREAK]- looking at the sheep?[LINE BREAK]- looking under the bed?[LINE BREAK]- interacting with the dust bunnies?[LINE BREAK]- examining your surroundings?[LINE BREAK]- vocalizing?[LINE BREAK]- throwing yourself?[LINE BREAK]- finding all sixteen endings?".
 
 Rule for displaying endings:
-	say "[LINE BREAK]- Making a new friend[LINE BREAK]- Hugging the pillow[LINE BREAK]- Petting the pillow[LINE BREAK]- Cleaning under the bed[LINE BREAK]- Going to bed[LINE BREAK]- Waiting four times[LINE BREAK]- Counting sheep seven times[LINE BREAK]- Examining sheep eight times[LINE BREAK]- Throwing the pillow at something[LINE BREAK]- Crawling under the bed[LINE BREAK]- Running away[LINE BREAK]- Leaving the room[LINE BREAK]- Jumping on the bed[LINE BREAK]- Poking the pillow[LINE BREAK]- Attacking the pillow[LINE BREAK]".
+	say "[LINE BREAK]- Finding a new friend[LINE BREAK]- Hugging the pillow[LINE BREAK]- Petting the pillow[LINE BREAK]- Cleaning under the bed[LINE BREAK]- Going to bed[LINE BREAK]- Waiting four times[LINE BREAK]- Counting sheep seven times[LINE BREAK]- Examining sheep eight times[LINE BREAK]- Throwing the pillow at something[LINE BREAK]- Crawling under the bed[LINE BREAK]- Running away[LINE BREAK]- Leaving the room[LINE BREAK]- Jumping on the bed[LINE BREAK]- Poking the pillow[LINE BREAK]- Attacking the pillow[LINE BREAK]- Turning off the light[LINE BREAK]".
