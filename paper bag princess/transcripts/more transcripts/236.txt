@@ -1,0 +1,138 @@
+
+
+
+
+This is the day you've always dreamed of. You are finally marrying the love of your life, Prince Roland.
+
+
+Castle Garden
+You are standing in the garden behind your family's castle. On this lovely fall evening, it is doing double duty as a wedding chapel.
+
+Your betrothed, Roland, stands before you.
+
+You can also see Father Alfred here.
+
+>help
+ > About "The Paper Bag Princess"
+   How to Play
+   Walkthrough
+(
+
+   About "The Paper Bag Princess"
+ > How to Play
+   Walkthrough
+   About "The Paper Bag Princess"
+ > How to Play
+   Walkthrough
+(
+
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+<enter>
+
+This walkthrough results in the "traditional" ending. 
+
+wait
+wait
+wait
+wait
+wait
+yes
+press space
+search rubble
+take bag
+make dress
+north
+x trail
+take branch
+x tree
+plugh
+make torch
+open vial
+pour oil on torch
+south
+light torch
+north
+northeast
+the maze is entirely random... sorry!
+knock on door
+again
+shout
+ask dragon about fire
+y
+y
+ask dragon about flight
+y
+in
+shout at roland
+
+Most puzzles have alternate solutions, and there are multiple endings to the game. Have fun exploring!
+
+
+
+
+Please press SPACE to continue.
+<space>
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+Q
+
+Castle Garden
+You are standing in the garden behind your family's castle. On this lovely fall evening, it is doing double duty as a wedding chapel.
+
+Your betrothed, Roland, stands before you.
+
+You can also see Father Alfred here.
+
+>wait
+You beam happily at Roland.
+
+Father Alfred begins the ceremony, "We are gathered here today to witness the joining of two hearts." Roland smiles shyly at you.
+
+>wait
+You beam happily at Roland.
+
+"If anyone has a reason why these two should not be wed, speak now or forever hold your peace." You hold your breath for a second, wondering whether anyone will speak up. Fortunately, nobody does and you relax.
+
+>wait
+You beam happily at Roland.
+
+"Who gives this woman--" You glare icily at the minister. You are nobody's property. "Ahem. Moving on," says the minister, visibly flustered. Roland looks at you questioningly, but says nothing.
+
+>wait
+You beam happily at Roland.
+
+"Love is a wonderful thing." And so on. You're too excited to pay attention to every word.
+
+>wait
+You beam happily at Roland.
+
+"Elizabeth, do you take Roland to be your husband?"
+
+>no
+You shake your head. "No. I don't."
+
+Oh.
+
+There's a pause, and then the guests begin to murmur. The minister frowns. "Elizabeth, are you sure?" he asks. Roland just stares at you in shock. You whisper, "I'm so sorry," and run off.
+
+
+
+    *** And they didn't get married after all! ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+> exit
+Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+> 

@@ -1,0 +1,86 @@
+
+
+
+
+This is the day you've always dreamed of. You are finally marrying the love of your life, Prince Roland.
+
+
+Castle Garden
+You are standing in the garden behind your family's castle. On this lovely fall evening, it is doing double duty as a wedding chapel.
+
+Your betrothed, Roland, stands before you.
+
+You can also see Father Alfred here.
+
+>talk to alfred
+Father Alfred smiles kindly at you and continues the ceremony.
+
+Father Alfred begins the ceremony, "We are gathered here today to witness the joining of two hearts." Roland smiles shyly at you.
+
+>smile
+You smile happily.
+
+"If anyone has a reason why these two should not be wed, speak now or forever hold your peace." You hold your breath for a second, wondering whether anyone will speak up. Fortunately, nobody does and you relax.
+
+>hug roland
+You'll have your chance soon enough!
+
+"Who gives this woman--" You glare icily at the minister. You are nobody's property. "Ahem. Moving on," says the minister, visibly flustered. Roland looks at you questioningly, but says nothing.
+
+>look around
+You can't see any such thing.
+
+>look
+Castle Garden
+You are standing in the garden behind your family's castle. On this lovely fall evening, it is doing double duty as a wedding chapel.
+
+Your betrothed, Roland, stands before you.
+
+You can also see Father Alfred here.
+
+"Love is a wonderful thing." And so on. You're too excited to pay attention to every word.
+
+>smile
+You smile happily.
+
+"Elizabeth, do you take Roland to be your husband?"
+
+>yes
+Of course you do!
+
+The minister smiles at you and turns to Roland. "And, Roland, do you take Elizabeth to be your wife?"
+
+Roland grins at you and exclaims, "I do!"
+
+"I now pronounce you man and... dragon?!?" The minister's eyes go wide, seconds before he is incinerated by a burst of flame.
+
+A large dragon flies overhead. The wedding guests scatter in every direction. You cower against Roland, but he pushes you towards the dragon and runs towards the road.
+
+The dragon eats all the guests it can catch, and when it has had its fill, it smashes your castle to smithereens with its heavy tail and sets the remains on fire. You are nearly caught in a blaze of flame as you duck behind what used to be the stone wall of the garden. You are unhurt, but your fine gown snags on a rose bush and tears.
+
+As the dragon finally turns to go, it catches sight of Roland, running down the road towards the river. It swoops down and smashes the bridge just as Roland is about to cross it and catches him up in its claws. The dragon flies away with your beloved prince.
+
+
+Please press SPACE to continue.
+<space>
+
+
+The Paper Bag Princess
+An interactive fairy tale by Adri
+Release 1 / Serial number 131005 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) 
+
+Castle Ruins
+This used to be your home. Now it is nothing more than a smoking pile of rubble. The smoke obscures your view of the stars, and the primary source of light is the burning remains of your furniture.
+
+The only road away from the castle now ends abruptly at the river bank. The forest surrounds you thickly on all sides, except for an area to the north where the trees have been broken and scorched.
+
+>look for arthur
+You can't see any such thing.
+
+>look
+Castle Ruins
+This used to be your home. Now it is nothing more than a smoking pile of rubble. The smoke obscures your view of the stars, and the primary source of light is the burning remains of your furniture.
+
+The only road away from the castle now ends abruptly at the river bank. The forest surrounds you thickly on all sides, except for an area to the north where the trees have been broken and scorched.
+
+>

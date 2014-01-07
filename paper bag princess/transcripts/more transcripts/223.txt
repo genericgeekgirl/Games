@@ -1,0 +1,841 @@
+
+
+
+
+This is the day you've always dreamed of. You are finally marrying the love of your life, Prince Roland.
+
+
+Castle Garden
+You are standing in the garden behind your family's castle. On this lovely fall evening, it is doing double duty as a wedding chapel.
+
+Your betrothed, Roland, stands before you.
+
+You can also see Father Alfred here.
+
+>ok
+That's not a verb I recognize.
+
+>
+I beg your pardon?
+
+>say hello
+(addressing Roland)
+You lean in towards Roland and whisper in his ear. Roland smiles at you and holds a finger over his lips in an exaggerated "shush" motion.
+
+Father Alfred begins the ceremony, "We are gathered here today to witness the joining of two hearts." Roland smiles shyly at you.
+
+>smile back
+I only understood you as far as wanting to smile.
+
+>smile
+You smile happily.
+
+"If anyone has a reason why these two should not be wed, speak now or forever hold your peace." You hold your breath for a second, wondering whether anyone will speak up. Fortunately, nobody does and you relax.
+
+>continue
+That's not a verb I recognize.
+
+>help
+ > About "The Paper Bag Princess"
+   How to Play
+   Walkthrough
+N
+
+   About "The Paper Bag Princess"
+ > How to Play
+   Walkthrough
+   About "The Paper Bag Princess"
+ > How to Play
+   Walkthrough
+<enter>
+
+ > About Interactive Fiction
+   What to do with >
+   Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+N
+
+   About Interactive Fiction
+ > What to do with >
+   Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+   About Interactive Fiction
+ > What to do with >
+   Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+<enter>
+
+The > sign is where the game says, "Okay, what do you want to do now?"  You may respond by typing an instruction -- usually an imperative verb, possibly followed by prepositions and objects.  So, for instance, LOOK, LOOK AT FISH, TAKE FISH.
+
+
+
+Please press SPACE to continue.
+<space>
+   About Interactive Fiction
+ > What to do with >
+   Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+   About Interactive Fiction
+ > What to do with >
+   Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+N
+
+   About Interactive Fiction
+   What to do with >
+ > Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+   About Interactive Fiction
+   What to do with >
+ > Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+<enter>
+
+The first thing you want to do when starting a game is acquaint yourself with your surroundings and get a sense of your goal. To this end, you should read the introductory text carefully. Sometimes it contains clues. You will also want to look at the room you are in. Notice where the exits from the room are, and what objects are described here. If any of these seem interesting, you may want to EXAMINE them. 
+
+You might also want to examine yourself (EXAMINE ME) to see whether the author has left you any clues about your character. TAKE INVENTORY will tell you what you're carrying, as well.
+
+Once you've gotten your bearings, you may want to explore. Move from room to room, and check out every location available.
+
+
+
+Please press SPACE to continue.
+<space>
+   About Interactive Fiction
+   What to do with >
+ > Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+   About Interactive Fiction
+   What to do with >
+ > Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+<space>
+
+The first thing you want to do when starting a game is acquaint yourself with your surroundings and get a sense of your goal. To this end, you should read the introductory text carefully. Sometimes it contains clues. You will also want to look at the room you are in. Notice where the exits from the room are, and what objects are described here. If any of these seem interesting, you may want to EXAMINE them. 
+
+You might also want to examine yourself (EXAMINE ME) to see whether the author has left you any clues about your character. TAKE INVENTORY will tell you what you're carrying, as well.
+
+Once you've gotten your bearings, you may want to explore. Move from room to room, and check out every location available.
+
+
+
+Please press SPACE to continue.
+<space>
+   About Interactive Fiction
+   What to do with >
+ > Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+   About Interactive Fiction
+   What to do with >
+ > Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+N
+
+   About Interactive Fiction
+   What to do with >
+   Getting Started
+ > Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+   About Interactive Fiction
+   What to do with >
+   Getting Started
+ > Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+<enter>
+
+At any given time, you are in a specific location, or room. When you go into a room, the game will print a description of what you can see there. This description will contain two vital kinds of information: things in the room you can interact with or take, and a list of exits, or ways out. If you want to see the description again, you may just type LOOK. 
+
+When you want to leave a location and go to another one, you may communicate this to the game using compass directions: eg, GO NORTH. For simplicity's sake, you are allowed to omit the word GO, and to abbreviate the compass directions. So you may use NORTH, SOUTH, EAST, WEST, NORTHEAST, SOUTHEAST, NORTHWEST, SOUTHWEST, UP, and DOWN, or in short form N, S, E, W, NE, SE, NW, SW, U, and D.
+
+In some locations, IN and OUT will also be useful.
+
+
+
+Please press SPACE to continue.
+<space>
+   About Interactive Fiction
+   What to do with >
+   Getting Started
+ > Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+   About Interactive Fiction
+   What to do with >
+   Getting Started
+ > Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+N
+
+   About Interactive Fiction
+   What to do with >
+   Getting Started
+   Rooms and Travel
+ > Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+   About Interactive Fiction
+   What to do with >
+   Getting Started
+   Rooms and Travel
+ > Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+<enter>
+
+Throughout the game there will be assorted objects that you can do things with. Most importantly, you may TAKE or GET items, and (when you are tired of them) DROP them again. INVENTORY (abbreviated I) will list the items you are currently holding. 
+
+There are usually assorted things you may do with these objects. OPEN, CLOSE, WEAR, EAT, LOCK, and UNLOCK are especially common.
+
+Occasionally, you will find that the game does not recognize the name of an object even though it has been described as being in the room with you. If this is the case, the object is just there for scenery, and you may assume that you do not need to interact with it.
+
+
+
+Please press SPACE to continue.
+<space>
+   About Interactive Fiction
+   What to do with >
+   Getting Started
+   Rooms and Travel
+ > Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+   About Interactive Fiction
+   What to do with >
+   Getting Started
+   Rooms and Travel
+ > Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+N
+
+   About Interactive Fiction
+   What to do with >
+   Getting Started
+   Rooms and Travel
+   Objects
+ > Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+   About Interactive Fiction
+   What to do with >
+   Getting Started
+   Rooms and Travel
+   Objects
+ > Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+<enter>
+
+There are a few simple commands for controlling the game itself. These are: 
+
+SAVE saves a snapshot of the game as it is now. 
+RESTORE puts the game back to a previous saved state. You may keep as many saved games as you like. 
+RESTART puts the game back to the way it was at the beginning. 
+QUIT ends the game.
+
+
+
+Please press SPACE to continue.
+<space>
+   About Interactive Fiction
+   What to do with >
+   Getting Started
+   Rooms and Travel
+   Objects
+ > Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+   About Interactive Fiction
+   What to do with >
+   Getting Started
+   Rooms and Travel
+   Objects
+ > Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+N
+
+   About Interactive Fiction
+   What to do with >
+   Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+ > How the World is Assembled
+   If You Get Stuck
+   About Interactive Fiction
+   What to do with >
+   Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+ > How the World is Assembled
+   If You Get Stuck
+<enter>
+
+ > Space
+   Containment
+   Types of Action
+   Other Characters
+<enter>
+
+Most IF games are set in a world made up of rooms without internal division. Movement between rooms is possible; movement within a room does not always amount to anything. >WALK OVER TO THE DESK is rarely a useful sort of command. On the other hand, if something is described as being high or out of reach, it is sometimes relevant to stand on an object to increase your height. This kind of activity tends to be important only if prompted by the game text.
+
+
+
+Please press SPACE to continue.
+<space>
+ > Space
+   Containment
+   Types of Action
+   Other Characters
+ > Space
+   Containment
+   Types of Action
+   Other Characters
+N
+
+   Space
+ > Containment
+   Types of Action
+   Other Characters
+   Space
+ > Containment
+   Types of Action
+   Other Characters
+<enter>
+
+One thing that IF does tend to model thoroughly is containment. Is something in or on something else? The game keeps track of this, and many puzzles have to do with where things are -- in the player's possession, lying on the floor of the room, on a table, in a box, etc.
+
+
+
+Please press SPACE to continue.
+<space>
+   Space
+ > Containment
+   Types of Action
+   Other Characters
+   Space
+ > Containment
+   Types of Action
+   Other Characters
+N
+
+   Space
+   Containment
+ > Types of Action
+   Other Characters
+   Space
+   Containment
+ > Types of Action
+   Other Characters
+<enter>
+
+Most of the actions you can perform in the world of IF are brief and specific. >WALK WEST or >OPEN DOOR are likely to be provided. >TAKE A JOURNEY or >BUILD A TABLE are not. Things like >GO TO THE HOTEL are on the borderline: some games allow them, but most do not. In general, abstract, multi-stage behavior usually has to be broken down in order for the game to understand it. 
+
+
+
+Please press SPACE to continue.
+<space>
+   Space
+   Containment
+ > Types of Action
+   Other Characters
+   Space
+   Containment
+ > Types of Action
+   Other Characters
+N
+
+   Space
+   Containment
+   Types of Action
+ > Other Characters
+   Space
+   Containment
+   Types of Action
+ > Other Characters
+<enter>
+
+Other characters in IF games are sometimes rather limited. On the other hand, there are also games in which character interaction is the main point of the game. You should be able to get a feel early on for the characters -- if they seem to respond to a lot of questions, remember what they're told, move around on their own, etc., then they may be fairly important. If they have a lot of stock responses and don't seem to have been the game designer's main concern, then they are most likely present either as local color or to provide the solution to a specific puzzle or set of puzzles. Characters in very puzzle-oriented games often have to be bribed, threatened, or cajoled into doing something that the player cannot do -- giving up a piece of information or an object, reaching something high, allowing the player into a restricted area, and so on.
+
+
+
+Please press SPACE to continue.
+<space>
+   Space
+   Containment
+   Types of Action
+ > Other Characters
+   Space
+   Containment
+   Types of Action
+ > Other Characters
+Q
+
+   About Interactive Fiction
+   What to do with >
+   Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+ > How the World is Assembled
+   If You Get Stuck
+N
+
+   About Interactive Fiction
+   What to do with >
+   Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+ > If You Get Stuck
+   About Interactive Fiction
+   What to do with >
+   Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+ > If You Get Stuck
+<enter>
+
+ > Explore
+   Read carefully
+   Be creative
+   Cooperate
+<enter>
+
+Examine every object and look at everything in your inventory. Open all the doors you can find, and go through them. Look inside all closed containers. Make sure you've exhausted all the options in your environment. 
+
+Try out all your senses. If the game mentions texture, odor, or sound, try touching, smelling, listening to, or tasting objects.
+
+Be thorough. If you still can't figure out what to do, try opening windows, looking under beds, etc. Sometimes objects are well-hidden.
+
+
+
+Please press SPACE to continue.
+<space>
+ > Explore
+   Read carefully
+   Be creative
+   Cooperate
+ > Explore
+   Read carefully
+   Be creative
+   Cooperate
+Q
+
+   About Interactive Fiction
+   What to do with >
+   Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+ > If You Get Stuck
+Q
+
+   About "The Paper Bag Princess"
+ > How to Play
+   Walkthrough
+P
+
+ > About "The Paper Bag Princess"
+   How to Play
+   Walkthrough
+ > About "The Paper Bag Princess"
+   How to Play
+   Walkthrough
+P
+
+ > About "The Paper Bag Princess"
+   How to Play
+   Walkthrough
+ > About "The Paper Bag Princess"
+   How to Play
+   Walkthrough
+<enter>
+
+Princess Elizabeth is about to marry the love of her life when a dragon attacks the castle and kidnaps her betrothed.
+
+The Paper Bag Princess is loosely based upon the book of the same name by Robert Munsch. Permission to write the game was requested from and granted by Mister Munsch himself.
+
+The cover art of Elizabeth was graciously provided by Stacey, aka "iduck" on deviantART.
+
+Thank you so much to my beta testers: Brendan Desilets, Dan Shiovitz, Dan Kelly, David Sturgis, Doug Orleans, Emily Boegheim, Jason McIntosh, Johnny Rivera, Kevin Jackson-Mead, Matthew Miller, Scott Snyder and Z Goddard. Post-release feedback from Adam Myers, Andrew Schultz, E Joyce, Felix Plesoianu and Victor Gijsbers was also particularly helpful to me.
+
+
+The author can be contacted at <genericgeekgirl@gmail.com>.
+
+
+
+
+Please press SPACE to continue.
+<space>
+ > About "The Paper Bag Princess"
+   How to Play
+   Walkthrough
+ > About "The Paper Bag Princess"
+   How to Play
+   Walkthrough
+Q
+
+Castle Garden
+You are standing in the garden behind your family's castle. On this lovely fall evening, it is doing double duty as a wedding chapel.
+
+Your betrothed, Roland, stands before you.
+
+You can also see Father Alfred here.
+
+>
+I beg your pardon?
+
+>
+I beg your pardon?
+
+>smile
+You smile happily.
+
+"Who gives this woman--" You glare icily at the minister. You are nobody's property. "Ahem. Moving on," says the minister, visibly flustered. Roland looks at you questioningly, but says nothing.
+
+>stand
+But you aren't in anything at the moment.
+
+"Love is a wonderful thing." And so on. You're too excited to pay attention to every word.
+
+>smile
+You smile happily.
+
+"Elizabeth, do you take Roland to be your husband?"
+
+>say yes
+Whom do you want to say that to?
+
+>minister
+Of course you do!
+
+The minister smiles at you and turns to Roland. "And, Roland, do you take Elizabeth to be your wife?"
+
+Roland grins at you and exclaims, "I do!"
+
+"I now pronounce you man and... dragon?!?" The minister's eyes go wide, seconds before he is incinerated by a burst of flame.
+
+A large dragon flies overhead. The wedding guests scatter in every direction. You cower against Roland, but he pushes you towards the dragon and runs towards the road.
+
+The dragon eats all the guests it can catch, and when it has had its fill, it smashes your castle to smithereens with its heavy tail and sets the remains on fire. You are nearly caught in a blaze of flame as you duck behind what used to be the stone wall of the garden. You are unhurt, but your fine gown snags on a rose bush and tears.
+
+As the dragon finally turns to go, it catches sight of Roland, running down the road towards the river. It swoops down and smashes the bridge just as Roland is about to cross it and catches him up in its claws. The dragon flies away with your beloved prince.
+
+
+Please press SPACE to continue.
+<space>
+
+
+The Paper Bag Princess
+An interactive fairy tale by Adri
+Release 1 / Serial number 131021 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) 
+
+Castle Ruins
+This used to be your home. Now it is nothing more than a smoking pile of rubble. The smoke obscures your view of the stars, and the primary source of light is the burning remains of your furniture.
+
+The only road away from the castle now ends abruptly at the river bank. The forest surrounds you thickly on all sides, except for an area to the north where the trees have been broken and scorched.
+
+>explore
+That's not a verb I recognize.
+
+>look
+Castle Ruins
+This used to be your home. Now it is nothing more than a smoking pile of rubble. The smoke obscures your view of the stars, and the primary source of light is the burning remains of your furniture.
+
+The only road away from the castle now ends abruptly at the river bank. The forest surrounds you thickly on all sides, except for an area to the north where the trees have been broken and scorched.
+
+>go north
+Perhaps you should find something more substantial to wear first.
+
+>go into castle
+That's not something you can enter.
+
+>search me
+You find nothing of interest.
+
+>look at rubble
+These piles of stones and wood used to be your home. You catch a glimpse of something colorful hidden in one of the piles.
+
+>search rubble
+You dig through the piles of rubble until you find a paper bag.
+
+>look at paper bag
+It's a gift bag made out of paper. It looks like it used to have polka dots on it, but now it's just scorched.
+
+>keep paper bag
+That's not a verb I recognize.
+
+>inventory
+You are carrying nothing.
+
+>save paper bag
+I only understood you as far as wanting to save.
+
+>search rubble
+You don't find anything else.
+
+>search furniture
+You find nothing of interest.
+
+>search castle
+You don't find anything else.
+
+>go to river bank
+You can't see any such thing.
+
+>go north
+Perhaps you should find something more substantial to wear first.
+
+>help
+ > About "The Paper Bag Princess"
+   How to Play
+   Walkthrough
+N
+
+   About "The Paper Bag Princess"
+ > How to Play
+   Walkthrough
+   About "The Paper Bag Princess"
+ > How to Play
+   Walkthrough
+N
+
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+N
+
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+N
+
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+N
+
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+M
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+<enter>
+
+This walkthrough results in the "traditional" ending. 
+
+wait
+wait
+wait
+wait
+wait
+yes
+press space
+search rubble
+take bag
+make dress
+north
+x trail
+take branch
+x tree
+plugh
+make torch
+open vial
+pour oil on torch
+south
+light torch
+north
+northeast
+the maze is entirely random... sorry!
+knock on door
+again
+shout
+ask dragon about fire
+y
+y
+ask dragon about flight
+y
+in
+shout at roland
+
+Most puzzles have alternate solutions, and there are multiple endings to the game. Have fun exploring!
+
+
+
+
+Please press SPACE to continue.
+<enter>
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+<enter>
+
+This walkthrough results in the "traditional" ending. 
+
+wait
+wait
+wait
+wait
+wait
+yes
+press space
+search rubble
+take bag
+make dress
+north
+x trail
+take branch
+x tree
+plugh
+make torch
+open vial
+pour oil on torch
+south
+light torch
+north
+northeast
+the maze is entirely random... sorry!
+knock on door
+again
+shout
+ask dragon about fire
+y
+y
+ask dragon about flight
+y
+in
+shout at roland
+
+Most puzzles have alternate solutions, and there are multiple endings to the game. Have fun exploring!
+
+
+
+
+Please press SPACE to continue.
+<space>
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+Q
+
+Castle Ruins
+This used to be your home. Now it is nothing more than a smoking pile of rubble. The smoke obscures your view of the stars, and the primary source of light is the burning remains of your furniture.
+
+The only road away from the castle now ends abruptly at the river bank. The forest surrounds you thickly on all sides, except for an area to the north where the trees have been broken and scorched.
+
+You can see a paper bag here.
+
+>search paper bag
+You find nothing of interest.
+
+>go to forest
+You can't see any such thing.
+
+>walk to forest
+You can't see any such thing.
+
+>take the road
+That's hardly portable.
+
+>take paper bag
+You take the paper bag.
+
+>take fire
+This dangerous act would achieve little.
+
+>find clothes
+You can't see any such thing.
+
+>channge clothe
+That's not a verb I recognize.
+
+>undress
+That's not a verb I recognize.
+
+>

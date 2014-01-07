@@ -1,0 +1,38 @@
+
+
+
+
+This is the day you've always dreamed of. You are finally marrying the love of your life, Prince Roland.
+
+
+Castle Garden
+You are standing in the garden behind your family's castle. On this lovely fall evening, it is doing double duty as a wedding chapel.
+
+Your betrothed, Roland, stands before you.
+
+You can also see Father Alfred here.
+
+>x father
+Father Alfred has been your family's minister for as long as you can remember.
+
+Father Alfred begins the ceremony, "We are gathered here today to witness the joining of two hearts." Roland smiles shyly at you.
+
+>z
+You beam happily at Roland.
+
+"If anyone has a reason why these two should not be wed, speak now or forever hold your peace." You hold your breath for a second, wondering whether anyone will speak up. Fortunately, nobody does and you relax.
+
+>x roland
+Roland is the most attractive man you have ever laid eyes on.
+
+"Who gives this woman--" You glare icily at the minister. You are nobody's property. "Ahem. Moving on," says the minister, visibly flustered. Roland looks at you questioningly, but says nothing.
+
+>z
+You beam happily at Roland.
+
+"Love is a wonderful thing." And so on. You're too excited to pay attention to every word.
+
+>q
+Are you sure you want to quit? y
+
+[ The game has finished. ]

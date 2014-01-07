@@ -1,0 +1,1573 @@
+I enjoyed your game & my main technical concern is that the necklace gets lost in the shuffle a bit. Semicolons note other things I had questions about.
+
+I was worried going into the forest that my light source would go out & I'd have liked a bit more indication of what would happen. E.g. your fairy godmother helped you, and maybe she should say 'It will last just long enough' or something.
+
+That allows for narrative which I think the player would enjoy when stuck in the forest e.g. 'You have to be close to the dragon's cave.'
+
+I got stuck finding what to ask the dragon about as well, but I could and should have figured it out. I'd have liked to see hints in response to this as well as an AMUSING section at the end--because I have a feeling this game put various touches I missed, and I want to see them.
+
+------------------------------------
+
+Start of a transcript of
+
+Identification number: //21F43258-50B0-4603-AEED-BA8545F5665A//
+Standard interpreter 1.1 (1C) / Library serial number 080126
+Standard Rules version 2/090402 by Graham Nelson
+Hidden Items version 2 by Krister Fundin
+Conversational Defaults version 2 by Eric Eve
+Conversation Responses version 5 by Eric Eve
+Reversed Persuasion Correction version 2 by Juhana Leinonen
+Conversation Framework version 9 by Eric Eve
+Epistemology version 6 by Eric Eve
+
+>shit
+Real princesses do not use such language.
+
+Father Alfred begins the ceremony, "We are gathered here today to witness the joining of two hearts." Roland smiles shyly at you.
+
+>; :)
+That's not a verb I recognize.
+
+>s
+You can't leave yet! The ceremony hasn't ended.
+
+"If anyone has a reason why these two should not be wed, speak now or forever hold your peace." You hold your breath for a second, wondering whether anyone will speak up. Fortunately, nobody does and you relax.
+
+>w
+You can't leave yet! The ceremony hasn't ended.
+
+"Who gives this woman--" You glare icily at the minister. You are nobody's property. "Ahem. Moving on," says the minister, visibly flustered. Roland looks at you questioningly, but says nothing.
+
+>sleep
+You aren't feeling especially drowsy.
+
+"Love is a wonderful thing." And so on. You're too excited to pay attention to every word.
+
+>wave
+You wave, feeling foolish.
+
+"Elizabeth, do you take Roland to be your husband?"
+
+>jump
+The minister is waiting for your answer. Please say "yes" or "no".
+
+>undo
+Castle Garden
+[Previous turn undone.]
+
+>undo
+Castle Garden
+[Previous turn undone.]
+
+>jump
+You jump on the spot, fruitlessly.
+
+"Elizabeth, do you take Roland to be your husband?"
+
+>why not
+That's not a verb I recognize.
+
+>z
+The minister is waiting for your answer. Please say "yes" or "no".
+
+>z
+The minister is waiting for your answer. Please say "yes" or "no".
+
+>yes
+Of course you do!
+
+The minister smiles at you and turns to Roland. "And, Roland, do you take Elizabeth to be your wife?"
+
+Roland grins at you and exclaims, "I do!"
+
+"I now pronounce you man and... dragon?!?" The minister's eyes go wide, seconds before he is incinerated by a burst of flame.
+
+A large dragon flies overhead. The wedding guests scatter in every direction. You cower against Roland, but he pushes you towards the dragon and runs towards the road.
+
+The dragon eats all the guests it can catch, and when it has had its fill, it smashes your castle to smithereens with its heavy tail and sets the remains on fire. You are nearly caught in a blaze of flame as you duck behind what used to be the stone wall of the garden. You are unhurt, but your fine gown snags on a rose bush and tears.
+
+As the dragon finally turns to go, it catches sight of Roland, running down the road towards the river. It swoops down and smashes the bridge just as Roland is about to cross it and catches him up in its claws. The dragon flies away with your beloved prince.
+
+
+Please press SPACE to continue.
+
+
+The Paper Bag Princess
+An interactive fairy tale by Adri
+Release 1 / Serial number 130928 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) 
+
+Castle Ruins
+This used to be your home. Now it is nothing more than a smoking pile of rubble. The smoke obscures your view of the stars, and the primary source of light is the burning remains of your furniture.
+
+The only road away from the castle now ends abruptly at the river bank. The forest surrounds you thickly on all sides, except for an area to the north where the trees have been broken and scorched.
+
+>undo
+Castle Garden
+[Previous turn undone.]
+
+>no
+You shake your head. "No. I don't."
+
+Oh.
+
+There's a pause, and then the guests begin to murmur. The minister frowns. "Elizabeth, are you sure?" he asks. Roland just stares at you in shock. You whisper, "I'm so sorry," and run off.
+
+
+
+    *** And they didn't get married after all! ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+> undo
+Castle Garden
+[Previous turn undone.]
+
+>kiss 
+Whom do you want to kiss?
+
+>father
+You can only do that to something animate.
+
+>l
+The minister is waiting for your answer. Please say "yes" or "no".
+
+>undo
+Castle Garden
+[Previous turn undone.]
+
+>undo
+Castle Garden
+[Previous turn undone.]
+
+>undo
+Castle Garden
+[Previous turn undone.]
+
+>l
+The minister is waiting for your answer. Please say "yes" or "no".
+
+>uno
+That's not a verb I recognize.
+
+>undo
+Castle Garden
+[Previous turn undone.]
+
+>undo
+Castle Garden
+[Previous turn undone.]
+
+>undo
+Castle Garden
+[Previous turn undone.]
+
+>undo
+Castle Garden
+[Previous turn undone.]
+
+>undo
+Castle Garden
+[Previous turn undone.]
+
+>undo
+Castle Garden
+[Previous turn undone.]
+
+>undo
+Castle Garden
+[Previous turn undone.]
+
+>undo
+Castle Garden
+[Previous turn undone.]
+
+>kiss father
+You can only do that to something animate.
+
+>l
+Castle Garden
+You are standing in the garden behind your family's castle. On this lovely fall evening, it is doing double duty as a wedding chapel.
+
+Your betrothed, Roland, stands before you.
+
+You can also see Father Alfred here.
+
+"Who gives this woman--" You glare icily at the minister. You are nobody's property. "Ahem. Moving on," says the minister, visibly flustered. Roland looks at you questioningly, but says nothing.
+
+>kiss alfred
+Keep your mind on the game.
+
+"Love is a wonderful thing." And so on. You're too excited to pay attention to every word.
+
+>kiss roland
+You'll have your chance soon enough!
+
+"Elizabeth, do you take Roland to be your husband?"
+
+>kiss father
+You can only do that to something animate.
+
+>kiss roland
+You'll have your chance soon enough!
+
+>y
+Of course you do!
+
+The minister smiles at you and turns to Roland. "And, Roland, do you take Elizabeth to be your wife?"
+
+Roland grins at you and exclaims, "I do!"
+
+"I now pronounce you man and... dragon?!?" The minister's eyes go wide, seconds before he is incinerated by a burst of flame.
+
+A large dragon flies overhead. The wedding guests scatter in every direction. You cower against Roland, but he pushes you towards the dragon and runs towards the road.
+
+The dragon eats all the guests it can catch, and when it has had its fill, it smashes your castle to smithereens with its heavy tail and sets the remains on fire. You are nearly caught in a blaze of flame as you duck behind what used to be the stone wall of the garden. You are unhurt, but your fine gown snags on a rose bush and tears.
+
+As the dragon finally turns to go, it catches sight of Roland, running down the road towards the river. It swoops down and smashes the bridge just as Roland is about to cross it and catches him up in its claws. The dragon flies away with your beloved prince.
+
+
+Please press SPACE to continue.
+
+
+The Paper Bag Princess
+An interactive fairy tale by Adri
+Release 1 / Serial number 130928 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) 
+
+Castle Ruins
+This used to be your home. Now it is nothing more than a smoking pile of rubble. The smoke obscures your view of the stars, and the primary source of light is the burning remains of your furniture.
+
+The only road away from the castle now ends abruptly at the river bank. The forest surrounds you thickly on all sides, except for an area to the north where the trees have been broken and scorched.
+
+>; good no response
+That's not a verb I recognize.
+
+>w
+The only possible path appears to be through the forest to the north.
+
+>n
+Perhaps you should find something to wear first.
+
+>x me
+You are young and beautiful, too lovely to be described in mere words. You are, however, in dire need of a bath and a change of clothes.
+
+You are wearing a handful of rags and a tarnished gold crown.
+
+>restart
+Are you sure you want to restart? y
+ > About "The Paper Bag Princess"
+   How to Play
+   Hints
+   Walkthrough
+
+Princess Elizabeth is about to marry the love of her life when a dragon attacks the castle and kidnaps her betrothed.
+
+The Paper Bag Princess is loosely based upon the book of the same name by Robert Munsch. Permission to write the game was requested from and granted by Mister Munsch himself.
+
+The cover art of Elizabeth was graciously provided by Stacey, aka "iduck" on deviantART.
+
+Thank you so much to my beta testers: Brendan Desilets, Dan Shiovitz, Dan Kelly, David Sturgis, Doug Orleans, Emily Boegheim, Johnny Rivera, Kevin Jackson-Mead, Matthew Miller, Scott Snyder and Z Goddard.
+
+
+The author can be contacted at <genericgeekgirl@gmail.com>.
+
+
+
+
+Please press SPACE to continue.
+ > About "The Paper Bag Princess"
+   How to Play
+   Hints
+   Walkthrough
+ > About "The Paper Bag Princess"
+   How to Play
+   Hints
+   Walkthrough
+
+   About "The Paper Bag Princess"
+ > How to Play
+   Hints
+   Walkthrough
+   About "The Paper Bag Princess"
+ > How to Play
+   Hints
+   Walkthrough
+
+ > About Interactive Fiction
+   What to do with >
+   Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+
+   About "The Paper Bag Princess"
+ > How to Play
+   Hints
+   Walkthrough
+
+   About "The Paper Bag Princess"
+   How to Play
+ > Hints
+   Walkthrough
+   About "The Paper Bag Princess"
+   How to Play
+ > Hints
+   Walkthrough
+
+There will be hints here one day. I promise.
+
+
+
+
+Please press SPACE to continue.
+   About "The Paper Bag Princess"
+   How to Play
+ > Hints
+   Walkthrough
+   About "The Paper Bag Princess"
+   How to Play
+ > Hints
+   Walkthrough
+
+   About "The Paper Bag Princess"
+   How to Play
+   Hints
+ > Walkthrough
+   About "The Paper Bag Princess"
+   How to Play
+   Hints
+ > Walkthrough
+
+This is only one solution to the game, resulting in the "traditional" ending.
+
+wait
+wait
+wait
+wait
+wait
+yes
+press space
+search rubble
+take bag
+make dress
+north
+x trail
+take branch
+x tree
+plugh
+make torch
+open vial
+pour oil on torch
+south
+light torch
+north
+northeast
+go in any direction until you reach the cave
+knock on door
+again
+shout
+ask dragon about fire
+y
+y
+ask dragon about flight
+y
+in
+shout at roland
+
+
+
+Please press SPACE to continue.
+   About "The Paper Bag Princess"
+   How to Play
+   Hints
+ > Walkthrough
+   About "The Paper Bag Princess"
+   How to Play
+   Hints
+ > Walkthrough
+
+Castle Ruins
+This used to be your home. Now it is nothing more than a smoking pile of rubble. The smoke obscures your view of the stars, and the primary source of light is the burning remains of your furniture.
+
+The only road away from the castle now ends abruptly at the river bank. The forest surrounds you thickly on all sides, except for an area to the north where the trees have been broken and scorched.
+
+>; ouch on the hints but good work otherwise
+That's not a verb I recognize.
+
+>i
+You are carrying a vial (closed).
+
+>n
+Perhaps you should find something to wear first.
+
+>x rubble
+These piles of stones and wood used to be your home. You catch a glimpse of something colorful hidden in one of the piles.
+
+>x colorfuk
+You can't see any such thing.
+
+>x colorful
+You can't quite make it out from here. Why don't you try digging through the rubble?
+
+>x rubble
+These piles of stones and wood used to be your home. You catch a glimpse of something colorful hidden in one of the piles.
+
+>attack rubble
+Violence isn't the answer to this one.
+
+>dig through
+(the rubble)
+You dig through the piles of rubble until you find a paper bag.
+
+>undo
+Castle Ruins
+[Previous turn undone.]
+
+>dig 
+(in the rubble)
+You dig through the piles of rubble until you find a paper bag.
+
+>undo
+Castle Ruins
+[Previous turn undone.]
+
+>search rubble
+You dig through the piles of rubble until you find a paper bag.
+
+>wear it
+(first taking the rubble)
+That's hardly portable.
+
+>wear rubble
+(first taking the rubble)
+That's hardly portable.
+
+>get rubble
+That's hardly portable.
+
+>sit on rubble
+That's not something you can sit down on.
+
+>wear bag
+You take the paper bag.
+
+You quickly fashion a dress out of the gift bag. It's not as fancy as you're used to, but it'll get the job done.
+
+You strip off the remains of your wedding gown.
+
+You slip the makeshift dress over your head and pull it down past your hips.
+
+>i
+You are carrying a handful of rags and a vial (closed).
+
+>l
+Castle Ruins
+This used to be your home. Now it is nothing more than a smoking pile of rubble. The smoke obscures your view of the stars, and the primary source of light is the burning remains of your furniture.
+
+The only road away from the castle now ends abruptly at the river bank. The forest surrounds you thickly on all sides, except for an area to the north where the trees have been broken and scorched.
+
+>x furniture
+You think you can make out the leg of a chair somewhere in that mess. It's mostly just a blaze of fire.
+
+>get all
+oily black liquid: The vial isn't open.
+
+>get chair
+None of the furniture is worth saving.
+
+>l
+Castle Ruins
+This used to be your home. Now it is nothing more than a smoking pile of rubble. The smoke obscures your view of the stars, and the primary source of light is the burning remains of your furniture.
+
+The only road away from the castle now ends abruptly at the river bank. The forest surrounds you thickly on all sides, except for an area to the north where the trees have been broken and scorched.
+
+>n
+
+Burnt Forest
+There's a trail of burned trees and what appear to be teeth leading to the northeast. One tree in particular catches your eye.
+
+>x tree
+You examine the tree more closely. Someone has carved "PLUGH" into the trunk.
+
+There is a large branch propped up against the base of the tree.
+
+>plugh
+You hear a faint sound in the distance. Help does not arrive.
+
+>say plugh
+You hear a faint sound in the distance. Help does not arrive.
+
+>x branch
+It's a large branch. It looks pretty sturdy.
+
+>get branch
+You take the branch.
+
+>climb tree
+I don't think much is to be achieved by that.
+
+>; aww
+That's not a verb I recognize.
+
+>l
+Burnt Forest
+There's a trail of burned trees and what appear to be teeth leading to the northeast. One tree in particular catches your eye.
+
+>n
+The trees are impassable in that direction. The trail seems to be leading northeast.
+
+>s
+
+Castle Ruins
+This used to be your home. Now it is nothing more than a smoking pile of rubble. The smoke obscures your view of the stars, and the primary source of light is the burning remains of your furniture.
+
+The only road away from the castle now ends abruptly at the river bank. The forest surrounds you thickly on all sides, except for an area to the north where the trees have been broken and scorched.
+
+>undo
+Burnt Forest
+[Previous turn undone.]
+
+>ne
+The woods seem pretty dark. Maybe you should find a light source.
+
+>l
+Burnt Forest
+There's a trail of burned trees and what appear to be teeth leading to the northeast. One tree in particular catches your eye.
+
+>x teeth
+Yes, those are definitely teeth. They come in a variety of shapes and sizes, most of which do not appear to be human. You wonder briefly where the rest of the bones are.
+
+>get bones
+You can't see any such thing.
+
+>open vial
+You open the vial.
+
+>get teeth
+You have absolutely no need for those. What are you going to do, make a necklace?
+
+>l
+Burnt Forest
+There's a trail of burned trees and what appear to be teeth leading to the northeast. One tree in particular catches your eye.
+
+>ne
+The woods seem pretty dark. Maybe you should find a light source.
+
+>x vial
+In the vial is an oily black liquid.
+
+> x liquid
+A thick, black liquid that appears to be oil.
+
+>l
+Burnt Forest
+There's a trail of burned trees and what appear to be teeth leading to the northeast. One tree in particular catches your eye.
+
+>pour liquid
+What do you want to pour the oily black liquid on?
+
+>me
+Ew. You really don't want that all over your skin.
+
+>pour liquid on tree
+There isn't very much in the bottle. You shouldn't waste it.
+
+>pour liquid on teeth
+There isn't very much in the bottle. You shouldn't waste it.
+
+>l
+Burnt Forest
+There's a trail of burned trees and what appear to be teeth leading to the northeast. One tree in particular catches your eye.
+
+>s
+
+Castle Ruins
+This used to be your home. Now it is nothing more than a smoking pile of rubble. The smoke obscures your view of the stars, and the primary source of light is the burning remains of your furniture.
+
+The only road away from the castle now ends abruptly at the river bank. The forest surrounds you thickly on all sides, except for an area to the north where the trees have been broken and scorched.
+
+>pour liquid on fire
+This dangerous act would achieve little.
+
+>; hmm
+That's not a verb I recognize.
+
+>u
+The only possible path appears to be through the forest to the north.
+
+>n
+
+Burnt Forest
+There's a trail of burned trees and what appear to be teeth leading to the northeast. One tree in particular catches your eye.
+
+>x trees
+The trail disappears into the woods.
+
+>x tree
+You examine the tree more closely. Someone has carved "PLUGH" into the trunk.
+
+>search tree
+You find nothing of interest.
+
+>n
+The trees are impassable in that direction. The trail seems to be leading northeast.
+
+>ne
+The woods seem pretty dark. Maybe you should find a light source.
+
+>e
+The trees are impassable in that direction. The trail seems to be leading northeast.
+
+>i
+You are carrying a branch, a handful of rags, and a vial.
+
+>s
+
+Castle Ruins
+This used to be your home. Now it is nothing more than a smoking pile of rubble. The smoke obscures your view of the stars, and the primary source of light is the burning remains of your furniture.
+
+The only road away from the castle now ends abruptly at the river bank. The forest surrounds you thickly on all sides, except for an area to the north where the trees have been broken and scorched.
+
+>put branch in fire
+Not quite, but you seem to be on the right track.
+
+>put rags in fire
+This dangerous act would achieve little.
+
+>put vial
+I didn't understand that sentence.
+
+>put vial in fire
+This dangerous act would achieve little.
+
+>put branch on fire
+Not quite, but you seem to be on the right track.
+
+>put vial on branch
+Not quite, but you seem to be on the right track.
+
+>open vial
+That's already open.
+
+>pour liquid on branch
+Not quite, but you seem to be on the right track.
+
+>i
+You are carrying a branch, a handful of rags, and a vial.
+
+>x rags
+The tattered remains of your wedding gown.
+
+>put rags on branch
+You fashion a torch from the branch and the remains of your wedding gown.
+
+>; the 'not quite' clues are good
+That's not a verb I recognize.
+
+>; but maybe say why
+That's not a verb I recognize.
+
+>l
+Castle Ruins
+This used to be your home. Now it is nothing more than a smoking pile of rubble. The smoke obscures your view of the stars, and the primary source of light is the burning remains of your furniture.
+
+The only road away from the castle now ends abruptly at the river bank. The forest surrounds you thickly on all sides, except for an area to the north where the trees have been broken and scorched.
+
+>i
+You are carrying a torch and a vial.
+
+>x torch
+It is a torch crafted from a branch and the remains of your wedding gown.
+
+>undo
+Castle Ruins
+[Previous turn undone.]
+
+>undo
+Castle Ruins
+[Previous turn undone.]
+
+>undo
+Castle Ruins
+[Previous turn undone.]
+
+>undo
+Castle Ruins
+[Previous turn undone.]
+
+>undo
+Castle Ruins
+[Previous turn undone.]
+
+>undo
+Castle Ruins
+[Previous turn undone.]
+
+>undo
+Castle Ruins
+[Previous turn undone.]
+
+>undo
+Castle Ruins
+[Previous turn undone.]
+
+>undo
+Castle Ruins
+[Previous turn undone.]
+
+>undo
+Castle Ruins
+[Previous turn undone.]
+
+>undo
+Castle Ruins
+[Previous turn undone.]
+
+>undo
+Castle Ruins
+[Previous turn undone.]
+
+>ne
+The only possible path appears to be through the forest to the north.
+
+>n
+
+Burnt Forest
+There's a trail of burned trees and what appear to be teeth leading to the northeast. One tree in particular catches your eye.
+
+>put rags on branch
+You fashion a torch from the branch and the remains of your wedding gown.
+
+>i
+You are carrying a torch and a vial.
+
+>ne
+The woods seem pretty dark. Maybe you should find a light source.
+
+>sw
+The trees are impassable in that direction. The trail seems to be leading northeast.
+
+>s
+
+Castle Ruins
+This used to be your home. Now it is nothing more than a smoking pile of rubble. The smoke obscures your view of the stars, and the primary source of light is the burning remains of your furniture.
+
+The only road away from the castle now ends abruptly at the river bank. The forest surrounds you thickly on all sides, except for an area to the north where the trees have been broken and scorched.
+
+>light torch
+The torch needs something else.
+
+>pour vial on torch
+You pour the oily black liquid onto the torch and discard the empty vial.
+
+>put torch on fire
+You light the torch with the flames.
+
+>n
+
+Burnt Forest
+There's a trail of burned trees and what appear to be teeth leading to the northeast. One tree in particular catches your eye.
+
+>ne
+
+Dimly Lit Forest
+You feel as if you are in a giant maze of twisty trees.
+
+>l
+Dimly Lit Forest
+You feel as if you are in a maze of twisty giant trees.
+
+>l
+Dimly Lit Forest
+You feel as if you are in a maze of giant twisty trees.
+
+>l
+Dimly Lit Forest
+You feel as if you are in a giant maze of twisting trees.
+
+>z
+Time passes.
+
+>z
+Time passes.
+
+>sing
+You sing a few lines of a lullaby your mother used to sing to you.
+
+>think
+What a good idea.
+
+>i
+You are carrying a torch (providing light).
+
+>save
+Ok.
+
+>w
+
+Dimly Lit Forest
+You feel as if you are in a giant twisty maze of trees.
+
+>n
+
+Dimly Lit Forest
+You feel as if you are in a maze of twisty giant trees.
+
+>x trees
+Dimly Lit Forest
+You feel as if you are in a twisting maze of giant trees.
+
+>w
+
+Dimly Lit Forest
+You feel as if you are in a giant maze of twisty trees.
+
+>w
+
+Dimly Lit Forest
+You feel as if you are in a maze of giant twisty trees.
+
+>w
+
+Dimly Lit Forest
+You feel as if you are in a twisty maze of giant trees.
+
+>w
+
+Dimly Lit Forest
+You feel as if you are in a twisting giant maze of trees.
+
+>w
+
+Dimly Lit Forest
+You feel as if you are in a maze of giant twisty trees.
+
+>w
+
+Dimly Lit Forest
+You feel as if you are in a giant twisty maze of trees.
+
+>w
+The torch starts to flicker. It will probably burn out soon.
+
+Dimly Lit Forest
+You feel as if you are in a twisting maze of giant trees.
+
+>w
+
+Dimly Lit Forest
+You feel as if you are in a giant maze of twisty trees.
+
+>w
+As you emerge from the forest, the torch suddenly fizzles out.
+
+Outside the Dragon's Cave
+You are standing before a large cave. The entrance has been blocked by a large wooden door.
+
+>w
+The door leads into the cave. The only escape is back into the forest. You came to rescue Roland, and you are not leaving without him!
+
+>undo
+Outside the Dragon's Cave
+[Previous turn undone.]
+
+>undo
+Dimly Lit Forest
+[Previous turn undone.]
+
+>undo
+Dimly Lit Forest
+[Previous turn undone.]
+
+>e
+
+Dimly Lit Forest
+You feel as if you are in a maze of giant twisting trees.
+
+>e
+As you emerge from the forest, the torch suddenly fizzles out.
+
+Outside the Dragon's Cave
+You are standing before a large cave. The entrance has been blocked by a large wooden door.
+
+>i
+You are carrying a torch.
+
+>x torch
+It is a torch crafted from a branch and the remains of your wedding gown.
+
+>; mention lit or not?
+That's not a verb I recognize.
+
+>l
+Outside the Dragon's Cave
+You are standing before a large cave. The entrance has been blocked by a large wooden door.
+
+>
+I beg your pardon?
+
+>; ooh, change default...
+You seem to want to talk to someone, but I can't see whom.
+
+>x door
+The large door almost perfectly fills in the natural opening in the rock. There is a golden knocker in the shape of a dragon's tail about a foot above your head.
+
+>light door
+This dangerous act would achieve little.
+
+>light door with torch
+Whatever you expected to happen has not happened.
+
+>put torch on door
+(first taking the cave door)
+That's hardly portable.
+
+>i
+You are carrying a torch.
+
+>open door
+The door is locked. Perhaps you should try knocking.
+
+>attack door
+Violence isn't the answer to this one.
+
+>kick door
+That's not a verb I recognize.
+
+>open door
+The door is locked. Perhaps you should try knocking.
+
+>knock
+(the cave door)
+You grab the knocker and bang on the door.
+
+The door opens and the dragon sticks its nose through the opening. It says, "Well, a princess! I love to eat princesses, but I have already eaten a whole castle today. I am a very tired dragon. Come back tomorrow." 
+
+Then it slams the door in your face.
+
+>knock
+(the cave door)
+You bang on the door again.
+
+The dragon sticks its nose out the door and says, "I am sure you are very delicious, but I am rather tired and stuffed. Please do come back tomorrow."
+
+This time, however, he does not immediately return to his cave.
+
+>knock
+(the cave door)
+You already have the dragon's attention.
+
+>knock
+(the cave door)
+You already have the dragon's attention.
+
+>talk to dragon
+"Wait!" you exclaim.
+
+Surprised, the dragon steps entirely out of the cave, nudging the door shut with its tail.
+
+You say, "Is it true that you are the smartest and fiercest dragon in the whole world?"
+
+"Yes," says the dragon. Boastful fellow, isn't he?
+
+>yes
+That was a rhetorical question.
+
+>talk to dragon
+You say, "Is it true that you are the smartest and fiercest dragon in the whole world?"
+
+"Yes," says the dragon. Boastful fellow, isn't he?
+
+>talk to dragon
+You say, "Is it true that you are the smartest and fiercest dragon in the whole world?"
+
+"Yes," says the dragon. Boastful fellow, isn't he?
+
+>ask dragon about roland
+The dragon says, "Oh, yes. I love to eat royals. But I have already eaten a whole castle today, so I am saving your prince for later."
+
+"Where is he?" you cry.
+
+"I cannot tell you that," says the dragon, although it casts a nervous look towards the cave.
+
+>w
+The door leads into the cave. The only escape is back into the forest. You came to rescue Roland, and you are not leaving without him!
+
+>enter cave
+The dragon is blocking the doorway and will not allow you to pass.
+
+>ask about roland
+The dragon says, "Oh, yes. I love to eat royals. But I have already eaten a whole castle today, so I am saving your prince for later."
+
+"Where is he?" you cry.
+
+"I cannot tell you that," says the dragon, although it casts a nervous look towards the cave.
+
+>ask about cave
+The dragon says, "That is my home, and you are not welcome in there."
+
+>ask about castle
+The dragon says, "That's very kind of you to offer, but I have already eaten a whole castle today."
+
+"That was my home!" you shout.
+
+The dragon shrugs. It doesn't seem particularly inclined to apologize.
+
+>ask about home
+The dragon says, "I'm afraid I don't know anything about that."
+
+>l
+Outside the Dragon's Cave
+You are standing before a large cave. The entrance has been blocked by a large wooden door.
+
+You can see a dragon here.
+
+>x door
+The large door almost perfectly fills in the natural opening in the rock. There is a golden knocker in the shape of a dragon's tail about a foot above your head.
+
+>close door
+That's already closed.
+
+>take knocker
+That's hardly portable.
+
+>x knocker
+The large door almost perfectly fills in the natural opening in the rock. There is a golden knocker in the shape of a dragon's tail about a foot above your head.
+
+>attack dragon
+The dragon is much larger and stronger than you. Perhaps you can outwit it in some way.
+
+>l
+Outside the Dragon's Cave
+You are standing before a large cave. The entrance has been blocked by a large wooden door.
+
+You can see a dragon here.
+
+>ask about torch
+The dragon laughs at you.
+
+>i
+You are carrying a torch.
+
+>ask about me
+The dragon says, "I love to eat princesses, but I have already eaten a whole castle today. Come back tomorrow."
+
+>w
+The door leads into the cave. The only escape is back into the forest. You came to rescue Roland, and you are not leaving without him!
+
+>in
+The dragon is blocking the doorway and will not allow you to pass.
+
+>open door
+The door is locked. Perhaps you should try knocking.
+
+>; ah small goof
+That's not a verb I recognize.
+
+>knock
+(the cave door)
+You already have the dragon's attention.
+
+>kiss dragon
+Keep your mind on the game.
+
+>; aww
+That's not a verb I recognize.
+
+>l
+Outside the Dragon's Cave
+You are standing before a large cave. The entrance has been blocked by a large wooden door.
+
+You can see a dragon here.
+
+>ask about door
+The dragon says, "That is my home, and you are not welcome in there."
+
+>ask about cave
+The dragon says, "That is my home, and you are not welcome in there."
+
+>ask about entrance
+The dragon says, "That is my home, and you are not welcome in there."
+
+>ask about castle
+The dragon says, "That's very kind of you to offer, but I have already eaten a whole castle today."
+
+"That was my home!" you shout.
+
+The dragon shrugs. It doesn't seem particularly inclined to apologize.
+
+>ask about wedding
+The dragon says, "I'm afraid I don't know anything about that."
+
+>ask about me
+The dragon says, "I love to eat princesses, but I have already eaten a whole castle today. Come back tomorrow."
+
+>ask about roland
+The dragon says, "Oh, yes. I love to eat royals. But I have already eaten a whole castle today, so I am saving your prince for later."
+
+"Where is he?" you cry.
+
+"I cannot tell you that," says the dragon, although it casts a nervous look towards the cave.
+
+>ask about later
+The dragon says, "I'm afraid I don't know anything about that."
+
+>ask about eating
+The dragon says, "I'm afraid I don't know anything about that."
+
+>ask about eat
+The dragon says, "I'm afraid I don't know anything about that."
+
+>hint
+ > About "The Paper Bag Princess"
+   How to Play
+   Hints
+   Walkthrough
+
+   About "The Paper Bag Princess"
+ > How to Play
+   Hints
+   Walkthrough
+   About "The Paper Bag Princess"
+ > How to Play
+   Hints
+   Walkthrough
+
+   About "The Paper Bag Princess"
+   How to Play
+ > Hints
+   Walkthrough
+   About "The Paper Bag Princess"
+   How to Play
+ > Hints
+   Walkthrough
+
+   About "The Paper Bag Princess"
+   How to Play
+   Hints
+ > Walkthrough
+   About "The Paper Bag Princess"
+   How to Play
+   Hints
+ > Walkthrough
+
+This is only one solution to the game, resulting in the "traditional" ending.
+
+wait
+wait
+wait
+wait
+wait
+yes
+press space
+search rubble
+take bag
+make dress
+north
+x trail
+take branch
+x tree
+plugh
+make torch
+open vial
+pour oil on torch
+south
+light torch
+north
+northeast
+go in any direction until you reach the cave
+knock on door
+again
+shout
+ask dragon about fire
+y
+y
+ask dragon about flight
+y
+in
+shout at roland
+
+
+
+Please press SPACE to continue.
+   About "The Paper Bag Princess"
+   How to Play
+   Hints
+ > Walkthrough
+   About "The Paper Bag Princess"
+   How to Play
+   Hints
+ > Walkthrough
+
+Outside the Dragon's Cave
+You are standing before a large cave. The entrance has been blocked by a large wooden door.
+
+You can see a dragon here.
+
+>ask dragon about fire
+"Is it true," you say, "that you can burn up ten forests with your fiery breath?"
+
+"Oh, yes," says the dragon, and it takes a huge, deep breath and breathes out so much fire that it burns up fifty forests.
+
+Were you impressed by that display?
+
+>no
+Apparently it takes a lot to impress you! But you force yourself to look delighted as you shout, "Do it again!"
+
+The dragon takes another huge breath and breathes out so much fire that it burns up one hundred forests.
+
+Wasn't that amazing?
+
+>no
+Apparently it takes a lot to impress you! But you force yourself to look delighted as you shout, "Do it again!"
+
+The dragon takes another huge breath. But this time, nothing comes out.
+
+>ask about flight
+You say, "Dragon, is it true that you can fly around the world in just ten seconds?"
+
+"Why, yes," says the dragon, and it jumps up and flies around the world in just ten seconds. It seems very tired when it returns.
+
+Were you impressed by that display?
+
+>no
+Apparently it takes a lot to impress you! But you force yourself to look delighted as you shout, "Do it again!"
+
+The dragon jumps up and flies around the whole world in just twenty seconds. When it returns, it flops down on the ground.
+
+The dragon is so tired that he falls fast asleep.
+
+>in
+(first opening the cave door)
+
+The Dragon's Cave
+This is where the dragon lives. Piles of treasure fill the room, reflecting light in every direction.
+
+Your betrothed, Roland, stands before you.
+
+Roland looks at you and says, "Elizabeth, you are a mess! You smell like ashes, your hair is all tangled, and you are wearing a dirty paper bag. Come back when you are dressed like a real princess."
+
+>kiss roland
+You're really not in the mood to do that.
+
+>remove bag
+You remove the gift bag, folding it carefully.
+
+>i
+You are carrying a torch and a paper bag.
+
+>x me
+You are young and beautiful, too lovely to be described in mere words. You are, however, in dire need of a bath and a change of clothes.
+
+You are stark naked, save for a tarnished gold crown.
+
+>give all to roland
+You can't use multiple objects with that verb.
+
+>give torch to roland
+Roland glares at you.
+
+>x torch
+It is a torch crafted from a branch and the remains of your wedding gown.
+
+>remove gown
+You can't see any such thing.
+
+>take gown
+You can't see any such thing.
+
+>get branch
+You already have that.
+
+>untie torch
+That's not a verb I recognize.
+
+>give crown to roland
+(first taking the tarnished gold crown off)
+You should leave that on. A princess should never be without her crown.
+
+>x crown
+Your gold crown. It's looking a little worse for the wear.
+
+>e
+"Roland," you say, "your clothes are really pretty, and your hair is very neat. You look like a real prince, but you are also a real jerk."
+
+You turn around and walk out the door.
+
+
+
+    *** And Elizabeth lived happily ever after! ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+> undo
+The Dragon's Cave
+[Previous turn undone.]
+
+>l
+The Dragon's Cave
+This is where the dragon lives. Piles of treasure fill the room, reflecting light in every direction.
+
+Your betrothed, Roland, stands before you.
+
+>x roland
+Roland is the most attractive man you have ever laid eyes on. Too bad he's also the biggest jerk you've ever met!
+
+>get treasure
+No, Elizabeth. You were raised better than that.
+
+>attack roland
+You slap Roland!
+
+"Roland," you say, "your clothes are really pretty, and your hair is very neat. You look like a real prince, but you are also a real jerk."
+
+You turn around and walk out the door.
+
+
+
+    *** And Elizabeth lived happily ever after! ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+> ; cool!
+Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+> undo
+The Dragon's Cave
+[Previous turn undone.]
+
+>out
+"Roland," you say, "your clothes are really pretty, and your hair is very neat. You look like a real prince, but you are also a real jerk."
+
+You turn around and walk out the door.
+
+
+
+    *** And Elizabeth lived happily ever after! ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+> undo
+The Dragon's Cave
+[Previous turn undone.]
+
+>w
+"Roland," you say, "your clothes are really pretty, and your hair is very neat. You look like a real prince, but you are also a real jerk."
+
+You turn around and walk out the door.
+
+
+
+    *** And Elizabeth lived happily ever after! ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+> undo
+The Dragon's Cave
+[Previous turn undone.]
+
+>in
+"Roland," you say, "your clothes are really pretty, and your hair is very neat. You look like a real prince, but you are also a real jerk."
+
+You turn around and walk out the door.
+
+
+
+    *** And Elizabeth lived happily ever after! ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+> undo
+The Dragon's Cave
+[Previous turn undone.]
+
+>l
+The Dragon's Cave
+This is where the dragon lives. Piles of treasure fill the room, reflecting light in every direction.
+
+Your betrothed, Roland, stands before you.
+
+>sleep
+You aren't feeling especially drowsy.
+
+>jump
+You jump on the spot, fruitlessly.
+
+>ask roland about me
+Roland glares at you.
+
+>ask roland about dragon
+Roland glares at you.
+
+>i
+You are carrying a torch and a paper bag.
+
+>xyzzy
+You hear a faint sound in the distance. Help does not arrive.
+
+>x dragon
+You can't see any such thing.
+
+>; more responses from roland?
+That's not a verb I recognize.
+
+>l
+The Dragon's Cave
+This is where the dragon lives. Piles of treasure fill the room, reflecting light in every direction.
+
+Your betrothed, Roland, stands before you.
+
+>hint
+ > About "The Paper Bag Princess"
+   How to Play
+   Hints
+   Walkthrough
+
+   About "The Paper Bag Princess"
+ > How to Play
+   Hints
+   Walkthrough
+   About "The Paper Bag Princess"
+ > How to Play
+   Hints
+   Walkthrough
+
+   About "The Paper Bag Princess"
+   How to Play
+ > Hints
+   Walkthrough
+   About "The Paper Bag Princess"
+   How to Play
+ > Hints
+   Walkthrough
+
+   About "The Paper Bag Princess"
+   How to Play
+   Hints
+ > Walkthrough
+   About "The Paper Bag Princess"
+   How to Play
+   Hints
+ > Walkthrough
+
+This is only one solution to the game, resulting in the "traditional" ending.
+
+wait
+wait
+wait
+wait
+wait
+yes
+press space
+search rubble
+take bag
+make dress
+north
+x trail
+take branch
+x tree
+plugh
+make torch
+open vial
+pour oil on torch
+south
+light torch
+north
+northeast
+go in any direction until you reach the cave
+knock on door
+again
+shout
+ask dragon about fire
+y
+y
+ask dragon about flight
+y
+in
+shout at roland
+
+
+
+Please press SPACE to continue.
+   About "The Paper Bag Princess"
+   How to Play
+   Hints
+ > Walkthrough
+   About "The Paper Bag Princess"
+   How to Play
+   Hints
+ > Walkthrough
+
+The Dragon's Cave
+This is where the dragon lives. Piles of treasure fill the room, reflecting light in every direction.
+
+Your betrothed, Roland, stands before you.
+
+>shout
+"Roland," you say, "your clothes are really pretty, and your hair is very neat. You look like a real prince, but you are also a real jerk."
+
+You turn around and walk out the door.
+
+
+
+    *** And Elizabeth lived happily ever after! ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+> ; I would like a 'for your amusement' section in any post comp release
+Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+> ;because you have some neat stuff in here
+Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+> ; also maybe a recap of FAQs e.g. does it matter if you say y/n
+Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+> ; also, hints!
+Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+> restart
+ > About "The Paper Bag Princess"
+   How to Play
+   Hints
+   Walkthrough
+
+The Dragon's Cave
+This is where the dragon lives. Piles of treasure fill the room, reflecting light in every direction.
+
+Your betrothed, Roland, stands before you.
+
+>credits
+ > About "The Paper Bag Princess"
+   How to Play
+   Hints
+   Walkthrough
+
+Princess Elizabeth is about to marry the love of her life when a dragon attacks the castle and kidnaps her betrothed.
+
+The Paper Bag Princess is loosely based upon the book of the same name by Robert Munsch. Permission to write the game was requested from and granted by Mister Munsch himself.
+
+The cover art of Elizabeth was graciously provided by Stacey, aka "iduck" on deviantART.
+
+Thank you so much to my beta testers: Brendan Desilets, Dan Shiovitz, Dan Kelly, David Sturgis, Doug Orleans, Emily Boegheim, Johnny Rivera, Kevin Jackson-Mead, Matthew Miller, Scott Snyder and Z Goddard.
+
+
+The author can be contacted at <genericgeekgirl@gmail.com>.
+
+
+
+
+Please press SPACE to continue.

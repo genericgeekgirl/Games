@@ -1,0 +1,884 @@
+Jacqueline says (to Floyd), "load sleepmask a18ifoundanewfriend"
+Floyd ]  Bedroom                                              1
+Floyd |
+Floyd |
+Floyd |
+Floyd |
+Floyd | I found a new friend underneath my pillow.
+Floyd |
+Floyd | Fingertips: I Found a New Friend
+Floyd | A heart-warming story of friendship by Adri
+Floyd | Release 1 / Serial number 120323 / Inform 7 build 6G60 (I6/v6.32 lib
+Floyd | 6/12N) SD
+Floyd |
+Floyd | Bedroom
+Floyd | You've had a long day. All you want to do is climb into bed. But why
+Floyd | is your pillow quivering like that?
+Floyd |
+Floyd | >
+Jacqueline says (to Floyd), "x pillow"
+Floyd ]  Bedroom                                              2
+Floyd |
+Floyd | > X PILLOW
+Floyd |
+Floyd | There seems to be something underneath your pillow.
+Floyd |
+Floyd | >
+Johnny says (to Floyd), "look under pillow"
+Floyd ]  Bedroom                                              2
+Floyd |
+Floyd | > LOOK UNDER PILLOW
+Floyd |
+Floyd | You pick up the pillow. Underneath it is a creature unlike anything
+Floyd | you've ever seen before, but it seems to be friendly. It smiles and
+Floyd | waves at you.
+Floyd |
+Floyd |
+Floyd |
+Floyd |     *** You made a new friend. ***
+Floyd |
+Floyd |
+Floyd |
+Floyd | Would you like to RESTART, see some suggestions for AMUSING things to
+Floyd | do, or QUIT?
+Floyd | >
+[clubfloyd] Binder asks, "that's good, right?"
+[clubfloyd] genericgeekgirl says, "Sure."
+[clubfloyd] inky says, "ha ha"
+[clubfloyd] inky says, "this is a game that does not mess around in interpreting its title"
+[clubfloyd] Jacqueline says, "heehee"
+inky says (to Floyd), "restart"
+Floyd ]  Bedroom                                              1
+Floyd |
+Floyd |
+Floyd |
+Floyd |
+Floyd | I found a new friend underneath my pillow.
+Floyd |
+Floyd | Fingertips: I Found a New Friend
+Floyd | A heart-warming story of friendship by Adri
+Floyd | Release 1 / Serial number 120323 / Inform 7 build 6G60 (I6/v6.32 lib
+Floyd | 6/12N) SD
+Floyd |
+Floyd | Bedroom
+Floyd | You've had a long day. All you want to do is climb into bed. But why
+Floyd | is your pillow quivering like that?
+Floyd |
+Floyd | >
+inky says (to Floyd), "sleep"
+Floyd ]  Bedroom                                              1
+Floyd |
+Floyd | > SLEEP
+Floyd |
+Floyd | You're too tired to deal with this right now. You curl up in bed and
+Floyd | fall fast asleep. You look under the pillow in the morning, but find
+Floyd | nothing.
+Floyd |
+Floyd |
+Floyd | *** You did not make a new friend. ***
+inky pushes the green 'space' button.
+Floyd ]  Bedroom                                              1
+Floyd | Bedroom
+Floyd | You've had a long day. All you want to do is climb into bed. But why
+Floyd | is your pillow quivering like that?
+Floyd |
+Floyd | >
+inky says (to Floyd), "pet pillow"
+Floyd ]  Bedroom                                              1
+Floyd |
+Floyd | > PET PILLOW
+Floyd |
+Floyd | You rub the pillow in a soothing manner. You hear a soft purring
+Floyd | sound, and a tiny creature crawls out from underneath the pillow. It's
+Floyd | unlike anything you've ever seen before, but it seems friendly enough.
+Floyd | You reach out and stroke its head.
+Floyd |
+Floyd |
+Floyd |
+Floyd |     *** You made a new friend. ***
+Floyd |
+Floyd |
+Floyd |
+Floyd | Would you like to RESTART, see some suggestions for AMUSING things to
+Floyd | do, or QUIT?
+Floyd | >
+[clubfloyd] Binder says, "That'll teach me to wait too long to see if anyone else is going to do what I wanted to do."
+inky says (to Floyd), "restart"
+Floyd ]  Bedroom                                              1
+Floyd |
+Floyd |
+Floyd |
+Floyd |
+Floyd | I found a new friend underneath my pillow.
+Floyd |
+Floyd | Fingertips: I Found a New Friend
+Floyd | A heart-warming story of friendship by Adri
+Floyd | Release 1 / Serial number 120323 / Inform 7 build 6G60 (I6/v6.32 lib
+Floyd | 6/12N) SD
+Floyd |
+Floyd | Bedroom
+Floyd | You've had a long day. All you want to do is climb into bed. But why
+Floyd | is your pillow quivering like that?
+Floyd |
+Floyd | >
+inky says (to Floyd), "sit on pillow"
+Floyd ]  Bedroom                                              1
+Floyd |
+Floyd | > SIT ON PILLOW
+Floyd |
+Floyd | You press down on the pillow. You hear a muffled scream, and the
+Floyd | pillow stops moving.
+Floyd |
+Floyd |
+Floyd | *** You did not make a new friend. ***
+[clubfloyd] inky says, "oops"
+[clubfloyd] djfletch says, "nooooo"
+[clubfloyd] genericgeekgirl says, "You monster."
+[clubfloyd] ASchultz says, "especially if I sort of plowed through the walkthrough and didn't try hard at the game."
+[clubfloyd] Jacqueline asks, "I am not supposed to be laughing at that, am I?"
+inky pushes the green 'space' button.
+Floyd ]  Bedroom                                              1
+Floyd | Bedroom
+Floyd | You've had a long day. All you want to do is climb into bed. But why
+Floyd | is your pillow quivering like that?
+Floyd |
+Floyd | >
+inky says (to Floyd), "hide"
+Floyd ]  Bedroom                                              1
+Floyd |
+Floyd | > HIDE
+Floyd |
+Floyd | That's not a verb I recognize.
+Floyd |
+Floyd | >
+[clubfloyd] Binder says, "but at least you have the pressed potential friend to put in your scrapbook"
+inky says (to Floyd), "go under bed"
+Floyd ]  Bedroom                                              2
+Floyd |
+Floyd | > GO UNDER BED
+Floyd |
+Floyd | You can't walk under the bed.
+Floyd |
+Floyd | >
+inky says (to Floyd), "crawl under bed"
+Floyd ]  Bedroom                                              2
+Floyd |
+Floyd | > CRAWL UNDER BED
+Floyd |
+Floyd | You crawl underneath the bed. The dust bunnies immediately swarm over
+Floyd | you, and you're never heard from again.
+Floyd |
+Floyd |
+Floyd | *** You did not make a new friend. ***
+[clubfloyd] inky says, "ha ha"
+[clubfloyd] Binder says, "aaaaaaa"
+[clubfloyd] Binder  sees the shadow foretold
+inky pushes the green 'space' button.
+Floyd ]  Bedroom                                              1
+Floyd | Bedroom
+Floyd | You've had a long day. All you want to do is climb into bed. But why
+Floyd | is your pillow quivering like that?
+Floyd |
+Floyd | >
+inky says (to Floyd), "lick outlet"
+Floyd ]  Bedroom                                              1
+Floyd |
+Floyd | > LICK OUTLET
+Floyd |
+Floyd | That's not a verb I recognize.
+Floyd |
+Floyd | >
+inky says (to Floyd), "touch outlet"
+Floyd ]  Bedroom                                              2
+Floyd |
+Floyd | > TOUCH OUTLET
+Floyd |
+Floyd | You pat the outlet. You feel silly.
+Floyd |
+Floyd | >
+Binder says (to Floyd), "flee country"
+Floyd ]  Bedroom                                              2
+Floyd |
+Floyd | > FLEE COUNTRY
+Floyd |
+Floyd | That's not a verb I recognize.
+Floyd |
+Floyd | >
+Binder says (to Floyd), "xyzzy"
+Floyd ]  Bedroom                                              3
+Floyd |
+Floyd | > XYZZY
+Floyd |
+Floyd | A tired voice says, "Zzzzy".
+Floyd |
+Floyd | >
+[clubfloyd] inky says, "ha ha"
+[clubfloyd] Binder says, "heh"
+[clubfloyd] ASchultz says, "Nice one."
+djfletch says (to Floyd), "i"
+Floyd ]  Bedroom                                              4
+Floyd |
+Floyd | > I
+Floyd |
+Floyd | Your pajamas don't have any pockets.
+Floyd |
+Floyd | >
+inky says (to Floyd), "remove pajamas"
+Floyd ]  Bedroom                                              5
+Floyd |
+Floyd | > REMOVE PAJAMAS
+Floyd |
+Floyd | But it's time for bed.
+Floyd |
+Floyd | >
+djfletch says (to Floyd), "x me"
+Floyd ]  Bedroom                                              6
+Floyd |
+Floyd | > X ME
+Floyd |
+Floyd | You are tired and ready for bed.
+Floyd |
+Floyd | >
+Binder says (to Floyd), "burn room"
+Floyd ]  Bedroom                                              6
+Floyd |
+Floyd | > BURN ROOM
+Floyd |
+Floyd | You can't see any such thing.
+Floyd |
+Floyd | >
+Binder says (to Floyd), "me"
+Floyd ]  Bedroom                                              6
+Floyd |
+Floyd | > ME
+Floyd |
+Floyd | That's not a verb I recognize.
+Floyd |
+Floyd | >
+inky says (to Floyd), "smell pillow"
+Floyd ]  Bedroom                                              7
+Floyd |
+Floyd | > SMELL PILLOW
+Floyd |
+Floyd | You smell nothing unexpected.
+Floyd |
+Floyd | >
+inky says (to Floyd), "listen to pillow"
+Floyd ]  Bedroom                                              8
+Floyd |
+Floyd | > LISTEN TO PILLOW
+Floyd |
+Floyd | There's some rustling sounds coming from under your pillow.
+Floyd |
+Floyd | >
+Binder says (to Floyd), "type pillow"
+Floyd ]  Bedroom                                              8
+Floyd |
+Floyd | > TYPE PILLOW
+Floyd |
+Floyd | That's not a verb I recognize.
+Floyd |
+Floyd | >
+Jacqueline says (to Floyd), "take pillow"
+Floyd ]  Bedroom                                              8
+Floyd |
+Floyd | > TAKE PILLOW
+Floyd |
+Floyd | You pick up the pillow. Underneath it is a creature unlike anything
+Floyd | you've ever seen before, but it seems to be friendly. It smiles and
+Floyd | waves at you.
+Floyd |
+Floyd |
+Floyd |
+Floyd |     *** You made a new friend. ***
+Floyd |
+Floyd |
+Floyd |
+Floyd | Would you like to RESTART, see some suggestions for AMUSING things to
+Floyd | do, or QUIT?
+Floyd | >
+inky says (to Floyd), "restart"
+Floyd ]  Bedroom                                              1
+Floyd |
+Floyd |
+Floyd |
+Floyd |
+Floyd | I found a new friend underneath my pillow.
+Floyd |
+Floyd | Fingertips: I Found a New Friend
+Floyd | A heart-warming story of friendship by Adri
+Floyd | Release 1 / Serial number 120323 / Inform 7 build 6G60 (I6/v6.32 lib
+Floyd | 6/12N) SD
+Floyd |
+Floyd | Bedroom
+Floyd | You've had a long day. All you want to do is climb into bed. But why
+Floyd | is your pillow quivering like that?
+Floyd |
+Floyd | >
+inky says (to Floyd), "count me"
+Floyd ]  Bedroom                                              2
+Floyd |
+Floyd | > COUNT ME
+Floyd |
+Floyd | You are a unique and special snowflake.
+Floyd |
+Floyd | >
+[clubfloyd] inky says, "ha ha"
+inky says (to Floyd), "count pillow"
+Floyd ]  Bedroom                                              3
+Floyd |
+Floyd | > COUNT PILLOW
+Floyd |
+Floyd | There's just the one.
+Floyd |
+Floyd | >
+inky says (to Floyd), "count creature"
+Floyd ]  Bedroom                                              3
+Floyd |
+Floyd | > COUNT CREATURE
+Floyd |
+Floyd | You can't see any such thing.
+Floyd |
+Floyd | >
+inky says (to Floyd), "count bed"
+Floyd ]  Bedroom                                              4
+Floyd |
+Floyd | > COUNT BED
+Floyd |
+Floyd | There's just the one.
+Floyd |
+Floyd | >
+Binder says (to Floyd), "count out the time"
+Floyd ]  Bedroom                                              4
+Floyd |
+Floyd | > COUNT OUT THE TIME
+Floyd |
+Floyd | I only understood you as far as wanting to count outside.
+Floyd |
+Floyd | >
+Binder says (to Floyd), "count chocula"
+Floyd ]  Bedroom                                              4
+Floyd |
+Floyd | > COUNT CHOCULA
+Floyd |
+Floyd | You can't see any such thing.
+Floyd |
+Floyd | >
+[clubfloyd] inky says, "hooray"
+DavidW arrives, ready to play with the toys.
+[clubfloyd] inky asks, "what else are we missing?"
+inky says (to Floyd), "look under bed"
+Floyd ]  Bedroom                                              5
+Floyd |
+Floyd | > LOOK UNDER BED
+Floyd |
+Floyd | A family of dust bunnies peeks out at you.
+Floyd |
+Floyd | >
+inky says (to Floyd), "x bunnies"
+Floyd ]  Bedroom                                              6
+Floyd |
+Floyd | > X BUNNIES
+Floyd |
+Floyd | A particularly cheeky bunny winks at you. You wonder momentarily
+Floyd | whether this violates the "no pets" clause in your lease.
+Floyd |
+Floyd | >
+inky says (to Floyd), "get bunnies"
+Floyd ]  Bedroom                                              7
+Floyd |
+Floyd | > GET BUNNIES
+Floyd |
+Floyd | You can't see any such thing.
+Floyd |
+Floyd | >
+inky says (to Floyd), "eat pillow"
+Floyd ]  Bedroom                                              8
+Floyd |
+Floyd | > EAT PILLOW
+Floyd |
+Floyd | You nibble on your pillow. It tastes like marshmallow.
+Floyd |
+Floyd | >
+Binder says (to Floyd), "burn bunnies"
+Floyd ]  Bedroom                                              9
+Floyd |
+Floyd | > BURN BUNNIES
+Floyd |
+Floyd | You can't see any such thing.
+Floyd |
+Floyd | >
+[clubfloyd] DavidW says, "(sorry! fell asleep again)"
+[clubfloyd] inky says, "no worries -- you only missed one move of each game"
+[clubfloyd] Binder says (to DavidW), "I had that happen to me last night, it was awful"
+[clubfloyd] Binder  clutches his coffee tightly
+inky says (to Floyd), "put pillow under bed"
+Floyd ]  Bedroom                                              9
+Floyd |
+Floyd | > PUT PILLOW UNDER BED
+Floyd |
+Floyd | I didn't understand that sentence.
+Floyd |
+Floyd | >
+djfletch says (to Floyd), "feed bunnies to pillow"
+Floyd ]  Bedroom                                              10
+Floyd |
+Floyd | > FEED BUNNIES TO PILLOW
+Floyd |
+Floyd | You can't see any such thing.
+Floyd |
+Floyd | >
+Binder says (to Floyd), "talk to dust"
+Floyd ]  Bedroom                                              11
+Floyd |
+Floyd | > TALK TO DUST
+Floyd |
+Floyd | You can't see any such thing.
+Floyd |
+Floyd | >
+inky says (to Floyd), "pillow fight"
+Floyd ]  Bedroom                                              11
+Floyd |
+Floyd | > PILLOW FIGHT
+Floyd |
+Floyd | That's not a verb I recognize.
+Floyd |
+Floyd | >
+inky says (to Floyd), "fight pillow"
+Floyd ]  Bedroom                                              11
+Floyd |
+Floyd | > FIGHT PILLOW
+Floyd |
+Floyd | You press down on the pillow. You hear a muffled scream, and the
+Floyd | pillow stops moving.
+Floyd |
+Floyd |
+Floyd | *** You did not make a new friend. ***
+[clubfloyd] inky says, "oops"
+inky pushes the green 'space' button.
+Floyd ]  Bedroom                                              1
+Floyd | Bedroom
+Floyd | You've had a long day. All you want to do is climb into bed. But why
+Floyd | is your pillow quivering like that?
+[clubfloyd] Binder says, "oops"
+Floyd |
+Floyd | >
+[clubfloyd] DavidW says, "I *was* awake, from around 7 to 9 am."
+djfletch says (to Floyd), "quiver"
+Floyd ]  Bedroom                                              1
+Floyd |
+Floyd | > QUIVER
+Floyd |
+Floyd | That's not a verb I recognize.
+Floyd |
+Floyd | >
+[clubfloyd] Binder says, "apparently our new friendship is pretty fragile"
+inky says (to Floyd), "count sheep"
+Floyd ]  Bedroom                                              2
+Floyd |
+Floyd | > COUNT SHEEP
+Floyd |
+Floyd | You close your eyes and envision a fluffy white sheep jumping over a
+Floyd | fence. One.
+Floyd |
+Floyd | >
+inky says (to Floyd), "count sheep"
+Floyd ]  Bedroom                                              3
+Floyd |
+Floyd | > COUNT SHEEP
+Floyd |
+Floyd | Another sheep jumps over the fence. Two.
+Floyd |
+Floyd | >
+inky says (to Floyd), "count sheep"
+Floyd ]  Bedroom                                              4
+Floyd |
+Floyd | > COUNT SHEEP
+Floyd |
+Floyd | This sheep seems to struggle a bit, but finally makes it over the
+Floyd | fence. Three.
+Floyd |
+Floyd | >
+[clubfloyd] Binder says, "HA"
+inky says (to Floyd), "count sheep"
+Floyd ]  Bedroom                                              5
+Floyd |
+Floyd | > COUNT SHEEP
+Floyd |
+Floyd | Another sheep jumps over the fence. Four.
+Floyd |
+Floyd | >
+inky says (to Floyd), "count sheep"
+Floyd ]  Bedroom                                              6
+Floyd |
+Floyd | > COUNT SHEEP
+Floyd |
+Floyd | The next sheep chooses to walk around the fence. Five.
+Floyd |
+Floyd | >
+inky says (to Floyd), "count sheep"
+Floyd ]  Bedroom                                              7
+Floyd |
+Floyd | > COUNT SHEEP
+Floyd |
+Floyd | Another sheep jumps over the fence. Six.
+Floyd |
+Floyd | >
+inky says (to Floyd), "count sheep"
+Floyd ]  Bedroom                                              7
+Floyd |
+Floyd | > COUNT SHEEP
+Floyd |
+Floyd | The next thing you know, the sun is shining. You must have fallen
+Floyd | asleep. You look under your pillow, but find nothing there.
+Floyd |
+Floyd |
+Floyd | *** You did not make a new friend. ***
+[clubfloyd] DavidW asks, "btw, did you guys just kill the tooth fairy under the pillow?"
+[clubfloyd] Binder says, "man i hope not, I still have teeth to lose"
+[clubfloyd] Jacqueline says, "I am envisioning it as a tiny ball of fur."
+[clubfloyd] Jacqueline says, "Kinda like a white tribble."
+inky says (to Floyd), "count dust bunnies"
+Floyd ]  Bedroom                                              1
+Floyd | Bedroom
+Floyd | You've had a long day. All you want to do is climb into bed. But why
+Floyd | is your pillow quivering like that?
+Floyd |
+Floyd | >
+[clubfloyd] Binder says, "that fuzzy thing from user friendly"
+inky says (to Floyd), "count dust bunnies"
+Floyd ]  Bedroom                                              2
+Floyd |
+Floyd | > COUNT DUST BUNNIES
+Floyd |
+Floyd | There are 69,105 dust bunnies here.
+Floyd |
+Floyd | >
+inky says (to Floyd), "x sheep"
+Floyd ]  Bedroom                                              3
+Floyd |
+Floyd | > X SHEEP
+Floyd |
+Floyd | That only exists in your head.
+Floyd |
+Floyd | >
+[clubfloyd] inky says, "hmm yeah"
+Binder says (to Floyd), "x head"
+Floyd ]  Bedroom                                              3
+Floyd |
+Floyd | > X HEAD
+Floyd |
+Floyd | You can't see any such thing.
+Floyd |
+Floyd | >
+[clubfloyd] DavidW says, "hooray 69,105"
+Binder says (to Floyd), "count head"
+Floyd ]  Bedroom                                              3
+Floyd |
+Floyd | > COUNT HEAD
+Floyd |
+Floyd | You can't see any such thing.
+Floyd |
+Floyd | >
+Binder says (to Floyd), "count dust bunnies"
+Floyd ]  Bedroom                                              4
+Floyd |
+Floyd | > COUNT DUST BUNNIES
+Floyd |
+Floyd | There are 69,105 dust bunnies here.
+Floyd |
+Floyd | >
+genericgeekgirl says (to Floyd), "x sheep"
+Floyd ]  Bedroom                                              5
+Floyd |
+Floyd | > X SHEEP
+Floyd |
+Floyd | Didn't I already tell you that only exists in your head?
+Floyd |
+Floyd | >
+[clubfloyd] Binder says, "our census is consistent"
+[clubfloyd] djfletch says, "I want to play the next move, where we can feed the creature after midnight"
+inky says (to Floyd), "no"
+Floyd ]  Bedroom                                              6
+Floyd |
+Floyd | > NO
+Floyd |
+Floyd | That was a rhetorical question.
+Floyd |
+Floyd | >
+inky says (to Floyd), "x sheep"
+Floyd ]  Bedroom                                              7
+Floyd |
+Floyd | > X SHEEP
+Floyd |
+Floyd | Stop it!
+Floyd |
+Floyd | >
+inky says (to Floyd), "x sheep"
+Floyd ]  Bedroom                                              8
+Floyd |
+Floyd | > X SHEEP
+Floyd |
+Floyd | Okay, okay, if I give you a sheep, will you get back to making a
+Floyd | friend?
+Floyd |
+Floyd | >
+inky says (to Floyd), "yes"
+Floyd ]  Bedroom                                              9
+Floyd |
+Floyd | > YES
+Floyd |
+Floyd | That was a rhetorical question.
+Floyd |
+Floyd | >
+inky says (to Floyd), "x sheep"
+Floyd ]  Bedroom                                              10
+Floyd |
+Floyd | > X SHEEP
+Floyd |
+Floyd | All right, you win.
+Floyd |                /\
+Floyd |     @@@@@@@@@@@  O  \
+Floyd |  @@@@@@@@@@@@@@@____/
+Floyd | @@@@@@@@@@@@@@@@
+Floyd | @ @@@@@@@@@@@@
+Floyd |    ||      ||
+Floyd |    ~~      ~~
+Floyd | >
+[clubfloyd] djfletch says, "yay"
+[clubfloyd] inky says, "hooray"
+[clubfloyd] Binder says, "I like the way it builds on CF-like behaviors of x, x, x, x again"
+[clubfloyd] DavidW says, "ha ha"
+[clubfloyd] Jacqueline says, "YAY"
+[clubfloyd] inky says, "that's really pretty good"
+DavidW says (to Floyd), "baa"
+Floyd ]  Bedroom                                              10
+Floyd |
+Floyd | > BAA
+Floyd |
+Floyd | That's not a verb I recognize.
+Floyd |
+Floyd | >
+Binder says (to Floyd), "count sheep"
+Floyd ]  Bedroom                                              11
+Floyd |
+Floyd | > COUNT SHEEP
+Floyd |
+Floyd | You close your eyes and envision a fluffy white sheep jumping over a
+Floyd | fence. One.
+Floyd |
+Floyd | >
+Binder says (to Floyd), "x sheep"
+Floyd ]  Bedroom                                              12
+Floyd |
+Floyd | > X SHEEP
+Floyd |
+Floyd | Sorry, that's all you get.
+Floyd |
+Floyd | >
+[clubfloyd] Binder says, "ha"
+[clubfloyd] genericgeekgirl says, "I was pretty liberal with "one turn", since you *can* win in one move, but most things don't change the state."
+inky says (to Floyd), "z"
+Floyd ]  Bedroom                                              13
+Floyd |
+Floyd | > Z
+Floyd |
+Floyd | You pause to assess the situation. You're tired, and there seems to be
+Floyd | something underneath your pillow.
+Floyd |
+Floyd | >
+inky says (to Floyd), "z"
+Floyd ]  Bedroom                                              14
+Floyd |
+Floyd | > Z
+Floyd |
+Floyd | You pause to assess the situation. You're very tired, and there seems
+Floyd | to be something underneath your pillow.
+Floyd |
+Floyd | >
+inky says (to Floyd), "z"
+Floyd ]  Bedroom                                              15
+Floyd |
+Floyd | > Z
+Floyd |
+Floyd | You pause to assess the situation. You're exhausted, and there seems
+Floyd | to be something underneath your pillow.
+Floyd |
+Floyd | >
+inky says (to Floyd), "z"
+Floyd ]  Bedroom                                              15
+Floyd |
+Floyd | > Z
+Floyd |
+Floyd | You spend so much time thinking about what to do that whatever was
+Floyd | under your pillow decides to find a new friend elsewhere. You
+Floyd | eventually look under the pillow, but find nothing.
+Floyd |
+Floyd |
+Floyd | *** You did not make a new friend. ***
+[clubfloyd] inky says, "aw man"
+[clubfloyd] Binder says, "impatient friend"
+inky pushes the green 'space' button.
+Floyd ]  Bedroom                                              1
+Floyd | Bedroom
+Floyd | You've had a long day. All you want to do is climb into bed. But why
+Floyd | is your pillow quivering like that?
+Floyd |
+Floyd | >
+[clubfloyd] Jacqueline says, "aw"
+inky says (to Floyd), "open pillow"
+Floyd ]  Bedroom                                              2
+Floyd |
+Floyd | > OPEN PILLOW
+Floyd |
+Floyd | He's not something you can open.
+Floyd |
+Floyd | >
+inky says (to Floyd), "move bed"
+Floyd ]  Bedroom                                              3
+Floyd |
+Floyd | > MOVE BED
+Floyd |
+Floyd | You can't move the bed.
+Floyd |
+Floyd | >
+[clubfloyd] genericgeekgirl says, "Eeek. Something is in the amusing list twice :/"
+inky says (to Floyd), "move pillow"
+Floyd ]  Bedroom                                              3
+Floyd |
+Floyd | > MOVE PILLOW
+Floyd |
+Floyd | You pick up the pillow. Underneath it is a creature unlike anything
+Floyd | you've ever seen before, but it seems to be friendly. It smiles and
+Floyd | waves at you.
+Floyd |
+Floyd |
+Floyd |
+Floyd |     *** You made a new friend. ***
+Floyd |
+Floyd |
+Floyd |
+Floyd | Would you like to RESTART, see some suggestions for AMUSING things to
+Floyd | do, or QUIT?
+Floyd | >
+inky says (to Floyd), "amusing"
+Floyd ]  Bedroom                                              3
+Floyd |
+Floyd | > AMUSING
+Floyd |
+Floyd |
+Floyd | Have you tried...
+Floyd | - making a new friend?
+Floyd | - casting xyzzy?
+Floyd | - sleeping?
+Floyd | - counting sheep? Multiple times?
+Floyd | - looking at the sheep? Multiple times?
+Floyd | - looking at your pajamas?
+Floyd | - jumping on the bed?
+Floyd | - making the bed?
+Floyd | - looking under the bed?
+Floyd | - looking at the dust bunnies?
+Floyd | - counting the dust bunnies?
+Floyd | - hugging or petting the dust bunnies?
+Floyd | - cleaning under the bed?
+Floyd | - counting yourself?
+Floyd | - eating the pillow?
+Floyd | - attacking the pillow?
+Floyd | - throwing the pillow?
+Floyd | - singing and dancing?
+Floyd | - crying and screaming?
+Floyd | - crawling underneath the bed?
+Floyd | - jumping on the bed?
+Floyd | - throwing yourself?
+Floyd | - running away?
+Floyd | - hugging or petting the pillow?
+Floyd | - finding all fifteen endings?
+Floyd |
+Floyd | Would you like to RESTART, see some suggestions for AMUSING things to
+Floyd | do, or QUIT?
+Floyd | >
+[clubfloyd] inky says, "I guess we got most of these"
+inky says (to Floyd), "restart"
+Floyd ]  Bedroom                                              1
+Floyd |
+Floyd |
+Floyd |
+Floyd |
+Floyd | I found a new friend underneath my pillow.
+Floyd |
+Floyd | Fingertips: I Found a New Friend
+Floyd | A heart-warming story of friendship by Adri
+Floyd | Release 1 / Serial number 120323 / Inform 7 build 6G60 (I6/v6.32 lib
+Floyd | 6/12N) SD
+Floyd |
+Floyd | Bedroom
+Floyd | You've had a long day. All you want to do is climb into bed. But why
+Floyd | is your pillow quivering like that?
+Floyd |
+Floyd | >
+inky says (to Floyd), "run away"
+Floyd ]  Bedroom                                              1
+Floyd |
+Floyd | > RUN AWAY
+Floyd |
+Floyd | You run away screaming, never to return.
+Floyd |
+Floyd |
+Floyd | *** You did not make a new friend. ***
+[clubfloyd] genericgeekgirl asks, "Sure. Let me show one more, and then we can move on?"
+[clubfloyd] DavidW says, "15 endings? wow."
+[clubfloyd] genericgeekgirl says, "Yeah, I wasn't keeping track of how many they got."
+genericgeekgirl pushes the green 'space' button.
+Floyd ]  Bedroom                                              1
+Floyd | Bedroom
+Floyd | You've had a long day. All you want to do is climb into bed. But why
+Floyd | is your pillow quivering like that?
+Floyd |
+Floyd | >
+genericgeekgirl says (to Floyd), "vacuum under bed"
+Floyd ]  Bedroom                                              1
+Floyd |
+Floyd | > VACUUM UNDER BED
+Floyd |
+Floyd | That's not a verb I recognize.
+Floyd |
+Floyd | >
+genericgeekgirl says (to Floyd), "vacuum"
+Floyd ]  Bedroom                                              1
+Floyd |
+Floyd | > VACUUM
+Floyd |
+Floyd | That's not a verb I recognize.
+Floyd |
+Floyd | >
+[clubfloyd] genericgeekgirl says, "What."
+genericgeekgirl says (to Floyd), "clean under bed"
+Floyd ]  Bedroom                                              1
+Floyd |
+Floyd | > CLEAN UNDER BED
+Floyd |
+Floyd | You feel a pang of regret as you vacuum up the dust bunnies. You
+Floyd | decide to go drown your sorrows in a pint of ice cream.
+Floyd |
+Floyd |
+Floyd | *** You did not make a new friend. ***
+[clubfloyd] inky says, "ha ha"
+[clubfloyd] Jacqueline says, "aw"
+[clubfloyd] Jacqueline says, "Also, mmm.... ice cream"
+Jacqueline says (to Floyd), "qut"
+Floyd ]  Bedroom                                              1
+Floyd | Bedroom
+Floyd | You've had a long day. All you want to do is climb into bed. But why
+Floyd | is your pillow quivering like that?
+Floyd |
+Floyd | >
+Jacqueline says (to Floyd), "quit"
+Floyd ]  Bedroom                                              1
+Floyd |
+Floyd | > QUIT
+Floyd |
+Floyd | Are you sure you want to quit?
+Jacqueline says (to Floyd), "y"
+Floyd | debugcheapnitfol quit with exit status: 0
+Floyd asks, "That game over already?  It was just getting good.  Wanna play another?"
+

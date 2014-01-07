@@ -1,0 +1,37 @@
+! Blurb file created by Inform build 6G60
+
+status "/usr/local/share/inform7/Inform7/Extensions/Reserved/CblorbModel.html" "/home/adri/Games/Interactive Fiction/Adri/please pass the milk please/please pass the milk please.inform/Build/StatusCblorb.html"
+
+
+! Identification
+
+project folder "/home/adri/Games/Interactive Fiction/Adri/please pass the milk please/please pass the milk please.inform"
+release to "/home/adri/Games/Interactive Fiction/Adri/please pass the milk please/please pass the milk please Materials/Release"
+
+! Blorb instructions
+
+storyfile leafname "Fingertips- Please Pass the Mil.zblorb"
+storyfile "/home/adri/Games/Interactive Fiction/Adri/please pass the milk please/please pass the milk please.inform/Build/output.z8" include
+ifiction "/home/adri/Games/Interactive Fiction/Adri/please pass the milk please/please pass the milk please.inform/Metadata.iFiction" include
+cover "/usr/local/share/inform7/Inform7/Extensions/Reserved/DefaultCover.jpg"
+picture 1 "/usr/local/share/inform7/Inform7/Extensions/Reserved/DefaultCover.jpg"
+
+! Placeholder variables
+
+placeholder [IFID] = "C1A4017E-569F-11E1-A621-889FFA067E51"
+placeholder [RELEASE] = "3"
+placeholder [YEAR] = "2012"
+placeholder [TITLE] = "Fingertips: Please Pass the Milk Please"
+placeholder [AUTHOR] = "Adri"
+placeholder [BLURB] = "A short piece of interactive fiction inspired by They Might Be Giants' 'Apollo 18' album"
+
+! Other material to release
+
+status alternative ||Using 'Release along with cover art', to provide something more distinctive than the default artwork above&nbsp;<a href=inform:/doc391.html><img border=0 src=inform:/help.png></a>||
+status alternative ||Using 'Release along with a website'&nbsp;<a href=inform:/doc393.html><img border=0 src=inform:/help.png></a>||
+status alternative ||Using 'Release along with an interpreter', for in-browser play on your website&nbsp;<a href=inform:/doc394.html><img border=0 src=inform:/help.png></a>||
+status alternative ||Using 'Release along with the "Such-and-Such" file called "whatever.pdf"', perhaps to add a manual, or a welcoming note&nbsp;<a href=inform:/doc389.html><img border=0 src=inform:/help.png></a>||
+status alternative ||Using 'Release along with the source text'&nbsp;<a href=inform:/doc399.html><img border=0 src=inform:/help.png></a>||
+status alternative ||Using 'Release along with a solution'&nbsp;<a href=inform:/doc398.html><img border=0 src=inform:/help.png></a>||
+status alternative ||Using 'Release along with the library card'&nbsp;<a href=inform:/doc399.html><img border=0 src=inform:/help.png></a>||
+status alternative ||Using 'Release along with the introductory booklet'&nbsp;<a href=inform:/doc392.html><img border=0 src=inform:/help.png></a>||

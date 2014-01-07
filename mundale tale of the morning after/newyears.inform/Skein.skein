@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Skein rootNode="node-0xe9f9b0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+  <generator>GNOME Inform 7</generator>
+  <activeNode nodeId="node-0xe9f9b0"/>
+  <item nodeId="node-0xe9f9b0">
+    <command xml:space="preserve">- start -</command>
+    <result xml:space="preserve">
+
+
+
+Oof. Your head. You remember very little about last night, but apparently you had an extremely good time at the party.
+
+Judging from how dark the room is, you&apos;re guessing it&apos;s fairly late in the afternoon. But all you want to do is take care of your hangover and go home and hide from the world for the rest of the day.
+
+The Mundane Tale of the Morning After
+A tiny anti-adventure by Adri
+Release 1 / Serial number 140106 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
+
+Below the Desk
+This is where you fell asleep after the party, because you were too drunk to stumble home.
+
+The rest of the room is southeast.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+</Skein>

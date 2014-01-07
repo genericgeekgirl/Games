@@ -1,0 +1,462 @@
+
+
+
+
+This is the day you've always dreamed of. You are finally marrying the love of your life, Prince Roland.
+
+
+Castle Garden
+You are standing in the garden behind your family's castle. On this lovely fall evening, it is doing double duty as a wedding chapel.
+
+Your betrothed, Roland, stands before you.
+
+You can also see Father Alfred here.
+
+>look
+Castle Garden
+You are standing in the garden behind your family's castle. On this lovely fall evening, it is doing double duty as a wedding chapel.
+
+Your betrothed, Roland, stands before you.
+
+You can also see Father Alfred here.
+
+Father Alfred begins the ceremony, "We are gathered here today to witness the joining of two hearts." Roland smiles shyly at you.
+
+>kill roland
+You would never attack Roland! Except possibly with kisses.
+
+"If anyone has a reason why these two should not be wed, speak now or forever hold your peace." You hold your breath for a second, wondering whether anyone will speak up. Fortunately, nobody does and you relax.
+
+>kiss alfred
+Keep your mind on the game.
+
+"Who gives this woman--" You glare icily at the minister. You are nobody's property. "Ahem. Moving on," says the minister, visibly flustered. Roland looks at you questioningly, but says nothing.
+
+>ok
+That's not a verb I recognize.
+
+>what
+I didn't understand that sentence.
+
+>hint
+ > About "The Paper Bag Princess"
+   How to Play
+   Walkthrough
+N
+
+   About "The Paper Bag Princess"
+ > How to Play
+   Walkthrough
+   About "The Paper Bag Princess"
+ > How to Play
+   Walkthrough
+N
+
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+N
+
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+P
+
+   About "The Paper Bag Princess"
+ > How to Play
+   Walkthrough
+   About "The Paper Bag Princess"
+ > How to Play
+   Walkthrough
+<enter>
+
+ > About Interactive Fiction
+   What to do with >
+   Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+N
+
+   About Interactive Fiction
+ > What to do with >
+   Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+   About Interactive Fiction
+ > What to do with >
+   Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+<enter>
+
+The > sign is where the game says, "Okay, what do you want to do now?"  You may respond by typing an instruction -- usually an imperative verb, possibly followed by prepositions and objects.  So, for instance, LOOK, LOOK AT FISH, TAKE FISH.
+
+
+
+Please press SPACE to continue.
+<space>
+   About Interactive Fiction
+ > What to do with >
+   Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+   About Interactive Fiction
+ > What to do with >
+   Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+N
+
+   About Interactive Fiction
+   What to do with >
+ > Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+   About Interactive Fiction
+   What to do with >
+ > Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+<space>
+
+The first thing you want to do when starting a game is acquaint yourself with your surroundings and get a sense of your goal. To this end, you should read the introductory text carefully. Sometimes it contains clues. You will also want to look at the room you are in. Notice where the exits from the room are, and what objects are described here. If any of these seem interesting, you may want to EXAMINE them. 
+
+You might also want to examine yourself (EXAMINE ME) to see whether the author has left you any clues about your character. TAKE INVENTORY will tell you what you're carrying, as well.
+
+Once you've gotten your bearings, you may want to explore. Move from room to room, and check out every location available.
+
+
+
+Please press SPACE to continue.
+<space>
+   About Interactive Fiction
+   What to do with >
+ > Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+   About Interactive Fiction
+   What to do with >
+ > Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+N
+
+   About Interactive Fiction
+   What to do with >
+   Getting Started
+ > Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+   About Interactive Fiction
+   What to do with >
+   Getting Started
+ > Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+<space>
+
+At any given time, you are in a specific location, or room. When you go into a room, the game will print a description of what you can see there. This description will contain two vital kinds of information: things in the room you can interact with or take, and a list of exits, or ways out. If you want to see the description again, you may just type LOOK. 
+
+When you want to leave a location and go to another one, you may communicate this to the game using compass directions: eg, GO NORTH. For simplicity's sake, you are allowed to omit the word GO, and to abbreviate the compass directions. So you may use NORTH, SOUTH, EAST, WEST, NORTHEAST, SOUTHEAST, NORTHWEST, SOUTHWEST, UP, and DOWN, or in short form N, S, E, W, NE, SE, NW, SW, U, and D.
+
+In some locations, IN and OUT will also be useful.
+
+
+
+Please press SPACE to continue.
+<space>
+   About Interactive Fiction
+   What to do with >
+   Getting Started
+ > Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+   About Interactive Fiction
+   What to do with >
+   Getting Started
+ > Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+N
+
+   About Interactive Fiction
+   What to do with >
+   Getting Started
+   Rooms and Travel
+ > Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+   About Interactive Fiction
+   What to do with >
+   Getting Started
+   Rooms and Travel
+ > Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+<space>
+
+Throughout the game there will be assorted objects that you can do things with. Most importantly, you may TAKE or GET items, and (when you are tired of them) DROP them again. INVENTORY (abbreviated I) will list the items you are currently holding. 
+
+There are usually assorted things you may do with these objects. OPEN, CLOSE, WEAR, EAT, LOCK, and UNLOCK are especially common.
+
+Occasionally, you will find that the game does not recognize the name of an object even though it has been described as being in the room with you. If this is the case, the object is just there for scenery, and you may assume that you do not need to interact with it.
+
+
+
+Please press SPACE to continue.
+<space>
+   About Interactive Fiction
+   What to do with >
+   Getting Started
+   Rooms and Travel
+ > Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+   About Interactive Fiction
+   What to do with >
+   Getting Started
+   Rooms and Travel
+ > Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+N
+
+   About Interactive Fiction
+   What to do with >
+   Getting Started
+   Rooms and Travel
+   Objects
+ > Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+   About Interactive Fiction
+   What to do with >
+   Getting Started
+   Rooms and Travel
+   Objects
+ > Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+N
+
+   About Interactive Fiction
+   What to do with >
+   Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+ > How the World is Assembled
+   If You Get Stuck
+   About Interactive Fiction
+   What to do with >
+   Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+ > How the World is Assembled
+   If You Get Stuck
+N
+
+   About Interactive Fiction
+   What to do with >
+   Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+ > If You Get Stuck
+   About Interactive Fiction
+   What to do with >
+   Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+ > If You Get Stuck
+<space>
+
+ > Explore
+   Read carefully
+   Be creative
+   Cooperate
+<space>
+
+Examine every object and look at everything in your inventory. Open all the doors you can find, and go through them. Look inside all closed containers. Make sure you've exhausted all the options in your environment. 
+
+Try out all your senses. If the game mentions texture, odor, or sound, try touching, smelling, listening to, or tasting objects.
+
+Be thorough. If you still can't figure out what to do, try opening windows, looking under beds, etc. Sometimes objects are well-hidden.
+
+
+
+Please press SPACE to continue.
+<space>
+ > Explore
+   Read carefully
+   Be creative
+   Cooperate
+ > Explore
+   Read carefully
+   Be creative
+   Cooperate
+N
+
+   Explore
+ > Read carefully
+   Be creative
+   Cooperate
+   Explore
+ > Read carefully
+   Be creative
+   Cooperate
+<space>
+
+Reread. Look back at things you've already looked at. Sometimes this will trigger an idea you hadn't thought of. 
+
+Take hints from the prose of the game. Things that are described in great detail are probably more important than things that are given one-liners. Play with those objects. If a machine is described as having component parts, look at the parts, and try manipulating them.  Likewise, notice the verbs that the game itself uses. Try using those yourself. Games often include special verbs -- the names of magic spells, or other special commands. There's no harm in attempting something if the game mentions it.
+
+Check the whole screen. Are there extra windows besides the main window?  What's going on in those?  Check out the status bar, if there is one -- it may contain the name of the room you're in, your score, the time of day, your character's state of health, or some other important information.  If there's something up there, it's worth paying attention to that, too.  When and where does it change?  Why is it significant?  If the bar is describing your character's health, you can bet there is probably a point at which that will be important.
+
+
+
+Please press SPACE to continue.
+<space>
+   Explore
+ > Read carefully
+   Be creative
+   Cooperate
+   Explore
+ > Read carefully
+   Be creative
+   Cooperate
+N
+
+   Explore
+   Read carefully
+ > Be creative
+   Cooperate
+   Explore
+   Read carefully
+ > Be creative
+   Cooperate
+<space>
+
+Rephrase. If there's something you want to do, but the game doesn't seem to understand you, try alternative wordings. 
+
+Try variations. Sometimes an action doesn't work, but does produce some kind of unusual result. These are often indications that you're on the right track, even if you haven't figured out quite the right approach yet. Pressing the red button alone may only cause a grinding noise from inside the wall, so perhaps pressing the blue and then the red will open the secret door.
+
+Consider the genre of the game. Mysteries, romances, and thrillers all have their own types of action and motivation. What are you trying to do, and how do conventional characters go about doing that? What's the right sort of behavior for a detective/romance heroine/spy?
+
+
+
+Please press SPACE to continue.
+<space>
+   Explore
+   Read carefully
+ > Be creative
+   Cooperate
+   Explore
+   Read carefully
+ > Be creative
+   Cooperate
+
+   Explore
+   Read carefully
+ > Be creative
+   Cooperate
+Q
+
+   About Interactive Fiction
+   What to do with >
+   Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+ > If You Get Stuck
+Q
+
+   About "The Paper Bag Princess"
+ > How to Play
+   Walkthrough
+Q
+
+Castle Garden
+You are standing in the garden behind your family's castle. On this lovely fall evening, it is doing double duty as a wedding chapel.
+
+Your betrothed, Roland, stands before you.
+
+You can also see Father Alfred here.
+
+>look self
+You are young and beautiful, too lovely to be described in mere words.
+
+You are wearing a wedding gown and a sparkly gold crown.
+
+"Love is a wonderful thing." And so on. You're too excited to pay attention to every word.
+
+>kiss roland
+You'll have your chance soon enough!
+
+"Elizabeth, do you take Roland to be your husband?"
+
+>nope
+You shake your head. "No. I don't."
+
+Oh.
+
+There's a pause, and then the guests begin to murmur. The minister frowns. "Elizabeth, are you sure?" he asks. Roland just stares at you in shock. You whisper, "I'm so sorry," and run off.
+
+
+
+    *** And they didn't get married after all! ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+> 

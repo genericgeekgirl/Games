@@ -1,0 +1,1122 @@
+
+Jacqueline says (to Floyd), "load sleepmask hipponewyear"
+Floyd ]  Living Room                                          0/1
+Floyd |
+Floyd |
+Floyd |
+Floyd |
+Floyd | <em>'Twas the night before Christmas when all through the house, the
+Floyd | only creature stirring was a hippo the size of a mouse.</em>
+Floyd |
+Floyd | This year you're going to stay awake long enough to see Santa Claws.
+Floyd | You have set up a temporary nest in the living room closet, and it
+Floyd | just needs a few final touches. You intend to venture out to have a
+Floyd | snack and look at the tree one more time, and then you will go hide in
+Floyd | the closet and wait.
+Floyd |
+Floyd | ## And A Hippo New Year
+Floyd | an interactive holiday tale by Adri ("Erin Gigglecreek")
+Floyd | Release 2 / Serial number 130210 / Inform 7 build 6G60 (I6/v6.32 lib
+Floyd | 6/12N)
+Floyd |
+Floyd | ## If you are unfamiliar with Interactive Fiction, type HELP for a
+Floyd | quick introduction on how to play.
+Floyd |
+Floyd | ## Living Room
+Floyd | There is a tree here, decorated with ornaments and surrounded by piles
+Floyd | of presents. There is also a table off to one side. The closet is to
+Floyd | the southeast.
+Floyd |
+Floyd | >
+[clubfloyd] Jacqueline says, "I shall hang back until you've gotten as far as I got."
+DavidW says (to Floyd), "x table"
+Floyd ]  Living Room                                          0/2
+Floyd |
+Floyd | > X TABLE
+Floyd |
+Floyd | There is a table off to one side, draped in a bright blue tablecloth.
+Floyd |
+Floyd | >
+DavidW says (to Floyd), "i"
+Floyd ]  Living Room                                          0/3
+Floyd |
+Floyd | > I
+Floyd |
+Floyd | You are carrying nothing.
+Floyd |
+Floyd | >
+DavidW says (to Floyd), "x snack"
+Floyd ]  Living Room                                          0/3
+Floyd |
+Floyd | > X SNACK
+Floyd |
+Floyd | You can't see any such thing.
+Floyd |
+Floyd | >
+DavidW says (to Floyd), "x tree"
+Floyd ]  Living Room                                          0/4
+Floyd |
+Floyd | > X TREE
+Floyd |
+Floyd | It's a rather lovely Christmas tree, covered with rainbow lights, a
+Floyd | silver garland and colorful, shiny ornaments. There is a collection of
+Floyd | presents underneath the tree.
+Floyd |
+Floyd | >
+DavidW says (to Floyd), "x presents"
+Floyd ]  Living Room                                          0/5
+Floyd |
+Floyd | > X PRESENTS
+Floyd |
+Floyd | There are piles of presents surrounding the tree. There is one rather
+Floyd | tall pile of presents in a neat stack.
+Floyd |
+Floyd | >
+DavidW says (to Floyd), "x pile"
+Floyd ]  Living Room                                          0/6
+Floyd |
+Floyd | > X PILE
+Floyd |
+Floyd | A pile of presents stacked neatly under the tree, with the largest
+Floyd | package on the bottom and the smallest at the top.
+Floyd |
+Floyd | >
+[clubfloyd] olethros asks, "pillars of presents! Where is Samson?"
+DavidW says (to Floyd), "x largest package"
+Floyd ]  Living Room                                          0/7
+Floyd |
+Floyd | > X LARGEST PACKAGE
+Floyd |
+Floyd | This present is wrapped in shiny blue paper, tied with a big red bow.
+Floyd |
+Floyd | >
+DavidW says (to Floyd), "read it"
+Floyd ]  Living Room                                          0/8
+Floyd |
+Floyd | > READ IT
+Floyd |
+Floyd | This present is wrapped in shiny green paper, tied with a big yellow
+Floyd | bow.
+Floyd |
+Floyd | >
+DavidW says (to Floyd), "x largest package"
+Floyd ]  Living Room                                          0/9
+Floyd |
+Floyd | > X LARGEST PACKAGE
+Floyd |
+Floyd | This present is wrapped in shiny green paper, tied with a big blue
+Floyd | bow.
+Floyd |
+Floyd | >
+[clubfloyd] DavidW says, "hmmm. Inconsistency there."
+[clubfloyd] Jacqueline says, "Random, methinks."
+[clubfloyd] DavidW says, "uh-huh"
+DavidW says (to Floyd), "x me"
+Floyd ]  Living Room                                          0/10
+Floyd |
+Floyd | > X ME
+Floyd |
+Floyd | You are a very fine specimen of <em>Hippopotamus domestica</em>.
+Floyd |
+Floyd | >
+[clubfloyd] DavidW asks, "oh. We are a literal hippo, eh?"
+[clubfloyd] Jacqueline says, "This was written for that secret santa game exchange thingy whateveritwascalled.  We also played a zarf game from this."
+Jacqueline says (to Floyd), "about"
+Floyd ]                            Instructions
+Floyd ]
+Floyd ]  N = Next                                              Q = Quit Menu
+Floyd ]  P = Previous                                          ENTER = Select
+Floyd |  > About "And A Hippo New Year"
+Floyd |    How to Play
+Floyd |    Hints
+Floyd |    Walkthrough
+Floyd |    Credits
+Jacqueline presses the yellow enter button.
+Floyd ]                    About "And A Hippo New Year"
+Floyd | "And A Hippo New Year" was created for Yuletide 2012, an annual
+Floyd | fanfiction exchange. It is based in the world of the House Hippo, a
+Floyd | PSA by the Concerned Children's Advertisers.
+Floyd |
+Floyd | The author can be contacted at <genericgeekgirl@gmail.com>.
+Floyd |
+Floyd |
+Floyd |
+Floyd | Please press SPACE to continue.
+[clubfloyd] Jacqueline says, "That's it.  Yuletide."
+[clubfloyd] inky says, "hmm"
+Jacqueline says (to Floyd), "q"
+Floyd ]                    About "And A Hippo New Year"
+[clubfloyd] inky asks, "someone requested fanfic about a hippo?"
+[clubfloyd] inky says, "oh ah"
+[clubfloyd] DavidW says, "unless there's a kitchen in an unmentioned direction, I suppose we just go into the closet."
+DavidW says (to Floyd), "x ornaments"
+Floyd ]                    About "And A Hippo New Year"
+DavidW pushes the green 'space' button.
+Floyd ]                            Instructions
+Floyd ]
+Floyd ]  N = Next                                              Q = Quit Menu
+Floyd ]  P = Previous                                          ENTER = Select
+Floyd |  > About "And A Hippo New Year"
+Floyd |    How to Play
+Floyd |    Hints
+Floyd |    Walkthrough
+Floyd |    Credits
+DavidW says (to Floyd), "q"
+Floyd ]  Living Room                                          0/10
+Floyd | ## Living Room
+Floyd | There is a tree here, decorated with ornaments and surrounded by piles
+Floyd | of presents. There is also a table, about the same height as the stack
+Floyd | of presents under the tree. The closet is to the southeast.
+Floyd |
+Floyd | >
+[clubfloyd] Jacqueline says, "Oops, sorry - thought I had us all the way out."
+DavidW says (to Floyd), "n"
+Floyd ]  Living Room                                          0/11
+Floyd |
+Floyd | > N
+[clubfloyd] Zach says, "I think this was the inspiration | http://www.youtube.com/watch?v=NBfi8OEz0rA"
+Floyd |
+Floyd | There's no need to explore the rest of the house.
+Floyd |
+Floyd | >
+DavidW says (to Floyd), "x lights"
+Floyd ]  Living Room                                          0/12
+Floyd |
+Floyd | > X LIGHTS
+Floyd |
+Floyd | The tree is covered with tiny rainbow lights. The string of lights
+Floyd | trails down from the lower branches to the power outlet. The wire is
+Floyd | emitting quite a bit of heat.
+Floyd |
+Floyd | You are feeling very thirsty.
+Floyd |
+Floyd | >
+DavidW says (to Floyd), "unplug lights"
+Floyd ]  Living Room                                          0/13
+Floyd |
+Floyd | > UNPLUG LIGHTS
+Floyd |
+Floyd | If you do that, the pretty lights will go out!
+Floyd |
+Floyd | >
+[clubfloyd] DavidW says, "I wonder if there's a water cooler in the closet. Or maybe we melt a snowman and drink its flesh."
+[clubfloyd] DavidW asks, "se?"
+[clubfloyd] Jacqueline says, "Thank you, Zach.  I hadn't seen that.  Also, that is a super awesome PSA and one of my favorite things on YouTube ever now."
+DavidW says (to Floyd), "x ornaments"
+Floyd ]  Living Room                                          0/14
+Floyd |
+Floyd | > X ORNAMENTS
+Floyd |
+Floyd | The tree is adorned with colorful, mismatched ornaments, many of which
+Floyd | have been made by the small humans of the house.
+Floyd |
+Floyd | >
+[clubfloyd] DavidW says, "No gingerbread, no candy canes. Silly ornaments."
+[clubfloyd] DavidW says, "oh. I've seen this video before."
+[clubfloyd] Zach says, "Well, the house hippo is endemic to Canada."
+[clubfloyd] zarf says, "'hippo... hippo...'"
+[clubfloyd] Jacqueline asks, "But I have to agree with the guy in the comments who is all, will anyone actually get this is a PSA, or will everyone just be focused on how they want to have a house hipp?"
+[clubfloyd] Jacqueline says, "er, hippo."
+[clubfloyd] Jacqueline says, "Because yeah, I want a house hippo now."
+[clubfloyd] Jacqueline says, "Particularly seeing as they can hold their own against cats."
+[clubfloyd] DavidW asks, "se?"
+[clubfloyd] olethros says, "house hippo hippo hippo"
+[clubfloyd] Jacqueline says, "Sure"
+[clubfloyd] DavidW says, "(I suspect the tree will catch fire, but we can't prevent that.)"
+DavidW says (to Floyd), "se"
+Floyd ]  Inside the Closet                                    0/15
+Floyd |
+Floyd | > SE
+Floyd |
+Floyd |
+Floyd | ## Inside the Closet
+Floyd | This is the closet where you will be spending the night. It is full of
+Floyd | things that you don't need to think about right now.
+Floyd |
+Floyd | You can see your nest and a mitten here.
+Floyd |
+Floyd | >
+[clubfloyd] Jacqueline asks (of olethros), "Is that from something, or is it just fun to say hippo hippo hippo?"
+inky says (to Floyd), "x mitten"
+Floyd ]  Inside the Closet                                    0/16
+Floyd |
+Floyd | > X MITTEN
+Floyd |
+Floyd | It's a small mitten. It is sopping wet, and the mate is nowhere to be
+Floyd | seen.
+Floyd |
+Floyd | >
+inky says (to Floyd), "enter mitten"
+Floyd ]  Inside the Closet                                    0/17
+Floyd |
+Floyd | > ENTER MITTEN
+Floyd |
+Floyd | That's not something you can enter.
+Floyd |
+Floyd | >
+DavidW says (to Floyd), "chew mitten"
+Floyd ]  Inside the Closet                                    0/18
+Floyd |
+Floyd | > CHEW MITTEN
+Floyd |
+Floyd | You give the mitten a lick. Bleh! That doesn't appear to be food.
+Floyd |
+Floyd | >
+DavidW says (to Floyd), "x nest"
+Floyd ]  Inside the Closet                                    0/19
+Floyd |
+Floyd | > X NEST
+Floyd |
+Floyd | It is a warm, comfortable mass of dryer lint and bits of string. It's
+Floyd | not as nice as your nest in the bedroom closet, but it will do for
+Floyd | tonight. It's still looking a little sparse, though. Perhaps you could
+Floyd | find just one or two more items before you settle in for the night.
+Floyd |
+Floyd | >
+%%% # MARK: 2013-03-03-13:18:37CST
+DavidW says (to Floyd), "put mitten in nest"
+Floyd ]  Inside the Closet                                    0/20
+Floyd |
+Floyd | > PUT MITTEN IN NEST
+Floyd |
+Floyd | It's all wet! Maybe you can find a way to dry it first.
+Floyd |
+Floyd | >
+[clubfloyd] DavidW says, "oh. well, the wire was hot."
+DavidW says (to Floyd), "take mitten"
+Floyd ]  Inside the Closet                                    0/21
+Floyd |
+Floyd | > TAKE MITTEN
+Floyd |
+Floyd | You pick up the wet mitten. Ick. Soggy mittens don't make good bedding
+Floyd | material.
+Floyd |
+Floyd | >
+DavidW says (to Floyd), "nw"
+Floyd ]  Living Room                                          0/22
+Floyd |
+Floyd | > NW
+Floyd |
+Floyd |
+Floyd | ## Living Room
+Floyd | There is a tree here, decorated with ornaments and surrounded by piles
+Floyd | of presents. There is also a table, about the same height as the stack
+Floyd | of presents under the tree. The closet is to the southeast.
+Floyd |
+Floyd | >
+DavidW says (to Floyd), "put mitten on wire"
+Floyd ]  Living Room                                          0/23
+Floyd |
+Floyd | > PUT MITTEN ON WIRE
+Floyd |
+Floyd | You lay the mitten across the string of lights where it nearly touches
+Floyd | the floor.
+Floyd |
+Floyd | You are feeling very thirsty.
+Floyd |
+Floyd | >
+Jacqueline says (to Floyd), "suck mitten"
+Floyd ]  Living Room                                          0/24
+Floyd |
+Floyd | > SUCK MITTEN
+Floyd |
+Floyd | Surely you can find a more sanitary source of water.
+Floyd |
+Floyd | >
+[clubfloyd] Jacqueline says, "heehee"
+[clubfloyd] Jacqueline says, "That is because of me."
+[clubfloyd] Jacqueline says, "Adri was slightly weirded out that I thought that should be implemented."
+[clubfloyd] Jacqueline exclaims, "But I was trying to find something to drink!"
+[clubfloyd] DavidW says, "hm. I wonder what else can be used for nesting material."
+DavidW says (to Floyd), "open package"
+Floyd ]  Living Room                                          0/25
+Floyd |
+Floyd | > OPEN PACKAGE
+Floyd |
+Floyd | You pick out the prettiest present in the pile and tug on the ribbon
+Floyd | with your teeth. The ribbon slips ever so slightly, and you feel a
+Floyd | sudden burst of shame.
+Floyd |
+Floyd | >
+[clubfloyd] Jacqueline asks, "Maybe ribbons?"
+DavidW says (to Floyd), "take ribbon"
+Floyd ]  Living Room                                          0/26
+Floyd |
+Floyd | > TAKE RIBBON
+Floyd |
+Floyd | You pick out the prettiest present in the pile and tug on the ribbon
+Floyd | with your teeth. The ribbon slips ever so slightly, and you feel a
+Floyd | sudden burst of shame.
+Floyd |
+Floyd | The mitten starts to smoke. You'd better go get it before you burn
+Floyd | down the house.
+Floyd |
+Floyd | >
+DavidW says (to Floyd), "take mitten"
+Floyd ]  Living Room                                          3/27
+Floyd |
+Floyd | > TAKE MITTEN
+Floyd |
+Floyd | You quickly retrieve the mitten. It is now dry, and warm to the touch.
+Floyd |
+Floyd | [Your score has just gone up by three points.]
+Floyd |
+Floyd | >
+[clubfloyd] Jacqueline exclaims, "Woo!"
+DavidW says (to Floyd), "pull ribbon"
+Floyd ]  Living Room                                          3/28
+Floyd |
+Floyd | > PULL RIBBON
+Floyd |
+Floyd | You try with all your might, but it barely moves.
+Floyd |
+Floyd | >
+[clubfloyd] Jacqueline says, "Nice one, David."
+DavidW says (to Floyd), "bite ribbon"
+Floyd ]  Living Room                                          3/28
+Floyd |
+Floyd | > BITE RIBBON
+Floyd |
+Floyd | That's not a verb I recognize.
+Floyd |
+Floyd | >
+DavidW says (to Floyd), "se"
+Floyd ]  Inside the Closet                                    3/29
+Floyd |
+Floyd | > SE
+Floyd |
+Floyd |
+Floyd | ## Inside the Closet
+Floyd | This is the closet where you will be spending the night. It is full of
+Floyd | things that you don't need to think about right now.
+Floyd |
+Floyd | You can see your nest here.
+Floyd |
+Floyd | >
+DavidW says (to Floyd), "put mitten in nest"
+Floyd ]  Inside the Closet                                    4/30
+Floyd |
+Floyd | > PUT MITTEN IN NEST
+Floyd |
+Floyd | You put the mitten on the nest.
+Floyd |
+Floyd | [Your score has just gone up by one point.]
+Floyd |
+Floyd | >
+DavidW says (to Floyd), "score"
+Floyd ]  Inside the Closet                                    4/30
+Floyd |
+Floyd | > SCORE
+Floyd |
+Floyd | You have so far scored 4 out of a possible 15, in 30 turns.
+Floyd |
+Floyd | >
+DavidW says (to Floyd), "nw"
+Floyd ]  Living Room                                          4/31
+Floyd |
+Floyd | > NW
+Floyd |
+Floyd |
+Floyd | ## Living Room
+Floyd | There is a tree here, decorated with ornaments and surrounded by piles
+Floyd | of presents. There is also a table, about the same height as the stack
+Floyd | of presents under the tree. The closet is to the southeast.
+Floyd |
+Floyd | >
+DavidW says (to Floyd), "search presents"
+Floyd ]  Living Room                                          4/32
+Floyd |
+Floyd | > SEARCH PRESENTS
+Floyd |
+Floyd | You find nothing of interest.
+Floyd |
+Floyd | >
+DavidW says (to Floyd), "x prettiest present"
+Floyd ]  Living Room                                          4/33
+Floyd |
+Floyd | > X PRETTIEST PRESENT
+Floyd |
+Floyd | This present is wrapped in shiny red paper, tied with a big yellow
+Floyd | bow.
+Floyd |
+Floyd | >
+DavidW says (to Floyd), "take bow"
+Floyd ]  Living Room                                          4/34
+Floyd |
+Floyd | > TAKE BOW
+Floyd |
+Floyd | You pick out the prettiest present in the pile and tug on the ribbon
+Floyd | with your teeth. The ribbon slips ever so slightly, and you feel a
+Floyd | sudden burst of shame.
+Floyd |
+Floyd | You are feeling very thirsty.
+Floyd |
+Floyd | >
+DavidW says (to Floyd), "push bow"
+Floyd ]  Living Room                                          4/35
+Floyd |
+Floyd | > PUSH BOW
+Floyd |
+Floyd | You try with all your might, but it barely moves.
+Floyd |
+Floyd | >
+[clubfloyd] Jacqueline says, "It's wrapped in amazing, color-changing chameleon paper."
+DavidW says (to Floyd), "x bow"
+Floyd ]  Living Room                                          4/36
+Floyd |
+Floyd | > X BOW
+Floyd |
+Floyd | It's a length of shiny green ribbon, tied into a fancy bow.
+Floyd |
+Floyd | >
+DavidW says (to Floyd), "untie bow"
+Floyd ]  Living Room                                          4/36
+Floyd |
+Floyd | > UNTIE BOW
+Floyd |
+Floyd | That's not a verb I recognize.
+Floyd |
+Floyd | >
+DavidW says (to Floyd), "shake bow"
+Floyd ]  Living Room                                          4/36
+Floyd |
+Floyd | > SHAKE BOW
+Floyd |
+Floyd | That's not a verb I recognize.
+Floyd |
+Floyd | >
+DavidW says (to Floyd), "shake present"
+Floyd ]  Living Room                                          4/36
+Floyd |
+Floyd | > SHAKE PRESENT
+Floyd |
+Floyd | That's not a verb I recognize.
+Floyd |
+Floyd | >
+DavidW says (to Floyd), "open present"
+Floyd ]  Living Room                                          4/37
+Floyd |
+Floyd | > OPEN PRESENT
+Floyd |
+Floyd | You pick out the prettiest present in the pile and tug on the ribbon
+Floyd | with your teeth. The ribbon slips ever so slightly, and you feel a
+Floyd | sudden burst of shame.
+Floyd |
+Floyd | >
+[clubfloyd] DavidW says, "hm. Perhaps ribbon is not the answer."
+[clubfloyd] Jacqueline says, "Maybe not."
+Jacqueline says (to Floyd), "x tree"
+Floyd ]  Living Room                                          4/38
+Floyd |
+Floyd | > X TREE
+Floyd |
+Floyd | It's a rather lovely Christmas tree, covered with rainbow lights, a
+Floyd | silver garland and colorful, shiny ornaments. There is a collection of
+Floyd | presents underneath the tree.
+Floyd |
+Floyd | >
+Jacqueline says (to Floyd), "x garland"
+DavidW says (to Floyd), "x garland"
+Floyd ]  Living Room                                          4/39
+Floyd |
+Floyd | > X GARLAND
+Floyd |
+Floyd | The tree has been wrapped in a long strand of puffy blue garland. It
+Floyd | looks very soft.
+Floyd |
+Floyd | >
+Floyd ]  Living Room                                          4/40
+Floyd |
+Floyd | > X GARLAND
+Floyd |
+Floyd | The tree has been wrapped in a long strand of puffy blue garland. It
+Floyd | looks very soft.
+Floyd |
+Floyd | >
+[clubfloyd] Jacqueline says, "haha"
+[clubfloyd] DavidW says, "ooh. want."
+DavidW says (to Floyd), "take garland"
+Floyd ]  Living Room                                          4/41
+Floyd |
+Floyd | > TAKE GARLAND
+Floyd |
+Floyd | You tug on a dangling bit of garland with your teeth. A piece breaks
+Floyd | off, about as long as you are.
+Floyd |
+Floyd | >
+[clubfloyd] Jacqueline says, "ooh - soft garland."
+DavidW says (to Floyd), "se"
+Floyd ]  Inside the Closet                                    4/42
+Floyd |
+Floyd | > SE
+Floyd |
+Floyd |
+Floyd | ## Inside the Closet
+Floyd | This is the closet where you will be spending the night. It is full of
+Floyd | things that you don't need to think about right now.
+Floyd |
+Floyd | You can see your nest (on which is a mitten) here.
+Floyd |
+Floyd | >
+DavidW says (to Floyd), "x garland"
+Floyd ]  Inside the Closet                                    4/43
+Floyd |
+Floyd | > X GARLAND
+Floyd |
+Floyd | It's a short length of blue garland, very soft to the touch.
+Floyd |
+Floyd | >
+DavidW says (to Floyd), "touch it"
+Floyd ]  Inside the Closet                                    4/44
+Floyd |
+Floyd | > TOUCH IT
+Floyd |
+Floyd | The garland is extremely soft to the touch.
+Floyd |
+Floyd | >
+DavidW says (to Floyd), "smell it"
+Floyd ]  Inside the Closet                                    4/45
+Floyd |
+Floyd | > SMELL IT
+Floyd |
+Floyd | You smell nothing unexpected.
+Floyd |
+Floyd | You are feeling very thirsty.
+Floyd |
+Floyd | >
+DavidW says (to Floyd), "put it in nest"
+Floyd ]  Inside the Closet                                    5/46
+Floyd |
+Floyd | > PUT IT IN NEST
+Floyd |
+Floyd | You put the piece of garland on the nest.
+Floyd |
+Floyd | [Your score has just gone up by one point.]
+Floyd |
+Floyd | >
+Jacqueline says (to Floyd), "score"
+Floyd ]  Inside the Closet                                    5/46
+Floyd |
+Floyd | > SCORE
+Floyd |
+Floyd | You have so far scored 5 out of a possible 15, in 46 turns.
+Floyd |
+Floyd | >
+[clubfloyd] DavidW asks, "now what?"
+[clubfloyd] Jacqueline says, "Gosh.  Only one-third of the way there."
+[clubfloyd] DavidW asks, "enter nest?"
+[clubfloyd] Jacqueline asks, "Well, we're thirsty still, aren't we?"
+[clubfloyd] DavidW says, "yes"
+[clubfloyd] Jacqueline says, "It mentioned wanting a snack."
+[clubfloyd] Jacqueline says, "The last time I played this I tried climbing the presents to get at the Santa snack, I think, but I don't think it worked."
+[clubfloyd] DavidW asks, "so, will the game let us explore more, now that we're thirsty and hungry?"
+Tale leaves, shouting : "Screw this! I've only got 14 hit points!"
+Tale has disconnected.
+DavidW says (to Floyd), "nw"
+[clubfloyd] Jacqueline says, "I probably didn't approach it correctly."
+Floyd ]  Living Room                                          5/47
+Floyd |
+Floyd | > NW
+Floyd |
+Floyd |
+Floyd | ## Living Room
+Floyd | There is a tree here, decorated with ornaments and surrounded by piles
+Floyd | of presents. There is also a table, about the same height as the stack
+Floyd | of presents under the tree. The closet is to the southeast.
+Floyd |
+Floyd | >
+DavidW says (to Floyd), "climb tree"
+Floyd ]  Living Room                                          5/48
+Floyd |
+Floyd | > CLIMB TREE
+Floyd |
+Floyd | You briefly eye the tree, wondering how long it would take to climb
+Floyd | it. Maybe you'll try it tomorrow.
+Floyd |
+Floyd | >
+DavidW says (to Floyd), "take tablecloth"
+Floyd ]  Living Room                                          5/49
+Floyd |
+Floyd | > TAKE TABLECLOTH
+Floyd |
+Floyd | You tug on the tablecloth with your teeth, but you can't quite pull it
+Floyd | off the table.
+Floyd |
+Floyd | >
+DavidW says (to Floyd), "climb it"
+Floyd ]  Living Room                                          5/50
+Floyd |
+Floyd | > CLIMB IT
+Floyd |
+Floyd | You attempt to scale the tablecloth, gripping tightly with your teeth
+Floyd | and feet, but it's not an easy task. After just a few inches, you let
+Floyd | go and drop back down to the floor. Ouch!
+Floyd |
+Floyd | >
+Jacqueline says (to Floyd), "l"
+Floyd ]  Living Room                                          5/51
+Floyd |
+Floyd | > L
+Floyd |
+Floyd | ## Living Room
+Floyd | There is a tree here, decorated with ornaments and surrounded by piles
+Floyd | of presents. There is also a table, about the same height as the stack
+Floyd | of presents under the tree. The closet is to the southeast.
+Floyd |
+Floyd | >
+Jacqueline says (to Floyd), "climb presents"
+Floyd ]  Living Room                                          5/52
+Floyd |
+Floyd | > CLIMB PRESENTS
+Floyd |
+Floyd | You climb to the top of the presents. You seem to be about level with
+Floyd | the table, on which stands a glass of milk and a plate of cookies. The
+Floyd | pile starts to wobble, and you quickly make your way back down to
+Floyd | the...
+Floyd |
+Floyd | ## Living Room
+Floyd | There is a tree here, decorated with ornaments and surrounded by piles
+Floyd | of presents. There is also a table, about the same height as the stack
+Floyd | of presents under the tree. The closet is to the southeast.
+Floyd |
+Floyd | >
+[clubfloyd] Jacqueline says, "Oh - it did work."
+[clubfloyd] Jacqueline says, "So much for my memory."
+[clubfloyd] DavidW says, "the idea of a mini hippo climbing the tablecloth is ultra cute."
+[clubfloyd] Jacqueline says, "Yes"
+[clubfloyd] Jacqueline says, "Oh, it didn't work."
+[clubfloyd] DavidW says, "ah, the table and pile being the same height -- shoulda remembered that."
+[clubfloyd] Jacqueline says, "We were close, but it is unstable."
+DavidW says (to Floyd), "push pile to table"
+Floyd ]  Living Room                                          5/53
+Floyd |
+Floyd | > PUSH PILE TO TABLE
+Floyd |
+Floyd | You push the bottom package with your head, being careful to prevent
+Floyd | the pile from falling over. It's hard work, but eventually you move
+Floyd | the entire stack over to the table.
+Floyd |
+Floyd | >
+DavidW says (to Floyd), "climb pile"
+Floyd ]  High above the Living Room                           5/54
+Floyd |
+Floyd | > CLIMB PILE
+Floyd |
+Floyd | You scramble up the pile of presents onto the table top.
+Floyd |
+Floyd | ## High above the Living Room
+Floyd | You are standing on top of the table.
+Floyd |
+Floyd | You can see a plate of cookies and a glass of milk here.
+Floyd |
+Floyd | >
+Tale arrives, full of funk, but no fun.
+[clubfloyd] DavidW says, "consume mass quantities"
+DavidW says (to Floyd), "eat cookies"
+Floyd ]  High above the Living Room                           5/55
+Floyd |
+Floyd | > EAT COOKIES
+Floyd |
+Floyd | Don't be greedy! You should save the rest of the cookies for Santa.
+Floyd |
+Floyd | Visions of raisins dance in your head.
+Floyd |
+Floyd | >
+DavidW says (to Floyd), "eat cookie"
+Floyd ]  High above the Living Room                           8/56
+Floyd |
+Floyd | > EAT COOKIE
+Floyd |
+Floyd | You nibble hungrily at the cookie.
+Floyd |
+Floyd | You are feeling very thirsty.
+Floyd |
+Floyd | [Your score has just gone up by three points.]
+Floyd |
+Floyd | >
+DavidW says (to Floyd), "drink milk"
+Floyd ]  High above the Living Room                           8/57
+Floyd |
+Floyd | > DRINK MILK
+Floyd |
+Floyd | Little known fact: house hippos are lactose intolerant.
+Floyd |
+Floyd | >
+[clubfloyd] DavidW says, "ha"
+[clubfloyd] Jacqueline says, "snrk"
+DavidW says (to Floyd), "l"
+Floyd ]  High above the Living Room                           8/58
+Floyd |
+Floyd | > L
+Floyd |
+Floyd | ## High above the Living Room
+Floyd | You are standing on top of the table.
+Floyd |
+Floyd | You can see a plate of cookies and a glass of milk here.
+Floyd |
+Floyd | >
+[clubfloyd] Jacqueline says, "Good going with pushing the pile.  I never think of push."
+[clubfloyd] DavidW says, "hm. Can't see anything else of the room here."
+[clubfloyd] inky says, "ha ha"
+inky says (to Floyd), "x tree"
+Floyd ]  High above the Living Room                           8/59
+Floyd |
+Floyd | > X TREE
+Floyd |
+Floyd | It's a rather lovely Christmas tree, covered with rainbow lights, a
+Floyd | silver garland and colorful, shiny ornaments. There is a collection of
+Floyd | presents underneath the tree.
+Floyd |
+Floyd | >
+[clubfloyd] Jacqueline says, "If we can't drink the milk... hm."
+DavidW says (to Floyd), "score"
+Floyd ]  High above the Living Room                           8/59
+Floyd |
+Floyd | > SCORE
+Floyd |
+Floyd | You have so far scored 8 out of a possible 15, in 59 turns.
+Floyd |
+Floyd | >
+Tale has had his fill of playing for now, and goes back to the Lounge.
+DavidW says (to Floyd), "climb tree"
+Floyd ]  High above the Living Room                           8/60
+Floyd |
+Floyd | > CLIMB TREE
+Floyd |
+Floyd | You can't reach into the Living Room.
+Floyd |
+Floyd | >
+Johnny says (to Floyd), "swim in milk"
+Floyd ]  High above the Living Room                           8/60
+Floyd |
+Floyd | > SWIM IN MILK
+Floyd |
+Floyd | I only understood you as far as wanting to swim.
+Floyd |
+Floyd | >
+[clubfloyd] * rockersuke has left the channel.
+Jacqueline says (to Floyd), "swim"
+Floyd ]  High above the Living Room                           8/61
+Floyd |
+Floyd | > SWIM
+Floyd |
+Floyd | There is nothing to swim in.
+Floyd |
+Floyd | >
+DavidW says (to Floyd), "lick glass"
+Floyd ]  High above the Living Room                           8/62
+Floyd |
+Floyd | > LICK GLASS
+Floyd |
+Floyd | You give the glass of milk a lick. Mmm.
+Floyd |
+Floyd | >
+[clubfloyd] Jacqueline says, "aw"
+[clubfloyd] Jacqueline says, "Ooh - wonder if that was enough."
+[clubfloyd] DavidW says, "(I was hoping for lactose-free condensation.)"
+[clubfloyd] Jacqueline says, "yeah"
+[clubfloyd] DavidW says, "We got no points for it, so I suspect that was a default generic lick response."
+DavidW says (to Floyd), "x tablecloth"
+Floyd ]  High above the Living Room                           8/63
+Floyd |
+Floyd | > X TABLECLOTH
+Floyd |
+Floyd | The tablecloth is a lovely shade of blue, and it reaches down nearly
+Floyd | to the floor.
+Floyd |
+Floyd | >
+[clubfloyd] Jacqueline says, "Mrm, yeah.  Perhaps."
+Zach says (to Floyd), "lick cookie"
+Floyd ]  High above the Living Room                           8/64
+Floyd |
+Floyd | > LICK COOKIE
+Floyd |
+Floyd | You give the partially-eaten cookie a lick. Mmm.
+Floyd |
+Floyd | >
+[clubfloyd] Jacqueline says, "Yeah"
+DavidW says (to Floyd), "lick tablecloth"
+Floyd ]  High above the Living Room                           8/65
+Floyd |
+Floyd | > LICK TABLECLOTH
+Floyd |
+Floyd | You give the tablecloth a lick. Bleh! That doesn't appear to be food.
+Floyd |
+Floyd | >
+[clubfloyd] inky says, "ha ha"
+[clubfloyd] Jacqueline says, "Lick is probably a synonym for taste and taste is probably separate from eat, but only edible things can be tasted."
+[clubfloyd] DavidW asks, "shall we at least try to enter our nest? See if we get a hint of what yet to do?"
+[clubfloyd] Jacqueline says, "Yeah"
+DavidW says (to Floyd), "d"
+Floyd ]  High above the Living Room                           8/66
+Floyd |
+Floyd | > D
+Floyd |
+Floyd | As you start back down the stack of presents, the cat of the house
+Floyd | pads into the room, the bell on its collar jingling softly. It
+Floyd | immediately takes notice of you. You freeze in fear.
+Floyd |
+Floyd | The cat hisses at you.
+Floyd |
+Floyd | >
+[clubfloyd] Jacqueline says, "Go snuggle up, cute little hippo."
+[clubfloyd] Jacqueline says, "Wait."
+[clubfloyd] Jacqueline says, "But... we are a HIPPO we can be MEAN that cat is NOTHING"
+[clubfloyd] DavidW says, "yeah, but cats are bigger than house hippos."
+[clubfloyd] Jacqueline says, "True."
+Gerynar arrives, full of fun, but no funk.
+Zach says (to Floyd), "jump on cat"
+Floyd ]  High above the Living Room                           8/66
+Floyd |
+Floyd | > JUMP ON CAT
+Floyd |
+Floyd | ## I only understood the first part of that.
+Floyd | <i>You might try:</i> >JUMP
+Floyd |
+Floyd | ## To stop these messages entirely, type NOVICE OFF.
+Floyd |
+Floyd | >
+%%% # MARK: 2013-03-03-13:33:37CST
+DavidW says (to Floyd), "x cat"
+Floyd ]  High above the Living Room                           8/67
+Floyd |
+Floyd | > X CAT
+Floyd |
+Floyd | It's an orange tabby cat. It is wearing a thin nylon collar with a
+Floyd | small gold bell that jingles when it walks.
+Floyd |
+Floyd | You are feeling very thirsty.
+Floyd |
+Floyd | The cat hisses at you.
+Floyd |
+Floyd | >
+inky says (to Floyd), "roar"
+Floyd ]  High above the Living Room                           8/68
+Floyd |
+Floyd | > ROAR
+Floyd |
+Floyd | You let out a loud roar. HIPPO!
+Floyd |
+Floyd | The cat cringes at the sound.
+Floyd |
+Floyd | The cat hisses at you.
+Floyd |
+Floyd | >
+[clubfloyd] Jacqueline says, "yay"
+[clubfloyd] Jacqueline says, "Also, I think I have this thirst puzzle worked out."
+Zach says (to Floyd), "dance"
+Floyd ]  High above the Living Room                           8/69
+Floyd |
+Floyd | > DANCE
+Floyd |
+Floyd | You don a pink tutu and the tiniest pair of ballet slippers and
+Floyd | pirouette around the room.
+Floyd |
+Floyd | The cat hisses at you.
+Floyd |
+Floyd | >
+[clubfloyd] DavidW asks, "oh?"
+[clubfloyd] Jacqueline says, "Yeah.  Clearly, we are meant to kill the cat and drink its blood."
+[clubfloyd] DavidW says (to Zach), "huh"
+DavidW says (to Floyd), "pour milk on cat"
+Floyd ]  High above the Living Room                           8/69
+Floyd |
+Floyd | > POUR MILK ON CAT
+Floyd |
+Floyd | That's not a verb I recognize.
+Floyd |
+Floyd | >
+DavidW says (to Floyd), "push milk"
+Floyd ]  Underneath the Table                                 10/70
+Floyd |
+Floyd | > PUSH MILK
+Floyd |
+Floyd | The glass of milk goes crashing to the floor. A light goes on in the
+Floyd | hallway, and you quickly dash back down the pile of presents and hide
+Floyd | behind a table leg.
+Floyd |
+Floyd | One of the big humans of the house wanders sleepily into the room. The
+Floyd | cat looks up guiltily and slinks off towards the bedroom. She cleans
+Floyd | up the milk and broken glass, scolds the cat and goes back to bed.
+Floyd |
+Floyd | ## Underneath the Table
+Floyd | You are hiding underneath the table. There is a puddle of water here.
+Floyd |
+Floyd | [Your score has just gone up by two points.]
+Floyd |
+Floyd | >
+[clubfloyd] Tale says, "boo"
+[clubfloyd] Jacqueline exclaims, "I was just about to do that!"
+[clubfloyd] Jacqueline says, "Nice one, D."
+[clubfloyd] DavidW says, "ooh, puddle"
+[clubfloyd] Jacqueline says, "HA!  Take that, cat."
+[clubfloyd] Jacqueline asks, "What's this water from?"
+[clubfloyd] DavidW asks, "um.... boots?"
+[clubfloyd] DavidW says, "I dunno."
+DavidW says (to Floyd), "x puddle"
+Floyd ]  Underneath the Table                                 10/71
+Floyd |
+Floyd | > X PUDDLE
+Floyd |
+Floyd | One of the small humans must have brought in an icicle and left it
+Floyd | under the table. It has melted into a puddle of cold water.
+Floyd |
+Floyd | >
+[clubfloyd] Jacqueline asks, "Also, I am shocked that my solution to the thirst puzzle was evidently wrong.</sarcasm?"
+[clubfloyd] Jacqueline says, "er, >"
+[clubfloyd] DavidW says, "oh. kids' icicle."
+Tale arrives, full of fun and funk.
+[clubfloyd] Jacqueline says, "Nice."
+DavidW says (to Floyd), "drink water"
+Floyd ]  Underneath the Table                                 13/72
+Floyd |
+Floyd | > DRINK WATER
+Floyd |
+Floyd | You lap at the cold water and feel instantly refreshed.
+Floyd |
+Floyd | You are feeling very tired. Maybe you could just take a quick nap.
+Floyd |
+Floyd | [Your score has just gone up by three points.]
+Floyd |
+Floyd | >
+[clubfloyd] Jacqueline says, "w00"
+DavidW says (to Floyd), "out"
+Floyd ]  Living Room                                          13/73
+Floyd |
+Floyd | > OUT
+Floyd |
+Floyd |
+Floyd | ## Living Room
+Floyd | There is a tree here, decorated with ornaments and surrounded by piles
+Floyd | of presents. There is also a table, next to which is a neat stack of
+Floyd | presents, forming a staircase to the top. The closet is to the
+Floyd | southeast.
+Floyd |
+Floyd | You yawn loudly. It is getting late.
+Floyd |
+Floyd | >
+DavidW says (to Floyd), "se"
+Floyd ]  Inside the Closet                                    13/74
+Floyd |
+Floyd | > SE
+Floyd |
+Floyd |
+Floyd | ## Inside the Closet
+Floyd | This is the closet where you will be spending the night. It is full of
+Floyd | things that you don't need to think about right now.
+Floyd |
+Floyd | You can see your nest (on which are a piece of garland and a mitten)
+Floyd | here.
+Floyd |
+Floyd | You yawn loudly. It is getting late.
+Floyd |
+Floyd | >
+[clubfloyd] Jacqueline asks, "We are going to fall asleep and not see Santa.  Whatchawannabet?"
+[clubfloyd] DavidW says, "no bet"
+[clubfloyd] Jacqueline says, "heh"
+DavidW says (to Floyd), "enter nest"
+Floyd ]  Inside the Closet                                    13/75
+Floyd |
+Floyd | > ENTER NEST
+Floyd |
+Floyd | You get onto the nest.
+Floyd |
+Floyd | On the nest you can see a piece of garland and a mitten.
+Floyd |
+Floyd | You yawn loudly. It is getting late.
+Floyd |
+Floyd | >
+DavidW says (to Floyd), "yawn"
+Floyd ]  Inside the Closet                                    13/76
+Floyd |
+Floyd | > YAWN
+Floyd |
+Floyd | You yawn loudly.
+Floyd |
+Floyd | You are feeling very tired. Maybe you could just take a quick nap.
+Floyd |
+Floyd | >
+DavidW says (to Floyd), "nap"
+Floyd ]  Inside the Closet                                    13/76
+Floyd |
+Floyd | > NAP
+Floyd |
+Floyd | You close your eyes, just for a moment... When you awaken, it is
+Floyd | daytime and there is a tiny wrapped present next to your nest. Oh
+Floyd | well. Maybe next year!
+Floyd |
+Floyd |
+Floyd |
+Floyd |     <i>*** Happy Holidays! ***</i>
+Floyd |
+Floyd |
+Floyd | In that game you scored 13 out of a possible 15, in 76 turns.
+Floyd |
+Floyd |
+Floyd | Would you like to RESTART, RESTORE a saved game, QUIT, UNDO the last
+Floyd | command, or see the FULL score for that game?
+Floyd | >
+[clubfloyd] olethros says, "hey that was it"
+[clubfloyd] DavidW says, "oh. We missed 2 points."
+[clubfloyd] Jacqueline says, "For the record, when you typed >YAWN, I could help but yawn.  Yawning is weird."
+[clubfloyd] Jacqueline asks, "But what was in our tiny present??"
+[clubfloyd] Gerynar yawns because of jacq's talking about yawning, which he agrees is weird
+[clubfloyd] Jacqueline says, "Hm."
+[clubfloyd] DavidW says, "I don't know what's in our present. I suppose that'll be in sequel."
+[clubfloyd] Jacqueline says, "LLTPs"
+[clubfloyd] DavidW says, "House Hippo II: Hippo Birdie Two Ewe."
+[clubfloyd] Jacqueline asks, "So, are we good for today, or, more likely, are you going to try to figure out the other two points?"
+[clubfloyd] DavidW says, "I dunno. Unless it's xyzzy or happy new year, not sure what it would be."
+[clubfloyd] Jacqueline says, "Well, we should try at least one of those."
+[clubfloyd] DavidW says, "okay."
+DavidW says (to Floyd), "undo"
+Floyd ]  Inside the Closet                                    13/76
+Floyd |
+Floyd | > UNDO
+Floyd |
+Floyd | ## Inside the Closet
+Floyd | [Previous turn undone.]
+Floyd |
+Floyd | >
+[clubfloyd] Jacqueline says, "Though given that this was written for someone unfamiliar with IF..."
+DavidW says (to Floyd), "xyzzy"
+Floyd ]  Inside the Closet                                    13/77
+Floyd |
+Floyd | > XYZZY
+Floyd |
+Floyd | <em>I want a hippopotamus for Christmas.</em>
+Floyd | <em>Only a hippopotamus will do</em>.
+Floyd |
+Floyd | You yawn loudly. It is getting late.
+Floyd |
+Floyd | >
+DavidW says (to Floyd), "sing"
+Floyd ]  Inside the Closet                                    13/77
+Floyd |
+Floyd | > SING
+Floyd |
+Floyd | You bellow out "mini cheddars!" a few times.
+Floyd |
+Floyd | You are feeling very tired. Maybe you could just take a quick nap.
+Floyd |
+Floyd | You close your eyes, just for a moment... When you awaken, it is
+Floyd | daytime and there is a tiny wrapped present next to your nest. Oh
+Floyd | well. Maybe next year!
+Floyd |
+Floyd |
+Floyd |
+Floyd |     <i>*** Happy Holidays! ***</i>
+Floyd |
+Floyd |
+Floyd | In that game you scored 13 out of a possible 15, in 77 turns.
+Floyd |
+Floyd |
+Floyd | Would you like to RESTART, RESTORE a saved game, QUIT, UNDO the last
+Floyd | command, or see the FULL score for that game?
+Floyd | >
+[clubfloyd] Jacqueline says, "Yeah.  Implemented, but no points."
+[clubfloyd] Jacqueline says, "Oh, and the sleeping thing is on a timer."
+[clubfloyd] Jacqueline says, "huh"
+[clubfloyd] DavidW says, "I think I'm good stopping here."
+[clubfloyd] Jacqueline nods.
+

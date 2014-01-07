@@ -1,0 +1,423 @@
+
+
+
+
+This is the day you've always dreamed of. You are finally marrying the love of your life, Prince Roland.
+
+
+Castle Garden
+You are standing in the garden behind your family's castle. On this lovely fall evening, it is doing double duty as a wedding chapel.
+
+Your betrothed, Roland, stands before you.
+
+You can also see Father Alfred here.
+
+>x roland
+Roland is the most attractive man you have ever laid eyes on.
+
+Father Alfred begins the ceremony, "We are gathered here today to witness the joining of two hearts." Roland smiles shyly at you.
+
+>x alfred
+Father Alfred has been your family's minister for as long as you can remember.
+
+"If anyone has a reason why these two should not be wed, speak now or forever hold your peace." You hold your breath for a second, wondering whether anyone will speak up. Fortunately, nobody does and you relax.
+
+>x me
+You are young and beautiful, too lovely to be described in mere words.
+
+You are wearing a wedding gown and a sparkly gold crown.
+
+"Who gives this woman--" You glare icily at the minister. You are nobody's property. "Ahem. Moving on," says the minister, visibly flustered. Roland looks at you questioningly, but says nothing.
+
+>l
+Castle Garden
+You are standing in the garden behind your family's castle. On this lovely fall evening, it is doing double duty as a wedding chapel.
+
+Your betrothed, Roland, stands before you.
+
+You can also see Father Alfred here.
+
+"Love is a wonderful thing." And so on. You're too excited to pay attention to every word.
+
+>z
+You beam happily at Roland.
+
+"Elizabeth, do you take Roland to be your husband?"
+
+>y
+Of course you do!
+
+The minister smiles at you and turns to Roland. "And, Roland, do you take Elizabeth to be your wife?"
+
+Roland grins at you and exclaims, "I do!"
+
+"I now pronounce you man and... dragon?!?" The minister's eyes go wide, seconds before he is incinerated by a burst of flame.
+
+A large dragon flies overhead. The wedding guests scatter in every direction. You cower against Roland, but he pushes you towards the dragon and runs towards the road.
+
+The dragon eats all the guests it can catch, and when it has had its fill, it smashes your castle to smithereens with its heavy tail and sets the remains on fire. You are nearly caught in a blaze of flame as you duck behind what used to be the stone wall of the garden. You are unhurt, but your fine gown snags on a rose bush and tears.
+
+As the dragon finally turns to go, it catches sight of Roland, running down the road towards the river. It swoops down and smashes the bridge just as Roland is about to cross it and catches him up in its claws. The dragon flies away with your beloved prince.
+
+
+Please press SPACE to continue.
+<space>
+
+
+The Paper Bag Princess
+An interactive fairy tale by Adri
+Release 1 / Serial number 131007 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) 
+
+Castle Ruins
+This used to be your home. Now it is nothing more than a smoking pile of rubble. The smoke obscures your view of the stars, and the primary source of light is the burning remains of your furniture.
+
+The only road away from the castle now ends abruptly at the river bank. The forest surrounds you thickly on all sides, except for an area to the north where the trees have been broken and scorched.
+
+>x furniture
+You think you can make out the leg of a chair somewhere in that mess. It's mostly just a blaze of fire.
+
+>x rubble
+These piles of stones and wood used to be your home. You catch a glimpse of something colorful hidden in one of the piles.
+
+>get colorful
+You dig through the piles of rubble until you find a paper bag.
+
+>wear bag
+You take the paper bag.
+
+You quickly fashion a dress out of the gift bag. It's not as fancy as you're used to, but it'll get the job done.
+
+You strip off the remains of your wedding gown.
+
+You slip the makeshift dress over your head and pull it down past your hips.
+
+>s
+The only possible path appears to be through the forest to the north.
+
+>n
+
+Burnt Forest
+There's a trail of burned trees and what appear to be teeth leading to the northeast. One tree in particular catches your eye.
+
+>x tree
+You examine the tree more closely. Someone has carved "PLUGH" into the trunk.
+
+There is a large branch propped up against the base of the tree.
+
+>say plugh
+POOF! Your fairy godmother appears. "Tsk," she says. "Poor girl. I'm not sure I can help you with this one." She pauses and rummages around in her pockets, pulling out a vial. She hands it to you. "This is the best I can do. Use it wisely." Then she vanishes, as quickly as she appeared.
+
+>get branch
+You take the branch.
+
+>s
+
+Castle Ruins
+This used to be your home. Now it is nothing more than a smoking pile of rubble. The smoke obscures your view of the stars, and the primary source of light is the burning remains of your furniture.
+
+The only road away from the castle now ends abruptly at the river bank. The forest surrounds you thickly on all sides, except for an area to the north where the trees have been broken and scorched.
+
+>tie rags to branch
+You fashion a torch from the branch and the remains of your wedding gown.
+
+>pour oil on rags
+The vial isn't open.
+
+>open vial
+You open the vial.
+
+>pour oil on rags
+You pour the oily black liquid onto the torch and discard the empty vial.
+
+>* This is my second time playing, by the way - I wanted to see the updated version.
+Noted.
+
+> light rags
+You light the torch with the flames.
+
+>n
+
+Burnt Forest
+There's a trail of burned trees and what appear to be teeth leading to the northeast. One tree in particular catches your eye.
+
+>ne
+
+Dimly Lit Forest
+You feel as if you are in a maze of giant twisty trees.
+
+>e
+
+Dimly Lit Forest
+You feel as if you are in a giant maze of twisty trees.
+
+>w
+
+Dimly Lit Forest
+You feel as if you are in a giant twisty maze of trees.
+
+>s
+
+Dimly Lit Forest
+You feel as if you are in a giant maze of twisty trees.
+
+>e
+
+Dimly Lit Forest
+You feel as if you are in a twisting maze of giant trees.
+
+>ne
+
+Dimly Lit Forest
+You feel as if you are in a maze of twisty giant trees.
+
+>s
+You somehow sense that you have reached the very center of the forest.
+
+Dimly Lit Forest
+You feel as if you are in a twisting giant maze of trees.
+
+>w
+
+Dimly Lit Forest
+You feel as if you are in a maze of twisting giant trees.
+
+>e
+The torch starts to flicker. It will probably burn out soon.
+
+Dimly Lit Forest
+You feel as if you are in a twisty giant maze of trees.
+
+>n
+
+Dimly Lit Forest
+You feel as if you are in a twisty giant maze of trees.
+
+>n
+As you emerge from the forest, the torch suddenly fizzles out.
+
+Outside the Dragon's Cave
+You are standing before a large cave. The entrance has been blocked by a large wooden door.
+
+>x door
+The large door almost perfectly fills in the natural opening in the rock. There is a golden knocker in the shape of a dragon's tail about a foot above your head.
+
+>knock on door
+You grab the knocker and bang on the door.
+
+The door opens and the dragon sticks its nose through the opening. It says, "Well, a princess! I love to eat princesses, but I have already eaten a whole castle today. I am a very tired dragon. Come back tomorrow." 
+
+Then it slams the door in your face.
+
+>g
+You bang on the door again.
+
+The dragon sticks its nose out the door and says, "I am sure you are very delicious, but I am rather tired and stuffed. Please do come back tomorrow."
+
+This time, however, he does not immediately return to his cave.
+
+>talk to dragon
+"Wait!" you exclaim.
+
+Surprised, the dragon steps entirely out of the cave, nudging the door shut with its tail.
+
+You say, "Is it true that you are the fastest and fiercest dragon in the whole world?"
+
+"Yes," says the dragon. Boastful fellow, isn't he?
+
+>ask dragon about fierce
+"Is it true," you say, "that you can burn up ten forests with your fiery breath?"
+
+"Oh, yes," says the dragon, and it takes a huge, deep breath and breathes out so much fire that it burns up fifty forests.
+
+Wasn't that amazing? (Y/N)
+
+>Y
+yes
+"Fantastic!" you exclaim. "Do it again!"
+
+The dragon takes another huge breath and breathes out so much fire that it burns up one hundred forests.
+
+Were you impressed by that display? 
+
+>Y
+yes
+"Magnificent!" you shout. "Do it again!"
+
+The dragon takes another huge breath. But this time, nothing comes out.
+
+>l
+Outside the Dragon's Cave
+You are standing before a large cave. The entrance has been blocked by a large wooden door.
+
+You can see a dragon here.
+
+>talk to dragon
+You say, "Is it true that you are the fastest and fiercest dragon in the whole world?"
+
+"Yes," says the dragon. Boastful fellow, isn't he?
+
+>ask dragon about fast
+You say, "Dragon, is it true that you can fly around the world in just ten seconds?"
+
+"Why, yes," says the dragon, and it jumps up and flies around the world in just ten seconds. It seems very tired when it returns.
+
+Wasn't that amazing? 
+
+>Y
+yes
+"Fantastic!" you exclaim. "Do it again!"
+
+The dragon jumps up and flies around the whole world in just twenty seconds. When it returns, it flops down on the ground.
+
+The dragon is so tired that he falls fast asleep.
+
+>
+I beg your pardon?
+
+>open door
+You step over the dragon and open the door to the cave.
+
+>in
+
+The Dragon's Cave
+This is where the dragon lives. Piles of treasure fill the room, reflecting light in every direction.
+
+Your betrothed, Roland, stands before you.
+
+Roland looks at you and says, "Elizabeth, you are a mess! You smell like ashes, your hair is all tangled, and you are wearing a dirty paper bag. Come back when you are dressed like a real princess."
+
+>x roland
+Roland is the most attractive man you have ever laid eyes on. Too bad he's also the biggest bum you've ever met!
+
+>kick roland
+That's not a verb I recognize.
+
+>kiss roland
+You're really not in the mood to do that.
+
+>hug roland
+You're really not in the mood to do that.
+
+>get roland
+To be your lawfully wedded husband? Yes, Elizabeth. Be patient.
+
+>leave
+"Roland," you say, "your clothes are really pretty, and your hair is very neat. You look like a real prince, but you are also a real toad."
+
+You turn around and walk out the door.
+
+
+
+    *** And Elizabeth lived happily ever after! ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+> undo
+The Dragon's Cave
+[Previous turn undone.]
+
+>undo
+The Dragon's Cave
+[Previous turn undone.]
+
+>undo
+The Dragon's Cave
+[Previous turn undone.]
+
+>undo
+The Dragon's Cave
+[Previous turn undone.]
+
+>l
+The Dragon's Cave
+This is where the dragon lives. Piles of treasure fill the room, reflecting light in every direction.
+
+Your betrothed, Roland, stands before you.
+
+>undo
+The Dragon's Cave
+[Previous turn undone.]
+
+>undo
+The Dragon's Cave
+[Previous turn undone.]
+
+>undo
+The Dragon's Cave
+[Previous turn undone.]
+
+>l
+The Dragon's Cave
+This is where the dragon lives. Piles of treasure fill the room, reflecting light in every direction.
+
+Your betrothed, Roland, stands before you.
+
+>hint
+ > About "The Paper Bag Princess"
+   How to Play
+   Walkthrough
+<enter>
+
+Princess Elizabeth is about to marry the love of her life when a dragon attacks the castle and kidnaps her betrothed.
+
+The Paper Bag Princess is loosely based upon the book of the same name by Robert Munsch. Permission to write the game was requested from and granted by Mister Munsch himself.
+
+The cover art of Elizabeth was graciously provided by Stacey, aka "iduck" on deviantART.
+
+Thank you so much to my beta testers: Brendan Desilets, Dan Shiovitz, Dan Kelly, David Sturgis, Doug Orleans, Emily Boegheim, Jason McIntosh, Johnny Rivera, Kevin Jackson-Mead, Matthew Miller, Scott Snyder and Z Goddard. Post-release feedback from Adam Myers, Andrew Schultz, E Joyce, Felix Plesoianu and Victor Gijsbers was also particularly helpful to me.
+
+
+The author can be contacted at <genericgeekgirl@gmail.com>.
+
+
+
+
+Please press SPACE to continue.
+<space>
+ > About "The Paper Bag Princess"
+   How to Play
+   Walkthrough
+ > About "The Paper Bag Princess"
+   How to Play
+   Walkthrough
+(
+
+   About "The Paper Bag Princess"
+ > How to Play
+   Walkthrough
+   About "The Paper Bag Princess"
+ > How to Play
+   Walkthrough
+(
+
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+&
+
+   About "The Paper Bag Princess"
+ > How to Play
+   Walkthrough
+   About "The Paper Bag Princess"
+ > How to Play
+   Walkthrough
+&
+
+ > About "The Paper Bag Princess"
+   How to Play
+   Walkthrough
+ > About "The Paper Bag Princess"
+   How to Play
+   Walkthrough
+[
+ > About "The Paper Bag Princess"
+   How to Play
+   Walkthrough
+
+ > About "The Paper Bag Princess"
+   How to Play
+   Walkthrough

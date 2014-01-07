@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ifindex version="1.0" xmlns="http://babel.ifarchive.org/protocol/iFiction/">
+    <story>
+        <identification>
+            <ifid>9A174AEE-4D34-11E2-8DA7-889FFA067E51</ifid>
+            <format>zcode</format>
+        </identification>
+        <bibliographic>
+            <title>And A Hippo New Year</title>
+            <author>Adri ('Erin Gigglecreek')</author>
+            <headline>an interactive holiday tale</headline>
+            <genre>fantasy</genre>
+            <firstpublished>2012</firstpublished>
+            <description>'[story title]' was created for Yuletide 2012, an annual fanfiction exchange. It is based in the world of the House Hippo, a PSA by the Concerned Children's Advertisers.</description>
+            <language>en</language>
+            <group>Inform</group>
+        </bibliographic>
+        <releases>
+            <attached>
+                <release>
+                    <releasedate>2014-01-06</releasedate>
+                    <version>2</version>
+                    <compiler>Inform 7</compiler>
+                    <compilerversion>6G60</compilerversion>
+                </release>
+            </attached>
+        </releases>
+        <colophon>
+            <generator>Inform 7</generator>
+            <generatorversion>6G60</generatorversion>
+            <originated>2014-01-06</originated>
+        </colophon>
+        <zcode>
+            <serial>140106</serial>
+            <release>2</release>
+            <compiler>Inform 7 build 6G60</compiler>
+        </zcode>
+    </story>
+</ifindex>

@@ -1,0 +1,52 @@
+! Blurb file created by Inform build 6G60
+
+status "/usr/share/gnome-inform7/Extensions/Reserved/CblorbModel.html" "/home/adri/Games/Interactive Fiction/Adri/mundale tale of the morning after/newyears.inform/Build/StatusCblorb.html"
+
+
+! Identification
+
+project folder "/home/adri/Games/Interactive Fiction/Adri/mundale tale of the morning after/newyears.inform"
+release to "/home/adri/Games/Interactive Fiction/Adri/mundale tale of the morning after/newyears Materials/Release"
+
+! Blorb instructions
+
+storyfile leafname "The Mundane Tale of the Morning.zblorb"
+storyfile "/home/adri/Games/Interactive Fiction/Adri/mundale tale of the morning after/newyears.inform/Build/output.z8" include
+ifiction "/home/adri/Games/Interactive Fiction/Adri/mundale tale of the morning after/newyears.inform/Metadata.iFiction" include
+cover "/home/adri/Games/Interactive Fiction/Adri/mundale tale of the morning after/newyears Materials/Cover.png"
+picture 1 "/home/adri/Games/Interactive Fiction/Adri/mundale tale of the morning after/newyears Materials/Cover.png"
+
+! Placeholder variables
+
+placeholder [IFID] = "376EE772-23FD-4FE9-BCEF-0509E07C37CC"
+placeholder [RELEASE] = "1"
+placeholder [YEAR] = "2014"
+placeholder [TITLE] = "The Mundane Tale of the Morning After"
+placeholder [AUTHOR] = "Adri"
+placeholder [BLURB] = "a tiny story about a not-so-tiny headache"
+
+! Other material to release
+
+
+! Website instructions
+
+placeholder [ENCODEDSTORYFILE] = "The Mundane Tale of the Morning.zblorb.js"
+template path "/home/adri/Games/Interactive Fiction/Adri/mundale tale of the morning after/newyears Materials/Templates"
+template path "/home/adri/Inform/Templates"
+template path "/usr/share/gnome-inform7/Extensions/Reserved/Templates"
+interpreter "Parchment" "z"
+base64 "/home/adri/Games/Interactive Fiction/Adri/mundale tale of the morning after/newyears.inform/Build/output.z8" to "/home/adri/Games/Interactive Fiction/Adri/mundale tale of the morning after/newyears Materials/Release/interpreter/The Mundane Tale of the Morning.zblorb.js"
+
+! Website instructions
+
+template path "/home/adri/Games/Interactive Fiction/Adri/mundale tale of the morning after/newyears Materials/Templates"
+template path "/home/adri/Inform/Templates"
+template path "/usr/share/gnome-inform7/Extensions/Reserved/Templates"
+css
+website "Standard"
+status instruction ||&nbsp;<a href="source:story.ni#line9"><img border=0 src=inform:/Reveal.png></a>||
+status alternative ||Using 'Release along with the "Such-and-Such" file called "whatever.pdf"', perhaps to add a manual, or a welcoming note&nbsp;<a href=inform:/doc389.html><img border=0 src=inform:/help.png></a>||
+status alternative ||Using 'Release along with the source text'&nbsp;<a href=inform:/doc399.html><img border=0 src=inform:/help.png></a>||
+status alternative ||Using 'Release along with a solution'&nbsp;<a href=inform:/doc398.html><img border=0 src=inform:/help.png></a>||
+status alternative ||Using 'Release along with the library card'&nbsp;<a href=inform:/doc399.html><img border=0 src=inform:/help.png></a>||
+status alternative ||Using 'Release along with the introductory booklet'&nbsp;<a href=inform:/doc392.html><img border=0 src=inform:/help.png></a>||

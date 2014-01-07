@@ -1,0 +1,899 @@
+
+
+
+
+This is the day you've always dreamed of. You are finally marrying the love of your life, Prince Roland.
+
+
+Castle Garden
+You are standing in the garden behind your family's castle. On this lovely fall evening, it is doing double duty as a wedding chapel.
+
+Your betrothed, Roland, stands before you.
+
+You can also see Father Alfred here.
+
+>help
+ > About "The Paper Bag Princess"
+   How to Play
+   Hints
+   Walkthrough
+<enter>
+*** WARNING: Possible gap in the transcript ***
+Princess Elizabeth is about to marry the love of her life when a dragon attacks the castle and kidnaps her betrothed.
+
+The Paper Bag Princess is loosely based upon the book of the same name by Robert Munsch. Permission to write the game was requested from and granted by Mister Munsch himself.
+
+The cover art of Elizabeth was graciously provided by Stacey, aka "iduck" on deviantART.
+
+Thank you so much to my beta testers: Brendan Desilets, Dan Shiovitz, Dan Kelly, David Sturgis, Doug Orleans, Emily Boegheim, Johnny Rivera, Kevin Jackson-Mead, Matthew Miller, Scott Snyder and Z Goddard.
+
+
+The author can be contacted at <genericgeekgirl@gmail.com>.
+
+
+
+
+Please press SPACE to continue.
+<space>
+*** WARNING: Possible gap in the transcript ****** WARNING: Possible gap in the transcript *** > About "The Paper Bag Princess"
+   How to Play
+   Hints
+   Walkthrough
+ > About "The Paper Bag Princess"
+   How to Play
+   Hints
+   Walkthrough
+(
+*** WARNING: Possible gap in the transcript ****** WARNING: Possible gap in the transcript ****** WARNING: Possible gap in the transcript ***   About "The Paper Bag Princess"
+ > How to Play
+   Hints
+   Walkthrough
+<space>
+ > About Interactive Fiction
+   What to do with >
+   Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+<space>
+
+The game you are playing is a work of Interactive Fiction.  In interactive fiction you play the main character of a story.  You type commands which determine the actions of the character and the flow of the plot.  Some IF games include graphics, but most do not: the imagery is provided courtesy of your imagination.  On the other hand, there's a wide range of action available: whereas in other games you may be restricted to shooting, movement, or searching items you can click on with a mouse, IF allows you a wide range of verbs.
+
+
+
+Please press SPACE to continue.
+<space>
+*** WARNING: Possible gap in the transcript ****** WARNING: Possible gap in the transcript *** > About Interactive Fiction
+   What to do with >
+   Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+ > About Interactive Fiction
+   What to do with >
+   Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+(
+*** WARNING: Possible gap in the transcript ***
+   About Interactive Fiction
+ > What to do with >
+   Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+   About Interactive Fiction
+ > What to do with >
+   Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+<space>
+
+The > sign is where the game says, "Okay, what do you want to do now?"  You may respond by typing an instruction -- usually an imperative verb, possibly followed by prepositions and objects.  So, for instance, LOOK, LOOK AT FISH, TAKE FISH.
+
+
+
+Please press SPACE to continue.
+<space>
+*** WARNING: Possible gap in the transcript ****** WARNING: Possible gap in the transcript ****** WARNING: Possible gap in the transcript ***   About Interactive Fiction
+ > What to do with >
+   Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+   About Interactive Fiction
+ > What to do with >
+   Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+(
+*** WARNING: Possible gap in the transcript ****** WARNING: Possible gap in the transcript ***
+   About Interactive Fiction
+   What to do with >
+ > Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+   About Interactive Fiction
+   What to do with >
+ > Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+<space>
+The first thing you want to do when starting a game is acquaint yourself with your surroundings and get a sense of your goal. To this end, you should read the introductory text carefully. Sometimes it contains clues. You will also want to look at the room you are in. Notice where the exits from the room are, and what objects are described here. If any of these seem interesting, you may want to EXAMINE them. 
+
+You might also want to examine yourself (EXAMINE ME) to see whether the author has left you any clues about your character. TAKE INVENTORY will tell you what you're carrying, as well.
+
+Once you've gotten your bearings, you may want to explore. Move from room to room, and check out every location available.
+
+
+
+Please press SPACE to continue.
+<space>
+*** WARNING: Possible gap in the transcript ***   About Interactive Fiction
+   What to do with >
+ > Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+   About Interactive Fiction
+   What to do with >
+ > Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+Q
+
+   About Interactive Fiction
+   What to do with >
+   Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+ > How the World is Assembled
+   If You Get Stuck
+Q
+
+   About "The Paper Bag Princess"
+ > How to Play
+   Hints
+   Walkthrough
+Q
+
+Castle Garden
+You are standing in the garden behind your family's castle. On this lovely fall evening, it is doing double duty as a wedding chapel.
+
+Your betrothed, Roland, stands before you.
+
+You can also see Father Alfred here.
+
+>z
+You beam happily at Roland.
+
+Father Alfred begins the ceremony, "We are gathered here today to witness the joining of two hearts." Roland smiles shyly at you.
+
+>z
+You beam happily at Roland.
+
+"If anyone has a reason why these two should not be wed, speak now or forever hold your peace." You hold your breath for a second, wondering whether anyone will speak up. Fortunately, nobody does and you relax.
+
+>z
+You beam happily at Roland.
+
+"Who gives this woman--" You glare icily at the minister. You are nobody's property. "Ahem. Moving on," says the minister, visibly flustered. Roland looks at you questioningly, but says nothing.
+
+>z
+You beam happily at Roland.
+
+"Love is a wonderful thing." And so on. You're too excited to pay attention to every word.
+
+>z
+You beam happily at Roland.
+
+"Elizabeth, do you take Roland to be your husband?"
+
+>z
+The minister is waiting for your answer. Please say "yes" or "no".
+
+>no
+You shake your head. "No. I don't."
+
+Oh.
+
+There's a pause, and then the guests begin to murmur. The minister frowns. "Elizabeth, are you sure?" he asks. Roland just stares at you in shock. You whisper, "I'm so sorry," and run off.
+
+
+
+    *** And they didn't get married after all! ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+> undo
+Castle Garden
+[Previous turn undone.]
+
+>yes
+Of course you do!
+
+The minister smiles at you and turns to Roland. "And, Roland, do you take Elizabeth to be your wife?"
+
+Roland grins at you and exclaims, "I do!"
+
+"I now pronounce you man and... dragon?!?" The minister's eyes go wide, seconds before he is incinerated by a burst of flame.
+
+A large dragon flies overhead. The wedding guests scatter in every direction. You cower against Roland, but he pushes you towards the dragon and runs towards the road.
+
+The dragon eats all the guests it can catch, and when it has had its fill, it smashes your castle to smithereens with its heavy tail and sets the remains on fire. You are nearly caught in a blaze of flame as you duck behind what used to be the stone wall of the garden. You are unhurt, but your fine gown snags on a rose bush and tears.
+
+As the dragon finally turns to go, it catches sight of Roland, running down the road towards the river. It swoops down and smashes the bridge just as Roland is about to cross it and catches him up in its claws. The dragon flies away with your beloved prince.
+
+
+Please press SPACE to continue.
+<space>
+
+
+The Paper Bag Princess
+An interactive fairy tale by Adri
+Release 1 / Serial number 130928 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) 
+
+Castle Ruins
+This used to be your home. Now it is nothing more than a smoking pile of rubble. The smoke obscures your view of the stars, and the primary source of light is the burning remains of your furniture.
+
+The only road away from the castle now ends abruptly at the river bank. The forest surrounds you thickly on all sides, except for an area to the north where the trees have been broken and scorched.
+
+>x rubble
+These piles of stones and wood used to be your home. You catch a glimpse of something colorful hidden in one of the piles.
+
+>x hidden thing
+You can't see any such thing.
+
+>x colorful
+You can't quite make it out from here. Why don't you try digging through the rubble?
+
+>dig rubble
+I didn't understand that sentence.
+
+>walkthrough
+ > About "The Paper Bag Princess"
+   How to Play
+   Hints
+   Walkthrough
+(
+
+   About "The Paper Bag Princess"
+ > How to Play
+   Hints
+   Walkthrough
+   About "The Paper Bag Princess"
+ > How to Play
+   Hints
+   Walkthrough
+(
+*** WARNING: Possible gap in the transcript ****** WARNING: Possible gap in the transcript ***
+(
+
+   About "The Paper Bag Princess"
+   How to Play
+   Hints
+ > Walkthrough
+   About "The Paper Bag Princess"
+   How to Play
+   Hints
+ > Walkthrough
+&
+
+   About "The Paper Bag Princess"
+   How to Play
+ > Hints
+   Walkthrough
+   About "The Paper Bag Princess"
+   How to Play
+ > Hints
+   Walkthrough
+<enter>
+
+There will be hints here one day. I promise.
+
+
+
+
+Please press SPACE to continue.
+<enter>
+   About "The Paper Bag Princess"
+   How to Play
+ > Hints
+   Walkthrough
+   About "The Paper Bag Princess"
+   How to Play
+ > Hints
+   Walkthrough
+(
+
+   About "The Paper Bag Princess"
+   How to Play
+   Hints
+ > Walkthrough
+   About "The Paper Bag Princess"
+   How to Play
+   Hints
+ > Walkthrough
+<enter>
+
+This is only one solution to the game, resulting in the "traditional" ending.
+
+wait
+wait
+wait
+wait
+wait
+yes
+press space
+search rubble
+take bag
+make dress
+north
+x trail
+take branch
+x tree
+plugh
+make torch
+open vial
+pour oil on torch
+south
+light torch
+north
+northeast
+go in any direction until you reach the cave
+knock on door
+again
+shout
+ask dragon about fire
+y
+y
+ask dragon about flight
+y
+in
+shout at roland
+
+
+
+Please press SPACE to continue.
+<space>
+   About "The Paper Bag Princess"
+   How to Play
+   Hints
+ > Walkthrough
+   About "The Paper Bag Princess"
+   How to Play
+   Hints
+ > Walkthrough
+Q
+
+Castle Ruins
+This used to be your home. Now it is nothing more than a smoking pile of rubble. The smoke obscures your view of the stars, and the primary source of light is the burning remains of your furniture.
+
+The only road away from the castle now ends abruptly at the river bank. The forest surrounds you thickly on all sides, except for an area to the north where the trees have been broken and scorched.
+
+>search rubble
+You dig through the piles of rubble until you find a paper bag.
+
+>take bag
+You take the paper bag.
+
+>wear bag
+You quickly fashion a dress out of the gift bag. It's not as fancy as you're used to, but it'll get the job done.
+
+You strip off the remains of your wedding gown.
+
+You slip the makeshift dress over your head and pull it down past your hips.
+
+>inv
+You are carrying a handful of rags.
+
+>n
+
+Burnt Forest
+There's a trail of burned trees and what appear to be teeth leading to the northeast. One tree in particular catches your eye.
+
+>plugh
+POOF! Your fairy godmother appears. "Tsk," she says. "Poor girl. I'm not sure I can help you with this one." She pauses and rummages around in her pockets, pulling out a vial. She hands it to you. "This is the best I can do. Use it wisely." Then she vanishes, as quickly as she appeared.
+
+>take branch
+You can't see any such thing.
+
+>look
+Burnt Forest
+There's a trail of burned trees and what appear to be teeth leading to the northeast. One tree in particular catches your eye.
+
+>x tree
+You examine the tree more closely. Someone has carved "PLUGH" into the trunk.
+
+There is a large branch propped up against the base of the tree.
+
+>l
+Burnt Forest
+There's a trail of burned trees and what appear to be teeth leading to the northeast. One tree in particular catches your eye.
+
+You can see a branch here.
+
+>take branch
+You take the branch.
+
+>make torch
+You fashion a torch from the branch and the remains of your wedding gown.
+
+>s
+
+Castle Ruins
+This used to be your home. Now it is nothing more than a smoking pile of rubble. The smoke obscures your view of the stars, and the primary source of light is the burning remains of your furniture.
+
+The only road away from the castle now ends abruptly at the river bank. The forest surrounds you thickly on all sides, except for an area to the north where the trees have been broken and scorched.
+
+>light torch
+The torch needs something else.
+
+>open vial
+You open the vial.
+
+>pour oil on torh
+You can't see any such thing.
+
+>pour oil on torch
+You pour the oily black liquid onto the torch and discard the empty vial.
+
+>light torch
+You light the torch with the flames.
+
+>n
+
+Burnt Forest
+There's a trail of burned trees and what appear to be teeth leading to the northeast. One tree in particular catches your eye.
+
+>ne
+
+Dimly Lit Forest
+You feel as if you are in a twisting maze of giant trees.
+
+>ne
+
+Dimly Lit Forest
+You feel as if you are in a maze of twisting giant trees.
+
+>nnnn
+That's not a verb I recognize.
+
+>n
+
+Dimly Lit Forest
+You feel as if you are in a giant twisty maze of trees.
+
+>n
+
+Dimly Lit Forest
+You feel as if you are in a giant twisty maze of trees.
+
+>
+I beg your pardon?
+
+>n
+
+Dimly Lit Forest
+You feel as if you are in a giant maze of twisting trees.
+
+>n
+
+Dimly Lit Forest
+You feel as if you are in a twisting maze of giant trees.
+
+>n
+
+Dimly Lit Forest
+You feel as if you are in a twisty maze of giant trees.
+
+>n
+
+Dimly Lit Forest
+You feel as if you are in a giant maze of twisty trees.
+
+>n
+The torch starts to flicker. It will probably burn out soon.
+
+Dimly Lit Forest
+You feel as if you are in a twisting giant maze of trees.
+
+>n
+
+Dimly Lit Forest
+You feel as if you are in a maze of giant twisty trees.
+
+>
+I beg your pardon?
+
+>d
+As you emerge from the forest, the torch suddenly fizzles out.
+
+There is nowhere to go in that direction.
+
+You are now alone in the dark. You remember the stories your father used to tell you about Grues, but you're reasonably certain they did not live in forests.
+
+>n
+You finally emerge from the forest.
+
+You stumble and cannot find your way.
+
+>l
+Dark Forest
+It is so dark that you can barely see the trees that you know surround you.
+
+>n
+You finally emerge from the forest.
+
+You stumble and cannot find your way.
+
+>d
+You finally emerge from the forest.
+
+There is nowhere to go in that direction.
+
+>e
+You finally emerge from the forest.
+
+You stumble and cannot find your way.
+
+>
+I beg your pardon?
+
+>s
+You finally emerge from the forest.
+
+You stumble and cannot find your way.
+
+>s
+You finally emerge from the forest.
+
+You stumble and cannot find your way.
+
+>s
+You finally emerge from the forest.
+
+You stumble and cannot find your way.
+
+>d
+You finally emerge from the forest.
+
+There is nowhere to go in that direction.
+
+>w
+You finally emerge from the forest.
+
+You stumble and cannot find your way.
+
+>a
+What do you want to a?
+
+>e
+There's no one here to talk to.
+
+>
+I beg your pardon?
+
+>w
+You finally emerge from the forest.
+
+You stumble and cannot find your way.
+
+>w
+You finally emerge from the forest.
+
+You stumble and cannot find your way.
+
+>s
+You finally emerge from the forest.
+
+You stumble and cannot find your way.
+
+>n
+You finally emerge from the forest.
+
+You stumble and cannot find your way.
+
+>n
+You finally emerge from the forest.
+
+You stumble and cannot find your way.
+
+>s
+You finally emerge from the forest.
+
+You stumble and cannot find your way.
+
+>s
+You finally emerge from the forest.
+
+You stumble and cannot find your way.
+
+>
+I beg your pardon?
+
+>s
+You finally emerge from the forest.
+
+You stumble and cannot find your way.
+
+>s
+You finally emerge from the forest.
+
+You stumble and cannot find your way.
+
+>s
+You finally emerge from the forest.
+
+You stumble and cannot find your way.
+
+>s
+You finally emerge from the forest.
+
+You stumble and cannot find your way.
+
+>s
+You finally emerge from the forest.
+
+You stumble and cannot find your way.
+
+>s
+You finally emerge from the forest.
+
+You stumble and cannot find your way.
+
+>s
+You finally emerge from the forest.
+
+You stumble and cannot find your way.
+
+>
+I beg your pardon?
+
+>s
+You finally emerge from the forest.
+
+You stumble and cannot find your way.
+
+>walk
+You'll have to say which compass direction to go in.
+
+>walk northeast
+You finally emerge from the forest.
+
+You stumble and cannot find your way.
+
+>look
+Dark Forest
+It is so dark that you can barely see the trees that you know surround you.
+
+>s
+You finally emerge from the forest.
+
+You stumble and cannot find your way.
+
+>n
+You finally emerge from the forest.
+
+You stumble and cannot find your way.
+
+>ne
+You finally emerge from the forest.
+
+You stumble and cannot find your way.
+
+>ne
+You finally emerge from the forest.
+
+You stumble and cannot find your way.
+
+>sw
+You finally emerge from the forest.
+
+You stumble and cannot find your way.
+
+>sw
+You finally emerge from the forest.
+
+You stumble and cannot find your way.
+
+>se
+You finally emerge from the forest.
+
+You stumble and cannot find your way.
+
+>se
+You finally emerge from the forest.
+
+You stumble and cannot find your way.
+
+>nw
+You finally emerge from the forest.
+
+You stumble and cannot find your way.
+
+>exit
+*** WARNING: Possible gap in the transcript ***But you aren't in anything at the moment.
+
+>enter
+*** WARNING: Possible gap in the transcript ***You must supply a noun.
+
+>look
+Dark Forest
+It is so dark that you can barely see the trees that you know surround you.
+
+>walkthrough
+ > About "The Paper Bag Princess"
+   How to Play
+   Hints
+   Walkthrough
+(
+
+   About "The Paper Bag Princess"
+ > How to Play
+   Hints
+   Walkthrough
+   About "The Paper Bag Princess"
+ > How to Play
+   Hints
+   Walkthrough
+(
+
+   About "The Paper Bag Princess"
+   How to Play
+ > Hints
+   Walkthrough
+   About "The Paper Bag Princess"
+   How to Play
+ > Hints
+   Walkthrough
+(
+
+   About "The Paper Bag Princess"
+   How to Play
+   Hints
+ > Walkthrough
+   About "The Paper Bag Princess"
+   How to Play
+   Hints
+ > Walkthrough
+<enter>
+
+This is only one solution to the game, resulting in the "traditional" ending.
+
+wait
+wait
+wait
+wait
+wait
+yes
+press space
+search rubble
+take bag
+make dress
+north
+x trail
+take branch
+x tree
+plugh
+make torch
+open vial
+pour oil on torch
+south
+light torch
+north
+northeast
+go in any direction until you reach the cave
+knock on door
+again
+shout
+ask dragon about fire
+y
+y
+ask dragon about flight
+y
+in
+shout at roland
+
+
+
+Please press SPACE to continue.
+<space>
+   About "The Paper Bag Princess"
+   How to Play
+   Hints
+ > Walkthrough
+   About "The Paper Bag Princess"
+   How to Play
+   Hints
+ > Walkthrough
+Q
+
+Dark Forest
+It is so dark that you can barely see the trees that you know surround you.
+
+>south
+You finally emerge from the forest.
+
+You stumble and cannot find your way.
+
+>south
+You finally emerge from the forest.
+
+You stumble and cannot find your way.
+
+>s
+You finally emerge from the forest.
+
+You stumble and cannot find your way.
+
+>s
+You finally emerge from the forest.
+
+You stumble and cannot find your way.
+
+>s
+You finally emerge from the forest.
+
+You stumble and cannot find your way.
+
+>s
+You finally emerge from the forest.
+
+You stumble and cannot find your way.
+
+>
+I beg your pardon?
+
+>s
+You finally emerge from the forest.
+
+You stumble and cannot find your way.
+
+>s
+You finally emerge from the forest.
+
+You stumble and cannot find your way.
+
+>s
+You finally emerge from the forest.
+
+You stumble and cannot find your way.
+
+>s
+You finally emerge from the forest.
+
+You stumble and cannot find your way.
+
+>restart
+Are you sure you want to restart? 

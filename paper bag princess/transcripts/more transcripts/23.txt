@@ -1,0 +1,413 @@
+
+
+
+
+This is the day you've always dreamed of. You are finally marrying the love of your life, Prince Roland.
+
+
+Castle Garden
+You are standing in the garden behind your family's castle. On this lovely fall evening, it is doing double duty as a wedding chapel.
+
+Your betrothed, Roland, stands before you.
+
+You can also see Father Alfred here.
+
+>kill roland
+You would never attack Roland! Except possibly with kisses.
+
+Father Alfred begins the ceremony, "We are gathered here today to witness the joining of two hearts." Roland smiles shyly at you.
+
+>kiss roland
+You'll have your chance soon enough!
+
+"If anyone has a reason why these two should not be wed, speak now or forever hold your peace." You hold your breath for a second, wondering whether anyone will speak up. Fortunately, nobody does and you relax.
+
+>kill father
+Violence isn't the answer to this one.
+
+"Who gives this woman--" You glare icily at the minister. You are nobody's property. "Ahem. Moving on," says the minister, visibly flustered. Roland looks at you questioningly, but says nothing.
+
+>w
+You can't leave yet! The ceremony hasn't ended.
+
+"Love is a wonderful thing." And so on. You're too excited to pay attention to every word.
+
+>e
+You can't leave yet! The ceremony hasn't ended.
+
+"Elizabeth, do you take Roland to be your husband?"
+
+>scream
+The minister is waiting for your answer. Please say "yes" or "no".
+
+>no
+You shake your head. "No. I don't."
+
+Oh.
+
+There's a pause, and then the guests begin to murmur. The minister frowns. "Elizabeth, are you sure?" he asks. Roland just stares at you in shock. You whisper, "I'm so sorry," and run off.
+
+
+
+    *** And they didn't get married after all! ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+> undo
+Castle Garden
+[Previous turn undone.]
+
+>yes
+Of course you do!
+
+The minister smiles at you and turns to Roland. "And, Roland, do you take Elizabeth to be your wife?"
+
+Roland grins at you and exclaims, "I do!"
+
+"I now pronounce you man and... dragon?!?" The minister's eyes go wide, seconds before he is incinerated by a burst of flame.
+
+A large dragon flies overhead. The wedding guests scatter in every direction. You cower against Roland, but he pushes you towards the dragon and runs towards the road.
+
+The dragon eats all the guests it can catch, and when it has had its fill, it smashes your castle to smithereens with its heavy tail and sets the remains on fire. You are nearly caught in a blaze of flame as you duck behind what used to be the stone wall of the garden. You are unhurt, but your fine gown snags on a rose bush and tears.
+
+As the dragon finally turns to go, it catches sight of Roland, running down the road towards the river. It swoops down and smashes the bridge just as Roland is about to cross it and catches him up in its claws. The dragon flies away with your beloved prince.
+
+
+Please press SPACE to continue.
+<enter>
+
+
+The Paper Bag Princess
+An interactive fairy tale by Adri
+Release 1 / Serial number 131005 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) 
+
+Castle Ruins
+This used to be your home. Now it is nothing more than a smoking pile of rubble. The smoke obscures your view of the stars, and the primary source of light is the burning remains of your furniture.
+
+The only road away from the castle now ends abruptly at the river bank. The forest surrounds you thickly on all sides, except for an area to the north where the trees have been broken and scorched.
+
+>w
+The only possible path appears to be through the forest to the north.
+
+>n
+Perhaps you should find something more substantial to wear first.
+
+>x me
+You are young and beautiful, too lovely to be described in mere words. You are, however, in dire need of a bath and a change of clothes.
+
+You are wearing a handful of rags and a tarnished gold crown.
+
+>i
+You are carrying nothing.
+
+>e
+The only possible path appears to be through the forest to the north.
+
+>w
+The only possible path appears to be through the forest to the north.
+
+>s
+The only possible path appears to be through the forest to the north.
+
+>l
+Castle Ruins
+This used to be your home. Now it is nothing more than a smoking pile of rubble. The smoke obscures your view of the stars, and the primary source of light is the burning remains of your furniture.
+
+The only road away from the castle now ends abruptly at the river bank. The forest surrounds you thickly on all sides, except for an area to the north where the trees have been broken and scorched.
+
+>n
+Perhaps you should find something more substantial to wear first.
+
+>i
+You are carrying nothing.
+
+>e
+The only possible path appears to be through the forest to the north.
+
+>n
+Perhaps you should find something more substantial to wear first.
+
+>w
+The only possible path appears to be through the forest to the north.
+
+>s
+The only possible path appears to be through the forest to the north.
+
+>sw
+The only possible path appears to be through the forest to the north.
+
+>se
+The only possible path appears to be through the forest to the north.
+
+>l
+Castle Ruins
+This used to be your home. Now it is nothing more than a smoking pile of rubble. The smoke obscures your view of the stars, and the primary source of light is the burning remains of your furniture.
+
+The only road away from the castle now ends abruptly at the river bank. The forest surrounds you thickly on all sides, except for an area to the north where the trees have been broken and scorched.
+
+>x bank
+You can't see any such thing.
+
+>x rubble
+These piles of stones and wood used to be your home. You catch a glimpse of something colorful hidden in one of the piles.
+
+>x piles
+These piles of stones and wood used to be your home. You catch a glimpse of something colorful hidden in one of the piles.
+
+>x stones
+These piles of stones and wood used to be your home. You catch a glimpse of something colorful hidden in one of the piles.
+
+>search rubble
+You dig through the piles of rubble until you find a paper bag.
+
+>open bag
+That's not something you can open.
+
+>take bag
+You take the paper bag.
+
+>open paper bag
+That's not something you can open.
+
+>look in paper bag
+You find nothing of interest.
+
+>i
+You are carrying a paper bag.
+
+>look
+Castle Ruins
+This used to be your home. Now it is nothing more than a smoking pile of rubble. The smoke obscures your view of the stars, and the primary source of light is the burning remains of your furniture.
+
+The only road away from the castle now ends abruptly at the river bank. The forest surrounds you thickly on all sides, except for an area to the north where the trees have been broken and scorched.
+
+>n
+Perhaps you should find something more substantial to wear first.
+
+>e
+The only possible path appears to be through the forest to the north.
+
+>help
+ > About "The Paper Bag Princess"
+   How to Play
+   Walkthrough
+(
+
+   About "The Paper Bag Princess"
+ > How to Play
+   Walkthrough
+   About "The Paper Bag Princess"
+ > How to Play
+   Walkthrough
+(
+
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+<enter>
+
+This is only one solution to the game, resulting in the "traditional" ending.
+
+wait
+wait
+wait
+wait
+wait
+yes
+press space
+search rubble
+take bag
+make dress
+north
+x trail
+take branch
+x tree
+plugh
+make torch
+open vial
+pour oil on torch
+south
+light torch
+north
+northeast
+go in any direction until you reach the cave
+knock on door
+again
+shout
+ask dragon about fire
+y
+y
+ask dragon about flight
+y
+in
+shout at roland
+
+
+
+Please press SPACE to continue.
+<space>
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+<enter>
+
+This is only one solution to the game, resulting in the "traditional" ending.
+
+wait
+wait
+wait
+wait
+wait
+yes
+press space
+search rubble
+take bag
+make dress
+north
+x trail
+take branch
+x tree
+plugh
+make torch
+open vial
+pour oil on torch
+south
+light torch
+north
+northeast
+go in any direction until you reach the cave
+knock on door
+again
+shout
+ask dragon about fire
+y
+y
+ask dragon about flight
+y
+in
+shout at roland
+
+
+
+Please press SPACE to continue.
+<space>
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+Q
+
+Castle Ruins
+This used to be your home. Now it is nothing more than a smoking pile of rubble. The smoke obscures your view of the stars, and the primary source of light is the burning remains of your furniture.
+
+The only road away from the castle now ends abruptly at the river bank. The forest surrounds you thickly on all sides, except for an area to the north where the trees have been broken and scorched.
+
+>make dress
+You quickly fashion a dress out of the gift bag. It's not as fancy as you're used to, but it'll get the job done.
+
+You strip off the remains of your wedding gown.
+
+You slip the makeshift dress over your head and pull it down past your hips.
+
+>n
+
+Burnt Forest
+There's a trail of burned trees and what appear to be teeth leading to the northeast. One tree in particular catches your eye.
+
+>ne
+The woods seem pretty dark. Maybe you should find a light source.
+
+>w
+The trees are impassable in that direction. The trail seems to be leading northeast.
+
+>x tree
+You examine the tree more closely. Someone has carved "PLUGH" into the trunk.
+
+There is a large branch propped up against the base of the tree.
+
+>plugh
+POOF! Your fairy godmother appears. "Tsk," she says. "Poor girl. I'm not sure I can help you with this one." She pauses and rummages around in her pockets, pulling out a vial. She hands it to you. "This is the best I can do. Use it wisely." Then she vanishes, as quickly as she appeared.
+
+>x vial
+In the vial is an oily black liquid.
+
+>climb tree
+You have always been a great climber, but there is no time for that.
+
+>x branch
+It's a large branch. It looks pretty sturdy.
+
+>swing on branch
+There's nothing sensible to swing here.
+
+>break branch
+Violence isn't the answer to this one.
+
+>e
+The trees are impassable in that direction. The trail seems to be leading northeast.
+
+>w
+The trees are impassable in that direction. The trail seems to be leading northeast.
+
+>ne
+The woods seem pretty dark. Maybe you should find a light source.
+
+>i
+You are carrying a vial (closed) and a handful of rags.
+
+>open vial
+You open the vial.
+
+>light vial
+This dangerous act would achieve little.
+
+>pour vial on rags
+You pour the oily black liquid onto the handful of rags and discard the empty vial.
+
+>burn rags
+This dangerous act would achieve little.
+
+>ne
+The woods seem pretty dark. Maybe you should find a light source.
+
+>w
+The trees are impassable in that direction. The trail seems to be leading northeast.
+
+>lok
+That's not a verb I recognize.
+
+>make fire
+I didn't understand that sentence.
+
+>burn rags
+This dangerous act would achieve little.
+
+>i
+You are carrying a handful of rags.
+
+>look
+Burnt Forest
+There's a trail of burned trees and what appear to be teeth leading to the northeast. One tree in particular catches your eye.
+
+You can see a branch here.
+
+>w
+The trees are impassable in that direction. The trail seems to be leading northeast.
+
+>s
+
+Castle Ruins
+This used to be your home. Now it is nothing more than a smoking pile of rubble. The smoke obscures your view of the stars, and the primary source of light is the burning remains of your furniture.
+
+The only road away from the castle now ends abruptly at the river bank. The forest surrounds you thickly on all sides, except for an area to the north where the trees have been broken and scorched.
+
+>

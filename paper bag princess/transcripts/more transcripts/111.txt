@@ -1,0 +1,394 @@
+
+
+
+
+This is the day you've always dreamed of. You are finally marrying the love of your life, Prince Roland.
+
+
+Castle Garden
+You are standing in the garden behind your family's castle. On this lovely fall evening, it is doing double duty as a wedding chapel.
+
+Your betrothed, Roland, stands before you.
+
+You can also see Father Alfred here.
+
+>xyzzy
+POOF! Your fairy godmother appears. She smiles at you and places a necklace around your neck. Then she fades out of view.
+
+Father Alfred begins the ceremony, "We are gathered here today to witness the joining of two hearts." Roland smiles shyly at you.
+
+>i
+You are carrying a bouquet.
+
+"If anyone has a reason why these two should not be wed, speak now or forever hold your peace." You hold your breath for a second, wondering whether anyone will speak up. Fortunately, nobody does and you relax.
+
+>x roland
+Roland is the most attractive man you have ever laid eyes on.
+
+"Who gives this woman--" You glare icily at the minister. You are nobody's property. "Ahem. Moving on," says the minister, visibly flustered. Roland looks at you questioningly, but says nothing.
+
+>x minister
+Father Alfred has been your family's minister for as long as you can remember.
+
+"Love is a wonderful thing." And so on. You're too excited to pay attention to every word.
+
+>x bouquet
+Your bouquet contains a collection of purple and orange flowers, tied up with a white ribbon. You don't even know what most of those flowers are called.
+
+"Elizabeth, do you take Roland to be your husband?"
+
+>no
+You shake your head. "No. I don't."
+
+Oh.
+
+There's a pause, and then the guests begin to murmur. The minister frowns. "Elizabeth, are you sure?" he asks. Roland just stares at you in shock. You whisper, "I'm so sorry," and run off.
+
+
+
+    *** And they didn't get married after all! ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+> undo
+Castle Garden
+[Previous turn undone.]
+
+>yes
+Of course you do!
+
+The minister smiles at you and turns to Roland. "And, Roland, do you take Elizabeth to be your wife?"
+
+Roland grins at you and exclaims, "I do!"
+
+"I now pronounce you man and... dragon?!?" The minister's eyes go wide, seconds before he is incinerated by a burst of flame.
+
+A large dragon flies overhead. The wedding guests scatter in every direction. You cower against Roland, but he pushes you towards the dragon and runs towards the road.
+
+The dragon eats all the guests it can catch, and when it has had its fill, it smashes your castle to smithereens with its heavy tail and sets the remains on fire. You are nearly caught in a blaze of flame as you duck behind what used to be the stone wall of the garden. You are unhurt, but your fine gown snags on a rose bush and tears.
+
+As the dragon finally turns to go, it catches sight of Roland, running down the road towards the river. It swoops down and smashes the bridge just as Roland is about to cross it and catches him up in its claws. The dragon flies away with your beloved prince.
+
+
+Please press SPACE to continue.
+<space>
+
+
+The Paper Bag Princess
+An interactive fairy tale by Adri
+Release 1 / Serial number 131007 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) 
+
+Castle Ruins
+This used to be your home. Now it is nothing more than a smoking pile of rubble. The smoke obscures your view of the stars, and the primary source of light is the burning remains of your furniture.
+
+The only road away from the castle now ends abruptly at the river bank. The forest surrounds you thickly on all sides, except for an area to the north where the trees have been broken and scorched.
+
+>i
+You are carrying nothing.
+
+>x rubble
+These piles of stones and wood used to be your home. You catch a glimpse of something colorful hidden in one of the piles.
+
+>search pile
+You dig through the piles of rubble until you find a paper bag.
+
+>x bag
+It's a gift bag made out of paper. It looks like it used to have polka dots on it, but now it's just scorched.
+
+>wear it
+You take the paper bag.
+
+You quickly fashion a dress out of the gift bag. It's not as fancy as you're used to, but it'll get the job done.
+
+You strip off the remains of your wedding gown and discard them in a pile of rubble.
+
+You slip the makeshift dress over your head and pull it down past your hips.
+
+>x me
+You are young and beautiful, too lovely to be described in mere words. You are, however, in dire need of a bath and a change of clothes.
+
+You are wearing a gift bag that has been fashioned into a rather respectable dress, a necklace, and a tarnished gold crown.
+
+>x necklace
+A heart-shaped pendant on a gold chain.
+
+>x crown
+Your gold crown. It's looking a little worse for the wear.
+
+>xyzzy
+The necklace suddenly begins to glow.
+
+>x necklace
+A heart-shaped pendant on a gold chain. It is glowing with a soft white light.
+
+>xyzzy
+The necklace abruptly stops glowing.
+
+>l
+Castle Ruins
+This used to be your home. Now it is nothing more than a smoking pile of rubble. The smoke obscures your view of the stars, and the primary source of light is the burning remains of your furniture.
+
+The only road away from the castle now ends abruptly at the river bank. The forest surrounds you thickly on all sides, except for an area to the north where the trees have been broken and scorched.
+
+>x smoke
+You can barely see anything through the smoke.
+
+>x stars
+The sky is usually full of them this time of year, but you cannot see them through the thick smoke.
+
+>x furniture
+You think you can make out the leg of a chair somewhere in that mess. It's mostly just a blaze of fire.
+
+>x road
+This well-traveled road used to connect the castle to the rest of the kingdom. Unfortunately, the bridge across the river has been rendered impassable.
+
+>x forest
+The forest surrounds you thickly on all sides, except for an area to the north where the trees have been broken and scorched.
+
+>n
+
+Burnt Forest
+There's a trail of burned trees and what appear to be teeth leading to the northeast. One tree in particular catches your eye.
+
+>x tree
+You examine the tree more closely. Someone has carved "PLUGH" into the trunk.
+
+There is a large branch propped up against the base of the tree.
+
+>x branch
+It's a large branch. It looks pretty sturdy.
+
+>take it
+You take the branch.
+
+>plugh
+The necklace suddenly begins to glow.
+
+>x necklace
+A heart-shaped pendant on a gold chain. It is glowing with a soft white light.
+
+>x teeth
+Yes, those are definitely teeth. They come in a variety of shapes and sizes, most of which do not appear to be human. You wonder briefly where the rest of the bones are.
+
+>x bones
+You can't see any such thing.
+
+>ne
+
+Dimly Lit Forest
+You feel as if you are in a maze of twisting giant trees.
+
+>l
+Dimly Lit Forest
+You feel as if you are in a maze of giant twisty trees.
+
+>plugh
+The necklace abruptly stops glowing.
+
+You are now alone in the dark. You remember the stories your father used to tell you about Grues, but you're reasonably certain they did not live in forests.
+
+>plugh
+The necklace suddenly begins to glow.
+
+Dimly Lit Forest
+You feel as if you are in a twisty maze of giant trees.
+
+>x trees
+Dimly Lit Forest
+You feel as if you are in a giant twisty maze of trees.
+
+>x bones
+You can't see any such thing.
+
+>x branch
+It's a large branch. It looks pretty sturdy.
+
+>s
+
+Dimly Lit Forest
+You feel as if you are in a twisting maze of giant trees.
+
+>s
+
+Dimly Lit Forest
+You feel as if you are in a twisty maze of giant trees.
+
+>s
+
+Dimly Lit Forest
+You feel as if you are in a twisty maze of giant trees.
+
+>s
+You somehow sense that you have reached the very center of the forest.
+
+Dimly Lit Forest
+You feel as if you are in a maze of twisty giant trees.
+
+>x stars
+You can't see any such thing.
+
+>x all
+You can't use multiple objects with that verb.
+
+>take all
+There are none at all available!
+
+>s
+
+Dimly Lit Forest
+You feel as if you are in a maze of twisty giant trees.
+
+>se
+You finally emerge from the forest.
+
+Outside the Dragon's Cave
+You are standing before a large cave. The entrance has been blocked by a large wooden door.
+
+>x cave
+The large door almost perfectly fills in the natural opening in the rock. There is a golden knocker in the shape of a dragon's tail about a foot above your head.
+
+>x door
+The large door almost perfectly fills in the natural opening in the rock. There is a golden knocker in the shape of a dragon's tail about a foot above your head.
+
+>x knocker
+The large door almost perfectly fills in the natural opening in the rock. There is a golden knocker in the shape of a dragon's tail about a foot above your head.
+
+>use knocker
+That's not a verb I recognize.
+
+>knock on door
+You grab the knocker and bang on the door.
+
+The door opens and the dragon sticks its nose through the opening. It says, "Well, a princess! I love to eat princesses, but I have already eaten a whole castle today. I am a very tired dragon. Come back tomorrow." 
+
+Then it slams the door in your face.
+
+>knock on door
+You bang on the door again.
+
+The dragon sticks its nose out the door and says, "I am sure you are very delicious, but I am rather tired and stuffed. Please do come back tomorrow."
+
+This time, however, he does not immediately return to his cave.
+
+>put branch in door
+That can't contain things.
+
+>enter cave
+The dragon is blocking the doorway and will not allow you to pass.
+
+>talk to dragon
+"Wait!" you exclaim.
+
+Surprised, the dragon steps entirely out of the cave, nudging the door shut with its tail.
+
+You say, "Is it true that you are the fastest and fiercest dragon in the whole world?"
+
+"Yes," says the dragon. Boastful fellow, isn't he?
+
+>g
+You say, "Is it true that you are the fastest and fiercest dragon in the whole world?"
+
+"Yes," says the dragon. Boastful fellow, isn't he?
+
+>x dragon
+Up close, you realize this dragon isn't actually very large, only about fifteen cubits from the tip of its nose to the spiked end of its tail. Its green scales shimmer in the glow of your necklace. Its wings are folded neatly at its sides, and a swirl of smoke escapes its nostrils.
+
+>x wings
+Even furled, the wings nearly double the size of the dragon.
+
+>flap wings
+That's not a verb I recognize.
+
+>i
+You are carrying a branch.
+
+>x branch
+It's a large branch. It looks pretty sturdy.
+
+>hit dragon
+The dragon is much larger and stronger than you. Perhaps you can outwit it in some way.
+
+>talk to dragon
+Dragons are well known for breathing FIRE and their ability to FLY. Maybe you could try asking about one of those.
+
+>ask dragon about fire
+"Is it true," you say, "that you can burn up ten forests with your fiery breath?"
+
+"Oh, yes," says the dragon, and it takes a huge, deep breath and breathes out so much fire that it burns up fifty forests.
+
+Were you impressed by that display? (Y/N)
+
+>N
+no
+Apparently it takes a lot to impress you! But you force yourself to look delighted as you shout, "Do it again!"
+
+The dragon takes another huge breath and breathes out so much fire that it burns up one hundred forests.
+
+Wasn't that amazing? 
+
+>Y
+yes
+"Fantastic!" you exclaim. "Do it again!"
+
+The dragon takes another huge breath. But this time, nothing comes out.
+
+>talk to dragon
+You say, "Is it true that you are the fastest and fiercest dragon in the whole world?"
+
+"Yes," says the dragon. Boastful fellow, isn't he?
+
+>ask dragon about wings
+You say, "Dragon, is it true that you can fly around the world in just ten seconds?"
+
+"Why, yes," says the dragon, and it jumps up and flies around the world in just ten seconds. It seems very tired when it returns.
+
+Were you impressed by that display? 
+
+>Y
+yes
+"Magnificent!" you shout. "Do it again!"
+
+The dragon jumps up and flies around the whole world in just twenty seconds. When it returns, it flops down on the ground.
+
+The dragon is so tired that he falls fast asleep.
+
+>open door
+You step over the dragon and open the door to the cave.
+
+>enter cave
+
+The Dragon's Cave
+This is where the dragon lives. Piles of treasure fill the room, reflecting light in every direction.
+
+Your betrothed, Roland, stands before you.
+
+Roland looks at you and says, "Elizabeth, you are a mess! You smell like ashes, your hair is all tangled, and you are wearing a dirty paper bag. Come back when you are dressed like a real princess."
+
+>x roland
+Roland is the most attractive man you have ever laid eyes on. Too bad he's also the biggest bum you've ever met!
+
+>x treasure
+There is more gold and precious gems here than you have ever seen before in your life.
+
+>take treasure
+No, Elizabeth. You were raised better than that.
+
+>talk to roland
+Roland glares at you.
+
+>hit roland
+You slap Roland!
+
+"Roland," you say, "your clothes are really pretty, and your hair is very neat. You look like a real prince, but you are also a real toad."
+
+You turn around and walk out the door.
+
+
+
+    *** And Elizabeth lived happily ever after! ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+> 

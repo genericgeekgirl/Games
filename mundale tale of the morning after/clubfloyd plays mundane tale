@@ -1,0 +1,1140 @@
+genericgeekgirl says (to Floyd), "load sleepmask nys7mundanetale" 
+Floyd ]  Below the Desk                                       0/1
+Floyd |
+Floyd |
+Floyd |
+Floyd |
+Floyd | Oof. Your head. You remember very little about last night, but
+Floyd | apparently you had an extremely good time at the party.
+Floyd |
+Floyd | Judging from how dark the room is, you're guessing it's fairly late in
+Floyd | the afternoon. But all you want to do is take care of your hangover
+Floyd | and go home and hide from the world for the rest of the day.
+Floyd |
+Floyd | The Mundane Tale of the Morning After
+Floyd | A tiny anti-adventure by Adri
+Floyd | Release 1 / Serial number 140103 / Inform 7 build 6G60 (I6/v6.32 lib
+Floyd | 6/12N)
+Floyd |
+Floyd | Below the Desk
+Floyd | This is where you fell asleep after the party, because you were too
+Floyd | drunk to stumble home.
+Floyd |
+Floyd | The rest of the room is southeast.
+Floyd |
+Floyd | >
+Taleslinger asks, "Tale, eh?" 
+DavidW says (to Floyd), "x me" 
+Floyd ]  Below the Desk                                       0/2
+Floyd |
+Floyd | > X ME
+Floyd |
+Floyd | You are a tiny ninja dressed in green from head to toe.
+Floyd |
+Floyd | >
+Binder says, "ha" 
+DavidW says (to Floyd), "i" 
+Floyd ]  Below the Desk                                       0/3
+Floyd |
+Floyd | > I
+Floyd |
+Floyd | You are carrying nothing.
+Floyd |
+Floyd | Oh! But where are your nunchaku?
+Floyd |
+Floyd | >
+DavidW says, "where-a-doodle!" 
+Taleslinger says, "Can't go to sleep without our nunchaku!" 
+Taleslinger says (to Floyd), "se" 
+Floyd ]  Bedroom                                              0/4
+Floyd |
+Floyd | > SE
+Floyd |
+Floyd |
+Floyd | Bedroom
+Floyd | This is the dormitory room you share with your three closest friends
+Floyd | (and one rather large inhabitant you don't see very often). There is a
+Floyd | bed to the north, a wardrobe to the east, a bookshelf to the south, a
+Floyd | food storage area to the west and a desk in the northwest corner.
+Floyd | There is a mouse hole in the southeast corner of the room, next to the
+Floyd | bookshelf.
+Floyd |
+Floyd | >
+DavidW says, "but ya did, Blanche" 
+Thurnley asks, "What happens if we try "search me"?" 
+Taleslinger says (to thurnley), "Try it." 
+Thurnley says (to Floyd), "search me" 
+Floyd ]  Bedroom                                              0/5
+Floyd |
+Floyd | > SEARCH ME
+Floyd |
+Floyd | You find nothing of interest.
+Floyd |
+Floyd | >
+Zach says (to Floyd), "x bed" 
+Floyd ]  Bedroom                                              0/6
+Floyd |
+Floyd | > X BED
+Floyd |
+Floyd | The bed is unmade, as always. The black ninja lives underneath it.
+Floyd |
+Floyd | >
+Thurnley says, "Anyway, it looks like "Search me" has no snarky default response in I7, which is a bit sad." 
+Taleslinger says (to Floyd), "n" 
+Floyd ]  Under the Bed                                        0/7
+Floyd |
+Floyd | > N
+Floyd |
+Floyd |
+Floyd | Under the Bed
+Floyd | The rest of the room is south, and there's a particularly dusty
+Floyd | looking corner to the east.
+Floyd |
+Floyd | The black ninja is not here.
+Floyd |
+Floyd | >
+Roger says, "Haha" 
+Zach says (to Floyd), "x dresser" 
+Floyd ]  Under the Bed                                        0/7
+Floyd |
+Floyd | > X DRESSER
+Floyd |
+Floyd | You can't see any such thing.
+Floyd |
+Floyd | >
+Zach says (to Floyd), "z" 
+Floyd ]  Under the Bed                                        0/8
+Floyd |
+Floyd | > Z
+Floyd |
+Floyd | You sway unsteadily on your feet in a most un-ninja-like manner.
+Floyd |
+Floyd | >
+Taleslinger says (to zach), "Whoops, sorryx" 
+Roger says, "Another cutting commentary on race relations" 
+Taleslinger says (to Floyd), "e" 
+Floyd ]  Far Corner of the Bed                                0/9
+Floyd |
+Floyd | > E
+Floyd |
+Floyd |
+Floyd | Far Corner of the Bed
+Floyd | This corner doesn't seem to get cleaned often. There is a rather large
+Floyd | spider web stretched between the foot of the bed and the wall. The
+Floyd | rest of the room is southwest.
+Floyd |
+Floyd | On the web is a spider.
+Floyd |
+Floyd | >
+Taleslinger says, "Eeeeeek" 
+Zach says, "It's OK. I really shouldn't be trying to drive on the web proxy client." 
+Taleslinger says (to Floyd), "kill spider" 
+Floyd ]  Far Corner of the Bed                                0/10
+Floyd |
+Floyd | > KILL SPIDER
+Floyd |
+Floyd | The spider bares its fangs at you. You decide to leave it alone.
+Floyd |
+Floyd | >
+Taleslinger says (to Floyd), "x spider" 
+Floyd ]  Far Corner of the Bed                                0/11
+Floyd |
+Floyd | > X SPIDER
+Floyd |
+Floyd | It's a common house spider. It's not very large, but it looks like it
+Floyd | won't hesitate to kill you if you bother it.
+Floyd |
+Floyd | >
+DavidW says, "I think we need a weapon." 
+Taleslinger says, "Fire! KILL IT WITH FIRE" 
+Zach asks, "Like little fists of fury?" 
+Taleslinger says (to Floyd), "w" 
+Floyd ]  Under the Bed                                        0/12
+Floyd |
+Floyd | > W
+Floyd |
+Floyd |
+Floyd | Under the Bed
+Floyd | The rest of the room is south, and there's a particularly dusty
+Floyd | looking corner to the east.
+Floyd |
+Floyd | The black ninja is not here.
+Floyd |
+Floyd | >
+DavidW says (to Taleslinger), "There's a Vine that you really shouldn't see." 
+Taleslinger says, "I've seen it" 
+genericgeekgirl says, "He's seen it :D" 
+Taleslinger says (to Floyd), "s" 
+Floyd ]  Bedroom                                              0/13
+Floyd |
+Floyd | > S
+Floyd |
+Floyd |
+Floyd | Bedroom
+Floyd | This is the dormitory room you share with your three closest friends
+Floyd | (and one rather large inhabitant you don't see very often). There is a
+Floyd | bed to the north, a wardrobe to the east, a bookshelf to the south, a
+Floyd | food storage area to the west and a desk in the northwest corner.
+Floyd | There is a mouse hole in the southeast corner of the room, next to the
+Floyd | bookshelf.
+Floyd |
+Floyd | >
+DavidW says, "oh dear" 
+Taleslinger says (to Floyd), "e" 
+Floyd ]  Bedroom                                              0/14
+Floyd |
+Floyd | > E
+Floyd |
+Floyd | You rap loudly on the door to the wardrobe--cringing at the sound--but
+Floyd | there is no answer.
+Floyd |
+Floyd | >
+Taleslinger says (to Floyd), "s" 
+Floyd ]  On the Bookshelf                                     0/15
+Floyd |
+Floyd | > S
+Floyd |
+Floyd |
+Floyd | On the Bookshelf
+Floyd | You live here. It's a pretty nice place to live, so far as wardrobes
+Floyd | go. There are, to the best of your knowledge, no secret passages to
+Floyd | Ninja Narnia.
+Floyd |
+Floyd | The rest of the room is north.
+Floyd |
+Floyd | You can see an id card here.
+Floyd |
+Floyd | >
+Taleslinger says (to Floyd), "x id card" 
+Floyd ]  On the Bookshelf                                     0/16
+Floyd |
+Floyd | > X ID CARD
+Floyd |
+Floyd | This card bears a photo of your not-so-tiny non-ninja roommate.
+Floyd |
+Floyd | >
+Taleslinger says (to Floyd), "get card" 
+Floyd ]  On the Bookshelf                                     0/17
+Floyd |
+Floyd | > GET CARD
+Floyd |
+Floyd | Taken.
+Floyd |
+Floyd | >
+Taleslinger says (to Floyd), "n" 
+Floyd ]  Bedroom                                              0/18
+Floyd |
+Floyd | > N
+Floyd |
+Floyd |
+Floyd | Bedroom
+Floyd | This is the dormitory room you share with your three closest friends
+Floyd | (and one rather large inhabitant you don't see very often). There is a
+Floyd | bed to the north, a wardrobe to the east, a bookshelf to the south, a
+Floyd | food storage area to the west and a desk in the northwest corner.
+Floyd | There is a mouse hole in the southeast corner of the room, next to the
+Floyd | bookshelf.
+Floyd |
+Floyd | >
+DavidW says, "This card will be handy for buying more booze." 
+Taleslinger says, "With the id card we can buy some more booze ... timing" 
+Taleslinger says, "So, I'll just explore a bit more" 
+Taleslinger says (to Floyd), "w" 
+Floyd ]  Behind the Mini Fridge                               0/19
+Floyd |
+Floyd | > W
+Floyd |
+Floyd |
+Floyd | Behind the Mini Fridge
+Floyd | The rest of the room is east.
+Floyd |
+Floyd | There is no sign of the red ninja.
+Floyd |
+Floyd | You can see a piece of cookie here.
+Floyd |
+Floyd | Oh. Right. You're pretty sure you made brunch plans with your friends
+Floyd | today. If you hurry, you may still be able to catch them. But first
+Floyd | you need to deal with this pounding headache.
+Floyd |
+Floyd | >
+Taleslinger says (to Floyd), "get cookie" 
+Floyd ]  Behind the Mini Fridge                               0/20
+Floyd |
+Floyd | > GET COOKIE
+Floyd |
+Floyd | Taken.
+Floyd |
+Floyd | >
+Taleslinger says (to Floyd), "e" 
+Floyd ]  Bedroom                                              0/21
+Floyd |
+Floyd | > E
+Floyd |
+Floyd |
+Floyd | Bedroom
+Floyd | This is the dormitory room you share with your three closest friends
+Floyd | (and one rather large inhabitant you don't see very often). There is a
+Floyd | bed to the north, a wardrobe to the east, a bookshelf to the south, a
+Floyd | food storage area to the west and a desk in the northwest corner.
+Floyd | There is a mouse hole in the southeast corner of the room, next to the
+Floyd | bookshelf.
+Floyd |
+Floyd | >
+Taleslinger asks, "I think we haven't been at the mousehole?" 
+DavidW says, "yeah, visit the hole next." 
+DavidW says, "Maybe the yellow ninja is there and can give us a Tylenol." 
+Thurnley says, "Think the spider might be interested in the cookie? Though I guess their taste runs more to dead bugs." 
+Taleslinger says (to Floyd), "se" 
+Floyd ]  Inside the Mouse Hole                                0/22
+Floyd |
+Floyd | > SE
+Floyd |
+Floyd |
+Floyd | Inside the Mouse Hole
+Floyd | The rest of the room is back to the northwest.
+Floyd |
+Floyd | There is a mouse here, lazing around in its nest.
+Floyd |
+Floyd | >
+Taleslinger says (to Floyd), "x mouse" 
+Floyd ]  Inside the Mouse Hole                                0/23
+Floyd |
+Floyd | > X MOUSE
+Floyd |
+Floyd | It's a common brown mouse. It's about twice as tall as you are.
+Floyd |
+Floyd | >
+Thurnley says, "Right. If you give a mouse a cookie, he'll probably want a glass of milk." 
+Taleslinger says, "maybe we can get the mouse and the spider to fight to the death" 
+Taleslinger says (to Floyd), "talk to mouse" 
+Floyd ]  Inside the Mouse Hole                                0/24
+Floyd |
+Floyd | > TALK TO MOUSE
+Floyd |
+Floyd | The mouse squeaks at you.
+Floyd |
+Floyd | >
+Zach says, ""games that start with a hangover" should be a category on ifwiki" 
+Taleslinger says (to Floyd), "x nest" 
+Floyd ]  Inside the Mouse Hole                                0/25
+Floyd |
+Floyd | > X NEST
+Floyd |
+Floyd | This is the mouse's nest. It is full of various treasures.
+Floyd |
+Floyd | >
+Roger says, "I don't know why she swallowed the fly" 
+Taleslinger says (to Floyd), "x treasures" 
+Floyd ]  Inside the Mouse Hole                                0/26
+Floyd |
+Floyd | > X TREASURES
+Floyd |
+Floyd | It's a collection of things the mouse has found.
+Floyd |
+Floyd | >
+Taleslinger says (to Floyd), "give cookie to mouse" 
+Floyd ]  Inside the Mouse Hole                                0/27
+Floyd |
+Floyd | > GIVE COOKIE TO MOUSE
+Floyd |
+Floyd | You give the piece of cookie to the mouse. It grabs it out of your
+Floyd | hands and retreats to the corner of the nest with it.
+Floyd |
+Floyd | >
+Taleslinger says (to Floyd), "x nest" 
+Floyd ]  Inside the Mouse Hole                                0/28
+Floyd |
+Floyd | > X NEST
+Floyd |
+Floyd | This is the mouse's nest. It is full of various treasures.
+Floyd |
+Floyd | >
+Zach says, "oooh treasure" 
+Taleslinger says (to Floyd), "search it" 
+Floyd ]  Inside the Mouse Hole                                0/29
+Floyd |
+Floyd | > SEARCH IT
+Floyd |
+Floyd | You find a tablet of aspirin in the nest. You take it.
+Floyd |
+Floyd | >
+Jearl says, "plunder!" 
+Taleslinger says, "Yay" 
+DavidW says (to Floyd), "search treasure" 
+Floyd ]  Inside the Mouse Hole                                0/30
+Floyd |
+Floyd | > SEARCH TREASURE
+Floyd |
+Floyd | You don't find anything of any importance.
+Floyd |
+Floyd | >
+Taleslinger says (to Floyd), "eat aspirin" 
+Floyd ]  Inside the Mouse Hole                                0/31
+Floyd |
+Floyd | > EAT ASPIRIN
+Floyd |
+Floyd | You take a tiny bite out of the aspirin. You start to feel better
+Floyd | almost immediately.
+Floyd |
+Floyd | >
+DavidW says, "ah, just the one treasure." 
+Taleslinger says (to Floyd), "nw" 
+Floyd ]  Bedroom                                              0/32
+Floyd |
+Floyd | > NW
+Floyd |
+Floyd | You scurry off before the mouse can ask for a glass of milk.
+Floyd |
+Floyd | Bedroom
+Floyd | This is the dormitory room you share with your three closest friends
+Floyd | (and one rather large inhabitant you don't see very often). There is a
+Floyd | bed to the north, a wardrobe to the east, a bookshelf to the south, a
+Floyd | food storage area to the west and a desk in the northwest corner.
+Floyd | There is a mouse hole in the southeast corner of the room, next to the
+Floyd | bookshelf.
+Floyd |
+Floyd | >
+genericgeekgirl says, "It's treasure in the sense of like.. bits of string and dried macaroni." 
+genericgeekgirl says, "Because mouse." 
+Taleslinger asks, "Hm, so where's the brunch?" 
+DavidW says, "On the patio bar." 
+genericgeekgirl says, "Oh, no." 
+DavidW says, "(I dunno.)" 
+Taleslinger asks (of 3g), "Oh no?" 
+genericgeekgirl says, "So, what *should* be in the description is that there is a door to the southwest." 
+DavidW says, "I figure the bedroom's main exit must be southwest of Bedroom." 
+Taleslinger says (to Floyd), "sw" 
+Floyd ]  Bedroom                                              0/33
+Floyd |
+Floyd | > SW
+Floyd |
+Floyd | You should find your nunchaku first. It is dangerous to go outside
+Floyd | without a weapon.
+Floyd |
+Floyd | >
+DavidW asks, "Perhaps fight the spider with the ID card?" 
+DavidW asks, "Or can we open the wardrobe with the card?" 
+Thurnley asks, "cut the web with the ID card?" 
+Taleslinger says, "To the spider!" 
+Taleslinger says (to Floyd), "n" 
+Floyd ]  Under the Bed                                        0/34
+Floyd |
+Floyd | > N
+Floyd |
+Floyd |
+Floyd | Under the Bed
+Floyd | The rest of the room is south, and there's a particularly dusty
+Floyd | looking corner to the east.
+Floyd |
+Floyd | The black ninja is not here.
+Floyd |
+Floyd | >
+Taleslinger says (to Floyd), "e" 
+Floyd ]  Far Corner of the Bed                                0/35
+Floyd |
+Floyd | > E
+Floyd |
+Floyd |
+Floyd | Far Corner of the Bed
+Floyd | This corner doesn't seem to get cleaned often. There is a rather large
+Floyd | spider web stretched between the foot of the bed and the wall. The
+Floyd | rest of the room is southwest.
+Floyd |
+Floyd | On the web is a spider.
+Floyd |
+Floyd | >
+Taleslinger says (to Floyd), "x web" 
+Floyd ]  Far Corner of the Bed                                0/36
+Floyd |
+Floyd | > X WEB
+Floyd |
+Floyd | The spider has woven the words "GO AWAY" into its web.
+Floyd |
+Floyd | On the web is a spider.
+Floyd |
+Floyd | >
+Taleslinger says (to Floyd), "attack spider with card" 
+Floyd ]  Far Corner of the Bed                                0/36
+Floyd |
+Floyd | > ATTACK SPIDER WITH CARD
+Floyd |
+Floyd | I only understood you as far as wanting to attack the spider.
+Floyd |
+Floyd | >
+Taleslinger says (to Floyd), "show card to spider" 
+Floyd ]  Far Corner of the Bed                                0/37
+Floyd |
+Floyd | > SHOW CARD TO SPIDER
+Floyd |
+Floyd | The spider bares its fangs at you. You decide to leave it alone.
+Floyd |
+Floyd | >
+Taleslinger says (to Floyd), "cut web with card" 
+Floyd ]  Far Corner of the Bed                                0/37
+Floyd |
+Floyd | > CUT WEB WITH CARD
+Floyd |
+Floyd | I only understood you as far as wanting to cut the web.
+Floyd |
+Floyd | >
+Taleslinger says (to Floyd), "cut web" 
+Floyd ]  Far Corner of the Bed                                0/38
+Floyd |
+Floyd | > CUT WEB
+Floyd |
+Floyd | The spider bares its fangs at you. You decide to leave the web alone.
+Floyd |
+Floyd | >
+Taleslinger says (to Floyd), "talk to spider" 
+Floyd ]  Far Corner of the Bed                                0/39
+Floyd |
+Floyd | > TALK TO SPIDER
+Floyd |
+Floyd | The spider bares its fangs at you. You decide to leave it alone.
+Floyd |
+Floyd | >
+DavidW says (to Floyd), "break card" 
+Floyd ]  Far Corner of the Bed                                0/40
+Floyd |
+Zach says (to Floyd), "x id card" 
+Floyd | > BREAK CARD
+Floyd |
+Floyd | Violence isn't the answer to this one.
+Floyd |
+Floyd | >
+Floyd ]  Far Corner of the Bed                                0/41
+Floyd |
+Floyd | > X ID CARD
+Floyd |
+Floyd | This card bears a photo of your not-so-tiny non-ninja roommate.
+Floyd |
+Floyd | >
+Taleslinger says (to Floyd), "read it" 
+Floyd ]  Far Corner of the Bed                                0/42
+Floyd |
+Floyd | > READ IT
+Floyd |
+Floyd | This card bears a photo of your not-so-tiny non-ninja roommate.
+Floyd |
+Floyd | >
+Thurnley says, "I think DavidW is probably right about opening the wardrobe." 
+Zach says (to Floyd), "x photo" 
+Floyd ]  Far Corner of the Bed                                0/42
+Floyd |
+Floyd | > X PHOTO
+Floyd |
+Floyd | You can't see any such thing.
+Floyd |
+Floyd | >
+Taleslinger says, "To the wardrobe!" 
+Taleslinger says (to Floyd), "w" 
+Floyd ]  Under the Bed                                        0/43
+Floyd |
+Floyd | > W
+Floyd |
+Floyd |
+Floyd | Under the Bed
+Floyd | The rest of the room is south, and there's a particularly dusty
+Floyd | looking corner to the east.
+Floyd |
+Floyd | The black ninja is not here.
+Floyd |
+Floyd | >
+Taleslinger says (to Floyd), "s" 
+Floyd ]  Bedroom                                              0/44
+Floyd |
+Floyd | > S
+Floyd |
+Floyd |
+Floyd | Bedroom
+Floyd | This is the dormitory room you share with your three closest friends
+Floyd | (and one rather large inhabitant you don't see very often). There is a
+Floyd | bed to the north, a wardrobe to the east, a bookshelf to the south, a
+Floyd | food storage area to the west and a desk in the northwest corner.
+Floyd | There is a mouse hole in the southeast corner of the room, next to the
+Floyd | bookshelf.
+Floyd |
+Floyd | >
+Taleslinger says (to Floyd), "e" 
+Floyd ]  Bedroom                                              0/45
+Floyd |
+Floyd | > E
+Floyd |
+Floyd | You rap loudly on the door to the wardrobe, but there is no answer.
+Floyd |
+Floyd | >
+Taleslinger says (to Floyd), "open wardrobe" 
+Floyd ]  Bedroom                                              0/46
+Floyd |
+Floyd | > OPEN WARDROBE
+Floyd |
+Floyd | It is generally considered polite to knock first.
+Floyd |
+Floyd | >
+DavidW says (to Floyd), "x door" 
+Floyd ]  Bedroom                                              0/47
+Floyd |
+Floyd | > X DOOR
+Floyd |
+Floyd | There is a door here, leading out to the hallway.
+Floyd |
+Floyd | >
+genericgeekgirl takes notes. 
+Taleslinger says (to Floyd), "s" 
+Floyd ]  On the Bookshelf                                     0/48
+Floyd |
+Floyd | > S
+Floyd |
+Floyd |
+Floyd | On the Bookshelf
+Floyd | You live here. It's a pretty nice place to live, so far as wardrobes
+Floyd | go. There are, to the best of your knowledge, no secret passages to
+Floyd | Ninja Narnia.
+Floyd |
+Floyd | The rest of the room is north.
+Floyd |
+Floyd | >
+Thurnley says (to Floyd), "open wardrobe with card" 
+Floyd ]  On the Bookshelf                                     0/48
+Floyd |
+Floyd | > OPEN WARDROBE WITH CARD
+Floyd |
+Floyd | You can't see any such thing.
+Floyd |
+Floyd | >
+Taleslinger says (to Floyd), "n" 
+Floyd ]  Bedroom                                              0/49
+Floyd |
+Floyd | > N
+Floyd |
+Floyd |
+Floyd | Bedroom
+Floyd | This is the dormitory room you share with your three closest friends
+Floyd | (and one rather large inhabitant you don't see very often). There is a
+Floyd | bed to the north, a wardrobe to the east, a bookshelf to the south, a
+Floyd | food storage area to the west and a desk in the northwest corner.
+Floyd | There is a mouse hole in the southeast corner of the room, next to the
+Floyd | bookshelf.
+Floyd |
+Floyd | >
+Taleslinger says (to Floyd), "open wardrobe with card" 
+Floyd ]  Bedroom                                              0/50
+Floyd |
+Floyd | > OPEN WARDROBE WITH CARD
+Floyd |
+Floyd | That doesn't seem to be something you can unlock.
+Floyd |
+Floyd | >
+DavidW says (to Floyd), "climb wardrobe" 
+Floyd ]  Bedroom                                              0/51
+Floyd |
+Floyd | > CLIMB WARDROBE
+Floyd |
+Floyd | I don't think much is to be achieved by that.
+Floyd |
+Floyd | >
+Taleslinger says (to Floyd), "climb desk" 
+Floyd ]  Bedroom                                              0/52
+Floyd |
+Floyd | > CLIMB DESK
+Floyd |
+Floyd | You can't go that way.
+Floyd |
+Floyd | >
+DavidW says (to Floyd), "climb bed" 
+Floyd ]  Bedroom                                              0/53
+Floyd |
+Floyd | > CLIMB BED
+Floyd |
+Floyd | I don't think much is to be achieved by that.
+Floyd |
+Floyd | >
+Taleslinger says (to Floyd), "x desk" 
+Floyd ]  Bedroom                                              0/54
+Floyd |
+Floyd | > X DESK
+Floyd |
+Floyd | There is a desk in the corner, underneath the window.
+Floyd |
+Floyd | >
+DavidW says (to Floyd), "x window" 
+Floyd ]  Bedroom                                              0/55
+Floyd |
+Floyd | > X WINDOW
+Floyd |
+Floyd | There is a desk in the corner, underneath the window.
+Floyd |
+Floyd | >
+Taleslinger asks, "Maybe we can get on the desk from underneath it?" 
+DavidW says, "It's not clear if up is an option anywhere." 
+Taleslinger says (to Floyd), "nw" 
+Floyd ]  Below the Desk                                       0/56
+Floyd |
+Floyd | > NW
+Floyd |
+Floyd |
+Floyd | Below the Desk
+Floyd | This is where you fell asleep after the party, because you were too
+Floyd | drunk to stumble home.
+Floyd |
+Floyd | The rest of the room is southeast.
+Floyd |
+Floyd | >
+Taleslinger says (to Floyd), "u" 
+Floyd ]  Below the Desk                                       0/57
+Floyd |
+Floyd | > U
+Floyd |
+Floyd | You can't go that way.
+Floyd |
+Floyd | >
+Taleslinger says (to Floyd), "se" 
+Floyd ]  Bedroom                                              0/58
+Floyd |
+Floyd | > SE
+Floyd |
+Floyd |
+Floyd | Bedroom
+Floyd | This is the dormitory room you share with your three closest friends
+Floyd | (and one rather large inhabitant you don't see very often). There is a
+Floyd | bed to the north, a wardrobe to the east, a bookshelf to the south, a
+Floyd | food storage area to the west and a desk in the northwest corner.
+Floyd | There is a mouse hole in the southeast corner of the room, next to the
+Floyd | bookshelf.
+Floyd |
+Floyd | >
+Taleslinger asks, "Any ideas?" 
+Taleslinger says (to Floyd), "w" 
+Floyd ]  Behind the Mini Fridge                               0/59
+Floyd |
+Floyd | > W
+Floyd |
+Floyd |
+Floyd | Behind the Mini Fridge
+Floyd | The rest of the room is east.
+Floyd |
+Floyd | There is no sign of the red ninja.
+Floyd |
+Floyd | >
+Taleslinger says (to Floyd), "open fridhe" 
+Floyd ]  Behind the Mini Fridge                               0/59
+Floyd |
+Floyd | > OPEN FRIDHE
+Floyd |
+Floyd | You can't see any such thing.
+Floyd |
+Floyd | >
+Taleslinger says (to Floyd), "open fridge" 
+Floyd ]  Behind the Mini Fridge                               0/60
+Floyd |
+Floyd | > OPEN FRIDGE
+Floyd |
+Floyd | You slip the card between the door and the casing. You lean into the
+Floyd | card with all your might, forcing the door open. The card almost snaps
+Floyd | in the process.
+Floyd |
+Floyd | You can't reach into the Bedroom.
+Floyd |
+Floyd | >
+genericgeekgirl says, "...... FFFFFFF." 
+Taleslinger says, "Yay" 
+genericgeekgirl says, "That shouldn't be possible." 
+DavidW says, "oh." 
+Taleslinger says, "OOps" 
+Taleslinger says (to Floyd), "undo" 
+Floyd ]  Behind the Mini Fridge                               0/59
+Floyd |
+Floyd | > UNDO
+Floyd |
+Floyd | Behind the Mini Fridge
+Floyd | [Previous turn undone.]
+Floyd |
+Floyd | >
+Taleslinger says (to Floyd), "x fridge" 
+Floyd ]  Behind the Mini Fridge                               0/60
+Floyd |
+Floyd | > X FRIDGE
+Floyd |
+Floyd | It's a standard mini fridger. The big person whom you share your
+Floyd | living space with keeps it stocked with beer and junk food.
+Floyd |
+Floyd | >
+Taleslinger says (to Floyd), "open fridge" 
+Floyd ]  Behind the Mini Fridge                               0/61
+Floyd |
+Floyd | > OPEN FRIDGE
+Floyd |
+Floyd | You slip the card between the door and the casing. You lean into the
+Floyd | card with all your might, forcing the door open. The card almost snaps
+Floyd | in the process.
+Floyd |
+Floyd | You can't reach into the Bedroom.
+Floyd |
+Floyd | >
+Taleslinger says (to Floyd), "undo" 
+Floyd ]  Behind the Mini Fridge                               0/60
+Floyd |
+Floyd | > UNDO
+Floyd |
+Floyd | Behind the Mini Fridge
+Floyd | [Previous turn undone.]
+Floyd |
+Floyd | >
+Taleslinger asks, "So, we should do something else first?" 
+DavidW says, "Go to Bedroom THEN open fridge." 
+genericgeekgirl says, "You are BEHIND the fridge." 
+Taleslinger says (to Floyd), "e" 
+Floyd ]  Bedroom                                              0/61
+Floyd |
+Floyd | > E
+Floyd |
+Floyd |
+Floyd | Bedroom
+Floyd | This is the dormitory room you share with your three closest friends
+Floyd | (and one rather large inhabitant you don't see very often). There is a
+Floyd | bed to the north, a wardrobe to the east, a bookshelf to the south, a
+Floyd | food storage area to the west and a desk in the northwest corner.
+Floyd | There is a mouse hole in the southeast corner of the room, next to the
+Floyd | bookshelf.
+Floyd |
+Floyd | >
+Taleslinger says (to Floyd), "open fridge" 
+Floyd ]  Bedroom                                              0/62
+Floyd |
+Floyd | > OPEN FRIDGE
+Floyd |
+Floyd | You slip the card between the door and the casing. You lean into the
+Floyd | card with all your might, forcing the door open. The card almost snaps
+Floyd | in the process.
+Floyd |
+Floyd | The refrigerator is disturbingly devoid of both beer and snacks. But
+Floyd | your nunchaku are here. You're too tired to question it.
+Floyd |
+Floyd | >
+Taleslinger says, "I always said they are a *sunglasses* cool weapon." 
+Jearl says, "haha" 
+Taleslinger says (to Floyd), "get nunchaku" 
+Floyd ]  Bedroom                                              0/63
+Floyd |
+Floyd | > GET NUNCHAKU
+Floyd |
+Floyd | Taken.
+Floyd |
+Floyd | >
+Jearl asks, "did we use the aspirin already?" 
+DavidW says, "yes" 
+Taleslinger says (to Floyd), "swirl nunchaku" 
+Floyd ]  Bedroom                                              0/63
+Floyd |
+Floyd | > SWIRL NUNCHAKU
+Floyd |
+Floyd | That's not a verb I recognize.
+Floyd |
+Floyd | >
+Taleslinger says (to Floyd), "sw" 
+Floyd ]  Bedroom                                              0/64
+Floyd |
+Floyd | > SW
+Floyd |
+Floyd | You should close the refrigerator first! Were you raised in a ninja
+Floyd | barn?
+Floyd |
+Floyd | >
+Taleslinger says (to Floyd), "close fridge" 
+Floyd ]  Bedroom                                              0/65
+Floyd |
+Floyd | > CLOSE FRIDGE
+Floyd |
+Floyd | You close the refrigerator.
+Floyd |
+Floyd | >
+Taleslinger says, "haha, ninja barn" 
+DavidW says, "Now to disturb a web." 
+Taleslinger says (to Floyd), "sw" 
+Floyd ]  Bedroom                                              0/65
+Floyd |
+Floyd | > SW
+Floyd |
+Floyd | Now that you've recovered your nunchaku and are starting to feel
+Floyd | better, you should go catch up with your friends.
+Floyd |
+Floyd |
+Floyd |
+Floyd |     *** YAY! Mimosas for everyone! ***
+Floyd |
+Floyd |
+Floyd | In that game you scored 0 out of a possible 11, in 65 turns.
+Floyd |
+Floyd |
+Floyd | Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the
+Floyd | last command?
+Floyd | >
+Taleslinger says, "Oh, maybe we can do something to the spider" 
+Taleslinger says (to Floyd), "undo" 
+Floyd ]  Bedroom                                              0/65
+Floyd |
+Floyd | > UNDO
+Floyd |
+Floyd | Bedroom
+Floyd | [Previous turn undone.]
+Floyd |
+Floyd | >
+DavidW says, "ah, you didn't try to google the web." 
+Taleslinger says (to Floyd), "n" 
+Floyd ]  Under the Bed                                        0/66
+Floyd |
+Floyd | > N
+Floyd |
+Floyd |
+Floyd | Under the Bed
+Floyd | The rest of the room is south, and there's a particularly dusty
+Floyd | looking corner to the east.
+Floyd |
+Floyd | The black ninja is not here.
+Floyd |
+Floyd | >
+Taleslinger says (to Floyd), "e" 
+Floyd ]  Far Corner of the Bed                                0/67
+Floyd |
+Floyd | > E
+Floyd |
+Floyd |
+Floyd | Far Corner of the Bed
+Floyd | This corner doesn't seem to get cleaned often. There is a rather large
+Floyd | spider web stretched between the foot of the bed and the wall. The
+Floyd | rest of the room is southwest.
+Floyd |
+Floyd | On the web is a spider.
+Floyd |
+Floyd | >
+Taleslinger says (to Floyd), "attack spider" 
+Floyd ]  Far Corner of the Bed                                0/68
+Floyd |
+Floyd | > ATTACK SPIDER
+Floyd |
+Floyd | The spider bares its fangs at you. You decide to leave it alone.
+Floyd |
+Floyd | >
+Taleslinger says (to Floyd), "xyzzy" 
+Floyd ]  Far Corner of the Bed                                0/69
+Floyd |
+Floyd | > XYZZY
+Floyd |
+Floyd | Real ninjas do not use such language.
+Floyd |
+Floyd | >
+Taleslinger says, "ha ha" 
+Taleslinger says (to Floyd), "w" 
+Floyd ]  Under the Bed                                        0/70
+Floyd |
+Floyd | > W
+Floyd |
+Floyd |
+Floyd | Under the Bed
+Floyd | The rest of the room is south, and there's a particularly dusty
+Floyd | looking corner to the east.
+Floyd |
+Floyd | The black ninja is not here.
+Floyd |
+Floyd | >
+Taleslinger says (to Floyd), "s" 
+Floyd ]  Bedroom                                              0/71
+Floyd |
+Floyd | > S
+Floyd |
+Floyd |
+Floyd | Bedroom
+Floyd | This is the dormitory room you share with your three closest friends
+Floyd | (and one rather large inhabitant you don't see very often). There is a
+Floyd | bed to the north, a wardrobe to the east, a bookshelf to the south, a
+Floyd | food storage area to the west and a desk in the northwest corner.
+Floyd | There is a mouse hole in the southeast corner of the room, next to the
+Floyd | bookshelf.
+Floyd |
+Floyd | >
+Taleslinger asks, "So, sw? Or anything anyone wants to try?" 
+DavidW says, "You still did nothing with the web." 
+Taleslinger says, "I noticed that we haven't gotten a single point" 
+Zach says (to Floyd), "score" 
+Floyd ]  Bedroom                                              0/71
+Floyd |
+Floyd | > SCORE
+Floyd |
+Floyd | You have so far scored 0 out of a possible 11, in 71 turns.
+Floyd |
+Floyd | >
+DavidW says, "There might be no points in the game." 
+Roger says, "11 is a weird default if so" 
+DavidW says, "I suspect a bit of cut-n-paste from an earlier game." 
+Taleslinger asks, "ggg, any comment?" 
+Taleslinger says (to Floyd), "n.e." 
+Floyd ]  Far Corner of the Bed                                0/73
+Floyd |
+Floyd | > N.E.
+Floyd |
+Floyd |
+Floyd | Under the Bed
+Floyd | The rest of the room is south, and there's a particularly dusty
+Floyd | looking corner to the east.
+Floyd |
+Floyd | The black ninja is not here.
+Floyd |
+Floyd | Far Corner of the Bed
+Floyd | This corner doesn't seem to get cleaned often. There is a rather large
+Floyd | spider web stretched between the foot of the bed and the wall. The
+Floyd | rest of the room is southwest.
+Floyd |
+Floyd | On the web is a spider.
+Floyd |
+Floyd | >
+Taleslinger says (to Floyd), "google web" 
+Floyd ]  Far Corner of the Bed                                0/73
+Floyd |
+Floyd | > GOOGLE WEB
+Floyd |
+Floyd | That's not a verb I recognize.
+Floyd |
+Floyd | >
+Taleslinger says (to Floyd), "touch web" 
+Floyd ]  Far Corner of the Bed                                0/74
+Floyd |
+Floyd | > TOUCH WEB
+Floyd |
+Floyd | The spider bares its fangs at you. You decide to leave the web alone.
+Floyd |
+Floyd | >
+DavidW says (to Floyd), "search web" 
+Floyd ]  Far Corner of the Bed                                0/75
+Floyd |
+Floyd | > SEARCH WEB
+Floyd |
+Floyd | There is nothing on the web. Except for that angry-looking spider.
+Floyd |
+Floyd | >
+Taleslinger says (to Floyd), "kiss spider" 
+Floyd ]  Far Corner of the Bed                                0/76
+Floyd |
+Floyd | > KISS SPIDER
+Floyd |
+Floyd | The spider bares its fangs at you. You decide to leave it alone.
+Floyd |
+Floyd | >
+DavidW says (to Floyd), "break web" 
+Floyd ]  Far Corner of the Bed                                0/77
+Floyd |
+Floyd | > BREAK WEB
+Floyd |
+Floyd | The spider bares its fangs at you. You decide to leave the web alone.
+Floyd |
+Floyd | >
+Taleslinger says (to Floyd), "weave web" 
+Floyd ]  Far Corner of the Bed                                0/77
+Floyd |
+Floyd | > WEAVE WEB
+Floyd |
+Floyd | That's not a verb I recognize.
+Floyd |
+Floyd | >
+DavidW says, "oh, fine. The web is a herring, I guess." 
+genericgeekgirl says, "So are the points. See Twitter." 
+genericgeekgirl says, "Leave the poor spider alone." 
+Taleslinger says (to Floyd), "twitter web" 
+Floyd ]  Far Corner of the Bed                                0/77
+Floyd |
+Floyd | > TWITTER WEB
+Floyd |
+Floyd | That's not a verb I recognize.
+Floyd |
+Floyd | >
+Taleslinger says (to Floyd), "w" 
+Floyd ]  Under the Bed                                        0/78
+Floyd |
+Floyd | > W
+Floyd |
+Floyd |
+Floyd | Under the Bed
+Floyd | The rest of the room is south, and there's a particularly dusty
+Floyd | looking corner to the east.
+Floyd |
+Floyd | The black ninja is not here.
+Floyd |
+Floyd | >
+Taleslinger says (to Floyd), "s" 
+Floyd ]  Bedroom                                              0/79
+Floyd |
+Floyd | > S
+Floyd |
+Floyd |
+Floyd | Bedroom
+Floyd | This is the dormitory room you share with your three closest friends
+Floyd | (and one rather large inhabitant you don't see very often). There is a
+Floyd | bed to the north, a wardrobe to the east, a bookshelf to the south, a
+Floyd | food storage area to the west and a desk in the northwest corner.
+Floyd | There is a mouse hole in the southeast corner of the room, next to the
+Floyd | bookshelf.
+Floyd |
+Floyd | >
+Taleslinger asks, "Anything we missed?" 
+genericgeekgirl says, "Nothing important. Just ambiance." 
+DavidW says, "I guess we never open the wardrobe either." 
+Taleslinger asks, "So the spider is there as a callback to the first game?" 
+genericgeekgirl says, "Yeah." 
+Taleslinger asks, "Any ambiance you want to show us?" 
+genericgeekgirl says, "Annoyed because the fridge thing used to work properly, and then I tweaked something." 
+Taleslinger says, "I know the feeling." 
+genericgeekgirl says, "Mostly it's just things like discovering that you leave the room without opening the door, and it's possible to open the fridge with the nunchucks." 
+genericgeekgirl says, "And I definitely expected people to find the fridge before the id card!" 
+genericgeekgirl says (to Floyd), "open fridge" 
+Floyd ]  Bedroom                                              0/80
+Floyd |
+Floyd | > OPEN FRIDGE
+Floyd |
+Floyd | You loop one of your nunchucks around the handle and tug. The door
+Floyd | opens. The refrigerator is still empty. You close it again.
+Floyd |
+Floyd | >
+genericgeekgirl says (to Floyd), "open door" 
+Floyd ]  Bedroom                                              0/81
+Floyd |
+Floyd | > OPEN DOOR
+Floyd |
+Floyd | The door is too large and heavy for you to open. You can easily crawl
+Floyd | underneath.
+Floyd |
+Floyd | >
+Taleslinger says (to Floyd), "sw" 
+Floyd ]  Bedroom                                              0/81
+Floyd |
+Floyd | > SW
+Floyd |
+Floyd | Now that you've recovered your nunchaku and are starting to feel
+Floyd | better, you should go catch up with your friends.
+Floyd |
+Floyd |
+Floyd |
+Floyd |     *** YAY! Mimosas for everyone! ***
+Floyd |
+Floyd |
+Floyd | In that game you scored 0 out of a possible 11, in 81 turns.
+Floyd |
+Floyd |
+Floyd | Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the
+Floyd | last command?
+Floyd | >
+genericgeekgirl says, "Because it drove certain testers CRAZY in the first game that you never open the door." 
+Taleslinger says, "he he" 
+Taleslinger says, "Nice work." 
+genericgeekgirl curtsies. 
+genericgeekgirl says, "And thanks for finding bugs, argh." 
+Taleslinger asks, "So, we have 2 games left. Shall we continue? Anyone need a break?" 
+genericgeekgirl asks, "Are you submitting the games to the IF Archive as a bundle?" 
+Taleslinger says, "yeah" 
+genericgeekgirl says, "Because I'd probably want to make those quick tweaks first." 
+genericgeekgirl says, "Unless you already have." 
+josinalvo goes home. 
+Taleslinger says, "Sure, then I have a reason to slack off on that" 
+Taleslinger says (to Floyd), "quit" 
+Floyd | >
+Floyd | > QUIT
+Floyd | debugcheapnitfol quit with exit status: 0
+Floyd asks, "That game over already? It was just getting good. Wanna play another?" 

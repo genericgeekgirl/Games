@@ -1,0 +1,52 @@
+! Blurb file created by Inform build 6G60
+
+status "/usr/share/gnome-inform7/Extensions/Reserved/CblorbModel.html" "/home/adri/Games/Interactive Fiction/Adri/legend of the missing hat/ninjas.inform/Build/StatusCblorb.html"
+
+
+! Identification
+
+project folder "/home/adri/Games/Interactive Fiction/Adri/legend of the missing hat/ninjas.inform"
+release to "/home/adri/Games/Interactive Fiction/Adri/legend of the missing hat/ninjas Materials/Release"
+
+! Blorb instructions
+
+storyfile leafname "The Legend of the Missing Hat.zblorb"
+storyfile "/home/adri/Games/Interactive Fiction/Adri/legend of the missing hat/ninjas.inform/Build/output.z8" include
+ifiction "/home/adri/Games/Interactive Fiction/Adri/legend of the missing hat/ninjas.inform/Metadata.iFiction" include
+cover "/home/adri/Games/Interactive Fiction/Adri/legend of the missing hat/ninjas Materials/Cover.png"
+picture 1 "/home/adri/Games/Interactive Fiction/Adri/legend of the missing hat/ninjas Materials/Cover.png"
+
+! Placeholder variables
+
+placeholder [IFID] = "CF3C2188-C9D1-4732-84EB-8AFD522766B9"
+placeholder [RELEASE] = "1"
+placeholder [YEAR] = "2012"
+placeholder [TITLE] = "The Legend of the Missing Hat"
+placeholder [AUTHOR] = "Adri"
+placeholder [BLURB] = "A tiny story about four tiny ninjas and a tiny top hat"
+
+! Other material to release
+
+
+! Website instructions
+
+placeholder [ENCODEDSTORYFILE] = "The Legend of the Missing Hat.zblorb.js"
+template path "/home/adri/Games/Interactive Fiction/Adri/legend of the missing hat/ninjas Materials/Templates"
+template path "/home/adri/Inform/Templates"
+template path "/usr/share/gnome-inform7/Extensions/Reserved/Templates"
+interpreter "Parchment" "z"
+base64 "/home/adri/Games/Interactive Fiction/Adri/legend of the missing hat/ninjas.inform/Build/output.z8" to "/home/adri/Games/Interactive Fiction/Adri/legend of the missing hat/ninjas Materials/Release/interpreter/The Legend of the Missing Hat.zblorb.js"
+
+! Website instructions
+
+template path "/home/adri/Games/Interactive Fiction/Adri/legend of the missing hat/ninjas Materials/Templates"
+template path "/home/adri/Inform/Templates"
+template path "/usr/share/gnome-inform7/Extensions/Reserved/Templates"
+css
+website "Standard"
+status instruction ||&nbsp;<a href="source:story.ni#line9"><img border=0 src=inform:/Reveal.png></a>||
+status alternative ||Using 'Release along with the "Such-and-Such" file called "whatever.pdf"', perhaps to add a manual, or a welcoming note&nbsp;<a href=inform:/doc389.html><img border=0 src=inform:/help.png></a>||
+status alternative ||Using 'Release along with the source text'&nbsp;<a href=inform:/doc399.html><img border=0 src=inform:/help.png></a>||
+status alternative ||Using 'Release along with a solution'&nbsp;<a href=inform:/doc398.html><img border=0 src=inform:/help.png></a>||
+status alternative ||Using 'Release along with the library card'&nbsp;<a href=inform:/doc399.html><img border=0 src=inform:/help.png></a>||
+status alternative ||Using 'Release along with the introductory booklet'&nbsp;<a href=inform:/doc392.html><img border=0 src=inform:/help.png></a>||
