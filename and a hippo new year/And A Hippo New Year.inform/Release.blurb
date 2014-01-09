@@ -13,8 +13,8 @@ release to "/home/adri/Games/Interactive Fiction/Adri/and a hippo new year/And A
 storyfile leafname "And A Hippo New Year.zblorb"
 storyfile "/home/adri/Games/Interactive Fiction/Adri/and a hippo new year/And A Hippo New Year.inform/Build/output.z8" include
 ifiction "/home/adri/Games/Interactive Fiction/Adri/and a hippo new year/And A Hippo New Year.inform/Metadata.iFiction" include
-cover "/usr/share/gnome-inform7/Extensions/Reserved/DefaultCover.jpg"
-picture 1 "/usr/share/gnome-inform7/Extensions/Reserved/DefaultCover.jpg"
+cover "/home/adri/Games/Interactive Fiction/Adri/and a hippo new year/And A Hippo New Year Materials/Cover.png"
+picture 1 "/home/adri/Games/Interactive Fiction/Adri/and a hippo new year/And A Hippo New Year Materials/Cover.png"
 
 ! Placeholder variables
 
@@ -27,9 +27,24 @@ placeholder [BLURB] = "'[story title]' was created for Yuletide 2012, an annual 
 
 ! Other material to release
 
-status alternative ||Using 'Release along with cover art', to provide something more distinctive than the default artwork above&nbsp;<a href=inform:/doc391.html><img border=0 src=inform:/help.png></a>||
-status alternative ||Using 'Release along with a website'&nbsp;<a href=inform:/doc393.html><img border=0 src=inform:/help.png></a>||
-status alternative ||Using 'Release along with an interpreter', for in-browser play on your website&nbsp;<a href=inform:/doc394.html><img border=0 src=inform:/help.png></a>||
+
+! Website instructions
+
+placeholder [ENCODEDSTORYFILE] = "And A Hippo New Year.zblorb.js"
+template path "/home/adri/Games/Interactive Fiction/Adri/and a hippo new year/And A Hippo New Year Materials/Templates"
+template path "/home/adri/Inform/Templates"
+template path "/usr/share/gnome-inform7/Extensions/Reserved/Templates"
+interpreter "Parchment" "z"
+base64 "/home/adri/Games/Interactive Fiction/Adri/and a hippo new year/And A Hippo New Year.inform/Build/output.z8" to "/home/adri/Games/Interactive Fiction/Adri/and a hippo new year/And A Hippo New Year Materials/Release/interpreter/And A Hippo New Year.zblorb.js"
+
+! Website instructions
+
+template path "/home/adri/Games/Interactive Fiction/Adri/and a hippo new year/And A Hippo New Year Materials/Templates"
+template path "/home/adri/Inform/Templates"
+template path "/usr/share/gnome-inform7/Extensions/Reserved/Templates"
+css
+website "Genericgeekgirl"
+status instruction ||&nbsp;<a href="source:story.ni#line11"><img border=0 src=inform:/Reveal.png></a>||
 status alternative ||Using 'Release along with the "Such-and-Such" file called "whatever.pdf"', perhaps to add a manual, or a welcoming note&nbsp;<a href=inform:/doc389.html><img border=0 src=inform:/help.png></a>||
 status alternative ||Using 'Release along with the source text'&nbsp;<a href=inform:/doc399.html><img border=0 src=inform:/help.png></a>||
 status alternative ||Using 'Release along with a solution'&nbsp;<a href=inform:/doc398.html><img border=0 src=inform:/help.png></a>||

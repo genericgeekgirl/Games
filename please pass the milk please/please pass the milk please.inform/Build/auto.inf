@@ -30,7 +30,7 @@ Constant Story "Fingertips: Please Pass the Milk Please";
 Constant Headline SC_2;
 Constant Story_Author SC_3;
 Release 3;
-Serial "140107";
+Serial "140109";
 
 Default Story 0;
 Default Headline 0;
@@ -575,7 +575,7 @@ Property short_name_indef 0; ! not used by I7, but an interesting hook in the li
 
 Constant life = NULL;
 
-Constant ActionCount = 115;
+Constant ActionCount = 116;
 
 Fake_Action ListMiscellany;
 Fake_Action Miscellany;
@@ -8994,7 +8994,7 @@ Array valued_property_offsets --> valued_property_offsets_SIZE;
 ];
 
 
-Constant NUMBER_RULEBOOKS_CREATED = 479;
+Constant NUMBER_RULEBOOKS_CREATED = 482;
 Constant V0_printing_the_name_of_some = 0;
 Constant V1_printing_the_plural_name_ = 1;
 Constant V2_printing_a_number_of_some = 2;
@@ -9772,6 +9772,7 @@ Object selfobj ""
     with name 'yourself' 
     with action_bitmap 0 0 0 0 0 0 0 0 
     with KD_Count 8
+    with cap_short_name "Yourself"
     has mark_as_thing
     with IK2_Count 0
     with IK2_Link I93_shirt
@@ -9779,7 +9780,6 @@ Object selfobj ""
     with IK8_Link I89_sam
     with vector 0
     with list_together 0
-    with cap_short_name "Yourself"
     has proper
     has concealed
     with short_name "yourself"
@@ -9821,6 +9821,7 @@ Object -> I89_sam ""
     with parse_name Parse_Name_GV128
     with action_bitmap 0 0 0 0 0 0 0 0 
     with KD_Count 10
+    with cap_short_name "Sam"
     has mark_as_thing
     with IK2_Count 1
     with IK2_Link I90_chair
@@ -9830,7 +9831,6 @@ Object -> I89_sam ""
     with IK10_Link nothing
     with vector 0
     with list_together 0
-    with cap_short_name "Sam"
     has proper
     with short_name "Sam"
     with description SC_6
@@ -10019,12 +10019,12 @@ Object -> -> I104_your_glass ""
     with IK18_Count 0
     with IK18_Link I105_sam_s_cup
     with KD_Count 18
+    with cap_short_name "Your glass"
     has mark_as_thing
     with IK2_Count 13
     with IK2_Link I105_sam_s_cup
     with vector 0
     with list_together 0
-    with cap_short_name "Your glass"
     has proper
     has static
     with short_name "your glass"
@@ -10039,12 +10039,12 @@ Object -> -> I105_sam_s_cup ""
     with IK18_Count 1
     with IK18_Link nothing
     with KD_Count 18
+    with cap_short_name "Sam's cup"
     has mark_as_thing
     with IK2_Count 14
     with IK2_Link nothing
     with vector 0
     with list_together 0
-    with cap_short_name "Sam's cup"
     has proper
     has static
     with short_name "Sam's cup"
@@ -10246,24 +10246,25 @@ Array ActionData table
   ##A96_poking  $$00001001  OBJECT_TY OBJECT_TY  0 20096
   ##A97_crying  $$00000000  OBJECT_TY OBJECT_TY  0 20097
   ##A98_shouting  $$00000000  OBJECT_TY OBJECT_TY  0 20098
-  ##A99_talking  $$00000000  OBJECT_TY OBJECT_TY  0 20099
-  ##A100_talking_to  $$00001001  OBJECT_TY OBJECT_TY  0 20100
-  ##A101_talking_about  $$00001000  UNDERSTANDING_TY OBJECT_TY  0 20101
-  ##A102_talking_about_to  $$00011010  UNDERSTANDING_TY OBJECT_TY  0 20102
-  ##A103_talking_to_about  $$00011001  OBJECT_TY UNDERSTANDING_TY  0 20103
-  ##A104_pointing  $$00001001  OBJECT_TY OBJECT_TY  0 20104
-  ##A105_running  $$00000000  OBJECT_TY OBJECT_TY  0 20105
-  ##A106_running_with_scissors  $$00000000  OBJECT_TY OBJECT_TY  0 20106
-  ##A107_not_passing_the_milk  $$00001001  OBJECT_TY OBJECT_TY  0 20107
-  ##A108_passing  $$00001001  OBJECT_TY OBJECT_TY  0 20108
-  ##A109_counting_nothing  $$00000000  OBJECT_TY OBJECT_TY  0 20109
-  ##A110_counting_cups  $$00000000  OBJECT_TY OBJECT_TY  0 20110
-  ##A111_throwing  $$00001001  OBJECT_TY OBJECT_TY  0 20111
-  ##A112_cleaning  $$00001001  OBJECT_TY OBJECT_TY  0 20112
-  ##A113_reading  $$00001001  OBJECT_TY OBJECT_TY  0 20113
-  ##A114_pouring  $$00001001  OBJECT_TY OBJECT_TY  0 20114
+  ##A99_shouting_at  $$00001001  OBJECT_TY OBJECT_TY  0 20099
+  ##A100_talking  $$00000000  OBJECT_TY OBJECT_TY  0 20100
+  ##A101_talking_to  $$00001001  OBJECT_TY OBJECT_TY  0 20101
+  ##A102_talking_about  $$00001000  UNDERSTANDING_TY OBJECT_TY  0 20102
+  ##A103_talking_about_to  $$00011010  UNDERSTANDING_TY OBJECT_TY  0 20103
+  ##A104_talking_to_about  $$00011001  OBJECT_TY UNDERSTANDING_TY  0 20104
+  ##A105_pointing  $$00001001  OBJECT_TY OBJECT_TY  0 20105
+  ##A106_running  $$00000000  OBJECT_TY OBJECT_TY  0 20106
+  ##A107_running_with_scissors  $$00000000  OBJECT_TY OBJECT_TY  0 20107
+  ##A108_not_passing_the_milk  $$00001001  OBJECT_TY OBJECT_TY  0 20108
+  ##A109_passing  $$00001001  OBJECT_TY OBJECT_TY  0 20109
+  ##A110_counting_nothing  $$00000000  OBJECT_TY OBJECT_TY  0 20110
+  ##A111_counting_cups  $$00000000  OBJECT_TY OBJECT_TY  0 20111
+  ##A112_throwing  $$00001001  OBJECT_TY OBJECT_TY  0 20112
+  ##A113_cleaning  $$00001001  OBJECT_TY OBJECT_TY  0 20113
+  ##A114_reading  $$00001001  OBJECT_TY OBJECT_TY  0 20114
+  ##A115_pouring  $$00001001  OBJECT_TY OBJECT_TY  0 20115
 ;
-Constant AD_RECORDS = 115;
+Constant AD_RECORDS = 116;
 [ ANSTVC_7 pos state;
     if (state == 1) {
         MStack-->pos = I88_kitchen; pos++;
@@ -10411,22 +10412,23 @@ Constant AD_RECORDS = 115;
         ##A96_poking: print "poking"; if (for_say ~= 2) { print " "; DA_Name(n); }
         ##A97_crying: print "crying"; 
         ##A98_shouting: print "shouting"; 
-        ##A99_talking: print "talking"; 
-        ##A100_talking_to: print "talking to"; if (for_say ~= 2) { print " "; DA_Name(n); }
-        ##A101_talking_about: print "talking about"; if (for_say ~= 2) { print " "; DA_Topic(parsed_number); }
-        ##A102_talking_about_to: print "talking about to"; if (for_say ~= 2) { print " "; DA_Topic(parsed_number); }
-        ##A103_talking_to_about: print "talking to about"; if (for_say ~= 2) { print " "; DA_Name(n); }
-        ##A104_pointing: print "pointing"; if (for_say ~= 2) { print " "; DA_Name(n); }
-        ##A105_running: print "running"; 
-        ##A106_running_with_scissors: print "running with scissors"; 
-        ##A107_not_passing_the_milk: print "not passing the milk"; if (for_say ~= 2) { print " "; DA_Name(n); }
-        ##A108_passing: print "passing"; if (for_say ~= 2) { print " "; DA_Name(n); }
-        ##A109_counting_nothing: print "counting nothing"; 
-        ##A110_counting_cups: print "counting cups"; 
-        ##A111_throwing: print "throwing"; if (for_say ~= 2) { print " "; DA_Name(n); }
-        ##A112_cleaning: print "cleaning"; if (for_say ~= 2) { print " "; DA_Name(n); }
-        ##A113_reading: print "reading"; if (for_say ~= 2) { print " "; DA_Name(n); }
-        ##A114_pouring: print "pouring"; if (for_say ~= 2) { print " "; DA_Name(n); }
+        ##A99_shouting_at: print "shouting at"; if (for_say ~= 2) { print " "; DA_Name(n); }
+        ##A100_talking: print "talking"; 
+        ##A101_talking_to: print "talking to"; if (for_say ~= 2) { print " "; DA_Name(n); }
+        ##A102_talking_about: print "talking about"; if (for_say ~= 2) { print " "; DA_Topic(parsed_number); }
+        ##A103_talking_about_to: print "talking about to"; if (for_say ~= 2) { print " "; DA_Topic(parsed_number); }
+        ##A104_talking_to_about: print "talking to about"; if (for_say ~= 2) { print " "; DA_Name(n); }
+        ##A105_pointing: print "pointing"; if (for_say ~= 2) { print " "; DA_Name(n); }
+        ##A106_running: print "running"; 
+        ##A107_running_with_scissors: print "running with scissors"; 
+        ##A108_not_passing_the_milk: print "not passing the milk"; if (for_say ~= 2) { print " "; DA_Name(n); }
+        ##A109_passing: print "passing"; if (for_say ~= 2) { print " "; DA_Name(n); }
+        ##A110_counting_nothing: print "counting nothing"; 
+        ##A111_counting_cups: print "counting cups"; 
+        ##A112_throwing: print "throwing"; if (for_say ~= 2) { print " "; DA_Name(n); }
+        ##A113_cleaning: print "cleaning"; if (for_say ~= 2) { print " "; DA_Name(n); }
+        ##A114_reading: print "reading"; if (for_say ~= 2) { print " "; DA_Name(n); }
+        ##A115_pouring: print "pouring"; if (for_say ~= 2) { print " "; DA_Name(n); }
     }
 ];
 
@@ -10443,9 +10445,9 @@ Array ActionCoding -->
     ##Version ##Score ##LMode3 ##LMode2 ##LMode1 ##NotifyOn ##NotifyOff ##Pronouns
     ##A80_asking_for_credits ##A81_asking_for_help ##A82_fast_quitting ##A83_winning ##A84_failing ##A85_casting_xyzzy ##A86_copulating ##A87_sitting
     ##A88_sitting_on ##A89_standing ##A90_standing_on ##A91_crawling_under ##A92_undressing ##A93_hugging ##A94_counting ##A95_dancing
-    ##A96_poking ##A97_crying ##A98_shouting ##A99_talking ##A100_talking_to ##A101_talking_about ##A102_talking_about_to ##A103_talking_to_about
-    ##A104_pointing ##A105_running ##A106_running_with_scissors ##A107_not_passing_the_milk ##A108_passing ##A109_counting_nothing ##A110_counting_cups ##A111_throwing
-    ##A112_cleaning ##A113_reading ##A114_pouring;
+    ##A96_poking ##A97_crying ##A98_shouting ##A99_shouting_at ##A100_talking ##A101_talking_to ##A102_talking_about ##A103_talking_about_to
+    ##A104_talking_to_about ##A105_pointing ##A106_running ##A107_running_with_scissors ##A108_not_passing_the_milk ##A109_passing ##A110_counting_nothing ##A111_counting_cups
+    ##A112_throwing ##A113_cleaning ##A114_reading ##A115_pouring;
 
 
 Array ActionHappened --> 0 0 0 0 0 0 0 0;
@@ -10550,22 +10552,23 @@ Array ActionHappened --> 0 0 0 0 0 0 0 0;
 [ A96_pokingSub; return GenericVerbSub(422,423,424); ];
 [ A97_cryingSub; return GenericVerbSub(425,426,427); ];
 [ A98_shoutingSub; return GenericVerbSub(428,429,430); ];
-[ A99_talkingSub; return GenericVerbSub(431,432,433); ];
-[ A100_talking_toSub; return GenericVerbSub(434,435,436); ];
-[ A101_talking_aboutSub; return GenericVerbSub(437,438,439); ];
-[ A102_talking_about_toSub; return GenericVerbSub(440,441,442); ];
-[ A103_talking_to_aboutSub; return GenericVerbSub(443,444,445); ];
-[ A104_pointingSub; return GenericVerbSub(446,447,448); ];
-[ A105_runningSub; return GenericVerbSub(449,450,451); ];
-[ A106_running_with_scissorsSub; return GenericVerbSub(452,453,454); ];
-[ A107_not_passing_the_milkSub; return GenericVerbSub(455,456,457); ];
-[ A108_passingSub; return GenericVerbSub(458,459,460); ];
-[ A109_counting_nothingSub; return GenericVerbSub(461,462,463); ];
-[ A110_counting_cupsSub; return GenericVerbSub(464,465,466); ];
-[ A111_throwingSub; return GenericVerbSub(467,468,469); ];
-[ A112_cleaningSub; return GenericVerbSub(470,471,472); ];
-[ A113_readingSub; return GenericVerbSub(473,474,475); ];
-[ A114_pouringSub; return GenericVerbSub(476,477,478); ];
+[ A99_shouting_atSub; return GenericVerbSub(431,432,433); ];
+[ A100_talkingSub; return GenericVerbSub(434,435,436); ];
+[ A101_talking_toSub; return GenericVerbSub(437,438,439); ];
+[ A102_talking_aboutSub; return GenericVerbSub(440,441,442); ];
+[ A103_talking_about_toSub; return GenericVerbSub(443,444,445); ];
+[ A104_talking_to_aboutSub; return GenericVerbSub(446,447,448); ];
+[ A105_pointingSub; return GenericVerbSub(449,450,451); ];
+[ A106_runningSub; return GenericVerbSub(452,453,454); ];
+[ A107_running_with_scissorsSub; return GenericVerbSub(455,456,457); ];
+[ A108_not_passing_the_milkSub; return GenericVerbSub(458,459,460); ];
+[ A109_passingSub; return GenericVerbSub(461,462,463); ];
+[ A110_counting_nothingSub; return GenericVerbSub(464,465,466); ];
+[ A111_counting_cupsSub; return GenericVerbSub(467,468,469); ];
+[ A112_throwingSub; return GenericVerbSub(470,471,472); ];
+[ A113_cleaningSub; return GenericVerbSub(473,474,475); ];
+[ A114_readingSub; return GenericVerbSub(476,477,478); ];
+[ A115_pouringSub; return GenericVerbSub(479,480,481); ];
 
 [ MistakeActionSub;
     switch(understand_as_mistake_number) {
@@ -11671,7 +11674,7 @@ self = noun;
    if (debug_rules) DB_Rule(R_854, 854);
       ! phrase 1
       ! [1: try throwing the noun]
-       TryAction(0, player, ##A111_throwing, noun, 0);; 
+       TryAction(0, player, ##A112_throwing, noun, 0);; 
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
    else if (debug_rules > 1) DB_Rule(R_854, 854, true);
@@ -11873,7 +11876,7 @@ self = noun;
    if (debug_rules) DB_Rule(R_857, 857);
       ! phrase 1
       ! [1: try throwing the table]
-       TryAction(0, player, ##A111_throwing, I91_table, 0);; 
+       TryAction(0, player, ##A112_throwing, I91_table, 0);; 
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
    else if (debug_rules > 1) DB_Rule(R_857, 857, true);
@@ -11882,7 +11885,7 @@ self = noun;
 ! No specific request
 ! Instead of cleaning Sam:
 [ R_859 ;
-   if ((action ==##A112_cleaning) &&  (actor==player) && ((noun == I89_sam) && (true))) { ! Runs only when pattern matches
+   if ((action ==##A113_cleaning) &&  (actor==player) && ((noun == I89_sam) && (true))) { ! Runs only when pattern matches
 self = noun;
    if (debug_rules) DB_Rule(R_859, 859);
       ! phrase 1
@@ -11943,7 +11946,7 @@ self = noun;
    if (debug_rules) DB_Rule(R_866, 866);
       ! phrase 1
       ! [1: try throwing the brownie]
-       TryAction(0, player, ##A111_throwing, I102_brownie, 0);; 
+       TryAction(0, player, ##A112_throwing, I102_brownie, 0);; 
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
    else if (debug_rules > 1) DB_Rule(R_866, 866, true);
@@ -11966,7 +11969,7 @@ self = noun;
 ! No specific request
 ! Instead of reading the milk:
 [ R_870 ;
-   if ((action ==##A113_reading) &&  (actor==player) && ((noun == I94_milk) && (true))) { ! Runs only when pattern matches
+   if ((action ==##A114_reading) &&  (actor==player) && ((noun == I94_milk) && (true))) { ! Runs only when pattern matches
 self = noun;
    if (debug_rules) DB_Rule(R_870, 870);
       ! phrase 1
@@ -12002,7 +12005,7 @@ self = noun;
    if (debug_rules) DB_Rule(R_877, 877);
       ! phrase 1
       ! [1: try pouring the milk]
-       TryAction(0, player, ##A114_pouring, I94_milk, 0);; 
+       TryAction(0, player, ##A115_pouring, I94_milk, 0);; 
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
    else if (debug_rules > 1) DB_Rule(R_877, 877, true);
@@ -12011,7 +12014,7 @@ self = noun;
 ! No specific request
 ! Instead of pouring the milk:
 [ R_878 ;
-   if ((action ==##A114_pouring) &&  (actor==player) && ((noun == I94_milk) && (true))) { ! Runs only when pattern matches
+   if ((action ==##A115_pouring) &&  (actor==player) && ((noun == I94_milk) && (true))) { ! Runs only when pattern matches
 self = noun;
    if (debug_rules) DB_Rule(R_878, 878);
       ! phrase 1
@@ -12058,7 +12061,7 @@ self = noun;
    if (debug_rules) DB_Rule(R_885, 885);
       ! phrase 1
       ! [1: try throwing the plate]
-       TryAction(0, player, ##A111_throwing, I100_plate, 0);; 
+       TryAction(0, player, ##A112_throwing, I100_plate, 0);; 
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
    else if (debug_rules > 1) DB_Rule(R_885, 885, true);
@@ -12145,7 +12148,7 @@ self = noun;
    if (debug_rules) DB_Rule(R_894, 894);
       ! phrase 1
       ! [1: try throwing your glass]
-       TryAction(0, player, ##A111_throwing, I104_your_glass, 0);; 
+       TryAction(0, player, ##A112_throwing, I104_your_glass, 0);; 
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
    else if (debug_rules > 1) DB_Rule(R_894, 894, true);
@@ -12211,12 +12214,12 @@ self = noun;
 ! From "Fingertips" by Adri
 ! Instead of talking to someone:
 [ R_802 ;
-   if ((action ==##A100_talking_to) &&  (actor==player) && ((noun ofclass K8_person))) { ! Runs only when pattern matches
+   if ((action ==##A101_talking_to) &&  (actor==player) && ((noun ofclass K8_person))) { ! Runs only when pattern matches
 self = noun;
    if (debug_rules) DB_Rule(R_802, 802);
       ! phrase 1
       ! [1: try talking]
-       TryAction(0, player, ##A99_talking, 0, 0);; 
+       TryAction(0, player, ##A100_talking, 0, 0);; 
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
    else if (debug_rules > 1) DB_Rule(R_802, 802, true);
@@ -12268,7 +12271,7 @@ self = noun;
 [ R_856 
     t_0 ! Local variable e.g. 'S' = thing
     ;
-   if ((action ==##A111_throwing) &&  (actor==player) && (t_0 = noun, (((t_0=(noun), true) && (noun ofclass K2_thing))))) { ! Runs only when pattern matches
+   if ((action ==##A112_throwing) &&  (actor==player) && (t_0 = noun, (((t_0=(noun), true) && (noun ofclass K2_thing))))) { ! Runs only when pattern matches
 self = noun;
    if (debug_rules) DB_Rule(R_856, 856);
       ! phrase 1
@@ -12393,12 +12396,12 @@ self = noun;
 ! From "Fingertips" by Adri
 ! Instead of talking about:
 [ R_799 ;
-   if ((action ==##A101_talking_about) &&  (actor==player)) { ! Runs only when pattern matches
+   if ((action ==##A102_talking_about) &&  (actor==player)) { ! Runs only when pattern matches
 self = noun;
    if (debug_rules) DB_Rule(R_799, 799);
       ! phrase 1
       ! [1: try talking]
-       TryAction(0, player, ##A99_talking, 0, 0);; 
+       TryAction(0, player, ##A100_talking, 0, 0);; 
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
    else if (debug_rules > 1) DB_Rule(R_799, 799, true);
@@ -12408,12 +12411,12 @@ self = noun;
 ! From "Fingertips" by Adri
 ! Instead of talking about to:
 [ R_800 ;
-   if ((action ==##A102_talking_about_to) &&  (actor==player)) { ! Runs only when pattern matches
+   if ((action ==##A103_talking_about_to) &&  (actor==player)) { ! Runs only when pattern matches
 self = noun;
    if (debug_rules) DB_Rule(R_800, 800);
       ! phrase 1
       ! [1: try talking]
-       TryAction(0, player, ##A99_talking, 0, 0);; 
+       TryAction(0, player, ##A100_talking, 0, 0);; 
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
    else if (debug_rules > 1) DB_Rule(R_800, 800, true);
@@ -12423,12 +12426,12 @@ self = noun;
 ! From "Fingertips" by Adri
 ! Instead of talking to about:
 [ R_801 ;
-   if ((action ==##A103_talking_to_about) &&  (actor==player)) { ! Runs only when pattern matches
+   if ((action ==##A104_talking_to_about) &&  (actor==player)) { ! Runs only when pattern matches
 self = noun;
    if (debug_rules) DB_Rule(R_801, 801);
       ! phrase 1
       ! [1: try talking]
-       TryAction(0, player, ##A99_talking, 0, 0);; 
+       TryAction(0, player, ##A100_talking, 0, 0);; 
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
    else if (debug_rules > 1) DB_Rule(R_801, 801, true);
@@ -12479,7 +12482,7 @@ self = noun;
 ! No specific request
 ! Instead of talking:
 [ R_817 ;
-   if ((action ==##A99_talking) &&  (actor==player)) { ! Runs only when pattern matches
+   if ((action ==##A100_talking) &&  (actor==player)) { ! Runs only when pattern matches
 self = noun;
    if (debug_rules) DB_Rule(R_817, 817);
       ! phrase 1
@@ -12538,7 +12541,7 @@ self = noun;
 ! No specific request
 ! Instead of pointing:
 [ R_825 ;
-   if ((action ==##A104_pointing) &&  (actor==player)) { ! Runs only when pattern matches
+   if ((action ==##A105_pointing) &&  (actor==player)) { ! Runs only when pattern matches
 self = noun;
    if (debug_rules) DB_Rule(R_825, 825);
       ! phrase 1
@@ -12552,7 +12555,7 @@ self = noun;
 ! No specific request
 ! Instead of running:
 [ R_829 ;
-   if ((action ==##A105_running) &&  (actor==player)) { ! Runs only when pattern matches
+   if ((action ==##A106_running) &&  (actor==player)) { ! Runs only when pattern matches
 self = noun;
    if (debug_rules) DB_Rule(R_829, 829);
       ! phrase 1
@@ -12566,7 +12569,7 @@ self = noun;
 ! No specific request
 ! Instead of running with scissors:
 [ R_830 ;
-   if ((action ==##A106_running_with_scissors) &&  (actor==player)) { ! Runs only when pattern matches
+   if ((action ==##A107_running_with_scissors) &&  (actor==player)) { ! Runs only when pattern matches
 self = noun;
    if (debug_rules) DB_Rule(R_830, 830);
       ! phrase 1
@@ -12667,7 +12670,7 @@ self = noun;
 ! No specific request
 ! Instead of counting cups:
 [ R_846 ;
-   if ((action ==##A110_counting_cups) &&  (actor==player)) { ! Runs only when pattern matches
+   if ((action ==##A111_counting_cups) &&  (actor==player)) { ! Runs only when pattern matches
 self = noun;
    if (debug_rules) DB_Rule(R_846, 846);
       ! phrase 1
@@ -12756,7 +12759,7 @@ self = noun;
 ! No specific request
 ! Does the player mean pouring the milk:
 [ R_875 ;
-   if ((action ==##A114_pouring) &&  (actor==player) && ((noun == I94_milk) && (true))) { ! Runs only when pattern matches
+   if ((action ==##A115_pouring) &&  (actor==player) && ((noun == I94_milk) && (true))) { ! Runs only when pattern matches
 self = noun;
    if (debug_rules) DB_Rule(R_875, 875);
       ! phrase 1
@@ -19613,19 +19616,19 @@ self = noun;
 ! ----------------------------------------------------------------------------------------------------
 
 ! ----------------------------------------------------------------------------------------------------
-! Rules in rulebook: report talking (B433_report_talking)
+! Rules in rulebook: report Shouting at (B433_report_shouting_at)
 ! ----------------------------------------------------------------------------------------------------
-! Rule 1/1 ! report talking:
+! Rule 1/1 ! Report shouting at:
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! From "Fingertips" by Adri
-! report talking:
+! Report shouting at:
 [ R_797 ;
    if (actor == player) {
    if (debug_rules) DB_Rule(R_797, 797);
       ! phrase 1
-      ! [1: say ~Who do you want to talk to?~]
-      say__p=1;ParaContent();  print (PrintText) SC_159;  new_line; .L_Say129; .L_SayX129;
+      ! [1: say ~It's not nice to yell!~]
+      say__p=1;ParaContent();  print (PrintText) SC_158;  new_line; .L_Say129; .L_SayX129;
    } ! Runs only when actor is the player
    else if (debug_rules > 1) DB_Rule(R_797, 797, true);
    rfalse;
@@ -19633,7 +19636,7 @@ self = noun;
 ! ----------------------------------------------------------------------------------------------------
 
 ! ----------------------------------------------------------------------------------------------------
-! Rules in rulebook: report talking to (B436_report_talking_to)
+! Rules in rulebook: report talking to (B439_report_talking_to)
 ! ----------------------------------------------------------------------------------------------------
 ! Rule 1/1 ! report talking to something:
 ! ----------------------------------------------------------------------------------------------------
@@ -19646,7 +19649,7 @@ self = noun;
    if (debug_rules) DB_Rule(R_798, 798);
       ! phrase 1
       ! [1: say ~It doesn't respond.~]
-      say__p=1;ParaContent();  print (PrintText) SC_160;  new_line; .L_Say130; .L_SayX130;
+      say__p=1;ParaContent();  print (PrintText) SC_159;  new_line; .L_Say130; .L_SayX130;
    } ! Runs only when pattern matches
    else if (debug_rules > 1) DB_Rule(R_798, 798, true);
    rfalse;
@@ -19654,7 +19657,7 @@ self = noun;
 ! ----------------------------------------------------------------------------------------------------
 
 ! ----------------------------------------------------------------------------------------------------
-! Rules in rulebook: report Not passing the milk (B457_report_not_passing_the_)
+! Rules in rulebook: report Not passing the milk (B460_report_not_passing_the_)
 ! ----------------------------------------------------------------------------------------------------
 ! Rule 1/1 ! Report not passing the milk:
 ! ----------------------------------------------------------------------------------------------------
@@ -19673,7 +19676,7 @@ self = noun;
 ! ----------------------------------------------------------------------------------------------------
 
 ! ----------------------------------------------------------------------------------------------------
-! Rules in rulebook: report Passing (B460_report_passing)
+! Rules in rulebook: report Passing (B463_report_passing)
 ! ----------------------------------------------------------------------------------------------------
 ! Rule 1/1 ! Report passing:
 ! ----------------------------------------------------------------------------------------------------
@@ -19692,7 +19695,7 @@ self = noun;
 ! ----------------------------------------------------------------------------------------------------
 
 ! ----------------------------------------------------------------------------------------------------
-! Rules in rulebook: report Counting nothing (B463_report_counting_nothing)
+! Rules in rulebook: report Counting nothing (B466_report_counting_nothing)
 ! ----------------------------------------------------------------------------------------------------
 ! Rule 1/1 ! Report counting nothing:
 ! ----------------------------------------------------------------------------------------------------
@@ -19703,7 +19706,7 @@ self = noun;
    if (debug_rules) DB_Rule(R_844, 844);
       ! phrase 1
       ! [1: say ~You forget all about the brownies and break into an impromptu game of hide-and-seek.~]
-      say__p=1;ParaContent();  print (PrintText) SC_161;  new_line; .L_Say131; .L_SayX131;
+      say__p=1;ParaContent();  print (PrintText) SC_160;  new_line; .L_Say131; .L_SayX131;
       ! phrase 2
       ! [2: try failing]
        TryAction(0, player, ##A84_failing, 0, 0);; 
@@ -19714,7 +19717,7 @@ self = noun;
 ! ----------------------------------------------------------------------------------------------------
 
 ! ----------------------------------------------------------------------------------------------------
-! Rules in rulebook: report Throwing (B469_report_throwing)
+! Rules in rulebook: report Throwing (B472_report_throwing)
 ! ----------------------------------------------------------------------------------------------------
 ! Rule 1/1 ! Report throwing:
 ! ----------------------------------------------------------------------------------------------------
@@ -19725,7 +19728,7 @@ self = noun;
    if (debug_rules) DB_Rule(R_853, 853);
       ! phrase 1
       ! [1: say ~It's not nice to throw things!~]
-      say__p=1;ParaContent();  print (PrintText) SC_162;  new_line; .L_Say132; .L_SayX132;
+      say__p=1;ParaContent();  print (PrintText) SC_161;  new_line; .L_Say132; .L_SayX132;
    } ! Runs only when actor is the player
    else if (debug_rules > 1) DB_Rule(R_853, 853, true);
    rfalse;
@@ -19733,7 +19736,7 @@ self = noun;
 ! ----------------------------------------------------------------------------------------------------
 
 ! ----------------------------------------------------------------------------------------------------
-! Rules in rulebook: report Cleaning (B472_report_cleaning)
+! Rules in rulebook: report Cleaning (B475_report_cleaning)
 ! ----------------------------------------------------------------------------------------------------
 ! Rule 1/1 ! Report cleaning:
 ! ----------------------------------------------------------------------------------------------------
@@ -19744,7 +19747,7 @@ self = noun;
    if (debug_rules) DB_Rule(R_858, 858);
       ! phrase 1
       ! [1: say ~There is no need to clean that right now.~]
-      say__p=1;ParaContent();  print (PrintText) SC_163;  new_line; .L_Say133; .L_SayX133;
+      say__p=1;ParaContent();  print (PrintText) SC_162;  new_line; .L_Say133; .L_SayX133;
    } ! Runs only when actor is the player
    else if (debug_rules > 1) DB_Rule(R_858, 858, true);
    rfalse;
@@ -19752,7 +19755,7 @@ self = noun;
 ! ----------------------------------------------------------------------------------------------------
 
 ! ----------------------------------------------------------------------------------------------------
-! Rules in rulebook: report Reading (B475_report_reading)
+! Rules in rulebook: report Reading (B478_report_reading)
 ! ----------------------------------------------------------------------------------------------------
 ! Rule 1/1 ! Report reading:
 ! ----------------------------------------------------------------------------------------------------
@@ -19763,7 +19766,7 @@ self = noun;
    if (debug_rules) DB_Rule(R_869, 869);
       ! phrase 1
       ! [1: say ~There is nothing there to read.~]
-      say__p=1;ParaContent();  print (PrintText) SC_164;  new_line; .L_Say134; .L_SayX134;
+      say__p=1;ParaContent();  print (PrintText) SC_163;  new_line; .L_Say134; .L_SayX134;
    } ! Runs only when actor is the player
    else if (debug_rules > 1) DB_Rule(R_869, 869, true);
    rfalse;
@@ -19771,7 +19774,7 @@ self = noun;
 ! ----------------------------------------------------------------------------------------------------
 
 ! ----------------------------------------------------------------------------------------------------
-! Rules in rulebook: report Pouring (B478_report_pouring)
+! Rules in rulebook: report Pouring (B481_report_pouring)
 ! ----------------------------------------------------------------------------------------------------
 ! Rule 1/1 ! Report pouring:
 ! ----------------------------------------------------------------------------------------------------
@@ -19782,7 +19785,7 @@ self = noun;
    if (debug_rules) DB_Rule(R_873, 873);
       ! phrase 1
       ! [1: say ~You can't pour that.~]
-      say__p=1;ParaContent();  print (PrintText) SC_165;  new_line; .L_Say135; .L_SayX135;
+      say__p=1;ParaContent();  print (PrintText) SC_164;  new_line; .L_Say135; .L_SayX135;
    } ! Runs only when actor is the player
    else if (debug_rules > 1) DB_Rule(R_873, 873, true);
    rfalse;
@@ -21664,7 +21667,7 @@ Array TimedEventTimesTable table 0 0;
 
 
 
-Array rulebooks_array --> B0_procedural B1_startup B2_turn_sequence B3_shutdown B4_scene_changing B5_when_play_begins B6_when_play_ends B7_when_scene_begins B8_when_scene_ends B9_every_turn B10_action_processing B11_setting_action_variables B12_specific_action_processi B13_player_s_action_awarenes B14_accessibility B15_reaching_inside B16_reaching_outside B17_visibility B18_persuasion B19_unsuccessful_attempt_by B20_before B21_instead B22_check B23_carry_out B24_after B25_report B26_does_the_player_mean B27_when_entire_game_begins B28_when_entire_game_ends B29_before_printing_the_name B30_for_printing_the_name B31_after_printing_the_name B32_before_printing_the_plur B33_for_printing_the_plural_ B34_after_printing_the_plura B35_before_printing_a_number B36_for_printing_a_number B37_after_printing_a_number B38_before_printing_room_des B39_for_printing_room_descri B40_after_printing_room_desc B41_before_listing_contents B42_for_listing_contents B43_after_listing_contents B44_before_grouping_together B45_for_grouping_together B46_after_grouping_together B47_before_writing_a_paragra B48_for_writing_a_paragraph_ B49_after_writing_a_paragrap B50_before_listing_nondescri B51_for_listing_nondescript_ B52_after_listing_nondescrip B53_before_printing_the_name B54_for_printing_the_name_of B55_after_printing_the_name_ B56_before_printing_the_desc B57_for_printing_the_descrip B58_after_printing_the_descr B59_before_printing_the_anno B60_for_printing_the_announc B61_after_printing_the_annou B62_before_printing_the_anno B63_for_printing_the_announc B64_after_printing_the_annou B65_before_printing_a_refusa B66_for_printing_a_refusal_t B67_after_printing_a_refusal B68_before_constructing_the_ B69_for_constructing_the_sta B70_after_constructing_the_s B71_before_printing_the_bann B72_for_printing_the_banner_ B73_after_printing_the_banne B74_before_reading_a_command B75_for_reading_a_command B76_after_reading_a_command B77_before_deciding_the_scop B78_for_deciding_the_scope B79_after_deciding_the_scope B80_before_deciding_the_conc B81_for_deciding_the_conceal B82_after_deciding_the_conce B83_before_deciding_whether_ B84_for_deciding_whether_all B85_after_deciding_whether_a B86_before_clarifying_the_pa B87_for_clarifying_the_parse B88_after_clarifying_the_par B89_before_asking_which_do_y B90_for_asking_which_do_you_ B91_after_asking_which_do_yo B92_before_printing_a_parser B93_for_printing_a_parser_er B94_after_printing_a_parser_ B95_before_supplying_a_missi B96_for_supplying_a_missing_ B97_after_supplying_a_missin B98_before_supplying_a_missi B99_for_supplying_a_missing_ B100_after_supplying_a_missi B101_before_implicitly_takin B102_for_implicitly_taking B103_after_implicitly_taking B104_before_starting_the_vir B105_for_starting_the_virtua B106_after_starting_the_virt B107_before_amusing_a_victor B108_for_amusing_a_victoriou B109_after_amusing_a_victori B110_before_printing_the_pla B111_for_printing_the_player B112_after_printing_the_play B113_before_handling_the_fin B114_for_handling_the_final_ B115_after_handling_the_fina B116_before_printing_the_loc B117_for_printing_the_locale B118_after_printing_the_loca B119_before_choosing_notable B120_for_choosing_notable_lo B121_after_choosing_notable_ B122_before_printing_a_local B123_for_printing_a_locale_p B124_after_printing_a_locale B125_check_taking_inventory B126_carry_out_taking_invent B127_report_taking_inventory B128_check_taking B129_carry_out_taking B130_report_taking B131_check_removing_it_from B132_carry_out_removing_it_f B133_report_removing_it_from B134_check_dropping B135_carry_out_dropping B136_report_dropping B137_check_putting_it_on B138_carry_out_putting_it_on B139_report_putting_it_on B140_check_inserting_it_into B141_carry_out_inserting_it_ B142_report_inserting_it_int B143_check_eating B144_carry_out_eating B145_report_eating B146_check_going B147_carry_out_going B148_report_going B149_check_entering B150_carry_out_entering B151_report_entering B152_check_exiting B153_carry_out_exiting B154_report_exiting B155_check_getting_off B156_carry_out_getting_off B157_report_getting_off B158_check_looking B159_carry_out_looking B160_report_looking B161_check_examining B162_carry_out_examining B163_report_examining B164_check_looking_under B165_carry_out_looking_under B166_report_looking_under B167_check_searching B168_carry_out_searching B169_report_searching B170_check_consulting_it_abo B171_carry_out_consulting_it B172_report_consulting_it_ab B173_check_locking_it_with B174_carry_out_locking_it_wi B175_report_locking_it_with B176_check_unlocking_it_with B177_carry_out_unlocking_it_ B178_report_unlocking_it_wit B179_check_switching_on B180_carry_out_switching_on B181_report_switching_on B182_check_switching_off B183_carry_out_switching_off B184_report_switching_off B185_check_opening B186_carry_out_opening B187_report_opening B188_check_closing B189_carry_out_closing B190_report_closing B191_check_wearing B192_carry_out_wearing B193_report_wearing B194_check_taking_off B195_carry_out_taking_off B196_report_taking_off B197_check_giving_it_to B198_carry_out_giving_it_to B199_report_giving_it_to B200_check_showing_it_to B201_carry_out_showing_it_to B202_report_showing_it_to B203_check_waking B204_carry_out_waking B205_report_waking B206_check_throwing_it_at B207_carry_out_throwing_it_a B208_report_throwing_it_at B209_check_attacking B210_carry_out_attacking B211_report_attacking B212_check_kissing B213_carry_out_kissing B214_report_kissing B215_check_answering_it_that B216_carry_out_answering_it_ B217_report_answering_it_tha B218_check_telling_it_about B219_carry_out_telling_it_ab B220_report_telling_it_about B221_check_asking_it_about B222_carry_out_asking_it_abo B223_report_asking_it_about B224_check_asking_it_for B225_carry_out_asking_it_for B226_report_asking_it_for B227_check_waiting B228_carry_out_waiting B229_report_waiting B230_check_touching B231_carry_out_touching B232_report_touching B233_check_waving B234_carry_out_waving B235_report_waving B236_check_pulling B237_carry_out_pulling B238_report_pulling B239_check_pushing B240_carry_out_pushing B241_report_pushing B242_check_turning B243_carry_out_turning B244_report_turning B245_check_pushing_it_to B246_carry_out_pushing_it_to B247_report_pushing_it_to B248_check_squeezing B249_carry_out_squeezing B250_report_squeezing B251_check_saying_yes B252_carry_out_saying_yes B253_report_saying_yes B254_check_saying_no B255_carry_out_saying_no B256_report_saying_no B257_check_burning B258_carry_out_burning B259_report_burning B260_check_waking_up B261_carry_out_waking_up B262_report_waking_up B263_check_thinking B264_carry_out_thinking B265_report_thinking B266_check_smelling B267_carry_out_smelling B268_report_smelling B269_check_listening_to B270_carry_out_listening_to B271_report_listening_to B272_check_tasting B273_carry_out_tasting B274_report_tasting B275_check_cutting B276_carry_out_cutting B277_report_cutting B278_check_jumping B279_carry_out_jumping B280_report_jumping B281_check_tying_it_to B282_carry_out_tying_it_to B283_report_tying_it_to B284_check_drinking B285_carry_out_drinking B286_report_drinking B287_check_saying_sorry B288_carry_out_saying_sorry B289_report_saying_sorry B290_check_swearing_obscenel B291_carry_out_swearing_obsc B292_report_swearing_obscene B293_check_swearing_mildly B294_carry_out_swearing_mild B295_report_swearing_mildly B296_check_swinging B297_carry_out_swinging B298_report_swinging B299_check_rubbing B300_carry_out_rubbing B301_report_rubbing B302_check_setting_it_to B303_carry_out_setting_it_to B304_report_setting_it_to B305_check_waving_hands B306_carry_out_waving_hands B307_report_waving_hands B308_check_buying B309_carry_out_buying B310_report_buying B311_check_singing B312_carry_out_singing B313_report_singing B314_check_climbing B315_carry_out_climbing B316_report_climbing B317_check_sleeping B318_carry_out_sleeping B319_report_sleeping B320_check_quitting_the_game B321_carry_out_quitting_the_ B322_report_quitting_the_gam B323_check_saving_the_game B324_carry_out_saving_the_ga B325_report_saving_the_game B326_check_restoring_the_gam B327_carry_out_restoring_the B328_report_restoring_the_ga B329_check_restarting_the_ga B330_carry_out_restarting_th B331_report_restarting_the_g B332_check_verifying_the_sto B333_carry_out_verifying_the B334_report_verifying_the_st B335_check_switching_the_sto B336_carry_out_switching_the B337_report_switching_the_st B338_check_switching_the_sto B339_carry_out_switching_the B340_report_switching_the_st B341_check_requesting_the_st B342_carry_out_requesting_th B343_report_requesting_the_s B344_check_requesting_the_sc B345_carry_out_requesting_th B346_report_requesting_the_s B347_check_preferring_abbrev B348_carry_out_preferring_ab B349_report_preferring_abbre B350_check_preferring_unabbr B351_carry_out_preferring_un B352_report_preferring_unabb B353_check_preferring_someti B354_carry_out_preferring_so B355_report_preferring_somet B356_check_switching_score_n B357_carry_out_switching_sco B358_report_switching_score_ B359_check_switching_score_n B360_carry_out_switching_sco B361_report_switching_score_ B362_check_requesting_the_pr B363_carry_out_requesting_th B364_report_requesting_the_p B365_before_deciding_whether B366_for_deciding_whether_to B367_after_deciding_whether_ B368_before_deciding_whether B369_for_deciding_whether_th B370_after_deciding_whether_ B371_check_asking_for_credit B372_carry_out_asking_for_cr B373_report_asking_for_credi B374_check_asking_for_help B375_carry_out_asking_for_he B376_report_asking_for_help B377_check_fast_quitting B378_carry_out_fast_quitting B379_report_fast_quitting B380_before_displaying_endin B381_for_displaying_endings B382_after_displaying_ending B383_check_winning B384_carry_out_winning B385_report_winning B386_check_failing B387_carry_out_failing B388_report_failing B389_check_casting_xyzzy B390_carry_out_casting_xyzzy B391_report_casting_xyzzy B392_check_copulating B393_carry_out_copulating B394_report_copulating B395_check_sitting B396_carry_out_sitting B397_report_sitting B398_check_sitting_on B399_carry_out_sitting_on B400_report_sitting_on B401_check_standing B402_carry_out_standing B403_report_standing B404_check_standing_on B405_carry_out_standing_on B406_report_standing_on B407_check_crawling_under B408_carry_out_crawling_unde B409_report_crawling_under B410_check_undressing B411_carry_out_undressing B412_report_undressing B413_check_hugging B414_carry_out_hugging B415_report_hugging B416_check_counting B417_carry_out_counting B418_report_counting B419_check_dancing B420_carry_out_dancing B421_report_dancing B422_check_poking B423_carry_out_poking B424_report_poking B425_check_crying B426_carry_out_crying B427_report_crying B428_check_shouting B429_carry_out_shouting B430_report_shouting B431_check_talking B432_carry_out_talking B433_report_talking B434_check_talking_to B435_carry_out_talking_to B436_report_talking_to B437_check_talking_about B438_carry_out_talking_about B439_report_talking_about B440_check_talking_about_to B441_carry_out_talking_about B442_report_talking_about_to B443_check_talking_to_about B444_carry_out_talking_to_ab B445_report_talking_to_about B446_check_pointing B447_carry_out_pointing B448_report_pointing B449_check_running B450_carry_out_running B451_report_running B452_check_running_with_scis B453_carry_out_running_with_ B454_report_running_with_sci B455_check_not_passing_the_m B456_carry_out_not_passing_t B457_report_not_passing_the_ B458_check_passing B459_carry_out_passing B460_report_passing B461_check_counting_nothing B462_carry_out_counting_noth B463_report_counting_nothing B464_check_counting_cups B465_carry_out_counting_cups B466_report_counting_cups B467_check_throwing B468_carry_out_throwing B469_report_throwing B470_check_cleaning B471_carry_out_cleaning B472_report_cleaning B473_check_reading B474_carry_out_reading B475_report_reading B476_check_pouring B477_carry_out_pouring B478_report_pouring 0;
+Array rulebooks_array --> B0_procedural B1_startup B2_turn_sequence B3_shutdown B4_scene_changing B5_when_play_begins B6_when_play_ends B7_when_scene_begins B8_when_scene_ends B9_every_turn B10_action_processing B11_setting_action_variables B12_specific_action_processi B13_player_s_action_awarenes B14_accessibility B15_reaching_inside B16_reaching_outside B17_visibility B18_persuasion B19_unsuccessful_attempt_by B20_before B21_instead B22_check B23_carry_out B24_after B25_report B26_does_the_player_mean B27_when_entire_game_begins B28_when_entire_game_ends B29_before_printing_the_name B30_for_printing_the_name B31_after_printing_the_name B32_before_printing_the_plur B33_for_printing_the_plural_ B34_after_printing_the_plura B35_before_printing_a_number B36_for_printing_a_number B37_after_printing_a_number B38_before_printing_room_des B39_for_printing_room_descri B40_after_printing_room_desc B41_before_listing_contents B42_for_listing_contents B43_after_listing_contents B44_before_grouping_together B45_for_grouping_together B46_after_grouping_together B47_before_writing_a_paragra B48_for_writing_a_paragraph_ B49_after_writing_a_paragrap B50_before_listing_nondescri B51_for_listing_nondescript_ B52_after_listing_nondescrip B53_before_printing_the_name B54_for_printing_the_name_of B55_after_printing_the_name_ B56_before_printing_the_desc B57_for_printing_the_descrip B58_after_printing_the_descr B59_before_printing_the_anno B60_for_printing_the_announc B61_after_printing_the_annou B62_before_printing_the_anno B63_for_printing_the_announc B64_after_printing_the_annou B65_before_printing_a_refusa B66_for_printing_a_refusal_t B67_after_printing_a_refusal B68_before_constructing_the_ B69_for_constructing_the_sta B70_after_constructing_the_s B71_before_printing_the_bann B72_for_printing_the_banner_ B73_after_printing_the_banne B74_before_reading_a_command B75_for_reading_a_command B76_after_reading_a_command B77_before_deciding_the_scop B78_for_deciding_the_scope B79_after_deciding_the_scope B80_before_deciding_the_conc B81_for_deciding_the_conceal B82_after_deciding_the_conce B83_before_deciding_whether_ B84_for_deciding_whether_all B85_after_deciding_whether_a B86_before_clarifying_the_pa B87_for_clarifying_the_parse B88_after_clarifying_the_par B89_before_asking_which_do_y B90_for_asking_which_do_you_ B91_after_asking_which_do_yo B92_before_printing_a_parser B93_for_printing_a_parser_er B94_after_printing_a_parser_ B95_before_supplying_a_missi B96_for_supplying_a_missing_ B97_after_supplying_a_missin B98_before_supplying_a_missi B99_for_supplying_a_missing_ B100_after_supplying_a_missi B101_before_implicitly_takin B102_for_implicitly_taking B103_after_implicitly_taking B104_before_starting_the_vir B105_for_starting_the_virtua B106_after_starting_the_virt B107_before_amusing_a_victor B108_for_amusing_a_victoriou B109_after_amusing_a_victori B110_before_printing_the_pla B111_for_printing_the_player B112_after_printing_the_play B113_before_handling_the_fin B114_for_handling_the_final_ B115_after_handling_the_fina B116_before_printing_the_loc B117_for_printing_the_locale B118_after_printing_the_loca B119_before_choosing_notable B120_for_choosing_notable_lo B121_after_choosing_notable_ B122_before_printing_a_local B123_for_printing_a_locale_p B124_after_printing_a_locale B125_check_taking_inventory B126_carry_out_taking_invent B127_report_taking_inventory B128_check_taking B129_carry_out_taking B130_report_taking B131_check_removing_it_from B132_carry_out_removing_it_f B133_report_removing_it_from B134_check_dropping B135_carry_out_dropping B136_report_dropping B137_check_putting_it_on B138_carry_out_putting_it_on B139_report_putting_it_on B140_check_inserting_it_into B141_carry_out_inserting_it_ B142_report_inserting_it_int B143_check_eating B144_carry_out_eating B145_report_eating B146_check_going B147_carry_out_going B148_report_going B149_check_entering B150_carry_out_entering B151_report_entering B152_check_exiting B153_carry_out_exiting B154_report_exiting B155_check_getting_off B156_carry_out_getting_off B157_report_getting_off B158_check_looking B159_carry_out_looking B160_report_looking B161_check_examining B162_carry_out_examining B163_report_examining B164_check_looking_under B165_carry_out_looking_under B166_report_looking_under B167_check_searching B168_carry_out_searching B169_report_searching B170_check_consulting_it_abo B171_carry_out_consulting_it B172_report_consulting_it_ab B173_check_locking_it_with B174_carry_out_locking_it_wi B175_report_locking_it_with B176_check_unlocking_it_with B177_carry_out_unlocking_it_ B178_report_unlocking_it_wit B179_check_switching_on B180_carry_out_switching_on B181_report_switching_on B182_check_switching_off B183_carry_out_switching_off B184_report_switching_off B185_check_opening B186_carry_out_opening B187_report_opening B188_check_closing B189_carry_out_closing B190_report_closing B191_check_wearing B192_carry_out_wearing B193_report_wearing B194_check_taking_off B195_carry_out_taking_off B196_report_taking_off B197_check_giving_it_to B198_carry_out_giving_it_to B199_report_giving_it_to B200_check_showing_it_to B201_carry_out_showing_it_to B202_report_showing_it_to B203_check_waking B204_carry_out_waking B205_report_waking B206_check_throwing_it_at B207_carry_out_throwing_it_a B208_report_throwing_it_at B209_check_attacking B210_carry_out_attacking B211_report_attacking B212_check_kissing B213_carry_out_kissing B214_report_kissing B215_check_answering_it_that B216_carry_out_answering_it_ B217_report_answering_it_tha B218_check_telling_it_about B219_carry_out_telling_it_ab B220_report_telling_it_about B221_check_asking_it_about B222_carry_out_asking_it_abo B223_report_asking_it_about B224_check_asking_it_for B225_carry_out_asking_it_for B226_report_asking_it_for B227_check_waiting B228_carry_out_waiting B229_report_waiting B230_check_touching B231_carry_out_touching B232_report_touching B233_check_waving B234_carry_out_waving B235_report_waving B236_check_pulling B237_carry_out_pulling B238_report_pulling B239_check_pushing B240_carry_out_pushing B241_report_pushing B242_check_turning B243_carry_out_turning B244_report_turning B245_check_pushing_it_to B246_carry_out_pushing_it_to B247_report_pushing_it_to B248_check_squeezing B249_carry_out_squeezing B250_report_squeezing B251_check_saying_yes B252_carry_out_saying_yes B253_report_saying_yes B254_check_saying_no B255_carry_out_saying_no B256_report_saying_no B257_check_burning B258_carry_out_burning B259_report_burning B260_check_waking_up B261_carry_out_waking_up B262_report_waking_up B263_check_thinking B264_carry_out_thinking B265_report_thinking B266_check_smelling B267_carry_out_smelling B268_report_smelling B269_check_listening_to B270_carry_out_listening_to B271_report_listening_to B272_check_tasting B273_carry_out_tasting B274_report_tasting B275_check_cutting B276_carry_out_cutting B277_report_cutting B278_check_jumping B279_carry_out_jumping B280_report_jumping B281_check_tying_it_to B282_carry_out_tying_it_to B283_report_tying_it_to B284_check_drinking B285_carry_out_drinking B286_report_drinking B287_check_saying_sorry B288_carry_out_saying_sorry B289_report_saying_sorry B290_check_swearing_obscenel B291_carry_out_swearing_obsc B292_report_swearing_obscene B293_check_swearing_mildly B294_carry_out_swearing_mild B295_report_swearing_mildly B296_check_swinging B297_carry_out_swinging B298_report_swinging B299_check_rubbing B300_carry_out_rubbing B301_report_rubbing B302_check_setting_it_to B303_carry_out_setting_it_to B304_report_setting_it_to B305_check_waving_hands B306_carry_out_waving_hands B307_report_waving_hands B308_check_buying B309_carry_out_buying B310_report_buying B311_check_singing B312_carry_out_singing B313_report_singing B314_check_climbing B315_carry_out_climbing B316_report_climbing B317_check_sleeping B318_carry_out_sleeping B319_report_sleeping B320_check_quitting_the_game B321_carry_out_quitting_the_ B322_report_quitting_the_gam B323_check_saving_the_game B324_carry_out_saving_the_ga B325_report_saving_the_game B326_check_restoring_the_gam B327_carry_out_restoring_the B328_report_restoring_the_ga B329_check_restarting_the_ga B330_carry_out_restarting_th B331_report_restarting_the_g B332_check_verifying_the_sto B333_carry_out_verifying_the B334_report_verifying_the_st B335_check_switching_the_sto B336_carry_out_switching_the B337_report_switching_the_st B338_check_switching_the_sto B339_carry_out_switching_the B340_report_switching_the_st B341_check_requesting_the_st B342_carry_out_requesting_th B343_report_requesting_the_s B344_check_requesting_the_sc B345_carry_out_requesting_th B346_report_requesting_the_s B347_check_preferring_abbrev B348_carry_out_preferring_ab B349_report_preferring_abbre B350_check_preferring_unabbr B351_carry_out_preferring_un B352_report_preferring_unabb B353_check_preferring_someti B354_carry_out_preferring_so B355_report_preferring_somet B356_check_switching_score_n B357_carry_out_switching_sco B358_report_switching_score_ B359_check_switching_score_n B360_carry_out_switching_sco B361_report_switching_score_ B362_check_requesting_the_pr B363_carry_out_requesting_th B364_report_requesting_the_p B365_before_deciding_whether B366_for_deciding_whether_to B367_after_deciding_whether_ B368_before_deciding_whether B369_for_deciding_whether_th B370_after_deciding_whether_ B371_check_asking_for_credit B372_carry_out_asking_for_cr B373_report_asking_for_credi B374_check_asking_for_help B375_carry_out_asking_for_he B376_report_asking_for_help B377_check_fast_quitting B378_carry_out_fast_quitting B379_report_fast_quitting B380_before_displaying_endin B381_for_displaying_endings B382_after_displaying_ending B383_check_winning B384_carry_out_winning B385_report_winning B386_check_failing B387_carry_out_failing B388_report_failing B389_check_casting_xyzzy B390_carry_out_casting_xyzzy B391_report_casting_xyzzy B392_check_copulating B393_carry_out_copulating B394_report_copulating B395_check_sitting B396_carry_out_sitting B397_report_sitting B398_check_sitting_on B399_carry_out_sitting_on B400_report_sitting_on B401_check_standing B402_carry_out_standing B403_report_standing B404_check_standing_on B405_carry_out_standing_on B406_report_standing_on B407_check_crawling_under B408_carry_out_crawling_unde B409_report_crawling_under B410_check_undressing B411_carry_out_undressing B412_report_undressing B413_check_hugging B414_carry_out_hugging B415_report_hugging B416_check_counting B417_carry_out_counting B418_report_counting B419_check_dancing B420_carry_out_dancing B421_report_dancing B422_check_poking B423_carry_out_poking B424_report_poking B425_check_crying B426_carry_out_crying B427_report_crying B428_check_shouting B429_carry_out_shouting B430_report_shouting B431_check_shouting_at B432_carry_out_shouting_at B433_report_shouting_at B434_check_talking B435_carry_out_talking B436_report_talking B437_check_talking_to B438_carry_out_talking_to B439_report_talking_to B440_check_talking_about B441_carry_out_talking_about B442_report_talking_about B443_check_talking_about_to B444_carry_out_talking_about B445_report_talking_about_to B446_check_talking_to_about B447_carry_out_talking_to_ab B448_report_talking_to_about B449_check_pointing B450_carry_out_pointing B451_report_pointing B452_check_running B453_carry_out_running B454_report_running B455_check_running_with_scis B456_carry_out_running_with_ B457_report_running_with_sci B458_check_not_passing_the_m B459_carry_out_not_passing_t B460_report_not_passing_the_ B461_check_passing B462_carry_out_passing B463_report_passing B464_check_counting_nothing B465_carry_out_counting_noth B466_report_counting_nothing B467_check_counting_cups B468_carry_out_counting_cups B469_report_counting_cups B470_check_throwing B471_carry_out_throwing B472_report_throwing B473_check_cleaning B474_carry_out_cleaning B475_report_cleaning B476_check_reading B477_carry_out_reading B478_report_reading B479_check_pouring B480_carry_out_pouring B481_report_pouring 0;
 
 Array B0_procedural --> R_852 NULL; ! 1 rule(s)
 Array B1_startup --> INITIALISE_MEMORY_R VIRTUAL_MACHINE_STARTUP_R SEED_RANDOM_NUMBER_GENERATOR_R UPDATE_CHRONOLOGICAL_RECORDS_R POSITION_PLAYER_IN_MODEL_R R_8 R_9 R_10 R_11 R_12 NULL; ! 10 rule(s)
@@ -21687,7 +21690,7 @@ Array B17_visibility --> R_35 NULL; ! 1 rule(s)
 Constant B18_persuasion = EMPTY_RULEBOOK;
 Constant B19_unsuccessful_attempt_by = EMPTY_RULEBOOK;
 Array B20_before --> R_826 R_835 R_872 R_820 R_850 NULL; ! 5 rule(s)
-Array B21_instead --> (-2) ##AskFor 2 R_880 R_881 ##ThrowAt 2 R_854 R_855 ##Insert R_876 ##PutOn R_879 ##Go 2 R_790 R_791 ##Examine 2 R_812 R_813 ##Take R_819 ##Drop R_822 ##Disrobe R_823 ##A88_sitting_on R_841 ##Take R_857 ##A112_cleaning R_859 ##Take R_860 ##A96_poking R_862 ##Kiss R_864 ##Attack R_866 ##LookUnder R_868 ##A113_reading R_870 ##Drop R_871 ##Drink R_877 ##A114_pouring R_878 ##Examine 2 R_883 R_884 ##Attack R_885 ##Take 5 R_886 R_887 R_888 R_892 R_893 ##Attack 2 R_894 R_895 (-2) R_861 ##Kiss R_865 (-2) R_863 ##A100_talking_to R_802 (-2) R_836 ##A90_standing_on R_838 ##A111_throwing R_856 ##Go R_787 ##Mild R_795 ##A101_talking_about R_799 ##A102_talking_about_to R_800 ##A103_talking_to_about R_801 ##A97_crying R_814 ##A98_shouting R_815 ##Strong R_816 ##A99_talking R_817 ##Wait R_818 ##A92_undressing R_821 ##A95_dancing R_824 ##A104_pointing R_825 ##A105_running R_829 ##A106_running_with_scissors R_830 ##Inv R_831 ##A89_standing R_837 ##Exit R_839 ##A87_sitting R_840 ##A85_casting_xyzzy R_842 ##LookUnder R_843 ##A110_counting_cups R_846 ##Sing R_867 NULL; ! 65 rule(s)
+Array B21_instead --> (-2) ##AskFor 2 R_880 R_881 ##ThrowAt 2 R_854 R_855 ##Insert R_876 ##PutOn R_879 ##Go 2 R_790 R_791 ##Examine 2 R_812 R_813 ##Take R_819 ##Drop R_822 ##Disrobe R_823 ##A88_sitting_on R_841 ##Take R_857 ##A113_cleaning R_859 ##Take R_860 ##A96_poking R_862 ##Kiss R_864 ##Attack R_866 ##LookUnder R_868 ##A114_reading R_870 ##Drop R_871 ##Drink R_877 ##A115_pouring R_878 ##Examine 2 R_883 R_884 ##Attack R_885 ##Take 5 R_886 R_887 R_888 R_892 R_893 ##Attack 2 R_894 R_895 (-2) R_861 ##Kiss R_865 (-2) R_863 ##A101_talking_to R_802 (-2) R_836 ##A90_standing_on R_838 ##A112_throwing R_856 ##Go R_787 ##Mild R_795 ##A102_talking_about R_799 ##A103_talking_about_to R_800 ##A104_talking_to_about R_801 ##A97_crying R_814 ##A98_shouting R_815 ##Strong R_816 ##A100_talking R_817 ##Wait R_818 ##A92_undressing R_821 ##A95_dancing R_824 ##A105_pointing R_825 ##A106_running R_829 ##A107_running_with_scissors R_830 ##Inv R_831 ##A89_standing R_837 ##Exit R_839 ##A87_sitting R_840 ##A85_casting_xyzzy R_842 ##LookUnder R_843 ##A111_counting_cups R_846 ##Sing R_867 NULL; ! 65 rule(s)
 Constant B22_check = EMPTY_RULEBOOK;
 Constant B23_carry_out = EMPTY_RULEBOOK;
 Constant B24_after = EMPTY_RULEBOOK;
@@ -22097,54 +22100,57 @@ Constant B427_report_crying = EMPTY_RULEBOOK;
 Constant B428_check_shouting = EMPTY_RULEBOOK;
 Constant B429_carry_out_shouting = EMPTY_RULEBOOK;
 Array B430_report_shouting --> R_796 NULL; ! 1 rule(s)
-Constant B431_check_talking = EMPTY_RULEBOOK;
-Constant B432_carry_out_talking = EMPTY_RULEBOOK;
-Array B433_report_talking --> R_797 NULL; ! 1 rule(s)
-Constant B434_check_talking_to = EMPTY_RULEBOOK;
-Constant B435_carry_out_talking_to = EMPTY_RULEBOOK;
-Array B436_report_talking_to --> R_798 NULL; ! 1 rule(s)
-Constant B437_check_talking_about = EMPTY_RULEBOOK;
-Constant B438_carry_out_talking_about = EMPTY_RULEBOOK;
-Constant B439_report_talking_about = EMPTY_RULEBOOK;
-Constant B440_check_talking_about_to = EMPTY_RULEBOOK;
+Constant B431_check_shouting_at = EMPTY_RULEBOOK;
+Constant B432_carry_out_shouting_at = EMPTY_RULEBOOK;
+Array B433_report_shouting_at --> R_797 NULL; ! 1 rule(s)
+Constant B434_check_talking = EMPTY_RULEBOOK;
+Constant B435_carry_out_talking = EMPTY_RULEBOOK;
+Constant B436_report_talking = EMPTY_RULEBOOK;
+Constant B437_check_talking_to = EMPTY_RULEBOOK;
+Constant B438_carry_out_talking_to = EMPTY_RULEBOOK;
+Array B439_report_talking_to --> R_798 NULL; ! 1 rule(s)
+Constant B440_check_talking_about = EMPTY_RULEBOOK;
 Constant B441_carry_out_talking_about = EMPTY_RULEBOOK;
-Constant B442_report_talking_about_to = EMPTY_RULEBOOK;
-Constant B443_check_talking_to_about = EMPTY_RULEBOOK;
-Constant B444_carry_out_talking_to_ab = EMPTY_RULEBOOK;
-Constant B445_report_talking_to_about = EMPTY_RULEBOOK;
-Constant B446_check_pointing = EMPTY_RULEBOOK;
-Constant B447_carry_out_pointing = EMPTY_RULEBOOK;
-Constant B448_report_pointing = EMPTY_RULEBOOK;
-Constant B449_check_running = EMPTY_RULEBOOK;
-Constant B450_carry_out_running = EMPTY_RULEBOOK;
-Constant B451_report_running = EMPTY_RULEBOOK;
-Constant B452_check_running_with_scis = EMPTY_RULEBOOK;
-Constant B453_carry_out_running_with_ = EMPTY_RULEBOOK;
-Constant B454_report_running_with_sci = EMPTY_RULEBOOK;
-Constant B455_check_not_passing_the_m = EMPTY_RULEBOOK;
-Constant B456_carry_out_not_passing_t = EMPTY_RULEBOOK;
-Array B457_report_not_passing_the_ --> R_832 NULL; ! 1 rule(s)
-Constant B458_check_passing = EMPTY_RULEBOOK;
-Constant B459_carry_out_passing = EMPTY_RULEBOOK;
-Array B460_report_passing --> R_833 NULL; ! 1 rule(s)
-Constant B461_check_counting_nothing = EMPTY_RULEBOOK;
-Constant B462_carry_out_counting_noth = EMPTY_RULEBOOK;
-Array B463_report_counting_nothing --> R_844 NULL; ! 1 rule(s)
-Constant B464_check_counting_cups = EMPTY_RULEBOOK;
-Constant B465_carry_out_counting_cups = EMPTY_RULEBOOK;
-Constant B466_report_counting_cups = EMPTY_RULEBOOK;
-Constant B467_check_throwing = EMPTY_RULEBOOK;
-Constant B468_carry_out_throwing = EMPTY_RULEBOOK;
-Array B469_report_throwing --> R_853 NULL; ! 1 rule(s)
-Constant B470_check_cleaning = EMPTY_RULEBOOK;
-Constant B471_carry_out_cleaning = EMPTY_RULEBOOK;
-Array B472_report_cleaning --> R_858 NULL; ! 1 rule(s)
-Constant B473_check_reading = EMPTY_RULEBOOK;
-Constant B474_carry_out_reading = EMPTY_RULEBOOK;
-Array B475_report_reading --> R_869 NULL; ! 1 rule(s)
-Constant B476_check_pouring = EMPTY_RULEBOOK;
-Constant B477_carry_out_pouring = EMPTY_RULEBOOK;
-Array B478_report_pouring --> R_873 NULL; ! 1 rule(s)
+Constant B442_report_talking_about = EMPTY_RULEBOOK;
+Constant B443_check_talking_about_to = EMPTY_RULEBOOK;
+Constant B444_carry_out_talking_about = EMPTY_RULEBOOK;
+Constant B445_report_talking_about_to = EMPTY_RULEBOOK;
+Constant B446_check_talking_to_about = EMPTY_RULEBOOK;
+Constant B447_carry_out_talking_to_ab = EMPTY_RULEBOOK;
+Constant B448_report_talking_to_about = EMPTY_RULEBOOK;
+Constant B449_check_pointing = EMPTY_RULEBOOK;
+Constant B450_carry_out_pointing = EMPTY_RULEBOOK;
+Constant B451_report_pointing = EMPTY_RULEBOOK;
+Constant B452_check_running = EMPTY_RULEBOOK;
+Constant B453_carry_out_running = EMPTY_RULEBOOK;
+Constant B454_report_running = EMPTY_RULEBOOK;
+Constant B455_check_running_with_scis = EMPTY_RULEBOOK;
+Constant B456_carry_out_running_with_ = EMPTY_RULEBOOK;
+Constant B457_report_running_with_sci = EMPTY_RULEBOOK;
+Constant B458_check_not_passing_the_m = EMPTY_RULEBOOK;
+Constant B459_carry_out_not_passing_t = EMPTY_RULEBOOK;
+Array B460_report_not_passing_the_ --> R_832 NULL; ! 1 rule(s)
+Constant B461_check_passing = EMPTY_RULEBOOK;
+Constant B462_carry_out_passing = EMPTY_RULEBOOK;
+Array B463_report_passing --> R_833 NULL; ! 1 rule(s)
+Constant B464_check_counting_nothing = EMPTY_RULEBOOK;
+Constant B465_carry_out_counting_noth = EMPTY_RULEBOOK;
+Array B466_report_counting_nothing --> R_844 NULL; ! 1 rule(s)
+Constant B467_check_counting_cups = EMPTY_RULEBOOK;
+Constant B468_carry_out_counting_cups = EMPTY_RULEBOOK;
+Constant B469_report_counting_cups = EMPTY_RULEBOOK;
+Constant B470_check_throwing = EMPTY_RULEBOOK;
+Constant B471_carry_out_throwing = EMPTY_RULEBOOK;
+Array B472_report_throwing --> R_853 NULL; ! 1 rule(s)
+Constant B473_check_cleaning = EMPTY_RULEBOOK;
+Constant B474_carry_out_cleaning = EMPTY_RULEBOOK;
+Array B475_report_cleaning --> R_858 NULL; ! 1 rule(s)
+Constant B476_check_reading = EMPTY_RULEBOOK;
+Constant B477_carry_out_reading = EMPTY_RULEBOOK;
+Array B478_report_reading --> R_869 NULL; ! 1 rule(s)
+Constant B479_check_pouring = EMPTY_RULEBOOK;
+Constant B480_carry_out_pouring = EMPTY_RULEBOOK;
+Array B481_report_pouring --> R_873 NULL; ! 1 rule(s)
 
 Constant BR_0 = R_8;
 Constant BR_1 = R_9;
@@ -22413,28 +22419,28 @@ Constant BR_263 = R_298;
 Constant BR_264 = R_299;
 Constant BR_265 = R_777;
 Constant BR_266 = R_778;
-Constant BR_921 = R_8;
-Constant BR_927 = R_9;
-Constant BR_928 = R_10;
-Constant BR_929 = R_11;
-Constant BR_930 = R_12;
-Constant BR_938 = R_16;
-Constant BR_939 = R_17;
-Constant BR_941 = R_18;
-Constant BR_944 = R_21;
-Constant BR_945 = R_19;
-Constant BR_946 = R_20;
-Constant BR_950 = R_22;
-Constant BR_954 = R_23;
-Constant BR_960 = R_35;
-Constant BR_962 = R_59;
-Constant BR_963 = R_60;
-Constant BR_965 = R_61;
-Constant BR_970 = R_69;
-Constant BR_971 = R_68;
-Constant BR_973 = R_70;
-Constant BR_974 = R_91;
-Constant BR_975 = R_148;
+Constant BR_924 = R_8;
+Constant BR_930 = R_9;
+Constant BR_931 = R_10;
+Constant BR_932 = R_11;
+Constant BR_933 = R_12;
+Constant BR_941 = R_16;
+Constant BR_942 = R_17;
+Constant BR_944 = R_18;
+Constant BR_947 = R_21;
+Constant BR_948 = R_19;
+Constant BR_949 = R_20;
+Constant BR_953 = R_22;
+Constant BR_957 = R_23;
+Constant BR_963 = R_35;
+Constant BR_965 = R_59;
+Constant BR_966 = R_60;
+Constant BR_968 = R_61;
+Constant BR_973 = R_69;
+Constant BR_974 = R_68;
+Constant BR_976 = R_70;
+Constant BR_977 = R_91;
+Constant BR_978 = R_148;
 
 
 
@@ -23513,7 +23519,7 @@ Global MStack_Frame_Extent = 0;
 ];
 
 #IFNDEF MEMORY_ECONOMY;
-Array rulebook_var_creators --> 0 0 0 0 0 0 0 0 0 0 RBSTVC_10 0 RBSTVC_12 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+Array rulebook_var_creators --> 0 0 0 0 0 0 0 0 0 0 RBSTVC_10 0 RBSTVC_12 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
 #ENDIF;
 [  RBSTVC_10 pos state;
     if (state == 1) {
@@ -26065,54 +26071,57 @@ Array RulebookNames -->
     "check Shouting rulebook" ! 428
     "carry out Shouting rulebook" ! 429
     "report Shouting rulebook" ! 430
-    "check talking rulebook" ! 431
-    "carry out talking rulebook" ! 432
-    "report talking rulebook" ! 433
-    "check talking to rulebook" ! 434
-    "carry out talking to rulebook" ! 435
-    "report talking to rulebook" ! 436
-    "check Talking about rulebook" ! 437
-    "carry out Talking about rulebook" ! 438
-    "report Talking about rulebook" ! 439
-    "check Talking about to rulebook" ! 440
-    "carry out Talking about to rulebook" ! 441
-    "report Talking about to rulebook" ! 442
-    "check Talking to about rulebook" ! 443
-    "carry out Talking to about rulebook" ! 444
-    "report Talking to about rulebook" ! 445
-    "check Pointing rulebook" ! 446
-    "carry out Pointing rulebook" ! 447
-    "report Pointing rulebook" ! 448
-    "check Running rulebook" ! 449
-    "carry out Running rulebook" ! 450
-    "report Running rulebook" ! 451
-    "check Running with scissors rulebook" ! 452
-    "carry out Running with scissors rulebook" ! 453
-    "report Running with scissors rulebook" ! 454
-    "check Not passing the milk rulebook" ! 455
-    "carry out Not passing the milk rulebook" ! 456
-    "report Not passing the milk rulebook" ! 457
-    "check Passing rulebook" ! 458
-    "carry out Passing rulebook" ! 459
-    "report Passing rulebook" ! 460
-    "check Counting nothing rulebook" ! 461
-    "carry out Counting nothing rulebook" ! 462
-    "report Counting nothing rulebook" ! 463
-    "check Counting cups rulebook" ! 464
-    "carry out Counting cups rulebook" ! 465
-    "report Counting cups rulebook" ! 466
-    "check Throwing rulebook" ! 467
-    "carry out Throwing rulebook" ! 468
-    "report Throwing rulebook" ! 469
-    "check Cleaning rulebook" ! 470
-    "carry out Cleaning rulebook" ! 471
-    "report Cleaning rulebook" ! 472
-    "check Reading rulebook" ! 473
-    "carry out Reading rulebook" ! 474
-    "report Reading rulebook" ! 475
-    "check Pouring rulebook" ! 476
-    "carry out Pouring rulebook" ! 477
-    "report Pouring rulebook" ! 478
+    "check Shouting at rulebook" ! 431
+    "carry out Shouting at rulebook" ! 432
+    "report Shouting at rulebook" ! 433
+    "check talking rulebook" ! 434
+    "carry out talking rulebook" ! 435
+    "report talking rulebook" ! 436
+    "check talking to rulebook" ! 437
+    "carry out talking to rulebook" ! 438
+    "report talking to rulebook" ! 439
+    "check Talking about rulebook" ! 440
+    "carry out Talking about rulebook" ! 441
+    "report Talking about rulebook" ! 442
+    "check Talking about to rulebook" ! 443
+    "carry out Talking about to rulebook" ! 444
+    "report Talking about to rulebook" ! 445
+    "check Talking to about rulebook" ! 446
+    "carry out Talking to about rulebook" ! 447
+    "report Talking to about rulebook" ! 448
+    "check Pointing rulebook" ! 449
+    "carry out Pointing rulebook" ! 450
+    "report Pointing rulebook" ! 451
+    "check Running rulebook" ! 452
+    "carry out Running rulebook" ! 453
+    "report Running rulebook" ! 454
+    "check Running with scissors rulebook" ! 455
+    "carry out Running with scissors rulebook" ! 456
+    "report Running with scissors rulebook" ! 457
+    "check Not passing the milk rulebook" ! 458
+    "carry out Not passing the milk rulebook" ! 459
+    "report Not passing the milk rulebook" ! 460
+    "check Passing rulebook" ! 461
+    "carry out Passing rulebook" ! 462
+    "report Passing rulebook" ! 463
+    "check Counting nothing rulebook" ! 464
+    "carry out Counting nothing rulebook" ! 465
+    "report Counting nothing rulebook" ! 466
+    "check Counting cups rulebook" ! 467
+    "carry out Counting cups rulebook" ! 468
+    "report Counting cups rulebook" ! 469
+    "check Throwing rulebook" ! 470
+    "carry out Throwing rulebook" ! 471
+    "report Throwing rulebook" ! 472
+    "check Cleaning rulebook" ! 473
+    "carry out Cleaning rulebook" ! 474
+    "report Cleaning rulebook" ! 475
+    "check Reading rulebook" ! 476
+    "carry out Reading rulebook" ! 477
+    "report Reading rulebook" ! 478
+    "check Pouring rulebook" ! 479
+    "carry out Pouring rulebook" ! 480
+    "report Pouring rulebook" ! 481
 ;
 
 
@@ -26447,199 +26456,199 @@ Array RulebookNames -->
 		if (R == SWITCH_SCORE_NOTIFY_OFF_R) { print "switch score notification off rule"; return; } ! 683, case 1
 		if (R == REP_SWITCH_NOTIFY_OFF_R) { print "standard report switching score notification off rule"; return; } ! 684, case 1
 		if (R == ANNOUNCE_PRONOUN_MEANINGS_R) { print "announce the pronoun meanings rule"; return; } ! 688, case 1
-		if (R == R_14) { print "A first turn sequence rule"; return; } ! 803, case 2
-		if (R == R_15) { print "A last turn sequence rule"; return; } ! 804, case 2
-		if (R == R_30) { print "last specific action-processing rule"; return; } ! 805, case 2
-		if (R == R_159) { print "Setting action variables for exiting"; return; } ! 806, case 2
-		if (R == R_779) { print "Rule for deciding whether to allow undo"; return; } ! 807, case 2
-		if (R == R_780) { print "Check saving the game"; return; } ! 808, case 2
-		if (R == R_781) { print "Check restoring the game"; return; } ! 809, case 2
-		if (R == R_782) { print "Carry out asking for help"; return; } ! 810, case 2
-		if (R == R_783) { print "Carry out fast quitting"; return; } ! 811, case 2
-		if (R == R_784) { print "When play begins"; return; } ! 812, case 2
-		if (R == R_785) { print "When play ends when the story has not ended finally"; return; } ! 813, case 2
-		if (R == R_786) { print "Report copulating"; return; } ! 814, case 2
-		if (R == R_787) { print "Instead of going"; return; } ! 815, case 2
-		if (R == R_788) { print "Report sitting on"; return; } ! 816, case 2
-		if (R == R_789) { print "Report standing on"; return; } ! 817, case 2
-		if (R == R_790) { print "Instead of going down"; return; } ! 818, case 2
-		if (R == R_791) { print "Instead of going up"; return; } ! 819, case 2
-		if (R == R_792) { print "Report crawling under"; return; } ! 820, case 2
-		if (R == R_793) { print "Report counting"; return; } ! 821, case 2
-		if (R == R_794) { print "Report poking something"; return; } ! 822, case 2
-		if (R == R_795) { print "Instead of swearing mildly"; return; } ! 823, case 2
-		if (R == R_796) { print "Report shouting"; return; } ! 824, case 2
-		if (R == R_797) { print "report talking"; return; } ! 825, case 2
-		if (R == R_798) { print "report talking to something"; return; } ! 826, case 2
-		if (R == R_799) { print "Instead of talking about"; return; } ! 827, case 2
-		if (R == R_800) { print "Instead of talking about to"; return; } ! 828, case 2
-		if (R == R_801) { print "Instead of talking to about"; return; } ! 829, case 2
-		if (R == R_802) { print "Instead of talking to someone"; return; } ! 830, case 2
-		if (R == R_810) { print "Carry out asking for credits"; return; } ! 831, case 2
-		if (R == R_811) { print "When play begins"; return; } ! 832, case 2
-		if (R == R_812) { print "Instead of examining the table"; return; } ! 833, case 2
-		if (R == R_813) { print "Instead of examining the shirt"; return; } ! 834, case 2
-		if (R == R_814) { print "Instead of crying"; return; } ! 835, case 2
-		if (R == R_815) { print "Instead of shouting"; return; } ! 836, case 2
-		if (R == R_816) { print "Instead of swearing obscenely"; return; } ! 837, case 2
-		if (R == R_817) { print "Instead of talking"; return; } ! 838, case 2
-		if (R == R_818) { print "Instead of waiting"; return; } ! 839, case 2
-		if (R == R_819) { print "Instead of taking the tablecloth"; return; } ! 840, case 2
-		if (R == R_820) { print "Before wearing something"; return; } ! 841, case 2
-		if (R == R_821) { print "Instead of undressing"; return; } ! 842, case 2
-		if (R == R_822) { print "Instead of dropping the shirt"; return; } ! 843, case 2
-		if (R == R_823) { print "Instead of taking off the shirt"; return; } ! 844, case 2
-		if (R == R_824) { print "Instead of dancing"; return; } ! 845, case 2
-		if (R == R_825) { print "Instead of pointing"; return; } ! 846, case 2
-		if (R == R_826) { print "Before showing something to Sam"; return; } ! 847, case 2
-		if (R == R_827) { print "Rule for supplying a missing noun"; return; } ! 848, case 2
-		if (R == R_828) { print "Does the player mean taking the brownie"; return; } ! 849, case 2
-		if (R == R_829) { print "Instead of running"; return; } ! 850, case 2
-		if (R == R_830) { print "Instead of running with scissors"; return; } ! 851, case 2
-		if (R == R_831) { print "Instead of taking inventory"; return; } ! 852, case 2
-		if (R == R_832) { print "Report not passing the milk"; return; } ! 853, case 2
-		if (R == R_833) { print "Report passing"; return; } ! 854, case 2
-		if (R == R_834) { print "Rule for supplying a missing second noun when giving something to someone"; return; } ! 855, case 2
-		if (R == R_835) { print "Before giving something to Sam"; return; } ! 856, case 2
-		if (R == R_836) { print "Instead of doing anything except examining to a picture"; return; } ! 857, case 2
-		if (R == R_837) { print "Instead of standing"; return; } ! 858, case 2
-		if (R == R_838) { print "Instead of standing on something"; return; } ! 859, case 2
-		if (R == R_839) { print "Instead of exiting"; return; } ! 860, case 2
-		if (R == R_840) { print "Instead of sitting"; return; } ! 861, case 2
-		if (R == R_841) { print "Instead of sitting on the chair"; return; } ! 862, case 2
-		if (R == R_842) { print "Instead of casting xyzzy"; return; } ! 863, case 2
-		if (R == R_843) { print "Instead of looking under"; return; } ! 864, case 2
-		if (R == R_844) { print "Report counting nothing"; return; } ! 865, case 2
-		if (R == R_845) { print "Carry out counting something"; return; } ! 866, case 2
-		if (R == R_846) { print "Instead of counting cups"; return; } ! 867, case 2
-		if (R == R_847) { print "report eating something"; return; } ! 868, case 2
-		if (R == R_848) { print "Does the player mean doing anything with the shirt"; return; } ! 869, case 2
-		if (R == R_849) { print "Does the player mean eating the brownie"; return; } ! 870, case 2
-		if (R == R_850) { print "Before eating"; return; } ! 871, case 2
-		if (R == R_851) { print "Does the player mean doing anything with the brownie"; return; } ! 872, case 2
-		if (R == R_852) { print "Procedural rule while throwing something at something"; return; } ! 873, case 2
-		if (R == R_853) { print "Report throwing"; return; } ! 874, case 2
-		if (R == R_854) { print "Instead of throwing something at Sam"; return; } ! 875, case 2
-		if (R == R_855) { print "Instead of throwing something at the table"; return; } ! 876, case 2
-		if (R == R_856) { print "Instead of throwing something ( called S )"; return; } ! 877, case 2
-		if (R == R_857) { print "Instead of taking the table"; return; } ! 878, case 2
-		if (R == R_858) { print "Report cleaning"; return; } ! 879, case 2
-		if (R == R_859) { print "Instead of cleaning Sam"; return; } ! 880, case 2
-		if (R == R_860) { print "Instead of taking Sam"; return; } ! 881, case 2
-		if (R == R_861) { print "Instead of touching or hugging Sam"; return; } ! 882, case 2
-		if (R == R_862) { print "Instead of poking Sam"; return; } ! 883, case 2
-		if (R == R_863) { print "Instead of touching or hugging the player"; return; } ! 884, case 2
-		if (R == R_864) { print "Instead of kissing Sam"; return; } ! 885, case 2
-		if (R == R_865) { print "Instead of kissing the player"; return; } ! 886, case 2
-		if (R == R_866) { print "Instead of attacking Sam"; return; } ! 887, case 2
-		if (R == R_867) { print "Instead of singing"; return; } ! 888, case 2
-		if (R == R_868) { print "Instead of looking under the milk"; return; } ! 889, case 2
-		if (R == R_869) { print "Report reading"; return; } ! 890, case 2
-		if (R == R_870) { print "Instead of reading the milk"; return; } ! 891, case 2
-		if (R == R_871) { print "Instead of dropping the milk"; return; } ! 892, case 2
-		if (R == R_872) { print "Before taking the milk"; return; } ! 893, case 2
-		if (R == R_873) { print "Report pouring"; return; } ! 894, case 2
-		if (R == R_874) { print "Does the player mean drinking the milk"; return; } ! 895, case 2
-		if (R == R_875) { print "Does the player mean pouring the milk"; return; } ! 896, case 2
-		if (R == R_876) { print "Instead of inserting the milk into something"; return; } ! 897, case 2
-		if (R == R_877) { print "Instead of drinking the milk"; return; } ! 898, case 2
-		if (R == R_878) { print "Instead of pouring the milk"; return; } ! 899, case 2
-		if (R == R_879) { print "Instead of putting the milk on something"; return; } ! 900, case 2
-		if (R == R_880) { print "Instead of asking Sam for the milk"; return; } ! 901, case 2
-		if (R == R_881) { print "Instead of asking Sam for sam's cup"; return; } ! 902, case 2
-		if (R == R_882) { print "Rule for printing the name of the plate"; return; } ! 903, case 2
-		if (R == R_883) { print "Instead of examining the plate"; return; } ! 904, case 2
-		if (R == R_884) { print "Instead of examining the brownie"; return; } ! 905, case 2
-		if (R == R_885) { print "Instead of attacking the plate"; return; } ! 906, case 2
-		if (R == R_886) { print "Instead of taking the plate"; return; } ! 907, case 2
-		if (R == R_887) { print "Instead of taking the brownies"; return; } ! 908, case 2
-		if (R == R_888) { print "Instead of taking the brownie"; return; } ! 909, case 2
-		if (R == R_889) { print "Before listing contents of the table"; return; } ! 910, case 2
-		if (R == R_890) { print "Rule for grouping together cups"; return; } ! 911, case 2
-		if (R == R_891) { print "After reading a command"; return; } ! 912, case 2
-		if (R == R_892) { print "Instead of taking your glass"; return; } ! 913, case 2
-		if (R == R_893) { print "Instead of taking Sam's cup"; return; } ! 914, case 2
-		if (R == R_894) { print "Instead of attacking your glass"; return; } ! 915, case 2
-		if (R == R_895) { print "Instead of attacking Sam's cup"; return; } ! 916, case 2
-		if (R == R_896) { print "Carry out failing"; return; } ! 917, case 2
-		if (R == R_897) { print "Carry out winning"; return; } ! 918, case 2
-		if (R == R_898) { print "Rule for amusing a victorious player"; return; } ! 919, case 2
-		if (R == R_899) { print "Rule for displaying endings"; return; } ! 920, case 2
-		if (R == R_8) { print "start in the correct scenes rule"; return; } ! 921, case 1
-		if (R == POSITION_PLAYER_IN_MODEL_R) { print "position player in model world rule"; return; } ! 922, case 1
-		if (R == UPDATE_CHRONOLOGICAL_RECORDS_R) { print "update chronological records rule"; return; } ! 923, case 1
-		if (R == SEED_RANDOM_NUMBER_GENERATOR_R) { print "seed random number generator rule"; return; } ! 924, case 1
-		if (R == VIRTUAL_MACHINE_STARTUP_R) { print "virtual machine startup rule"; return; } ! 925, case 1
-		if (R == INITIALISE_MEMORY_R) { print "initialise memory rule"; return; } ! 926, case 1
-		if (R == R_9) { print "when play begins stage rule"; return; } ! 927, case 1
-		if (R == R_10) { print "fix baseline scoring rule"; return; } ! 928, case 1
-		if (R == R_11) { print "display banner rule"; return; } ! 929, case 1
-		if (R == R_12) { print "initial room description rule"; return; } ! 930, case 1
-		if (R == GENERATE_ACTION_R) { print "generate action rule"; return; } ! 931, case 1
-		if (R == PARSE_COMMAND_R) { print "parse command rule"; return; } ! 932, case 1
-		if (R == TIMED_EVENTS_R) { print "timed events rule"; return; } ! 933, case 1
-		if (R == ADVANCE_TIME_R) { print "advance time rule"; return; } ! 934, case 1
-		if (R == UPDATE_CHRONOLOGICAL_RECORDS_R) { print "update chronological records rule"; return; } ! 935, case 1
-		if (R == ADJUST_LIGHT_R) { print "adjust light rule"; return; } ! 936, case 1
-		if (R == NOTE_OBJECT_ACQUISITIONS_R) { print "note object acquisitions rule"; return; } ! 937, case 1
-		if (R == R_16) { print "notify score changes rule"; return; } ! 938, case 1
-		if (R == R_17) { print "when play ends stage rule"; return; } ! 939, case 1
-		if (R == RESURRECT_PLAYER_IF_ASKED_R) { print "resurrect player if asked rule"; return; } ! 940, case 1
-		if (R == R_18) { print "print player's obituary rule"; return; } ! 941, case 1
-		if (R == ASK_FINAL_QUESTION_R) { print "ask the final question rule"; return; } ! 942, case 1
-		if (R == DetectSceneChange) { print "scene change machinery rule"; return; } ! 943, case 1
-		if (R == R_21) { print "before stage rule"; return; } ! 944, case 1
-		if (R == R_19) { print "set pronouns from items from multiple object lists rule"; return; } ! 945, case 1
-		if (R == R_20) { print "announce items from multiple object lists rule"; return; } ! 946, case 1
-		if (R == BASIC_VISIBILITY_R) { print "basic visibility rule"; return; } ! 947, case 1
-		if (R == BASIC_ACCESSIBILITY_R) { print "basic accessibility rule"; return; } ! 948, case 1
-		if (R == CARRYING_REQUIREMENTS_R) { print "carrying requirements rule"; return; } ! 949, case 1
-		if (R == R_22) { print "instead stage rule"; return; } ! 950, case 1
-		if (R == REQUESTED_ACTIONS_REQUIRE_R) { print "requested actions require persuasion rule"; return; } ! 951, case 1
-		if (R == CARRY_OUT_REQUESTED_ACTIONS_R) { print "carry out requested actions rule"; return; } ! 952, case 1
-		if (R == DESCEND_TO_SPECIFIC_ACTION_R) { print "descend to specific action-processing rule"; return; } ! 953, case 1
-		if (R == R_23) { print "end action-processing in success rule"; return; } ! 954, case 1
-		if (R == WORK_OUT_DETAILS_OF_SPECIFIC_R) { print "work out details of specific action rule"; return; } ! 955, case 1
-		if (R == ACCESS_THROUGH_BARRIERS_R) { print "access through barriers rule"; return; } ! 956, case 1
-		if (R == CANT_REACH_INSIDE_ROOMS_R) { print "can't reach inside rooms rule"; return; } ! 957, case 1
-		if (R == CANT_REACH_INSIDE_CLOSED_R) { print "can't reach inside closed containers rule"; return; } ! 958, case 1
-		if (R == CANT_REACH_OUTSIDE_CLOSED_R) { print "can't reach outside closed containers rule"; return; } ! 959, case 1
-		if (R == R_35) { print "can't act in the dark rule"; return; } ! 960, case 1
-		if (R == STANDARD_NAME_PRINTING_R) { print "standard name printing rule"; return; } ! 961, case 1
-		if (R == R_59) { print "standard printing the plural name rule"; return; } ! 962, case 1
-		if (R == R_60) { print "standard printing a number of something rule"; return; } ! 963, case 1
-		if (R == STANDARD_CONTENTS_LISTING_R) { print "standard contents listing rule"; return; } ! 964, case 1
-		if (R == R_61) { print "look around once light available rule"; return; } ! 965, case 1
-		if (R == ENABLE_GLULX_ACCEL_R) { print "enable Glulx acceleration rule"; return; } ! 966, case 1
-		if (R == PRINT_OBITUARY_HEADLINE_R) { print "print obituary headline rule"; return; } ! 967, case 1
-		if (R == PRINT_FINAL_SCORE_R) { print "print final score rule"; return; } ! 968, case 1
-		if (R == DISPLAY_FINAL_STATUS_LINE_R) { print "display final status line rule"; return; } ! 969, case 1
-		if (R == R_69) { print "print the final question rule"; return; } ! 970, case 1
-		if (R == R_68) { print "print the final prompt rule"; return; } ! 971, case 1
-		if (R == READ_FINAL_ANSWER_R) { print "read the final answer rule"; return; } ! 972, case 1
-		if (R == R_70) { print "standard respond to final question rule"; return; } ! 973, case 1
-		if (R == R_91) { print "can't take component parts rule"; return; } ! 974, case 1
-		if (R == R_148) { print "find what to enter rule"; return; } ! 975, case 1
-		if (R == QUIT_THE_GAME_R) { print "quit the game rule"; return; } ! 976, case 1
-		if (R == SAVE_THE_GAME_R) { print "save the game rule"; return; } ! 977, case 1
-		if (R == RESTORE_THE_GAME_R) { print "restore the game rule"; return; } ! 978, case 1
-		if (R == RESTART_THE_GAME_R) { print "restart the game rule"; return; } ! 979, case 1
-		if (R == VERIFY_THE_STORY_FILE_R) { print "verify the story file rule"; return; } ! 980, case 1
-		if (R == SWITCH_TRANSCRIPT_ON_R) { print "switch the story transcript on rule"; return; } ! 981, case 1
-		if (R == SWITCH_TRANSCRIPT_OFF_R) { print "switch the story transcript off rule"; return; } ! 982, case 1
-		if (R == ANNOUNCE_STORY_FILE_VERSION_R) { print "announce the story file version rule"; return; } ! 983, case 1
-		if (R == ANNOUNCE_SCORE_R) { print "announce the score rule"; return; } ! 984, case 1
-		if (R == PREFER_ABBREVIATED_R) { print "prefer abbreviated room descriptions rule"; return; } ! 985, case 1
-		if (R == REP_PREFER_ABBREVIATED_R) { print "standard report preferring abbreviated room descriptions rule"; return; } ! 986, case 1
-		if (R == PREFER_UNABBREVIATED_R) { print "prefer unabbreviated room descriptions rule"; return; } ! 987, case 1
-		if (R == REP_PREFER_UNABBREVIATED_R) { print "standard report preferring unabbreviated room descriptions rule"; return; } ! 988, case 1
-		if (R == PREFER_SOMETIMES_ABBREVIATED_R) { print "prefer sometimes abbreviated room descriptions rule"; return; } ! 989, case 1
-		if (R == REP_PREFER_SOMETIMES_ABBR_R) { print "standard report preferring sometimes abbreviated room descriptions rule"; return; } ! 990, case 1
-		if (R == SWITCH_SCORE_NOTIFY_ON_R) { print "switch score notification on rule"; return; } ! 991, case 1
-		if (R == REP_SWITCH_NOTIFY_ON_R) { print "standard report switching score notification on rule"; return; } ! 992, case 1
-		if (R == SWITCH_SCORE_NOTIFY_OFF_R) { print "switch score notification off rule"; return; } ! 993, case 1
-		if (R == REP_SWITCH_NOTIFY_OFF_R) { print "standard report switching score notification off rule"; return; } ! 994, case 1
-		if (R == ANNOUNCE_PRONOUN_MEANINGS_R) { print "announce the pronoun meanings rule"; return; } ! 995, case 1
+		if (R == R_14) { print "A first turn sequence rule"; return; } ! 806, case 2
+		if (R == R_15) { print "A last turn sequence rule"; return; } ! 807, case 2
+		if (R == R_30) { print "last specific action-processing rule"; return; } ! 808, case 2
+		if (R == R_159) { print "Setting action variables for exiting"; return; } ! 809, case 2
+		if (R == R_779) { print "Rule for deciding whether to allow undo"; return; } ! 810, case 2
+		if (R == R_780) { print "Check saving the game"; return; } ! 811, case 2
+		if (R == R_781) { print "Check restoring the game"; return; } ! 812, case 2
+		if (R == R_782) { print "Carry out asking for help"; return; } ! 813, case 2
+		if (R == R_783) { print "Carry out fast quitting"; return; } ! 814, case 2
+		if (R == R_784) { print "When play begins"; return; } ! 815, case 2
+		if (R == R_785) { print "When play ends when the story has not ended finally"; return; } ! 816, case 2
+		if (R == R_786) { print "Report copulating"; return; } ! 817, case 2
+		if (R == R_787) { print "Instead of going"; return; } ! 818, case 2
+		if (R == R_788) { print "Report sitting on"; return; } ! 819, case 2
+		if (R == R_789) { print "Report standing on"; return; } ! 820, case 2
+		if (R == R_790) { print "Instead of going down"; return; } ! 821, case 2
+		if (R == R_791) { print "Instead of going up"; return; } ! 822, case 2
+		if (R == R_792) { print "Report crawling under"; return; } ! 823, case 2
+		if (R == R_793) { print "Report counting"; return; } ! 824, case 2
+		if (R == R_794) { print "Report poking something"; return; } ! 825, case 2
+		if (R == R_795) { print "Instead of swearing mildly"; return; } ! 826, case 2
+		if (R == R_796) { print "Report shouting"; return; } ! 827, case 2
+		if (R == R_797) { print "Report shouting at"; return; } ! 828, case 2
+		if (R == R_798) { print "report talking to something"; return; } ! 829, case 2
+		if (R == R_799) { print "Instead of talking about"; return; } ! 830, case 2
+		if (R == R_800) { print "Instead of talking about to"; return; } ! 831, case 2
+		if (R == R_801) { print "Instead of talking to about"; return; } ! 832, case 2
+		if (R == R_802) { print "Instead of talking to someone"; return; } ! 833, case 2
+		if (R == R_810) { print "Carry out asking for credits"; return; } ! 834, case 2
+		if (R == R_811) { print "When play begins"; return; } ! 835, case 2
+		if (R == R_812) { print "Instead of examining the table"; return; } ! 836, case 2
+		if (R == R_813) { print "Instead of examining the shirt"; return; } ! 837, case 2
+		if (R == R_814) { print "Instead of crying"; return; } ! 838, case 2
+		if (R == R_815) { print "Instead of shouting"; return; } ! 839, case 2
+		if (R == R_816) { print "Instead of swearing obscenely"; return; } ! 840, case 2
+		if (R == R_817) { print "Instead of talking"; return; } ! 841, case 2
+		if (R == R_818) { print "Instead of waiting"; return; } ! 842, case 2
+		if (R == R_819) { print "Instead of taking the tablecloth"; return; } ! 843, case 2
+		if (R == R_820) { print "Before wearing something"; return; } ! 844, case 2
+		if (R == R_821) { print "Instead of undressing"; return; } ! 845, case 2
+		if (R == R_822) { print "Instead of dropping the shirt"; return; } ! 846, case 2
+		if (R == R_823) { print "Instead of taking off the shirt"; return; } ! 847, case 2
+		if (R == R_824) { print "Instead of dancing"; return; } ! 848, case 2
+		if (R == R_825) { print "Instead of pointing"; return; } ! 849, case 2
+		if (R == R_826) { print "Before showing something to Sam"; return; } ! 850, case 2
+		if (R == R_827) { print "Rule for supplying a missing noun"; return; } ! 851, case 2
+		if (R == R_828) { print "Does the player mean taking the brownie"; return; } ! 852, case 2
+		if (R == R_829) { print "Instead of running"; return; } ! 853, case 2
+		if (R == R_830) { print "Instead of running with scissors"; return; } ! 854, case 2
+		if (R == R_831) { print "Instead of taking inventory"; return; } ! 855, case 2
+		if (R == R_832) { print "Report not passing the milk"; return; } ! 856, case 2
+		if (R == R_833) { print "Report passing"; return; } ! 857, case 2
+		if (R == R_834) { print "Rule for supplying a missing second noun when giving something to someone"; return; } ! 858, case 2
+		if (R == R_835) { print "Before giving something to Sam"; return; } ! 859, case 2
+		if (R == R_836) { print "Instead of doing anything except examining to a picture"; return; } ! 860, case 2
+		if (R == R_837) { print "Instead of standing"; return; } ! 861, case 2
+		if (R == R_838) { print "Instead of standing on something"; return; } ! 862, case 2
+		if (R == R_839) { print "Instead of exiting"; return; } ! 863, case 2
+		if (R == R_840) { print "Instead of sitting"; return; } ! 864, case 2
+		if (R == R_841) { print "Instead of sitting on the chair"; return; } ! 865, case 2
+		if (R == R_842) { print "Instead of casting xyzzy"; return; } ! 866, case 2
+		if (R == R_843) { print "Instead of looking under"; return; } ! 867, case 2
+		if (R == R_844) { print "Report counting nothing"; return; } ! 868, case 2
+		if (R == R_845) { print "Carry out counting something"; return; } ! 869, case 2
+		if (R == R_846) { print "Instead of counting cups"; return; } ! 870, case 2
+		if (R == R_847) { print "report eating something"; return; } ! 871, case 2
+		if (R == R_848) { print "Does the player mean doing anything with the shirt"; return; } ! 872, case 2
+		if (R == R_849) { print "Does the player mean eating the brownie"; return; } ! 873, case 2
+		if (R == R_850) { print "Before eating"; return; } ! 874, case 2
+		if (R == R_851) { print "Does the player mean doing anything with the brownie"; return; } ! 875, case 2
+		if (R == R_852) { print "Procedural rule while throwing something at something"; return; } ! 876, case 2
+		if (R == R_853) { print "Report throwing"; return; } ! 877, case 2
+		if (R == R_854) { print "Instead of throwing something at Sam"; return; } ! 878, case 2
+		if (R == R_855) { print "Instead of throwing something at the table"; return; } ! 879, case 2
+		if (R == R_856) { print "Instead of throwing something ( called S )"; return; } ! 880, case 2
+		if (R == R_857) { print "Instead of taking the table"; return; } ! 881, case 2
+		if (R == R_858) { print "Report cleaning"; return; } ! 882, case 2
+		if (R == R_859) { print "Instead of cleaning Sam"; return; } ! 883, case 2
+		if (R == R_860) { print "Instead of taking Sam"; return; } ! 884, case 2
+		if (R == R_861) { print "Instead of touching or hugging Sam"; return; } ! 885, case 2
+		if (R == R_862) { print "Instead of poking Sam"; return; } ! 886, case 2
+		if (R == R_863) { print "Instead of touching or hugging the player"; return; } ! 887, case 2
+		if (R == R_864) { print "Instead of kissing Sam"; return; } ! 888, case 2
+		if (R == R_865) { print "Instead of kissing the player"; return; } ! 889, case 2
+		if (R == R_866) { print "Instead of attacking Sam"; return; } ! 890, case 2
+		if (R == R_867) { print "Instead of singing"; return; } ! 891, case 2
+		if (R == R_868) { print "Instead of looking under the milk"; return; } ! 892, case 2
+		if (R == R_869) { print "Report reading"; return; } ! 893, case 2
+		if (R == R_870) { print "Instead of reading the milk"; return; } ! 894, case 2
+		if (R == R_871) { print "Instead of dropping the milk"; return; } ! 895, case 2
+		if (R == R_872) { print "Before taking the milk"; return; } ! 896, case 2
+		if (R == R_873) { print "Report pouring"; return; } ! 897, case 2
+		if (R == R_874) { print "Does the player mean drinking the milk"; return; } ! 898, case 2
+		if (R == R_875) { print "Does the player mean pouring the milk"; return; } ! 899, case 2
+		if (R == R_876) { print "Instead of inserting the milk into something"; return; } ! 900, case 2
+		if (R == R_877) { print "Instead of drinking the milk"; return; } ! 901, case 2
+		if (R == R_878) { print "Instead of pouring the milk"; return; } ! 902, case 2
+		if (R == R_879) { print "Instead of putting the milk on something"; return; } ! 903, case 2
+		if (R == R_880) { print "Instead of asking Sam for the milk"; return; } ! 904, case 2
+		if (R == R_881) { print "Instead of asking Sam for sam's cup"; return; } ! 905, case 2
+		if (R == R_882) { print "Rule for printing the name of the plate"; return; } ! 906, case 2
+		if (R == R_883) { print "Instead of examining the plate"; return; } ! 907, case 2
+		if (R == R_884) { print "Instead of examining the brownie"; return; } ! 908, case 2
+		if (R == R_885) { print "Instead of attacking the plate"; return; } ! 909, case 2
+		if (R == R_886) { print "Instead of taking the plate"; return; } ! 910, case 2
+		if (R == R_887) { print "Instead of taking the brownies"; return; } ! 911, case 2
+		if (R == R_888) { print "Instead of taking the brownie"; return; } ! 912, case 2
+		if (R == R_889) { print "Before listing contents of the table"; return; } ! 913, case 2
+		if (R == R_890) { print "Rule for grouping together cups"; return; } ! 914, case 2
+		if (R == R_891) { print "After reading a command"; return; } ! 915, case 2
+		if (R == R_892) { print "Instead of taking your glass"; return; } ! 916, case 2
+		if (R == R_893) { print "Instead of taking Sam's cup"; return; } ! 917, case 2
+		if (R == R_894) { print "Instead of attacking your glass"; return; } ! 918, case 2
+		if (R == R_895) { print "Instead of attacking Sam's cup"; return; } ! 919, case 2
+		if (R == R_896) { print "Carry out failing"; return; } ! 920, case 2
+		if (R == R_897) { print "Carry out winning"; return; } ! 921, case 2
+		if (R == R_898) { print "Rule for amusing a victorious player"; return; } ! 922, case 2
+		if (R == R_899) { print "Rule for displaying endings"; return; } ! 923, case 2
+		if (R == R_8) { print "start in the correct scenes rule"; return; } ! 924, case 1
+		if (R == POSITION_PLAYER_IN_MODEL_R) { print "position player in model world rule"; return; } ! 925, case 1
+		if (R == UPDATE_CHRONOLOGICAL_RECORDS_R) { print "update chronological records rule"; return; } ! 926, case 1
+		if (R == SEED_RANDOM_NUMBER_GENERATOR_R) { print "seed random number generator rule"; return; } ! 927, case 1
+		if (R == VIRTUAL_MACHINE_STARTUP_R) { print "virtual machine startup rule"; return; } ! 928, case 1
+		if (R == INITIALISE_MEMORY_R) { print "initialise memory rule"; return; } ! 929, case 1
+		if (R == R_9) { print "when play begins stage rule"; return; } ! 930, case 1
+		if (R == R_10) { print "fix baseline scoring rule"; return; } ! 931, case 1
+		if (R == R_11) { print "display banner rule"; return; } ! 932, case 1
+		if (R == R_12) { print "initial room description rule"; return; } ! 933, case 1
+		if (R == GENERATE_ACTION_R) { print "generate action rule"; return; } ! 934, case 1
+		if (R == PARSE_COMMAND_R) { print "parse command rule"; return; } ! 935, case 1
+		if (R == TIMED_EVENTS_R) { print "timed events rule"; return; } ! 936, case 1
+		if (R == ADVANCE_TIME_R) { print "advance time rule"; return; } ! 937, case 1
+		if (R == UPDATE_CHRONOLOGICAL_RECORDS_R) { print "update chronological records rule"; return; } ! 938, case 1
+		if (R == ADJUST_LIGHT_R) { print "adjust light rule"; return; } ! 939, case 1
+		if (R == NOTE_OBJECT_ACQUISITIONS_R) { print "note object acquisitions rule"; return; } ! 940, case 1
+		if (R == R_16) { print "notify score changes rule"; return; } ! 941, case 1
+		if (R == R_17) { print "when play ends stage rule"; return; } ! 942, case 1
+		if (R == RESURRECT_PLAYER_IF_ASKED_R) { print "resurrect player if asked rule"; return; } ! 943, case 1
+		if (R == R_18) { print "print player's obituary rule"; return; } ! 944, case 1
+		if (R == ASK_FINAL_QUESTION_R) { print "ask the final question rule"; return; } ! 945, case 1
+		if (R == DetectSceneChange) { print "scene change machinery rule"; return; } ! 946, case 1
+		if (R == R_21) { print "before stage rule"; return; } ! 947, case 1
+		if (R == R_19) { print "set pronouns from items from multiple object lists rule"; return; } ! 948, case 1
+		if (R == R_20) { print "announce items from multiple object lists rule"; return; } ! 949, case 1
+		if (R == BASIC_VISIBILITY_R) { print "basic visibility rule"; return; } ! 950, case 1
+		if (R == BASIC_ACCESSIBILITY_R) { print "basic accessibility rule"; return; } ! 951, case 1
+		if (R == CARRYING_REQUIREMENTS_R) { print "carrying requirements rule"; return; } ! 952, case 1
+		if (R == R_22) { print "instead stage rule"; return; } ! 953, case 1
+		if (R == REQUESTED_ACTIONS_REQUIRE_R) { print "requested actions require persuasion rule"; return; } ! 954, case 1
+		if (R == CARRY_OUT_REQUESTED_ACTIONS_R) { print "carry out requested actions rule"; return; } ! 955, case 1
+		if (R == DESCEND_TO_SPECIFIC_ACTION_R) { print "descend to specific action-processing rule"; return; } ! 956, case 1
+		if (R == R_23) { print "end action-processing in success rule"; return; } ! 957, case 1
+		if (R == WORK_OUT_DETAILS_OF_SPECIFIC_R) { print "work out details of specific action rule"; return; } ! 958, case 1
+		if (R == ACCESS_THROUGH_BARRIERS_R) { print "access through barriers rule"; return; } ! 959, case 1
+		if (R == CANT_REACH_INSIDE_ROOMS_R) { print "can't reach inside rooms rule"; return; } ! 960, case 1
+		if (R == CANT_REACH_INSIDE_CLOSED_R) { print "can't reach inside closed containers rule"; return; } ! 961, case 1
+		if (R == CANT_REACH_OUTSIDE_CLOSED_R) { print "can't reach outside closed containers rule"; return; } ! 962, case 1
+		if (R == R_35) { print "can't act in the dark rule"; return; } ! 963, case 1
+		if (R == STANDARD_NAME_PRINTING_R) { print "standard name printing rule"; return; } ! 964, case 1
+		if (R == R_59) { print "standard printing the plural name rule"; return; } ! 965, case 1
+		if (R == R_60) { print "standard printing a number of something rule"; return; } ! 966, case 1
+		if (R == STANDARD_CONTENTS_LISTING_R) { print "standard contents listing rule"; return; } ! 967, case 1
+		if (R == R_61) { print "look around once light available rule"; return; } ! 968, case 1
+		if (R == ENABLE_GLULX_ACCEL_R) { print "enable Glulx acceleration rule"; return; } ! 969, case 1
+		if (R == PRINT_OBITUARY_HEADLINE_R) { print "print obituary headline rule"; return; } ! 970, case 1
+		if (R == PRINT_FINAL_SCORE_R) { print "print final score rule"; return; } ! 971, case 1
+		if (R == DISPLAY_FINAL_STATUS_LINE_R) { print "display final status line rule"; return; } ! 972, case 1
+		if (R == R_69) { print "print the final question rule"; return; } ! 973, case 1
+		if (R == R_68) { print "print the final prompt rule"; return; } ! 974, case 1
+		if (R == READ_FINAL_ANSWER_R) { print "read the final answer rule"; return; } ! 975, case 1
+		if (R == R_70) { print "standard respond to final question rule"; return; } ! 976, case 1
+		if (R == R_91) { print "can't take component parts rule"; return; } ! 977, case 1
+		if (R == R_148) { print "find what to enter rule"; return; } ! 978, case 1
+		if (R == QUIT_THE_GAME_R) { print "quit the game rule"; return; } ! 979, case 1
+		if (R == SAVE_THE_GAME_R) { print "save the game rule"; return; } ! 980, case 1
+		if (R == RESTORE_THE_GAME_R) { print "restore the game rule"; return; } ! 981, case 1
+		if (R == RESTART_THE_GAME_R) { print "restart the game rule"; return; } ! 982, case 1
+		if (R == VERIFY_THE_STORY_FILE_R) { print "verify the story file rule"; return; } ! 983, case 1
+		if (R == SWITCH_TRANSCRIPT_ON_R) { print "switch the story transcript on rule"; return; } ! 984, case 1
+		if (R == SWITCH_TRANSCRIPT_OFF_R) { print "switch the story transcript off rule"; return; } ! 985, case 1
+		if (R == ANNOUNCE_STORY_FILE_VERSION_R) { print "announce the story file version rule"; return; } ! 986, case 1
+		if (R == ANNOUNCE_SCORE_R) { print "announce the score rule"; return; } ! 987, case 1
+		if (R == PREFER_ABBREVIATED_R) { print "prefer abbreviated room descriptions rule"; return; } ! 988, case 1
+		if (R == REP_PREFER_ABBREVIATED_R) { print "standard report preferring abbreviated room descriptions rule"; return; } ! 989, case 1
+		if (R == PREFER_UNABBREVIATED_R) { print "prefer unabbreviated room descriptions rule"; return; } ! 990, case 1
+		if (R == REP_PREFER_UNABBREVIATED_R) { print "standard report preferring unabbreviated room descriptions rule"; return; } ! 991, case 1
+		if (R == PREFER_SOMETIMES_ABBREVIATED_R) { print "prefer sometimes abbreviated room descriptions rule"; return; } ! 992, case 1
+		if (R == REP_PREFER_SOMETIMES_ABBR_R) { print "standard report preferring sometimes abbreviated room descriptions rule"; return; } ! 993, case 1
+		if (R == SWITCH_SCORE_NOTIFY_ON_R) { print "switch score notification on rule"; return; } ! 994, case 1
+		if (R == REP_SWITCH_NOTIFY_ON_R) { print "standard report switching score notification on rule"; return; } ! 995, case 1
+		if (R == SWITCH_SCORE_NOTIFY_OFF_R) { print "switch score notification off rule"; return; } ! 996, case 1
+		if (R == REP_SWITCH_NOTIFY_OFF_R) { print "standard report switching score notification off rule"; return; } ! 997, case 1
+		if (R == ANNOUNCE_PRONOUN_MEANINGS_R) { print "announce the pronoun meanings rule"; return; } ! 998, case 1
 
 		print "(nameless rule at address ", R, ")";
 	}
@@ -29102,7 +29111,7 @@ Constant CANTUNDO_MSG = "That action cannot be undone.^^";
 [ PHR_746_r10 ;
       ! phrase 1
       ! [1: say ~[paragraph break]Please press SPACE to continue.~]
-      say__p=1;ParaContent();  DivideParagraphPoint(); new_line; ParaContent();  print (PrintText) SC_166;  new_line; .L_Say136; .L_SayX136;
+      say__p=1;ParaContent();  DivideParagraphPoint(); new_line; ParaContent();  print (PrintText) SC_165;  new_line; .L_Say136; .L_SayX136;
       ! phrase 2
       ! [2: wait for the space key]
        SPACEPause(); 
@@ -29181,12 +29190,12 @@ Constant CANTUNDO_MSG = "That action cannot be undone.^^";
 say__p=1;ParaContent();  I7_ST_say_one_of-->1 =
 	i7_soo_cyc(I7_ST_say_one_of-->1, 2);
 	switch((I7_ST_say_one_of-->1)%(2+1)-1) {
-		0: ParaContent();  print (PrintText) SC_167; ParaContent();  @nop; 1: ParaContent();  print (PrintText) SC_168; ParaContent();  }  .L_Say139; .L_SayX139;
+		0: ParaContent();  print (PrintText) SC_166; ParaContent();  @nop; 1: ParaContent();  print (PrintText) SC_167; ParaContent();  }  .L_Say139; .L_SayX139;
     rtrue;
 ];
 
 [ text_routine_1;
-say__p=1;ParaContent();  font off; ParaContent();  print (PrintText) SC_169; ParaContent();  new_line; ParaContent();  print (PrintText) SC_170; ParaContent();  new_line; ParaContent();  print (PrintText) SC_171; ParaContent();  new_line; ParaContent();  print (PrintText) SC_172; ParaContent();  new_line; ParaContent();  print (PrintText) SC_173; ParaContent();  new_line; ParaContent();  print (PrintText) SC_174; ParaContent();  new_line; ParaContent();  font on;  .L_Say140; .L_SayX140;
+say__p=1;ParaContent();  font off; ParaContent();  print (PrintText) SC_168; ParaContent();  new_line; ParaContent();  print (PrintText) SC_169; ParaContent();  new_line; ParaContent();  print (PrintText) SC_170; ParaContent();  new_line; ParaContent();  print (PrintText) SC_171; ParaContent();  new_line; ParaContent();  print (PrintText) SC_172; ParaContent();  new_line; ParaContent();  print (PrintText) SC_173; ParaContent();  new_line; ParaContent();  font on;  .L_Say140; .L_SayX140;
     rtrue;
 ];
 
@@ -29194,7 +29203,7 @@ say__p=1;ParaContent();  font off; ParaContent();  print (PrintText) SC_169; Par
 say__p=1;ParaContent();  I7_ST_say_one_of-->2 =
 	i7_soo_cyc(I7_ST_say_one_of-->2, 3);
 	switch((I7_ST_say_one_of-->2)%(3+1)-1) {
-		0: ParaContent();  print (PrintText) SC_175; ParaContent();  @nop; 1: ParaContent();  print (PrintText) SC_176; ParaContent();  @nop; 2: ParaContent();  print (PrintText) SC_177; ParaContent();  }  .L_Say141; .L_SayX141;
+		0: ParaContent();  print (PrintText) SC_174; ParaContent();  @nop; 1: ParaContent();  print (PrintText) SC_175; ParaContent();  @nop; 2: ParaContent();  print (PrintText) SC_176; ParaContent();  }  .L_Say141; .L_SayX141;
     rtrue;
 ];
 
@@ -29204,7 +29213,7 @@ say__p=1;ParaContent();  print (PrintShortName) real_location;  .L_Say142; .L_Sa
 ];
 
 [ text_routine_4;
-say__p=1;ParaContent();  print (say__n=score); ParaContent();  print (PrintText) SC_178; ParaContent();  print (say__n=turns);  .L_Say143; .L_SayX143;
+say__p=1;ParaContent();  print (say__n=score); ParaContent();  print (PrintText) SC_177; ParaContent();  print (say__n=turns);  .L_Say143; .L_SayX143;
     rtrue;
 ];
 
@@ -29363,7 +29372,7 @@ Verb 'give' 'pay' 'offer' 'feed'
     * held 'to' creature  -> Give
 ;
 Verb 'show' 'present' 'display'
-    * noun  -> A104_pointing
+    * noun  -> A105_pointing
     * creature held  -> Show reverse
     * held 'to' creature  -> Show
 ;
@@ -29415,7 +29424,7 @@ Verb 'examine' 'x//' 'watch' 'describe' 'check'
     * noun  -> Examine
 ;
 Verb 'read'
-    * noun  -> A113_reading
+    * noun  -> A114_reading
 ;
 Verb 'yes' 'y//'
     *  -> Yes
@@ -29479,23 +29488,23 @@ Verb 'wait' 'z//'
     *  -> Wait
 ;
 Verb 'answer' 'speak'
-    *  -> A99_talking
+    *  -> A100_talking
     * 'xyzzy'  -> A85_casting_xyzzy
     * 'plugh'  -> A85_casting_xyzzy
     * 'plover'  -> A85_casting_xyzzy
-    * 'to' noun  -> A100_talking_to
-    * 'to' creature  -> A100_talking_to
+    * 'to' noun  -> A101_talking_to
+    * 'to' creature  -> A101_talking_to
     * topic 'to' creature  -> Answer reverse
 ;
 Verb 'tell'
-    *  -> A99_talking
-    * creature 'about' topic  -> A103_talking_to_about
-    * 'about' topic  -> A101_talking_about
+    *  -> A100_talking
+    * creature 'about' topic  -> A104_talking_to_about
+    * 'about' topic  -> A102_talking_about
 ;
 Verb 'ask'
-    *  -> A99_talking
-    * creature 'about' topic  -> A103_talking_to_about
-    * 'about' topic  -> A101_talking_about
+    *  -> A100_talking
+    * creature 'about' topic  -> A104_talking_to_about
+    * 'about' topic  -> A102_talking_about
 ;
 Verb 'eat'
     * multi  -> Eat
@@ -29552,7 +29561,7 @@ Verb 'touch' 'feel'
 ;
 Verb 'rub' 'shine' 'polish' 'sweep' 'clean' 'dust' 'wipe' 'scrub'
     * noun  -> Rub
-    * noun  -> A112_cleaning
+    * noun  -> A113_cleaning
 ;
 Verb 'tie' 'attach' 'fasten'
     * noun 'to' noun  -> Tie
@@ -29678,9 +29687,9 @@ Verb 'hug'
     * creature  -> A93_hugging
 ;
 Verb 'count'
-    *  -> A109_counting_nothing
-    * 'glasses'  -> A110_counting_cups
-    * 'cups'  -> A110_counting_cups
+    *  -> A110_counting_nothing
+    * 'glasses'  -> A111_counting_cups
+    * 'cups'  -> A111_counting_cups
     * noun  -> A94_counting
 ;
 Verb 'bite'
@@ -29697,7 +29706,7 @@ Verb 'dance'
 ;
 Verb 'do'
     * 'a//' 'little' 'dance'  -> A95_dancing
-    * 'not' 'pass' noun=Noun_Filter_4  -> A107_not_passing_the_milk
+    * 'not' 'pass' noun=Noun_Filter_4  -> A108_not_passing_the_milk
 ;
 Verb 'poke'
     * noun  -> A96_poking
@@ -29719,56 +29728,60 @@ Verb 'cry'
 ;
 Verb 'shout'
     *  -> A98_shouting
+    * 'at' noun  -> A99_shouting_at
 ;
 Verb 'yell'
     *  -> A98_shouting
+    * 'at' noun  -> A99_shouting_at
 ;
 Verb 'scream'
     *  -> A98_shouting
+    * 'at' noun  -> A99_shouting_at
 ;
 Verb 'screech'
     *  -> A98_shouting
+    * 'at' noun  -> A99_shouting_at
 ;
 Verb 'talk'
-    *  -> A99_talking
-    * 'to' noun  -> A100_talking_to
-    * 'to' creature  -> A100_talking_to
-    * 'to' creature 'about' topic  -> A103_talking_to_about
-    * 'about' topic 'to' creature  -> A102_talking_about_to
-    * 'about' topic  -> A101_talking_about
+    *  -> A100_talking
+    * 'to' noun  -> A101_talking_to
+    * 'to' creature  -> A101_talking_to
+    * 'to' creature 'about' topic  -> A104_talking_to_about
+    * 'about' topic 'to' creature  -> A103_talking_about_to
+    * 'about' topic  -> A102_talking_about
 ;
 Verb 'say'
-    *  -> A99_talking
-    * topic 'to' creature  -> A102_talking_about_to
-    * topic  -> A101_talking_about
+    *  -> A100_talking
+    * topic 'to' creature  -> A103_talking_about_to
+    * topic  -> A102_talking_about
 ;
 Verb 'mention'
-    * topic 'to' creature  -> A102_talking_about_to
-    * topic  -> A101_talking_about
+    * topic 'to' creature  -> A103_talking_about_to
+    * topic  -> A102_talking_about
 ;
 Verb 'point'
-    * 'at' noun  -> A104_pointing
+    * 'at' noun  -> A105_pointing
 ;
 Verb 'run'
-    *  -> A105_running
-    * 'away'  -> A105_running
-    * 'around' / 'in' 'house'  -> A105_running
-    * 'with' 'scissors'  -> A106_running_with_scissors
-    * 'around' / 'in' 'the' 'house'  -> A105_running
+    *  -> A106_running
+    * 'away'  -> A106_running
+    * 'around' / 'in' 'house'  -> A106_running
+    * 'with' 'scissors'  -> A107_running_with_scissors
+    * 'around' / 'in' 'the' 'house'  -> A106_running
 ;
 Verb 'don^t'
-    * 'pass' noun=Noun_Filter_5  -> A107_not_passing_the_milk
+    * 'pass' noun=Noun_Filter_5  -> A108_not_passing_the_milk
 ;
 Verb 'dont'
-    * 'pass' noun=Noun_Filter_6  -> A107_not_passing_the_milk
+    * 'pass' noun=Noun_Filter_6  -> A108_not_passing_the_milk
 ;
 Verb 'please'
-    * 'pass' noun 'please'  -> A108_passing
+    * 'pass' noun 'please'  -> A109_passing
     * 'pass' noun 'to' creature  -> Give
     * 'pass' noun 'to' creature 'please'  -> Give
 ;
 Verb 'pass'
-    * noun 'please'  -> A108_passing
+    * noun 'please'  -> A109_passing
     * noun 'to' creature  -> Give
     * noun 'to' creature 'please'  -> Give
 ;
@@ -29777,20 +29790,20 @@ Verb 'gnaw'
     * 'on' noun  -> Eat
 ;
 Verb 'throw'
-    * noun  -> A111_throwing
+    * noun  -> A112_throwing
     * noun 'at' noun  -> ThrowAt
 ;
 Verb 'toss'
-    * noun  -> A111_throwing
+    * noun  -> A112_throwing
 ;
 Verb 'hurl'
-    * noun  -> A111_throwing
+    * noun  -> A112_throwing
 ;
 Verb 'spill'
     * noun  -> Drop
 ;
 Verb 'pour'
-    *  -> A114_pouring
+    *  -> A115_pouring
     * noun 'on' / 'in' noun  -> PutOn
 ;
 [ Parse_Name_GV1
@@ -31584,13 +31597,13 @@ ArgumentTypeFailed(filename, line);
 Array ConstantListPointers --> 
  0 0;
 
-Constant SC_169 = "         (__)";
-Constant SC_170 = "         (oo)";
-Constant SC_174 = "    @@126@@126   @@126@@126";
-Constant SC_171 = "   /------@{5C}/";
-Constant SC_172 = "  / |    ||";
+Constant SC_168 = "         (__)";
+Constant SC_169 = "         (oo)";
+Constant SC_173 = "    @@126@@126   @@126@@126";
+Constant SC_170 = "   /------@{5C}/";
+Constant SC_171 = "  / |    ||";
 Constant SC_98 = " ";
-Constant SC_173 = " *  /@{5C}---/@{5C}";
+Constant SC_172 = " *  /@{5C}---/@{5C}";
 Constant SC_51 = " and gnaw on it. Sam giggles.";
 Constant SC_80 = " and throw it at Sam. He catches it and tosses it back at you. It bounces off your shoulder.";
 Constant SC_129 = " here";
@@ -31628,10 +31641,10 @@ Constant SC_29 = ". Sam gets really excited. He picks up his cup and bangs it on
 Constant SC_32 = ". Sam points at the milk.";
 Constant SC_54 = ". Sam shrieks angrily.";
 Constant SC_40 = ".";
-Constant SC_178 = "/";
+Constant SC_177 = "/";
 Constant SC_27 = ": ";
 Constant SC_130 = ":";
-Constant SC_177 = "=@@94..@@94=";
+Constant SC_176 = "=@@94..@@94=";
 Constant SC_121 = "> ";
 Constant SC_16 = ">";
 Constant SC_118 = "?";
@@ -31647,20 +31660,20 @@ Constant SC_36 = "He already has that.";
 Constant SC_39 = "He doesn't need ";
 Constant SC_37 = "He doesn't need another brownie. He needs a glass of milk.";
 Constant SC_123 = "In ";
-Constant SC_160 = "It doesn't respond.";
-Constant SC_175 = "It looks very sad.";
+Constant SC_159 = "It doesn't respond.";
+Constant SC_174 = "It looks very sad.";
 Constant SC_14 = "It used to be a jelly jar. There's a wrap-around scene of a panda with an easel and a parade of penguins.";
 Constant SC_8 = "It's just a chair.";
 Constant SC_11 = "It's missing.";
-Constant SC_162 = "It's not nice to throw things!";
+Constant SC_161 = "It's not nice to throw things!";
 Constant SC_158 = "It's not nice to yell!";
 Constant SC_157 = "Keep your hands to yourself.";
 Constant SC_73 = "No matter how you twist and turn, you can't seem to manage that.";
 Constant SC_25 = "Noted.";
 Constant SC_125 = "On ";
-Constant SC_168 = "On the back is a photo of a sad-looking cat and the words ~Have you seen my C? Reward!!!~";
+Constant SC_167 = "On the back is a photo of a sad-looking cat and the words ~Have you seen my C? Reward!!!~";
 Constant SC_26 = "Please pass the milk, please.";
-Constant SC_166 = "Please press SPACE to continue.";
+Constant SC_165 = "Please press SPACE to continue.";
 Constant SC_22 = "QUIT";
 Constant SC_19 = "RESTART";
 Constant SC_20 = "RESTORE a saved game";
@@ -31679,21 +31692,20 @@ Constant SC_102 = "Sam's glass";
 Constant SC_15 = "Sam's plastic cup has a robot on the front. It's empty.";
 Constant SC_35 = "That's an odd thing to do.";
 Constant SC_9 = "The blue and white checkered table cloth brightens up the room.";
-Constant SC_167 = "The carton reads ~Cowtown Dairy.~ There's a drawing on the front of a cow grazing happily on some seaweed.";
+Constant SC_166 = "The carton reads ~Cowtown Dairy.~ There's a drawing on the front of a cow grazing happily on some seaweed.";
 Constant SC_91 = "The last thing you need right now is a trip to the hospital. Also, you don't have any scissors.";
 Constant SC_153 = "There are 69,105 brownies here.";
 Constant SC_6 = "There are traces of chocolate on his cheeks. He seems to be waiting for something.";
 Constant SC_96 = "There are two: your glass and Sam's cup.";
-Constant SC_163 = "There is no need to clean that right now.";
+Constant SC_162 = "There is no need to clean that right now.";
 Constant SC_132 = "There is no need to do that.";
-Constant SC_164 = "There is nothing there to read.";
+Constant SC_163 = "There is nothing there to read.";
 Constant SC_156 = "There's just the one.";
 Constant SC_154 = "There's only one of him, thankfully.";
 Constant SC_149 = "This isn't that sort of game.";
 Constant SC_23 = "UNDO the last command";
 Constant SC_134 = "What's the name of the game?";
-Constant SC_159 = "Who do you want to talk to?";
-Constant SC_176 = "Why would you want to see a picture of a sad cat?";
+Constant SC_175 = "Why would you want to see a picture of a sad cat?";
 Constant SC_117 = "Would you like to ";
 Constant SC_122 = "You ";
 Constant SC_155 = "You are a unique and special snowflake.";
@@ -31701,14 +31713,14 @@ Constant SC_57 = "You are already sitting.";
 Constant SC_47 = "You bite Sam's shoulder playfully. He slaps you away.";
 Constant SC_152 = "You can't crawl under ";
 Constant SC_131 = "You can't eat that!";
-Constant SC_165 = "You can't pour that.";
+Constant SC_164 = "You can't pour that.";
 Constant SC_49 = "You can't see any such thing.";
 Constant SC_150 = "You can't sit on that.";
 Constant SC_151 = "You can't stand on that.";
 Constant SC_43 = "You can't wear that.";
 Constant SC_89 = "You do a little dance in your seat. Sam giggles.";
 Constant SC_95 = "You don't find anything underneath ";
-Constant SC_161 = "You forget all about the brownies and break into an impromptu game of hide-and-seek.";
+Constant SC_160 = "You forget all about the brownies and break into an impromptu game of hide-and-seek.";
 Constant SC_60 = "You give Sam a sharp poke. He screeches at you and slaps your hand away.";
 Constant SC_71 = "You give yourself a hug. You feel better.";
 Constant SC_63 = "You glance at the nutritional facts. You're not really sure what all those numbers mean.";

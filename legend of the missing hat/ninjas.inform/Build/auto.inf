@@ -30,7 +30,7 @@ Constant Story "The Legend of the Missing Hat";
 Constant Headline SC_2;
 Constant Story_Author SC_3;
 Release 1;
-Serial "140106";
+Serial "140109";
 
 Default Story 0;
 Default Headline 0;

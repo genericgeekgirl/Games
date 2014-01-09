@@ -43,7 +43,7 @@ template path "/home/adri/Games/Interactive Fiction/Adri/mundale tale of the mor
 template path "/home/adri/Inform/Templates"
 template path "/usr/share/gnome-inform7/Extensions/Reserved/Templates"
 css
-website "Standard"
+website "Genericgeekgirl"
 status instruction ||&nbsp;<a href="source:story.ni#line9"><img border=0 src=inform:/Reveal.png></a>||
 status alternative ||Using 'Release along with the "Such-and-Such" file called "whatever.pdf"', perhaps to add a manual, or a welcoming note&nbsp;<a href=inform:/doc389.html><img border=0 src=inform:/help.png></a>||
 status alternative ||Using 'Release along with the source text'&nbsp;<a href=inform:/doc399.html><img border=0 src=inform:/help.png></a>||

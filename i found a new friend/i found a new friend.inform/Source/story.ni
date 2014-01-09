@@ -8,7 +8,7 @@ The story headline is "A heart-warming story of friendship".
 The story genre is "fantasy".
 The story description is "A short piece of interactive fiction inspired by They Might Be Giants' 'Apollo 18' album".
 
-[Release along with an interpreter.]
+Release along with an interpreter and a "Genericgeekgirl" website.
 
 Include Room Description Control by Emily Short.
 Include Fingertips by Adri.
@@ -459,3 +459,4 @@ say "[LINE BREAK]Have you tried...	[LINE BREAK]- counting sheep?[LINE BREAK]- lo
 
 Rule for displaying endings:
 	say "[LINE BREAK]- Finding a new friend[LINE BREAK]- Hugging the pillow[LINE BREAK]- Petting the pillow[LINE BREAK]- Cleaning under the bed[LINE BREAK]- Going to bed[LINE BREAK]- Waiting four times[LINE BREAK]- Counting sheep seven times[LINE BREAK]- Examining sheep eight times[LINE BREAK]- Throwing the pillow at something[LINE BREAK]- Crawling under the bed[LINE BREAK]- Running away[LINE BREAK]- Leaving the room[LINE BREAK]- Jumping on the bed[LINE BREAK]- Poking the pillow[LINE BREAK]- Attacking the pillow[LINE BREAK]- Turning off the light[LINE BREAK]".
+	

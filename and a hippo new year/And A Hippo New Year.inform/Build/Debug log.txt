@@ -1,12 +1,12 @@
 Debugging log of Inform 7
-Inform called as: /usr/lib/gnome-inform7/gnome-inform7/ni -rules /usr/share/gnome-inform7/Extensions -extension=z8 -package /home/adri/Games/Interactive Fiction/Adri/and a hippo new year/And A Hippo New Year.inform 
+Inform called as: /usr/lib/gnome-inform7/gnome-inform7/ni -rules /usr/share/gnome-inform7/Extensions -extension=z8 -package /home/adri/Games/Interactive Fiction/Adri/and a hippo new year/And A Hippo New Year.inform -release 
 
 
 -----------------------------------------------------
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 7324 words long.
+I've now read your source text, which is 7335 words long.
 
 
 -----------------------------------------------------

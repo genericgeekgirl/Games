@@ -6,7 +6,7 @@ The story headline is "A tiny anti-adventure".
 The story genre is "slice of life".
 The story description is "a tiny story about a not-so-tiny headache".
 
-Release along with cover art and an interpreter.
+Release along with cover art, an interpreter and a "Genericgeekgirl" website.
 
 when play begins:
 	say "Oof. Your head. You remember very little about last night, but apparently you had an extremely good time at the party.[paragraph break]Judging from how dark the room is, you're guessing it's fairly late in the afternoon. But all you want to do is take care of your hangover and go home and hide from the world for the rest of the day."

@@ -6,7 +6,7 @@ The story headline is "A tiny adventure".
 The story genre is "slice of life".
 The story description is "A tiny story about four tiny ninjas and a tiny top hat".
 
-Release along with cover art and an interpreter.
+Release along with cover art, an interpreter and a "Genericgeekgirl" website.
 
 Chapter - Basic Setup
 

@@ -8,7 +8,7 @@ The story description is "'[story title]' was created for Yuletide 2012, an annu
 
 Part - Basic Setup
  
-[Release along with cover art and an interpreter.]
+Release along with cover art, an interpreter and a "Genericgeekgirl" website.
 
 Chapter - Extensions
 

@@ -5,7 +5,7 @@ Chapter - Basic Setup
 Include Fingertips by Adri.
 Include Punctuation Removal by Emily Short.
 
-[Release along with cover art and an interpreter.]
+Release along with cover art, an interpreter and a "Genericgeekgirl" website.
 
 Carry out asking for credits: say "'Please Pass the Milk Please' was written for the Apollo 18+20 tribute album. Thanks so much to Kevin Jackson-Mead for organizing the compilation and inspiring me to finally write my first (and second!) game. Thank you to everyone in PR-IF and on ifMUD for just generally being encouraging and helpful. Thank you to everyone who provided feedback on the game, especially cyberskunk, Lorenzo Batallones, Felix Plesoianu and jpt. And last, but not least, thanks to They Might Be Giants for making awesome music.".
 
@@ -470,4 +470,5 @@ Rule for amusing a victorious player:
 
 Rule for displaying endings:
 	say "[LINE BREAK]- Passing the milk[LINE BREAK]- Not passing the milk[LINE BREAK]- Leaving the room[LINE BREAK]- Counting nothing[LINE BREAK]- Taking a brownie[LINE BREAK]- Pouring the milk on something[LINE BREAK]- Spilling the milk[LINE BREAK]- Taking the tablecloth[LINE BREAK]- Taking the table[LINE BREAK]- Throwing the milk at Sam[LINE BREAK]- Throwing the plate at Sam[LINE BREAK]- Throwing the glass at Sam[LINE BREAK]".
+	
 	
