@@ -1,18 +1,18 @@
 ! Blurb file created by Inform build 6G60
 
-status "/usr/share/gnome-inform7/Extensions/Reserved/CblorbModel.html" "/home/adri/Games/Interactive Fiction/Adri/please pass the milk please/please pass the milk please.inform/Build/StatusCblorb.html"
+status "/usr/local/share/inform7/Inform7/Extensions/Reserved/CblorbModel.html" "/home/adri/Games/Interactive Fiction/Adri/please pass the milk please/please pass the milk please.inform//Build/StatusCblorb.html"
 
 
 ! Identification
 
-project folder "/home/adri/Games/Interactive Fiction/Adri/please pass the milk please/please pass the milk please.inform"
+project folder "/home/adri/Games/Interactive Fiction/Adri/please pass the milk please/please pass the milk please.inform/"
 release to "/home/adri/Games/Interactive Fiction/Adri/please pass the milk please/please pass the milk please Materials/Release"
 
 ! Blorb instructions
 
 storyfile leafname "Fingertips- Please Pass the Mil.zblorb"
-storyfile "/home/adri/Games/Interactive Fiction/Adri/please pass the milk please/please pass the milk please.inform/Build/output.z8" include
-ifiction "/home/adri/Games/Interactive Fiction/Adri/please pass the milk please/please pass the milk please.inform/Metadata.iFiction" include
+storyfile "/home/adri/Games/Interactive Fiction/Adri/please pass the milk please/please pass the milk please.inform//Build/output.z8" include
+ifiction "/home/adri/Games/Interactive Fiction/Adri/please pass the milk please/please pass the milk please.inform//Metadata.iFiction" include
 cover "/home/adri/Games/Interactive Fiction/Adri/please pass the milk please/please pass the milk please Materials/Cover.png"
 picture 1 "/home/adri/Games/Interactive Fiction/Adri/please pass the milk please/please pass the milk please Materials/Cover.png"
 
@@ -33,18 +33,18 @@ placeholder [BLURB] = "A short piece of interactive fiction inspired by They Mig
 placeholder [ENCODEDSTORYFILE] = "Fingertips- Please Pass the Mil.zblorb.js"
 template path "/home/adri/Games/Interactive Fiction/Adri/please pass the milk please/please pass the milk please Materials/Templates"
 template path "/home/adri/Inform/Templates"
-template path "/usr/share/gnome-inform7/Extensions/Reserved/Templates"
+template path "/usr/local/share/inform7/Inform7/Extensions/Reserved/Templates"
 interpreter "Parchment" "z"
-base64 "/home/adri/Games/Interactive Fiction/Adri/please pass the milk please/please pass the milk please.inform/Build/output.z8" to "/home/adri/Games/Interactive Fiction/Adri/please pass the milk please/please pass the milk please Materials/Release/interpreter/Fingertips- Please Pass the Mil.zblorb.js"
+base64 "/home/adri/Games/Interactive Fiction/Adri/please pass the milk please/please pass the milk please.inform//Build/output.z8" to "/home/adri/Games/Interactive Fiction/Adri/please pass the milk please/please pass the milk please Materials/Release/interpreter/Fingertips- Please Pass the Mil.zblorb.js"
 
 ! Website instructions
 
 template path "/home/adri/Games/Interactive Fiction/Adri/please pass the milk please/please pass the milk please Materials/Templates"
 template path "/home/adri/Inform/Templates"
-template path "/usr/share/gnome-inform7/Extensions/Reserved/Templates"
+template path "/usr/local/share/inform7/Inform7/Extensions/Reserved/Templates"
 css
 website "Genericgeekgirl"
-status instruction ||&nbsp;<a href="source:story.ni#line8"><img border=0 src=inform:/Reveal.png></a>||
+status instruction ||&nbsp;<a href="source:story.ni#line7"><img border=0 src=inform:/Reveal.png></a>||
 status alternative ||Using 'Release along with the "Such-and-Such" file called "whatever.pdf"', perhaps to add a manual, or a welcoming note&nbsp;<a href=inform:/doc389.html><img border=0 src=inform:/help.png></a>||
 status alternative ||Using 'Release along with the source text'&nbsp;<a href=inform:/doc399.html><img border=0 src=inform:/help.png></a>||
 status alternative ||Using 'Release along with a solution'&nbsp;<a href=inform:/doc398.html><img border=0 src=inform:/help.png></a>||

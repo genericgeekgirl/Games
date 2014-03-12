@@ -377,8 +377,8 @@ Report dancing: say "You dance around the bed. You feel silly.".
 Before eating something: say "That is clearly not edible." instead.
 
 Chapter - Sitting
-	
-Instead of sitting: try sitting on the bed.
+
+Does the player mean sitting on the bed: it is likely.
 
 A person can be sitting down.
 

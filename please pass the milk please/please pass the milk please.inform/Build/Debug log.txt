@@ -1,12 +1,12 @@
 Debugging log of Inform 7
-Inform called as: /usr/lib/gnome-inform7/gnome-inform7/ni -rules /usr/share/gnome-inform7/Extensions -extension=z8 -package /home/adri/Games/Interactive Fiction/Adri/please pass the milk please/please pass the milk please.inform -release 
+Inform called as: /usr/local/libexec/ni --rules /usr/local/share/inform7/Inform7/Extensions --extension=z8 --package /home/adri/Games/Interactive Fiction/Adri/please pass the milk please/please pass the milk please.inform/ 
 
 
 -----------------------------------------------------
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 3229 words long.
+I've now read your source text, which is 3428 words long.
 
 
 -----------------------------------------------------
@@ -14,8 +14,7 @@ Phase II ... Semantic analysis Ia
 -----------------------------------------------------
 
 I've also read Standard Rules by Graham Nelson, which is 39455 words long.
-I've also read Fingertips by Adri, which is 1065 words long.
-I've also read Punctuation Removal by Emily Short, which is 900 words long.
+I've also read Fingertips by Adri, which is 1059 words long.
 I've also read Basic Screen Effects by Emily Short, which is 2155 words long.
 I've also read Status Line Removal by Emily Short, which is 147 words long.
 I've also read Conditional Undo by Jesse McGrew, which is 625 words long.
@@ -151,14 +150,13 @@ Phase XII ... Code generation
 
 ==== Phase XII.18 ... Compiling routines from predicate calculus ====
 
-Providing for a total heap of 8192, given requirement of 8192
 
 
 -----------------------------------------------------
 Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
-Total of 162 files written as streams.
+Total of 159 files written as streams.
 
 That concludes the debugging log from this run of Inform.
 Its contents were as follows, and can be changed by placing

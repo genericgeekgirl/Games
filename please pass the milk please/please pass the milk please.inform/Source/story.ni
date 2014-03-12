@@ -1,9 +1,8 @@
 "Fingertips: Please Pass the Milk Please" by "Adri".
 
-Chapter - Basic Setup
+Volume - Basic Setup
 
 Include Fingertips by Adri.
-Include Punctuation Removal by Emily Short.
 
 Release along with cover art, an interpreter and a "Genericgeekgirl" website.
 
@@ -15,172 +14,169 @@ The story headline is "An interactive snack".
 The story genre is "slice of life".
 The story description is "A short piece of interactive fiction inspired by They Might Be Giants' 'Apollo 18' album".
 
-Chapter - Play Begins
-
 When play begins:
 say "[ITALIC TYPE]Please pass the milk, please.[LINE BREAK]Please pass the milk, please.[LINE BREAK]Please pass the milk, please.[ROMAN TYPE][LINE BREAK]"
- 
-Chapter - Environment
+
+Volume - Kitchen
 
 The Kitchen is a room.
 
-Sam is a man. It is in the kitchen. It is proper-named. The initial appearance is "Your brother Sam is sitting across from you.". The description is "There are traces of chocolate on his cheeks. He seems to be waiting for something.".
-Understand "brother" and "man" and "boy" as Sam.
+The chair is scenery in the kitchen. The description is "It's just a chair." The player is on the chair.
 
-The description of the player is "You're wearing the 'Science is Real' t-shirt you got at the They Might Be Giants concert last summer. It's one of your favorites.".
+The table is a supporter and scenery in the kitchen. Instead of examining the table: try examining the tablecloth.
 
-The chair is a supporter. It is enterable. It is scenery. It is in the kitchen. The description is "It's just a chair.".
+The tablecloth is part of the table. The description is "The blue and white checkered table cloth brightens up the room."  Understand "table cloth" as the tablecloth. The tablecloth is wearable.
 
-The table is a supporter. It is scenery. It is in the kitchen. The indefinite article is "the". 
-Instead of examining the table: try examining the tablecloth. Understand "table cloth" as the tablecloth.
+Volume - Sam
 
-The tablecloth is scenery. It is on the table. The description is "The blue and white checkered table cloth brightens up the room."
+Sam is a proper-named man in the kitchen. "Your brother Sam is sitting across from you." The description is "There are traces of chocolate on his cheeks. He seems to be waiting for something." Understand "brother" and "boy" as Sam.
 
-The shirt is a wearable thing. It is worn by the player.
-Instead of examining the shirt: try examining the player.
-Understand "t-shirt" or "tshirt" or "clothes" or "clothing" as shirt.
+Volume - Player
 
-Chapter - Vocalizations
+The description of the player is "You're wearing the 'Science is Real' t-shirt you got at the They Might Be Giants concert last summer."
+
+The shirt is worn by the player. The description is "It's one of your favorites." Understand "t-shirt" as shirt.
+
+The jeans are worn by the player. They are plural-named. Understand "pockets" and "pocket" as the jeans. The description is "They're just a regular old pair of blue jeans. There is nothing in the pockets. Not even a ball of lint."
+
+Check taking off something (this is the no nudity rule):
+	if the noun is worn by the player, say "You should probably keep your clothes on." instead.
+
+Volume - Throwing Away
+
+Throwing away is an action applying to one thing.
+Understand "throw [something] away" and "throw away [something]" and "dump [something]" as throwing away.
+Carry out throwing away: say "There's no need to do that."
+
+Instead of throwing away the brownies:
+say "You stand up, pick up the plate, and carry it over to the trash. Sam screams and propels himself into you, causing you to drop the plate. The brownies fly everywhere and the plate shatters. You had better clean up this mess before your parents get home.";
+try failing.
+
+Instead of throwing away the milk:
+say "You stand up, pick up the milk and carry it over to the sink. Sam jumps to his feet immediately, but it's too late. You've already dumped the contents. Sam throws himself at the floor and throws a tantrum, the likes of which you have never seen before.";
+try failing.
+        
+Volume - Vocalizations
 
 Instead of crying: say "Sam blinks at you in surprise.".
-
 Instead of shouting: say "Sam cringes.".
-
 Instead of swearing obscenely: say "Sam's eyes go wide.".
-	
-[TODO: not sure how to handle the syntax "hello, Sam"]
-
 Instead of talking: say "Sam just shakes his head and frowns impatiently."
+Instead of singing, say "You hum a little tune. Sam actually smiles a little."
 
-Chapter - General Commands
+Volume - Other Commands
+
+Instead of taking inventory: say "Your pockets are empty.".
+
+Instead of casting xyzzy: say "A hollow voice says, 'Milk: it does a body good.'".
+
+Instead of looking under: say "You don't find anything underneath [the noun].".
+
+Instead of doing anything except examining to a picture: say "You can't see any such thing.".
+
+Instead of dancing: say "You do a little dance in your seat. Sam giggles."
 
 Instead of waiting: say "[one of]Sam picks up his cup and peers into it. He pouts and sets it back down.[or]Sam turns his cup over, giving it a little shake to remind you that it's empty.[or]Sam picks up his cup and bangs it on the table.[or]Sam reaches towards the milk, waving his arm wildly to make his point.[at random]"
 
-
+Volume - Taking Things
 
 Instead of taking the tablecloth:
 	say "You pull the tablecloth off the table, spilling milk and brownies all over Sam. He's too shocked to say anything for a moment, and then he starts bawling.";
 	try failing.
 
-Before wearing something:
-	If the noun is the shirt:
-		say "You're already wearing that!" instead;
-	If the noun is the tablecloth:
-		try taking the tablecloth instead;
-	otherwise:
-		say "You can't wear that." instead.
+Volume - Wearing Things
 
-Instead of undressing: try taking off the shirt.
-Instead of dropping the shirt: try taking off the shirt.
+Instead of wearing the tablecloth:
+say "You pull the tablecloth off the table and wrap it around your shoulders like a cape. In the process, you spill milk and brownies all over Sam. He immediately starts screaming.";
+try failing.
 
-Instead of taking off the shirt: say "You should probably keep your clothes on.".
+Check wearing something (this is the you can't wear anything that isn't clothing rule):
+if the noun is not wearable, say "You don't know how to wear that!" instead.
 
-Instead of dancing: say "You do a little dance in your seat. Sam giggles.".
-
-Pointing is an action applying to one thing.
-Understand "show [something]" or "point at [something]" as pointing.
+Volume - Showing Things to Sam
 
 Instead of pointing: try showing the noun to Sam.
+Does the player mean showing something to Sam: it is very likely.
 
-Before showing something to Sam:
-	If the noun is the milk or the noun is Sam's cup:
-		say "You point at [the noun]. Sam gets really excited. He picks up his cup and bangs it on the table." instead;
+Instead of showing something to Sam:
+	If the noun is the milk carton or the noun is the cup:
+		say "You point at [the noun]. Sam gets really excited. He picks up his cup and bangs it on the table.";
 	otherwise if the noun is Sam:
-		say "You point at Sam. He seems confused." instead;
-	otherwise if the noun is the player or the noun is your glass or the noun is the shirt:
-		say "You point at [the noun]. Sam doesn't seem to care." instead;
-	otherwise if the noun is a treat or the noun is the plate:
-		say "You point at [the noun]. Sam points at the milk." instead;
+		say "You point at Sam. He points right back at you.";
 	otherwise:
-		say "Sam doesn't seem interested in that." instead.
+		say "You point at [the noun]. Sam points at the milk.";
 
-Rule for supplying a missing noun: now the noun is the brownie.
-
-Does the player mean taking the brownie: it is very likely.
-
-Understand the command "run" as something new.
+Volume - Running
+            
 Running is an action applying to nothing.
-
-Understand "run" as running.
-Understand "run around/in house" as running.
-Understand "run around/in the house" as running.
-
-Understand the command "run away" as something new.
-Understand "run away" as running.
-
-Instead of running:
-        say "You're not allowed to run in the house!".
+Understand the command "run" as something new. Understand the command "run away" as something new.
+Understand "run" and "run away" and "run around/in house" and "run around/in the house" as running.
+Instead of running: say "You're not allowed to run in the house!"
 
 Running with scissors is an action applying to nothing.
 Understand "run with scissors" as running with scissors.
-Instead of running with scissors:
-        say "The last thing you need right now is a trip to the hospital. Also, you don't have any scissors.".
+Instead of running with scissors: say "The last thing you need right now is a trip to the hospital. Also, you don't have any scissors."
 
-Instead of taking inventory:
-say "Your pockets are empty.".
+Volume - (Not) Passing the Milk
 
 Not passing the milk is an action applying to one thing.
-Understand "don't pass [milk]" or "dont pass [milk]" or "do not pass [milk]" as not passing the milk.
-
-Report not passing the milk:
-	try taking the milk.
-
-Understand the command "pass" as something new.
-
-Passing is an action applying to one thing.
-Understand "please pass [something] please" or "pass [something] please" as passing.
-Report passing: try giving the noun to Sam.
+Understand "don't pass [milk carton]" and "do not pass [milk carton]" as not passing the milk.
+Report not passing the milk: try taking the milk.
 
 Understand "please pass [something] to [someone]" or "please pass [something] to [someone] please" or "pass [something] to [someone] please" or "pass [something] to [someone]" as giving it to.
 
-Rule for supplying a missing second noun when giving something to someone:
-	now the second noun is Sam.
+Volume - Giving Things to Sam
+
+Understand the command "share" as "give".
+Understand "share [something] with [someone]" as giving it to.
+
+Understand "clear" and "clear [something]" as a mistake ("That's not a verb I recognize.")
+
+Rule for supplying a missing second noun when giving: now the second noun is Sam.
+
+Instead of giving the milk carton to Sam:
+	say "You pour the milk into Sam's cup. He picks up the cup and takes a big gulp. He grins at you.";
+	try winning;
+
+Check giving something to Sam (this is the can't give a person away rule):
+if the noun is Sam or the noun is the player, say "That's an odd thing to do." instead.
 	
-Before giving something to Sam:
-	if the noun is your glass:
-		say "He already has a cup. He would probably break it anyway." instead;
-	otherwise if the noun is the shirt:
-		try dropping the shirt instead;
-	otherwise if the noun is sam or the noun is the player:
-		say "That's an odd thing to do." instead;
-	otherwise if the noun is sam's cup:
-		say "He already has that." instead;
-	otherwise if the noun is the brownies or the noun is the brownie or the noun is the plate:
-		say "He doesn't need another brownie. He needs a glass of milk." instead;
-	otherwise if the noun is the milk:
-		say "You pour the milk into Sam's cup. He picks up the cup and takes a big gulp. He grins at you.";
-		try winning;
-	otherwise:
-		say "He doesn't need [the noun]." instead.
+Instead of giving something (called S) to Sam:
+	if S is:
+		-- the glass:
+		say "He already has a cup. He would probably break it anyway.";
+		-- the cup:
+		say "He already has that.";
+		-- the brownie:
+		say "He doesn't need another brownie. He needs a glass of milk.";
+		-- the plate of brownies:
+		try giving the brownie to Sam;
+		-- otherwise:
+		say "He doesn't need [the noun]."
 
-Instead of doing anything except examining to a picture:
-	say "You can't see any such thing.".
+Volume - Entering (Sitting) and Exiting (Standing)
 
+Instead of going down: try entering the chair.
 
-Instead of standing: try exiting.
+Instead of entering Sam: say "Sam pushes you away."
+Instead of entering the player: say "No matter how you twist and turn, you can't seem to manage that."
 
-Instead of standing on something:
-	If the noun is Sam:
-		say "You try to stand on Sam. He pushes you away.";
-	Otherwise if the noun is the player:
-		say "No matter how you twist and turn, you can't seem to manage that."
-                
+Instead of going up: try exiting.
+
+Rule for supplying a missing noun when entering: now the noun is the chair.
+Does the player mean entering the chair: it is very likely.
+Does the player mean entering Sam: it is very unlikely.
+
+Instead of entering the table: say "Don't do that. You might make a mess."
+
+Understand the command "sit" as something new.
+Understand "sit" and "sit on [something]" and "sit down" as entering.
+
 Instead of exiting:
 	say "You stand up and walk away. Sam throws his cup at you.";
 	try failing.
 
-Instead of sitting: try sitting on the chair.
-
-Instead of sitting on the chair:
-say "You are already sitting."
-
-Instead of casting xyzzy:
-say "A hollow voice says, 'Milk: it does a body good.'".
-
-
-
-Instead of looking under:
-	say "You don't find anything underneath [the noun].".
+Volume - Counting
 
 Counting nothing is an action applying to nothing.
 Understand "count" as counting nothing.
@@ -188,275 +184,259 @@ Understand "count" as counting nothing.
 Report counting nothing: 
 	say "You forget all about the brownies and break into an impromptu game of hide-and-seek.";
 	try failing.
-		
-Carry out counting something: 
-	if the noun is the brownies:
-		say "There are 69,105 brownies here.";
-	otherwise if the noun is Sam:
-		say "There's only one of him, thankfully.";
-	otherwise if the noun is the player:
-		say "You are a unique and special snowflake.";
-	otherwise:
-		say "There's just the one.".
-		
+
+Instead of counting the player, say "You are a unique and special snowflake."
+Instead of counting Sam, say "There's only one of him. Thankfully."
+Instead of counting the brownie: try counting the plate of brownies.
+Instead of counting the plate of brownies, say "The plate contains 69,105 brownies."
+Instead of counting something, say "There's just the one."
+        		
 Counting cups is an action applying to nothing.
 Understand "count glasses" or "count cups" as counting cups.
+Instead of counting cups, say "There are two: your glass and Sam's cup.".
 
-Instead of counting cups:
-say "There are two: your glass and Sam's cup.".
+Volume - Licking
 
-understand the command "eat" as something new.
-understand "eat [things]" as eating.
+Licking is an action applying to one thing.
+Understand "lick [something]" as licking.
 
-report eating something:
-say "You can't eat that!" instead.
+Instead of licking something: say "You pick up [if the noun is wearable]the edge of [end if][the noun], lick it, and put it back. Ew."
+
+Instead of licking the table: try licking the tablecloth.
+
+Instead of licking the player: say "You lick your arm. Sam just stares at you."
+
+Instead of licking sam: say "You try to lick Sam on the cheek. He kicks you in the shin."
+
+Volume - Eating
+
+Understand the command "eat" as something new.
+Understand "eat [something]" as eating.
+
+report eating something: say "You can't eat that!" instead.
         
 Understand "gnaw [something]" or "gnaw on [something]"as eating.
 Understand "chew [something]" or "chew on [something]"as eating.
 
-Does the player mean doing anything with the shirt: it is very unlikely.
-
 Does the player mean eating the brownie: it is very likely.
 
-Before eating:
-	If the noun is the brownies:
-		try taking the brownies instead;
-	otherwise if the noun is the brownie:
-		try taking the brownie instead;
-	otherwise if the noun is the shirt:
-		try dropping the shirt instead;
-	otherwise if the noun is the tablecloth:
-		say "You pick up the end of the tablecloth and gnaw on it. Sam giggles." instead;
-	otherwise if the noun is the table:
-		say "You gnaw on the edge of the table. You must really be hungry." instead;
-	otherwise if the noun is the player:
-		say "You gnaw on your arm. Sam giggles." instead;
-	otherwise if the noun is Sam:
-		say "You bite Sam's shoulder playfully. He slaps you away." instead;
-	otherwise if the noun is not a thing:
-		say "You must name something more substantial." instead;
-	otherwise if the noun is a picture:
-		say "You can't see any such thing." instead;
-	otherwise:
-		say "You pick up [the noun] and gnaw on it. Sam giggles." instead.
+Instead of eating the player, say "You gnaw on your arm. Sam giggles."
 
-Chapter - Throwing
+Procedural rule while eating something:
+ignore the carrying requirements rule.
 
-Does the player mean doing anything with the brownie: it is likely.
+Instead of eating something (called S):
+	if S is:
+		-- the brownie:
+		try taking the brownie;
+		-- the plate of brownies:
+		try taking the plate of brownies;
+		-- the table:
+		say "You gnaw on the edge of the table. You must really be hungry.";
+		-- Sam:
+		say "You bite Sam's shoulder. He yelps and slaps you away.";
+		-- otherwise:
+		say "You pick up [if the noun is wearable]the edge of the [end if][the noun] and gnaw on it. Sam giggles.".
+
+Volume - Throwing
 
 Procedural rule while throwing something at something: ignore the carrying requirements rule.
+
+Procedural rule while dropping something:
+ignore the carrying requirements rule;
+ignore the can't drop what's not held rule.
 
 Understand the command "throw" as something new.
 Throwing is an action applying to one thing.
 Understand "throw [something]" as throwing.
-Understand "toss [something]" as throwing.
-Understand "hurl [something]" as throwing.
-Report throwing: say "It's not nice to throw things!"
 
 Understand "throw [something] at [something]" as throwing it at.
-Instead of throwing something at Sam: try throwing the noun.
 
-Instead of throwing something at the table: try dropping the noun.
+Carry out throwing: try throwing the noun at Sam.
+Understand the command "toss" and "hurl" as "throw".
 
-Instead of throwing something (called S):
-	If S is Sam:
-		try taking Sam;
-	Otherwise if S is the player:
-		say "You hurl yourself at the wall. Sam just stares at you as you limp quietly back to your seat.";
-	Otherwise if S is the milk:
+Instead of throwing Sam at something: try taking Sam.
+
+Instead of throwing something at something: say "It's not nice to throw things!"
+
+Instead of throwing the player at something:
+	say "You hurl yourself past Sam at the wall. Sam just stares at you as you limp quietly back to your seat.";
+
+Instead of throwing something (called S) at Sam:
+	if S is:
+		-- the milk carton:
 		say "You pick up the carton of milk and throw it at Sam. Milk flies everywhere. Sam is too startled to cry.";
 		try failing;
-	Otherwise if S is the brownies or S is the plate:
+		-- the plate of brownies:
 		say "You throw the plate of brownies at Sam. Brownies fly everywhere and the plate shatters against the wall. You'd better clean up that mess before someone gets hurt.";
 		try failing;
-	Otherwise if S is your glass:
+		-- the glass:
 		say "You throw your glass at Sam. He ducks and it shatters against the wall. You'd better clean up that mess before someone gets hurt.";
 		try failing;
-	Otherwise if S is Sam's cup:
-		try taking Sam's cup;
-	Otherwise if S is the tablecloth:
+		-- the cup:
+		try taking the cup;
+		-- the tablecloth:
 		try taking the tablecloth;
-	Otherwise if S is the table:
-		say "You lift up your side of the table, spilling milk and brownies all over Sam. He's too shocked to say anything for a moment, and then he starts bawling.";
-		try failing;	
-	Otherwise if the noun is the shirt:
+		-- the table:
+		try taking the table;
+		-- the shirt:
 		try dropping the shirt;
-	Otherwise if S is the chair:
+		-- the chair:
 		say "Don't do that. Someone might get hurt.";	
-	Otherwise: [brownie]
-		say "You pick up [the S] and throw it at Sam. He catches it and tosses it back at you. It bounces off your shoulder.".
-
+		-- otherwise:
+		say "You pick up [the S] and throw it at Sam. He catches it and tosses it back at you. It bounces off your shoulder."
+		
 Instead of taking the table:
-	try throwing the table.
+say "You lift up your side of the table, spilling milk and brownies all over Sam. He's too shocked to say anything for a moment, and then he starts bawling.";
+try failing.
 
-Chapter - Interacting with People
+Understand the command "flip" as "throw".
+
+Volume - Smiling
+
+Smiling at is an action applying to one thing.
+Understand "smile at [something]" as smiling at.
+
+Rule for supplying a missing noun when smiling at: now the noun is Sam.
+
+Carry out smiling at something: say "You smile widely."
+
+Instead of smiling at Sam: say "You smile widely. Also wildly. Sam scowls back at you."
+
+Volume - Physical Interaction
 
 Cleaning is an action applying to one thing.
 Understand "clean [something]" as cleaning.
+Report cleaning: say "There is no need to clean that right now."
 
-Report cleaning:
-say "There is no need to clean that right now."
+Instead of cleaning Sam, say "You try to clean Sam's face, but he pushes you away."
 
-Instead of cleaning Sam:
-	say "You try to clean Sam's face, but he pushes you away."
+Instead of taking Sam, say "You try to pick up Sam. He squirms away.";
 
-Instead of taking Sam:
-	say "You try to pick up Sam. He squirms away.";
+Instead of poking the player, say "Ouch! That hurt."
+Instead of poking Sam, say "You give Sam a sharp poke. He screeches at you and slaps your hand away."
 
-Instead of touching or hugging Sam:
-	say "You try to hug Sam, but he pulls away.".
+Understand the command "tickle" as "touch".
+Instead of touching Sam: say "You reach across the table and tickle Sam. He squeals and flails at you."
+Instead of touching the player: say "You try to tickle yourself. You fail."
 
-Instead of poking Sam:
-	say "You give Sam a sharp poke. He screeches at you and slaps your hand away."
+Instead of hugging the player, say "You give yourself a hug. You feel better.".
+Instead of hugging Sam, say "You try to hug Sam, but he pulls away.".
 
-Instead of touching or hugging the player:
-	say "You give yourself a hug. You feel better.".
+Instead of kissing Sam, say "You smooch Sam on the cheek. He glares at you and wipes at his cheek.".
+Instead of kissing the player, say "You kiss the back of your hand. Sam gives you a confused look.".
 
-Instead of kissing Sam:
-	say "You smooch Sam on the cheek. He glares at you and wipes at his cheek.".
+Instead of attacking Sam, try throwing the brownie at Sam.
+Instead of attacking the player, try throwing the player at Sam.
 
-Instead of kissing the player:
-	say "You kiss the back of your hand. Sam gives you a confused look.".
+Volume - Milk
 
-Instead of attacking Sam:
-	try throwing the brownie.
+The milk carton is a fixed in place thing on the table.
+The description is "[one of]The carton reads 'Cowtown Dairy.' There's a drawing on the front of a cow grazing happily on some seaweed.[or]On the back is a photo of a sad-looking cat and the words 'Have you seen my C? Reward!!!'[cycling]".
 
-Instead of singing:
-	say "You hum a little tune. Sam actually smiles a little.".
+A picture is scenery and a kind of thing.
 
-Chapter - Milk
+The cow is a picture and part of the milk carton.
+The description is "[fixed letter spacing]         (__)[LINE BREAK]         (oo)[LINE BREAK]   /------\/[LINE BREAK]  / |    ||[LINE BREAK] *  /\---/\[LINE BREAK]    ~~   ~~[LINE BREAK][variable letter spacing]".
 
-The milk is a thing. It is on the table. It is fixed in place.
+The cat is a picture and part of the milk carton. The description is "[one of]It looks very sad.[or]Why would you want to see a picture of a sad cat?[or]=^..^=[cycling]"
 
-The printed name of the milk is "carton of milk". Understand "carton of milk" and "carton" as the milk. The description of the milk is "[one of]The carton reads 'Cowtown Dairy.' There's a drawing on the front of a cow grazing happily on some seaweed.[or]On the back is a photo of a sad-looking cat and the words 'Have you seen my C? Reward!!!'[cycling]".
+The letter c is a picture and part of the milk carton. The description is "It's missing.".
 
-A picture is a kind of thing. It is scenery.
-
-The cow is a picture. It is on the milk. The description of the cow is "[fixed letter spacing]         (__)[LINE BREAK]         (oo)[LINE BREAK]   /------\/[LINE BREAK]  / |    ||[LINE BREAK] *  /\---/\[LINE BREAK]    ~~   ~~[LINE BREAK][variable letter spacing]".
-
-The cat is a picture. It is on the milk. The description of the cat is "[one of]It looks very sad.[or]Why would you want to see a picture of a sad cat?[or]=^..^=[cycling]"
-
-The letter c is a picture. It is on the milk. Understand "c" as c. The description of the letter c is "It's missing.".
-
-Instead of looking under the milk:
+Instead of looking under the milk carton:
 	say "You pick up the milk and peek at the expiration date on the bottom. March 24. That's fine. 1992. Oh. You quickly put the milk back down.".
 
 Understand the command "read" as something new.
 Reading is an action applying to one thing.
 Understand "read [something]" as reading.
-Report reading:
-say "There is nothing there to read."
 
-Instead of reading the milk:
+Report reading: say "There is nothing there to read."
+
+Instead of reading the milk carton:
 	say "You glance at the nutritional facts. You're not really sure what all those numbers mean.".
 
 Understand the command "spill" as something new.
-Understand "spill [something]" as dropping.
+Understand the command "push" as something new.
+Understand the command "spill" and "push" and "push over" and "knock over" and "knock" as "drop".
 
-Instead of dropping the milk:
+Understand the command "pull" as something new.
+Understand the command "pull" as "take".
+
+Instead of dropping the milk carton:
 say "You knock over the milk. Sam bursts into tears.";
-       try failing.
+try failing.
 
-Before taking the milk:
+Before taking the milk carton:
        say "You pour the last of the milk into your glass. Sam looks like he's about to cry.";
 	try failing.
 
-Pouring is an action applying to one thing.
-Understand "pour" as pouring.
-Report pouring: say "You can't pour that."
+A fluid is a kind of thing. The milk carton is a fluid.
 
-Understand "pour [something] on/in [something]" as putting it on.
-        
-Does the player mean drinking the milk: it is very likely.
-Does the player mean pouring the milk: it is very likely.
+Pouring it onto is an action applying to two things.
 
-Instead of inserting the milk into something:
-	try putting the milk on the second noun instead.
+Understand "pour [fluid] in/on/into/onto [something]" as pouring it onto.
+Understand "dump [fluid] in/on/into/onto [something]" as pouring it onto.
 
-Instead of drinking the milk:
-	try pouring the milk.
-	
-Instead of pouring the milk:
-	try putting the milk on your glass.
+Check pouring something onto something:
+    if the noun is not a fluid, say "You can't pour [the noun]." instead;
+        if the noun is the second noun, say "You can hardly pour [the noun] onto itself." instead;
 
-Instead of putting the milk on something:
-	if the second noun is your glass:
-		try taking the milk;
-	otherwise if the second noun is sam's cup:                
-		try giving the milk to sam;        
-	otherwise if the second noun is the milk:
-		say "That's an odd thing to do.";
+Carry out pouring it onto:
+say "You pour [noun] onto [second noun]."
+
+Rule for supplying a missing noun when pouring: now the noun is the milk carton.
+
+Does the player mean pouring something onto the cup: it is very likely.
+
+Rule for supplying a missing noun when drinking: now the noun is the milk carton.
+
+Instead of drinking the milk carton: try taking the milk carton.
+
+Instead of pouring the milk carton onto something:
+	if the second noun is the glass:
+		try taking the milk carton;
+	otherwise if the second noun is the cup:                
+		try giving the milk carton to sam;        
 	otherwise:               
 		say "You pick up the carton of milk and dump it all over [the second noun]. Sam shrieks angrily.";                
 		try failing.
 
-Instead of asking Sam for the milk:
+Instead of asking Sam for the milk carton:
 	say "Sam just glares at you. He picks up his cup and bangs it on the table.".
 
-Instead of asking Sam for sam's cup:
-	try asking Sam for the milk.
+Instead of asking Sam for the cup:
+try asking Sam for the milk carton.
+        
+Volume - Brownies
 
-Chapter - Brownies
+The plate of brownies is a supporter on the table.
+Rule for printing the name of plate of brownies:
+say "plate of brownies";
+omit contents in listing.
+Instead of examining the plate of brownies: try examining the brownie.
 
-A treat is a kind of thing.
+The brownie is a fixed in place thing on the plate of brownies. The description is "Your mother makes the best brownies ever. These are chocolate fudge with chocolate chips and chocolate icing."
 
-The plate is a supporter. It is on the table. The printed name is "plate of brownies". Understand "plate of brownies" as the plate. 
-Rule for printing the name of the plate: say "plate of brownies"; omit contents in listing.
-Instead of examining the plate: try examining the brownies.
-
-The brownies is a treat. It is plural-named. It is on the plate. It is fixed in place. The description is "Your mother makes the best brownies ever. These are chocolate fudge with chocolate chips and chocolate icing.".
-
-The brownie is a treat. It is on the plate. It is fixed in place. Instead of examining the brownie: try examining the brownies.
-
-Instead of attacking the plate:
-	try throwing the plate.
-
-Instead of taking the plate:
-	try taking brownies.
-	
-Instead of taking the brownies:
-	say "Don't be greedy! Save some for your brother."; 
+Instead of taking the plate of brownies:
+say "You take the entire plate of brownies. Sam screams and jumps onto the table, knocking over the carton of milk. It spills all over the floor.";
+try failing.
 
 Instead of taking the brownie:
 	say "You reach across the table to grab a brownie. Whoops. You bump the carton of milk and it spills all over the table.";
 	try failing.
 	
-Chapter - Glasses
+Volume - Glasses
 
-A cup is a kind of thing. The plural of cup is cups. Understand "cups" or "glasses" as cup.
+A cup-item is a kind of thing.
 
-Your glass is a cup. It is on the table. It is fixed in place. The description is "It used to be a jelly jar. There's a wrap-around scene of a panda with an easel and a parade of penguins.".
-Understand "my glass" or "my cup" or "your cup" or "your glass" as your glass.
+A glass is a fixed in place cup-item on the table. The indefinite article is "your". The description is "It used to be a jelly jar. There's a wrap-around scene of a panda with an easel and a parade of penguins." Understand "my glass" or "my cup" as the glass.
 
-Sam's cup is a cup. It is on the table. It is fixed in place. The description is "Sam's plastic cup has a robot on the front. It's empty.".
-Understand "his cup" or "Sam's glass" or "his glass" as Sam's cup.
+A cup is a fixed in place cup-item on the table. The indefinite article is "Sam's". The description is "Sam's plastic cup has a robot on the front. It's empty." Understand "his cup" or "Sam's cup" as the cup.
 
-Before listing contents of the table: group cups together.
-Rule for grouping together cups: say "two cups".
+Instead of taking the glass, say "You pick up your empty glass, peer into it, and immediately put it back down.".
+Instead of taking the cup, say "Sam grabs his cup protectively.".
 
-[TODO: is this really the best way to make this work?]
-After reading a command: 
-	let N be indexed text; 
-	let N be the player's command; 
-	replace the regular expression "," in N with "";
-	replace the regular expression "his glass" in N with "Sam's glass";         
-	replace the regular expression "my cup" in N with "your cup";
-	change the text of the player's command to N. 
-
-
-Instead of taking your glass:
-say "You pick up your empty glass, peer into it, and immediately put it back down.".
-
-Instead of taking Sam's cup:
-say "Sam grabs his cup protectively.".
-
-Instead of attacking your glass:
-try throwing your glass.
-
-Instead of attacking Sam's cup:
-try taking Sam's cup.
-
-Chapter - End Game
+Volume - End Game
 
 Carry out failing:    
 	say "[LINE BREAK][BOLD TYPE]*** You did not pass the milk. ***[ROMAN TYPE]";
@@ -466,9 +446,9 @@ Carry out winning:
         end the story finally saying "You passed the milk.".
 	
 Rule for amusing a victorious player:
-	say "[LINE BREAK]Have you tried...	[LINE BREAK]- looking more closely at the milk carton?[LINE BREAK]--- looking at it twice?[LINE BREAK]--- reading it?[LINE BREAK]--- looking under it?[LINE BREAK]--- looking at the pictures?[LINE BREAK]- examining your surroundings?[LINE BREAK]- interacting with Sam?[LINE BREAK]- vocalizing?[LINE BREAK]- throwing, eating and counting various things?[LINE BREAK]- running with scissors?[LINE BREAK]- finding all twelve endings?"
+	say "[LINE BREAK]Have you tried...	[LINE BREAK]- looking more closely at the milk carton?[LINE BREAK]--- looking at it twice?[LINE BREAK]--- reading it?[LINE BREAK]--- looking under it?[LINE BREAK]--- looking at the pictures?[LINE BREAK]- examining your surroundings?[LINE BREAK]- interacting with Sam?[LINE BREAK]- vocalizing?[LINE BREAK]- throwing, eating and counting various things?[LINE BREAK]- running with scissors?[LINE BREAK]- finding all sixteen endings?"
 
 Rule for displaying endings:
-	say "[LINE BREAK]- Passing the milk[LINE BREAK]- Not passing the milk[LINE BREAK]- Leaving the room[LINE BREAK]- Counting nothing[LINE BREAK]- Taking a brownie[LINE BREAK]- Pouring the milk on something[LINE BREAK]- Spilling the milk[LINE BREAK]- Taking the tablecloth[LINE BREAK]- Taking the table[LINE BREAK]- Throwing the milk at Sam[LINE BREAK]- Throwing the plate at Sam[LINE BREAK]- Throwing the glass at Sam[LINE BREAK]".
+	say "[LINE BREAK]- Passing the milk[LINE BREAK]- Not passing the milk[LINE BREAK]- Leaving the room[LINE BREAK]- Counting nothing[LINE BREAK]- Taking a brownie[LINE BREAK]- Taking all the brownies[LINE BREAK]- Pouring the milk on something[LINE BREAK]- Spilling the milk[LINE BREAK]- Taking the table[LINE BREAK]- Taking the tablecloth[LINE BREAK]- Wearing the tablecloth[LINE BREAK]- Throwing the milk at Sam[LINE BREAK]- Throwing the plate at Sam[LINE BREAK]- Throwing the glass at Sam[LINE BREAK]- Throwing away the brownies[LINE BREAK]- Throwing away the milk[LINE BREAK]".
 	
 	
