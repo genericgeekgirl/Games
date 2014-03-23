@@ -1,6 +1,6 @@
 ! Blurb file created by Inform build 6G60
 
-status "/usr/share/gnome-inform7/Extensions/Reserved/CblorbModel.html" "/home/adri/Games/Interactive Fiction/Adri/i found a new friend/i found a new friend.inform/Build/StatusCblorb.html"
+status "/usr/local/share/inform7/Inform7/Extensions/Reserved/CblorbModel.html" "/home/adri/Games/Interactive Fiction/Adri/i found a new friend/i found a new friend.inform/Build/StatusCblorb.html"
 
 
 ! Identification
@@ -13,10 +13,10 @@ release to "/home/adri/Games/Interactive Fiction/Adri/i found a new friend/i fou
 storyfile leafname "Fingertips- I Found a New Frien.zblorb"
 storyfile "/home/adri/Games/Interactive Fiction/Adri/i found a new friend/i found a new friend.inform/Build/output.z8" include
 ifiction "/home/adri/Games/Interactive Fiction/Adri/i found a new friend/i found a new friend.inform/Metadata.iFiction" include
-cover "/usr/share/gnome-inform7/Extensions/Reserved/DefaultCover.jpg"
-picture 1 "/usr/share/gnome-inform7/Extensions/Reserved/DefaultCover.jpg"
-release file "/usr/share/gnome-inform7/Extensions/Reserved/Cover.jpg"
-release file "/usr/share/gnome-inform7/Extensions/Reserved/Small Cover.jpg"
+cover "/usr/local/share/inform7/Inform7/Extensions/Reserved/DefaultCover.jpg"
+picture 1 "/usr/local/share/inform7/Inform7/Extensions/Reserved/DefaultCover.jpg"
+release file "/usr/local/share/inform7/Inform7/Extensions/Reserved/Cover.jpg"
+release file "/usr/local/share/inform7/Inform7/Extensions/Reserved/Small Cover.jpg"
 
 ! Placeholder variables
 
@@ -35,7 +35,7 @@ placeholder [BLURB] = "A short piece of interactive fiction inspired by They Mig
 placeholder [ENCODEDSTORYFILE] = "Fingertips- I Found a New Frien.zblorb.js"
 template path "/home/adri/Games/Interactive Fiction/Adri/i found a new friend/i found a new friend Materials/Templates"
 template path "/home/adri/Inform/Templates"
-template path "/usr/share/gnome-inform7/Extensions/Reserved/Templates"
+template path "/usr/local/share/inform7/Inform7/Extensions/Reserved/Templates"
 interpreter "Parchment" "z"
 base64 "/home/adri/Games/Interactive Fiction/Adri/i found a new friend/i found a new friend.inform/Build/output.z8" to "/home/adri/Games/Interactive Fiction/Adri/i found a new friend/i found a new friend Materials/Release/interpreter/Fingertips- I Found a New Frien.zblorb.js"
 
@@ -43,7 +43,7 @@ base64 "/home/adri/Games/Interactive Fiction/Adri/i found a new friend/i found a
 
 template path "/home/adri/Games/Interactive Fiction/Adri/i found a new friend/i found a new friend Materials/Templates"
 template path "/home/adri/Inform/Templates"
-template path "/usr/share/gnome-inform7/Extensions/Reserved/Templates"
+template path "/usr/local/share/inform7/Inform7/Extensions/Reserved/Templates"
 css
 website "Genericgeekgirl"
 status instruction ||&nbsp;<a href="source:story.ni#line11"><img border=0 src=inform:/Reveal.png></a>||

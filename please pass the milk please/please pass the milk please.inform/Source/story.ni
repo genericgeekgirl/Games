@@ -252,15 +252,17 @@ Understand "throw [something]" as throwing.
 
 Understand "throw [something] at [something]" as throwing it at.
 
-Carry out throwing: try throwing the noun at Sam.
+Instead of throwing something: try throwing the noun at Sam.
+
+Instead of throwing the player at Sam:
+	say "You hurl yourself past Sam at the wall. Sam just stares at you as you limp quietly back to your seat.";
+
 Understand the command "toss" and "hurl" as "throw".
 
 Instead of throwing Sam at something: try taking Sam.
+Instead of throwing Sam at Sam: try taking Sam.
 
 Instead of throwing something at something: say "It's not nice to throw things!"
-
-Instead of throwing the player at something:
-	say "You hurl yourself past Sam at the wall. Sam just stares at you as you limp quietly back to your seat.";
 
 Instead of throwing something (called S) at Sam:
 	if S is:
@@ -437,6 +439,18 @@ Instead of taking the glass, say "You pick up your empty glass, peer into it, an
 Instead of taking the cup, say "Sam grabs his cup protectively.".
 
 Volume - End Game
+
+Winning is an action applying to nothing.
+
+Failing is an action applying to nothing.
+
+When play ends when the story has not ended finally:
+	resume the story;
+	say "[paragraph break]Please press any key, please.[paragraph break]";
+	wait for any key;
+	clear the screen;
+	change turn count to 1;
+	try looking.
 
 Carry out failing:    
 	say "[LINE BREAK][BOLD TYPE]*** You did not pass the milk. ***[ROMAN TYPE]";

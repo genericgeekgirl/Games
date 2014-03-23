@@ -44,6 +44,12 @@ Understand "make [bed]" as making the bed.
 
 Report making the bed: say "You made the bed this morning when you got up."
 
+Standing on is an action applying to one thing.
+understand "stand on [something]" as standing on.
+understand "stand on top of [something]" as standing on.
+understand "step on [something]" as standing on.
+Report standing on: say "You can't stand on that."
+
 Instead of standing on the bed: say "Be careful. You might fall."
 
 Instead of jumping on the bed:
@@ -224,7 +230,8 @@ Before giving something to the pillow: say "That's an extremely odd thing to do.
 Before showing something to the pillow: say "That's an extremely odd thing to do." instead.
 
 Before entering the pillow: try attacking the pillow instead.
-Instead of sitting on or standing on the pillow: try attacking the pillow.
+Instead of sitting on something: try entering the noun.
+Instead of standing on something: try entering the noun.
 Instead of pushing the pillow: try attacking the pillow.
 
 Instead of attacking the pillow:
@@ -378,6 +385,23 @@ Before eating something: say "That is clearly not edible." instead.
 
 Chapter - Sitting
 
+Understand the command "sit" as something new.
+Sitting is an action applying to nothing.
+Understand "sit" and "sit down" as sitting.
+
+Sitting on is an action applying to one thing.
+understand "sit on [something]" as sitting on.
+understand "sit on top of [something]" as sitting on.
+Report sitting on: say "You can't sit on that."
+
+Understand the command "stand" as something new.
+Standing is an action applying to nothing.
+understand "stand" and "stand up" as standing.
+
+Instead of going down: try sitting.
+
+Instead of going up: try standing.
+
 Does the player mean sitting on the bed: it is likely.
 
 A person can be sitting down.
@@ -440,6 +464,18 @@ Book - End Game
 
 Chapter - Resetting the Game
 
+Winning is an action applying to nothing.
+
+Failing is an action applying to nothing.
+
+When play ends when the story has not ended finally:
+	resume the story;
+	say "[paragraph break]i found a new key press[paragraph break]";
+	wait for any key;
+	clear the screen;
+	change turn count to 1;
+	try looking.
+	
 Carry out failing:
 	say "[LINE BREAK][BOLD TYPE]*** You did not find a new friend. ***[ROMAN TYPE]";
 	end the story.
