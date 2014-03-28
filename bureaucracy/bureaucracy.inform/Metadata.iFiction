@@ -6,7 +6,7 @@
             <format>glulx</format>
         </identification>
         <bibliographic>
-            <title>Bureaucracy</title>
+            <title>Bureaucrocy</title>
             <author>Adri</author>
             <headline>A boring tale about paperwork</headline>
             <genre>slice of life</genre>
@@ -18,7 +18,7 @@
         <releases>
             <attached>
                 <release>
-                    <releasedate>2014-03-27</releasedate>
+                    <releasedate>2014-03-28</releasedate>
                     <version>1</version>
                     <compiler>Inform 7</compiler>
                     <compilerversion>6G60</compilerversion>
@@ -28,10 +28,10 @@
         <colophon>
             <generator>Inform 7</generator>
             <generatorversion>6G60</generatorversion>
-            <originated>2014-03-27</originated>
+            <originated>2014-03-28</originated>
         </colophon>
         <glulx>
-            <serial>140327</serial>
+            <serial>140328</serial>
             <release>1</release>
             <compiler>Inform 7 build 6G60</compiler>
         </glulx>

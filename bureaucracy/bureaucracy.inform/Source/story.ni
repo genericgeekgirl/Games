@@ -1,4 +1,4 @@
-"Bureaucracy" by "Adri".
+"Bureaucrocy" by "Adri".
 
 The story creation year is 2014.
 The release number is 1.
@@ -6,7 +6,8 @@ The story headline is "A boring tale about paperwork".
 The story genre is "slice of life".
 The story description is "[story title] is based on a scene from [italic type]Glitch[roman type]"
 
-[Release along with cover art and an interpreter.]
+[Release along with cover art, an interpreter and a "Genericgeekgirl" website.]
+Release along with the "Quixe" interpreter.
 
 Volume - Basic Setup
 
@@ -36,7 +37,7 @@ Book - Parsing Commands
 Requesting the about text is an action out of world.
 Understand "about" or "credits" as requesting the about text.
 
-Carry out requesting the about text: say "[story description]."
+Carry out requesting the about text: say "[story description]. It has not been tested. Play at your own risk. (And send me feedback and transcripts.) Thanks (so far) to Andrew Plotkin who found a pretty serious bug just minutes after it went into beta."
 
 Casting xyzzy is an action out of world.
 Understand "xyzzy" or "say xyzzy" as casting xyzzy.
@@ -67,11 +68,22 @@ Gregarious Grange is a room. "The entrance to the subway is down a flight of sta
 
 Bureaucratic Hall is a room. "A sign proclaims this room to be the 'Department of Administrative Affairs - Ministry of Departments'. To the left is a waiting area with a water cooler and a bunch of hard, plastic orange chairs. To the right is a counter, behind which is a Bureaucroc. A sign reads 'Please approach the counter for assistance.'"
 
-Bureaucratic Hall is inside from Gregarious Grange.
+The BHDoor is an open unopenable door and scenery. It is inside from Gregarious Grange and outside from Bureaucratic Hall.
+Understand "Bureaucratic Hall" and "Hall" as BHDoor.
+Instead of examining the BHDoor when the location is Gregarious Grange: 
+say "It's a small squat building where the Bureaucrocs work."
+Instead of examining the BHDoor when the location is Bureaucratic Hall: try looking.
 
 Subway Station is a room. "This is the subway station below Gregarious Grange, Groddle Meadow. A flight of stairs leads up to the street."
 
-Gregarious Grange is above Subway Station. 
+The SSDoor is an open unopenable door and scenery. It is up from Subway Station and down from Gregarious Grange.
+
+Understand "Subway Station" and "Station" as SSDoor.
+Understand "Subway" as SSDoor when the location is Gregarious Grange.
+Instead of examining the SSDoor when the location is Gregarious Grange:
+say "It's the entrance to the Gregarious Grange Subway Station."
+Instead of examining the SSDoor when the location is Subway Station:
+try looking.
 
 Book - Chair
 
@@ -208,7 +220,7 @@ Volume - Paperwork
 
 Book - Card-Carrying Qualification
 
-The Qualification is a thing. The printed name is "Card-Carrying Qualification". Understand "Card-Carrying Qualification" as qualification. The description is "This is the most basic, entry-level, bureaucratic item of all. Being qualified to carry cards is a prerequisite to becoming the sort of person who can have [Papers] at all, let alone [Papers] which are in order."
+Qualification is a thing. The printed name is "Card-Carrying Qualification". Understand "Card-Carrying Qualification" as qualification. The description is "This is the most basic, entry-level, bureaucratic item of all. Being qualified to carry cards is a prerequisite to becoming the sort of person who can have [Papers] at all, let alone [Papers] which are in order."The indefinite article is "a".
 
 Item is a thing that varies. Item is Qualification.
 Cost is a number that varies. Cost is 50.
@@ -287,7 +299,7 @@ The description of the player is "You are a Glitch named [player's name]. You we
 
 Currants is a number that varies. Currants is 200.
 
-A currant is a thing carried by the player. The description is "Currants make up the local currency." Understand "currants" as currant. The printed name is "[currants] currants".
+Currant is a thing carried by the player. The description is "Currants make up the local currency." Understand "currants" as currant. The printed name is "[currants] currants".
 
 Book - Name
 
@@ -316,7 +328,7 @@ Rule for constructing the status line when collecting names: do nothing.
 
 Volume - Bureaucroc
 
-A bureaucroc is a person and scenery in the Bureaucratic Hall. The bureaucroc can be helping or not helping.
+A bureaucroc is a person and scenery in the Bureaucratic Hall. The bureaucroc can be helping or not helping. Understand "croc" as bureaucroc.
 The description is "While this [Bureaucroc] can't be described as faceless, given the presence of a face, the fact that you can't tell any of them apart renders its face basically unnecessary. Charged with the granting (or not) of permits, this is a world of red tape and frustration in an ill-fitting suit, basically."
 
 Bureaucroc_name is an indexed text that varies.
@@ -328,8 +340,8 @@ to say bname: say "[one of]Smithe[or]Wigglesbottom[or]Apfer[or]Naraiwaddleappali
 Volume - Helper
 
 Before going to the Subway Station for the second time:
-say "As you make your way back down to the Subway Station, a Bureaucroc corners you on the stairs. He whispers, 'Psssst. Here'sss the deal. Getting your Card Carrying Qualification is the first step in the Bureaucratic Artsss. Yesss, and once you have it, you are on your way to being able to obtain Your Papersss (and all sorts of licenses and permits). It used to be you could acquire the bureaucratic documentsss directly from a friend--Oh, it'sss perfectly legal, mind you--but seemsss like you're the only one around. You'll have to go the official route and deal with the red tape. Head over to the Bureaucratic Hall on Gregariousss Grange and talk to one of my friendsss there. You'll get what you need.' And then he disappears as quickly as he appeared.[paragraph break]That was weird.";
-now the bureaucroc is helping.
+		say "As you make your way back down to the Subway Station, a Bureaucroc corners you on the stairs. He whispers, 'Psssst. Here'sss the deal. Getting your Card Carrying Qualification is the first step in the Bureaucratic Artsss. Yesss, and once you have it, you are on your way to being able to obtain Your Papersss (and all sorts of licenses and permits). It used to be you could acquire the bureaucratic documentsss directly from a friend--Oh, it'sss perfectly legal, mind you--but seemsss like you're the only one around. You'll have to go the official route and deal with the red tape. Head over to the Bureaucratic Hall on Gregariousss Grange and talk to one of my friendsss there. You'll get what you need.' And then he disappears as quickly as he appeared.[paragraph break]That was weird.";
+		now the bureaucroc is helping.
 
 Volume - Scenes
 
@@ -341,7 +353,9 @@ Book - Initial Approach
 
 Free to Leave is a recurring scene.
 Free to leave begins when Bureaucracy begins.
-Free to leave ends when approaching.
+Free to leave ends when ready is 1.
+
+Ready is a number that varies. Ready is 0.
 
 Approaching is an action applying to one thing.
 Understand "approach [counter]" and "approach [bureaucroc]" and "talk to [bureaucroc]" and "speak to [bureaucroc]" as approaching.
@@ -357,11 +371,12 @@ Check approaching (this is the nothing left to do rule):
 		say "[The Bureaucroc] says, 'Hmmm. I see your lips moving, but I don't understand the words. Maybe come back another time?'" instead.
 
 Carry out approaching:
+	now ready is 1;
 	if Limbo is happening:
 		if the player is on the chair, try silently standing;
 		now step is 1;
 		now bureaucroc_name is "[btitle] [bname]";
-		say "[The Bureaucroc] says, '[one of][player's name], as I understand, you are requesting [a item]. You will have to speak to [bureaucroc_name] about that. Please wait a moment[or]I understand you're hoping to attain [a item], [player's name]. That's a matter for [bureaucroc_name]. Let me find out if they're in the office this week[or]So you're requesting [a item] are you, [player's name]? [bureaucroc_name] is the official you need to speak to. Please bear with me a moment[or][player's name], your request for [a item] will have to be passed along to the correct department. Please wait while I ascertain the availability of [bureaucroc_name][or][player's name]? If you are seeking [a item], you must speak to [bureaucroc_name]. Please wait while I see if they're taking appointments today[or]You wish to be granted [a item] I understand, [player's name]. That is a decision for [bureaucroc_name], if they're in today. Bear with me please[at random].' Then he turns and shuffles away.";
+		say "[The Bureaucroc] says, '[one of][player's name], as I understand, you are requesting [the item]. You will have to speak to [bureaucroc_name] about that. Please wait a moment[or]I understand you're hoping to attain [the item], [player's name]. That's a matter for [bureaucroc_name]. Let me find out if they're in the office this week[or]So you're requesting [the item] are you, [player's name]? [bureaucroc_name] is the official you need to speak to. Please bear with me a moment[or][player's name], your request for [the item] will have to be passed along to the correct department. Please wait while I ascertain the availability of [bureaucroc_name][or][player's name]? If you are seeking [the item], you must speak to [bureaucroc_name]. Please wait while I see if they're taking appointments today[or]You wish to be granted [the item] I understand, [player's name]. That is a decision for [bureaucroc_name], if they're in today. Bear with me please[at random].' Then he turns and shuffles away.";
 	otherwise:
 		say "[A Bureaucroc] says, 'We will be with you as soon as possible. Now please sit down and wait.' He then proceeds to ignore you."
 
@@ -420,7 +435,7 @@ Instead of doing anything other than waiting or examining or looking when step i
 say "Don't move. Just wait."
 
 Instead of waiting or examining or looking when step is 1:
-say "Another [Bureaucroc], presumably [bureaucroc_name], approaches the counter. '[one of]Let's see here. You are interested in obtaining [a item], correct[or]I understand you're here to procure yourself [a item], is that right[or]What's this, then? You're hoping to acquire [a item], correct[or]I'm led to believe you're interested in receiving [a item], is that correct[or]What do we have here, then? I see. So, it's [a item] you're after, is it[or]Right then, let's see... You're here hoping to procure [a item], are you[at random]?' He stares intently at you.";
+say "Another [Bureaucroc], presumably [bureaucroc_name], approaches the counter. '[one of]Let's see here. You are interested in obtaining [the item], correct[or]I understand you're here to procure yourself [the item], is that right[or]What's this, then? You're hoping to acquire [the item], correct[or]I'm led to believe you're interested in receiving [the item], is that correct[or]What do we have here, then? I see. So, it's [the item] you're after, is it[or]Right then, let's see... You're here hoping to procure [the item], are you[at random]?' He stares intently at you.";
 ask a closed question, in yes/no mode.
 
 Answer one and answer two are indexed texts that vary.
@@ -449,7 +464,7 @@ A menu question rule (this is the random question rule):
 		say "[The Bureaucroc] says, '[one of]I see. Perhaps you'd better talk to [bureaucroc_name] about this[or]Interesting. Perhaps you'd better talk to [bureaucroc_name] about this[or]Ah. In that case, you'll need to speak with [bureaucroc_name], this is outside my remit now[or]I see. It seems you'd be better off speaking to [bureaucroc_name] about this after all[or]Right. In that case, I think you'd better go speak to [bureaucroc_name] on this matter[or]Interesting. I believe the department you're looking for is that of [bureaucroc_name]. Good day[at random].' [The Bureaucroc] walks away without another word.";
 		now step is 1;
 	otherwise: 
-		say "[The Bureaucroc] nods and says, '[one of]Very well. The fee is [cost] currants. We only accept cash[or]Acceptable. The fee is [cost] currants. Cash up front, please[or]That will do. Your fee is [cost] currants. Cash only[or]Excellent. The bureau charges [cost] currants. Cash only, I'm afraid[or]Very well. In that case, the fee is [cost] currants, and we only take cash[or]I'll take that. The fee is [cost] currants, and I'll take that, as well. In cash[at random].'[paragraph break]You count out a pile of currants, and [The Bureaucroc] hands over [a item].[paragraph break]'Thank you for your business. To conduct another transaction, you must exit and re-enter the Hall.'";
+		say "[The Bureaucroc] nods and says, '[one of]Very well. The fee is [cost] currants. We only accept cash[or]Acceptable. The fee is [cost] currants. Cash up front, please[or]That will do. Your fee is [cost] currants. Cash only[or]Excellent. The bureau charges [cost] currants. Cash only, I'm afraid[or]Very well. In that case, the fee is [cost] currants, and we only take cash[or]I'll take that. The fee is [cost] currants, and I'll take that, as well. In cash[at random].'[paragraph break]You count out a pile of currants, and [the Bureaucroc] hands over [the item].[paragraph break]'Thank you for your business. To conduct another transaction, you must exit and re-enter the Hall.'";
 		decrease currants by cost;
 		now the player carries item;
 		now the bureaucroc is not helping;
@@ -494,7 +509,7 @@ say "[try-again]."
         
 Volume - Testing
 
-Test intro with "up/down/up/down/up/in/approach".
+Test intro with "up/in/out/down/up/in/approach".
 Test wait with "sit/z/z/z/z/approach/z/y/1".
 Test qual with "out/activate/learn/in/approach".
 Test paper with "take pen/complete/down/buy ticket".

@@ -1,13 +1,2251 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Skein rootNode="node-0x209d180" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+<Skein rootNode="node-0x25521d0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>GNOME Inform 7</generator>
-  <activeNode nodeId="node-0x209d180"/>
-  <item nodeId="node-0x209d180">
+  <activeNode nodeId="node-0x26018c0"/>
+  <item nodeId="node-0x25521d0">
     <command xml:space="preserve">- start -</command>
-    <result xml:space="preserve"></result>
+    <result xml:space="preserve">
+
+
+Bureaucrocy
+A boring tale about paperwork by Adri
+Release 1 / Serial number 140328 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
+
+What is your name? &gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
-    <changed>NO</changed>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2552330"/>
+      <child nodeId="node-0x2f0fb60"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2552330">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">
+I don&apos;t know how to pronounce that. Your name will be Alexandra.
+
+Bureaucrocy
+A boring tale about paperwork by Adri
+Release 1 / Serial number 140328 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
+
+Subway Station
+This is the subway station below Gregarious Grange, Groddle Meadow. A flight of stairs leads up to the street.
+
+You can see a ticket dispenser here.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2552490"/>
+      <child nodeId="node-0x2e96e30"/>
+      <child nodeId="node-0x2ee3a30"/>
+      <child nodeId="node-0x26011e0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2552490">
+    <command xml:space="preserve">up</command>
+    <result xml:space="preserve">
+Gregarious Grange
+The entrance to the subway is down a flight of stairs. You can also go inside Bureaucratic Hall.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x25525f0"/>
+      <child nodeId="node-0x2e96b70"/>
+    </children>
+  </item>
+  <item nodeId="node-0x25525f0">
+    <command xml:space="preserve">in</command>
+    <result xml:space="preserve">
+Bureaucratic Hall
+A sign proclaims this room to be the &quot;Department of Administrative Affairs - Ministry of Departments&quot;. To the left is a waiting area with a water cooler and a bunch of hard, plastic orange chairs. To the right is a counter, behind which is a Bureaucroc. A sign reads &quot;Please approach the counter for assistance.&quot;
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2552750"/>
+      <child nodeId="node-0x2e2d1b0"/>
+      <child nodeId="node-0x2e961d0"/>
+      <child nodeId="node-0x2e965f0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2552750">
+    <command xml:space="preserve">approach counter</command>
+    <result xml:space="preserve">The bureaucroc says, &quot;Go away. We don&apos;t have time to waste on people who have not learned any Bureaucratic Arts.&quot;
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x25528b0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x25528b0">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2552a10"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2552a10">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2552b70"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2552b70">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2552cd0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2552cd0">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2552e30"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2552e30">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e06010"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e06010">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e06170"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e06170">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e062d0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e062d0">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e06430"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e06430">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e06590"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e06590">
+    <command xml:space="preserve">sit</command>
+    <result xml:space="preserve">(on the chair)
+You take a seat on one of their uncomfortable plastic chairs.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e066f0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e066f0">
+    <command xml:space="preserve">up</command>
+    <result xml:space="preserve">You can&apos;t do anything while waiting. Just wait.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e06850"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e06850">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e069b0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e069b0">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e06b10"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e06b10">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e06c70"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e06c70">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+A bureaucroc calls out, &quot;Alexandra! You&apos;re up!&quot;
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e06dd0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e06dd0">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+The bureaucroc calls out again, &quot;Did you hear me, Alexandra? Come take your turn, or lose your turn. Your choice.&quot;
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e2d050"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e2d050">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">&gt;WAIT
+Time passes.
+
+The bureaucroc calls out again, &quot;Did you want something, Alexandra? Now is your chance. Use it or lose it.&quot;
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2e2d1b0">
+    <command xml:space="preserve">approach</command>
+    <result xml:space="preserve">(the counter)
+The bureaucroc says, &quot;Go away. We don&apos;t have time to waste on people who have not learned any Bureaucratic Arts.&quot;
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e2d310"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e2d310">
+    <command xml:space="preserve">sit</command>
+    <result xml:space="preserve">(on the chair)
+You would rather not sit in one of those chairs unless you absolutely have to.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e2d470"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e2d470">
+    <command xml:space="preserve">stand</command>
+    <result xml:space="preserve">You are already standing.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e2d5d0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e2d5d0">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e2d730"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e2d730">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e2d890"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e2d890">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e2d9f0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e2d9f0">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e2db50"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e2db50">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e2dcb0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e2dcb0">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e2de10"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e2de10">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">&gt;WAIT
+Time passes.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e52020"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e52020">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">&gt;WAIT
+Time passes.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e52180"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e52180">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e522e0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e522e0">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e52440"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e52440">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e525a0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e525a0">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e52700"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e52700">
+    <command xml:space="preserve">restart</command>
+    <result xml:space="preserve">Are you sure you want to restart? </result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e52860"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e52860">
+    <command xml:space="preserve">y</command>
+    <result xml:space="preserve">
+
+
+Bureaucrocy
+A boring tale about paperwork by Adri
+Release 1 / Serial number 140327 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
+
+What is your name? &gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e529c0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e529c0">
+    <command xml:space="preserve">test intro</command>
+    <result xml:space="preserve">
+I don&apos;t know how to pronounce that. Your name will be Alexandra.
+
+Bureaucrocy
+A boring tale about paperwork by Adri
+Release 1 / Serial number 140327 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
+
+Subway Station
+This is the subway station below Gregarious Grange, Groddle Meadow. A flight of stairs leads up to the street.
+
+You can see a ticket dispenser here.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e52b20"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e52b20">
+    <command xml:space="preserve">test wait</command>
+    <result xml:space="preserve">(Testing.)
+
+&gt;[1] sit
+(on the 200 currants)
+That&apos;s not something you can sit down on.
+
+&gt;[2] z
+Time passes.
+
+&gt;[3] z
+Time passes.
+
+&gt;[4] z
+Time passes.
+
+&gt;[5] z
+Time passes.
+
+&gt;[6] approach
+If you can see an object, you can usually just interact with it directly without worrying about your position. Try a command like EXAMINE TICKET DISPENSER for a closer look at something, LOOK to get a new description of this location, or a direction like UP (or U) to move to a different location.
+
+To stop these messages entirely, type NOVICE OFF.
+
+&gt;[7] z
+Time passes.
+
+&gt;[8] y
+That was a rhetorical question.
+
+&gt;[9] 1
+That&apos;s not a verb I recognize.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e52c80"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e52c80">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">&gt;WAIT
+Time passes.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e52de0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e52de0">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">&gt;WAIT
+Time passes.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e7a000"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e7a000">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">&gt;WAIT
+Time passes.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e7a160"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e7a160">
+    <command xml:space="preserve">restart</command>
+    <result xml:space="preserve">Are you sure you want to restart? </result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e7a2c0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e7a2c0">
+    <command xml:space="preserve">y</command>
+    <result xml:space="preserve">
+
+
+Bureaucrocy
+A boring tale about paperwork by Adri
+Release 1 / Serial number 140327 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
+
+What is your name? &gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e7a420"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e7a420">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">
+I don&apos;t know how to pronounce that. Your name will be Alexandra.
+
+Bureaucrocy
+A boring tale about paperwork by Adri
+Release 1 / Serial number 140327 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
+
+Subway Station
+This is the subway station below Gregarious Grange, Groddle Meadow. A flight of stairs leads up to the street.
+
+You can see a ticket dispenser here.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e7a580"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e7a580">
+    <command xml:space="preserve">test intro</command>
+    <result xml:space="preserve">(Testing.)
+
+&gt;[1] up
+
+Gregarious Grange
+The entrance to the subway is down a flight of stairs. You can also go inside Bureaucratic Hall.
+
+&gt;[2] down
+
+Subway Station
+This is the subway station below Gregarious Grange, Groddle Meadow. A flight of stairs leads up to the street.
+
+You can see a ticket dispenser here.
+
+&gt;[3] up
+
+Gregarious Grange
+The entrance to the subway is down a flight of stairs. You can also go inside Bureaucratic Hall.
+
+&gt;[4] down
+As you make your way back down to the Subway Station, a Bureaucroc corners you on the stairs. He whispers, &quot;Psssst. Here&apos;sss the deal. Getting your Card Carrying Qualification is the first step in the Bureaucratic Artsss. Yesss, and once you have it, you are on your way to being able to obtain Your Papersss (and all sorts of licenses and permits). It used to be you could acquire the bureaucratic documentsss directly from a friend--Oh, it&apos;sss perfectly legal, mind you--but seemsss like you&apos;re the only one around. You&apos;ll have to go the official route and deal with the red tape. Head over to the Bureaucratic Hall on Gregariousss Grange and talk to one of my friendsss there. You&apos;ll get what you need.&quot; And then he disappears as quickly as he appeared.
+
+That was weird.
+
+Subway Station
+This is the subway station below Gregarious Grange, Groddle Meadow. A flight of stairs leads up to the street.
+
+You can see a ticket dispenser here.
+
+&gt;[5] up
+
+Gregarious Grange
+The entrance to the subway is down a flight of stairs. You can also go inside Bureaucratic Hall.
+
+&gt;[6] in
+
+Bureaucratic Hall
+A sign proclaims this room to be the &quot;Department of Administrative Affairs - Ministry of Departments&quot;. To the left is a waiting area with a water cooler and a bunch of hard, plastic orange chairs. To the right is a counter, behind which is a Bureaucroc. A sign reads &quot;Please approach the counter for assistance.&quot;
+
+&gt;[7] approach
+(the counter)
+A bureaucroc says, &quot;We will be with you as soon as possible. Now please sit down and wait.&quot; He then proceeds to ignore you.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e7a6e0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e7a6e0">
+    <command xml:space="preserve">test wait</command>
+    <result xml:space="preserve">(Testing.)
+
+&gt;[1] sit
+(on the chair)
+You take a seat on one of their uncomfortable plastic chairs.
+
+&gt;[2] z
+Time passes.
+
+&gt;[3] z
+Time passes.
+
+&gt;[4] z
+Time passes.
+
+&gt;[5] z
+Time passes.
+
+A bureaucroc calls out, &quot;Alexandra! You&apos;re up!&quot;
+
+&gt;[6] approach
+(the counter)
+The bureaucroc says, &quot;Alexandra, as I understand, you are requesting a Card-Carrying Qualification. You will have to speak to Probost Tummyford about that. Please wait a moment.&quot; Then he turns and shuffles away.
+
+&gt;[7] z
+Another bureaucroc, presumably Probost Tummyford, approaches the counter. &quot;I&apos;m led to believe you&apos;re interested in receiving a Card-Carrying Qualification, is that correct?&quot; He stares intently at you.
+
+Y/N? &gt;[8] y
+The bureaucroc says, &quot;I imagine we can help. Quick question first, though. Is it ever too late?&quot;
+1 - Yes
+2 - No
+
+1/2?&gt;[9] 1
+The bureaucroc nods and says, &quot;Very well. In that case, the fee is 50 currants, and we only take cash.&quot;
+
+You count out a pile of currants, and The bureaucroc hands over a Card-Carrying Qualification.
+
+&quot;Thank you for your business. To conduct another transaction, you must exit and re-enter the Hall.&quot;
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e7a840"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e7a840">
+    <command xml:space="preserve">test qual</command>
+    <result xml:space="preserve">(Testing.)
+
+&gt;[1] out
+
+Gregarious Grange
+The entrance to the subway is down a flight of stairs. You can also go inside Bureaucratic Hall.
+
+&gt;[2] activate
+(the Card-Carrying Qualification)
+Congratulations! You have taken the first step toward Bureaucratic officialdom. As with all first steps, there is a second, a third... Once you learn Bureaucratic Arts, then get and complete your Papers, you&apos;ll be able to use public transportation.
+
+&gt;[3] learn
+(Bureaucratic Arts)
+Well done: you can now obtain papers with only the requisite amount of hassle and annoyance.
+
+&gt;[4] in
+
+Bureaucratic Hall
+A sign proclaims this room to be the &quot;Department of Administrative Affairs - Ministry of Departments&quot;. To the left is a waiting area with a water cooler and a bunch of hard, plastic orange chairs. To the right is a counter, behind which is a Bureaucroc. A sign reads &quot;Please approach the counter for assistance.&quot;
+
+&gt;[5] approach
+(the counter)
+A bureaucroc says, &quot;We will be with you as soon as possible. Now please sit down and wait.&quot; He then proceeds to ignore you.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e7a9a0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e7a9a0">
+    <command xml:space="preserve">test paper</command>
+    <result xml:space="preserve">(Testing.)
+
+&gt;[1] take pen
+You cast a nervous look around you before yanking the pen hard enough to snap the chain. A bureaucroc looks up at the sound, and you panic.
+
+Gregarious Grange
+The entrance to the subway is down a flight of stairs. You can also go inside Bureaucratic Hall.
+
+&gt;[2] complete
+You can&apos;t see any such thing.
+
+&gt;[3] down
+
+Subway Station
+This is the subway station below Gregarious Grange, Groddle Meadow. A flight of stairs leads up to the street.
+
+You can see a ticket dispenser here.
+
+&gt;[4] buy ticket
+(the subway ticket)
+The ticket dispenser says, &quot;You can get your Papers at Bureaucratic Hall.&quot;
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e7ab00"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e7ab00">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  a pen
+  a Card-Carrying Qualification
+  a 150 currants
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e7ac60"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e7ac60">
+    <command xml:space="preserve">test intro</command>
+    <result xml:space="preserve">(Testing.)
+
+&gt;[1] up
+
+Gregarious Grange
+The entrance to the subway is down a flight of stairs. You can also go inside Bureaucratic Hall.
+
+&gt;[2] down
+
+Subway Station
+This is the subway station below Gregarious Grange, Groddle Meadow. A flight of stairs leads up to the street.
+
+You can see a ticket dispenser here.
+
+&gt;[3] up
+
+Gregarious Grange
+The entrance to the subway is down a flight of stairs. You can also go inside Bureaucratic Hall.
+
+&gt;[4] down
+
+Subway Station
+This is the subway station below Gregarious Grange, Groddle Meadow. A flight of stairs leads up to the street.
+
+You can see a ticket dispenser here.
+
+&gt;[5] up
+
+Gregarious Grange
+The entrance to the subway is down a flight of stairs. You can also go inside Bureaucratic Hall.
+
+&gt;[6] in
+
+Bureaucratic Hall
+A sign proclaims this room to be the &quot;Department of Administrative Affairs - Ministry of Departments&quot;. To the left is a waiting area with a water cooler and a bunch of hard, plastic orange chairs. To the right is a counter, behind which is a Bureaucroc. A sign reads &quot;Please approach the counter for assistance.&quot;
+
+&gt;[7] approach
+(the counter)
+A bureaucroc says, &quot;We will be with you as soon as possible. Now please sit down and wait.&quot; He then proceeds to ignore you.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e7adc0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e7adc0">
+    <command xml:space="preserve">test wait</command>
+    <result xml:space="preserve">(Testing.)
+
+&gt;[1] sit
+(on the chair)
+You take a seat on one of their uncomfortable plastic chairs.
+
+&gt;[2] z
+Time passes.
+
+&gt;[3] z
+Time passes.
+
+&gt;[4] z
+Time passes.
+
+&gt;[5] z
+Time passes.
+
+A bureaucroc calls out, &quot;Alexandra! Your turn!&quot;
+
+&gt;[6] approach
+(the counter)
+The bureaucroc says, &quot;I understand you&apos;re hoping to attain Papers, Alexandra. That&apos;s a matter for Associate Nuter. Let me find out if they&apos;re in the office this week.&quot; Then he turns and shuffles away.
+
+&gt;[7] z
+Another bureaucroc, presumably Associate Nuter, approaches the counter. &quot;Right then, let&apos;s see... You&apos;re here hoping to procure Papers, are you?&quot; He stares intently at you.
+
+Y/N? &gt;[8] y
+The bureaucroc says, &quot;I don&apos;t see why not. First, however, answer me this. What time is love?&quot;
+1 - 2pm
+2 - Before lunch
+
+1/2?&gt;[9] 1
+The bureaucroc nods and says, &quot;I&apos;ll take that. The fee is 100 currants, and I&apos;ll take that, as well. In cash.&quot;
+
+You count out a pile of currants, and The bureaucroc hands over Papers.
+
+&quot;Thank you for your business. To conduct another transaction, you must exit and re-enter the Hall.&quot;
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e96070"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e96070">
+    <command xml:space="preserve">test paper</command>
+    <result xml:space="preserve">(Testing.)
+
+&gt;[1] take pen
+You cast a nervous look around you before yanking the pen hard enough to snap the chain. A bureaucroc looks up at the sound, and you panic.
+
+Gregarious Grange
+The entrance to the subway is down a flight of stairs. You can also go inside Bureaucratic Hall.
+
+&gt;[2] complete
+(Papers)
+You cross your &quot;i&apos;s and dot your &quot;t&apos;s. Or maybe it&apos;s the other way around. In any case, you manage to complete your Papers without too much trouble.
+Well done. Now go ride a subway!
+
+&gt;[3] down
+
+Subway Station
+This is the subway station below Gregarious Grange, Groddle Meadow. A flight of stairs leads up to the street.
+
+You can see a ticket dispenser here.
+
+&gt;[4] buy ticket
+(the subway ticket)
+The ticket dispenser says, &quot;Train tickets cost 50C. Which line would you like to ride?&quot;
+
+
+
+    *** You won the game! ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2e961d0">
+    <command xml:space="preserve">down</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e96330"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e96330">
+    <command xml:space="preserve">out</command>
+    <result xml:space="preserve">
+Gregarious Grange
+The entrance to the subway is down a flight of stairs. You can also go inside Bureaucratic Hall.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e96490"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e96490">
+    <command xml:space="preserve">down</command>
+    <result xml:space="preserve">As you make your way back down to the Subway Station, a Bureaucroc corners you on the stairs. He whispers, &quot;Psssst. Here&apos;sss the deal. Getting your Card Carrying Qualification is the first step in the Bureaucratic Artsss. Yesss, and once you have it, you are on your way to being able to obtain Your Papersss (and all sorts of licenses and permits). It used to be you could acquire the bureaucratic documentsss directly from a friend--Oh, it&apos;sss perfectly legal, mind you--but seemsss like you&apos;re the only one around. You&apos;ll have to go the official route and deal with the red tape. Head over to the Bureaucratic Hall on Gregariousss Grange and talk to one of my friendsss there. You&apos;ll get what you need.&quot; And then he disappears as quickly as he appeared.
+
+That was weird.
+
+Subway Station
+This is the subway station below Gregarious Grange, Groddle Meadow. A flight of stairs leads up to the street.
+
+You can see a ticket dispenser here.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2e965f0">
+    <command xml:space="preserve">x hall</command>
+    <result xml:space="preserve">Bureaucratic Hall
+A sign proclaims this room to be the &quot;Department of Administrative Affairs - Ministry of Departments&quot;. To the left is a waiting area with a water cooler and a bunch of hard, plastic orange chairs. To the right is a counter, behind which is a Bureaucroc. A sign reads &quot;Please approach the counter for assistance.&quot;
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e96750"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e96750">
+    <command xml:space="preserve">out</command>
+    <result xml:space="preserve">
+Gregarious Grange
+The entrance to the subway is down a flight of stairs. You can also go inside Bureaucratic Hall.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e968b0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e968b0">
+    <command xml:space="preserve">enter</command>
+    <result xml:space="preserve">You must supply a noun.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e96a10"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e96a10">
+    <command xml:space="preserve">enter hall</command>
+    <result xml:space="preserve">
+Bureaucratic Hall
+A sign proclaims this room to be the &quot;Department of Administrative Affairs - Ministry of Departments&quot;. To the left is a waiting area with a water cooler and a bunch of hard, plastic orange chairs. To the right is a counter, behind which is a Bureaucroc. A sign reads &quot;Please approach the counter for assistance.&quot;
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2e96b70">
+    <command xml:space="preserve">x hall</command>
+    <result xml:space="preserve">It&apos;s a small squat building where the Bureaucrocs work.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e96cd0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e96cd0">
+    <command xml:space="preserve">in</command>
+    <result xml:space="preserve">(first opening the BHDoor)
+
+Bureaucratic Hall
+A sign proclaims this room to be the &quot;Department of Administrative Affairs - Ministry of Departments&quot;. To the left is a waiting area with a water cooler and a bunch of hard, plastic orange chairs. To the right is a counter, behind which is a Bureaucroc. A sign reads &quot;Please approach the counter for assistance.&quot;
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2e96e30">
+    <command xml:space="preserve">test intro</command>
+    <result xml:space="preserve">(Testing.)
+
+&gt;[1] up
+
+Gregarious Grange
+The entrance to the subway is down a flight of stairs. You can also go inside Bureaucratic Hall.
+
+&gt;[2] in
+
+Bureaucratic Hall
+A sign proclaims this room to be the &quot;Department of Administrative Affairs - Ministry of Departments&quot;. To the left is a waiting area with a water cooler and a bunch of hard, plastic orange chairs. To the right is a counter, behind which is a Bureaucroc. A sign reads &quot;Please approach the counter for assistance.&quot;
+
+&gt;[3] out
+
+Gregarious Grange
+The entrance to the subway is down a flight of stairs. You can also go inside Bureaucratic Hall.
+
+&gt;[4] down
+
+Subway Station
+This is the subway station below Gregarious Grange, Groddle Meadow. A flight of stairs leads up to the street.
+
+You can see a ticket dispenser here.
+
+&gt;[5] up
+
+Gregarious Grange
+The entrance to the subway is down a flight of stairs. You can also go inside Bureaucratic Hall.
+
+&gt;[6] in
+
+Bureaucratic Hall
+A sign proclaims this room to be the &quot;Department of Administrative Affairs - Ministry of Departments&quot;. To the left is a waiting area with a water cooler and a bunch of hard, plastic orange chairs. To the right is a counter, behind which is a Bureaucroc. A sign reads &quot;Please approach the counter for assistance.&quot;
+
+&gt;[7] approach
+(the counter)
+The bureaucroc says, &quot;Go away. We don&apos;t have time to waste on people who have not learned any Bureaucratic Arts.&quot;
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2ebc040"/>
+      <child nodeId="node-0x2ebc5c0"/>
+      <child nodeId="node-0x2ee38d0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2ebc040">
+    <command xml:space="preserve">restart</command>
+    <result xml:space="preserve">Are you sure you want to restart? </result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2ebc1a0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2ebc1a0">
+    <command xml:space="preserve">y</command>
+    <result xml:space="preserve">
+
+
+Bureaucrocy
+A boring tale about paperwork by Adri
+Release 1 / Serial number 140328 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
+
+What is your name? &gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2ebc300"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2ebc300">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">
+I don&apos;t know how to pronounce that. Your name will be Alexandra.
+
+Bureaucrocy
+A boring tale about paperwork by Adri
+Release 1 / Serial number 140328 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
+
+Subway Station
+This is the subway station below Gregarious Grange, Groddle Meadow. A flight of stairs leads up to the street.
+
+You can see a ticket dispenser here.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2ebc460"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2ebc460">
+    <command xml:space="preserve">test intro</command>
+    <result xml:space="preserve">(Testing.)
+
+&gt;[1] up
+
+Gregarious Grange
+The entrance to the subway is down a flight of stairs. You can also go inside Bureaucratic Hall.
+
+&gt;[2] in
+
+Bureaucratic Hall
+A sign proclaims this room to be the &quot;Department of Administrative Affairs - Ministry of Departments&quot;. To the left is a waiting area with a water cooler and a bunch of hard, plastic orange chairs. To the right is a counter, behind which is a Bureaucroc. A sign reads &quot;Please approach the counter for assistance.&quot;
+
+&gt;[3] down
+You can&apos;t go that way.
+
+&gt;[4] up
+You can&apos;t go that way.
+
+&gt;[5] in
+You can&apos;t go that way.
+
+&gt;[6] approach
+(the counter)
+The bureaucroc says, &quot;Go away. We don&apos;t have time to waste on people who have not learned any Bureaucratic Arts.&quot;
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2ebc5c0">
+    <command xml:space="preserve">test wait</command>
+    <result xml:space="preserve">(Testing.)
+
+&gt;[1] sit
+(on the chair)
+You take a seat on one of their uncomfortable plastic chairs.
+
+&gt;[2] z
+Time passes.
+
+&gt;[3] z
+Time passes.
+
+&gt;[4] z
+Time passes.
+
+&gt;[5] z
+Time passes.
+
+A bureaucroc calls out, &quot;Alexandra! You&apos;re up!&quot;
+
+&gt;[6] approach
+(the counter)
+The bureaucroc says, &quot;You wish to be granted Card-Carrying Qualification I understand, Alexandra. That is a decision for Representative Candnot, if they&apos;re in today. Bear with me please.&quot; Then he turns and shuffles away.
+
+&gt;[7] z
+Another bureaucroc, presumably Representative Candnot, approaches the counter. &quot;Let&apos;s see here. You are interested in obtaining Card-Carrying Qualification, correct?&quot; He stares intently at you.
+
+Y/N? &gt;[8] y
+The bureaucroc says, &quot;I can probably deal with your application. Quick question first, though. Is it ever too late?&quot;
+1 - Yes
+2 - No
+
+1/2?&gt;[9] 1
+The bureaucroc nods and says, &quot;That will do. Your fee is 50 currants. Cash only.&quot;
+
+You count out a pile of currants, and the bureaucroc hands over Card-Carrying Qualification.
+
+&quot;Thank you for your business. To conduct another transaction, you must exit and re-enter the Hall.&quot;
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2ebc720"/>
+      <child nodeId="node-0x2ee3350"/>
+      <child nodeId="node-0x2ee34b0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2ebc720">
+    <command xml:space="preserve">out</command>
+    <result xml:space="preserve">Don&apos;t move. Just wait.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2ebc880"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2ebc880">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Another bureaucroc, presumably Probost Nuter, approaches the counter. &quot;I understand you&apos;re here to procure yourself a Card-Carrying Qualification, is that right?&quot; He stares intently at you.
+
+Y/N? &gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2ebc9e0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2ebc9e0">
+    <command xml:space="preserve">y</command>
+    <result xml:space="preserve">The bureaucroc says, &quot;I can probably deal with your application. One thing: Your favorite fruit?&quot;
+1 - Apples
+2 - Tomatoes
+
+1/2?&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2ebcb40"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2ebcb40">
+    <command xml:space="preserve">2</command>
+    <result xml:space="preserve">The bureaucroc nods and says, &quot;Very well. In that case, the fee is 50 currants, and we only take cash.&quot;
+
+You count out a pile of currants, and The bureaucroc hands over a Card-Carrying Qualification.
+
+&quot;Thank you for your business. To conduct another transaction, you must exit and re-enter the Hall.&quot;
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2ebcca0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2ebcca0">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  a Card-Carrying Qualification
+  a 150 currants
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2ebce00"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2ebce00">
+    <command xml:space="preserve">test qual</command>
+    <result xml:space="preserve">(Testing.)
+
+&gt;[1] out
+
+Gregarious Grange
+The entrance to the subway is down a flight of stairs. You can also go inside Bureaucratic Hall.
+
+&gt;[2] activate
+(the Card-Carrying Qualification)
+Congratulations! You have taken the first step toward Bureaucratic officialdom. As with all first steps, there is a second, a third... Once you learn Bureaucratic Arts, then get and complete your Papers, you&apos;ll be able to use public transportation.
+
+&gt;[3] learn
+(Bureaucratic Arts)
+Well done: you can now obtain papers with only the requisite amount of hassle and annoyance.
+
+&gt;[4] in
+
+Bureaucratic Hall
+A sign proclaims this room to be the &quot;Department of Administrative Affairs - Ministry of Departments&quot;. To the left is a waiting area with a water cooler and a bunch of hard, plastic orange chairs. To the right is a counter, behind which is a Bureaucroc. A sign reads &quot;Please approach the counter for assistance.&quot;
+
+&gt;[5] approach
+(the counter)
+A bureaucroc says, &quot;We will be with you as soon as possible. Now please sit down and wait.&quot; He then proceeds to ignore you.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2ee3090"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2ee3090">
+    <command xml:space="preserve">test wait</command>
+    <result xml:space="preserve">(Testing.)
+
+&gt;[1] sit
+(on the chair)
+You take a seat on one of their uncomfortable plastic chairs.
+
+&gt;[2] z
+Time passes.
+
+&gt;[3] z
+Time passes.
+
+&gt;[4] z
+Time passes.
+
+&gt;[5] z
+Time passes.
+
+A bureaucroc calls out, &quot;Alexandra! Your turn!&quot;
+
+&gt;[6] approach
+(the counter)
+The bureaucroc says, &quot;So you&apos;re requesting Papers are you, Alexandra? Manager Snifflenose is the official you need to speak to. Please bear with me a moment.&quot; Then he turns and shuffles away.
+
+&gt;[7] z
+Another bureaucroc, presumably Manager Snifflenose, approaches the counter. &quot;What&apos;s this, then? You&apos;re hoping to acquire Papers, correct?&quot; He stares intently at you.
+
+Y/N? &gt;[8] y
+The bureaucroc says, &quot;I don&apos;t see why not. First, however, one question:&quot;
+1 - Innie?
+2 - Outie?
+
+1/2?&gt;[9] 1
+The bureaucroc nods and says, &quot;Excellent. The bureau charges 100 currants. Cash only, I&apos;m afraid.&quot;
+
+You count out a pile of currants, and The bureaucroc hands over Papers.
+
+&quot;Thank you for your business. To conduct another transaction, you must exit and re-enter the Hall.&quot;
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2ee31f0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2ee31f0">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  Papers
+  a Card-Carrying Qualification
+  a 50 currants
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2ee3350">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  Card-Carrying Qualification
+  a 150 currants
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2ee34b0">
+    <command xml:space="preserve">test qual</command>
+    <result xml:space="preserve">(Testing.)
+
+&gt;[1] out
+
+Gregarious Grange
+The entrance to the subway is down a flight of stairs. You can also go inside Bureaucratic Hall.
+
+&gt;[2] activate
+(Card-Carrying Qualification)
+Congratulations! You have taken the first step toward Bureaucratic officialdom. As with all first steps, there is a second, a third... Once you learn Bureaucratic Arts, then get and complete your Papers, you&apos;ll be able to use public transportation.
+
+&gt;[3] learn
+(Bureaucratic Arts)
+Well done: you can now obtain papers with only the requisite amount of hassle and annoyance.
+
+&gt;[4] in
+
+Bureaucratic Hall
+A sign proclaims this room to be the &quot;Department of Administrative Affairs - Ministry of Departments&quot;. To the left is a waiting area with a water cooler and a bunch of hard, plastic orange chairs. To the right is a counter, behind which is a Bureaucroc. A sign reads &quot;Please approach the counter for assistance.&quot;
+
+&gt;[5] approach
+(the counter)
+A bureaucroc says, &quot;We will be with you as soon as possible. Now please sit down and wait.&quot; He then proceeds to ignore you.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2ee3610"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2ee3610">
+    <command xml:space="preserve">test wait</command>
+    <result xml:space="preserve">(Testing.)
+
+&gt;[1] sit
+(on the chair)
+You take a seat on one of their uncomfortable plastic chairs.
+
+&gt;[2] z
+Time passes.
+
+&gt;[3] z
+Time passes.
+
+&gt;[4] z
+Time passes.
+
+&gt;[5] z
+Time passes.
+
+A bureaucroc calls out, &quot;Attention, Alexandra! When you&apos;re ready?&quot;
+
+&gt;[6] approach
+(the counter)
+The bureaucroc says, &quot;So you&apos;re requesting Papers are you, Alexandra? Manager Chucklesmouth is the official you need to speak to. Please bear with me a moment.&quot; Then he turns and shuffles away.
+
+&gt;[7] z
+Another bureaucroc, presumably Manager Chucklesmouth, approaches the counter. &quot;I&apos;m led to believe you&apos;re interested in receiving Papers, is that correct?&quot; He stares intently at you.
+
+Y/N? &gt;[8] y
+The bureaucroc says, &quot;I should be able to help with that. Before we proceed, I must ask, which shelf-height do you prefer?&quot;
+1 - High shelves
+2 - Ankle-height shelves
+
+1/2?&gt;[9] 1
+The bureaucroc nods and says, &quot;Excellent. The bureau charges 100 currants. Cash only, I&apos;m afraid.&quot;
+
+You count out a pile of currants, and the bureaucroc hands over Papers.
+
+&quot;Thank you for your business. To conduct another transaction, you must exit and re-enter the Hall.&quot;
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2ee3770"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2ee3770">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  Papers
+  Card-Carrying Qualification
+  a 50 currants
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2ee38d0">
+    <command xml:space="preserve">test intro</command>
+    <result xml:space="preserve">(Testing.)
+
+&gt;[1] up
+You can&apos;t go that way.
+
+&gt;[2] in
+You can&apos;t go that way.
+
+&gt;[3] out
+
+Gregarious Grange
+The entrance to the subway is down a flight of stairs. You can also go inside Bureaucratic Hall.
+
+&gt;[4] down
+As you make your way back down to the Subway Station, a Bureaucroc corners you on the stairs. He whispers, &quot;Psssst. Here&apos;sss the deal. Getting your Card Carrying Qualification is the first step in the Bureaucratic Artsss. Yesss, and once you have it, you are on your way to being able to obtain Your Papersss (and all sorts of licenses and permits). It used to be you could acquire the bureaucratic documentsss directly from a friend--Oh, it&apos;sss perfectly legal, mind you--but seemsss like you&apos;re the only one around. You&apos;ll have to go the official route and deal with the red tape. Head over to the Bureaucratic Hall on Gregariousss Grange and talk to one of my friendsss there. You&apos;ll get what you need.&quot; And then he disappears as quickly as he appeared.
+
+That was weird.
+
+Subway Station
+This is the subway station below Gregarious Grange, Groddle Meadow. A flight of stairs leads up to the street.
+
+You can see a ticket dispenser here.
+
+&gt;[5] up
+
+Gregarious Grange
+The entrance to the subway is down a flight of stairs. You can also go inside Bureaucratic Hall.
+
+&gt;[6] in
+
+Bureaucratic Hall
+A sign proclaims this room to be the &quot;Department of Administrative Affairs - Ministry of Departments&quot;. To the left is a waiting area with a water cooler and a bunch of hard, plastic orange chairs. To the right is a counter, behind which is a Bureaucroc. A sign reads &quot;Please approach the counter for assistance.&quot;
+
+&gt;[7] approach
+(the counter)
+A bureaucroc says, &quot;We will be with you as soon as possible. Now please sit down and wait.&quot; He then proceeds to ignore you.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2ee3a30">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  200 currants
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2ee3b90"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2ee3b90">
+    <command xml:space="preserve">test intro</command>
+    <result xml:space="preserve">(Testing.)
+
+&gt;[1] up
+
+Gregarious Grange
+The entrance to the subway is down a flight of stairs. You can also go inside Bureaucratic Hall.
+
+&gt;[2] in
+
+Bureaucratic Hall
+A sign proclaims this room to be the &quot;Department of Administrative Affairs - Ministry of Departments&quot;. To the left is a waiting area with a water cooler and a bunch of hard, plastic orange chairs. To the right is a counter, behind which is a Bureaucroc. A sign reads &quot;Please approach the counter for assistance.&quot;
+
+&gt;[3] out
+
+Gregarious Grange
+The entrance to the subway is down a flight of stairs. You can also go inside Bureaucratic Hall.
+
+&gt;[4] down
+As you make your way back down to the Subway Station, a Bureaucroc corners you on the stairs. He whispers, &quot;Psssst. Here&apos;sss the deal. Getting your Card Carrying Qualification is the first step in the Bureaucratic Artsss. Yesss, and once you have it, you are on your way to being able to obtain Your Papersss (and all sorts of licenses and permits). It used to be you could acquire the bureaucratic documentsss directly from a friend--Oh, it&apos;sss perfectly legal, mind you--but seemsss like you&apos;re the only one around. You&apos;ll have to go the official route and deal with the red tape. Head over to the Bureaucratic Hall on Gregariousss Grange and talk to one of my friendsss there. You&apos;ll get what you need.&quot; And then he disappears as quickly as he appeared.
+
+That was weird.
+
+Subway Station
+This is the subway station below Gregarious Grange, Groddle Meadow. A flight of stairs leads up to the street.
+
+You can see a ticket dispenser here.
+
+&gt;[5] up
+
+Gregarious Grange
+The entrance to the subway is down a flight of stairs. You can also go inside Bureaucratic Hall.
+
+&gt;[6] in
+
+Bureaucratic Hall
+A sign proclaims this room to be the &quot;Department of Administrative Affairs - Ministry of Departments&quot;. To the left is a waiting area with a water cooler and a bunch of hard, plastic orange chairs. To the right is a counter, behind which is a Bureaucroc. A sign reads &quot;Please approach the counter for assistance.&quot;
+
+&gt;[7] approach
+(the counter)
+A bureaucroc says, &quot;We will be with you as soon as possible. Now please sit down and wait.&quot; He then proceeds to ignore you.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2ee3cf0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2ee3cf0">
+    <command xml:space="preserve">test wait</command>
+    <result xml:space="preserve">(Testing.)
+
+&gt;[1] sit
+(on the chair)
+You take a seat on one of their uncomfortable plastic chairs.
+
+&gt;[2] z
+Time passes.
+
+&gt;[3] z
+Time passes.
+
+&gt;[4] z
+Time passes.
+
+&gt;[5] z
+Time passes.
+
+A bureaucroc calls out, &quot;Ready for you now, Alexandra!&quot;
+
+&gt;[6] approach
+(the counter)
+The bureaucroc says, &quot;Alexandra, your request for Card-Carrying Qualification will have to be passed along to the correct department. Please wait while I ascertain the availability of Associate Tummyford.&quot; Then he turns and shuffles away.
+
+&gt;[7] z
+Another bureaucroc, presumably Associate Tummyford, approaches the counter. &quot;What do we have here, then? I see. So, it&apos;s Card-Carrying Qualification you&apos;re after, is it?&quot; He stares intently at you.
+
+Y/N? &gt;[8] y
+The bureaucroc says, &quot;I may be able to help you with that. But first, which cloud is better?&quot;
+1 - Cirrus
+2 - Cumulonimbus
+
+1/2?&gt;[9] 1
+The bureaucroc says, &quot;Interesting. I believe the department you&apos;re looking for is that of Chamberlain Naraiwaddleappali. Good day.&quot; The bureaucroc walks away without another word.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2ee3e50"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2ee3e50">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">&gt;WAIT
+Another bureaucroc, presumably Chamberlain Naraiwaddleappali, approaches the counter. &quot;I&apos;m led to believe you&apos;re interested in receiving Card-Carrying Qualification, is that correct?&quot; He stares intently at you.
+
+Y/N? &gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2f0f060"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2f0f060">
+    <command xml:space="preserve">y</command>
+    <result xml:space="preserve">The bureaucroc says, &quot;I might be able to sign this off. One question first. Which came first?&quot;
+1 - The Chicken
+2 - The Grain
+
+1/2?&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2f0f1c0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2f0f1c0">
+    <command xml:space="preserve">2</command>
+    <result xml:space="preserve">The bureaucroc nods and says, &quot;That will do. Your fee is 50 currants. Cash only.&quot;
+
+You count out a pile of currants, and the bureaucroc hands over Card-Carrying Qualification.
+
+&quot;Thank you for your business. To conduct another transaction, you must exit and re-enter the Hall.&quot;
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2f0f320"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2f0f320">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  Card-Carrying Qualification
+  150 currants
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2f0f480"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2f0f480">
+    <command xml:space="preserve">test qual</command>
+    <result xml:space="preserve">(Testing.)
+
+&gt;[1] out
+
+Gregarious Grange
+The entrance to the subway is down a flight of stairs. You can also go inside Bureaucratic Hall.
+
+&gt;[2] activate
+(Card-Carrying Qualification)
+Congratulations! You have taken the first step toward Bureaucratic officialdom. As with all first steps, there is a second, a third... Once you learn Bureaucratic Arts, then get and complete your Papers, you&apos;ll be able to use public transportation.
+
+&gt;[3] learn
+(Bureaucratic Arts)
+Well done: you can now obtain papers with only the requisite amount of hassle and annoyance.
+
+&gt;[4] in
+
+Bureaucratic Hall
+A sign proclaims this room to be the &quot;Department of Administrative Affairs - Ministry of Departments&quot;. To the left is a waiting area with a water cooler and a bunch of hard, plastic orange chairs. To the right is a counter, behind which is a Bureaucroc. A sign reads &quot;Please approach the counter for assistance.&quot;
+
+&gt;[5] approach
+(the counter)
+A bureaucroc says, &quot;We will be with you as soon as possible. Now please sit down and wait.&quot; He then proceeds to ignore you.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2f0f5e0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2f0f5e0">
+    <command xml:space="preserve">test wait</command>
+    <result xml:space="preserve">(Testing.)
+
+&gt;[1] sit
+(on the chair)
+You take a seat on one of their uncomfortable plastic chairs.
+
+&gt;[2] z
+Time passes.
+
+&gt;[3] z
+Time passes.
+
+&gt;[4] z
+Time passes.
+
+&gt;[5] z
+Time passes.
+
+A bureaucroc calls out, &quot;Alexandra! Come forward!&quot;
+
+&gt;[6] approach
+(the counter)
+The bureaucroc says, &quot;Alexandra? If you are seeking Papers, you must speak to Magister Wigglesbottom. Please wait while I see if they&apos;re taking appointments today.&quot; Then he turns and shuffles away.
+
+&gt;[7] z
+Another bureaucroc, presumably Magister Wigglesbottom, approaches the counter. &quot;What&apos;s this, then? You&apos;re hoping to acquire Papers, correct?&quot; He stares intently at you.
+
+Y/N? &gt;[8] y
+The bureaucroc says, &quot;I imagine we can help. But first, please choose between the following:&quot;
+1 - Pirates
+2 - Ninjas
+
+1/2?&gt;[9] 1
+The bureaucroc nods and says, &quot;Very well. In that case, the fee is 100 currants, and we only take cash.&quot;
+
+You count out a pile of currants, and the bureaucroc hands over Papers.
+
+&quot;Thank you for your business. To conduct another transaction, you must exit and re-enter the Hall.&quot;
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2f0f740"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2f0f740">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  Papers
+  Card-Carrying Qualification
+  50 currants
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2f0f8a0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2f0f8a0">
+    <command xml:space="preserve">test papers</command>
+    <result xml:space="preserve">&gt;--&gt; The following tests are available:
+&apos;test intro&apos;
+&apos;test wait&apos;
+&apos;test qual&apos;
+&apos;test paper&apos;
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2f0fa00"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2f0fa00">
+    <command xml:space="preserve">test paper</command>
+    <result xml:space="preserve">(Testing.)
+
+&gt;[1] take pen
+You cast a nervous look around you before yanking the pen hard enough to snap the chain. A bureaucroc looks up at the sound, and you panic.
+
+Gregarious Grange
+The entrance to the subway is down a flight of stairs. You can also go inside Bureaucratic Hall.
+
+&gt;[2] complete
+(Papers)
+You cross your &quot;i&apos;s and dot your &quot;t&apos;s. Or maybe it&apos;s the other way around. In any case, you manage to complete your Papers without too much trouble.
+Well done. Now go ride a subway!
+
+&gt;[3] down
+As you make your way back down to the Subway Station, a Bureaucroc corners you on the stairs. He whispers, &quot;Psssst. Here&apos;sss the deal. Getting your Card Carrying Qualification is the first step in the Bureaucratic Artsss. Yesss, and once you have it, you are on your way to being able to obtain Your Papersss (and all sorts of licenses and permits). It used to be you could acquire the bureaucratic documentsss directly from a friend--Oh, it&apos;sss perfectly legal, mind you--but seemsss like you&apos;re the only one around. You&apos;ll have to go the official route and deal with the red tape. Head over to the Bureaucratic Hall on Gregariousss Grange and talk to one of my friendsss there. You&apos;ll get what you need.&quot; And then he disappears as quickly as he appeared.
+
+That was weird.
+
+Subway Station
+This is the subway station below Gregarious Grange, Groddle Meadow. A flight of stairs leads up to the street.
+
+You can see a ticket dispenser here.
+
+&gt;[4] buy ticket
+(the subway ticket)
+The ticket dispenser says, &quot;Train tickets cost 50C. Which line would you like to ride?&quot;
+
+
+
+    *** You won the game! ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+&gt; </result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x26011e0">
+    <command xml:space="preserve">x subway</command>
+    <result xml:space="preserve">You can&apos;t see any such thing. Because you haven&apos;t purchased a ticket yet.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2601340"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2601340">
+    <command xml:space="preserve">x ticket</command>
+    <result xml:space="preserve">(the ticket dispenser)
+This machine dispenses subway tickets in exchange for 50 currants. Press the button to buy a ticket.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x26014a0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x26014a0">
+    <command xml:space="preserve">buy ticket</command>
+    <result xml:space="preserve">(the subway ticket)
+The ticket dispenser says, &quot;Without Papers, you may not use public transportation. You can get your Papers at Bureaucratic Hall.&quot;
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2601600"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2601600">
+    <command xml:space="preserve">up</command>
+    <result xml:space="preserve">
+Gregarious Grange
+The entrance to the subway is down a flight of stairs. You can also go inside Bureaucratic Hall.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2601760"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2601760">
+    <command xml:space="preserve">x subway</command>
+    <result xml:space="preserve">It&apos;s the entrance to the Gregarious Grange Subway Station.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x26018c0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x26018c0">
+    <command xml:space="preserve">enter subway</command>
+    <result xml:space="preserve">
+Subway Station
+This is the subway station below Gregarious Grange, Groddle Meadow. A flight of stairs leads up to the street.
+
+You can see a ticket dispenser here.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2f0fb60">
+    <command xml:space="preserve">up</command>
+    <result xml:space="preserve">
+I don&apos;t know how to pronounce that. Your name will be Alexandra.
+
+Bureaucrocy
+A boring tale about paperwork by Adri
+Release 1 / Serial number 140328 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
+
+Subway Station
+This is the subway station below Gregarious Grange, Groddle Meadow. A flight of stairs leads up to the street.
+
+You can see a ticket dispenser here.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2f0fcc0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2f0fcc0">
+    <command xml:space="preserve">up</command>
+    <result xml:space="preserve">
+Gregarious Grange
+The entrance to the subway is down a flight of stairs. You can also go inside Bureaucratic Hall.
+
+You can see a BHDoor here.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2f0fe20"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2f0fe20">
+    <command xml:space="preserve">enter hall</command>
+    <result xml:space="preserve">(first opening the BHDoor)
+
+Bureaucratic Hall
+A sign proclaims this room to be the &quot;Department of Administrative Affairs - Ministry of Departments&quot;. To the left is a waiting area with a water cooler and a bunch of hard, plastic orange chairs. To the right is a counter, behind which is a Bureaucroc. A sign reads &quot;Please approach the counter for assistance.&quot;
+
+You can see a BHDoor here.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
