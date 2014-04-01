@@ -24,6 +24,10 @@ Book - Other Setup
 Use American dialect, full-length room descriptions, serial comma and undo prevention.
 Use no scoring.
 
+When play begins:
+	choose row with a final response rule of immediately undo rule in the Table of Final Question Options;
+	delete the final question wording entry.
+
 Book - Smarter Parser
 
 The blank line replacement is "wait".
@@ -37,7 +41,7 @@ Book - Parsing Commands
 Requesting the about text is an action out of world.
 Understand "about" or "credits" as requesting the about text.
 
-Carry out requesting the about text: say "[story description]. It has not been tested. Play at your own risk. (And send me feedback and transcripts.) Thanks (so far) to Andrew Plotkin who found a pretty serious bug just minutes after it went into beta."
+Carry out requesting the about text: say "The author can be contacted at genericgeekgirl@gmail.com. Thank you to my beta-testers: Andrew Plotkin, Beth Skwarecki, and @dazyndara. And, of course, to Tiny Speck, for allowing me to make this game! The scene was taken directly from their game [italic type]Glitch[roman type], a wonderful MMO that shut down in 2012."
 
 Casting xyzzy is an action out of world.
 Understand "xyzzy" or "say xyzzy" as casting xyzzy.
@@ -66,22 +70,28 @@ Volume - Environment
 
 Gregarious Grange is a room. "The entrance to the subway is down a flight of stairs. You can also go inside Bureaucratic Hall."
 
-Bureaucratic Hall is a room. "A sign proclaims this room to be the 'Department of Administrative Affairs - Ministry of Departments'. To the left is a waiting area with a water cooler and a bunch of hard, plastic orange chairs. To the right is a counter, behind which is a Bureaucroc. A sign reads 'Please approach the counter for assistance.'"
+Bureaucratic Hall is a room. "A sign proclaims this room to be the 'Department of Administrative Affairs - Ministry of Departments'. To the left is a waiting area with a water cooler and a bunch of hard, plastic orange chairs. To the right is a counter, behind which is a Bureaucroc. Another sign reads 'Please approach the counter for assistance.'"
 
-The BHDoor is an open unopenable door and scenery. It is inside from Gregarious Grange and outside from Bureaucratic Hall.
-Understand "Bureaucratic Hall" and "Hall" as BHDoor.
+A sign is scenery in Bureaucratic Hall. The description is "This sign reads 'Please approach the counter for assistance.'"
+
+The BHDoor is an open unopenable door and scenery. It is inside from Gregarious Grange and outside from Bureaucratic Hall. The printed name is "Bureaucratic Hall".
+
+Understand "Bureaucratic Hall" and "Hall" and "Bureaucratic" as BHDoor when the location is Gregarious Grange.
+
 Instead of examining the BHDoor when the location is Gregarious Grange: 
 say "It's a small squat building where the Bureaucrocs work."
+
 Instead of examining the BHDoor when the location is Bureaucratic Hall: try looking.
 
 Subway Station is a room. "This is the subway station below Gregarious Grange, Groddle Meadow. A flight of stairs leads up to the street."
 
-The SSDoor is an open unopenable door and scenery. It is up from Subway Station and down from Gregarious Grange.
+The SSDoor is an open unopenable door and scenery. It is up from Subway Station and down from Gregarious Grange. The printed name is "Subway Station".
 
-Understand "Subway Station" and "Station" as SSDoor.
-Understand "Subway" as SSDoor when the location is Gregarious Grange.
+Understand "Subway Station" and "Station" and "Subway" as SSDoor when the location is Gregarious Grange.
+
 Instead of examining the SSDoor when the location is Gregarious Grange:
 say "It's the entrance to the Gregarious Grange Subway Station."
+
 Instead of examining the SSDoor when the location is Subway Station:
 try looking.
 
@@ -111,14 +121,14 @@ The counter is scenery in the Bureaucratic Hall. The description is "It's a stan
 
 Book - Pen
 
-The pen is scenery in the Bureaucratic Hall. The description is "This generic pen will let you write messages and notes." Understand "chain" as pen.
+The pen is scenery in the Bureaucratic Hall. The description is "This generic pen will let you write messages and notes."
 
 Instead of dropping the pen:
 say "You drop the pen and it immediately rolls away.";
 move the pen to the Bureaucratic Hall.
 
 Instead of taking the pen:
-say "You cast a nervous look around you before yanking the pen hard enough to snap the chain. [A Bureaucroc] looks up at the sound, and you panic.";
+say "You cast a nervous look around you before yanking the pen hard enough to snap the chain. [A Bureaucroc] looks up at the sound, and you panic. You find yourself outside [Bureaucratic Hall].";
 try going outside;
 now the player carries the pen.
 
@@ -131,6 +141,14 @@ Check writing:
 
 Carry out writing:
 say "You fiddle with the pen, and it leaks ink all over you."
+
+Writing on is an action applying to one thing.
+Understand "write on [something]" as writing on.
+Carry out writing on: try writing.
+
+Making papers is an action applying to nothing.
+Understand "write papers" as making papers.
+Carry out making papers: try writing.
 
 Book - Water
 
@@ -159,7 +177,7 @@ say "The water cooler appears to be cemented into place. You get the impression 
 
 Before dropping the cup of water:
 	if the player does not carry the cup of water:
-		say "You will need to dispense a cup of water before you can spill it." instead.
+		try taking the cup of water.
 
 Instead of dropping the cup of water:
 	if the location is Bureaucratic Hall:
@@ -175,42 +193,55 @@ The description is "This water is so plain, it has no Brownian motion, but Beigi
 
 Before drinking a cup of water:
 	if the player does not carry the cup of water:
-		say "You will first need to dispense a cup of water from the water cooler." instead.
+		try taking the cup of water.
+
+The trash can is scenery in the Bureaucratic Hall. The description is "It's just a trash can. It's not important."
+
+Instead of doing anything except examining to the trash can: try examining the trash can.
 
 Instead of drinking the cup of water:
-say "You imbibe the plain water from the generic cone-cup. Ewww. That water tastes really... bureaucratic-y.";
+say "You imbibe the plain water from the generic cone-cup. Ewww. That water tastes really... bureaucratic-y. You file the cup in the trash can.";
+now the bureaucroc is helping;
 move the cup of water to the cooler.
 
 Book - Subway Ticket Dispenser
 
-A ticket dispenser is a thing in Subway Station.
+A dispenser is a thing in Subway Station. It is fixed in place. The printed name is "ticket dispenser". Understand "ticket dispenser" as dispenser.
 The description is "This machine dispenses subway tickets in exchange for 50 currants. Press the button to buy a ticket."
 
-The button is part of the ticket dispenser. The description is "It's a bright red button. Push it. Push the button."
+The button is part of the dispenser. The description is "It's a bright red button. Push it. Push the button."
 
 A subway ticket is scenery in the Subway Station. The description is "You can't see any such thing. Because you haven't purchased a ticket yet."
+
+Instead of taking a subway ticket:
+try buying a subway ticket.
 
 Instead of pushing the button:
 try buying a subway ticket.
 
-Does the player mean buying a subway ticket: it is likely.
+The subway is scenery in the Subway Station.
+
+Understand "ride [subway]" as buying.
 
 Instead of buying a subway ticket:
 	if the qualification is not carried by the player:
-		say "The [ticket dispenser] says, 'Without [Papers], you may not use public transportation. You can get your [Papers] at [Bureaucratic Hall].'" instead;
+		say "The [dispenser] says, 'Without [Papers], you may not use public transportation. You can get your [Papers] at [Bureaucratic Hall].'" instead;
 	if the player carries the qualification and the qualification is not activated:
-		say "The [ticket dispenser] says, 'You have acquired your [Qualification], but you need to activate it. After that, return to [Bureaucratic Hall] and purchase and complete your [Papers].'" instead;
+		say "The [dispenser] says, 'You have acquired your [Qualification], but you need to activate it. After that, return to [Bureaucratic Hall] and purchase and complete your [Papers].'" instead;
 	if the qualification is activated and papers are not carried by the player:
-		say "The [ticket dispenser] says, 'You can get your [Papers] at [Bureaucratic Hall].'" instead;
+		say "The [dispenser] says, 'You can get your [Papers] at [Bureaucratic Hall].'" instead;
 	if the player carries papers and papers are not complete:
-		say "The [ticket dispenser] says, 'You have acquired and activated your [Qualification], and you have your [Papers] but you need to complete them.'" instead;
+		say "The [dispenser] says, 'You have acquired and activated your [Qualification], and you have your [Papers] but you need to complete them.'" instead;
 	otherwise:
-		say "The [ticket dispenser] says, 'Train tickets cost 50C. Which line would you like to ride?'";
+		say "The [dispenser] says, 'Train tickets cost 50C. Which line would you like to ride?'";
 		end the story finally saying "You won the game!"
 
-The turnstile is scenery in the subway station. Understand "gate" as scenery. The description is "There is a gate here blocking your way. It will open once you buy a ticket."
+The turnstile is scenery in the subway station. Understand "gate" as turnstile. The description is "There is a gate here blocking your way. It will open once you buy a ticket."
 Jumping over is an action applying to one thing.
 Understand "jump over [turnstile]" and "break through [turnstile]" and "jump [turnstile]" as jumping over.
+
+Instead of attacking the turnstile:
+try jumping over the turnstile.
 
 Carry out jumping over:
 say "You attempt to jump over the gate. You not only trip and fall on your face, but the de-imaginators show up and cart you off to Abbasid Jail.";
@@ -227,6 +258,17 @@ Cost is a number that varies. Cost is 50.
 
 Qualification can be activated or not activated. Qualification is not activated.
 
+Obtaining qualification is an action applying to nothing.
+Understand "obtain qualification" as obtaining qualification.
+
+Carry out obtaining qualification: say "You will need to go to [Bureaucratic Hall] to do that."
+
+Check obtaining qualification:
+	if the qualification is activated:
+		say "You have already qualified yourself to carry cards." instead;
+	otherwise if the player carries qualification:
+		say "You already have the qualification. Now you need to activate it." instead.
+
 Activating qualification is an action applying to one thing.
 Understand "Activate [Qualification]" as activating qualification.
 
@@ -236,7 +278,7 @@ now the qualification is activated.
 
 Check activating qualification:
 	if the qualification is activated:
-		say "You have already qualified yourself to carry cards."
+		say "You have already qualified yourself to carry cards." instead.
 
 To say qualification-reminder: say "Don't forget to activate this [Qualification] if you want to prove that you can carry cards."
 
@@ -257,9 +299,21 @@ Check completing papers (this is the need a pen rule):
 	if the pen is not carried by the player:
 		say "You will need a pen in order to fill out your [Papers]." instead.
 
+
+Getting papers is an action applying to nothing.
+Understand "get papers" as getting papers.
+
+Carry out getting papers: say "You will need to go to [Bureaucratic Hall] to do that."
+
+Check getting papers:
+	if the papers are complete:
+		say "You have already completed your [Papers]." instead;
+	otherwise if the player carries the papers:
+		say "You already have your papers. Now you need to complete them." instead.
+		
 Check completing papers (this is the already completed rule):
 	If papers are complete:
-		say "You have already completed your [Papers]."
+		say "You have already completed your [Papers]." instead.
 
 Carry out completing papers:
 say "You cross your 'i's and dot your 't's. Or maybe it's the other way around. In any case, you manage to complete your [Papers] without too much trouble.";
@@ -301,6 +355,9 @@ Currants is a number that varies. Currants is 200.
 
 Currant is a thing carried by the player. The description is "Currants make up the local currency." Understand "currants" as currant. The printed name is "[currants] currants".
 
+Instead of dropping the currant:
+say "You drop a handful of currants. Then you immediately pick them back up."
+
 Book - Name
 
 The player's name is an indexed text that varies.
@@ -331,6 +388,13 @@ Volume - Bureaucroc
 A bureaucroc is a person and scenery in the Bureaucratic Hall. The bureaucroc can be helping or not helping. Understand "croc" as bureaucroc.
 The description is "While this [Bureaucroc] can't be described as faceless, given the presence of a face, the fact that you can't tell any of them apart renders its face basically unnecessary. Charged with the granting (or not) of permits, this is a world of red tape and frustration in an ill-fitting suit, basically."
 
+Bribing is an action applying to one thing.
+Understand "bribe [bureaucroc]" as bribing.
+
+Carry out bribing: 
+say "You attempt to bribe a government official. He seems tempted, but before you can seal the deal, the de-imaginators show up and cart you off to Abbasid Jail.";
+end the story saying "You are here because you were bad. Knock it off."
+
 Bureaucroc_name is an indexed text that varies.
 
 to say btitle: say "[one of]Prefect[or]Chamberlain[or]Deputy[or]Secretary[or]Assistant[or]Associate[or]Representative[or]Magister[or]Manager[or]Director[or]Overseer[or]Administrator[or]Probost[at random]".
@@ -339,7 +403,7 @@ to say bname: say "[one of]Smithe[or]Wigglesbottom[or]Apfer[or]Naraiwaddleappali
 
 Volume - Helper
 
-Before going to the Subway Station for the second time:
+Before going to the Subway Station for the first time:
 		say "As you make your way back down to the Subway Station, a Bureaucroc corners you on the stairs. He whispers, 'Psssst. Here'sss the deal. Getting your Card Carrying Qualification is the first step in the Bureaucratic Artsss. Yesss, and once you have it, you are on your way to being able to obtain Your Papersss (and all sorts of licenses and permits). It used to be you could acquire the bureaucratic documentsss directly from a friend--Oh, it'sss perfectly legal, mind you--but seemsss like you're the only one around. You'll have to go the official route and deal with the red tape. Head over to the Bureaucratic Hall on Gregariousss Grange and talk to one of my friendsss there. You'll get what you need.' And then he disappears as quickly as he appeared.[paragraph break]That was weird.";
 		now the bureaucroc is helping.
 
@@ -357,8 +421,17 @@ Free to leave ends when ready is 1.
 
 Ready is a number that varies. Ready is 0.
 
+When free to leave begins: now ready is 0.
+
 Approaching is an action applying to one thing.
 Understand "approach [counter]" and "approach [bureaucroc]" and "talk to [bureaucroc]" and "speak to [bureaucroc]" as approaching.
+
+Understand the commands "ask" and "tell" and "say" and "answer" as something new.
+Understand "ask [text]" or "tell [text]" or "answer [text]" or "say [text]" as a mistake ("[talk to instead]").
+Instead of asking someone to try doing something: say "[talk to instead][paragraph break]".
+Instead of answering someone that something: say "[talk to instead][paragraph break]".
+
+To say talk to instead: say "To talk to someone, just... 'talk to' them."
 
 Rule for supplying a missing noun when approaching: now the noun is the bureaucroc.
 
@@ -370,7 +443,7 @@ Check approaching (this is the nothing left to do rule):
 	if the player carries papers:
 		say "[The Bureaucroc] says, 'Hmmm. I see your lips moving, but I don't understand the words. Maybe come back another time?'" instead.
 
-Carry out approaching:
+Carry out approaching:	
 	now ready is 1;
 	if Limbo is happening:
 		if the player is on the chair, try silently standing;
@@ -399,8 +472,10 @@ Please wait ends when wait-count is 0.
 When please wait begins:
 now wait-count is 5.
 
-Instead of entering the chair during free to leave:
-say "You would rather not sit in one of those chairs unless you absolutely have to."
+to say no sit: say "You would rather not sit in one of those chairs unless you absolutely have to."
+
+Check entering the chair:
+if intermission is not happening, say "[no sit]" instead.
 
 When please wait ends:
 now wait-count is -1;
@@ -509,7 +584,7 @@ say "[try-again]."
         
 Volume - Testing
 
-Test intro with "up/in/out/down/up/in/approach".
+Test intro with "up/down/up/in/approach".
 Test wait with "sit/z/z/z/z/approach/z/y/1".
 Test qual with "out/activate/learn/in/approach".
 Test paper with "take pen/complete/down/buy ticket".
