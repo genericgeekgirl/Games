@@ -13,15 +13,13 @@ release to "/home/adri/Games/Interactive Fiction/Adri/bureaucracy/bureaucracy Ma
 storyfile leafname "Bureaucrocy.gblorb"
 storyfile "/home/adri/Games/Interactive Fiction/Adri/bureaucracy/bureaucracy.inform/Build/output.ulx" include
 ifiction "/home/adri/Games/Interactive Fiction/Adri/bureaucracy/bureaucracy.inform/Metadata.iFiction" include
-cover "/usr/share/gnome-inform7/Extensions/Reserved/DefaultCover.jpg"
-picture 1 "/usr/share/gnome-inform7/Extensions/Reserved/DefaultCover.jpg"
-release file "/usr/share/gnome-inform7/Extensions/Reserved/Cover.jpg"
-release file "/usr/share/gnome-inform7/Extensions/Reserved/Small Cover.jpg"
+cover "/home/adri/Games/Interactive Fiction/Adri/bureaucracy/bureaucracy Materials/Cover.png"
+picture 1 "/home/adri/Games/Interactive Fiction/Adri/bureaucracy/bureaucracy Materials/Cover.png"
 
 ! Placeholder variables
 
 placeholder [IFID] = "4F068EF6-57AC-4642-9F2D-DDBCFCC1DA03"
-placeholder [RELEASE] = "1"
+placeholder [RELEASE] = "2"
 placeholder [YEAR] = "2014"
 placeholder [TITLE] = "Bureaucrocy"
 placeholder [AUTHOR] = "Adri"
@@ -45,9 +43,8 @@ template path "/home/adri/Games/Interactive Fiction/Adri/bureaucracy/bureaucracy
 template path "/home/adri/Inform/Templates"
 template path "/usr/share/gnome-inform7/Extensions/Reserved/Templates"
 css
-website "Standard"
-status instruction ||&nbsp;<a href="source:story.ni#line10"><img border=0 src=inform:/Reveal.png></a>||
-status alternative ||Using 'Release along with cover art', to provide something more distinctive than the default artwork above&nbsp;<a href=inform:/doc391.html><img border=0 src=inform:/help.png></a>||
+website "OneColumn"
+status instruction ||&nbsp;<a href="source:story.ni#line9"><img border=0 src=inform:/Reveal.png></a>||
 status alternative ||Using 'Release along with the "Such-and-Such" file called "whatever.pdf"', perhaps to add a manual, or a welcoming note&nbsp;<a href=inform:/doc389.html><img border=0 src=inform:/help.png></a>||
 status alternative ||Using 'Release along with the source text'&nbsp;<a href=inform:/doc399.html><img border=0 src=inform:/help.png></a>||
 status alternative ||Using 'Release along with a solution'&nbsp;<a href=inform:/doc398.html><img border=0 src=inform:/help.png></a>||

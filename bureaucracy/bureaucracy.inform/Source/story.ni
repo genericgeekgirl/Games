@@ -1,13 +1,12 @@
 "Bureaucrocy" by "Adri".
 
 The story creation year is 2014.
-The release number is 1.
-The story headline is "A boring tale about paperwork".
+The release number is 2.
+The story headline is "A frustrating tale about paperwork".
 The story genre is "slice of life".
 The story description is "[story title] is based on a scene from [italic type]Glitch[roman type]"
 
-[Release along with cover art, an interpreter and a "Genericgeekgirl" website.]
-Release along with the "Quixe" interpreter.
+Release along with Cover Art, a "Quixe" interpreter and a "OneColumn" website
 
 Volume - Basic Setup
 
@@ -373,7 +372,7 @@ no.
 
 After reading a command when collecting names:
 	now player's name is "Alexandra";
-	if the player's command does not match "Alexandra":
+	if the player's command does not match "Alexandra" and the player's command does not match "Adri":
 		say "[line break]I don't know how to pronounce that. Your name will be [player's name].[paragraph break]";
 	now the command prompt is ">";
 	say "[banner text]";

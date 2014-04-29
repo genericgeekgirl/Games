@@ -29,8 +29,8 @@ Array UUID_ARRAY string "UUID://4F068EF6-57AC-4642-9F2D-DDBCFCC1DA03//";
 Constant Story "Bureaucrocy";
 Constant Headline SC_2;
 Constant Story_Author SC_3;
-Release 1;
-Serial "140401";
+Release 2;
+Serial "140425";
 
 Default Story 0;
 Default Headline 0;
@@ -10276,7 +10276,7 @@ Array Global_Vars -->
   (SC_2) ! 30
   (SC_27) ! 31
   (text_routine_5) ! 32
-  (1) ! 33
+  (2) ! 33
   (2014) ! 34
   (0) ! 43
   (selfobj) ! 51
@@ -10293,7 +10293,7 @@ Array Global_Vars -->
   (SC_29) ! 62
   (I46_north) ! 63
   (SC_30) ! 64
-  (LIST_CONST_58461) ! 65
+  (LIST_CONST_58475) ! 65
   (0) ! 66
   (SC_31) ! 67
   (SC_32) ! 68
@@ -10349,7 +10349,7 @@ Array tab_2_0 table $006b 8  TABLE_NOVALUE (R_881)  (R_882)  (R_883)  (R_884)  (
 Array tab_2_1 table $006c 11  TABLE_NOVALUE (text_routine_7)  (text_routine_8)  (text_routine_9)  (text_routine_10)  (text_routine_11)  (text_routine_12)  (text_routine_13)  (text_routine_14)  (text_routine_15)  (text_routine_16)  (text_routine_17)  (text_routine_18)  (text_routine_19)  (text_routine_20)  (text_routine_21)  (text_routine_22)  (text_routine_23)  (text_routine_24)  (text_routine_25)  (text_routine_26)  (text_routine_27)  (text_routine_28) ;
 Array T25_random_questions table  tab_25_0 tab_25_1;
 Array tab_25_0 table $006d 14  (SC_44)  (SC_45)  (SC_46)  (SC_47)  (SC_48)  (SC_49)  (SC_50)  (SC_51)  (SC_52)  (SC_53)  (SC_54)  (SC_55)  (SC_56)  (SC_57) ;
-Array tab_25_1 table $066e 16  (LIST_CONST_2989)  (LIST_CONST_2995)  (LIST_CONST_3001)  (LIST_CONST_3007)  (LIST_CONST_3013)  (LIST_CONST_3019)  (LIST_CONST_3025)  (LIST_CONST_3031)  (LIST_CONST_3037)  (LIST_CONST_3043)  (LIST_CONST_3049)  (LIST_CONST_3055)  (LIST_CONST_3061)  (LIST_CONST_3067) ;
+Array tab_25_1 table $066e 16  (LIST_CONST_3003)  (LIST_CONST_3009)  (LIST_CONST_3015)  (LIST_CONST_3021)  (LIST_CONST_3027)  (LIST_CONST_3033)  (LIST_CONST_3039)  (LIST_CONST_3045)  (LIST_CONST_3051)  (LIST_CONST_3057)  (LIST_CONST_3063)  (LIST_CONST_3069)  (LIST_CONST_3075)  (LIST_CONST_3081) ;
 Array TB_Blanks -> 
   ! For table T0_final_question_options
   $00  ! Column 0
@@ -12844,8 +12844,8 @@ self = noun;
       ! [1: now player's name is ~Alexandra~]
        BlkValueCast((Global_Vars-->54), INDEXED_TEXT_TY, TEXT_TY, SC_146); 
       ! phrase 2
-      ! [2: if the player's command does not match ~Alexandra~ begin]
-       if (( (SnippetMatches(players_command, Consult_Grammar_133) == false) ))  {
+      ! [2: if the player's command does not match ~Alexandra~ and the player's command does not match ~Adri~ begin]
+       if ((( (SnippetMatches(players_command, Consult_Grammar_133) == false) )) && (( (SnippetMatches(players_command, Consult_Grammar_134) == false) )))  {
          ! phrase 3
          ! [3: say ~[line break]I don't know how to pronounce that. Your name will be [player's name].[paragraph break]~]
          say__p=1;ParaContent();  new_line; ParaContent();  print (PrintText) SC_147; ParaContent();  print (INDEXED_TEXT_TY_Say) (Global_Vars-->54); ParaContent();  print (PrintText) SC_99; ParaContent();  DivideParagraphPoint(); new_line;  .L_Say35; .L_SayX35;
@@ -20685,7 +20685,7 @@ self = noun;
 [ R_920 ;
       ! phrase 1
       ! [1: if the player's command does not match ~[number]~ begin]
-       if (( (SnippetMatches(players_command, Consult_Grammar_134) == false) ))  {
+       if (( (SnippetMatches(players_command, Consult_Grammar_135) == false) ))  {
          ! phrase 2
          ! [2: if closed question mode is true begin]
           if (((((Global_Vars-->44) && true) == (1 && true))))  {
@@ -20741,7 +20741,7 @@ self = noun;
 [ R_924 ;
       ! phrase 1
       ! [1: if the player's command does not match ~[number]~ begin]
-       if (( (SnippetMatches(players_command, Consult_Grammar_135) == false) ))  {
+       if (( (SnippetMatches(players_command, Consult_Grammar_136) == false) ))  {
          ! phrase 2
          ! [2: if closed question mode is true begin]
           if (((((Global_Vars-->44) && true) == (1 && true))))  {
@@ -20874,7 +20874,7 @@ self = noun;
 [ R_928 ;
       ! phrase 1
       ! [1: if the player's command does not match ~[decision]~ begin]
-       if (( (SnippetMatches(players_command, Consult_Grammar_136) == false) ))  {
+       if (( (SnippetMatches(players_command, Consult_Grammar_137) == false) ))  {
          ! phrase 2
          ! [2: if closed question mode is true begin]
           if (((((Global_Vars-->44) && true) == (1 && true))))  {
@@ -20961,7 +20961,7 @@ self = noun;
 [ R_932 ;
       ! phrase 1
       ! [1: if the player's command does not match ~[gender]~ begin]
-       if (( (SnippetMatches(players_command, Consult_Grammar_137) == false) ))  {
+       if (( (SnippetMatches(players_command, Consult_Grammar_138) == false) ))  {
          ! phrase 2
          ! [2: if closed question mode is true begin]
           if (((((Global_Vars-->44) && true) == (1 && true))))  {
@@ -31886,21 +31886,21 @@ Array printed_text buffer 256;
 	rfalse;
 ]; 
 
-Array LIST_CONST_58461 --> 0 9 10 (I46_north) (I47_northeast) (I52_east) (I50_southeast) (I49_south) (I51_southwest) (I53_west) (I48_northwest) (I54_up) (I55_down) ;
-Array LIST_CONST_2989 --> 0 TEXT_TY 2 (SC_308) (SC_309) ;
-Array LIST_CONST_2995 --> 0 TEXT_TY 2 (SC_310) (SC_311) ;
-Array LIST_CONST_3001 --> 0 TEXT_TY 2 (SC_312) (SC_313) ;
-Array LIST_CONST_3007 --> 0 TEXT_TY 2 (SC_314) (SC_315) ;
-Array LIST_CONST_3013 --> 0 TEXT_TY 2 (SC_316) (SC_317) ;
-Array LIST_CONST_3019 --> 0 TEXT_TY 2 (SC_318) (SC_208) ;
-Array LIST_CONST_3025 --> 0 TEXT_TY 2 (SC_319) (SC_320) ;
-Array LIST_CONST_3031 --> 0 TEXT_TY 2 (SC_321) (SC_322) ;
-Array LIST_CONST_3037 --> 0 TEXT_TY 2 (SC_323) (SC_324) ;
-Array LIST_CONST_3043 --> 0 TEXT_TY 2 (SC_325) (SC_326) ;
-Array LIST_CONST_3049 --> 0 TEXT_TY 2 (SC_327) (SC_328) ;
-Array LIST_CONST_3055 --> 0 TEXT_TY 2 (SC_329) (SC_330) ;
-Array LIST_CONST_3061 --> 0 TEXT_TY 2 (SC_331) (SC_332) ;
-Array LIST_CONST_3067 --> 0 TEXT_TY 2 (SC_327) (SC_328) ;
+Array LIST_CONST_58475 --> 0 9 10 (I46_north) (I47_northeast) (I52_east) (I50_southeast) (I49_south) (I51_southwest) (I53_west) (I48_northwest) (I54_up) (I55_down) ;
+Array LIST_CONST_3003 --> 0 TEXT_TY 2 (SC_308) (SC_309) ;
+Array LIST_CONST_3009 --> 0 TEXT_TY 2 (SC_310) (SC_311) ;
+Array LIST_CONST_3015 --> 0 TEXT_TY 2 (SC_312) (SC_313) ;
+Array LIST_CONST_3021 --> 0 TEXT_TY 2 (SC_314) (SC_315) ;
+Array LIST_CONST_3027 --> 0 TEXT_TY 2 (SC_316) (SC_317) ;
+Array LIST_CONST_3033 --> 0 TEXT_TY 2 (SC_318) (SC_208) ;
+Array LIST_CONST_3039 --> 0 TEXT_TY 2 (SC_319) (SC_320) ;
+Array LIST_CONST_3045 --> 0 TEXT_TY 2 (SC_321) (SC_322) ;
+Array LIST_CONST_3051 --> 0 TEXT_TY 2 (SC_323) (SC_324) ;
+Array LIST_CONST_3057 --> 0 TEXT_TY 2 (SC_325) (SC_326) ;
+Array LIST_CONST_3063 --> 0 TEXT_TY 2 (SC_327) (SC_328) ;
+Array LIST_CONST_3069 --> 0 TEXT_TY 2 (SC_329) (SC_330) ;
+Array LIST_CONST_3075 --> 0 TEXT_TY 2 (SC_331) (SC_332) ;
+Array LIST_CONST_3081 --> 0 TEXT_TY 2 (SC_327) (SC_328) ;
 
 
 
@@ -37957,8 +37957,7 @@ Verb 'say'
     rv  ! for use by individual grammar lines
     ;
     wn = range_from; original_wn = wn; rv = GPR_PREPOSITION;
-        w = ParseTokenStopped(GPR_TT, DECIMAL_TOKEN);
-        if (w ~= GPR_NUMBER) jump Fail_1; rv = GPR_NUMBER;
+        if (NextWordStopped() ~= 'adri') jump Fail_1;
         if ((range_words==0) || (wn-range_from==range_words)) return rv;
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
@@ -37989,7 +37988,7 @@ Verb 'say'
     rv  ! for use by individual grammar lines
     ;
     wn = range_from; original_wn = wn; rv = GPR_PREPOSITION;
-        w = ParseTokenStopped(GPR_TT, Kind_GPR_44);
+        w = ParseTokenStopped(GPR_TT, DECIMAL_TOKEN);
         if (w ~= GPR_NUMBER) jump Fail_1; rv = GPR_NUMBER;
         if ((range_words==0) || (wn-range_from==range_words)) return rv;
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
@@ -37997,6 +37996,22 @@ Verb 'say'
 ];
 
 [ Consult_Grammar_137
+    range_from  ! call parameter: word number of snippet start
+    range_words  ! call parameter: snippet length
+    original_wn  ! first word of text parsed
+    group_wn  ! first word matched against A/B/C/... disjunction
+    w  ! for use by individual grammar lines
+    rv  ! for use by individual grammar lines
+    ;
+    wn = range_from; original_wn = wn; rv = GPR_PREPOSITION;
+        w = ParseTokenStopped(GPR_TT, Kind_GPR_44);
+        if (w ~= GPR_NUMBER) jump Fail_1; rv = GPR_NUMBER;
+        if ((range_words==0) || (wn-range_from==range_words)) return rv;
+        .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
+    return GPR_FAIL;
+];
+
+[ Consult_Grammar_138
     range_from  ! call parameter: word number of snippet start
     range_words  ! call parameter: snippet length
     original_wn  ! first word of text parsed
@@ -38825,7 +38840,7 @@ ArgumentTypeFailed(filename, line);
 
 
 Array ConstantListPointers --> 
-LIST_CONST_58461 LIST_CONST_2989 LIST_CONST_2995 LIST_CONST_3001 LIST_CONST_3007 LIST_CONST_3013 LIST_CONST_3019 LIST_CONST_3025 LIST_CONST_3031 LIST_CONST_3037 LIST_CONST_3043 LIST_CONST_3049 LIST_CONST_3055 LIST_CONST_3061 LIST_CONST_3067  0 0;
+LIST_CONST_58475 LIST_CONST_3003 LIST_CONST_3009 LIST_CONST_3015 LIST_CONST_3021 LIST_CONST_3027 LIST_CONST_3033 LIST_CONST_3039 LIST_CONST_3045 LIST_CONST_3051 LIST_CONST_3057 LIST_CONST_3063 LIST_CONST_3069 LIST_CONST_3075 LIST_CONST_3081  0 0;
 
 Constant SC_144 = " ";
 Constant SC_463 = " (although since you're in or on something, you may need to type EXIT first)";
@@ -39015,7 +39030,7 @@ Constant SC_71 = "? Now is your chance. Use it or lose it.~";
 Constant SC_150 = "?";
 Constant SC_139 = "?~ He stares intently at you.";
 Constant SC_485 = "?s _body";
-Constant SC_2 = "A boring tale about paperwork";
+Constant SC_2 = "A frustrating tale about paperwork";
 Constant SC_6 = "A sign proclaims this room to be the ~Department of Administrative Affairs - Ministry of Departments~. To the left is a waiting area with a water cooler and a bunch of hard, plastic orange chairs. To the right is a counter, behind which is a Bureaucroc. Another sign reads ~Please approach the counter for assistance.~";
 Constant SC_104 = "A tiny conical cup of water cooler water is duly dispensed.";
 Constant SC_229 = "Acceptable. The fee is ";

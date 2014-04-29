@@ -1,26 +1,133 @@
-/*
+/** 
+ * Cribbed from Andrew Plotkin's "One Column" CSS file. 
+ * The original can be found at: http://eblong.com/zarf/glulx/quixe/
+**/
 
-Standard CSS file for use with Standard.html and Standard-Source.html. 
-
-*/
-
+ul {
+list-style-type:none;
+padding:0;
+margin:0;
+}
 
 body
 {
 	font-family: Georgia, Palatino, "Times New Roman", Times, serif;
 	font-size: 100%;
 	-webkit-text-size-adjust: none;
+
+	margin: 0px;
+	top: 0px;
+	bottom: 0px;
+	width: 100%;
+	background: white;
+	color: black;
 }
 
-.container
-{
+/* about.html and source.html use relative positioning, due to need for a scrollbar */
+/* index.html uses absolute positioning */
+
+/* HEADER */
+
+/* Used in about.html and source.html */
+#pageheader {
+	width: 100%;
+	top: 0px;
+	height: 60px; /* header height */
+	margin: 0px;
+}
+
+/* Used in index.html. */
+
+#header {
+	position: absolute;
+	width: 100%;
+	top: 0px;
+	height: 60px; /* header height */
+	margin: 0px;
+}
+
+/* Used in all pages -- defines the width. */
+
+#subheader {
+	position: relative;
+	width: 600px; /* column width */
+	height: 100%;
+	margin: auto;
+}
+
+/* FOOTER */
+
+/* Used in about.html and source.html. */
+
+#pagefooter {
+	width: 100%;
+	height: 0px; /* footer height */
+	margin: 0px;
 	margin-top: 2em;
 }
 
-/* 
-Paragraph features defined here apply without distinction to blurb and
-source paragraphs. 
-*/
+/* Used in index.html. */
+
+#footer {
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+	height: 0px; /* footer height */
+	margin: 0px;
+}
+
+/* Used in all pages -- defines the width. */
+
+#subfooter {
+	position: relative;
+	width: 600px; /* column width */
+	height: 100%;
+	margin: auto;
+}
+
+
+/* header and footer text */
+
+.framelabel {
+	padding-top: 1em;
+	text-align:center;
+	font-size: 25px;
+	font-weight:bold;
+}
+
+/* COLUMN */
+
+/* Used in about.html and source.html. */
+
+#pagecolumn {
+	width: 100%;
+	top: 60px; /* header height */
+	margin: 0px;
+}
+
+/* Used in index.html. */
+
+#column {
+	position: absolute;
+	width: 100%;
+	top: 60px; /* header height */
+	bottom: 0px; /* footer height */
+	margin: 0px;
+}
+
+/* width */
+
+#subcolumn {
+	position: relative;
+	width: 50%; /* column width */
+	height: 100%;
+	margin: auto;
+}
+
+
+.container
+{
+}
 
 p
 {
@@ -28,12 +135,7 @@ p
 	line-height: 1.4;
 }
 
-/* 
-Here we get rid of underlining for links, and provide a more subdued 
-color scheme than the bright-blue HTML standard. 
-
-Best color schemes are likely to vary depending on cover art.
-*/
+/* links */
 
 a
 {
@@ -55,18 +157,12 @@ a:hover
 
 .coverimage
 {
-	width: 12.6em;
-	margin-top: 2em;
-	margin-left: 1em;
-	float: left;
-	clear: left;
-	text-align: right;
+	margin-top: 3em;
+	margin-right: 1em;
+    text-align: center;
 } 
 
-/* 
-Here we make invisible the one-pixel border that currently goes around
-the cover image. 
-*/
+/* invisible one-pixel border around cover art */
 
 .coverimage a
 {
@@ -76,56 +172,31 @@ the cover image.
 	color: #FFF;
 }
 
-/* 
-The introduction formatting applies to the title, author name, and release
-number, here presented at the top of the page. 
-
-To change the appearance of specific elements, tweak
-
-	h1 for the title
-	h2 for the author name
-	.bibliography for the release information
-
-*/
+/* introduction: title, author name, release number */
 
 .introduction
 { 
 	padding-top: 2.4em;
-	margin-left: 15.4em;
-	width: 33em;
+	margin-left: 1em;
 	line-height: 1;
 	text-align: left;
 }
 
-/* 
-These set the sizes for the title (h1) and the author name (h2). 
+/* h1: title; h2: author name */
 
-The ideal font-size for h1 may vary quite a bit depending on how long the 
-game's title is: larger for one-word titles, smaller for longer titles.
-
-Should we wish to remove the title entirely and allow the cover art alone
-to represent the game, we need only add the line "display: none;" to the
-definition of h1.
-
-*/
-h1 { font-size: 2em;  }
+h1 { font-size: 2em; }
 h2 { font-size: 1em; line-height: .25;}
 
-/* The about formatting applies to blurb information. */
+/* blurb info */
 
 .about
 {
 	margin-top: 2.8em;
-	margin-left: 15.4em;
-	width: 33em;
+	margin-left: 1em;
 	text-align: left;
 }
 
-/* 
-By setting about p and about p + p, we instruct the first paragraph of the
-blurb to be unindented but subsequent paragraphs to be indented a small 
-distance. 
-*/
+/* don't indent first paragraph; indent subsequent paragraphs */
 
 .about p { margin-bottom: 0; }
 
@@ -135,14 +206,11 @@ distance.
 	margin-top: 0;
 }
 
-/* 
-Playinfo affects the paragraph at the bottom of the home-page that supplies
-the IFID for the game and suggests interpreters for the author to use. */
+/*  Playinfo: IFID, intepreter suggestions */
 
 .playinfo
 {
-	margin: 1em 0px 0px 15.4em;
-	width: 33em;
+	margin: 1em 0px 0px 1em;
 }
 
 .playinfo p {
@@ -150,20 +218,11 @@ the IFID for the game and suggests interpreters for the author to use. */
 }
 
 
-/* 
-The links formatting applies to the story file and auxiliary links found
-on the home page, and to the Contents, Next, and Previous links on the 
-source pages. Here we arrange for them to appear in a column at the left
-side of the page. 
-*/
+/* story file, auxiliary links; contents/next/previous links on source code */
 
 .links
 {
-	width: 13em;
-	float: left;
-	clear: left;
-	text-align: right; 
-	margin-top: 2.8em;
+	font-size: 0.8em;
 }
 
 .links li
@@ -173,31 +232,25 @@ side of the page.
 	padding: .4 em;
 }
 
-/* 
-The filetype id applies only to the little (blorb), (pdf), and similar
-denotations found on the links. Here we make these appear smaller than the 
-surrounding text. In order to get rid of them entirely, we would add 
-"display: none;" to our filetype definition. 
-*/ 
+/* link filetype, i.e. (blorb), (pdf) */
 
-span.filetype { font-size: .5em; }
+span.filetype { 
+font-size: .75em; 
+display:none;
+}
 
-/* 
-Source formatting applies to the source text on generated pages. 
-*/
+/* source text */
 
 .source
 {
 	margin-top: 1.4em;
-	margin-left: 15.4em;
-	width: 33em;
+	margin-left: 1em;
 	line-height: 1.4;
 }
 
 .sourceintroduction
 {
-	margin-left: 15.4em;
-	width: 33em;
+	margin-left: 1em;
 }
 
 .sourceintroduction h1
@@ -218,18 +271,13 @@ Source formatting applies to the source text on generated pages.
 
 .sourcecoverimage
 {
-	width: 12.6em;
-	margin-top: 2em;
+	margin-top: 1em;
 	margin-left: 1em;
-	float: left;
-	clear: left;
 	text-align: right;
+	float: right;
 } 
 
-/* 
-Here we make invisible the one-pixel border that currently goes around
-the cover image. 
-*/
+/* invisible one-pixel border around cover art */
 
 .sourcecoverimage a
 {
@@ -238,6 +286,8 @@ the cover image.
 	font-weight: normal;
 	color: #FFF;
 }
+
+/* release information */
 
 .sourcebibliography
 {
@@ -277,11 +327,13 @@ span.heading
 	vertical-align: top;
 } 
 
-/*
-We could alter the following in order to make the footnote links in the source
-text appear different from other links, but otherwise they will be the same
-color as other links -- which is fine as a default.
-*/
+.source li
+{
+	list-style-type: none;
+	list-style-position: default;
+}
+
+/* source code - footnotes */
 
 span.notecue
 {
@@ -289,26 +341,9 @@ span.notecue
 	vertical-align: super;
 }
 
-/* 
-Here we tell the elements of the table of contents not to be listed with
-bullets because this tends to produce considerable visual clutter especially
-with large project files. 
-*/
-
-.source li
-{
-	list-style-type: none;
-	list-style-position: default;
-}
-
-/* 
-Notes applies to footnotes on the source text. 
-*/
-
 .notes
 {
 	margin-left: 16.8em;
-	width: 33em;
 }
 
 .notes p
@@ -320,7 +355,7 @@ Notes applies to footnotes on the source text.
 .notesheading { font-style: italic; }
 
 p.indent0 
-{	margin-bottom: 0;  
+{	margin-bottom: 0;
 }
 
 p.indent1 
@@ -392,17 +427,13 @@ p.indent9
 	margin-top: 0;
 }
 
-/*
-Styles for play.html
-*/
+/* index.html */
+
 .play .coverimage
 {
-	position: fixed;
 }
 .play .links
 {
-	margin-top: 200px;
-	position: fixed;
 }
 
 .interpretercredit
@@ -416,28 +447,27 @@ Styles for play.html
 {
 	background: white;
 	bottom: 0px;
-	left: 15.4em;
+	left: 1em;
 	line-height: 1.4;
-	margin: 0px;
+	margin: 10px 0px 0px 0px;
 	position: absolute;
 	right: 0px;
 	top: 0px;
 }
 
-/*
-Styles for mobile browsers: change to a one-column layout.
-*/
+/* one-column layout */
 
 @media screen and (max-device-width: 480px)
 {
-	.coverimage, .introduction, .links, .about, .playinfo, .source, .sourceintroduction, .sourcecoverimage, .notes
+	.coverimage, .introduction, .about, .playinfo, .source, .sourceintroduction, .sourcecoverimage, .notes
 	{
 		float: none;
 		margin-left: 1em;
+		margin-right: 1em;
 		text-align: left;
 	}
 
-	.play .coverimage, .play .links, .play .interpretercredit
+	.play .coverimage, .play .interpretercredit
 	{
 		display: none;
 	}
@@ -446,5 +476,17 @@ Styles for mobile browsers: change to a one-column layout.
 	{
 		left: 0px;
 		width: auto;
+	}
+
+	#subheader, #subfooter, #subcolumn
+	{
+		width: 320px;
+	}
+
+	.framelabel, .play .links
+	{
+		font-size: 12px;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 }
