@@ -15,16 +15,11 @@
             <language>en</language>
             <group>Inform</group>
         </bibliographic>
-        <cover>
-            <format>png</format>
-            <height>960</height>
-            <width>960</width>
-        </cover>
         <releases>
             <attached>
                 <release>
-                    <releasedate>2014-04-25</releasedate>
-                    <version>2</version>
+                    <releasedate>2014-05-04</releasedate>
+                    <version>3</version>
                     <compiler>Inform 7</compiler>
                     <compilerversion>6G60</compilerversion>
                 </release>
@@ -33,13 +28,12 @@
         <colophon>
             <generator>Inform 7</generator>
             <generatorversion>6G60</generatorversion>
-            <originated>2014-04-25</originated>
+            <originated>2014-05-04</originated>
         </colophon>
         <glulx>
-            <serial>140425</serial>
-            <release>2</release>
+            <serial>140504</serial>
+            <release>3</release>
             <compiler>Inform 7 build 6G60</compiler>
-            <coverpicture>1</coverpicture>
         </glulx>
     </story>
 </ifindex>

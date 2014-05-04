@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Skein rootNode="node-0x19262c0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+<Skein rootNode="node-0xf49260" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>GNOME Inform 7</generator>
-  <activeNode nodeId="node-0x19262c0"/>
-  <item nodeId="node-0x19262c0">
+  <activeNode nodeId="node-0xf49260"/>
+  <item nodeId="node-0xf49260">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
 
 
 Bureaucrocy
 A frustrating tale about paperwork by Adri
-Release 2 / Serial number 140425 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
+Release 3 / Serial number 140504 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
 
 What is your name? &gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -18,19 +18,19 @@ What is your name? &gt;</result>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x1926420"/>
-      <child nodeId="node-0x25b0ee0"/>
-      <child nodeId="node-0x25c9850"/>
+      <child nodeId="node-0xf493c0"/>
+      <child nodeId="node-0x1dd6ee0"/>
+      <child nodeId="node-0x1def430"/>
     </children>
   </item>
-  <item nodeId="node-0x1926420">
+  <item nodeId="node-0xf493c0">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">
 I don&apos;t know how to pronounce that. Your name will be Alexandra.
 
 Bureaucrocy
-A boring tale about paperwork by Adri
-Release 1 / Serial number 140401 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
+A frustrating tale about paperwork by Adri
+Release 3 / Serial number 140504 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
 
 Subway Station
 This is the subway station below Gregarious Grange, Groddle Meadow. A flight of stairs leads up to the street.
@@ -44,34 +44,35 @@ You can see a ticket dispenser here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x1926580"/>
-      <child nodeId="node-0x2200db0"/>
-      <child nodeId="node-0x22dc950"/>
-      <child nodeId="node-0x2333d80"/>
-      <child nodeId="node-0x2358930"/>
-      <child nodeId="node-0x2358d50"/>
-      <child nodeId="node-0x23973d0"/>
-      <child nodeId="node-0x2397530"/>
-      <child nodeId="node-0x23be100"/>
-      <child nodeId="node-0x24872d0"/>
-      <child nodeId="node-0x2487430"/>
-      <child nodeId="node-0x24879b0"/>
-      <child nodeId="node-0x24ad980"/>
-      <child nodeId="node-0x24adc40"/>
-      <child nodeId="node-0x24e8660"/>
-      <child nodeId="node-0x250f2d0"/>
-      <child nodeId="node-0x250f430"/>
-      <child nodeId="node-0x25287e0"/>
-      <child nodeId="node-0x2528ec0"/>
-      <child nodeId="node-0x2563250"/>
-      <child nodeId="node-0x2563670"/>
-      <child nodeId="node-0x2563bf0"/>
-      <child nodeId="node-0x2588580"/>
-      <child nodeId="node-0x2588dc0"/>
-      <child nodeId="node-0x25b0ac0"/>
+      <child nodeId="node-0xf49520"/>
+      <child nodeId="node-0x1a26dc0"/>
+      <child nodeId="node-0x1b02960"/>
+      <child nodeId="node-0x1b5add0"/>
+      <child nodeId="node-0x1b7f980"/>
+      <child nodeId="node-0x1b7fda0"/>
+      <child nodeId="node-0x1bbe3e0"/>
+      <child nodeId="node-0x1bbe540"/>
+      <child nodeId="node-0x1be4100"/>
+      <child nodeId="node-0x1cae2e0"/>
+      <child nodeId="node-0x1cae440"/>
+      <child nodeId="node-0x1cae9c0"/>
+      <child nodeId="node-0x1a5d990"/>
+      <child nodeId="node-0x1a5dc50"/>
+      <child nodeId="node-0x1d0e670"/>
+      <child nodeId="node-0x1d352e0"/>
+      <child nodeId="node-0x1d35440"/>
+      <child nodeId="node-0x1d4e7f0"/>
+      <child nodeId="node-0x1d4eed0"/>
+      <child nodeId="node-0x1d89260"/>
+      <child nodeId="node-0x1d89680"/>
+      <child nodeId="node-0x1d89c00"/>
+      <child nodeId="node-0x1dae580"/>
+      <child nodeId="node-0x1daedc0"/>
+      <child nodeId="node-0x1dd6ac0"/>
+      <child nodeId="node-0x1defdd0"/>
     </children>
   </item>
-  <item nodeId="node-0x1926580">
+  <item nodeId="node-0xf49520">
     <command xml:space="preserve">up</command>
     <result xml:space="preserve">
 Gregarious Grange
@@ -84,13 +85,13 @@ The entrance to the subway is down a flight of stairs. You can also go inside Bu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x19266e0"/>
-      <child nodeId="node-0x21dbbe0"/>
-      <child nodeId="node-0x21dbea0"/>
-      <child nodeId="node-0x2200c50"/>
+      <child nodeId="node-0xf49680"/>
+      <child nodeId="node-0x1a01bf0"/>
+      <child nodeId="node-0x1a01eb0"/>
+      <child nodeId="node-0x1a26c60"/>
     </children>
   </item>
-  <item nodeId="node-0x19266e0">
+  <item nodeId="node-0xf49680">
     <command xml:space="preserve">in</command>
     <result xml:space="preserve">
 Bureaucratic Hall
@@ -103,16 +104,16 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x1926840"/>
-      <child nodeId="node-0x214d2c0"/>
-      <child nodeId="node-0x21b4250"/>
-      <child nodeId="node-0x21b4670"/>
-      <child nodeId="node-0x21b4bf0"/>
-      <child nodeId="node-0x21db240"/>
-      <child nodeId="node-0x21db7c0"/>
+      <child nodeId="node-0xf497e0"/>
+      <child nodeId="node-0x19732d0"/>
+      <child nodeId="node-0x19db2a0"/>
+      <child nodeId="node-0x19db6c0"/>
+      <child nodeId="node-0x19dbc40"/>
+      <child nodeId="node-0x1a01250"/>
+      <child nodeId="node-0x1a017d0"/>
     </children>
   </item>
-  <item nodeId="node-0x1926840">
+  <item nodeId="node-0xf497e0">
     <command xml:space="preserve">approach counter</command>
     <result xml:space="preserve">The bureaucroc says, &quot;Go away. We don&apos;t have time to waste on people who have not learned any Bureaucratic Arts.&quot;
 
@@ -123,10 +124,10 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x19269a0"/>
+      <child nodeId="node-0xf49940"/>
     </children>
   </item>
-  <item nodeId="node-0x19269a0">
+  <item nodeId="node-0xf49940">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -137,10 +138,10 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x1926b00"/>
+      <child nodeId="node-0xf49aa0"/>
     </children>
   </item>
-  <item nodeId="node-0x1926b00">
+  <item nodeId="node-0xf49aa0">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -151,10 +152,10 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x1926c60"/>
+      <child nodeId="node-0xf49c00"/>
     </children>
   </item>
-  <item nodeId="node-0x1926c60">
+  <item nodeId="node-0xf49c00">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -165,10 +166,10 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x1926dc0"/>
+      <child nodeId="node-0xf49d60"/>
     </children>
   </item>
-  <item nodeId="node-0x1926dc0">
+  <item nodeId="node-0xf49d60">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -179,10 +180,10 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x1926f20"/>
+      <child nodeId="node-0xf49ec0"/>
     </children>
   </item>
-  <item nodeId="node-0x1926f20">
+  <item nodeId="node-0xf49ec0">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -193,10 +194,10 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x21250e0"/>
+      <child nodeId="node-0x194b0f0"/>
     </children>
   </item>
-  <item nodeId="node-0x21250e0">
+  <item nodeId="node-0x194b0f0">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -207,10 +208,10 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2125240"/>
+      <child nodeId="node-0x194b250"/>
     </children>
   </item>
-  <item nodeId="node-0x2125240">
+  <item nodeId="node-0x194b250">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -221,10 +222,10 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x21253a0"/>
+      <child nodeId="node-0x194b3b0"/>
     </children>
   </item>
-  <item nodeId="node-0x21253a0">
+  <item nodeId="node-0x194b3b0">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -235,10 +236,10 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2125500"/>
+      <child nodeId="node-0x194b510"/>
     </children>
   </item>
-  <item nodeId="node-0x2125500">
+  <item nodeId="node-0x194b510">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -249,10 +250,10 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2125660"/>
+      <child nodeId="node-0x194b670"/>
     </children>
   </item>
-  <item nodeId="node-0x2125660">
+  <item nodeId="node-0x194b670">
     <command xml:space="preserve">sit</command>
     <result xml:space="preserve">(on the chair)
 You take a seat on one of their uncomfortable plastic chairs.
@@ -264,10 +265,10 @@ You take a seat on one of their uncomfortable plastic chairs.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x21257c0"/>
+      <child nodeId="node-0x194b7d0"/>
     </children>
   </item>
-  <item nodeId="node-0x21257c0">
+  <item nodeId="node-0x194b7d0">
     <command xml:space="preserve">up</command>
     <result xml:space="preserve">You can&apos;t do anything while waiting. Just wait.
 
@@ -278,10 +279,10 @@ You take a seat on one of their uncomfortable plastic chairs.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2125920"/>
+      <child nodeId="node-0x194b930"/>
     </children>
   </item>
-  <item nodeId="node-0x2125920">
+  <item nodeId="node-0x194b930">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -292,10 +293,10 @@ You take a seat on one of their uncomfortable plastic chairs.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2125a80"/>
+      <child nodeId="node-0x194ba90"/>
     </children>
   </item>
-  <item nodeId="node-0x2125a80">
+  <item nodeId="node-0x194ba90">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -306,10 +307,10 @@ You take a seat on one of their uncomfortable plastic chairs.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2125be0"/>
+      <child nodeId="node-0x194bbf0"/>
     </children>
   </item>
-  <item nodeId="node-0x2125be0">
+  <item nodeId="node-0x194bbf0">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -320,10 +321,10 @@ You take a seat on one of their uncomfortable plastic chairs.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2125d40"/>
+      <child nodeId="node-0x194bd50"/>
     </children>
   </item>
-  <item nodeId="node-0x2125d40">
+  <item nodeId="node-0x194bd50">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -336,10 +337,10 @@ A bureaucroc calls out, &quot;Alexandra! You&apos;re up!&quot;
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2125ea0"/>
+      <child nodeId="node-0x194beb0"/>
     </children>
   </item>
-  <item nodeId="node-0x2125ea0">
+  <item nodeId="node-0x194beb0">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -352,10 +353,10 @@ The bureaucroc calls out again, &quot;Did you hear me, Alexandra? Come take your
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x214d160"/>
+      <child nodeId="node-0x1973170"/>
     </children>
   </item>
-  <item nodeId="node-0x214d160">
+  <item nodeId="node-0x1973170">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">&gt;WAIT
 Time passes.
@@ -369,7 +370,7 @@ The bureaucroc calls out again, &quot;Did you want something, Alexandra? Now is 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x214d2c0">
+  <item nodeId="node-0x19732d0">
     <command xml:space="preserve">approach</command>
     <result xml:space="preserve">(the counter)
 The bureaucroc says, &quot;Go away. We don&apos;t have time to waste on people who have not learned any Bureaucratic Arts.&quot;
@@ -381,10 +382,10 @@ The bureaucroc says, &quot;Go away. We don&apos;t have time to waste on people w
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x214d420"/>
+      <child nodeId="node-0x1973430"/>
     </children>
   </item>
-  <item nodeId="node-0x214d420">
+  <item nodeId="node-0x1973430">
     <command xml:space="preserve">sit</command>
     <result xml:space="preserve">(on the chair)
 You would rather not sit in one of those chairs unless you absolutely have to.
@@ -396,10 +397,10 @@ You would rather not sit in one of those chairs unless you absolutely have to.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x214d580"/>
+      <child nodeId="node-0x1973590"/>
     </children>
   </item>
-  <item nodeId="node-0x214d580">
+  <item nodeId="node-0x1973590">
     <command xml:space="preserve">stand</command>
     <result xml:space="preserve">You are already standing.
 
@@ -410,10 +411,10 @@ You would rather not sit in one of those chairs unless you absolutely have to.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x214d6e0"/>
+      <child nodeId="node-0x19736f0"/>
     </children>
   </item>
-  <item nodeId="node-0x214d6e0">
+  <item nodeId="node-0x19736f0">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -424,10 +425,10 @@ You would rather not sit in one of those chairs unless you absolutely have to.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x214d840"/>
+      <child nodeId="node-0x1973850"/>
     </children>
   </item>
-  <item nodeId="node-0x214d840">
+  <item nodeId="node-0x1973850">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -438,10 +439,10 @@ You would rather not sit in one of those chairs unless you absolutely have to.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x214d9a0"/>
+      <child nodeId="node-0x19739b0"/>
     </children>
   </item>
-  <item nodeId="node-0x214d9a0">
+  <item nodeId="node-0x19739b0">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -452,10 +453,10 @@ You would rather not sit in one of those chairs unless you absolutely have to.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x214db00"/>
+      <child nodeId="node-0x1973b10"/>
     </children>
   </item>
-  <item nodeId="node-0x214db00">
+  <item nodeId="node-0x1973b10">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -466,10 +467,10 @@ You would rather not sit in one of those chairs unless you absolutely have to.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x214dc60"/>
+      <child nodeId="node-0x1973c70"/>
     </children>
   </item>
-  <item nodeId="node-0x214dc60">
+  <item nodeId="node-0x1973c70">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -480,10 +481,10 @@ You would rather not sit in one of those chairs unless you absolutely have to.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x214ddc0"/>
+      <child nodeId="node-0x1973dd0"/>
     </children>
   </item>
-  <item nodeId="node-0x214ddc0">
+  <item nodeId="node-0x1973dd0">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -494,10 +495,10 @@ You would rather not sit in one of those chairs unless you absolutely have to.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x214df20"/>
+      <child nodeId="node-0x1973f30"/>
     </children>
   </item>
-  <item nodeId="node-0x214df20">
+  <item nodeId="node-0x1973f30">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">&gt;WAIT
 Time passes.
@@ -509,10 +510,10 @@ Time passes.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2172110"/>
+      <child nodeId="node-0x1998120"/>
     </children>
   </item>
-  <item nodeId="node-0x2172110">
+  <item nodeId="node-0x1998120">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">&gt;WAIT
 Time passes.
@@ -524,10 +525,10 @@ Time passes.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2172270"/>
+      <child nodeId="node-0x1998280"/>
     </children>
   </item>
-  <item nodeId="node-0x2172270">
+  <item nodeId="node-0x1998280">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -538,10 +539,10 @@ Time passes.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x21723d0"/>
+      <child nodeId="node-0x19983e0"/>
     </children>
   </item>
-  <item nodeId="node-0x21723d0">
+  <item nodeId="node-0x19983e0">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -552,10 +553,10 @@ Time passes.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2172530"/>
+      <child nodeId="node-0x1998540"/>
     </children>
   </item>
-  <item nodeId="node-0x2172530">
+  <item nodeId="node-0x1998540">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -566,10 +567,10 @@ Time passes.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2172690"/>
+      <child nodeId="node-0x19986a0"/>
     </children>
   </item>
-  <item nodeId="node-0x2172690">
+  <item nodeId="node-0x19986a0">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -580,10 +581,10 @@ Time passes.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x21727f0"/>
+      <child nodeId="node-0x1998800"/>
     </children>
   </item>
-  <item nodeId="node-0x21727f0">
+  <item nodeId="node-0x1998800">
     <command xml:space="preserve">restart</command>
     <result xml:space="preserve">Are you sure you want to restart? </result>
     <commentary xml:space="preserve"></commentary>
@@ -592,10 +593,10 @@ Time passes.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2172950"/>
+      <child nodeId="node-0x1998960"/>
     </children>
   </item>
-  <item nodeId="node-0x2172950">
+  <item nodeId="node-0x1998960">
     <command xml:space="preserve">y</command>
     <result xml:space="preserve">
 
@@ -611,10 +612,10 @@ What is your name? &gt;</result>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2172ab0"/>
+      <child nodeId="node-0x1998ac0"/>
     </children>
   </item>
-  <item nodeId="node-0x2172ab0">
+  <item nodeId="node-0x1998ac0">
     <command xml:space="preserve">test intro</command>
     <result xml:space="preserve">
 I don&apos;t know how to pronounce that. Your name will be Alexandra.
@@ -635,10 +636,10 @@ You can see a ticket dispenser here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2172c10"/>
+      <child nodeId="node-0x1998c20"/>
     </children>
   </item>
-  <item nodeId="node-0x2172c10">
+  <item nodeId="node-0x1998c20">
     <command xml:space="preserve">test wait</command>
     <result xml:space="preserve">(Testing.)
 
@@ -679,10 +680,10 @@ That&apos;s not a verb I recognize.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2172d70"/>
+      <child nodeId="node-0x1998d80"/>
     </children>
   </item>
-  <item nodeId="node-0x2172d70">
+  <item nodeId="node-0x1998d80">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">&gt;WAIT
 Time passes.
@@ -694,10 +695,10 @@ Time passes.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2172ed0"/>
+      <child nodeId="node-0x1998ee0"/>
     </children>
   </item>
-  <item nodeId="node-0x2172ed0">
+  <item nodeId="node-0x1998ee0">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">&gt;WAIT
 Time passes.
@@ -709,10 +710,10 @@ Time passes.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x219a170"/>
+      <child nodeId="node-0x19c0180"/>
     </children>
   </item>
-  <item nodeId="node-0x219a170">
+  <item nodeId="node-0x19c0180">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">&gt;WAIT
 Time passes.
@@ -724,10 +725,10 @@ Time passes.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x219a2d0"/>
+      <child nodeId="node-0x19c02e0"/>
     </children>
   </item>
-  <item nodeId="node-0x219a2d0">
+  <item nodeId="node-0x19c02e0">
     <command xml:space="preserve">restart</command>
     <result xml:space="preserve">Are you sure you want to restart? </result>
     <commentary xml:space="preserve"></commentary>
@@ -736,10 +737,10 @@ Time passes.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x219a430"/>
+      <child nodeId="node-0x19c0440"/>
     </children>
   </item>
-  <item nodeId="node-0x219a430">
+  <item nodeId="node-0x19c0440">
     <command xml:space="preserve">y</command>
     <result xml:space="preserve">
 
@@ -755,10 +756,10 @@ What is your name? &gt;</result>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x219a590"/>
+      <child nodeId="node-0x19c05a0"/>
     </children>
   </item>
-  <item nodeId="node-0x219a590">
+  <item nodeId="node-0x19c05a0">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">
 I don&apos;t know how to pronounce that. Your name will be Alexandra.
@@ -779,10 +780,10 @@ You can see a ticket dispenser here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x219a6f0"/>
+      <child nodeId="node-0x19c0700"/>
     </children>
   </item>
-  <item nodeId="node-0x219a6f0">
+  <item nodeId="node-0x19c0700">
     <command xml:space="preserve">test intro</command>
     <result xml:space="preserve">(Testing.)
 
@@ -834,10 +835,10 @@ A bureaucroc says, &quot;We will be with you as soon as possible. Now please sit
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x219a850"/>
+      <child nodeId="node-0x19c0860"/>
     </children>
   </item>
-  <item nodeId="node-0x219a850">
+  <item nodeId="node-0x19c0860">
     <command xml:space="preserve">test wait</command>
     <result xml:space="preserve">(Testing.)
 
@@ -885,10 +886,10 @@ You count out a pile of currants, and The bureaucroc hands over a Card-Carrying 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x219a9b0"/>
+      <child nodeId="node-0x19c09c0"/>
     </children>
   </item>
-  <item nodeId="node-0x219a9b0">
+  <item nodeId="node-0x19c09c0">
     <command xml:space="preserve">test qual</command>
     <result xml:space="preserve">(Testing.)
 
@@ -921,10 +922,10 @@ A bureaucroc says, &quot;We will be with you as soon as possible. Now please sit
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x219ab10"/>
+      <child nodeId="node-0x19c0b20"/>
     </children>
   </item>
-  <item nodeId="node-0x219ab10">
+  <item nodeId="node-0x19c0b20">
     <command xml:space="preserve">test paper</command>
     <result xml:space="preserve">(Testing.)
 
@@ -955,10 +956,10 @@ The ticket dispenser says, &quot;You can get your Papers at Bureaucratic Hall.&q
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x219ac70"/>
+      <child nodeId="node-0x19c0c80"/>
     </children>
   </item>
-  <item nodeId="node-0x219ac70">
+  <item nodeId="node-0x19c0c80">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying:
   a pen
@@ -972,10 +973,10 @@ The ticket dispenser says, &quot;You can get your Papers at Bureaucratic Hall.&q
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x219add0"/>
+      <child nodeId="node-0x19c0de0"/>
     </children>
   </item>
-  <item nodeId="node-0x219add0">
+  <item nodeId="node-0x19c0de0">
     <command xml:space="preserve">test intro</command>
     <result xml:space="preserve">(Testing.)
 
@@ -1024,10 +1025,10 @@ A bureaucroc says, &quot;We will be with you as soon as possible. Now please sit
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x219af30"/>
+      <child nodeId="node-0x19c0f40"/>
     </children>
   </item>
-  <item nodeId="node-0x219af30">
+  <item nodeId="node-0x19c0f40">
     <command xml:space="preserve">test wait</command>
     <result xml:space="preserve">(Testing.)
 
@@ -1075,10 +1076,10 @@ You count out a pile of currants, and The bureaucroc hands over Papers.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x21b40f0"/>
+      <child nodeId="node-0x19db140"/>
     </children>
   </item>
-  <item nodeId="node-0x21b40f0">
+  <item nodeId="node-0x19db140">
     <command xml:space="preserve">test paper</command>
     <result xml:space="preserve">(Testing.)
 
@@ -1118,7 +1119,7 @@ Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x21b4250">
+  <item nodeId="node-0x19db2a0">
     <command xml:space="preserve">down</command>
     <result xml:space="preserve">You can&apos;t go that way.
 
@@ -1129,10 +1130,10 @@ Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x21b43b0"/>
+      <child nodeId="node-0x19db400"/>
     </children>
   </item>
-  <item nodeId="node-0x21b43b0">
+  <item nodeId="node-0x19db400">
     <command xml:space="preserve">out</command>
     <result xml:space="preserve">
 Gregarious Grange
@@ -1145,10 +1146,10 @@ The entrance to the subway is down a flight of stairs. You can also go inside Bu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x21b4510"/>
+      <child nodeId="node-0x19db560"/>
     </children>
   </item>
-  <item nodeId="node-0x21b4510">
+  <item nodeId="node-0x19db560">
     <command xml:space="preserve">down</command>
     <result xml:space="preserve">As you make your way back down to the Subway Station, a Bureaucroc corners you on the stairs. He whispers, &quot;Psssst. Here&apos;sss the deal. Getting your Card Carrying Qualification is the first step in the Bureaucratic Artsss. Yesss, and once you have it, you are on your way to being able to obtain Your Papersss (and all sorts of licenses and permits). It used to be you could acquire the bureaucratic documentsss directly from a friend--Oh, it&apos;sss perfectly legal, mind you--but seemsss like you&apos;re the only one around. You&apos;ll have to go the official route and deal with the red tape. Head over to the Bureaucratic Hall on Gregariousss Grange and talk to one of my friendsss there. You&apos;ll get what you need.&quot; And then he disappears as quickly as he appeared.
 
@@ -1166,7 +1167,7 @@ You can see a ticket dispenser here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x21b4670">
+  <item nodeId="node-0x19db6c0">
     <command xml:space="preserve">x hall</command>
     <result xml:space="preserve">Bureaucratic Hall
 A sign proclaims this room to be the &quot;Department of Administrative Affairs - Ministry of Departments&quot;. To the left is a waiting area with a water cooler and a bunch of hard, plastic orange chairs. To the right is a counter, behind which is a Bureaucroc. A sign reads &quot;Please approach the counter for assistance.&quot;
@@ -1178,10 +1179,10 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x21b47d0"/>
+      <child nodeId="node-0x19db820"/>
     </children>
   </item>
-  <item nodeId="node-0x21b47d0">
+  <item nodeId="node-0x19db820">
     <command xml:space="preserve">out</command>
     <result xml:space="preserve">
 Gregarious Grange
@@ -1194,10 +1195,10 @@ The entrance to the subway is down a flight of stairs. You can also go inside Bu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x21b4930"/>
+      <child nodeId="node-0x19db980"/>
     </children>
   </item>
-  <item nodeId="node-0x21b4930">
+  <item nodeId="node-0x19db980">
     <command xml:space="preserve">enter</command>
     <result xml:space="preserve">You must supply a noun.
 
@@ -1208,10 +1209,10 @@ The entrance to the subway is down a flight of stairs. You can also go inside Bu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x21b4a90"/>
+      <child nodeId="node-0x19dbae0"/>
     </children>
   </item>
-  <item nodeId="node-0x21b4a90">
+  <item nodeId="node-0x19dbae0">
     <command xml:space="preserve">enter hall</command>
     <result xml:space="preserve">
 Bureaucratic Hall
@@ -1224,7 +1225,7 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x21b4bf0">
+  <item nodeId="node-0x19dbc40">
     <command xml:space="preserve">x trash can</command>
     <result xml:space="preserve">It&apos;s just a trash can. It&apos;s not important.
 
@@ -1235,10 +1236,10 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x21b4d50"/>
+      <child nodeId="node-0x19dbda0"/>
     </children>
   </item>
-  <item nodeId="node-0x21b4d50">
+  <item nodeId="node-0x19dbda0">
     <command xml:space="preserve">take trash can</command>
     <result xml:space="preserve">It&apos;s just a trash can. It&apos;s not important.
 
@@ -1249,10 +1250,10 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x21b4eb0"/>
+      <child nodeId="node-0x19dbf00"/>
     </children>
   </item>
-  <item nodeId="node-0x21b4eb0">
+  <item nodeId="node-0x19dbf00">
     <command xml:space="preserve">dispense water</command>
     <result xml:space="preserve">A tiny conical cup of water cooler water is duly dispensed.
 
@@ -1263,10 +1264,10 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x21db0e0"/>
+      <child nodeId="node-0x1a010f0"/>
     </children>
   </item>
-  <item nodeId="node-0x21db0e0">
+  <item nodeId="node-0x1a010f0">
     <command xml:space="preserve">drink water</command>
     <result xml:space="preserve">You imbibe the plain water from the generic cone-cup. Ewww. That water tastes really... bureaucratic-y. You file the cup in the trash can.
 
@@ -1277,7 +1278,7 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x21db240">
+  <item nodeId="node-0x1a01250">
     <command xml:space="preserve">drink water</command>
     <result xml:space="preserve">A tiny conical cup of water cooler water is duly dispensed.
 
@@ -1290,10 +1291,10 @@ You imbibe the plain water from the generic cone-cup. Ewww. That water tastes re
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x21db3a0"/>
+      <child nodeId="node-0x1a013b0"/>
     </children>
   </item>
-  <item nodeId="node-0x21db3a0">
+  <item nodeId="node-0x1a013b0">
     <command xml:space="preserve">drop water</command>
     <result xml:space="preserve">A tiny conical cup of water cooler water is duly dispensed.
 
@@ -1306,10 +1307,10 @@ You spill the cup of water, splashing water all over the rug. It is soaked up im
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x21db500"/>
+      <child nodeId="node-0x1a01510"/>
     </children>
   </item>
-  <item nodeId="node-0x21db500">
+  <item nodeId="node-0x1a01510">
     <command xml:space="preserve">throw water</command>
     <result xml:space="preserve">A tiny conical cup of water cooler water is duly dispensed.
 
@@ -1322,10 +1323,10 @@ You spill the cup of water, splashing water all over the rug. It is soaked up im
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x21db660"/>
+      <child nodeId="node-0x1a01670"/>
     </children>
   </item>
-  <item nodeId="node-0x21db660">
+  <item nodeId="node-0x1a01670">
     <command xml:space="preserve">take pen</command>
     <result xml:space="preserve">You cast a nervous look around you before yanking the pen hard enough to snap the chain. A bureaucroc looks up at the sound, and you panic.
 
@@ -1339,7 +1340,7 @@ The entrance to the subway is down a flight of stairs. You can also go inside Bu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x21db7c0">
+  <item nodeId="node-0x1a017d0">
     <command xml:space="preserve">take pen</command>
     <result xml:space="preserve">You cast a nervous look around you before yanking the pen hard enough to snap the chain. A bureaucroc looks up at the sound, and you panic. You find yourself outside Bureaucratic Hall.
 
@@ -1353,10 +1354,10 @@ The entrance to the subway is down a flight of stairs. You can also go inside Bu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x21db920"/>
+      <child nodeId="node-0x1a01930"/>
     </children>
   </item>
-  <item nodeId="node-0x21db920">
+  <item nodeId="node-0x1a01930">
     <command xml:space="preserve">write</command>
     <result xml:space="preserve">You fiddle with the pen, and it leaks ink all over you.
 
@@ -1367,10 +1368,10 @@ The entrance to the subway is down a flight of stairs. You can also go inside Bu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x21dba80"/>
+      <child nodeId="node-0x1a01a90"/>
     </children>
   </item>
-  <item nodeId="node-0x21dba80">
+  <item nodeId="node-0x1a01a90">
     <command xml:space="preserve">write on me</command>
     <result xml:space="preserve">I only understood you as far as wanting to write.
 
@@ -1381,7 +1382,7 @@ The entrance to the subway is down a flight of stairs. You can also go inside Bu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x21dbbe0">
+  <item nodeId="node-0x1a01bf0">
     <command xml:space="preserve">x hall</command>
     <result xml:space="preserve">It&apos;s a small squat building where the Bureaucrocs work.
 
@@ -1392,10 +1393,10 @@ The entrance to the subway is down a flight of stairs. You can also go inside Bu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x21dbd40"/>
+      <child nodeId="node-0x1a01d50"/>
     </children>
   </item>
-  <item nodeId="node-0x21dbd40">
+  <item nodeId="node-0x1a01d50">
     <command xml:space="preserve">in</command>
     <result xml:space="preserve">(first opening the BHDoor)
 
@@ -1409,7 +1410,7 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x21dbea0">
+  <item nodeId="node-0x1a01eb0">
     <command xml:space="preserve">enter hall</command>
     <result xml:space="preserve">
 Bureaucratic Hall
@@ -1422,10 +1423,10 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2200150"/>
+      <child nodeId="node-0x1a26160"/>
     </children>
   </item>
-  <item nodeId="node-0x2200150">
+  <item nodeId="node-0x1a26160">
     <command xml:space="preserve">out</command>
     <result xml:space="preserve">
 Gregarious Grange
@@ -1438,10 +1439,10 @@ The entrance to the subway is down a flight of stairs. You can also go inside Bu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x22002b0"/>
+      <child nodeId="node-0x1a262c0"/>
     </children>
   </item>
-  <item nodeId="node-0x22002b0">
+  <item nodeId="node-0x1a262c0">
     <command xml:space="preserve">go bureaucratic</command>
     <result xml:space="preserve">(the Bureaucratic Hall)
 
@@ -1455,10 +1456,10 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2200410"/>
+      <child nodeId="node-0x1a26420"/>
     </children>
   </item>
-  <item nodeId="node-0x2200410">
+  <item nodeId="node-0x1a26420">
     <command xml:space="preserve">out</command>
     <result xml:space="preserve">
 Gregarious Grange
@@ -1471,10 +1472,10 @@ The entrance to the subway is down a flight of stairs. You can also go inside Bu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2200570"/>
+      <child nodeId="node-0x1a26580"/>
     </children>
   </item>
-  <item nodeId="node-0x2200570">
+  <item nodeId="node-0x1a26580">
     <command xml:space="preserve">go hall</command>
     <result xml:space="preserve">
 Bureaucratic Hall
@@ -1487,10 +1488,10 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x22006d0"/>
+      <child nodeId="node-0x1a266e0"/>
     </children>
   </item>
-  <item nodeId="node-0x22006d0">
+  <item nodeId="node-0x1a266e0">
     <command xml:space="preserve">out</command>
     <result xml:space="preserve">
 Gregarious Grange
@@ -1503,10 +1504,10 @@ The entrance to the subway is down a flight of stairs. You can also go inside Bu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2200830"/>
+      <child nodeId="node-0x1a26840"/>
     </children>
   </item>
-  <item nodeId="node-0x2200830">
+  <item nodeId="node-0x1a26840">
     <command xml:space="preserve">go in hall</command>
     <result xml:space="preserve">
 Bureaucratic Hall
@@ -1519,10 +1520,10 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2200990"/>
+      <child nodeId="node-0x1a269a0"/>
     </children>
   </item>
-  <item nodeId="node-0x2200990">
+  <item nodeId="node-0x1a269a0">
     <command xml:space="preserve">out</command>
     <result xml:space="preserve">
 Gregarious Grange
@@ -1535,10 +1536,10 @@ The entrance to the subway is down a flight of stairs. You can also go inside Bu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2200af0"/>
+      <child nodeId="node-0x1a26b00"/>
     </children>
   </item>
-  <item nodeId="node-0x2200af0">
+  <item nodeId="node-0x1a26b00">
     <command xml:space="preserve">go into hall</command>
     <result xml:space="preserve">
 Bureaucratic Hall
@@ -1551,7 +1552,7 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x2200c50">
+  <item nodeId="node-0x1a26c60">
     <command xml:space="preserve">down</command>
     <result xml:space="preserve">As you make your way back down to the Subway Station, a Bureaucroc corners you on the stairs. He whispers, &quot;Psssst. Here&apos;sss the deal. Getting your Card Carrying Qualification is the first step in the Bureaucratic Artsss. Yesss, and once you have it, you are on your way to being able to obtain Your Papersss (and all sorts of licenses and permits). It used to be you could acquire the bureaucratic documentsss directly from a friend--Oh, it&apos;sss perfectly legal, mind you--but seemsss like you&apos;re the only one around. You&apos;ll have to go the official route and deal with the red tape. Head over to the Bureaucratic Hall on Gregariousss Grange and talk to one of my friendsss there. You&apos;ll get what you need.&quot; And then he disappears as quickly as he appeared.
 
@@ -1569,7 +1570,7 @@ You can see a ticket dispenser here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x2200db0">
+  <item nodeId="node-0x1a26dc0">
     <command xml:space="preserve">test intro</command>
     <result xml:space="preserve">(Testing.)
 
@@ -1609,13 +1610,13 @@ A bureaucroc says, &quot;We will be with you as soon as possible. Now please sit
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2200f10"/>
-      <child nodeId="node-0x222d560"/>
-      <child nodeId="node-0x22dc3d0"/>
-      <child nodeId="node-0x22dc530"/>
+      <child nodeId="node-0x1a26f20"/>
+      <child nodeId="node-0x1a53570"/>
+      <child nodeId="node-0x1b023e0"/>
+      <child nodeId="node-0x1b02540"/>
     </children>
   </item>
-  <item nodeId="node-0x2200f10">
+  <item nodeId="node-0x1a26f20">
     <command xml:space="preserve">restart</command>
     <result xml:space="preserve">Are you sure you want to restart? </result>
     <commentary xml:space="preserve"></commentary>
@@ -1624,10 +1625,10 @@ A bureaucroc says, &quot;We will be with you as soon as possible. Now please sit
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x222d140"/>
+      <child nodeId="node-0x1a53150"/>
     </children>
   </item>
-  <item nodeId="node-0x222d140">
+  <item nodeId="node-0x1a53150">
     <command xml:space="preserve">y</command>
     <result xml:space="preserve">
 
@@ -1643,10 +1644,10 @@ What is your name? &gt;</result>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x222d2a0"/>
+      <child nodeId="node-0x1a532b0"/>
     </children>
   </item>
-  <item nodeId="node-0x222d2a0">
+  <item nodeId="node-0x1a532b0">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">
 I don&apos;t know how to pronounce that. Your name will be Alexandra.
@@ -1667,10 +1668,10 @@ You can see a ticket dispenser here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x222d400"/>
+      <child nodeId="node-0x1a53410"/>
     </children>
   </item>
-  <item nodeId="node-0x222d400">
+  <item nodeId="node-0x1a53410">
     <command xml:space="preserve">test intro</command>
     <result xml:space="preserve">(Testing.)
 
@@ -1704,7 +1705,7 @@ The bureaucroc says, &quot;Go away. We don&apos;t have time to waste on people w
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x222d560">
+  <item nodeId="node-0x1a53570">
     <command xml:space="preserve">test wait</command>
     <result xml:space="preserve">(Testing.)
 
@@ -1748,15 +1749,15 @@ The bureaucroc says, &quot;I see. It seems you&apos;d be better off speaking to 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x222d6c0"/>
-      <child nodeId="node-0x224f2b0"/>
-      <child nodeId="node-0x224f410"/>
-      <child nodeId="node-0x2276960"/>
-      <child nodeId="node-0x229c0e0"/>
-      <child nodeId="node-0x229ca80"/>
+      <child nodeId="node-0x1a536d0"/>
+      <child nodeId="node-0x1a76240"/>
+      <child nodeId="node-0x1a763a0"/>
+      <child nodeId="node-0x1a9d9a0"/>
+      <child nodeId="node-0x1ac3120"/>
+      <child nodeId="node-0x1ac3ac0"/>
     </children>
   </item>
-  <item nodeId="node-0x222d6c0">
+  <item nodeId="node-0x1a536d0">
     <command xml:space="preserve">out</command>
     <result xml:space="preserve">Don&apos;t move. Just wait.
 
@@ -1767,10 +1768,10 @@ The bureaucroc says, &quot;I see. It seems you&apos;d be better off speaking to 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x222d820"/>
+      <child nodeId="node-0x1a53830"/>
     </children>
   </item>
-  <item nodeId="node-0x222d820">
+  <item nodeId="node-0x1a53830">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Another bureaucroc, presumably Probost Nuter, approaches the counter. &quot;I understand you&apos;re here to procure yourself a Card-Carrying Qualification, is that right?&quot; He stares intently at you.
 
@@ -1781,10 +1782,10 @@ Y/N? &gt;</result>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x222d980"/>
+      <child nodeId="node-0x1a53990"/>
     </children>
   </item>
-  <item nodeId="node-0x222d980">
+  <item nodeId="node-0x1a53990">
     <command xml:space="preserve">y</command>
     <result xml:space="preserve">The bureaucroc says, &quot;I can probably deal with your application. One thing: Your favorite fruit?&quot;
 1 - Apples
@@ -1797,10 +1798,10 @@ Y/N? &gt;</result>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x222dae0"/>
+      <child nodeId="node-0x1a53af0"/>
     </children>
   </item>
-  <item nodeId="node-0x222dae0">
+  <item nodeId="node-0x1a53af0">
     <command xml:space="preserve">2</command>
     <result xml:space="preserve">The bureaucroc nods and says, &quot;Very well. In that case, the fee is 50 currants, and we only take cash.&quot;
 
@@ -1815,10 +1816,10 @@ You count out a pile of currants, and The bureaucroc hands over a Card-Carrying 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x222dc40"/>
+      <child nodeId="node-0x1a53c50"/>
     </children>
   </item>
-  <item nodeId="node-0x222dc40">
+  <item nodeId="node-0x1a53c50">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying:
   a Card-Carrying Qualification
@@ -1831,10 +1832,10 @@ You count out a pile of currants, and The bureaucroc hands over a Card-Carrying 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x222dda0"/>
+      <child nodeId="node-0x1a53db0"/>
     </children>
   </item>
-  <item nodeId="node-0x222dda0">
+  <item nodeId="node-0x1a53db0">
     <command xml:space="preserve">test qual</command>
     <result xml:space="preserve">(Testing.)
 
@@ -1867,10 +1868,10 @@ A bureaucroc says, &quot;We will be with you as soon as possible. Now please sit
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x222df00"/>
+      <child nodeId="node-0x1a53f10"/>
     </children>
   </item>
-  <item nodeId="node-0x222df00">
+  <item nodeId="node-0x1a53f10">
     <command xml:space="preserve">test wait</command>
     <result xml:space="preserve">(Testing.)
 
@@ -1918,10 +1919,10 @@ You count out a pile of currants, and The bureaucroc hands over Papers.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x224f150"/>
+      <child nodeId="node-0x1a760e0"/>
     </children>
   </item>
-  <item nodeId="node-0x224f150">
+  <item nodeId="node-0x1a760e0">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying:
   Papers
@@ -1935,7 +1936,7 @@ You count out a pile of currants, and The bureaucroc hands over Papers.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x224f2b0">
+  <item nodeId="node-0x1a76240">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying:
   Card-Carrying Qualification
@@ -1948,7 +1949,7 @@ You count out a pile of currants, and The bureaucroc hands over Papers.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x224f410">
+  <item nodeId="node-0x1a763a0">
     <command xml:space="preserve">test qual</command>
     <result xml:space="preserve">(Testing.)
 
@@ -1981,10 +1982,10 @@ A bureaucroc says, &quot;We will be with you as soon as possible. Now please sit
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x224f570"/>
+      <child nodeId="node-0x1a76500"/>
     </children>
   </item>
-  <item nodeId="node-0x224f570">
+  <item nodeId="node-0x1a76500">
     <command xml:space="preserve">test wait</command>
     <result xml:space="preserve">(Testing.)
 
@@ -2032,11 +2033,11 @@ You count out a pile of currants, and the bureaucroc hands over Papers.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x224f6d0"/>
-      <child nodeId="node-0x224f830"/>
+      <child nodeId="node-0x1a76660"/>
+      <child nodeId="node-0x1a767c0"/>
     </children>
   </item>
-  <item nodeId="node-0x224f6d0">
+  <item nodeId="node-0x1a76660">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying:
   Papers
@@ -2050,7 +2051,7 @@ You count out a pile of currants, and the bureaucroc hands over Papers.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x224f830">
+  <item nodeId="node-0x1a767c0">
     <command xml:space="preserve">get papers</command>
     <result xml:space="preserve">You already have your papers. Now you need to complete them.
 
@@ -2061,10 +2062,10 @@ You count out a pile of currants, and the bureaucroc hands over Papers.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x224f990"/>
+      <child nodeId="node-0x1a76920"/>
     </children>
   </item>
-  <item nodeId="node-0x224f990">
+  <item nodeId="node-0x1a76920">
     <command xml:space="preserve">complete papers</command>
     <result xml:space="preserve">You will need a pen in order to fill out your Papers.
 
@@ -2075,10 +2076,10 @@ You count out a pile of currants, and the bureaucroc hands over Papers.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x224faf0"/>
+      <child nodeId="node-0x1a76a80"/>
     </children>
   </item>
-  <item nodeId="node-0x224faf0">
+  <item nodeId="node-0x1a76a80">
     <command xml:space="preserve">get pen</command>
     <result xml:space="preserve">You cast a nervous look around you before yanking the pen hard enough to snap the chain. A bureaucroc looks up at the sound, and you panic. You find yourself outside Bureaucratic Hall.
 
@@ -2092,10 +2093,10 @@ The entrance to the subway is down a flight of stairs. You can also go inside Bu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x224fc50"/>
+      <child nodeId="node-0x1a76be0"/>
     </children>
   </item>
-  <item nodeId="node-0x224fc50">
+  <item nodeId="node-0x1a76be0">
     <command xml:space="preserve">complete papers</command>
     <result xml:space="preserve">You cross your &quot;i&apos;s and dot your &quot;t&apos;s. Or maybe it&apos;s the other way around. In any case, you manage to complete your Papers without too much trouble.
 Well done. Now go ride a subway!
@@ -2107,10 +2108,10 @@ Well done. Now go ride a subway!
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x224fdb0"/>
+      <child nodeId="node-0x1a76d40"/>
     </children>
   </item>
-  <item nodeId="node-0x224fdb0">
+  <item nodeId="node-0x1a76d40">
     <command xml:space="preserve">get papers</command>
     <result xml:space="preserve">You have already completed your Papers.
 
@@ -2121,10 +2122,10 @@ Well done. Now go ride a subway!
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x224ff10"/>
+      <child nodeId="node-0x1a76ea0"/>
     </children>
   </item>
-  <item nodeId="node-0x224ff10">
+  <item nodeId="node-0x1a76ea0">
     <command xml:space="preserve">ride subway</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -2135,10 +2136,10 @@ Well done. Now go ride a subway!
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2276120"/>
+      <child nodeId="node-0x1a9d160"/>
     </children>
   </item>
-  <item nodeId="node-0x2276120">
+  <item nodeId="node-0x1a9d160">
     <command xml:space="preserve">down</command>
     <result xml:space="preserve">
 Subway Station
@@ -2153,10 +2154,10 @@ You can see a ticket dispenser here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2276280"/>
+      <child nodeId="node-0x1a9d2c0"/>
     </children>
   </item>
-  <item nodeId="node-0x2276280">
+  <item nodeId="node-0x1a9d2c0">
     <command xml:space="preserve">ride subway</command>
     <result xml:space="preserve">The ticket dispenser says, &quot;Train tickets cost 50C. Which line would you like to ride?&quot;
 
@@ -2174,10 +2175,10 @@ Would you like to RESTART, RESTORE a saved game, or QUIT?
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x22763e0"/>
+      <child nodeId="node-0x1a9d420"/>
     </children>
   </item>
-  <item nodeId="node-0x22763e0">
+  <item nodeId="node-0x1a9d420">
     <command xml:space="preserve">restart</command>
     <result xml:space="preserve">
 
@@ -2193,10 +2194,10 @@ What is your name? &gt;</result>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2276540"/>
+      <child nodeId="node-0x1a9d580"/>
     </children>
   </item>
-  <item nodeId="node-0x2276540">
+  <item nodeId="node-0x1a9d580">
     <command xml:space="preserve">y</command>
     <result xml:space="preserve">
 I don&apos;t know how to pronounce that. Your name will be Alexandra.
@@ -2217,10 +2218,10 @@ You can see a ticket dispenser here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x22766a0"/>
+      <child nodeId="node-0x1a9d6e0"/>
     </children>
   </item>
-  <item nodeId="node-0x22766a0">
+  <item nodeId="node-0x1a9d6e0">
     <command xml:space="preserve">x gate</command>
     <result xml:space="preserve">There is a gate here blocking your way. It will open once you buy a ticket.
 
@@ -2231,10 +2232,10 @@ You can see a ticket dispenser here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2276800"/>
+      <child nodeId="node-0x1a9d840"/>
     </children>
   </item>
-  <item nodeId="node-0x2276800">
+  <item nodeId="node-0x1a9d840">
     <command xml:space="preserve">x dispenser</command>
     <result xml:space="preserve">This machine dispenses subway tickets in exchange for 50 currants. Press the button to buy a ticket.
 
@@ -2245,7 +2246,7 @@ You can see a ticket dispenser here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x2276960">
+  <item nodeId="node-0x1a9d9a0">
     <command xml:space="preserve">restart</command>
     <result xml:space="preserve">Are you sure you want to restart? </result>
     <commentary xml:space="preserve"></commentary>
@@ -2254,10 +2255,10 @@ You can see a ticket dispenser here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2276ac0"/>
+      <child nodeId="node-0x1a9db00"/>
     </children>
   </item>
-  <item nodeId="node-0x2276ac0">
+  <item nodeId="node-0x1a9db00">
     <command xml:space="preserve">y</command>
     <result xml:space="preserve">
 
@@ -2273,10 +2274,10 @@ What is your name? &gt;</result>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2276c20"/>
+      <child nodeId="node-0x1a9dc60"/>
     </children>
   </item>
-  <item nodeId="node-0x2276c20">
+  <item nodeId="node-0x1a9dc60">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">
 I don&apos;t know how to pronounce that. Your name will be Alexandra.
@@ -2297,10 +2298,10 @@ You can see a ticket dispenser here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2276d80"/>
+      <child nodeId="node-0x1a9ddc0"/>
     </children>
   </item>
-  <item nodeId="node-0x2276d80">
+  <item nodeId="node-0x1a9ddc0">
     <command xml:space="preserve">test intro</command>
     <result xml:space="preserve">(Testing.)
 
@@ -2340,10 +2341,10 @@ A bureaucroc says, &quot;We will be with you as soon as possible. Now please sit
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2276ee0"/>
+      <child nodeId="node-0x1a9df20"/>
     </children>
   </item>
-  <item nodeId="node-0x2276ee0">
+  <item nodeId="node-0x1a9df20">
     <command xml:space="preserve">test wait</command>
     <result xml:space="preserve">(Testing.)
 
@@ -2383,7 +2384,7 @@ That&apos;s not a verb I recognize.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x229c0e0">
+  <item nodeId="node-0x1ac3120">
     <command xml:space="preserve">activate qual</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -2394,10 +2395,10 @@ That&apos;s not a verb I recognize.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x229c240"/>
+      <child nodeId="node-0x1ac3280"/>
     </children>
   </item>
-  <item nodeId="node-0x229c240">
+  <item nodeId="node-0x1ac3280">
     <command xml:space="preserve">activate qualification</command>
     <result xml:space="preserve">Congratulations! You have taken the first step toward Bureaucratic officialdom. As with all first steps, there is a second, a third... Once you learn Bureaucratic Arts, then get and complete your Papers, you&apos;ll be able to use public transportation.
 
@@ -2408,10 +2409,10 @@ That&apos;s not a verb I recognize.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x229c3a0"/>
+      <child nodeId="node-0x1ac33e0"/>
     </children>
   </item>
-  <item nodeId="node-0x229c3a0">
+  <item nodeId="node-0x1ac33e0">
     <command xml:space="preserve">out</command>
     <result xml:space="preserve">
 Gregarious Grange
@@ -2424,10 +2425,10 @@ The entrance to the subway is down a flight of stairs. You can also go inside Bu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x229c500"/>
+      <child nodeId="node-0x1ac3540"/>
     </children>
   </item>
-  <item nodeId="node-0x229c500">
+  <item nodeId="node-0x1ac3540">
     <command xml:space="preserve">in</command>
     <result xml:space="preserve">
 Bureaucratic Hall
@@ -2440,10 +2441,10 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x229c660"/>
+      <child nodeId="node-0x1ac36a0"/>
     </children>
   </item>
-  <item nodeId="node-0x229c660">
+  <item nodeId="node-0x1ac36a0">
     <command xml:space="preserve">sit</command>
     <result xml:space="preserve">(on the chair)
 You would rather not sit in one of those chairs unless you absolutely have to.
@@ -2455,10 +2456,10 @@ You would rather not sit in one of those chairs unless you absolutely have to.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x229c7c0"/>
+      <child nodeId="node-0x1ac3800"/>
     </children>
   </item>
-  <item nodeId="node-0x229c7c0">
+  <item nodeId="node-0x1ac3800">
     <command xml:space="preserve">approach counter</command>
     <result xml:space="preserve">The bureaucroc says, &quot;Go away. We don&apos;t have time to waste on people who have not learned any Bureaucratic Arts.&quot;
 
@@ -2469,10 +2470,10 @@ You would rather not sit in one of those chairs unless you absolutely have to.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x229c920"/>
+      <child nodeId="node-0x1ac3960"/>
     </children>
   </item>
-  <item nodeId="node-0x229c920">
+  <item nodeId="node-0x1ac3960">
     <command xml:space="preserve">sit</command>
     <result xml:space="preserve">(on the chair)
 You would rather not sit in one of those chairs unless you absolutely have to.
@@ -2484,7 +2485,7 @@ You would rather not sit in one of those chairs unless you absolutely have to.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x229ca80">
+  <item nodeId="node-0x1ac3ac0">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Another bureaucroc, presumably Representative Snifflenose, approaches the counter. &quot;I&apos;m led to believe you&apos;re interested in receiving Card-Carrying Qualification, is that correct?&quot; He stares intently at you.
 
@@ -2495,10 +2496,10 @@ Y/N? &gt;</result>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x229cbe0"/>
+      <child nodeId="node-0x1ac3c20"/>
     </children>
   </item>
-  <item nodeId="node-0x229cbe0">
+  <item nodeId="node-0x1ac3c20">
     <command xml:space="preserve">y</command>
     <result xml:space="preserve">The bureaucroc says, &quot;I should be able to rubber stamp this. Before that, though, your favorite color?&quot;
 1 - Beige
@@ -2511,10 +2512,10 @@ Y/N? &gt;</result>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x229cd40"/>
+      <child nodeId="node-0x1ac3d80"/>
     </children>
   </item>
-  <item nodeId="node-0x229cd40">
+  <item nodeId="node-0x1ac3d80">
     <command xml:space="preserve">2</command>
     <result xml:space="preserve">The bureaucroc nods and says, &quot;I&apos;ll take that. The fee is 50 currants, and I&apos;ll take that, as well. In cash.&quot;
 
@@ -2529,10 +2530,10 @@ You count out a pile of currants, and the bureaucroc hands over Card-Carrying Qu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x229cea0"/>
+      <child nodeId="node-0x1ac3ee0"/>
     </children>
   </item>
-  <item nodeId="node-0x229cea0">
+  <item nodeId="node-0x1ac3ee0">
     <command xml:space="preserve">out</command>
     <result xml:space="preserve">
 Gregarious Grange
@@ -2545,10 +2546,10 @@ The entrance to the subway is down a flight of stairs. You can also go inside Bu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x22c3150"/>
+      <child nodeId="node-0x1aea0f0"/>
     </children>
   </item>
-  <item nodeId="node-0x22c3150">
+  <item nodeId="node-0x1aea0f0">
     <command xml:space="preserve">in</command>
     <result xml:space="preserve">
 Bureaucratic Hall
@@ -2561,10 +2562,10 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x22c32b0"/>
+      <child nodeId="node-0x1aea250"/>
     </children>
   </item>
-  <item nodeId="node-0x22c32b0">
+  <item nodeId="node-0x1aea250">
     <command xml:space="preserve">approach</command>
     <result xml:space="preserve">(the counter)
 The bureaucroc says, &quot;Go away. We don&apos;t have time to waste on people who have not learned any Bureaucratic Arts.&quot;
@@ -2576,10 +2577,10 @@ The bureaucroc says, &quot;Go away. We don&apos;t have time to waste on people w
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x22c3410"/>
+      <child nodeId="node-0x1aea3b0"/>
     </children>
   </item>
-  <item nodeId="node-0x22c3410">
+  <item nodeId="node-0x1aea3b0">
     <command xml:space="preserve">sit</command>
     <result xml:space="preserve">(on the chair)
 You would rather not sit in one of those chairs unless you absolutely have to.
@@ -2591,10 +2592,10 @@ You would rather not sit in one of those chairs unless you absolutely have to.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x22c3570"/>
+      <child nodeId="node-0x1aea510"/>
     </children>
   </item>
-  <item nodeId="node-0x22c3570">
+  <item nodeId="node-0x1aea510">
     <command xml:space="preserve">sit</command>
     <result xml:space="preserve">(on the chair)
 You would rather not sit in one of those chairs unless you absolutely have to.
@@ -2606,10 +2607,10 @@ You would rather not sit in one of those chairs unless you absolutely have to.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x22c36d0"/>
+      <child nodeId="node-0x1aea670"/>
     </children>
   </item>
-  <item nodeId="node-0x22c36d0">
+  <item nodeId="node-0x1aea670">
     <command xml:space="preserve">learn arts</command>
     <result xml:space="preserve">You cannot learn the Bureaucratic Arts until you have obtained and activated the Card-Carrying Qualification. You can obtain the Card-Carrying Qualification at Bureaucratic Hall.
 
@@ -2620,10 +2621,10 @@ You would rather not sit in one of those chairs unless you absolutely have to.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x22c3830"/>
+      <child nodeId="node-0x1aea7d0"/>
     </children>
   </item>
-  <item nodeId="node-0x22c3830">
+  <item nodeId="node-0x1aea7d0">
     <command xml:space="preserve">activate qualification</command>
     <result xml:space="preserve">Congratulations! You have taken the first step toward Bureaucratic officialdom. As with all first steps, there is a second, a third... Once you learn Bureaucratic Arts, then get and complete your Papers, you&apos;ll be able to use public transportation.
 
@@ -2634,10 +2635,10 @@ You would rather not sit in one of those chairs unless you absolutely have to.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x22c3990"/>
+      <child nodeId="node-0x1aea930"/>
     </children>
   </item>
-  <item nodeId="node-0x22c3990">
+  <item nodeId="node-0x1aea930">
     <command xml:space="preserve">sit</command>
     <result xml:space="preserve">(on the chair)
 You would rather not sit in one of those chairs unless you absolutely have to.
@@ -2649,10 +2650,10 @@ You would rather not sit in one of those chairs unless you absolutely have to.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x22c3af0"/>
+      <child nodeId="node-0x1aeaa90"/>
     </children>
   </item>
-  <item nodeId="node-0x22c3af0">
+  <item nodeId="node-0x1aeaa90">
     <command xml:space="preserve">learn arts</command>
     <result xml:space="preserve">Well done: you can now obtain papers with only the requisite amount of hassle and annoyance.
 
@@ -2663,10 +2664,10 @@ You would rather not sit in one of those chairs unless you absolutely have to.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x22c3c50"/>
+      <child nodeId="node-0x1aeabf0"/>
     </children>
   </item>
-  <item nodeId="node-0x22c3c50">
+  <item nodeId="node-0x1aeabf0">
     <command xml:space="preserve">sit</command>
     <result xml:space="preserve">(on the chair)
 You would rather not sit in one of those chairs unless you absolutely have to.
@@ -2678,10 +2679,10 @@ You would rather not sit in one of those chairs unless you absolutely have to.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x22c3db0"/>
+      <child nodeId="node-0x1aead50"/>
     </children>
   </item>
-  <item nodeId="node-0x22c3db0">
+  <item nodeId="node-0x1aead50">
     <command xml:space="preserve">approach</command>
     <result xml:space="preserve">(the counter)
 A bureaucroc says, &quot;We will be with you as soon as possible. Now please sit down and wait.&quot; He then proceeds to ignore you.
@@ -2693,10 +2694,10 @@ A bureaucroc says, &quot;We will be with you as soon as possible. Now please sit
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x22c3f10"/>
+      <child nodeId="node-0x1aeaeb0"/>
     </children>
   </item>
-  <item nodeId="node-0x22c3f10">
+  <item nodeId="node-0x1aeaeb0">
     <command xml:space="preserve">sit</command>
     <result xml:space="preserve">(on the chair)
 You take a seat on one of their uncomfortable plastic chairs.
@@ -2708,10 +2709,10 @@ You take a seat on one of their uncomfortable plastic chairs.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x22dc110"/>
+      <child nodeId="node-0x1b02120"/>
     </children>
   </item>
-  <item nodeId="node-0x22dc110">
+  <item nodeId="node-0x1b02120">
     <command xml:space="preserve">wait</command>
     <result xml:space="preserve">Time passes.
 
@@ -2722,10 +2723,10 @@ You take a seat on one of their uncomfortable plastic chairs.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x22dc270"/>
+      <child nodeId="node-0x1b02280"/>
     </children>
   </item>
-  <item nodeId="node-0x22dc270">
+  <item nodeId="node-0x1b02280">
     <command xml:space="preserve">test wait</command>
     <result xml:space="preserve">(Testing.)
 
@@ -2773,7 +2774,7 @@ You count out a pile of currants, and the bureaucroc hands over Papers.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x22dc3d0">
+  <item nodeId="node-0x1b023e0">
     <command xml:space="preserve">test intro</command>
     <result xml:space="preserve">(Testing.)
 
@@ -2819,7 +2820,7 @@ A bureaucroc says, &quot;We will be with you as soon as possible. Now please sit
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x22dc530">
+  <item nodeId="node-0x1b02540">
     <command xml:space="preserve">dispense water</command>
     <result xml:space="preserve">A tiny conical cup of water cooler water is duly dispensed.
 
@@ -2830,10 +2831,10 @@ A bureaucroc says, &quot;We will be with you as soon as possible. Now please sit
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x22dc690"/>
+      <child nodeId="node-0x1b026a0"/>
     </children>
   </item>
-  <item nodeId="node-0x22dc690">
+  <item nodeId="node-0x1b026a0">
     <command xml:space="preserve">drink water</command>
     <result xml:space="preserve">You imbibe the plain water from the generic cone-cup. Ewww. That water tastes really... bureaucratic-y.
 
@@ -2844,10 +2845,10 @@ A bureaucroc says, &quot;We will be with you as soon as possible. Now please sit
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x22dc7f0"/>
+      <child nodeId="node-0x1b02800"/>
     </children>
   </item>
-  <item nodeId="node-0x22dc7f0">
+  <item nodeId="node-0x1b02800">
     <command xml:space="preserve">approach counter</command>
     <result xml:space="preserve">A bureaucroc says, &quot;We will be with you as soon as possible. Now please sit down and wait.&quot; He then proceeds to ignore you.
 
@@ -2858,7 +2859,7 @@ A bureaucroc says, &quot;We will be with you as soon as possible. Now please sit
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x22dc950">
+  <item nodeId="node-0x1b02960">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying:
   200 currants
@@ -2870,11 +2871,11 @@ A bureaucroc says, &quot;We will be with you as soon as possible. Now please sit
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x22dcab0"/>
-      <child nodeId="node-0x2304b20"/>
+      <child nodeId="node-0x1b02ac0"/>
+      <child nodeId="node-0x1b2aac0"/>
     </children>
   </item>
-  <item nodeId="node-0x22dcab0">
+  <item nodeId="node-0x1b02ac0">
     <command xml:space="preserve">test intro</command>
     <result xml:space="preserve">(Testing.)
 
@@ -2924,10 +2925,10 @@ A bureaucroc says, &quot;We will be with you as soon as possible. Now please sit
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x22dcc10"/>
+      <child nodeId="node-0x1b02c20"/>
     </children>
   </item>
-  <item nodeId="node-0x22dcc10">
+  <item nodeId="node-0x1b02c20">
     <command xml:space="preserve">test wait</command>
     <result xml:space="preserve">(Testing.)
 
@@ -2971,10 +2972,10 @@ The bureaucroc says, &quot;Interesting. I believe the department you&apos;re loo
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x22dcd70"/>
+      <child nodeId="node-0x1b02d80"/>
     </children>
   </item>
-  <item nodeId="node-0x22dcd70">
+  <item nodeId="node-0x1b02d80">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">&gt;WAIT
 Another bureaucroc, presumably Chamberlain Naraiwaddleappali, approaches the counter. &quot;I&apos;m led to believe you&apos;re interested in receiving Card-Carrying Qualification, is that correct?&quot; He stares intently at you.
@@ -2986,10 +2987,10 @@ Y/N? &gt;</result>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x22dced0"/>
+      <child nodeId="node-0x1b02ee0"/>
     </children>
   </item>
-  <item nodeId="node-0x22dced0">
+  <item nodeId="node-0x1b02ee0">
     <command xml:space="preserve">y</command>
     <result xml:space="preserve">The bureaucroc says, &quot;I might be able to sign this off. One question first. Which came first?&quot;
 1 - The Chicken
@@ -3002,10 +3003,10 @@ Y/N? &gt;</result>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2304180"/>
+      <child nodeId="node-0x1b2a120"/>
     </children>
   </item>
-  <item nodeId="node-0x2304180">
+  <item nodeId="node-0x1b2a120">
     <command xml:space="preserve">2</command>
     <result xml:space="preserve">The bureaucroc nods and says, &quot;That will do. Your fee is 50 currants. Cash only.&quot;
 
@@ -3020,10 +3021,10 @@ You count out a pile of currants, and the bureaucroc hands over Card-Carrying Qu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x23042e0"/>
+      <child nodeId="node-0x1b2a280"/>
     </children>
   </item>
-  <item nodeId="node-0x23042e0">
+  <item nodeId="node-0x1b2a280">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying:
   Card-Carrying Qualification
@@ -3036,10 +3037,10 @@ You count out a pile of currants, and the bureaucroc hands over Card-Carrying Qu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2304440"/>
+      <child nodeId="node-0x1b2a3e0"/>
     </children>
   </item>
-  <item nodeId="node-0x2304440">
+  <item nodeId="node-0x1b2a3e0">
     <command xml:space="preserve">test qual</command>
     <result xml:space="preserve">(Testing.)
 
@@ -3072,10 +3073,10 @@ A bureaucroc says, &quot;We will be with you as soon as possible. Now please sit
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x23045a0"/>
+      <child nodeId="node-0x1b2a540"/>
     </children>
   </item>
-  <item nodeId="node-0x23045a0">
+  <item nodeId="node-0x1b2a540">
     <command xml:space="preserve">test wait</command>
     <result xml:space="preserve">(Testing.)
 
@@ -3123,10 +3124,10 @@ You count out a pile of currants, and the bureaucroc hands over Papers.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2304700"/>
+      <child nodeId="node-0x1b2a6a0"/>
     </children>
   </item>
-  <item nodeId="node-0x2304700">
+  <item nodeId="node-0x1b2a6a0">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying:
   Papers
@@ -3140,10 +3141,10 @@ You count out a pile of currants, and the bureaucroc hands over Papers.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2304860"/>
+      <child nodeId="node-0x1b2a800"/>
     </children>
   </item>
-  <item nodeId="node-0x2304860">
+  <item nodeId="node-0x1b2a800">
     <command xml:space="preserve">test papers</command>
     <result xml:space="preserve">&gt;--&gt; The following tests are available:
 &apos;test intro&apos;
@@ -3157,10 +3158,10 @@ You count out a pile of currants, and the bureaucroc hands over Papers.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x23049c0"/>
+      <child nodeId="node-0x1b2a960"/>
     </children>
   </item>
-  <item nodeId="node-0x23049c0">
+  <item nodeId="node-0x1b2a960">
     <command xml:space="preserve">test paper</command>
     <result xml:space="preserve">(Testing.)
 
@@ -3203,7 +3204,7 @@ Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x2304b20">
+  <item nodeId="node-0x1b2aac0">
     <command xml:space="preserve">take all</command>
     <result xml:space="preserve">There are none at all available!
 
@@ -3214,10 +3215,10 @@ Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2304c80"/>
+      <child nodeId="node-0x1b2ac20"/>
     </children>
   </item>
-  <item nodeId="node-0x2304c80">
+  <item nodeId="node-0x1b2ac20">
     <command xml:space="preserve">take dispenser</command>
     <result xml:space="preserve">That&apos;s fixed in place.
 
@@ -3228,10 +3229,10 @@ Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2304de0"/>
+      <child nodeId="node-0x1b2ad80"/>
     </children>
   </item>
-  <item nodeId="node-0x2304de0">
+  <item nodeId="node-0x1b2ad80">
     <command xml:space="preserve">take ticket</command>
     <result xml:space="preserve">The ticket dispenser says, &quot;Without Papers, you may not use public transportation. You can get your Papers at Bureaucratic Hall.&quot;
 
@@ -3242,10 +3243,10 @@ Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2304f40"/>
+      <child nodeId="node-0x1b2aee0"/>
     </children>
   </item>
-  <item nodeId="node-0x2304f40">
+  <item nodeId="node-0x1b2aee0">
     <command xml:space="preserve">take gate</command>
     <result xml:space="preserve">That&apos;s hardly portable.
 
@@ -3256,10 +3257,10 @@ Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2333120"/>
+      <child nodeId="node-0x1b5a170"/>
     </children>
   </item>
-  <item nodeId="node-0x2333120">
+  <item nodeId="node-0x1b5a170">
     <command xml:space="preserve">up</command>
     <result xml:space="preserve">
 Gregarious Grange
@@ -3272,10 +3273,10 @@ The entrance to the subway is down a flight of stairs. You can also go inside Bu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2333280"/>
+      <child nodeId="node-0x1b5a2d0"/>
     </children>
   </item>
-  <item nodeId="node-0x2333280">
+  <item nodeId="node-0x1b5a2d0">
     <command xml:space="preserve">in</command>
     <result xml:space="preserve">
 Bureaucratic Hall
@@ -3288,10 +3289,10 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x23333e0"/>
+      <child nodeId="node-0x1b5a430"/>
     </children>
   </item>
-  <item nodeId="node-0x23333e0">
+  <item nodeId="node-0x1b5a430">
     <command xml:space="preserve">x cooler</command>
     <result xml:space="preserve">Water dispensing devices do not get more generic than this. It is as plain as could be. Were it possible for water to be beige, beige this water would be.
 
@@ -3302,10 +3303,10 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2333540"/>
+      <child nodeId="node-0x1b5a590"/>
     </children>
   </item>
-  <item nodeId="node-0x2333540">
+  <item nodeId="node-0x1b5a590">
     <command xml:space="preserve">x chairs</command>
     <result xml:space="preserve">This is the perfect chair for those who like the idea of sitting briefly and with utmost caution.
 
@@ -3316,10 +3317,10 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x23336a0"/>
+      <child nodeId="node-0x1b5a6f0"/>
     </children>
   </item>
-  <item nodeId="node-0x23336a0">
+  <item nodeId="node-0x1b5a6f0">
     <command xml:space="preserve">take chair</command>
     <result xml:space="preserve">That&apos;s hardly portable.
 
@@ -3330,10 +3331,10 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2333800"/>
+      <child nodeId="node-0x1b5a850"/>
     </children>
   </item>
-  <item nodeId="node-0x2333800">
+  <item nodeId="node-0x1b5a850">
     <command xml:space="preserve">take cooler</command>
     <result xml:space="preserve">The water cooler appears to be cemented into place. You get the impression you&apos;re not the first person to try this.
 
@@ -3344,10 +3345,10 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2333960"/>
+      <child nodeId="node-0x1b5a9b0"/>
     </children>
   </item>
-  <item nodeId="node-0x2333960">
+  <item nodeId="node-0x1b5a9b0">
     <command xml:space="preserve">x counter</command>
     <result xml:space="preserve">It&apos;s a standard counter. You don&apos;t see anything special about it. There is a pen here, secured to the counter with a length of ball chain.
 
@@ -3358,10 +3359,10 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2333ac0"/>
+      <child nodeId="node-0x1b5ab10"/>
     </children>
   </item>
-  <item nodeId="node-0x2333ac0">
+  <item nodeId="node-0x1b5ab10">
     <command xml:space="preserve">x pen</command>
     <result xml:space="preserve">This generic pen will let you write messages and notes.
 
@@ -3372,10 +3373,10 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2333c20"/>
+      <child nodeId="node-0x1b5ac70"/>
     </children>
   </item>
-  <item nodeId="node-0x2333c20">
+  <item nodeId="node-0x1b5ac70">
     <command xml:space="preserve">x chain</command>
     <result xml:space="preserve">Which do you mean, the counter or the pen?
 
@@ -3386,7 +3387,7 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x2333d80">
+  <item nodeId="node-0x1b5add0">
     <command xml:space="preserve">x subway</command>
     <result xml:space="preserve">You can&apos;t see any such thing. Because you haven&apos;t purchased a ticket yet.
 
@@ -3397,11 +3398,11 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2333ee0"/>
-      <child nodeId="node-0x2358670"/>
+      <child nodeId="node-0x1b5af30"/>
+      <child nodeId="node-0x1b7f6c0"/>
     </children>
   </item>
-  <item nodeId="node-0x2333ee0">
+  <item nodeId="node-0x1b5af30">
     <command xml:space="preserve">x ticket</command>
     <result xml:space="preserve">(the ticket dispenser)
 This machine dispenses subway tickets in exchange for 50 currants. Press the button to buy a ticket.
@@ -3413,10 +3414,10 @@ This machine dispenses subway tickets in exchange for 50 currants. Press the but
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x23580f0"/>
+      <child nodeId="node-0x1b7f140"/>
     </children>
   </item>
-  <item nodeId="node-0x23580f0">
+  <item nodeId="node-0x1b7f140">
     <command xml:space="preserve">buy ticket</command>
     <result xml:space="preserve">(the subway ticket)
 The ticket dispenser says, &quot;Without Papers, you may not use public transportation. You can get your Papers at Bureaucratic Hall.&quot;
@@ -3428,10 +3429,10 @@ The ticket dispenser says, &quot;Without Papers, you may not use public transpor
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2358250"/>
+      <child nodeId="node-0x1b7f2a0"/>
     </children>
   </item>
-  <item nodeId="node-0x2358250">
+  <item nodeId="node-0x1b7f2a0">
     <command xml:space="preserve">up</command>
     <result xml:space="preserve">
 Gregarious Grange
@@ -3444,10 +3445,10 @@ The entrance to the subway is down a flight of stairs. You can also go inside Bu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x23583b0"/>
+      <child nodeId="node-0x1b7f400"/>
     </children>
   </item>
-  <item nodeId="node-0x23583b0">
+  <item nodeId="node-0x1b7f400">
     <command xml:space="preserve">x subway</command>
     <result xml:space="preserve">It&apos;s the entrance to the Gregarious Grange Subway Station.
 
@@ -3458,10 +3459,10 @@ The entrance to the subway is down a flight of stairs. You can also go inside Bu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2358510"/>
+      <child nodeId="node-0x1b7f560"/>
     </children>
   </item>
-  <item nodeId="node-0x2358510">
+  <item nodeId="node-0x1b7f560">
     <command xml:space="preserve">enter subway</command>
     <result xml:space="preserve">
 Subway Station
@@ -3476,7 +3477,7 @@ You can see a ticket dispenser here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x2358670">
+  <item nodeId="node-0x1b7f6c0">
     <command xml:space="preserve">ride subway</command>
     <result xml:space="preserve">The ticket dispenser says, &quot;Without Papers, you may not use public transportation. You can get your Papers at Bureaucratic Hall.&quot;
 
@@ -3487,10 +3488,10 @@ You can see a ticket dispenser here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x23587d0"/>
+      <child nodeId="node-0x1b7f820"/>
     </children>
   </item>
-  <item nodeId="node-0x23587d0">
+  <item nodeId="node-0x1b7f820">
     <command xml:space="preserve">buy ticket</command>
     <result xml:space="preserve">The ticket dispenser says, &quot;Without Papers, you may not use public transportation. You can get your Papers at Bureaucratic Hall.&quot;
 
@@ -3501,7 +3502,7 @@ You can see a ticket dispenser here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x2358930">
+  <item nodeId="node-0x1b7f980">
     <command xml:space="preserve">x ssdoor</command>
     <result xml:space="preserve">Subway Station
 This is the subway station below Gregarious Grange, Groddle Meadow. A flight of stairs leads up to the street.
@@ -3515,10 +3516,10 @@ You can see a ticket dispenser here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2358a90"/>
+      <child nodeId="node-0x1b7fae0"/>
     </children>
   </item>
-  <item nodeId="node-0x2358a90">
+  <item nodeId="node-0x1b7fae0">
     <command xml:space="preserve">x subway</command>
     <result xml:space="preserve">You can&apos;t see any such thing. Because you haven&apos;t purchased a ticket yet.
 
@@ -3529,10 +3530,10 @@ You can see a ticket dispenser here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2358bf0"/>
+      <child nodeId="node-0x1b7fc40"/>
     </children>
   </item>
-  <item nodeId="node-0x2358bf0">
+  <item nodeId="node-0x1b7fc40">
     <command xml:space="preserve">x station</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -3543,7 +3544,7 @@ You can see a ticket dispenser here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x2358d50">
+  <item nodeId="node-0x1b7fda0">
     <command xml:space="preserve">x station</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -3554,10 +3555,10 @@ You can see a ticket dispenser here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2358eb0"/>
+      <child nodeId="node-0x1b7ff00"/>
     </children>
   </item>
-  <item nodeId="node-0x2358eb0">
+  <item nodeId="node-0x1b7ff00">
     <command xml:space="preserve">l</command>
     <result xml:space="preserve">Subway Station
 This is the subway station below Gregarious Grange, Groddle Meadow. A flight of stairs leads up to the street.
@@ -3571,10 +3572,10 @@ You can see a ticket dispenser here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2371140"/>
+      <child nodeId="node-0x1b97150"/>
     </children>
   </item>
-  <item nodeId="node-0x2371140">
+  <item nodeId="node-0x1b97150">
     <command xml:space="preserve">out</command>
     <result xml:space="preserve">But you aren&apos;t in anything at the moment.
 
@@ -3585,10 +3586,10 @@ You can see a ticket dispenser here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x23712a0"/>
+      <child nodeId="node-0x1b972b0"/>
     </children>
   </item>
-  <item nodeId="node-0x23712a0">
+  <item nodeId="node-0x1b972b0">
     <command xml:space="preserve">up</command>
     <result xml:space="preserve">
 Gregarious Grange
@@ -3601,10 +3602,10 @@ The entrance to the subway is down a flight of stairs. You can also go inside Bu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2371400"/>
+      <child nodeId="node-0x1b97410"/>
     </children>
   </item>
-  <item nodeId="node-0x2371400">
+  <item nodeId="node-0x1b97410">
     <command xml:space="preserve">dow</command>
     <result xml:space="preserve">That&apos;s not a verb I recognize.
 
@@ -3615,10 +3616,10 @@ The entrance to the subway is down a flight of stairs. You can also go inside Bu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2371560"/>
+      <child nodeId="node-0x1b97570"/>
     </children>
   </item>
-  <item nodeId="node-0x2371560">
+  <item nodeId="node-0x1b97570">
     <command xml:space="preserve">down</command>
     <result xml:space="preserve">
 Subway Station
@@ -3633,10 +3634,10 @@ You can see a ticket dispenser here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x23716c0"/>
+      <child nodeId="node-0x1b976d0"/>
     </children>
   </item>
-  <item nodeId="node-0x23716c0">
+  <item nodeId="node-0x1b976d0">
     <command xml:space="preserve">up</command>
     <result xml:space="preserve">
 Gregarious Grange
@@ -3649,10 +3650,10 @@ The entrance to the subway is down a flight of stairs. You can also go inside Bu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2371820"/>
+      <child nodeId="node-0x1b97830"/>
     </children>
   </item>
-  <item nodeId="node-0x2371820">
+  <item nodeId="node-0x1b97830">
     <command xml:space="preserve">x subway</command>
     <result xml:space="preserve">It&apos;s the entrance to the Gregarious Grange Subway Station.
 
@@ -3663,10 +3664,10 @@ The entrance to the subway is down a flight of stairs. You can also go inside Bu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2371980"/>
+      <child nodeId="node-0x1b97990"/>
     </children>
   </item>
-  <item nodeId="node-0x2371980">
+  <item nodeId="node-0x1b97990">
     <command xml:space="preserve">x station</command>
     <result xml:space="preserve">It&apos;s the entrance to the Gregarious Grange Subway Station.
 
@@ -3677,10 +3678,10 @@ The entrance to the subway is down a flight of stairs. You can also go inside Bu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2371ae0"/>
+      <child nodeId="node-0x1b97af0"/>
     </children>
   </item>
-  <item nodeId="node-0x2371ae0">
+  <item nodeId="node-0x1b97af0">
     <command xml:space="preserve">enter station</command>
     <result xml:space="preserve">As you make your way back down to the Subway Station, a Bureaucroc corners you on the stairs. He whispers, &quot;Psssst. Here&apos;sss the deal. Getting your Card Carrying Qualification is the first step in the Bureaucratic Artsss. Yesss, and once you have it, you are on your way to being able to obtain Your Papersss (and all sorts of licenses and permits). It used to be you could acquire the bureaucratic documentsss directly from a friend--Oh, it&apos;sss perfectly legal, mind you--but seemsss like you&apos;re the only one around. You&apos;ll have to go the official route and deal with the red tape. Head over to the Bureaucratic Hall on Gregariousss Grange and talk to one of my friendsss there. You&apos;ll get what you need.&quot; And then he disappears as quickly as he appeared.
 
@@ -3698,10 +3699,10 @@ You can see a ticket dispenser here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2371c40"/>
+      <child nodeId="node-0x1b97c50"/>
     </children>
   </item>
-  <item nodeId="node-0x2371c40">
+  <item nodeId="node-0x1b97c50">
     <command xml:space="preserve">up</command>
     <result xml:space="preserve">
 Gregarious Grange
@@ -3714,10 +3715,10 @@ The entrance to the subway is down a flight of stairs. You can also go inside Bu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2371da0"/>
+      <child nodeId="node-0x1b97db0"/>
     </children>
   </item>
-  <item nodeId="node-0x2371da0">
+  <item nodeId="node-0x1b97db0">
     <command xml:space="preserve">enter hall</command>
     <result xml:space="preserve">
 Bureaucratic Hall
@@ -3730,10 +3731,10 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2371f00"/>
+      <child nodeId="node-0x1b97f10"/>
     </children>
   </item>
-  <item nodeId="node-0x2371f00">
+  <item nodeId="node-0x1b97f10">
     <command xml:space="preserve">out</command>
     <result xml:space="preserve">
 Gregarious Grange
@@ -3746,10 +3747,10 @@ The entrance to the subway is down a flight of stairs. You can also go inside Bu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2397110"/>
+      <child nodeId="node-0x1bbe120"/>
     </children>
   </item>
-  <item nodeId="node-0x2397110">
+  <item nodeId="node-0x1bbe120">
     <command xml:space="preserve">enter bureaucratic</command>
     <result xml:space="preserve">(the BHDoor)
 
@@ -3763,10 +3764,10 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2397270"/>
+      <child nodeId="node-0x1bbe280"/>
     </children>
   </item>
-  <item nodeId="node-0x2397270">
+  <item nodeId="node-0x1bbe280">
     <command xml:space="preserve">out</command>
     <result xml:space="preserve">
 Gregarious Grange
@@ -3779,7 +3780,7 @@ The entrance to the subway is down a flight of stairs. You can also go inside Bu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x23973d0">
+  <item nodeId="node-0x1bbe3e0">
     <command xml:space="preserve">about</command>
     <result xml:space="preserve">The author can be contacted at genericgeekgirl@gmail.com. Thank you to my beta-testers: Andrew Plotkin, Beth Skwarecki, and @dazyndara. And, of course, to Tiny Speck, for allowing me to make this game! The scene was taken directly from their game Glitch, a wonderful MMO that shut down in 2012.
 
@@ -3790,7 +3791,7 @@ The entrance to the subway is down a flight of stairs. You can also go inside Bu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x2397530">
+  <item nodeId="node-0x1bbe540">
     <command xml:space="preserve">jump over gate</command>
     <result xml:space="preserve">You attempt to jump over the gate. You not only trip and fall on your face, but the de-imaginators show up and cart you off to Abbasid Jail.
 
@@ -3808,10 +3809,10 @@ Would you like to RESTART, RESTORE a saved game, or QUIT?
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2397690"/>
+      <child nodeId="node-0x1bbe6a0"/>
     </children>
   </item>
-  <item nodeId="node-0x2397690">
+  <item nodeId="node-0x1bbe6a0">
     <command xml:space="preserve">restart</command>
     <result xml:space="preserve">
 
@@ -3827,10 +3828,10 @@ What is your name? &gt;</result>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x23977f0"/>
+      <child nodeId="node-0x1bbe800"/>
     </children>
   </item>
-  <item nodeId="node-0x23977f0">
+  <item nodeId="node-0x1bbe800">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">
 I don&apos;t know how to pronounce that. Your name will be Alexandra.
@@ -3851,10 +3852,10 @@ You can see a ticket dispenser here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2397950"/>
+      <child nodeId="node-0x1bbe960"/>
     </children>
   </item>
-  <item nodeId="node-0x2397950">
+  <item nodeId="node-0x1bbe960">
     <command xml:space="preserve">jump turnstile</command>
     <result xml:space="preserve">You attempt to jump over the gate. You not only trip and fall on your face, but the de-imaginators show up and cart you off to Abbasid Jail.
 
@@ -3872,10 +3873,10 @@ Would you like to RESTART, RESTORE a saved game, or QUIT?
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2397ab0"/>
+      <child nodeId="node-0x1bbeac0"/>
     </children>
   </item>
-  <item nodeId="node-0x2397ab0">
+  <item nodeId="node-0x1bbeac0">
     <command xml:space="preserve">restore</command>
     <result xml:space="preserve">Restore failed.
 
@@ -3887,10 +3888,10 @@ Would you like to RESTART, RESTORE a saved game, or QUIT?
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2397c10"/>
+      <child nodeId="node-0x1bbec20"/>
     </children>
   </item>
-  <item nodeId="node-0x2397c10">
+  <item nodeId="node-0x1bbec20">
     <command xml:space="preserve">restart</command>
     <result xml:space="preserve">
 
@@ -3906,10 +3907,10 @@ What is your name? &gt;</result>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2397d70"/>
+      <child nodeId="node-0x1bbed80"/>
     </children>
   </item>
-  <item nodeId="node-0x2397d70">
+  <item nodeId="node-0x1bbed80">
     <command xml:space="preserve">break through</command>
     <result xml:space="preserve">
 I don&apos;t know how to pronounce that. Your name will be Alexandra.
@@ -3930,10 +3931,10 @@ You can see a ticket dispenser here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2397ed0"/>
+      <child nodeId="node-0x1bbeee0"/>
     </children>
   </item>
-  <item nodeId="node-0x2397ed0">
+  <item nodeId="node-0x1bbeee0">
     <command xml:space="preserve">break through turnstile</command>
     <result xml:space="preserve">You attempt to jump over the gate. You not only trip and fall on your face, but the de-imaginators show up and cart you off to Abbasid Jail.
 
@@ -3951,7 +3952,7 @@ Would you like to RESTART, RESTORE a saved game, or QUIT?
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x23be100">
+  <item nodeId="node-0x1be4100">
     <command xml:space="preserve">break turnstile</command>
     <result xml:space="preserve">You attempt to jump over the gate. You not only trip and fall on your face, but the de-imaginators show up and cart you off to Abbasid Jail.
 
@@ -3969,10 +3970,10 @@ Would you like to RESTART, RESTORE a saved game, or QUIT?
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x23be260"/>
+      <child nodeId="node-0x1be4260"/>
     </children>
   </item>
-  <item nodeId="node-0x23be260">
+  <item nodeId="node-0x1be4260">
     <command xml:space="preserve">restart</command>
     <result xml:space="preserve">
 
@@ -3988,10 +3989,10 @@ What is your name? &gt;</result>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x23be3c0"/>
+      <child nodeId="node-0x1be43c0"/>
     </children>
   </item>
-  <item nodeId="node-0x23be3c0">
+  <item nodeId="node-0x1be43c0">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">
 I don&apos;t know how to pronounce that. Your name will be Alexandra.
@@ -4012,10 +4013,10 @@ You can see a ticket dispenser here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x23be520"/>
+      <child nodeId="node-0x1be4520"/>
     </children>
   </item>
-  <item nodeId="node-0x23be520">
+  <item nodeId="node-0x1be4520">
     <command xml:space="preserve">up</command>
     <result xml:space="preserve">
 Gregarious Grange
@@ -4028,10 +4029,10 @@ The entrance to the subway is down a flight of stairs. You can also go inside Bu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x23be680"/>
+      <child nodeId="node-0x1be4680"/>
     </children>
   </item>
-  <item nodeId="node-0x23be680">
+  <item nodeId="node-0x1be4680">
     <command xml:space="preserve">in</command>
     <result xml:space="preserve">
 Bureaucratic Hall
@@ -4044,10 +4045,10 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x23be7e0"/>
+      <child nodeId="node-0x1be47e0"/>
     </children>
   </item>
-  <item nodeId="node-0x23be7e0">
+  <item nodeId="node-0x1be47e0">
     <command xml:space="preserve">approach</command>
     <result xml:space="preserve">(the counter)
 The bureaucroc says, &quot;Go away. We don&apos;t have time to waste on people who have not learned any Bureaucratic Arts.&quot;
@@ -4059,10 +4060,10 @@ The bureaucroc says, &quot;Go away. We don&apos;t have time to waste on people w
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x23be940"/>
+      <child nodeId="node-0x1be4940"/>
     </children>
   </item>
-  <item nodeId="node-0x23be940">
+  <item nodeId="node-0x1be4940">
     <command xml:space="preserve">g</command>
     <result xml:space="preserve">(the counter)
 The bureaucroc says, &quot;Go away. We don&apos;t have time to waste on people who have not learned any Bureaucratic Arts.&quot;
@@ -4074,10 +4075,10 @@ The bureaucroc says, &quot;Go away. We don&apos;t have time to waste on people w
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x23beaa0"/>
+      <child nodeId="node-0x1be4aa0"/>
     </children>
   </item>
-  <item nodeId="node-0x23beaa0">
+  <item nodeId="node-0x1be4aa0">
     <command xml:space="preserve">g</command>
     <result xml:space="preserve">(the counter)
 The bureaucroc says, &quot;Go away. We don&apos;t have time to waste on people who have not learned any Bureaucratic Arts.&quot;
@@ -4089,10 +4090,10 @@ The bureaucroc says, &quot;Go away. We don&apos;t have time to waste on people w
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x23bec00"/>
+      <child nodeId="node-0x1be4c00"/>
     </children>
   </item>
-  <item nodeId="node-0x23bec00">
+  <item nodeId="node-0x1be4c00">
     <command xml:space="preserve">g</command>
     <result xml:space="preserve">(the counter)
 The bureaucroc says, &quot;Go away. We don&apos;t have time to waste on people who have not learned any Bureaucratic Arts.&quot;
@@ -4104,10 +4105,10 @@ The bureaucroc says, &quot;Go away. We don&apos;t have time to waste on people w
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x23bed60"/>
+      <child nodeId="node-0x1be4d60"/>
     </children>
   </item>
-  <item nodeId="node-0x23bed60">
+  <item nodeId="node-0x1be4d60">
     <command xml:space="preserve">g</command>
     <result xml:space="preserve">(the counter)
 The bureaucroc says, &quot;Go away. We don&apos;t have time to waste on people who have not learned any Bureaucratic Arts.&quot;
@@ -4119,10 +4120,10 @@ The bureaucroc says, &quot;Go away. We don&apos;t have time to waste on people w
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x23beec0"/>
+      <child nodeId="node-0x1be4ec0"/>
     </children>
   </item>
-  <item nodeId="node-0x23beec0">
+  <item nodeId="node-0x1be4ec0">
     <command xml:space="preserve">g</command>
     <result xml:space="preserve">(the counter)
 The bureaucroc says, &quot;Go away. We don&apos;t have time to waste on people who have not learned any Bureaucratic Arts.&quot;
@@ -4134,10 +4135,10 @@ The bureaucroc says, &quot;Go away. We don&apos;t have time to waste on people w
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x23e2150"/>
+      <child nodeId="node-0x1c0a0e0"/>
     </children>
   </item>
-  <item nodeId="node-0x23e2150">
+  <item nodeId="node-0x1c0a0e0">
     <command xml:space="preserve">g</command>
     <result xml:space="preserve">(the counter)
 The bureaucroc says, &quot;Go away. We don&apos;t have time to waste on people who have not learned any Bureaucratic Arts.&quot;
@@ -4149,10 +4150,10 @@ The bureaucroc says, &quot;Go away. We don&apos;t have time to waste on people w
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x23e22b0"/>
+      <child nodeId="node-0x1c0a240"/>
     </children>
   </item>
-  <item nodeId="node-0x23e22b0">
+  <item nodeId="node-0x1c0a240">
     <command xml:space="preserve">g</command>
     <result xml:space="preserve">(the counter)
 The bureaucroc says, &quot;Go away. We don&apos;t have time to waste on people who have not learned any Bureaucratic Arts.&quot;
@@ -4164,10 +4165,10 @@ The bureaucroc says, &quot;Go away. We don&apos;t have time to waste on people w
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x23e2410"/>
+      <child nodeId="node-0x1c0a3a0"/>
     </children>
   </item>
-  <item nodeId="node-0x23e2410">
+  <item nodeId="node-0x1c0a3a0">
     <command xml:space="preserve">sit</command>
     <result xml:space="preserve">(on the chair)
 You would rather not sit in one of those chairs unless you absolutely have to.
@@ -4179,10 +4180,10 @@ You would rather not sit in one of those chairs unless you absolutely have to.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x23e2570"/>
+      <child nodeId="node-0x1c0a500"/>
     </children>
   </item>
-  <item nodeId="node-0x23e2570">
+  <item nodeId="node-0x1c0a500">
     <command xml:space="preserve">stand</command>
     <result xml:space="preserve">You are already standing.
 
@@ -4193,10 +4194,10 @@ You would rather not sit in one of those chairs unless you absolutely have to.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x23e26d0"/>
+      <child nodeId="node-0x1c0a660"/>
     </children>
   </item>
-  <item nodeId="node-0x23e26d0">
+  <item nodeId="node-0x1c0a660">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -4207,10 +4208,10 @@ You would rather not sit in one of those chairs unless you absolutely have to.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x23e2830"/>
+      <child nodeId="node-0x1c0a7c0"/>
     </children>
   </item>
-  <item nodeId="node-0x23e2830">
+  <item nodeId="node-0x1c0a7c0">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -4221,10 +4222,10 @@ You would rather not sit in one of those chairs unless you absolutely have to.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x23e2990"/>
+      <child nodeId="node-0x1c0a920"/>
     </children>
   </item>
-  <item nodeId="node-0x23e2990">
+  <item nodeId="node-0x1c0a920">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -4235,10 +4236,10 @@ You would rather not sit in one of those chairs unless you absolutely have to.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x23e2af0"/>
+      <child nodeId="node-0x1c0aa80"/>
     </children>
   </item>
-  <item nodeId="node-0x23e2af0">
+  <item nodeId="node-0x1c0aa80">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -4249,10 +4250,10 @@ You would rather not sit in one of those chairs unless you absolutely have to.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x23e2c50"/>
+      <child nodeId="node-0x1c0abe0"/>
     </children>
   </item>
-  <item nodeId="node-0x23e2c50">
+  <item nodeId="node-0x1c0abe0">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -4263,10 +4264,10 @@ You would rather not sit in one of those chairs unless you absolutely have to.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x23e2db0"/>
+      <child nodeId="node-0x1c0ad40"/>
     </children>
   </item>
-  <item nodeId="node-0x23e2db0">
+  <item nodeId="node-0x1c0ad40">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -4277,10 +4278,10 @@ You would rather not sit in one of those chairs unless you absolutely have to.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x23e2f10"/>
+      <child nodeId="node-0x1c0aea0"/>
     </children>
   </item>
-  <item nodeId="node-0x23e2f10">
+  <item nodeId="node-0x1c0aea0">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -4291,10 +4292,10 @@ You would rather not sit in one of those chairs unless you absolutely have to.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x23fc130"/>
+      <child nodeId="node-0x1c23130"/>
     </children>
   </item>
-  <item nodeId="node-0x23fc130">
+  <item nodeId="node-0x1c23130">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -4305,10 +4306,10 @@ You would rather not sit in one of those chairs unless you absolutely have to.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x23fc290"/>
+      <child nodeId="node-0x1c23290"/>
     </children>
   </item>
-  <item nodeId="node-0x23fc290">
+  <item nodeId="node-0x1c23290">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -4319,10 +4320,10 @@ You would rather not sit in one of those chairs unless you absolutely have to.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x23fc3f0"/>
+      <child nodeId="node-0x1c233f0"/>
     </children>
   </item>
-  <item nodeId="node-0x23fc3f0">
+  <item nodeId="node-0x1c233f0">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -4333,10 +4334,10 @@ You would rather not sit in one of those chairs unless you absolutely have to.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x23fc550"/>
+      <child nodeId="node-0x1c23550"/>
     </children>
   </item>
-  <item nodeId="node-0x23fc550">
+  <item nodeId="node-0x1c23550">
     <command xml:space="preserve">sit</command>
     <result xml:space="preserve">(on the chair)
 You would rather not sit in one of those chairs unless you absolutely have to.
@@ -4348,10 +4349,10 @@ You would rather not sit in one of those chairs unless you absolutely have to.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x23fc6b0"/>
+      <child nodeId="node-0x1c236b0"/>
     </children>
   </item>
-  <item nodeId="node-0x23fc6b0">
+  <item nodeId="node-0x1c236b0">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -4362,10 +4363,10 @@ You would rather not sit in one of those chairs unless you absolutely have to.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x23fc810"/>
+      <child nodeId="node-0x1c23810"/>
     </children>
   </item>
-  <item nodeId="node-0x23fc810">
+  <item nodeId="node-0x1c23810">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -4376,10 +4377,10 @@ You would rather not sit in one of those chairs unless you absolutely have to.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x23fc970"/>
+      <child nodeId="node-0x1c23970"/>
     </children>
   </item>
-  <item nodeId="node-0x23fc970">
+  <item nodeId="node-0x1c23970">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -4390,10 +4391,10 @@ You would rather not sit in one of those chairs unless you absolutely have to.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x23fcad0"/>
+      <child nodeId="node-0x1c23ad0"/>
     </children>
   </item>
-  <item nodeId="node-0x23fcad0">
+  <item nodeId="node-0x1c23ad0">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -4404,10 +4405,10 @@ You would rather not sit in one of those chairs unless you absolutely have to.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x23fcc30"/>
+      <child nodeId="node-0x1c23c30"/>
     </children>
   </item>
-  <item nodeId="node-0x23fcc30">
+  <item nodeId="node-0x1c23c30">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -4418,10 +4419,10 @@ You would rather not sit in one of those chairs unless you absolutely have to.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x23fcd90"/>
+      <child nodeId="node-0x1c23d90"/>
     </children>
   </item>
-  <item nodeId="node-0x23fcd90">
+  <item nodeId="node-0x1c23d90">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">&gt;WAIT
 Time passes.
@@ -4433,10 +4434,10 @@ Time passes.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x23fcef0"/>
+      <child nodeId="node-0x1c23ef0"/>
     </children>
   </item>
-  <item nodeId="node-0x23fcef0">
+  <item nodeId="node-0x1c23ef0">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">&gt;WAIT
 Time passes.
@@ -4448,10 +4449,10 @@ Time passes.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2421180"/>
+      <child nodeId="node-0x1c470e0"/>
     </children>
   </item>
-  <item nodeId="node-0x2421180">
+  <item nodeId="node-0x1c470e0">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">&gt;WAIT
 Time passes.
@@ -4463,10 +4464,10 @@ Time passes.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x24212e0"/>
+      <child nodeId="node-0x1c47240"/>
     </children>
   </item>
-  <item nodeId="node-0x24212e0">
+  <item nodeId="node-0x1c47240">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">&gt;WAIT
 Time passes.
@@ -4478,10 +4479,10 @@ Time passes.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2421440"/>
+      <child nodeId="node-0x1c473a0"/>
     </children>
   </item>
-  <item nodeId="node-0x2421440">
+  <item nodeId="node-0x1c473a0">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">&gt;WAIT
 Time passes.
@@ -4493,10 +4494,10 @@ Time passes.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x24215a0"/>
+      <child nodeId="node-0x1c47500"/>
     </children>
   </item>
-  <item nodeId="node-0x24215a0">
+  <item nodeId="node-0x1c47500">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">&gt;WAIT
 Time passes.
@@ -4508,10 +4509,10 @@ Time passes.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2421700"/>
+      <child nodeId="node-0x1c47660"/>
     </children>
   </item>
-  <item nodeId="node-0x2421700">
+  <item nodeId="node-0x1c47660">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">&gt;WAIT
 Time passes.
@@ -4523,10 +4524,10 @@ Time passes.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2421860"/>
+      <child nodeId="node-0x1c477c0"/>
     </children>
   </item>
-  <item nodeId="node-0x2421860">
+  <item nodeId="node-0x1c477c0">
     <command xml:space="preserve">stand</command>
     <result xml:space="preserve">You are already standing.
 
@@ -4537,10 +4538,10 @@ Time passes.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x24219c0"/>
+      <child nodeId="node-0x1c47920"/>
     </children>
   </item>
-  <item nodeId="node-0x24219c0">
+  <item nodeId="node-0x1c47920">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -4551,10 +4552,10 @@ Time passes.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2421b20"/>
+      <child nodeId="node-0x1c47a80"/>
     </children>
   </item>
-  <item nodeId="node-0x2421b20">
+  <item nodeId="node-0x1c47a80">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -4565,10 +4566,10 @@ Time passes.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2421c80"/>
+      <child nodeId="node-0x1c47be0"/>
     </children>
   </item>
-  <item nodeId="node-0x2421c80">
+  <item nodeId="node-0x1c47be0">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -4579,10 +4580,10 @@ Time passes.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2421de0"/>
+      <child nodeId="node-0x1c47d40"/>
     </children>
   </item>
-  <item nodeId="node-0x2421de0">
+  <item nodeId="node-0x1c47d40">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">&gt;WAIT
 Time passes.
@@ -4594,10 +4595,10 @@ Time passes.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2421f40"/>
+      <child nodeId="node-0x1c47ea0"/>
     </children>
   </item>
-  <item nodeId="node-0x2421f40">
+  <item nodeId="node-0x1c47ea0">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">&gt;WAIT
 Time passes.
@@ -4609,10 +4610,10 @@ Time passes.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2447140"/>
+      <child nodeId="node-0x1c6d150"/>
     </children>
   </item>
-  <item nodeId="node-0x2447140">
+  <item nodeId="node-0x1c6d150">
     <command xml:space="preserve">talk to croc</command>
     <result xml:space="preserve">The bureaucroc says, &quot;Go away. We don&apos;t have time to waste on people who have not learned any Bureaucratic Arts.&quot;
 
@@ -4623,10 +4624,10 @@ Time passes.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x24472a0"/>
+      <child nodeId="node-0x1c6d2b0"/>
     </children>
   </item>
-  <item nodeId="node-0x24472a0">
+  <item nodeId="node-0x1c6d2b0">
     <command xml:space="preserve">g</command>
     <result xml:space="preserve">The bureaucroc says, &quot;Go away. We don&apos;t have time to waste on people who have not learned any Bureaucratic Arts.&quot;
 
@@ -4637,10 +4638,10 @@ Time passes.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2447400"/>
+      <child nodeId="node-0x1c6d410"/>
     </children>
   </item>
-  <item nodeId="node-0x2447400">
+  <item nodeId="node-0x1c6d410">
     <command xml:space="preserve">g</command>
     <result xml:space="preserve">The bureaucroc says, &quot;Go away. We don&apos;t have time to waste on people who have not learned any Bureaucratic Arts.&quot;
 
@@ -4651,10 +4652,10 @@ Time passes.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2447560"/>
+      <child nodeId="node-0x1c6d570"/>
     </children>
   </item>
-  <item nodeId="node-0x2447560">
+  <item nodeId="node-0x1c6d570">
     <command xml:space="preserve">g</command>
     <result xml:space="preserve">The bureaucroc says, &quot;Go away. We don&apos;t have time to waste on people who have not learned any Bureaucratic Arts.&quot;
 
@@ -4665,10 +4666,10 @@ Time passes.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x24476c0"/>
+      <child nodeId="node-0x1c6d6d0"/>
     </children>
   </item>
-  <item nodeId="node-0x24476c0">
+  <item nodeId="node-0x1c6d6d0">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">&gt;WAIT
 Time passes.
@@ -4680,10 +4681,10 @@ Time passes.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2447820"/>
+      <child nodeId="node-0x1c6d830"/>
     </children>
   </item>
-  <item nodeId="node-0x2447820">
+  <item nodeId="node-0x1c6d830">
     <command xml:space="preserve">learn arts</command>
     <result xml:space="preserve">You cannot learn the Bureaucratic Arts until you have obtained and activated the Card-Carrying Qualification. You can obtain the Card-Carrying Qualification at Bureaucratic Hall.
 
@@ -4694,10 +4695,10 @@ Time passes.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2447980"/>
+      <child nodeId="node-0x1c6d990"/>
     </children>
   </item>
-  <item nodeId="node-0x2447980">
+  <item nodeId="node-0x1c6d990">
     <command xml:space="preserve">talk to croc</command>
     <result xml:space="preserve">The bureaucroc says, &quot;Go away. We don&apos;t have time to waste on people who have not learned any Bureaucratic Arts.&quot;
 
@@ -4708,10 +4709,10 @@ Time passes.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2447ae0"/>
+      <child nodeId="node-0x1c6daf0"/>
     </children>
   </item>
-  <item nodeId="node-0x2447ae0">
+  <item nodeId="node-0x1c6daf0">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -4722,10 +4723,10 @@ Time passes.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2447c40"/>
+      <child nodeId="node-0x1c6dc50"/>
     </children>
   </item>
-  <item nodeId="node-0x2447c40">
+  <item nodeId="node-0x1c6dc50">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -4736,10 +4737,10 @@ Time passes.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2447da0"/>
+      <child nodeId="node-0x1c6ddb0"/>
     </children>
   </item>
-  <item nodeId="node-0x2447da0">
+  <item nodeId="node-0x1c6ddb0">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -4750,10 +4751,10 @@ Time passes.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2447f00"/>
+      <child nodeId="node-0x1c6df10"/>
     </children>
   </item>
-  <item nodeId="node-0x2447f00">
+  <item nodeId="node-0x1c6df10">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">&gt;WAIT
 Time passes.
@@ -4765,10 +4766,10 @@ Time passes.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x246e110"/>
+      <child nodeId="node-0x1c95120"/>
     </children>
   </item>
-  <item nodeId="node-0x246e110">
+  <item nodeId="node-0x1c95120">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -4779,10 +4780,10 @@ Time passes.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x246e270"/>
+      <child nodeId="node-0x1c95280"/>
     </children>
   </item>
-  <item nodeId="node-0x246e270">
+  <item nodeId="node-0x1c95280">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">&gt;WAIT
 Time passes.
@@ -4794,10 +4795,10 @@ Time passes.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x246e3d0"/>
+      <child nodeId="node-0x1c953e0"/>
     </children>
   </item>
-  <item nodeId="node-0x246e3d0">
+  <item nodeId="node-0x1c953e0">
     <command xml:space="preserve">wait</command>
     <result xml:space="preserve">Time passes.
 
@@ -4808,10 +4809,10 @@ Time passes.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x246e530"/>
+      <child nodeId="node-0x1c95540"/>
     </children>
   </item>
-  <item nodeId="node-0x246e530">
+  <item nodeId="node-0x1c95540">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -4822,10 +4823,10 @@ Time passes.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x246e690"/>
+      <child nodeId="node-0x1c956a0"/>
     </children>
   </item>
-  <item nodeId="node-0x246e690">
+  <item nodeId="node-0x1c956a0">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -4836,10 +4837,10 @@ Time passes.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x246e7f0"/>
+      <child nodeId="node-0x1c95800"/>
     </children>
   </item>
-  <item nodeId="node-0x246e7f0">
+  <item nodeId="node-0x1c95800">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">&gt;WAIT
 Time passes.
@@ -4851,10 +4852,10 @@ Time passes.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x246e950"/>
+      <child nodeId="node-0x1c95960"/>
     </children>
   </item>
-  <item nodeId="node-0x246e950">
+  <item nodeId="node-0x1c95960">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -4865,10 +4866,10 @@ Time passes.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x246eab0"/>
+      <child nodeId="node-0x1c95ac0"/>
     </children>
   </item>
-  <item nodeId="node-0x246eab0">
+  <item nodeId="node-0x1c95ac0">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">&gt;WAIT
 Time passes.
@@ -4880,10 +4881,10 @@ Time passes.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x246ec10"/>
+      <child nodeId="node-0x1c95c20"/>
     </children>
   </item>
-  <item nodeId="node-0x246ec10">
+  <item nodeId="node-0x1c95c20">
     <command xml:space="preserve">bribe croc</command>
     <result xml:space="preserve">That&apos;s not a verb I recognize.
 
@@ -4894,10 +4895,10 @@ Time passes.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x246ed70"/>
+      <child nodeId="node-0x1c95d80"/>
     </children>
   </item>
-  <item nodeId="node-0x246ed70">
+  <item nodeId="node-0x1c95d80">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying:
   200 currants
@@ -4909,10 +4910,10 @@ Time passes.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x246eed0"/>
+      <child nodeId="node-0x1c95ee0"/>
     </children>
   </item>
-  <item nodeId="node-0x246eed0">
+  <item nodeId="node-0x1c95ee0">
     <command xml:space="preserve">drop currants</command>
     <result xml:space="preserve">Dropped.
 
@@ -4923,10 +4924,10 @@ Time passes.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2487170"/>
+      <child nodeId="node-0x1cae180"/>
     </children>
   </item>
-  <item nodeId="node-0x2487170">
+  <item nodeId="node-0x1cae180">
     <command xml:space="preserve">take currants</command>
     <result xml:space="preserve">Taken.
 
@@ -4937,7 +4938,7 @@ Time passes.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x24872d0">
+  <item nodeId="node-0x1cae2e0">
     <command xml:space="preserve">take ticket</command>
     <result xml:space="preserve">That&apos;s hardly portable.
 
@@ -4948,7 +4949,7 @@ Time passes.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x2487430">
+  <item nodeId="node-0x1cae440">
     <command xml:space="preserve">bribe</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -4959,10 +4960,10 @@ Time passes.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2487590"/>
+      <child nodeId="node-0x1cae5a0"/>
     </children>
   </item>
-  <item nodeId="node-0x2487590">
+  <item nodeId="node-0x1cae5a0">
     <command xml:space="preserve">up</command>
     <result xml:space="preserve">
 Gregarious Grange
@@ -4975,10 +4976,10 @@ The entrance to the subway is down a flight of stairs. You can also go inside Bu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x24876f0"/>
+      <child nodeId="node-0x1cae700"/>
     </children>
   </item>
-  <item nodeId="node-0x24876f0">
+  <item nodeId="node-0x1cae700">
     <command xml:space="preserve">in</command>
     <result xml:space="preserve">
 Bureaucratic Hall
@@ -4991,10 +4992,10 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2487850"/>
+      <child nodeId="node-0x1cae860"/>
     </children>
   </item>
-  <item nodeId="node-0x2487850">
+  <item nodeId="node-0x1cae860">
     <command xml:space="preserve">bribe</command>
     <result xml:space="preserve">(the bureaucroc)
 You attempt to bribe a government official. He seems tempted, but before you can seal the deal, the de-imaginators show up and cart you off to Abbasid Jail.
@@ -5013,7 +5014,7 @@ Would you like to RESTART, RESTORE a saved game, or QUIT?
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x24879b0">
+  <item nodeId="node-0x1cae9c0">
     <command xml:space="preserve">obtain qualificaiton</command>
     <result xml:space="preserve">You will need to go to Bureaucratic Hall to do that.
 
@@ -5024,11 +5025,11 @@ Would you like to RESTART, RESTORE a saved game, or QUIT?
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2487b10"/>
-      <child nodeId="node-0x2487c70"/>
+      <child nodeId="node-0x1caeb20"/>
+      <child nodeId="node-0x1caec80"/>
     </children>
   </item>
-  <item nodeId="node-0x2487b10">
+  <item nodeId="node-0x1caeb20">
     <command xml:space="preserve">obtain qualification</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -5039,7 +5040,7 @@ Would you like to RESTART, RESTORE a saved game, or QUIT?
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x2487c70">
+  <item nodeId="node-0x1caec80">
     <command xml:space="preserve">activate qualificaiton</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -5050,10 +5051,10 @@ Would you like to RESTART, RESTORE a saved game, or QUIT?
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2487dd0"/>
+      <child nodeId="node-0x1caede0"/>
     </children>
   </item>
-  <item nodeId="node-0x2487dd0">
+  <item nodeId="node-0x1caede0">
     <command xml:space="preserve">activate qualification</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -5064,10 +5065,10 @@ Would you like to RESTART, RESTORE a saved game, or QUIT?
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2487f30"/>
+      <child nodeId="node-0x1caef40"/>
     </children>
   </item>
-  <item nodeId="node-0x2487f30">
+  <item nodeId="node-0x1caef40">
     <command xml:space="preserve">test intro</command>
     <result xml:space="preserve">(Testing.)
 
@@ -5114,10 +5115,10 @@ The bureaucroc says, &quot;Go away. We don&apos;t have time to waste on people w
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x24ad140"/>
+      <child nodeId="node-0x1a5d150"/>
     </children>
   </item>
-  <item nodeId="node-0x24ad140">
+  <item nodeId="node-0x1a5d150">
     <command xml:space="preserve">test intro</command>
     <result xml:space="preserve">(Testing.)
 
@@ -5163,10 +5164,10 @@ A bureaucroc says, &quot;We will be with you as soon as possible. Now please sit
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x24ad2a0"/>
+      <child nodeId="node-0x1a5d2b0"/>
     </children>
   </item>
-  <item nodeId="node-0x24ad2a0">
+  <item nodeId="node-0x1a5d2b0">
     <command xml:space="preserve">test wait</command>
     <result xml:space="preserve">(Testing.)
 
@@ -5214,10 +5215,10 @@ You count out a pile of currants, and the bureaucroc hands over Card-Carrying Qu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x24ad400"/>
+      <child nodeId="node-0x1a5d410"/>
     </children>
   </item>
-  <item nodeId="node-0x24ad400">
+  <item nodeId="node-0x1a5d410">
     <command xml:space="preserve">obtain qualification</command>
     <result xml:space="preserve">You already have the qualification. Now you need to activate it.
 
@@ -5228,10 +5229,10 @@ You count out a pile of currants, and the bureaucroc hands over Card-Carrying Qu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x24ad560"/>
+      <child nodeId="node-0x1a5d570"/>
     </children>
   </item>
-  <item nodeId="node-0x24ad560">
+  <item nodeId="node-0x1a5d570">
     <command xml:space="preserve">activate qualification</command>
     <result xml:space="preserve">Congratulations! You have taken the first step toward Bureaucratic officialdom. As with all first steps, there is a second, a third... Once you learn Bureaucratic Arts, then get and complete your Papers, you&apos;ll be able to use public transportation.
 
@@ -5242,10 +5243,10 @@ You count out a pile of currants, and the bureaucroc hands over Card-Carrying Qu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x24ad6c0"/>
+      <child nodeId="node-0x1a5d6d0"/>
     </children>
   </item>
-  <item nodeId="node-0x24ad6c0">
+  <item nodeId="node-0x1a5d6d0">
     <command xml:space="preserve">obtain qualification</command>
     <result xml:space="preserve">You have already qualified yourself to carry cards.
 
@@ -5256,10 +5257,10 @@ You count out a pile of currants, and the bureaucroc hands over Card-Carrying Qu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x24ad820"/>
+      <child nodeId="node-0x1a5d830"/>
     </children>
   </item>
-  <item nodeId="node-0x24ad820">
+  <item nodeId="node-0x1a5d830">
     <command xml:space="preserve">activate qualification</command>
     <result xml:space="preserve">You have already qualified yourself to carry cards.
 
@@ -5270,7 +5271,7 @@ You count out a pile of currants, and the bureaucroc hands over Card-Carrying Qu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x24ad980">
+  <item nodeId="node-0x1a5d990">
     <command xml:space="preserve">activate qualification</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -5281,10 +5282,10 @@ You count out a pile of currants, and the bureaucroc hands over Card-Carrying Qu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x24adae0"/>
+      <child nodeId="node-0x1a5daf0"/>
     </children>
   </item>
-  <item nodeId="node-0x24adae0">
+  <item nodeId="node-0x1a5daf0">
     <command xml:space="preserve">obtain qualification</command>
     <result xml:space="preserve">You must supply a noun.
 
@@ -5295,7 +5296,7 @@ You count out a pile of currants, and the bureaucroc hands over Card-Carrying Qu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x24adc40">
+  <item nodeId="node-0x1a5dc50">
     <command xml:space="preserve">learn arts</command>
     <result xml:space="preserve">You cannot learn the Bureaucratic Arts until you have obtained and activated the Card-Carrying Qualification. You can obtain the Card-Carrying Qualification at Bureaucratic Hall.
 
@@ -5306,10 +5307,10 @@ You count out a pile of currants, and the bureaucroc hands over Card-Carrying Qu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x24adda0"/>
+      <child nodeId="node-0x1a5ddb0"/>
     </children>
   </item>
-  <item nodeId="node-0x24adda0">
+  <item nodeId="node-0x1a5ddb0">
     <command xml:space="preserve">obtain qualification</command>
     <result xml:space="preserve">You will need to go to Bureaucratic Hall to do that.
 
@@ -5320,10 +5321,10 @@ You count out a pile of currants, and the bureaucroc hands over Card-Carrying Qu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x24adf00"/>
+      <child nodeId="node-0x1a5df10"/>
     </children>
   </item>
-  <item nodeId="node-0x24adf00">
+  <item nodeId="node-0x1a5df10">
     <command xml:space="preserve">test intro</command>
     <result xml:space="preserve">(Testing.)
 
@@ -5370,10 +5371,10 @@ The bureaucroc says, &quot;Go away. We don&apos;t have time to waste on people w
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x24e80e0"/>
+      <child nodeId="node-0x1d0e0f0"/>
     </children>
   </item>
-  <item nodeId="node-0x24e80e0">
+  <item nodeId="node-0x1d0e0f0">
     <command xml:space="preserve">test wait</command>
     <result xml:space="preserve">(Testing.)
 
@@ -5413,10 +5414,10 @@ That&apos;s not a verb I recognize.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x24e8240"/>
+      <child nodeId="node-0x1d0e250"/>
     </children>
   </item>
-  <item nodeId="node-0x24e8240">
+  <item nodeId="node-0x1d0e250">
     <command xml:space="preserve">test intro</command>
     <result xml:space="preserve">(Testing.)
 
@@ -5462,10 +5463,10 @@ A bureaucroc says, &quot;We will be with you as soon as possible. Now please sit
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x24e83a0"/>
+      <child nodeId="node-0x1d0e3b0"/>
     </children>
   </item>
-  <item nodeId="node-0x24e83a0">
+  <item nodeId="node-0x1d0e3b0">
     <command xml:space="preserve">test wait</command>
     <result xml:space="preserve">(Testing.)
 
@@ -5513,10 +5514,10 @@ You count out a pile of currants, and the bureaucroc hands over Card-Carrying Qu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x24e8500"/>
+      <child nodeId="node-0x1d0e510"/>
     </children>
   </item>
-  <item nodeId="node-0x24e8500">
+  <item nodeId="node-0x1d0e510">
     <command xml:space="preserve">obtain qualification</command>
     <result xml:space="preserve">You will need to go to Bureaucratic Hall to do that.
 
@@ -5527,7 +5528,7 @@ You count out a pile of currants, and the bureaucroc hands over Card-Carrying Qu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x24e8660">
+  <item nodeId="node-0x1d0e670">
     <command xml:space="preserve">obtain qualification</command>
     <result xml:space="preserve">You will need to go to Bureaucratic Hall to do that.
 
@@ -5538,10 +5539,10 @@ You count out a pile of currants, and the bureaucroc hands over Card-Carrying Qu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x24e87c0"/>
+      <child nodeId="node-0x1d0e7d0"/>
     </children>
   </item>
-  <item nodeId="node-0x24e87c0">
+  <item nodeId="node-0x1d0e7d0">
     <command xml:space="preserve">test intro</command>
     <result xml:space="preserve">(Testing.)
 
@@ -5588,10 +5589,10 @@ The bureaucroc says, &quot;Go away. We don&apos;t have time to waste on people w
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x24e8920"/>
+      <child nodeId="node-0x1d0e930"/>
     </children>
   </item>
-  <item nodeId="node-0x24e8920">
+  <item nodeId="node-0x1d0e930">
     <command xml:space="preserve">test intro</command>
     <result xml:space="preserve">(Testing.)
 
@@ -5637,10 +5638,10 @@ A bureaucroc says, &quot;We will be with you as soon as possible. Now please sit
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x24e8a80"/>
+      <child nodeId="node-0x1d0ea90"/>
     </children>
   </item>
-  <item nodeId="node-0x24e8a80">
+  <item nodeId="node-0x1d0ea90">
     <command xml:space="preserve">test wait</command>
     <result xml:space="preserve">(Testing.)
 
@@ -5688,10 +5689,10 @@ You count out a pile of currants, and the bureaucroc hands over Card-Carrying Qu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x24e8be0"/>
+      <child nodeId="node-0x1d0ebf0"/>
     </children>
   </item>
-  <item nodeId="node-0x24e8be0">
+  <item nodeId="node-0x1d0ebf0">
     <command xml:space="preserve">obtain qualification</command>
     <result xml:space="preserve">You already have the qualification. Now you need to activate it.
 
@@ -5702,10 +5703,10 @@ You count out a pile of currants, and the bureaucroc hands over Card-Carrying Qu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x24e8d40"/>
+      <child nodeId="node-0x1d0ed50"/>
     </children>
   </item>
-  <item nodeId="node-0x24e8d40">
+  <item nodeId="node-0x1d0ed50">
     <command xml:space="preserve">activate qualification</command>
     <result xml:space="preserve">Congratulations! You have taken the first step toward Bureaucratic officialdom. As with all first steps, there is a second, a third... Once you learn Bureaucratic Arts, then get and complete your Papers, you&apos;ll be able to use public transportation.
 
@@ -5716,10 +5717,10 @@ You count out a pile of currants, and the bureaucroc hands over Card-Carrying Qu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x24e8ea0"/>
+      <child nodeId="node-0x1d0eeb0"/>
     </children>
   </item>
-  <item nodeId="node-0x24e8ea0">
+  <item nodeId="node-0x1d0eeb0">
     <command xml:space="preserve">obtain qualificaiton</command>
     <result xml:space="preserve">You have already qualified yourself to carry cards.
 
@@ -5730,10 +5731,10 @@ You count out a pile of currants, and the bureaucroc hands over Card-Carrying Qu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x250f170"/>
+      <child nodeId="node-0x1d35180"/>
     </children>
   </item>
-  <item nodeId="node-0x250f170">
+  <item nodeId="node-0x1d35180">
     <command xml:space="preserve">activate qualification</command>
     <result xml:space="preserve">You have already qualified yourself to carry cards.
 
@@ -5746,7 +5747,7 @@ Congratulations! You have taken the first step toward Bureaucratic officialdom. 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x250f2d0">
+  <item nodeId="node-0x1d352e0">
     <command xml:space="preserve">ride subway</command>
     <result xml:space="preserve">You must supply a noun.
 
@@ -5757,7 +5758,7 @@ Congratulations! You have taken the first step toward Bureaucratic officialdom. 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x250f430">
+  <item nodeId="node-0x1d35440">
     <command xml:space="preserve">talk</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -5768,10 +5769,10 @@ Congratulations! You have taken the first step toward Bureaucratic officialdom. 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x250f590"/>
+      <child nodeId="node-0x1d355a0"/>
     </children>
   </item>
-  <item nodeId="node-0x250f590">
+  <item nodeId="node-0x1d355a0">
     <command xml:space="preserve">ask</command>
     <result xml:space="preserve">I didn&apos;t understand that sentence.
 
@@ -5782,10 +5783,10 @@ Congratulations! You have taken the first step toward Bureaucratic officialdom. 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x250f6f0"/>
+      <child nodeId="node-0x1d35700"/>
     </children>
   </item>
-  <item nodeId="node-0x250f6f0">
+  <item nodeId="node-0x1d35700">
     <command xml:space="preserve">up</command>
     <result xml:space="preserve">
 Gregarious Grange
@@ -5798,10 +5799,10 @@ The entrance to the subway is down a flight of stairs. You can also go inside Bu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x250f850"/>
+      <child nodeId="node-0x1d35860"/>
     </children>
   </item>
-  <item nodeId="node-0x250f850">
+  <item nodeId="node-0x1d35860">
     <command xml:space="preserve">test intro</command>
     <result xml:space="preserve">(Testing.)
 
@@ -5849,10 +5850,10 @@ A bureaucroc says, &quot;We will be with you as soon as possible. Now please sit
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x250f9b0"/>
+      <child nodeId="node-0x1d359c0"/>
     </children>
   </item>
-  <item nodeId="node-0x250f9b0">
+  <item nodeId="node-0x1d359c0">
     <command xml:space="preserve">undo</command>
     <result xml:space="preserve">The use of UNDO is forbidden in this game.
 
@@ -5863,10 +5864,10 @@ A bureaucroc says, &quot;We will be with you as soon as possible. Now please sit
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x250fb10"/>
+      <child nodeId="node-0x1d35b20"/>
     </children>
   </item>
-  <item nodeId="node-0x250fb10">
+  <item nodeId="node-0x1d35b20">
     <command xml:space="preserve">restart</command>
     <result xml:space="preserve">Are you sure you want to restart? </result>
     <commentary xml:space="preserve"></commentary>
@@ -5875,10 +5876,10 @@ A bureaucroc says, &quot;We will be with you as soon as possible. Now please sit
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x250fc70"/>
+      <child nodeId="node-0x1d35c80"/>
     </children>
   </item>
-  <item nodeId="node-0x250fc70">
+  <item nodeId="node-0x1d35c80">
     <command xml:space="preserve">y</command>
     <result xml:space="preserve">
 
@@ -5894,10 +5895,10 @@ What is your name? &gt;</result>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x250fdd0"/>
+      <child nodeId="node-0x1d35de0"/>
     </children>
   </item>
-  <item nodeId="node-0x250fdd0">
+  <item nodeId="node-0x1d35de0">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">
 I don&apos;t know how to pronounce that. Your name will be Alexandra.
@@ -5918,10 +5919,10 @@ You can see a ticket dispenser here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x250ff30"/>
+      <child nodeId="node-0x1d35f40"/>
     </children>
   </item>
-  <item nodeId="node-0x250ff30">
+  <item nodeId="node-0x1d35f40">
     <command xml:space="preserve">up</command>
     <result xml:space="preserve">
 Gregarious Grange
@@ -5934,10 +5935,10 @@ The entrance to the subway is down a flight of stairs. You can also go inside Bu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2528100"/>
+      <child nodeId="node-0x1d4e110"/>
     </children>
   </item>
-  <item nodeId="node-0x2528100">
+  <item nodeId="node-0x1d4e110">
     <command xml:space="preserve">d</command>
     <result xml:space="preserve">As you make your way back down to the Subway Station, a Bureaucroc corners you on the stairs. He whispers, &quot;Psssst. Here&apos;sss the deal. Getting your Card Carrying Qualification is the first step in the Bureaucratic Artsss. Yesss, and once you have it, you are on your way to being able to obtain Your Papersss (and all sorts of licenses and permits). It used to be you could acquire the bureaucratic documentsss directly from a friend--Oh, it&apos;sss perfectly legal, mind you--but seemsss like you&apos;re the only one around. You&apos;ll have to go the official route and deal with the red tape. Head over to the Bureaucratic Hall on Gregariousss Grange and talk to one of my friendsss there. You&apos;ll get what you need.&quot; And then he disappears as quickly as he appeared.
 
@@ -5955,10 +5956,10 @@ You can see a ticket dispenser here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2528260"/>
+      <child nodeId="node-0x1d4e270"/>
     </children>
   </item>
-  <item nodeId="node-0x2528260">
+  <item nodeId="node-0x1d4e270">
     <command xml:space="preserve">up</command>
     <result xml:space="preserve">
 Gregarious Grange
@@ -5971,10 +5972,10 @@ The entrance to the subway is down a flight of stairs. You can also go inside Bu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x25283c0"/>
+      <child nodeId="node-0x1d4e3d0"/>
     </children>
   </item>
-  <item nodeId="node-0x25283c0">
+  <item nodeId="node-0x1d4e3d0">
     <command xml:space="preserve">in</command>
     <result xml:space="preserve">
 Bureaucratic Hall
@@ -5987,10 +5988,10 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2528520"/>
+      <child nodeId="node-0x1d4e530"/>
     </children>
   </item>
-  <item nodeId="node-0x2528520">
+  <item nodeId="node-0x1d4e530">
     <command xml:space="preserve">ask bureaucroc about life</command>
     <result xml:space="preserve">try &quot;talk to bureaucrat&quot; instead
 
@@ -6001,10 +6002,10 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2528680"/>
+      <child nodeId="node-0x1d4e690"/>
     </children>
   </item>
-  <item nodeId="node-0x2528680">
+  <item nodeId="node-0x1d4e690">
     <command xml:space="preserve">talk to bureaucrat</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -6015,7 +6016,7 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x25287e0">
+  <item nodeId="node-0x1d4e7f0">
     <command xml:space="preserve">u.d.u.i</command>
     <result xml:space="preserve">
 Gregarious Grange
@@ -6043,10 +6044,10 @@ You are carrying:
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2528940"/>
+      <child nodeId="node-0x1d4e950"/>
     </children>
   </item>
-  <item nodeId="node-0x2528940">
+  <item nodeId="node-0x1d4e950">
     <command xml:space="preserve">ask croc about life</command>
     <result xml:space="preserve">try &quot;talk to bureaucroc&quot;.
 
@@ -6058,10 +6059,10 @@ You are carrying:
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2528aa0"/>
+      <child nodeId="node-0x1d4eab0"/>
     </children>
   </item>
-  <item nodeId="node-0x2528aa0">
+  <item nodeId="node-0x1d4eab0">
     <command xml:space="preserve">talk to croc</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -6072,10 +6073,10 @@ You are carrying:
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2528c00"/>
+      <child nodeId="node-0x1d4ec10"/>
     </children>
   </item>
-  <item nodeId="node-0x2528c00">
+  <item nodeId="node-0x1d4ec10">
     <command xml:space="preserve">in</command>
     <result xml:space="preserve">
 Bureaucratic Hall
@@ -6088,10 +6089,10 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2528d60"/>
+      <child nodeId="node-0x1d4ed70"/>
     </children>
   </item>
-  <item nodeId="node-0x2528d60">
+  <item nodeId="node-0x1d4ed70">
     <command xml:space="preserve">talk to croc</command>
     <result xml:space="preserve">A bureaucroc says, &quot;We will be with you as soon as possible. Now please sit down and wait.&quot; He then proceeds to ignore you.
 
@@ -6102,7 +6103,7 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x2528ec0">
+  <item nodeId="node-0x1d4eed0">
     <command xml:space="preserve">talk to subway</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -6113,10 +6114,10 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x25630f0"/>
+      <child nodeId="node-0x1d89100"/>
     </children>
   </item>
-  <item nodeId="node-0x25630f0">
+  <item nodeId="node-0x1d89100">
     <command xml:space="preserve">ask subway about life</command>
     <result xml:space="preserve">To talk to someone, just... &quot;talk to&quot; them.
 
@@ -6128,7 +6129,7 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x2563250">
+  <item nodeId="node-0x1d89260">
     <command xml:space="preserve">up.down.up.in</command>
     <result xml:space="preserve">
 Gregarious Grange
@@ -6156,10 +6157,10 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x25633b0"/>
+      <child nodeId="node-0x1d893c0"/>
     </children>
   </item>
-  <item nodeId="node-0x25633b0">
+  <item nodeId="node-0x1d893c0">
     <command xml:space="preserve">x sign</command>
     <result xml:space="preserve">This sign reads &quot;Please approach the counter for assistance.&quot;
 
@@ -6170,10 +6171,10 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2563510"/>
+      <child nodeId="node-0x1d89520"/>
     </children>
   </item>
-  <item nodeId="node-0x2563510">
+  <item nodeId="node-0x1d89520">
     <command xml:space="preserve">get papers</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -6184,7 +6185,7 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x2563670">
+  <item nodeId="node-0x1d89680">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">&gt;WAIT
 Time passes.
@@ -6196,10 +6197,10 @@ Time passes.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x25637d0"/>
+      <child nodeId="node-0x1d897e0"/>
     </children>
   </item>
-  <item nodeId="node-0x25637d0">
+  <item nodeId="node-0x1d897e0">
     <command xml:space="preserve">up</command>
     <result xml:space="preserve">
 Gregarious Grange
@@ -6212,10 +6213,10 @@ The entrance to the subway is down a flight of stairs. You can also go inside Bu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2563930"/>
+      <child nodeId="node-0x1d89940"/>
     </children>
   </item>
-  <item nodeId="node-0x2563930">
+  <item nodeId="node-0x1d89940">
     <command xml:space="preserve">in</command>
     <result xml:space="preserve">
 Bureaucratic Hall
@@ -6228,10 +6229,10 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2563a90"/>
+      <child nodeId="node-0x1d89aa0"/>
     </children>
   </item>
-  <item nodeId="node-0x2563a90">
+  <item nodeId="node-0x1d89aa0">
     <command xml:space="preserve">drink water</command>
     <result xml:space="preserve">You will first need to dispense a cup of water from the water cooler.
 
@@ -6242,7 +6243,7 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x2563bf0">
+  <item nodeId="node-0x1d89c00">
     <command xml:space="preserve">write papers</command>
     <result xml:space="preserve">You don&apos;t have anything to write with!
 
@@ -6253,10 +6254,10 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2563d50"/>
+      <child nodeId="node-0x1d89d60"/>
     </children>
   </item>
-  <item nodeId="node-0x2563d50">
+  <item nodeId="node-0x1d89d60">
     <command xml:space="preserve">wrote on me</command>
     <result xml:space="preserve">That&apos;s not a verb I recognize.
 
@@ -6267,10 +6268,10 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2563eb0"/>
+      <child nodeId="node-0x1d89ec0"/>
     </children>
   </item>
-  <item nodeId="node-0x2563eb0">
+  <item nodeId="node-0x1d89ec0">
     <command xml:space="preserve">write on me</command>
     <result xml:space="preserve">You don&apos;t have anything to write with!
 
@@ -6281,10 +6282,10 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2588160"/>
+      <child nodeId="node-0x1dae160"/>
     </children>
   </item>
-  <item nodeId="node-0x2588160">
+  <item nodeId="node-0x1dae160">
     <command xml:space="preserve">up.in.take pen</command>
     <result xml:space="preserve">
 Gregarious Grange
@@ -6305,10 +6306,10 @@ The entrance to the subway is down a flight of stairs. You can also go inside Bu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x25882c0"/>
+      <child nodeId="node-0x1dae2c0"/>
     </children>
   </item>
-  <item nodeId="node-0x25882c0">
+  <item nodeId="node-0x1dae2c0">
     <command xml:space="preserve">write papers</command>
     <result xml:space="preserve">You fiddle with the pen, and it leaks ink all over you.
 
@@ -6319,10 +6320,10 @@ The entrance to the subway is down a flight of stairs. You can also go inside Bu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2588420"/>
+      <child nodeId="node-0x1dae420"/>
     </children>
   </item>
-  <item nodeId="node-0x2588420">
+  <item nodeId="node-0x1dae420">
     <command xml:space="preserve">write on me</command>
     <result xml:space="preserve">You fiddle with the pen, and it leaks ink all over you.
 
@@ -6333,7 +6334,7 @@ The entrance to the subway is down a flight of stairs. You can also go inside Bu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x2588580">
+  <item nodeId="node-0x1dae580">
     <command xml:space="preserve">get papers</command>
     <result xml:space="preserve">You will need to go to Bureaucratic Hall to do that.
 
@@ -6344,10 +6345,10 @@ The entrance to the subway is down a flight of stairs. You can also go inside Bu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x25886e0"/>
+      <child nodeId="node-0x1dae6e0"/>
     </children>
   </item>
-  <item nodeId="node-0x25886e0">
+  <item nodeId="node-0x1dae6e0">
     <command xml:space="preserve">test intro</command>
     <result xml:space="preserve">(Testing.)
 
@@ -6387,10 +6388,10 @@ A bureaucroc says, &quot;We will be with you as soon as possible. Now please sit
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2588840"/>
+      <child nodeId="node-0x1dae840"/>
     </children>
   </item>
-  <item nodeId="node-0x2588840">
+  <item nodeId="node-0x1dae840">
     <command xml:space="preserve"> test wait</command>
     <result xml:space="preserve">(Testing.)
 
@@ -6438,10 +6439,10 @@ You count out a pile of currants, and the bureaucroc hands over Card-Carrying Qu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x25889a0"/>
+      <child nodeId="node-0x1dae9a0"/>
     </children>
   </item>
-  <item nodeId="node-0x25889a0">
+  <item nodeId="node-0x1dae9a0">
     <command xml:space="preserve">test qual</command>
     <result xml:space="preserve">(Testing.)
 
@@ -6474,10 +6475,10 @@ A bureaucroc says, &quot;We will be with you as soon as possible. Now please sit
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2588b00"/>
+      <child nodeId="node-0x1daeb00"/>
     </children>
   </item>
-  <item nodeId="node-0x2588b00">
+  <item nodeId="node-0x1daeb00">
     <command xml:space="preserve">test wait</command>
     <result xml:space="preserve">(Testing.)
 
@@ -6525,10 +6526,10 @@ You count out a pile of currants, and the bureaucroc hands over Papers.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2588c60"/>
+      <child nodeId="node-0x1daec60"/>
     </children>
   </item>
-  <item nodeId="node-0x2588c60">
+  <item nodeId="node-0x1daec60">
     <command xml:space="preserve">get papers</command>
     <result xml:space="preserve">You will need to go to Bureaucratic Hall to do that.
 
@@ -6539,7 +6540,7 @@ You count out a pile of currants, and the bureaucroc hands over Papers.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x2588dc0">
+  <item nodeId="node-0x1daedc0">
     <command xml:space="preserve">u.d.u.in</command>
     <result xml:space="preserve">
 Gregarious Grange
@@ -6567,10 +6568,10 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x2588f20"/>
+      <child nodeId="node-0x1daef20"/>
     </children>
   </item>
-  <item nodeId="node-0x2588f20">
+  <item nodeId="node-0x1daef20">
     <command xml:space="preserve">test wait</command>
     <result xml:space="preserve">(Testing.)
 
@@ -6610,10 +6611,10 @@ That&apos;s not a verb I recognize.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x25b0120"/>
+      <child nodeId="node-0x1dd6120"/>
     </children>
   </item>
-  <item nodeId="node-0x25b0120">
+  <item nodeId="node-0x1dd6120">
     <command xml:space="preserve">test wait</command>
     <result xml:space="preserve">(Testing.)
 
@@ -6661,10 +6662,10 @@ You count out a pile of currants, and the bureaucroc hands over Card-Carrying Qu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x25b0280"/>
+      <child nodeId="node-0x1dd6280"/>
     </children>
   </item>
-  <item nodeId="node-0x25b0280">
+  <item nodeId="node-0x1dd6280">
     <command xml:space="preserve">activate qual</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -6675,10 +6676,10 @@ You count out a pile of currants, and the bureaucroc hands over Card-Carrying Qu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x25b03e0"/>
+      <child nodeId="node-0x1dd63e0"/>
     </children>
   </item>
-  <item nodeId="node-0x25b03e0">
+  <item nodeId="node-0x1dd63e0">
     <command xml:space="preserve">activate qualificiation</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -6689,10 +6690,10 @@ You count out a pile of currants, and the bureaucroc hands over Card-Carrying Qu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x25b0540"/>
+      <child nodeId="node-0x1dd6540"/>
     </children>
   </item>
-  <item nodeId="node-0x25b0540">
+  <item nodeId="node-0x1dd6540">
     <command xml:space="preserve">activate qualification</command>
     <result xml:space="preserve">Congratulations! You have taken the first step toward Bureaucratic officialdom. As with all first steps, there is a second, a third... Once you learn Bureaucratic Arts, then get and complete your Papers, you&apos;ll be able to use public transportation.
 
@@ -6703,10 +6704,10 @@ You count out a pile of currants, and the bureaucroc hands over Card-Carrying Qu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x25b06a0"/>
+      <child nodeId="node-0x1dd66a0"/>
     </children>
   </item>
-  <item nodeId="node-0x25b06a0">
+  <item nodeId="node-0x1dd66a0">
     <command xml:space="preserve">in</command>
     <result xml:space="preserve">You can&apos;t go that way.
 
@@ -6717,10 +6718,10 @@ You count out a pile of currants, and the bureaucroc hands over Card-Carrying Qu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x25b0800"/>
+      <child nodeId="node-0x1dd6800"/>
     </children>
   </item>
-  <item nodeId="node-0x25b0800">
+  <item nodeId="node-0x1dd6800">
     <command xml:space="preserve">out.in</command>
     <result xml:space="preserve">
 Gregarious Grange
@@ -6736,10 +6737,10 @@ A sign proclaims this room to be the &quot;Department of Administrative Affairs 
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x25b0960"/>
+      <child nodeId="node-0x1dd6960"/>
     </children>
   </item>
-  <item nodeId="node-0x25b0960">
+  <item nodeId="node-0x1dd6960">
     <command xml:space="preserve">sit</command>
     <result xml:space="preserve">(on the chair)
 You take a seat on one of their uncomfortable plastic chairs.
@@ -6751,7 +6752,7 @@ You take a seat on one of their uncomfortable plastic chairs.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x25b0ac0">
+  <item nodeId="node-0x1dd6ac0">
     <command xml:space="preserve">check intro</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -6762,10 +6763,10 @@ You take a seat on one of their uncomfortable plastic chairs.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x25b0c20"/>
+      <child nodeId="node-0x1dd6c20"/>
     </children>
   </item>
-  <item nodeId="node-0x25b0c20">
+  <item nodeId="node-0x1dd6c20">
     <command xml:space="preserve">test intro</command>
     <result xml:space="preserve">(Testing.)
 
@@ -6805,10 +6806,10 @@ A bureaucroc says, &quot;We will be with you as soon as possible. Now please sit
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x25b0d80"/>
+      <child nodeId="node-0x1dd6d80"/>
     </children>
   </item>
-  <item nodeId="node-0x25b0d80">
+  <item nodeId="node-0x1dd6d80">
     <command xml:space="preserve">test wait</command>
     <result xml:space="preserve">(Testing.)
 
@@ -6856,7 +6857,137 @@ You count out a pile of currants, and the bureaucroc hands over Card-Carrying Qu
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x25b0ee0">
+  <item nodeId="node-0x1defdd0">
+    <command xml:space="preserve">up.down</command>
+    <result xml:space="preserve">
+Gregarious Grange
+The entrance to the subway is down a flight of stairs. You can also go inside Bureaucratic Hall.
+
+As you make your way back down to the Subway Station, a Bureaucroc corners you on the stairs. He whispers, &quot;Psssst. Here&apos;sss the deal. Getting your Card Carrying Qualification is the first step in the Bureaucratic Artsss. Yesss, and once you have it, you are on your way to being able to obtain Your Papersss (and all sorts of licenses and permits). It used to be you could acquire the bureaucratic documentsss directly from a friend--Oh, it&apos;sss perfectly legal, mind you--but seemsss like you&apos;re the only one around. You&apos;ll have to go the official route and deal with the red tape. Head over to the Bureaucratic Hall on Gregariousss Grange and talk to one of my friendsss there. You&apos;ll get what you need.&quot; And then he disappears as quickly as he appeared.
+
+That was weird.
+
+Subway Station
+This is the subway station below Gregarious Grange, Groddle Meadow. A flight of stairs leads up to the street.
+
+You can see a ticket dispenser here.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x1deff30"/>
+    </children>
+  </item>
+  <item nodeId="node-0x1deff30">
+    <command xml:space="preserve">up.in</command>
+    <result xml:space="preserve">
+Gregarious Grange
+The entrance to the subway is down a flight of stairs. You can also go inside Bureaucratic Hall.
+
+Bureaucratic Hall
+A sign proclaims this room to be the &quot;Department of Administrative Affairs - Ministry of Departments&quot;. To the left is a waiting area with a water cooler and a bunch of hard, plastic orange chairs. To the right is a counter, behind which is a Bureaucroc. Another sign reads &quot;Please approach the counter for assistance.&quot;
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f42f40d1100"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f42f40d1100">
+    <command xml:space="preserve">talk to croc</command>
+    <result xml:space="preserve">A bureaucroc says, &quot;We will be with you as soon as possible. Now please sit down and wait.&quot; He then proceeds to ignore you.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f42f40d1260"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f42f40d1260">
+    <command xml:space="preserve">sit</command>
+    <result xml:space="preserve">(on the chair)
+You take a seat on one of their uncomfortable plastic chairs.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f42f40d13c0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f42f40d13c0">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  200 currants
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f42f40d1520"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f42f40d1520">
+    <command xml:space="preserve">sit</command>
+    <result xml:space="preserve">(on the chair)
+You can&apos;t do anything while waiting. Just wait.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f42f40d1680"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f42f40d1680">
+    <command xml:space="preserve">sit</command>
+    <result xml:space="preserve">(on the chair)
+You can&apos;t do anything while waiting. Just wait.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f42f40d17e0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f42f40d17e0">
+    <command xml:space="preserve">sit</command>
+    <result xml:space="preserve">(on the chair)
+You can&apos;t do anything while waiting. Just wait.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x1dd6ee0">
     <command xml:space="preserve">up</command>
     <result xml:space="preserve">
 I don&apos;t know how to pronounce that. Your name will be Alexandra.
@@ -6877,10 +7008,10 @@ You can see a ticket dispenser here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x25c9170"/>
+      <child nodeId="node-0x1def170"/>
     </children>
   </item>
-  <item nodeId="node-0x25c9170">
+  <item nodeId="node-0x1def170">
     <command xml:space="preserve">up</command>
     <result xml:space="preserve">
 Gregarious Grange
@@ -6895,10 +7026,10 @@ You can see a BHDoor here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x25c92d0"/>
+      <child nodeId="node-0x1def2d0"/>
     </children>
   </item>
-  <item nodeId="node-0x25c92d0">
+  <item nodeId="node-0x1def2d0">
     <command xml:space="preserve">enter hall</command>
     <result xml:space="preserve">(first opening the BHDoor)
 
@@ -6914,7 +7045,7 @@ You can see a BHDoor here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x25c9850">
+  <item nodeId="node-0x1def430">
     <command xml:space="preserve">adri</command>
     <result xml:space="preserve">Bureaucrocy
 A frustrating tale about paperwork by Adri
@@ -6932,11 +7063,11 @@ You can see a ticket dispenser here.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x25c9c70"/>
-      <child nodeId="node-0x25c9dd0"/>
+      <child nodeId="node-0x1def590"/>
+      <child nodeId="node-0x1def850"/>
     </children>
   </item>
-  <item nodeId="node-0x25c9c70">
+  <item nodeId="node-0x1def590">
     <command xml:space="preserve">restart</command>
     <result xml:space="preserve">
 
@@ -6952,10 +7083,10 @@ Would you like to RESTART, RESTORE a saved game, or QUIT?
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x25c9b10"/>
+      <child nodeId="node-0x1def6f0"/>
     </children>
   </item>
-  <item nodeId="node-0x25c9b10">
+  <item nodeId="node-0x1def6f0">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">Please give one of the answers above.
 
@@ -6967,7 +7098,7 @@ Would you like to RESTART, RESTORE a saved game, or QUIT?
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
-  <item nodeId="node-0x25c9dd0">
+  <item nodeId="node-0x1def850">
     <command xml:space="preserve">x me</command>
     <result xml:space="preserve">You are a Glitch named Alexandra. You were imagined into existence by the eleven Giants of Ur.
 
@@ -6978,10 +7109,10 @@ Would you like to RESTART, RESTORE a saved game, or QUIT?
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x25c99b0"/>
+      <child nodeId="node-0x1def9b0"/>
     </children>
   </item>
-  <item nodeId="node-0x25c99b0">
+  <item nodeId="node-0x1def9b0">
     <command xml:space="preserve">restart</command>
     <result xml:space="preserve">Are you sure you want to restart? </result>
     <commentary xml:space="preserve"></commentary>
@@ -6990,10 +7121,10 @@ Would you like to RESTART, RESTORE a saved game, or QUIT?
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
     <children>
-      <child nodeId="node-0x25c9f30"/>
+      <child nodeId="node-0x1defb10"/>
     </children>
   </item>
-  <item nodeId="node-0x25c9f30">
+  <item nodeId="node-0x1defb10">
     <command xml:space="preserve">y</command>
     <result xml:space="preserve">
 

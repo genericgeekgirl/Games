@@ -1,12 +1,12 @@
 "Bureaucrocy" by "Adri".
 
 The story creation year is 2014.
-The release number is 2.
+The release number is 3.
 The story headline is "A frustrating tale about paperwork".
 The story genre is "slice of life".
 The story description is "[story title] is based on a scene from [italic type]Glitch[roman type]"
 
-Release along with Cover Art, a "Quixe" interpreter and a "OneColumn" website
+[Release along with Cover Art, a "Quixe" interpreter and a "OneColumn" website]
 
 Volume - Basic Setup
 
@@ -200,7 +200,6 @@ Instead of doing anything except examining to the trash can: try examining the t
 
 Instead of drinking the cup of water:
 say "You imbibe the plain water from the generic cone-cup. Ewww. That water tastes really... bureaucratic-y. You file the cup in the trash can.";
-now the bureaucroc is helping;
 move the cup of water to the cooler.
 
 Book - Subway Ticket Dispenser
@@ -354,6 +353,8 @@ Currants is a number that varies. Currants is 200.
 
 Currant is a thing carried by the player. The description is "Currants make up the local currency." Understand "currants" as currant. The printed name is "[currants] currants".
 
+Instead of eating the currant: say "You try to bite into one of the currants. It's hard as a rock."
+
 Instead of dropping the currant:
 say "You drop a handful of currants. Then you immediately pick them back up."
 
@@ -480,8 +481,8 @@ When please wait ends:
 now wait-count is -1;
 say "[A Bureaucroc] calls out, [one of]'[player's name]! Your turn!'[or]'[player's name]! You're up!'[or]'NEXT, [player's name]!'[or]'[player's name]! Come forward!'[or]'[player's name]! Step up.'[or]'Ready for you now, [player's name]!'[or]'Attention, [player's name]! When you're ready?'[or]'Who's Next? [player's name]? Is [player's name] here?'[or]'[player's name]! Ready for you now!'[at random]".
 
-Instead of doing anything except waiting or looking or examining when please wait is happening:
-say "You can't do anything while waiting. Just wait.";
+Instead of doing anything except waiting or looking or examining or taking inventory when please wait is happening:
+say "You can't do anything while waiting. Just WAIT.";
 now wait-count is 5.
 
 Every turn when please wait is happening:
