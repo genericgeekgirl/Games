@@ -1,0 +1,253 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Shufflecomp</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
+
+    <link media="screen" rel="stylesheet" href="media/css/undum.css">
+
+    <meta name="viewport" content="user-scalable=no, width=device-width">
+    <link rel="apple-touch-icon" href="media/img/iphone/icon.png">
+    <link rel="apple-touch-startup-image" href="media/img/iphone/splash.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!--[if !IE]>-->
+    <link media="only screen and (max-width: 640px)"
+          rel="stylesheet" type="text/css" href="media/css/undum-mobile.css">
+    <!--<![endif]-->
+
+  </head>
+  <body>
+
+    <div id="toolbar">
+      <h1>A Summer's Rose</h1>
+      <div class="nav">
+        <a href="#" class="button" id="menu-button">Menu</a>
+      </div>
+    </div>
+    <ul id="menu">
+      <li><a href="#title, #content_wrapper">Story</a></li>
+      <li><a href="#character_panel">Settings</a></li>
+    </ul>
+
+    <div id="page">
+
+      <div id="tools_wrapper">
+	<div id="character_panel" class="tools right">
+          <div id="character">
+            <div class='buttons'>
+              <button id="save">Save</button> <button id="restore">Restore</button><button id="erase">Restart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div id="mid_panel">
+        <div id="title">
+          <div class="label">
+
+            <h1>A Summer's Rose</h1>
+            <h2>by Jed Brockett</h2>
+
+            <noscript><p class="noscript_message">This game requires Javascript.</p></noscript>
+            <p class="click_message">click to begin</p>
+          </div>
+        </div>
+
+        <div id="content_wrapper">
+          <div id="content">
+          </div>
+          <a name="end_of_content"></a>
+        </div>
+
+      </div>
+    </div> <!-- End of div.page -->
+
+
+    <!-- Holds UI elements that will be cloned and placed in the main
+         page. This block itself is always hidden. -->
+    <div id="ui_library">
+      <div id="quality" class="quality">
+        <span class="name" data-attr="name"></span>
+        <span class="value" data-attr="value"></span>
+      </div>
+
+      <div id="quality_group" class="quality_group">
+        <h2 data-attr="title"></h2>
+        <div class="qualities_in_group">
+        </div>
+      </div>
+
+      <div id="progress_bar" class="progress_bar">
+        <span class="name" data-attr="name"></span>
+        <span class="value" data-attr="value"></span>
+        <div class="progress_bar_track">
+          <div class="progress_bar_color" data-attr="width">
+          </div>
+        </div>
+        <span class="left_label" data-attr="left_label"></span>
+        <span class="right_label" data-attr="right_label"></span>
+      </div>
+
+      <hr id="turn_separator">
+
+    </div>
+
+    <div id="content_library">
+
+      <div id="start" class="situation">
+	<p>"Mother? Tell me the story of how you met Father."</p>
+	<p>Once upon a time&mdash;</p>
+	<p>"Mommy! Even you aren't THAT old."</p>
+	<p>What a charmer you are. Three years ago&mdash;</p>
+	<p>"I'm three years old! That's this many fingers!"</p>
+	<p>That's correct! What a smart little girl you are. Three years ago, I went to the Carterhaugh Wood. I had been warned not to venture there, but I was young and headstrong, the way you are, my darling, and my father&mdash;your grandfather&mdash;was the Earl, and therefore I felt I had the right to go where ever I pleased.</p>
+	<p>"What was the <a href='remembertales'>warning</a>?"</p>
+      </div>
+      
+      <div id="remembertales" class="situation">
+	<p>The legend has it that a fae by the name of Tamlane lived in the Wood, and he would demand a toll from anyone who wishes to visit.</p>
+	<p>"Tamlane is Father's name!"</p>
+	<p>Yes, it is. But we're getting ahead of ourselves. Now, I was standing at the edge of the woods, and I could have <a href='turnback'>turned back</a> and gone home, or <a href='enterwoods'>continued into the woods</a>.</p>
+      </div>
+      
+      <div class="situation" id="turnback">
+	<p>"You didn't turn back!"</p>
+	<p>You're right, my love. <a href="enterwoods">I didn't</a>. If I'd gone home, I never would have met your father, and you wouldn't be here.</p>
+      </div>
+      
+      <div class="situation" id="enterwoods">
+	<p>As you well know, I chose to enter the woods. I found a white horse there, underneath a rose tree. I was overcome by how beautiful the flowers were, and I reached up to <a href='pickrose'>pick one</a>.</p>
+      </div>
+      
+      <div class="situation" id="pickrose">
+	<p>I had barely plucked a single rose when a handsome young man suddenly appeared under the tree. He was about a foot taller than me and impossibly slender.</p>
+	<p>"Father!"</p>
+	<p>Yes, sweetheart. So this man shows up, and he exclaims, "Lady, let it alone! How dare you pluck my rose? How dare you break my tree? How dare you come to my forest without my permission?"</p>
+	<p>"What did you do?"</p>
+	<p>Well, I thought about <a href="apologize">apologizing</a> to him for trespassing. But I also very badly wanted to stand up to him, to <a href="argue">inform him</a> that those woods belonged to ME, not to him.</p>
+      </div>   
+      
+      <div class="situation" id="apologize">
+	<p>But I was nervous and alone in the wood with a strange man, so I stammered an apology. The young man smiled broadly. "Madam," he said, "in exchange for a kiss, I would allow you to take all the roses you wish." I blushed, but I allowed him to kiss me. We spent the rest of the afternoon together, as he, uh, showed me around the forest. Eventually I fell asleep in his arms.</p>
+	<p>"How romantic!"</p>
+	<p>Yes. Yes, it was. Except that when I woke up, he was gone and the wood had grown dark. I took as many roses as I could carry in my skirt and <a href="venturehome">ran home</a>.</p>
+      </div>
+      
+      <div class="situation" id="argue">
+	<p>Of course I chose to argue with him! "This forest is mine," I said. "My father gave it to me. I will pluck all the flowers I wish, and I will come and go without anyone's permission."</p>
+	<p>The young man grabbed me, pulled me into an embrace and kissed me deeply. Now, I was certainly surprised, but I knew in my heart that he was kind and good, and he was very, very handsome. So I kissed him back.</p>
+	<p>"Ewwwww."</p>
+	<p>Haha, yes, my darling. One day you will change your mind. Anyway, we spent the afternoon together, and we became so tired that we fell asleep. When I woke up, he was gone and the wood has grown dark. I took my rose and <a href="venturehome">ran home</a>.</p>
+      </div>
+      
+      <div class="situation" id="venturehome">
+	<p>Three months passed. I hadn't been feeling very well. Finally one of my serving maids informed me that I must be with child. She asked about the father.</p>
+	<p>Now, because at the time, you father was a fairy, I wasn't certain what to do. Sensing my anxiety, she suggested an herb that I could find in the woods that would&mdash;how shall I put this&mdash;end the pregnancy. I am ashamed to tell you this, but I was so young and so scared, that I leapt out of bed and went immediately to <a href="returntowoods">seek out that herb</a>.</p>
+      </div>
+
+      <div class="situation" id="returntowoods">
+	<p>"It's ok, mommy. I'm still here."</p>
+	<p>Yes, my beautiful treasure. You are. And I am so grateful for that. <span class="transient">So I went back to the wood where I could have <a href="pickherb">picked the bitter herb</a> or <a href="pluckrose">plucked another rose</a> in the hopes of summoning the young man again</span>.</p>
+      </div>
+      
+      <div class="situation" id="pluckrose">
+	<p>I went back to the wood, and I plucked another rose. The young man reappeared. I explained that if only he were mortal, I would marry him and keep the child. He assured me that he was, in fact, quite human, and he told me his <a href="tamlanestale1">story</a>.</p>
+      </div>
+
+      <div class="situation" id="pickherb">
+	<p>I went back to the wood, and I picked the bitter herb. I had barely picked a single leaf when the young man reappeared.</p>
+	<p>"My darling," he cried, "I plead with you. Please do not take that herb. Please do not harm yourself or my child. Why would you wish to do such a thing?"</p>
+	<p>I responded that if only he were mortal, I would happily marry him and keep the child. But I would be in so much trouble otherwise.</p>
+	<p>He assured me that he was, in fact, quite human, and he told me his <a href="tamlanestale1">story</a>.</p>
+      </div>
+      
+      <div id="tamlanestale1" class="situation">
+	<p>"My name is Tamlane, and I am the son of an earl."</p>
+	<p>"No! Do it in Daddy's voice."</p>
+	<p>Yes, sweetheart. <a href="tamlanestale2">Ahem.</a></p>
+      </div>	
+
+	<div id="tamlanestale2" class="situation">
+	  <p>"I went hunting one night--how's that?--and I became very drowsy and fell off my horse. It was the Queen of the Fairies who caught me, and I have lived with her ever since. I am both her companion and her prisoner. Oh, don't look so horrified", he told me. "It's actually quite lovely.</p>
+	  <p>"I know neither sickness nor pain. I will never grow old. I can change shape, become as large as an elephant or as small as an ant. I have never before desired to be mortal again. But tonight is Samhain, and every seven years, the faeries must offer one of their own to the devil in exchange for their continued safety. As I am so young and handsome--oh, and he <em>was</em> handsome--I fear that I will be the one sacrificed tonight. You must <a href="tamlanestale3">save me</a>, my love.</p>
+	</div>
+	
+	<div id="tamlanestale3" class="situation">
+	  <p>"Tonight, the fairy court will travel across the land. You must wait for us at midnight at the bridge. You must take hold of me and hold tight to me, no matter what. No matter what, Margaret. <a href="tamlanestale4">Promise</a> me this."</p>
+	</div>
+
+      <div id="tamlanestale4" class="situation">
+	<p>I promised him. He kissed me and vanished. I <a href='gohome'>ran home</a> as fast as I could.</p>
+	<p>Oh, you've fallen asleep. Perhaps I will finish my tale tomorrow&mdash;</p>
+	<p>"No, Mother. Please tell me now. What happened?"</p>
+      </div>
+
+      <div id="gohome" class="situation">
+	<p>Well, I went home, and the clock struck midnight. It was time to <a href="savetamlane">save your father</a>.
+      </div>
+      
+      <div id="savetamlane" class="situation">
+	<p>I rushed to the bridge and waited near the river. Three horses passed by, <a href="blackhorse">a black horse</a>, <a href="brownhorse">a brown horse</a> and <a href="whitehorse">a white horse</a>. <span class="transient">I was told to pull one of them down, but how was I to know which one he was?</span></p>
+      </div>
+
+      <div id="brownhorse">
+	<p>I threw my arms around the neck of the brown horse&mdash;</p>	
+      </div>
+
+      <div id="blackhorse">
+	<p>I threw my arms around the neck of the black horse&mdash;</p>	
+      </div>
+
+      <div id="wronghorse">
+	<p>"No, silly! Father was the <a href="whitehorse">white horse</a>. Remember, you saw one in the forest before he arrived."</p>
+	<p>That's right! I was just testing you.</p>
+      </div>
+
+      <div class="situation" id="whitehorse">
+	<p>I threw my arms around the neck of the white horse and ripped off the bridle. Thunder roared across the sky, and the stars burned as brightly as day, and the Queen of the Faeries shouted angrily at us. "Young Tamlane is away!" she cried. "Young Tamlane is away!" And then she turned the horse into a big, black, hissing <a href="snake">snake.</a></p>
+      </div>
+
+      <div class="situation" id="snake">
+	<p>The snake tried to bite me, but I <a href="dove">held it</a> tightly and feared it not, because I knew it was my own true love.</p>
+      </div>
+
+      <div class="situation" id="dove">
+	<p>The snake became a vicious, barking dog, but I <a href="coal">held it</a> tightly and feared it not, because I knew it was the father of my child.</p>
+      </div>
+
+      <div class="situation" id="coal">
+	<p>The dog became a white hot bar of iron. It burned me greatly, and I was unable to <a href="nakedman">hold on</a> any longer.</p>
+	<p>"Oh no! What happened?"</p>
+      </div>
+      
+      <div class="situation" id="nakedman">
+	<p>I threw the bar of iron into the river. It had barely made a splash before it transformed into a naked man. This was your father, and he was even more handsome than he had been in his fae form. He shivered in the water, but grinned at me despite the chill. I pulled him from the water and wrapped my cloak around him and hugged him tightly.</p>
+	<p>"We've won, Tamlane," I cried. "<a href='won'>We've won!</a>"</p>
+      </div>
+
+      <div class="situation" id="won">
+	<p>The Queen of the Fairies was very angry. "Tamlane," she told your father, "I should have ripped out your eyes and replaced them with two eyes of wood. I should have ripped out your heart and replaced it with a heart of cold stone. You were mine, and now you have been stolen from me." But she did nothing to prevent us from leaving.</p>
+	<p>"Did she really say all that?"</p>
+	<p>Of course she did! Well, most of it anyway. In any case, I brought your father home to meet your grandparents, and we were married the next morning.</p>
+	<p>Did you <a href="last">enjoy</a> that story, sweetheart?</p>
+      </div>
+
+      <div class="situation" id="last">
+	<p>Oh, you've fallen asleep again. Goodnight, Rose.</p>
+	<br /><p class="transient"><em>Would you like to <a href="credits">view the credits</a>?</p>
+      </div>
+      
+      <div class="situation" id="credits">
+	<p><em>"A Summer's Rose" was written for ShuffleComp, and is based on the song "Tam Lin" by Fairport Convention (which was, in turn, based on the legendary ballad of the same name). It is the author's first (and possibly last!) Undum-based story. Thanks very much to my testers: Robert Whitlock, Anonymous, Mæja Stefansson and Sam Kabo Ashwell."
+      </div>
+      
+      <script type="text/javascript" src="media/js/jquery-1.11.0.min.js"></script>
+      <script type="text/javascript" src="media/js/undum.js"></script>
+      <script type="text/javascript" src="shufflecomp.js"></script>
+
+  </body>
+
+</html>

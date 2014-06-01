@@ -1,0 +1,521 @@
+/** 
+ * Cribbed from Andrew Plotkin's "One Column" CSS file. 
+ * The original can be found at: http://eblong.com/zarf/glulx/quixe/
+**/
+
+/* copied from play.css */
+
+#banner {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 60px;
+    width: 100%;
+    background: white;
+    border-bottom: 10px solid white;
+}
+
+#colbanner {
+  position: relative;
+  height: 100%;
+  width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#gametitle a { text-decoration:none }
+
+#gametitle {
+  color: #006;
+  font-size: 16pt;
+  padding-top: 16px;
+  text-align:center;
+}
+
+/*-----*/
+
+ul {
+    list-style-type:none;
+    padding:0;
+    margin:0;
+}
+
+ul li a {
+    font-weight:bold;
+}
+
+ul li {
+    padding-bottom:10px;
+}
+
+
+body
+{
+	font-family: Georgia, Palatino, "Times New Roman", Times, serif;
+	font-size: 100%;
+	-webkit-text-size-adjust: none;
+	margin: 0px;
+	top: 0px;
+	bottom: 0px;
+	width: 100%;
+	background: white;
+	color: black;
+}
+
+/* play.html and source.html use relative positioning, due to need for a scrollbar */
+/* index.html uses absolute positioning */
+
+/* header */
+
+#header, #pageheader {
+	width: 100%;
+	top: 0px;
+	height: 60px; /* header height */
+	margin: 0px;
+}
+
+#header {
+	position: absolute;
+}
+
+#subheader {
+	position: relative;
+	width: 600px; /* column width */
+	height: 100%;
+	margin: auto;
+}
+
+/* footer */
+
+#pagefooter { /* play.html, source.html */
+	width: 100%;
+	height: 0px; /* footer height */
+	margin: 0px;
+	margin-top: 2em;
+}
+
+#footer { /* index.html */
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+	height: 0px; /* footer height */
+	margin: 0px;
+}
+
+#subfooter {
+	position: relative;
+	width: 600px; /* column width */
+	height: 100%;
+	margin: auto;
+}
+
+
+/* header and footer text */
+
+.framelabel {
+	padding-top: 0.5em;
+	text-align:center;
+	font-size: 23px;
+}
+
+/* middle */
+
+#pagecolumn, #column {
+	width: 100%;
+	top: 60px; /* header height */
+	margin: 0px;
+}
+
+#column {
+	position: absolute;
+	bottom: 0px; /* footer height */
+}
+
+#subcolumn {
+	position: relative;
+	width: 60%; /* column width */
+	height: 100%;
+	margin: auto;
+}
+
+
+.container
+{
+}
+
+p
+{
+	font-size: 1em;
+	line-height: 1.4;
+}
+
+/* links */
+
+a
+{
+	text-decoration: none;
+	color: blue;
+}
+
+a:visited
+{
+	text-decoration: none;
+	color: purple;
+}
+
+.coverimage
+{
+	margin-top: 3em;
+	margin-right: 1em;
+    text-align: center;
+} 
+
+/* invisible one-pixel border around cover art */
+
+.coverimage a
+{
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	color: #FFF;
+}
+
+/* introduction: title, author name, release number */
+
+.introduction
+{ 
+	padding-top: 2.4em;
+	margin-left: 1em;
+	line-height: 1;
+	text-align: left;
+}
+
+/* h1: title; h2: author name */
+
+h1 { font-size: 2em; }
+h2 { font-size: 1em; line-height: .25;}
+
+/* blurb info */
+
+.about
+{
+	margin-top: 2.8em;
+	margin-left: 1em;
+	text-align: left;
+}
+
+/* don't indent first paragraph; indent subsequent paragraphs */
+
+.about p { margin-bottom: 0; }
+
+.about p + p
+{
+	text-indent: 1.4em;
+	margin-top: 0;
+}
+
+/*  Playinfo: IFID, intepreter suggestions */
+
+.playinfo
+{
+	margin: 1em 0px 0px 1em;
+}
+
+.playinfo p {
+	font-size: .75em;
+}
+
+
+/* story file, auxiliary links; contents/next/previous links on source code */
+
+.links
+{
+	font-size: 0.8em;
+}
+
+.links li
+{
+	list-style-type: none;
+	list-style-position: default;
+	padding: .4 em;
+}
+
+/* link filetype, i.e. (blorb), (pdf) */
+
+span.filetype { 
+font-size: .75em; 
+display:none;
+}
+
+/* source text */
+
+.source
+{
+	margin-top: 1.4em;
+	margin-left: 1em;
+	line-height: 1.4;
+}
+
+.sourceintroduction
+{
+	margin-left: 1em;
+}
+
+.sourceintroduction h1
+{
+	padding-top: 2.8em;
+	font-size: 1em;
+	line-height: 1;
+	text-align: right;
+	text-decoration: none;
+	font-weight: normal;
+	font-style: italic;
+}
+
+.sourceintroduction h2
+{
+	display: none;
+}
+
+.sourcecoverimage
+{
+	margin-top: 1em;
+	margin-left: 1em;
+	text-align: right;
+	float: right;
+} 
+
+/* invisible one-pixel border around cover art */
+
+.sourcecoverimage a
+{
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	color: #FFF;
+}
+
+/* release information */
+
+.sourcebibliography
+{
+	display: none;
+}
+
+span.quote { color: #369; }
+
+span.comment {
+	color: #390;}
+
+span.substitution
+{
+	color: #69B;
+	font-variant: small-caps;
+}
+	
+span.i6code { color: #666; font-family: monospace; }
+
+span.columnhead { 
+	font-style: italic; 
+	font-size: 1em;
+}
+
+span.heading
+{
+	font-weight: bold;
+} 
+
+.source td
+{
+	padding-top: .7em;
+	padding-bottom: .7em;
+	padding-right: 1.4em;
+	font-size: .75em;
+	text-align: left;
+	vertical-align: top;
+} 
+
+.source li
+{
+	list-style-type: none;
+	list-style-position: default;
+}
+
+/* source code - footnotes */
+
+span.notecue
+{
+	font-size: .75em;
+	vertical-align: super;
+}
+
+.notes
+{
+	margin-left: 16.8em;
+}
+
+.notes p
+{
+	text-indent: -1.4em;
+	font-size: .75em;
+}
+
+.notesheading { font-style: italic; }
+
+p.indent0 
+{	margin-bottom: 0;
+}
+
+p.indent1 
+{
+	padding-left: 2.8em;
+	text-indent: -.7em;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+p.indent2 
+{	margin-bottom: 0; 
+	padding-left: 5.6em;
+	text-indent: -.7em;
+	margin-top: 0;
+}
+
+p.indent3 
+{
+	padding-left: 8.4em;
+	text-indent: -.7em;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+p.indent4
+{	margin-bottom: 0; 
+	padding-left: 11.2em;
+	text-indent: -.7em;
+	margin-top: 0;
+}
+
+p.indent5
+{
+	padding-left: 14em;
+	text-indent: -.7em;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+p.indent6
+{	margin-bottom: 0; 
+	padding-left: 16.8em;
+	text-indent: -.7em;
+	margin-top: 0;
+}
+
+p.indent7
+{
+	padding-left: 19.6em;
+	text-indent: -.7em;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+
+p.indent8
+{	margin-bottom: 0; 
+	padding-left: 22.4em;
+	text-indent: -.7em;
+	margin-top: 0;
+}
+
+p.indent9
+{
+	padding-left: 25.2em;
+	text-indent: -.7em;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+/* index.html */
+
+.play .coverimage
+{
+}
+.play .links
+{
+}
+
+.interpretercredit
+{
+	bottom: 1em;
+	font-size: 80%;
+	position: fixed;
+}
+
+#gameport
+{
+	background: white;
+	bottom: 0px;
+	left: 1em;
+	line-height: 1.4;
+	margin: 10px 0px 0px 0px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+
+@media only screen and (max-width: 480px)
+{
+
+    #gametitle {
+        display:none;
+    }
+
+    #banner {
+        height: 0px;
+    }
+
+    #colbanner {
+        width: 320px;
+    }
+
+	.coverimage, .introduction, .about, .playinfo, .source, .sourceintroduction, .sourcecoverimage, .notes
+	{
+		float: none;
+		margin-left: 1em;
+		margin-right: 1em;
+		text-align: left;
+	}
+
+	.play .coverimage, .play .interpretercredit
+	{
+		display: none;
+	}
+	
+	#gameport
+	{
+		left: 0px;
+		width: auto;
+	}
+
+	#subcolumn, #subheader, #subfooter
+	{
+		width: 320px;
+	}
+
+
+	#header, #pageheader
+	{
+	    height: 0px;
+	    visibility:hidden;
+	    display:none;
+	}
+
+	#pagecolumn, #column { top: 0px }
+
+	.framelabel, .play .links
+	{
+		font-size: 12px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
