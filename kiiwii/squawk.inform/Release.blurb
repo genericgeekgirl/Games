@@ -1,18 +1,18 @@
 ! Blurb file created by Inform build 6G60
 
-status "/usr/local/share/inform7/Inform7/Extensions/Reserved/CblorbModel.html" "/home/adri/Desktop/squawk.inform/Build/StatusCblorb.html"
+status "/usr/local/share/inform7/Inform7/Extensions/Reserved/CblorbModel.html" "/home/adri/Games/Interactive Fiction/Adri//kiiwii/squawk.inform/Build/StatusCblorb.html"
 
 
 ! Identification
 
-project folder "/home/adri/Desktop/squawk.inform"
-release to "/home/adri/Desktop/squawk Materials/Release"
+project folder "/home/adri/Games/Interactive Fiction/Adri//kiiwii/squawk.inform"
+release to "/home/adri/Games/Interactive Fiction/Adri//kiiwii/squawk Materials/Release"
 
 ! Blorb instructions
 
 storyfile leafname "Kii!Wii!.zblorb"
-storyfile "/home/adri/Desktop/squawk.inform/Build/output.z8" include
-ifiction "/home/adri/Desktop/squawk.inform/Metadata.iFiction" include
+storyfile "/home/adri/Games/Interactive Fiction/Adri//kiiwii/squawk.inform/Build/output.z5" include
+ifiction "/home/adri/Games/Interactive Fiction/Adri//kiiwii/squawk.inform/Metadata.iFiction" include
 cover "/usr/local/share/inform7/Inform7/Extensions/Reserved/DefaultCover.jpg"
 picture 1 "/usr/local/share/inform7/Inform7/Extensions/Reserved/DefaultCover.jpg"
 

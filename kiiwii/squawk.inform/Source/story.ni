@@ -1,6 +1,9 @@
 "Kii!Wii!" by "Adri".
 The story headline is "A tiny friend to brighten your day".
 
+Include Status Line Removal by Emily Short.
+Include Basic Screen Effects by Emily Short.
+
 Use no scoring.
 
 The player's name is an indexed text that varies.
@@ -27,7 +30,8 @@ After reading a command when collecting info:
 	otherwise:
 		now the player's adjective is the player's command in lower case;
 		now the command prompt is "> ";
-		say "[paragraph break][banner text]";
+		clear the screen;
+		say "[paragraph break][banner text]";		
 		move the player to the location;
 		reject the player's command.
 	

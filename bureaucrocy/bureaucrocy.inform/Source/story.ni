@@ -6,7 +6,7 @@ The story headline is "A frustrating tale about paperwork".
 The story genre is "slice of life".
 The story description is "[story title] is based on a scene from [italic type]Glitch[roman type]"
 
-Release along with cover art.
+[Release along with Cover Art, a "Quixe" interpreter and a "OneColumn" website.]
 
 Volume - Basic Setup
 
@@ -17,7 +17,6 @@ Include Case Management by Emily Short.
 Include Plurality by Emily Short.
 Include Commonly Unimplemented by Aaron Reed.
 Include Questions by Michael Callaghan.
-Include Flexible Windows by Jon Ingold.
 Include Basic Screen Effects by Emily Short.
 
 Table of Fancy Status
@@ -33,112 +32,6 @@ To say inventory:
 say "You are carrying ";
 list the contents of the player, giving inventory information, as a sentence, including contents;
 say ".";
-
-Volume - Windows
-
-Book - Location Images
-
-The banner-window is a graphics g-window spawned by the main-window.
-The position of the banner-window is g-placeabove.
-The banner-window has back-colour g-white.
-
-The current location image is a figure-name that varies.
-
-Window-drawing rule for the banner-window (this is the draw scaled location rule):
-	if banner-window is g-unpresent, rule fails;
-	clear the banner-window;
-	draw scaled copy of current location image in banner-window.
-
-A room has a figure-name called room illustration.
-
-The image-setting rule is listed in the carry out looking rules.
-
-This is the image-setting rule:
-change current location image to the room illustration of the location;
-follow the window-drawing rules for the banner-window.
-
-Chapter - Item Illustrations
-
-The graphics-window is a graphics g-window spawned by the banner-window.
-The graphics-window has back-colour g-white.
-The measurement of graphics-window is 25.
-
-The current image is a figure-name that varies.
-
-To depict (f - a figure-name):
-now the current image is f;
-follow the window-drawing rules for the graphics-window.
-
-Window-drawing rule for the graphics-window (this is the draw scaled image rule):
-if graphics-window is g-unpresent, rule fails;
-clear the graphics-window;
-draw scaled copy of current image in graphics-window.
-
-Book - Opening and Closing Windows on Command
-
-Opening all windows is an action out of world.
-
-Carry out opening all windows:
-open up the banner-window.
-
-Closing the panels is an action out of world.
-Understand "close panels" and "panels off" as closing the panels.
-
-Carry out closing the panels:
-shut down the banner-window;
-say "Ok."
-
-Opening the panels is an action out of world.
-Understand "open panels" and "panels on" as opening the panels.
-
-Carry out opening the panels:
-try opening all windows;
-say "Ok."
-
-Book - Flexible Windows
-
-[cribbed directly from Jon Ingold's example]        
-
-To draw scaled copy of (f - a figure-name) in (g - a g-window):
-	(- DrawScaled({f}, {g}); -).
-
-Include (- 
-
-        ! Doing scaling calculations in I6 lets us handle bigger numbers
-
-        [ GetImageSize curimg index result;
-            result = glk_image_get_info( ResourceIDsOfFigures-->curimg, gg_arguments, gg_arguments+WORDSIZE);
-            return gg_arguments-->index;
-        ];
-
-        [ DrawScaled figure g w_total h_total graph_height graph_width w_offset h_offset;
-        graph_height = WindowSize(g, 1);
-        graph_width = gg_arguments-->0;
-        w_total = GetImageSize(figure, 0);
-        h_total = gg_arguments-->1;
-    
-        if (graph_height - h_total < 0) ! if the image won't fit, find the scaling factor
-        {
-            w_total = (graph_height * w_total)/h_total;
-            h_total = graph_height;
-
-        }
-
-        if (graph_width - w_total < 0)
-        {
-            h_total = (graph_width * h_total)/w_total;
-            w_total = graph_width;
-        }
-
-        w_offset = (graph_width - w_total)/2; if (w_offset < 0) w_offset = 0;
-        h_offset = (graph_height - h_total)/2; if (h_offset < 0) h_offset = 0;
-    
-        glk_image_draw_scaled(g.ref_number, ResourceIDsOfFigures-->figure, w_offset, h_offset, w_total, h_total); 
-        ];
-    
-    -).
-
-
 
 Book - Other Setup
 
@@ -500,7 +393,6 @@ if the command prompt is "What is your name? >", yes;
 no.
 
 After reading a command when collecting names:
-	try opening all windows;
 	now player's name is "Alexandra";
 	if the player's command does not match "Alexandra" and the player's command does not match "Adri":
 		say "[line break]I don't know how to pronounce that. Your name will be [player's name].[paragraph break]";
@@ -727,29 +619,3 @@ Test intro with "up/down/up/in/approach".
 Test wait with "sit/z/z/z/z/approach/z/y/1".
 Test qual with "out/activate/learn/in/approach".
 Test paper with "take pen/complete/down/buy ticket".
-
-Volume - Images
-
-Book - Room Illustrations
-
-Figure Gregarious Grange is the file "Gregarious Grange.png".
-Figure Bureaucratic Hall is the file "Bureaucratic Hall.png".
-Figure Subway Station is the file "Subway Station.png".
-
-The room illustration of Gregarious Grange is Figure Gregarious Grange.
-The room illustration of Bureaucratic Hall is Figure Bureaucratic Hall.
-The room illustration of Subway Station is Figure Subway Station.
-
-Book - Bureaucroc
-
-Figure Bureaucroc is the file "bureaucrat1.png".
-Figure Bureaucroc2 is the file "bureaucrat2.png".
-Figure Bureaucroc3 is the file "bureaucrat3.png".
-
-Book - Achievements
-
-Figure Skill is the file "skill.png".
-Figure Card Carrying Qualification is the file "ccq.png".
-Figure You Have Papers is the file "yhp.png".
-Figure Subwayfarer is the file "swf.png".
-

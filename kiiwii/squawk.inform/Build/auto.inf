@@ -29,7 +29,7 @@ Array UUID_ARRAY string "UUID://5EFE1E75-CCE8-462D-B6BD-3F0B1E2CA566//";
 Constant Story "Kii!Wii!";
 Constant Headline SC_2;
 Constant Story_Author SC_3;
-Serial "141013";
+Serial "141113";
 
 Default Story 0;
 Default Headline 0;
@@ -39,6 +39,8 @@ Default Headline 0;
 ];
 [ ShowFullExtensionVersions;
     print "Standard Rules version 2/090402 by Graham Nelson^";
+    print "Status Line Removal version 4 by Emily Short^";
+    print "Basic Screen Effects version 7 by Emily Short^";
 ];
 
 
@@ -569,6 +571,32 @@ Fake_Action PluralFound;
 Fake_Action TheSame;
 
 	Constant RUCKSACK_CLASS = K15_player_s_holdall;
+
+
+Replace DrawStatusLine;
+
+
+
+
+[ DrawStatusLine;
+]; 
+
+
+
+#ifdef TARGET_GLULX;
+
+  [ InitGlkWindow winrock;
+
+     switch (winrock) {
+
+! do not create a status window. 
+     GG_STATUSWIN_ROCK: rtrue;
+
+     }
+     rfalse;  
+  ];
+#endif;
+
 
 
 ! [1]
@@ -9357,8 +9385,8 @@ Class K1_room
     has ~privately_named
     has light
     has ~visited
-    with map_region nothing
     with description EMPTY_TEXT_VALUE
+    with map_region nothing
 ;
 
 Class K2_thing 
@@ -9367,13 +9395,13 @@ Class K2_thing
     with component_parent nothing
     with component_child nothing
     with component_sibling nothing
+    has ~concealed
+    has ~workflag
+    has mentioned
     has ~privately_named
     has ~light
     has ~edible
     has ~static
-    has ~concealed
-    has ~workflag
-    has mentioned
     has ~scenery
     has ~clothing
     has ~pushable
@@ -9389,8 +9417,8 @@ Class K6_supporter
     	has transparent supporter
 
     has static
-    with capacity 100
     with plural "supporters"
+    with capacity 100
     has ~enterable
 ;
 
@@ -9402,8 +9430,8 @@ Class K8_person
 
     has ~female
     has ~neuter
-    with capacity 100
     with plural "people"
+    with capacity 100
     has ~p56_sitting
 ;
 
@@ -9435,12 +9463,12 @@ Class K16_kiwi_bird
 Class K4_door 
     class K2_thing
      has door, 
+    has ~pushable
     has ~open
     has openable
     has ~lockable
     has ~locked
     has static
-    has ~pushable
     with plural "doors"
     with door_to nothing
     with with_key nothing
@@ -9454,8 +9482,8 @@ Class K5_container
     has ~openable
     has ~lockable
     has ~locked
-    with capacity 100
     with plural "containers"
+    with capacity 100
     has ~enterable
     with with_key nothing
 ;
@@ -9476,9 +9504,9 @@ Class K15_player_s_holdall
 
 Class K7_backdrop 
     class K2_thing
+    has ~pushable
     has static
     has scenery
-    has ~pushable
     with plural "backdrops"
 ;
 
@@ -9500,8 +9528,8 @@ Class K3_direction
 
     	has scenery, ! class CompassDirection,
 
-    has ~privately_named
     has ~workflag
+    has ~privately_named
     with plural "directions"
     with p9_opposite I46_north
 ;
@@ -9516,9 +9544,9 @@ Object I46_north "" Compass
     with IK3_Count 0
     with IK3_Link I47_northeast
     with vector 0
-    with p9_opposite I49_south
     with short_name "north"
     with article SC_4
+    with p9_opposite I49_south
 ;
 
 Object I47_northeast "" Compass
@@ -9531,9 +9559,9 @@ Object I47_northeast "" Compass
     with IK3_Count 1
     with IK3_Link I48_northwest
     with vector 0
-    with p9_opposite I51_southwest
     with short_name "northeast"
     with article SC_4
+    with p9_opposite I51_southwest
 ;
 
 Object I48_northwest "" Compass
@@ -9546,9 +9574,9 @@ Object I48_northwest "" Compass
     with IK3_Count 2
     with IK3_Link I49_south
     with vector 0
-    with p9_opposite I50_southeast
     with short_name "northwest"
     with article SC_4
+    with p9_opposite I50_southeast
 ;
 
 Object I49_south "" Compass
@@ -9561,9 +9589,9 @@ Object I49_south "" Compass
     with IK3_Count 3
     with IK3_Link I50_southeast
     with vector 0
-    with p9_opposite I46_north
     with short_name "south"
     with article SC_4
+    with p9_opposite I46_north
 ;
 
 Object I50_southeast "" Compass
@@ -9576,9 +9604,9 @@ Object I50_southeast "" Compass
     with IK3_Count 4
     with IK3_Link I51_southwest
     with vector 0
-    with p9_opposite I48_northwest
     with short_name "southeast"
     with article SC_4
+    with p9_opposite I48_northwest
 ;
 
 Object I51_southwest "" Compass
@@ -9591,9 +9619,9 @@ Object I51_southwest "" Compass
     with IK3_Count 5
     with IK3_Link I52_east
     with vector 0
-    with p9_opposite I47_northeast
     with short_name "southwest"
     with article SC_4
+    with p9_opposite I47_northeast
 ;
 
 Object I52_east "" Compass
@@ -9606,9 +9634,9 @@ Object I52_east "" Compass
     with IK3_Count 6
     with IK3_Link I53_west
     with vector 0
-    with p9_opposite I53_west
     with short_name "east"
     with article SC_4
+    with p9_opposite I53_west
 ;
 
 Object I53_west "" Compass
@@ -9621,9 +9649,9 @@ Object I53_west "" Compass
     with IK3_Count 7
     with IK3_Link I54_up
     with vector 0
-    with p9_opposite I52_east
     with short_name "west"
     with article SC_4
+    with p9_opposite I52_east
 ;
 
 Object I54_up "" Compass
@@ -9636,9 +9664,9 @@ Object I54_up "" Compass
     with IK3_Count 8
     with IK3_Link I55_down
     with vector 0
-    with p9_opposite I55_down
     with short_name "up"
     with article SC_4
+    with p9_opposite I55_down
 ;
 
 Object I55_down "" Compass
@@ -9651,9 +9679,9 @@ Object I55_down "" Compass
     with IK3_Count 9
     with IK3_Link in_obj
     with vector 0
-    with p9_opposite I54_up
     with short_name "down"
     with article SC_4
+    with p9_opposite I54_up
 ;
 
 Object in_obj "" Compass
@@ -9666,9 +9694,9 @@ Object in_obj "" Compass
     with IK3_Count 10
     with IK3_Link out_obj
     with vector 0
-    with p9_opposite out_obj
     with short_name "inside"
     with article SC_4
+    with p9_opposite out_obj
 ;
 
 Object out_obj "" Compass
@@ -9681,9 +9709,9 @@ Object out_obj "" Compass
     with IK3_Count 11
     with IK3_Link nothing
     with vector 0
-    with p9_opposite in_obj
     with short_name "outside"
     with article SC_4
+    with p9_opposite in_obj
 ;
 
 Object selfobj ""
@@ -9703,8 +9731,8 @@ Object selfobj ""
     with IK8_Link I91_squawk
     has ~p56_sitting
     with vector 0
-    has proper
     has concealed
+    has proper
     with short_name "yourself"
     with description text_routine_0
 ;
@@ -9713,12 +9741,12 @@ Object I88_park ""
     class K1_room
     with name 'park' 
     with KD_Count 1
+    with room_index -1
     with list_together 0
     has mark_as_room
     with IK1_Count 0
     with IK1_Link nothing
     with vector 0
-    with room_index -1
     with short_name "Park"
     with description SC_5
 ;
@@ -9744,6 +9772,8 @@ Object -> I91_squawk ""
     with name 'squawk' 'cutie' 'kiwi' 'bird' 
     with parse_name Parse_Name_GV97
     with action_bitmap 0 0 0 0 0 0 
+    with IK12_Count 0
+    with IK12_Link nothing
     with IK16_Count 0
     with IK16_Link nothing
     with KD_Count 16
@@ -9753,8 +9783,6 @@ Object -> I91_squawk ""
     with IK2_Link nothing
     with IK8_Count 1
     with IK8_Link nothing
-    with IK12_Count 0
-    with IK12_Link nothing
     has ~p56_sitting
     with vector 0
     has ~female
@@ -9794,9 +9822,11 @@ Array Global_Vars -->
   (0) ! 33
   (0) ! 34
   (0) ! 43
-  (0) ! 51
-  (0) ! 52
+  (T2_ordinary_status) ! 51
+  (14) ! 52
   (0) ! 53
+  (0) ! 54
+  (0) ! 55
 ;
 
 
@@ -9810,6 +9840,10 @@ Array tab_0_4 table $0068 4  TABLE_NOVALUE TABLE_NOVALUE (V26_amusing_a_victorio
 Array T1_locale_priorities table  tab_1_0 tab_1_1;
 Array tab_1_0 table $0869 NULL  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
 Array tab_1_1 table $446a 5  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
+Array T2_ordinary_status table  tab_2_0 tab_2_1 tab_2_2;
+Array tab_2_0 table $006b 6  (text_routine_1) ;
+Array tab_2_1 table $006c 7  (EMPTY_TEXT_VALUE) ;
+Array tab_2_2 table $006d 8  (text_routine_2) ;
 Array TB_Blanks -> 
   ! For table T0_final_question_options
   $00  ! Column 0
@@ -9820,6 +9854,11 @@ Array TB_Blanks ->
   
   ! For table T1_locale_priorities
   $0f  ! Column 1
+  
+  ! For table T2_ordinary_status
+  $00  ! Column 0
+  $00  ! Column 1
+  $00  ! Column 2
   
   ! End of table
   NULL NULL;
@@ -9832,11 +9871,14 @@ Array TB_Blanks ->
         104: return KD2_activity; ! final response activity: activity
         105: return OBJECT_TY; ! notable-object: object
         106: return NUMBER_TY; ! locale description priority: number
+        107: return TEXT_TY; ! left: text
+        108: return TEXT_TY; ! central: text
+        109: return TEXT_TY; ! right: text
     }
     return UNKNOWN_TY;
 ];
 
-Array TableOfTables --> TheEmptyTable T0_final_question_options  T1_locale_priorities  0 0;
+Array TableOfTables --> TheEmptyTable T0_final_question_options  T1_locale_priorities  T2_ordinary_status  0 0;
 
 
 
@@ -10378,7 +10420,7 @@ Array ActionHappened --> 0 0 0 0 0 0;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! When play begins:
-[ R_740 ;
+[ R_774 ;
       ! phrase 1
       ! [1: now the command prompt is ~>> ~]
        (Global_Vars-->1) = SC_15; 
@@ -10772,28 +10814,28 @@ self = noun;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Before eating Squawk:
-[ R_778 ;
+[ R_812 ;
    if ((action ==##Eat) &&  (actor==player) && ((noun == I91_squawk) && (true))) { ! Runs only when pattern matches
 self = noun;
-   if (debug_rules) DB_Rule(R_778, 778);
+   if (debug_rules) DB_Rule(R_812, 812);
       ! phrase 1
       ! [1: say ~[The Squawk] nips at your fingers. He is friend, not food.~ instead]
       say__p=1;ParaContent();  print (The) I91_squawk; ParaContent();  print (PrintText) SC_19;  new_line; rtrue; .L_Say4; .L_SayX4; rtrue;
    } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_778, 778, true);
+   else if (debug_rules > 1) DB_Rule(R_812, 812, true);
    rfalse;
 ];
 ! No specific request
 ! Before going:
-[ R_750 ;
+[ R_784 ;
    if ((action ==##Go) &&  (actor==player)) { ! Runs only when pattern matches
 self = noun;
-   if (debug_rules) DB_Rule(R_750, 750);
+   if (debug_rules) DB_Rule(R_784, 784);
       ! phrase 1
       ! [1: if the printed name of squawk is not ~Squawk~ , say ~Are you sure you wouldn't like to EXAMINE that cutie pie over there?~ instead]
        if (((~~((GProperty(9, I91_squawk,short_name) == SC_20))))) { say__p=1;ParaContent();  print (PrintText) SC_21;  new_line; .L_Say5; .L_SayX5;  rtrue; }
    } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_750, 750, true);
+   else if (debug_rules > 1) DB_Rule(R_784, 784, true);
    rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -10833,108 +10875,108 @@ self = noun;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Instead of going up:
-[ R_751 ;
+[ R_785 ;
    if ((action ==##Go) &&  (actor==player) && ((noun == I54_up) && (true))) { ! Runs only when pattern matches
 self = noun;
-   if (debug_rules) DB_Rule(R_751, 751);
+   if (debug_rules) DB_Rule(R_785, 785);
       ! phrase 1
       ! [1: say ~You, much like [the Squawk], do not have wings.~]
       say__p=1;ParaContent();  print (PrintText) SC_22; ParaContent();  print (the) I91_squawk; ParaContent();  print (PrintText) SC_23;  new_line; .L_Say6; .L_SayX6;
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_751, 751, true);
+   else if (debug_rules > 1) DB_Rule(R_785, 785, true);
    rfalse;
 ];
 ! No specific request
 ! Instead of going down:
-[ R_752 ;
+[ R_786 ;
    if ((action ==##Go) &&  (actor==player) && ((noun == I55_down) && (true))) { ! Runs only when pattern matches
 self = noun;
-   if (debug_rules) DB_Rule(R_752, 752);
+   if (debug_rules) DB_Rule(R_786, 786);
       ! phrase 1
       ! [1: say ~Kiwi birds *are* very good at digging, but there is nothing to be found in that direction.~]
       say__p=1;ParaContent();  print (PrintText) SC_24;  new_line; .L_Say7; .L_SayX7;
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_752, 752, true);
+   else if (debug_rules > 1) DB_Rule(R_786, 786, true);
    rfalse;
 ];
 ! No specific request
 ! Instead of squeezing Squawk:
-[ R_754 ;
+[ R_788 ;
    if ((action ==##Squeeze) &&  (actor==player) && ((noun == I91_squawk) && (true))) { ! Runs only when pattern matches
 self = noun;
-   if (debug_rules) DB_Rule(R_754, 754);
+   if (debug_rules) DB_Rule(R_788, 788);
       ! phrase 1
       ! [1: say ~You give [the Squawk] a tight squeeze. He kwehs.~]
       say__p=1;ParaContent();  print (PrintText) SC_25; ParaContent();  print (the) I91_squawk; ParaContent();  print (PrintText) SC_26;  new_line; .L_Say8; .L_SayX8;
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_754, 754, true);
+   else if (debug_rules > 1) DB_Rule(R_788, 788, true);
    rfalse;
 ];
 ! No specific request
 ! Instead of touching Squawk:
-[ R_755 ;
+[ R_789 ;
    if ((action ==##Touch) &&  (actor==player) && ((noun == I91_squawk) && (true))) { ! Runs only when pattern matches
 self = noun;
-   if (debug_rules) DB_Rule(R_755, 755);
+   if (debug_rules) DB_Rule(R_789, 789);
       ! phrase 1
       ! [1: say ~You stroke [the Squawk]'s back. He floofs his feathers happily at you.~]
       say__p=1;ParaContent();  print (PrintText) SC_27; ParaContent();  print (the) I91_squawk; ParaContent();  print (PrintText) SC_28;  new_line; .L_Say9; .L_SayX9;
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_755, 755, true);
+   else if (debug_rules > 1) DB_Rule(R_789, 789, true);
    rfalse;
 ];
 ! No specific request
 ! Instead of kissing Squawk:
-[ R_758 ;
+[ R_792 ;
    if ((action ==##Kiss) &&  (actor==player) && ((noun == I91_squawk) && (true))) { ! Runs only when pattern matches
 self = noun;
-   if (debug_rules) DB_Rule(R_758, 758);
+   if (debug_rules) DB_Rule(R_792, 792);
       ! phrase 1
       ! [1: say ~You kiss [the Squawk] on the head. He coos softly.~]
       say__p=1;ParaContent();  print (PrintText) SC_29; ParaContent();  print (the) I91_squawk; ParaContent();  print (PrintText) SC_30;  new_line; .L_Say10; .L_SayX10;
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_758, 758, true);
+   else if (debug_rules > 1) DB_Rule(R_792, 792, true);
    rfalse;
 ];
 ! No specific request
 ! Instead of hugging Squawk:
-[ R_760 ;
+[ R_794 ;
    if ((action ==##A81_hugging) &&  (actor==player) && ((noun == I91_squawk) && (true))) { ! Runs only when pattern matches
 self = noun;
-   if (debug_rules) DB_Rule(R_760, 760);
+   if (debug_rules) DB_Rule(R_794, 794);
       ! phrase 1
       ! [1: say ~You give [the Squawk] a snug. He cuddles up warmly.~]
       say__p=1;ParaContent();  print (PrintText) SC_25; ParaContent();  print (the) I91_squawk; ParaContent();  print (PrintText) SC_31;  new_line; .L_Say11; .L_SayX11;
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_760, 760, true);
+   else if (debug_rules > 1) DB_Rule(R_794, 794, true);
    rfalse;
 ];
 ! No specific request
 ! Instead of attacking Squawk:
-[ R_764 ;
+[ R_798 ;
    if ((action ==##Attack) &&  (actor==player) && ((noun == I91_squawk) && (true))) { ! Runs only when pattern matches
 self = noun;
-   if (debug_rules) DB_Rule(R_764, 764);
+   if (debug_rules) DB_Rule(R_798, 798);
       ! phrase 1
       ! [1: end the game saying ~Nope.~]
        deadflag=SC_32; story_complete=false; 
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_764, 764, true);
+   else if (debug_rules > 1) DB_Rule(R_798, 798, true);
    rfalse;
 ];
 ! No specific request
 ! Instead of throwing Squawk:
-[ R_777 ;
+[ R_811 ;
    if ((action ==##A88_throwing) &&  (actor==player) && ((noun == I91_squawk) && (true))) { ! Runs only when pattern matches
 self = noun;
-   if (debug_rules) DB_Rule(R_777, 777);
+   if (debug_rules) DB_Rule(R_811, 811);
       ! phrase 1
       ! [1: say ~[The Squawk] sails through the air. 'Kii! Wheeeeee!' He lands with a soft bounce and runs back over to you.~]
       say__p=1;ParaContent();  print (The) I91_squawk; ParaContent();  print (PrintText) SC_33;  new_line; .L_Say12; .L_SayX12;
@@ -10943,43 +10985,43 @@ self = noun;
        MoveObject(I91_squawk, real_location, 0, false); 
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_777, 777, true);
+   else if (debug_rules > 1) DB_Rule(R_811, 811, true);
    rfalse;
 ];
 ! No specific request
 ! Instead of doing anything except examining to the grass:
-[ R_747 ;
+[ R_781 ;
    if ((action ~=##Examine) &&  (actor==player) && ((noun == I89_grass) && (true))) { ! Runs only when pattern matches
 self = noun;
-   if (debug_rules) DB_Rule(R_747, 747);
+   if (debug_rules) DB_Rule(R_781, 781);
       ! phrase 1
       ! [1: say ~The grass is quite lovely, but it's not the point of the experience.~]
       say__p=1;ParaContent();  print (PrintText) SC_34;  new_line; .L_Say13; .L_SayX13;
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_747, 747, true);
+   else if (debug_rules > 1) DB_Rule(R_781, 781, true);
    rfalse;
 ];
 ! No specific request
 ! Instead of looking when collecting info:
-[ R_743 ;
-   if ((action ==##Look) &&  (actor==player) && (self=actor,true) && (((PHR_741_r3 ())))) { ! Runs only when pattern matches
+[ R_777 ;
+   if ((action ==##Look) &&  (actor==player) && (self=actor,true) && (((PHR_775_r3 ())))) { ! Runs only when pattern matches
 self = noun;
-   if (debug_rules) DB_Rule(R_743, 743);
+   if (debug_rules) DB_Rule(R_777, 777);
       ! phrase 1
       ! [1: do nothing]
        ; 
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_743, 743, true);
+   else if (debug_rules > 1) DB_Rule(R_777, 777, true);
    rfalse;
 ];
 ! No specific request
 ! Instead of taking inventory:
-[ R_749 ;
+[ R_783 ;
    if ((action ==##Inv) &&  (actor==player)) { ! Runs only when pattern matches
 self = noun;
-   if (debug_rules) DB_Rule(R_749, 749);
+   if (debug_rules) DB_Rule(R_783, 783);
       ! phrase 1
       ! [1: say ~[if Squawk is not enclosed by the player]You are carrying nothing[otherwise]You are carrying the cutest creature known to man[end if].~]
       say__p=1;
@@ -10991,15 +11033,15 @@ self = noun;
 		ParaContent();  print (PrintText) SC_37;  new_line; .L_Say16; .L_SayX15;
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_749, 749, true);
+   else if (debug_rules > 1) DB_Rule(R_783, 783, true);
    rfalse;
 ];
 ! No specific request
 ! Instead of going:
-[ R_753 ;
+[ R_787 ;
    if ((action ==##Go) &&  (actor==player)) { ! Runs only when pattern matches
 self = noun;
-   if (debug_rules) DB_Rule(R_753, 753);
+   if (debug_rules) DB_Rule(R_787, 787);
       ! phrase 1
       ! [1: say ~[if Squawk is not enclosed by the player][The Squawk] runs off after you[otherwise]Squawk makes no effort to squirm out of your arms, so you carry him away with you[end if].~]
       say__p=1;
@@ -11014,49 +11056,49 @@ self = noun;
        deadflag=SC_40; story_complete=true; 
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_753, 753, true);
+   else if (debug_rules > 1) DB_Rule(R_787, 787, true);
    rfalse;
 ];
 ! No specific request
 ! Instead of swearing mildly:
-[ R_763 ;
+[ R_797 ;
    if ((action ==##Mild) &&  (actor==player)) { ! Runs only when pattern matches
 self = noun;
-   if (debug_rules) DB_Rule(R_763, 763);
+   if (debug_rules) DB_Rule(R_797, 797);
       ! phrase 1
       ! [1: say ~[The Squawk] flomps down a short distance from you and pouts.~]
       say__p=1;ParaContent();  print (The) I91_squawk; ParaContent();  print (PrintText) SC_41;  new_line; .L_Say20; .L_SayX18;
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_763, 763, true);
+   else if (debug_rules > 1) DB_Rule(R_797, 797, true);
    rfalse;
 ];
 ! No specific request
 ! Instead of swearing obscenely:
-[ R_765 ;
+[ R_799 ;
    if ((action ==##Strong) &&  (actor==player)) { ! Runs only when pattern matches
 self = noun;
-   if (debug_rules) DB_Rule(R_765, 765);
+   if (debug_rules) DB_Rule(R_799, 799);
       ! phrase 1
       ! [1: end the game saying ~Kiwi birds do not approve of such foul language.~]
        deadflag=SC_42; story_complete=false; 
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_765, 765, true);
+   else if (debug_rules > 1) DB_Rule(R_799, 799, true);
    rfalse;
 ];
 ! No specific request
 ! Instead of singing:
-[ R_770 ;
+[ R_804 ;
    if ((action ==##Sing) &&  (actor==player)) { ! Runs only when pattern matches
 self = noun;
-   if (debug_rules) DB_Rule(R_770, 770);
+   if (debug_rules) DB_Rule(R_804, 804);
       ! phrase 1
       ! [1: say ~Your singing is abominable, but [the Squawk] doesn't seem to mind. 'Doo doo kii wii doo.' He sings along, equally out of tune.~]
       say__p=1;ParaContent();  print (PrintText) SC_43; ParaContent();  print (the) I91_squawk; ParaContent();  print (PrintText) SC_44;  new_line; .L_Say21; .L_SayX19;
       RulebookFails(); rtrue;
    } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_770, 770, true);
+   else if (debug_rules > 1) DB_Rule(R_804, 804, true);
    rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -11074,10 +11116,10 @@ self = noun;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! After examining Squawk for the first time:
-[ R_748 ;
+[ R_782 ;
    if ((PAPR_0() && (((TimesActionHasHappened-->0) == 1) && (ActionCurrentlyHappeningFlag->0)))) { ! Runs only when pattern matches
 self = noun;
-   if (debug_rules) DB_Rule(R_748, 748);
+   if (debug_rules) DB_Rule(R_782, 782);
       ! phrase 1
       ! [1: say ~The strange little ball of fluff looks up at you with tiny, black eyes and squawks.[paragraph break]'Squawk.' That's a good name for this little guy.~]
       say__p=1;ParaContent();  print (PrintText) SC_45; ParaContent();  DivideParagraphPoint(); new_line; ParaContent();  print (PrintText) SC_46;  new_line; .L_Say22; .L_SayX20;
@@ -11092,49 +11134,49 @@ self = noun;
        TryAction(0, player, ##Look, 0, 0);; 
       RulebookSucceeds(); rtrue;
    } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_748, 748, true);
+   else if (debug_rules > 1) DB_Rule(R_782, 782, true);
    rfalse;
 ];
 ! No specific request
 ! After taking Squawk:
-[ R_761 ;
+[ R_795 ;
    if ((action ==##Take) &&  (actor==player) && ((noun == I91_squawk) && (true))) { ! Runs only when pattern matches
 self = noun;
-   if (debug_rules) DB_Rule(R_761, 761);
+   if (debug_rules) DB_Rule(R_795, 795);
       ! phrase 1
       ! [1: say ~You scoop up [the Squawk] and cuddle him close to you.~]
       say__p=1;ParaContent();  print (PrintText) SC_47; ParaContent();  print (the) I91_squawk; ParaContent();  print (PrintText) SC_48;  new_line; .L_Say23; .L_SayX21;
       RulebookSucceeds(); rtrue;
    } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_761, 761, true);
+   else if (debug_rules > 1) DB_Rule(R_795, 795, true);
    rfalse;
 ];
 ! No specific request
 ! After dropping Squawk:
-[ R_762 ;
+[ R_796 ;
    if ((action ==##Drop) &&  (actor==player) && ((noun == I91_squawk) && (true))) { ! Runs only when pattern matches
 self = noun;
-   if (debug_rules) DB_Rule(R_762, 762);
+   if (debug_rules) DB_Rule(R_796, 796);
       ! phrase 1
       ! [1: say ~You carefully set [the Squawk] on the grass at your feet.~]
       say__p=1;ParaContent();  print (PrintText) SC_49; ParaContent();  print (the) I91_squawk; ParaContent();  print (PrintText) SC_50;  new_line; .L_Say24; .L_SayX22;
       RulebookSucceeds(); rtrue;
    } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_762, 762, true);
+   else if (debug_rules > 1) DB_Rule(R_796, 796, true);
    rfalse;
 ];
 ! No specific request
 ! After waiting:
-[ R_756 ;
+[ R_790 ;
    if ((action ==##Wait) &&  (actor==player)) { ! Runs only when pattern matches
 self = noun;
-   if (debug_rules) DB_Rule(R_756, 756);
+   if (debug_rules) DB_Rule(R_790, 790);
       ! phrase 1
       ! [1: say ~[The Squawk] squawks.~]
       say__p=1;ParaContent();  print (The) I91_squawk; ParaContent();  print (PrintText) SC_51;  new_line; .L_Say25; .L_SayX23;
       RulebookSucceeds(); rtrue;
    } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_756, 756, true);
+   else if (debug_rules > 1) DB_Rule(R_790, 790, true);
    rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -11255,15 +11297,15 @@ self = noun;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Rule for constructing the status line when collecting info:
-[ R_744 ;
-   if ((((((PHR_741_r3 ())))))) { ! Runs only while condition holds
-   if (debug_rules) DB_Rule(R_744, 744);
+[ R_778 ;
+   if ((((((PHR_775_r3 ())))))) { ! Runs only while condition holds
+   if (debug_rules) DB_Rule(R_778, 778);
       ! phrase 1
       ! [1: do nothing]
        ; 
       RulebookSucceeds(); rtrue;
    } ! Runs only while condition holds
-   else if (debug_rules > 1) DB_Rule(R_744, 744, true);
+   else if (debug_rules > 1) DB_Rule(R_778, 778, true);
    rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -11275,15 +11317,15 @@ self = noun;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Rule for printing the banner text when collecting info:
-[ R_745 ;
-   if ((((((PHR_741_r3 ())))))) { ! Runs only while condition holds
-   if (debug_rules) DB_Rule(R_745, 745);
+[ R_779 ;
+   if ((((((PHR_775_r3 ())))))) { ! Runs only while condition holds
+   if (debug_rules) DB_Rule(R_779, 779);
       ! phrase 1
       ! [1: do nothing]
        ; 
       RulebookSucceeds(); rtrue;
    } ! Runs only while condition holds
-   else if (debug_rules > 1) DB_Rule(R_745, 745, true);
+   else if (debug_rules > 1) DB_Rule(R_779, 779, true);
    rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -11295,7 +11337,7 @@ self = noun;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! After reading a command when collecting info:
-[ R_742 ;blockv_stack-->(blockv_sp+5) = BlkValueCreate(INDEXED_TEXT_TY,0,INDEXED_TEXT_TY);
+[ R_776 ;blockv_stack-->(blockv_sp+5) = BlkValueCreate(INDEXED_TEXT_TY,0,INDEXED_TEXT_TY);
     blockv_stack-->(blockv_sp+4) = BlkValueCreate(INDEXED_TEXT_TY,0,INDEXED_TEXT_TY);
     blockv_stack-->(blockv_sp+3) = BlkValueCreate(INDEXED_TEXT_TY,0,INDEXED_TEXT_TY);
     blockv_stack-->(blockv_sp+2) = BlkValueCreate(INDEXED_TEXT_TY,0,INDEXED_TEXT_TY);
@@ -11313,14 +11355,14 @@ self = noun;
     return blockv_stack-->(blockv_sp+6);
 ];
 [ R_SHELL_0 I7BASPL ;
-   if ((((((PHR_741_r3 ())))))) { ! Runs only while condition holds
-   if (debug_rules) DB_Rule(R_742, 742);
+   if ((((((PHR_775_r3 ())))))) { ! Runs only while condition holds
+   if (debug_rules) DB_Rule(R_776, 776);
       ! phrase 1
       ! [1: if the player's name is empty begin]
-       if ((((Adj_16_t1_v13((Global_Vars-->9))))))  {
+       if ((((Adj_16_t1_v13((Global_Vars-->11))))))  {
          ! phrase 2
          ! [2: now the player's name is the player's command in title case]
-          BlkValueCopy((Global_Vars-->9),  IT_CharactersToCase((blockv_stack-->(I7BASPL+0)), BlkValueCast((blockv_stack-->(I7BASPL+1)),INDEXED_TEXT_TY,SNIPPET_TY,players_command), 2) ); 
+          BlkValueCopy((Global_Vars-->11),  IT_CharactersToCase((blockv_stack-->(I7BASPL+0)), BlkValueCast((blockv_stack-->(I7BASPL+1)),INDEXED_TEXT_TY,SNIPPET_TY,players_command), 2) ); 
          ! phrase 3
          ! [3: say ~What is a noun that describes you?~]
          say__p=1;ParaContent();  print (PrintText) SC_53;  new_line; .L_Say28; .L_SayX26;
@@ -11329,10 +11371,10 @@ self = noun;
           RulebookFails(); rtrue; 
          ! phrase 5
          ! [5: otherwise if the player's noun is empty]
-          } else if ((((Adj_16_t1_v13((Global_Vars-->10)))))) { 
+          } else if ((((Adj_16_t1_v13((Global_Vars-->12)))))) { 
          ! phrase 6
          ! [6: now the player's noun is the player's command in lower case]
-          BlkValueCopy((Global_Vars-->10),  IT_CharactersToCase((blockv_stack-->(I7BASPL+2)), BlkValueCast((blockv_stack-->(I7BASPL+3)),INDEXED_TEXT_TY,SNIPPET_TY,players_command), 0) ); 
+          BlkValueCopy((Global_Vars-->12),  IT_CharactersToCase((blockv_stack-->(I7BASPL+2)), BlkValueCast((blockv_stack-->(I7BASPL+3)),INDEXED_TEXT_TY,SNIPPET_TY,players_command), 0) ); 
          ! phrase 7
          ! [7: say ~How about an adjective?~]
          say__p=1;ParaContent();  print (PrintText) SC_54;  new_line; .L_Say29; .L_SayX27;
@@ -11345,25 +11387,28 @@ self = noun;
 
          ! phrase 10
          ! [10: now the player's adjective is the player's command in lower case]
-          BlkValueCopy((Global_Vars-->11),  IT_CharactersToCase((blockv_stack-->(I7BASPL+4)), BlkValueCast((blockv_stack-->(I7BASPL+5)),INDEXED_TEXT_TY,SNIPPET_TY,players_command), 0) ); 
+          BlkValueCopy((Global_Vars-->13),  IT_CharactersToCase((blockv_stack-->(I7BASPL+4)), BlkValueCast((blockv_stack-->(I7BASPL+5)),INDEXED_TEXT_TY,SNIPPET_TY,players_command), 0) ); 
          ! phrase 11
          ! [11: now the command prompt is ~> ~]
           (Global_Vars-->1) = SC_55; 
          ! phrase 12
-         ! [12: say ~[paragraph break][banner text]~]
-         say__p=1;ParaContent();  DivideParagraphPoint(); new_line; ParaContent();  Banner();  .L_Say30; .L_SayX28;
+         ! [12: clear the screen]
+          VM_ClearScreen(0); 
          ! phrase 13
-         ! [13: move the player to the location]
-          MoveObject(player, real_location, 0, false); 
+         ! [13: say ~[paragraph break][banner text]~]
+         say__p=1;ParaContent();  DivideParagraphPoint(); new_line; ParaContent();  Banner();  .L_Say30; .L_SayX28;
          ! phrase 14
-         ! [14: reject the player's command]
-          RulebookFails(); rtrue; 
+         ! [14: move the player to the location]
+          MoveObject(player, real_location, 0, false); 
          ! phrase 15
-         ! [15: end if]
+         ! [15: reject the player's command]
+          RulebookFails(); rtrue; 
+         ! phrase 16
+         ! [16: end if]
          }
 
    } ! Runs only while condition holds
-   else if (debug_rules > 1) DB_Rule(R_742, 742, true);
+   else if (debug_rules > 1) DB_Rule(R_776, 776, true);
    rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -16355,14 +16400,14 @@ self = noun;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Carry out kissing:
-[ R_757 ;
+[ R_791 ;
    if (actor == player) {
-   if (debug_rules) DB_Rule(R_757, 757);
+   if (debug_rules) DB_Rule(R_791, 791);
       ! phrase 1
       ! [1: say ~Keep your mind on the game.~]
       say__p=1;ParaContent();  print (PrintText) SC_70;  new_line; .L_Say67; .L_SayX65;
    } ! Runs only when actor is the player
-   else if (debug_rules > 1) DB_Rule(R_757, 757, true);
+   else if (debug_rules > 1) DB_Rule(R_791, 791, true);
    rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -17443,14 +17488,14 @@ self = noun;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Carry out counting:
-[ R_746 ;
+[ R_780 ;
    if (actor == player) {
-   if (debug_rules) DB_Rule(R_746, 746);
+   if (debug_rules) DB_Rule(R_780, 780);
       ! phrase 1
       ! [1: say ~It would take forever to count every blade of grass, but there are at least 69,105.~]
       say__p=1;ParaContent();  print (PrintText) SC_71;  new_line; .L_Say68; .L_SayX66;
    } ! Runs only when actor is the player
-   else if (debug_rules > 1) DB_Rule(R_746, 746, true);
+   else if (debug_rules > 1) DB_Rule(R_780, 780, true);
    rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -17462,14 +17507,14 @@ self = noun;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Carry out hugging:
-[ R_759 ;
+[ R_793 ;
    if (actor == player) {
-   if (debug_rules) DB_Rule(R_759, 759);
+   if (debug_rules) DB_Rule(R_793, 793);
       ! phrase 1
       ! [1: say ~Keep your hands to yourself.~]
       say__p=1;ParaContent();  print (PrintText) SC_72;  new_line; .L_Say69; .L_SayX67;
    } ! Runs only when actor is the player
-   else if (debug_rules > 1) DB_Rule(R_759, 759, true);
+   else if (debug_rules > 1) DB_Rule(R_793, 793, true);
    rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -17481,14 +17526,14 @@ self = noun;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Carry out dancing:
-[ R_766 ;
+[ R_800 ;
    if (actor == player) {
-   if (debug_rules) DB_Rule(R_766, 766);
+   if (debug_rules) DB_Rule(R_800, 800);
       ! phrase 1
       ! [1: say ~You do a little jig. [The Squawk] hops around at your feet, flapping his teeny, tiny wings.~]
       say__p=1;ParaContent();  print (PrintText) SC_73; ParaContent();  print (The) I91_squawk; ParaContent();  print (PrintText) SC_74;  new_line; .L_Say70; .L_SayX68;
    } ! Runs only when actor is the player
-   else if (debug_rules > 1) DB_Rule(R_766, 766, true);
+   else if (debug_rules > 1) DB_Rule(R_800, 800, true);
    rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -17500,14 +17545,14 @@ self = noun;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Carry out requesting information:
-[ R_767 ;
+[ R_801 ;
    if (actor == player) {
-   if (debug_rules) DB_Rule(R_767, 767);
+   if (debug_rules) DB_Rule(R_801, 801);
       ! phrase 1
       ! [1: say ~This experience was created in order to impart a bit of happiness and sweetness into your life.~]
       say__p=1;ParaContent();  print (PrintText) SC_75;  new_line; .L_Say71; .L_SayX69;
    } ! Runs only when actor is the player
-   else if (debug_rules > 1) DB_Rule(R_767, 767, true);
+   else if (debug_rules > 1) DB_Rule(R_801, 801, true);
    rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -17519,14 +17564,14 @@ self = noun;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Carry out loving:
-[ R_768 ;
+[ R_802 ;
    if (actor == player) {
-   if (debug_rules) DB_Rule(R_768, 768);
+   if (debug_rules) DB_Rule(R_802, 802);
       ! phrase 1
       ! [1: say ~Awwww. [The Squawk] loves you, too!~]
       say__p=1;ParaContent();  print (PrintText) SC_76; ParaContent();  print (The) I91_squawk; ParaContent();  print (PrintText) SC_77;  new_line; .L_Say72; .L_SayX70;
    } ! Runs only when actor is the player
-   else if (debug_rules > 1) DB_Rule(R_768, 768, true);
+   else if (debug_rules > 1) DB_Rule(R_802, 802, true);
    rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -17538,14 +17583,14 @@ self = noun;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Carry out casting xyzzy:
-[ R_769 ;
+[ R_803 ;
    if (actor == player) {
-   if (debug_rules) DB_Rule(R_769, 769);
+   if (debug_rules) DB_Rule(R_803, 803);
       ! phrase 1
       ! [1: say ~All of your worries and concerns melt away.~]
       say__p=1;ParaContent();  print (PrintText) SC_78;  new_line; .L_Say73; .L_SayX71;
    } ! Runs only when actor is the player
-   else if (debug_rules > 1) DB_Rule(R_769, 769, true);
+   else if (debug_rules > 1) DB_Rule(R_803, 803, true);
    rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -17557,14 +17602,14 @@ self = noun;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Check sitting down:
-[ R_771 ;
+[ R_805 ;
    if (actor == player) {
-   if (debug_rules) DB_Rule(R_771, 771);
+   if (debug_rules) DB_Rule(R_805, 805);
       ! phrase 1
       ! [1: if the player is sitting , say ~You are already sitting.~ instead]
        if ((((Adj_74_t1_v9(player))))) { say__p=1;ParaContent();  print (PrintText) SC_79;  new_line; .L_Say74; .L_SayX72;  rtrue; }
    } ! Runs only when actor is the player
-   else if (debug_rules > 1) DB_Rule(R_771, 771, true);
+   else if (debug_rules > 1) DB_Rule(R_805, 805, true);
    rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -17576,9 +17621,9 @@ self = noun;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Carry out sitting down:
-[ R_772 ;
+[ R_806 ;
    if (actor == player) {
-   if (debug_rules) DB_Rule(R_772, 772);
+   if (debug_rules) DB_Rule(R_806, 806);
       ! phrase 1
       ! [1: if squawk is enclosed by the player begin]
        if (((IndirectlyContains(player,I91_squawk))))  {
@@ -17603,7 +17648,7 @@ self = noun;
       ! [7: now the player is sitting]
        (Adj_74_t2_v9(player)); 
    } ! Runs only when actor is the player
-   else if (debug_rules > 1) DB_Rule(R_772, 772, true);
+   else if (debug_rules > 1) DB_Rule(R_806, 806, true);
    rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -17615,14 +17660,14 @@ self = noun;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Check standing up:
-[ R_773 ;
+[ R_807 ;
    if (actor == player) {
-   if (debug_rules) DB_Rule(R_773, 773);
+   if (debug_rules) DB_Rule(R_807, 807);
       ! phrase 1
       ! [1: if the player is standing , say ~You are already standing.~ instead]
        if ((((Adj_75_t1_v9(player))))) { say__p=1;ParaContent();  print (PrintText) SC_84;  new_line; .L_Say77; .L_SayX75;  rtrue; }
    } ! Runs only when actor is the player
-   else if (debug_rules > 1) DB_Rule(R_773, 773, true);
+   else if (debug_rules > 1) DB_Rule(R_807, 807, true);
    rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -17636,9 +17681,9 @@ self = noun;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Carry out standing up:
-[ R_774 ;
+[ R_808 ;
    if (actor == player) {
-   if (debug_rules) DB_Rule(R_774, 774);
+   if (debug_rules) DB_Rule(R_808, 808);
       ! phrase 1
       ! [1: say ~You stand up again.~]
       say__p=1;ParaContent();  print (PrintText) SC_85;  new_line; .L_Say78; .L_SayX76;
@@ -17646,14 +17691,14 @@ self = noun;
       ! [2: now the player is standing]
        (Adj_75_t2_v9(player)); 
    } ! Runs only when actor is the player
-   else if (debug_rules > 1) DB_Rule(R_774, 774, true);
+   else if (debug_rules > 1) DB_Rule(R_808, 808, true);
    rfalse;
 ];
 ! No specific request
 ! Carry out standing up:
-[ R_775 ;
+[ R_809 ;
    if (actor == player) {
-   if (debug_rules) DB_Rule(R_775, 775);
+   if (debug_rules) DB_Rule(R_809, 809);
       ! phrase 1
       ! [1: if squawk is enclosed by the player begin]
        if (((IndirectlyContains(player,I91_squawk))))  {
@@ -17678,7 +17723,7 @@ self = noun;
       ! [7: now the player is standing]
        (Adj_75_t2_v9(player)); 
    } ! Runs only when actor is the player
-   else if (debug_rules > 1) DB_Rule(R_775, 775, true);
+   else if (debug_rules > 1) DB_Rule(R_809, 809, true);
    rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -17690,15 +17735,15 @@ self = noun;
 ! ----------------------------------------------------------------------------------------------------
 ! No specific request
 ! Carry out throwing something:
-[ R_776 ;
+[ R_810 ;
    if ( (actor==player) && ((noun ofclass K2_thing))) { ! Runs only when pattern matches
 self = noun;
-   if (debug_rules) DB_Rule(R_776, 776);
+   if (debug_rules) DB_Rule(R_810, 810);
       ! phrase 1
       ! [1: try dropping the noun]
        TryAction(0, player, ##Drop, noun, 0);; 
    } ! Runs only when pattern matches
-   else if (debug_rules > 1) DB_Rule(R_776, 776, true);
+   else if (debug_rules > 1) DB_Rule(R_810, 810, true);
    rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -19698,7 +19743,7 @@ Array B1_startup --> INITIALISE_MEMORY_R VIRTUAL_MACHINE_STARTUP_R SEED_RANDOM_N
 Array B2_turn_sequence --> PARSE_COMMAND_R GENERATE_ACTION_R R_14 R_13 TIMED_EVENTS_R ADVANCE_TIME_R UPDATE_CHRONOLOGICAL_RECORDS_R R_15 ADJUST_LIGHT_R NOTE_OBJECT_ACQUISITIONS_R R_16 NULL; ! 11 rule(s)
 Array B3_shutdown --> R_17 RESURRECT_PLAYER_IF_ASKED_R R_18 ASK_FINAL_QUESTION_R NULL; ! 4 rule(s)
 Array B4_scene_changing --> DetectSceneChange NULL; ! 1 rule(s)
-Array B5_when_play_begins --> R_740 NULL; ! 1 rule(s)
+Array B5_when_play_begins --> R_774 NULL; ! 1 rule(s)
 Constant B6_when_play_ends = EMPTY_RULEBOOK;
 Array B7_when_scene_begins --> R_57 NULL; ! 1 rule(s)
 Constant B8_when_scene_ends = EMPTY_RULEBOOK;
@@ -19713,11 +19758,11 @@ Array B16_reaching_outside --> CANT_REACH_OUTSIDE_CLOSED_R NULL; ! 1 rule(s)
 Array B17_visibility --> R_35 NULL; ! 1 rule(s)
 Constant B18_persuasion = EMPTY_RULEBOOK;
 Constant B19_unsuccessful_attempt_by = EMPTY_RULEBOOK;
-Array B20_before --> R_778 R_750 NULL; ! 2 rule(s)
-Array B21_instead --> R_751 R_752 R_754 R_755 R_758 R_760 R_764 R_777 R_747 R_743 R_749 R_753 R_763 R_765 R_770 NULL; ! 15 rule(s)
+Array B20_before --> R_812 R_784 NULL; ! 2 rule(s)
+Array B21_instead --> R_785 R_786 R_788 R_789 R_792 R_794 R_798 R_811 R_781 R_777 R_783 R_787 R_797 R_799 R_804 NULL; ! 15 rule(s)
 Constant B22_check = EMPTY_RULEBOOK;
 Constant B23_carry_out = EMPTY_RULEBOOK;
-Array B24_after --> R_748 R_761 R_762 R_756 NULL; ! 4 rule(s)
+Array B24_after --> R_782 R_795 R_796 R_790 NULL; ! 4 rule(s)
 Constant B25_report = EMPTY_RULEBOOK;
 Array B26_does_the_player_mean --> R_36 NULL; ! 1 rule(s)
 Constant B27_when_entire_game_begins = EMPTY_RULEBOOK;
@@ -19762,14 +19807,14 @@ Constant B65_before_printing_a_refusa = EMPTY_RULEBOOK;
 Constant B66_for_printing_a_refusal_t = EMPTY_RULEBOOK;
 Constant B67_after_printing_a_refusal = EMPTY_RULEBOOK;
 Constant B68_before_constructing_the_ = EMPTY_RULEBOOK;
-Array B69_for_constructing_the_sta --> R_744 NULL; ! 1 rule(s)
+Array B69_for_constructing_the_sta --> R_778 NULL; ! 1 rule(s)
 Constant B70_after_constructing_the_s = EMPTY_RULEBOOK;
 Constant B71_before_printing_the_bann = EMPTY_RULEBOOK;
-Array B72_for_printing_the_banner_ --> R_745 NULL; ! 1 rule(s)
+Array B72_for_printing_the_banner_ --> R_779 NULL; ! 1 rule(s)
 Constant B73_after_printing_the_banne = EMPTY_RULEBOOK;
 Constant B74_before_reading_a_command = EMPTY_RULEBOOK;
 Constant B75_for_reading_a_command = EMPTY_RULEBOOK;
-Array B76_after_reading_a_command --> R_742 NULL; ! 1 rule(s)
+Array B76_after_reading_a_command --> R_776 NULL; ! 1 rule(s)
 Constant B77_before_deciding_the_scop = EMPTY_RULEBOOK;
 Constant B78_for_deciding_the_scope = EMPTY_RULEBOOK;
 Constant B79_after_deciding_the_scope = EMPTY_RULEBOOK;
@@ -19906,7 +19951,7 @@ Array B209_check_attacking --> R_243 NULL; ! 1 rule(s)
 Constant B210_carry_out_attacking = EMPTY_RULEBOOK;
 Constant B211_report_attacking = EMPTY_RULEBOOK;
 Array B212_check_kissing --> R_244 NULL; ! 1 rule(s)
-Array B213_carry_out_kissing --> R_757 NULL; ! 1 rule(s)
+Array B213_carry_out_kissing --> R_791 NULL; ! 1 rule(s)
 Constant B214_report_kissing = EMPTY_RULEBOOK;
 Constant B215_check_answering_it_that = EMPTY_RULEBOOK;
 Constant B216_carry_out_answering_it_ = EMPTY_RULEBOOK;
@@ -20059,31 +20104,31 @@ Constant B362_check_requesting_the_pr = EMPTY_RULEBOOK;
 Array B363_carry_out_requesting_th --> ANNOUNCE_PRONOUN_MEANINGS_R NULL; ! 1 rule(s)
 Constant B364_report_requesting_the_p = EMPTY_RULEBOOK;
 Constant B365_check_counting = EMPTY_RULEBOOK;
-Array B366_carry_out_counting --> R_746 NULL; ! 1 rule(s)
+Array B366_carry_out_counting --> R_780 NULL; ! 1 rule(s)
 Constant B367_report_counting = EMPTY_RULEBOOK;
 Constant B368_check_hugging = EMPTY_RULEBOOK;
-Array B369_carry_out_hugging --> R_759 NULL; ! 1 rule(s)
+Array B369_carry_out_hugging --> R_793 NULL; ! 1 rule(s)
 Constant B370_report_hugging = EMPTY_RULEBOOK;
 Constant B371_check_dancing = EMPTY_RULEBOOK;
-Array B372_carry_out_dancing --> R_766 NULL; ! 1 rule(s)
+Array B372_carry_out_dancing --> R_800 NULL; ! 1 rule(s)
 Constant B373_report_dancing = EMPTY_RULEBOOK;
 Constant B374_check_requesting_inform = EMPTY_RULEBOOK;
-Array B375_carry_out_requesting_in --> R_767 NULL; ! 1 rule(s)
+Array B375_carry_out_requesting_in --> R_801 NULL; ! 1 rule(s)
 Constant B376_report_requesting_infor = EMPTY_RULEBOOK;
 Constant B377_check_loving = EMPTY_RULEBOOK;
-Array B378_carry_out_loving --> R_768 NULL; ! 1 rule(s)
+Array B378_carry_out_loving --> R_802 NULL; ! 1 rule(s)
 Constant B379_report_loving = EMPTY_RULEBOOK;
 Constant B380_check_casting_xyzzy = EMPTY_RULEBOOK;
-Array B381_carry_out_casting_xyzzy --> R_769 NULL; ! 1 rule(s)
+Array B381_carry_out_casting_xyzzy --> R_803 NULL; ! 1 rule(s)
 Constant B382_report_casting_xyzzy = EMPTY_RULEBOOK;
-Array B383_check_sitting_down --> R_771 NULL; ! 1 rule(s)
-Array B384_carry_out_sitting_down --> R_772 NULL; ! 1 rule(s)
+Array B383_check_sitting_down --> R_805 NULL; ! 1 rule(s)
+Array B384_carry_out_sitting_down --> R_806 NULL; ! 1 rule(s)
 Constant B385_report_sitting_down = EMPTY_RULEBOOK;
-Array B386_check_standing_up --> R_773 NULL; ! 1 rule(s)
-Array B387_carry_out_standing_up --> R_774 R_775 NULL; ! 2 rule(s)
+Array B386_check_standing_up --> R_807 NULL; ! 1 rule(s)
+Array B387_carry_out_standing_up --> R_808 R_809 NULL; ! 2 rule(s)
 Constant B388_report_standing_up = EMPTY_RULEBOOK;
 Constant B389_check_throwing = EMPTY_RULEBOOK;
-Array B390_carry_out_throwing --> R_776 NULL; ! 1 rule(s)
+Array B390_carry_out_throwing --> R_810 NULL; ! 1 rule(s)
 Constant B391_report_throwing = EMPTY_RULEBOOK;
 
 Constant BR_0 = R_8;
@@ -24299,44 +24344,44 @@ Array RulebookNames -->
 		if (R == R_15) { print "A last turn sequence rule"; return; } ! 715, case 2
 		if (R == R_30) { print "last specific action-processing rule"; return; } ! 716, case 2
 		if (R == R_159) { print "Setting action variables for exiting"; return; } ! 717, case 2
-		if (R == R_740) { print "When play begins"; return; } ! 718, case 2
-		if (R == R_742) { print "After reading a command when collecting info"; return; } ! 719, case 2
-		if (R == R_743) { print "Instead of looking when collecting info"; return; } ! 720, case 2
-		if (R == R_744) { print "Rule for constructing the status line when collecting info"; return; } ! 721, case 2
-		if (R == R_745) { print "Rule for printing the banner text when collecting info"; return; } ! 722, case 2
-		if (R == R_746) { print "Carry out counting"; return; } ! 723, case 2
-		if (R == R_747) { print "Instead of doing anything except examining to the grass"; return; } ! 724, case 2
-		if (R == R_748) { print "After examining Squawk for the first time"; return; } ! 725, case 2
-		if (R == R_749) { print "Instead of taking inventory"; return; } ! 726, case 2
-		if (R == R_750) { print "Before going"; return; } ! 727, case 2
-		if (R == R_751) { print "Instead of going up"; return; } ! 728, case 2
-		if (R == R_752) { print "Instead of going down"; return; } ! 729, case 2
-		if (R == R_753) { print "Instead of going"; return; } ! 730, case 2
-		if (R == R_754) { print "Instead of squeezing Squawk"; return; } ! 731, case 2
-		if (R == R_755) { print "Instead of touching Squawk"; return; } ! 732, case 2
-		if (R == R_756) { print "After waiting"; return; } ! 733, case 2
-		if (R == R_757) { print "Carry out kissing"; return; } ! 734, case 2
-		if (R == R_758) { print "Instead of kissing Squawk"; return; } ! 735, case 2
-		if (R == R_759) { print "Carry out hugging"; return; } ! 736, case 2
-		if (R == R_760) { print "Instead of hugging Squawk"; return; } ! 737, case 2
-		if (R == R_761) { print "After taking Squawk"; return; } ! 738, case 2
-		if (R == R_762) { print "After dropping Squawk"; return; } ! 739, case 2
-		if (R == R_763) { print "Instead of swearing mildly"; return; } ! 740, case 2
-		if (R == R_764) { print "Instead of attacking Squawk"; return; } ! 741, case 2
-		if (R == R_765) { print "Instead of swearing obscenely"; return; } ! 742, case 2
-		if (R == R_766) { print "Carry out dancing"; return; } ! 743, case 2
-		if (R == R_767) { print "Carry out requesting information"; return; } ! 744, case 2
-		if (R == R_768) { print "Carry out loving"; return; } ! 745, case 2
-		if (R == R_769) { print "Carry out casting xyzzy"; return; } ! 746, case 2
-		if (R == R_770) { print "Instead of singing"; return; } ! 747, case 2
-		if (R == R_771) { print "Check sitting down"; return; } ! 748, case 2
-		if (R == R_772) { print "Carry out sitting down"; return; } ! 749, case 2
-		if (R == R_773) { print "Check standing up"; return; } ! 750, case 2
-		if (R == R_774) { print "Carry out standing up"; return; } ! 751, case 2
-		if (R == R_775) { print "Carry out standing up"; return; } ! 752, case 2
-		if (R == R_776) { print "Carry out throwing something"; return; } ! 753, case 2
-		if (R == R_777) { print "Instead of throwing Squawk"; return; } ! 754, case 2
-		if (R == R_778) { print "Before eating Squawk"; return; } ! 755, case 2
+		if (R == R_774) { print "When play begins"; return; } ! 718, case 2
+		if (R == R_776) { print "After reading a command when collecting info"; return; } ! 719, case 2
+		if (R == R_777) { print "Instead of looking when collecting info"; return; } ! 720, case 2
+		if (R == R_778) { print "Rule for constructing the status line when collecting info"; return; } ! 721, case 2
+		if (R == R_779) { print "Rule for printing the banner text when collecting info"; return; } ! 722, case 2
+		if (R == R_780) { print "Carry out counting"; return; } ! 723, case 2
+		if (R == R_781) { print "Instead of doing anything except examining to the grass"; return; } ! 724, case 2
+		if (R == R_782) { print "After examining Squawk for the first time"; return; } ! 725, case 2
+		if (R == R_783) { print "Instead of taking inventory"; return; } ! 726, case 2
+		if (R == R_784) { print "Before going"; return; } ! 727, case 2
+		if (R == R_785) { print "Instead of going up"; return; } ! 728, case 2
+		if (R == R_786) { print "Instead of going down"; return; } ! 729, case 2
+		if (R == R_787) { print "Instead of going"; return; } ! 730, case 2
+		if (R == R_788) { print "Instead of squeezing Squawk"; return; } ! 731, case 2
+		if (R == R_789) { print "Instead of touching Squawk"; return; } ! 732, case 2
+		if (R == R_790) { print "After waiting"; return; } ! 733, case 2
+		if (R == R_791) { print "Carry out kissing"; return; } ! 734, case 2
+		if (R == R_792) { print "Instead of kissing Squawk"; return; } ! 735, case 2
+		if (R == R_793) { print "Carry out hugging"; return; } ! 736, case 2
+		if (R == R_794) { print "Instead of hugging Squawk"; return; } ! 737, case 2
+		if (R == R_795) { print "After taking Squawk"; return; } ! 738, case 2
+		if (R == R_796) { print "After dropping Squawk"; return; } ! 739, case 2
+		if (R == R_797) { print "Instead of swearing mildly"; return; } ! 740, case 2
+		if (R == R_798) { print "Instead of attacking Squawk"; return; } ! 741, case 2
+		if (R == R_799) { print "Instead of swearing obscenely"; return; } ! 742, case 2
+		if (R == R_800) { print "Carry out dancing"; return; } ! 743, case 2
+		if (R == R_801) { print "Carry out requesting information"; return; } ! 744, case 2
+		if (R == R_802) { print "Carry out loving"; return; } ! 745, case 2
+		if (R == R_803) { print "Carry out casting xyzzy"; return; } ! 746, case 2
+		if (R == R_804) { print "Instead of singing"; return; } ! 747, case 2
+		if (R == R_805) { print "Check sitting down"; return; } ! 748, case 2
+		if (R == R_806) { print "Carry out sitting down"; return; } ! 749, case 2
+		if (R == R_807) { print "Check standing up"; return; } ! 750, case 2
+		if (R == R_808) { print "Carry out standing up"; return; } ! 751, case 2
+		if (R == R_809) { print "Carry out standing up"; return; } ! 752, case 2
+		if (R == R_810) { print "Carry out throwing something"; return; } ! 753, case 2
+		if (R == R_811) { print "Instead of throwing Squawk"; return; } ! 754, case 2
+		if (R == R_812) { print "Before eating Squawk"; return; } ! 755, case 2
 		if (R == R_8) { print "start in the correct scenes rule"; return; } ! 756, case 1
 		if (R == POSITION_PLAYER_IN_MODEL_R) { print "position player in model world rule"; return; } ! 757, case 1
 		if (R == UPDATE_CHRONOLOGICAL_RECORDS_R) { print "update chronological records rule"; return; } ! 758, case 1
@@ -25118,6 +25163,7 @@ Array CheckTableEntryIsNonBlank_LU
   TheEmptyTable: print "(the empty table)"; return;
   T0_final_question_options: print "Table of Final Question Options"; return;
   T1_locale_priorities: print "Table of Locale Priorities"; return;
+  T2_ordinary_status: print "Table of Ordinary Status"; return;
 
 		default: print "** No such table **";
 	}
@@ -26505,6 +26551,90 @@ Verb meta 'tree'
 [ LITTLE_USED_DO_NOTHING_R; rfalse; ];
 
 
+[ KeyPause i; 
+	i = VM_KeyChar(); 
+	rfalse;
+];
+
+[ SPACEPause i;
+	while (i ~= 13 or 31 or 32)
+	{
+		i = VM_KeyChar();	
+	}
+];
+
+[ GetKey i;
+	i = VM_KeyChar(); 
+	return i;
+];
+
+
+
+#ifndef printed_text;
+Array printed_text --> 64;
+#endif;
+
+[ CenterPrint str depth i j;
+	font off;
+	i = VM_ScreenWidth();
+			VM_PrintToBuffer(printed_text, 63, str);
+	j = (i-(printed_text-->0))/2; 
+	j = j-1;
+	VM_MoveCursorInStatusLine(depth, j);
+	print (I7_string) str; 
+	font on;
+];
+
+[ CenterPrintComplex str i j;
+	font off;
+	print "^"; 
+	i = VM_ScreenWidth();
+			VM_PrintToBuffer(printed_text, 63, str);
+	j = (i-(printed_text-->0))/2; 
+	spaces j-1;
+	print (I7_string) str; 
+	font on;
+];
+
+
+
+[ I7ScreenHeight i screen_height;
+	i = 0->32;
+		  if (screen_height == 0 or 255) screen_height = 18;
+		  screen_height = screen_height - 7;
+	return screen_height;
+];
+
+ 
+
+[ DeepStatus depth i screen_width;
+    VM_StatusLineHeight(depth);
+    screen_width = VM_ScreenWidth();
+    #ifdef TARGET_GLULX;
+        VM_ClearScreen(1);
+    #ifnot;
+        style reverse;
+        for (i=1:i<depth+1:i++)
+        {
+             @set_cursor i 1;
+             spaces(screen_width);
+        } 
+    #endif;
+]; 
+
+[ I7VM_MoveCursorInStatusLine depth;
+	VM_MoveCursorInStatusLine(depth, 1);
+];
+
+[ RightAlign depth screen_width o n;
+	screen_width = VM_ScreenWidth(); 
+	n = (Global_Vars-->10);
+	o = screen_width - n;
+	VM_MoveCursorInStatusLine(depth, o);
+];
+
+
+
 
 
 ! Request 0: phrase nothing -> nothing
@@ -26536,7 +26666,7 @@ Verb meta 'tree'
 ];
 ! Request 3: phrase nothing -> nothing
 ! To decide whether collecting info:
-[ PHR_741_r3 ;
+[ PHR_775_r3 ;
       ! phrase 1
       ! [1: if the command prompt is ~>> ~ , yes]
        if ((((Global_Vars-->1) == SC_15))) {  rtrue;   }
@@ -26643,14 +26773,89 @@ Verb meta 'tree'
        WriteListFrom(child(t_0), 264); 
    rfalse;
 ];
+! Request 9: phrase nothing -> nothing
+! From "Basic Screen Effects" by Emily Short
+! To pause the/-- game:
+[ PHR_746_r9 ;
+      ! phrase 1
+      ! [1: say ~[paragraph break]Please press SPACE to continue.~]
+      say__p=1;ParaContent();  DivideParagraphPoint(); new_line; ParaContent();  print (PrintText) SC_88;  new_line; .L_Say81; .L_SayX79;
+      ! phrase 2
+      ! [2: wait for the space key]
+       SPACEPause(); 
+      ! phrase 3
+      ! [3: clear the screen]
+       VM_ClearScreen(0); 
+   rfalse;
+];
+! Request 10: phrase table name -> nothing
+! From "Basic Screen Effects" by Emily Short
+! To fill the/-- status bar/line with ( selected table - a table-name ):
+[ PHR_756_r10 
+    t_0 ! Call parameter 'selected table' = table name
+    t_1 ! Local variable e.g. '__n' = number
+    t_2 ! Local variable e.g. '__index' = number
+    t_3 ! Local variable e.g. '?-1,-1?' = number
+    t_4 ! Local variable e.g. '?-1,-1?' = number
+    ct_0 ct_1 ! Used for table searches
+    ;
+      ! phrase 1
+      ! [1: let __n be the number of rows in the selected table]
+       t_1 =  TableRows(t_0) ; 
+      ! phrase 2
+      ! [2: deepen status line to __n rows]
+       DeepStatus(t_1); 
+      ! phrase 3
+      ! [3: let __index be 1]
+       t_2 = 1; 
+      ! phrase 4
+      ! [4: repeat through selected table begin]
+       @push ct_0; @push ct_1;
+		for (t_3=t_0,t_4=1,ct_0=t_3,ct_1=t_4:
+			t_4<=TableRows(t_3):t_4++,ct_0=t_3,ct_1=t_4)
+			if (TableRowIsBlank(ct_0,ct_1)==false)  {
+         ! phrase 5
+         ! [5: move cursor to __index]
+          I7VM_MoveCursorInStatusLine(t_2); 
+         ! phrase 6
+         ! [6: say ~[left entry]~]
+         say__p=1;ParaContent();  print (PrintText) TableLookUpEntry(ct_0,107,ct_1);  .L_Say82; .L_SayX80;
+         ! phrase 7
+         ! [7: center central entry at row __index]
+          CenterPrint(TableLookUpEntry(ct_0,108,ct_1), t_2); 
+         ! phrase 8
+         ! [8: right align cursor to __index]
+          RightAlign(t_2); 
+         ! phrase 9
+         ! [9: say ~[right entry]~]
+         say__p=1;ParaContent();  print (PrintText) TableLookUpEntry(ct_0,109,ct_1);  .L_Say83; .L_SayX81;
+         ! phrase 10
+         ! [10: increase __index by 1]
+          t_2 = t_2 + 1; 
+         ! phrase 11
+         ! [11: end repeat]
+         }
+@pull ct_1; @pull ct_0;
+   rfalse;
+];
 [ text_routine_0;
-say__p=1;ParaContent();  print (PrintText) SC_88; 
-	if (~~(((~~(TestActionBitmap(I91_squawk,##Examine)))))) jump L_Say81;
-		ParaContent();  print (PrintText) SC_89; 
-	jump L_SayX79; .L_Say81;
+say__p=1;ParaContent();  print (PrintText) SC_89; 
+	if (~~(((~~(TestActionBitmap(I91_squawk,##Examine)))))) jump L_Say84;
 		ParaContent();  print (PrintText) SC_90; 
-	.L_Say82; .L_SayX79;
-		ParaContent();  print (PrintText) SC_52; ParaContent();  print (INDEXED_TEXT_TY_Say) (Global_Vars-->11); ParaContent();  print (PrintText) SC_52; ParaContent();  print (INDEXED_TEXT_TY_Say) (Global_Vars-->10); ParaContent();  print (PrintText) SC_91; ParaContent();  print (INDEXED_TEXT_TY_Say) (Global_Vars-->9); ParaContent();  print (PrintText) SC_37;  .L_Say83; .L_SayX80;
+	jump L_SayX82; .L_Say84;
+		ParaContent();  print (PrintText) SC_91; 
+	.L_Say85; .L_SayX82;
+		ParaContent();  print (PrintText) SC_52; ParaContent();  print (INDEXED_TEXT_TY_Say) (Global_Vars-->13); ParaContent();  print (PrintText) SC_52; ParaContent();  print (INDEXED_TEXT_TY_Say) (Global_Vars-->12); ParaContent();  print (PrintText) SC_92; ParaContent();  print (INDEXED_TEXT_TY_Say) (Global_Vars-->11); ParaContent();  print (PrintText) SC_37;  .L_Say86; .L_SayX83;
+    rtrue;
+];
+
+[ text_routine_1;
+say__p=1;ParaContent();  print (PrintShortName) real_location;  .L_Say87; .L_SayX84;
+    rtrue;
+];
+
+[ text_routine_2;
+say__p=1;ParaContent();  print (say__n=score); ParaContent();  print (PrintText) SC_93; ParaContent();  print (say__n=turns);  .L_Say88; .L_SayX85;
     rtrue;
 ];
 
@@ -28490,7 +28695,7 @@ Constant SC_41 = " flomps down a short distance from you and pouts.";
 Constant SC_68 = " here";
 Constant SC_74 = " hops around at your feet, flapping his teeny, tiny wings.";
 Constant SC_77 = " loves you, too!";
-Constant SC_91 = " named ";
+Constant SC_92 = " named ";
 Constant SC_19 = " nips at your fingers. He is friend, not food.";
 Constant SC_50 = " on the grass at your feet.";
 Constant SC_30 = " on the head. He coos softly.";
@@ -28507,6 +28712,7 @@ Constant SC_60 = ", ";
 Constant SC_23 = ", do not have wings.";
 Constant SC_58 = ",";
 Constant SC_37 = ".";
+Constant SC_93 = "/";
 Constant SC_18 = ": ";
 Constant SC_69 = ":";
 Constant SC_55 = "> ";
@@ -28530,12 +28736,13 @@ Constant SC_24 = "Kiwi birds *are* very good at digging, but there is nothing to
 Constant SC_42 = "Kiwi birds do not approve of such foul language.";
 Constant SC_32 = "Nope.";
 Constant SC_64 = "On ";
+Constant SC_88 = "Please press SPACE to continue.";
 Constant SC_13 = "QUIT";
 Constant SC_10 = "RESTART";
 Constant SC_11 = "RESTORE a saved game";
 Constant SC_39 = "Squawk makes no effort to squirm out of your arms, so you carry him away with you";
 Constant SC_20 = "Squawk";
-Constant SC_90 = "Squawk's favorite";
+Constant SC_91 = "Squawk's favorite";
 Constant SC_34 = "The grass is quite lovely, but it's not the point of the experience.";
 Constant SC_45 = "The strange little ball of fluff looks up at you with tiny, black eyes and squawks.";
 Constant SC_75 = "This experience was created in order to impart a bit of happiness and sweetness into your life.";
@@ -28544,7 +28751,7 @@ Constant SC_53 = "What is a noun that describes you?";
 Constant SC_17 = "What is your name?";
 Constant SC_56 = "Would you like to ";
 Constant SC_61 = "You ";
-Constant SC_88 = "You are ";
+Constant SC_89 = "You are ";
 Constant SC_79 = "You are already sitting.";
 Constant SC_84 = "You are already standing.";
 Constant SC_35 = "You are carrying nothing";
@@ -28568,7 +28775,7 @@ Constant SC_65 = "can ";
 Constant SC_7 = "odd-looking bird";
 Constant SC_67 = "see ";
 Constant SC_12 = "see some suggestions for AMUSING things to do";
-Constant SC_89 = "the best";
+Constant SC_90 = "the best";
 Constant SC_4 = "the";
 
 #ifndef p0_specification; Constant p0_specification = 0; #endif;
@@ -28667,9 +28874,9 @@ Constant cap_short_name = short_name;
 Array Runtime_Quotations_Displayed --> 1;
 
 [ InitialHeapAllocation obj pv;
-    pv = (Global_Vars-->9); (Global_Vars-->9) = BlkValueCreate(INDEXED_TEXT_TY,pv,INDEXED_TEXT_TY);
-    pv = (Global_Vars-->10); (Global_Vars-->10) = BlkValueCreate(INDEXED_TEXT_TY,pv,INDEXED_TEXT_TY);
     pv = (Global_Vars-->11); (Global_Vars-->11) = BlkValueCreate(INDEXED_TEXT_TY,pv,INDEXED_TEXT_TY);
+    pv = (Global_Vars-->12); (Global_Vars-->12) = BlkValueCreate(INDEXED_TEXT_TY,pv,INDEXED_TEXT_TY);
+    pv = (Global_Vars-->13); (Global_Vars-->13) = BlkValueCreate(INDEXED_TEXT_TY,pv,INDEXED_TEXT_TY);
 ];
 [ DistributeBlockConstants obj pv;
 ];

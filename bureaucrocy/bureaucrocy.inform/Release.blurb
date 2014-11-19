@@ -1,30 +1,20 @@
 ! Blurb file created by Inform build 6G60
 
-status "/usr/local/share/inform7/Inform7/Extensions/Reserved/CblorbModel.html" "/home/adri/Desktop/bureaucrocy_advanced/bureaucrocy.inform/Build/StatusCblorb.html"
+status "/usr/local/share/inform7/Inform7/Extensions/Reserved/CblorbModel.html" "/home/adri/Games/Interactive Fiction/Adri/bureaucrocy/bureaucrocy.inform/Build/StatusCblorb.html"
 
 
 ! Identification
 
-project folder "/home/adri/Desktop/bureaucrocy_advanced/bureaucrocy.inform"
-release to "/home/adri/Desktop/bureaucrocy_advanced/bureaucrocy Materials/Release"
+project folder "/home/adri/Games/Interactive Fiction/Adri/bureaucrocy/bureaucrocy.inform"
+release to "/home/adri/Games/Interactive Fiction/Adri/bureaucrocy/bureaucrocy Materials/Release"
 
 ! Blorb instructions
 
-storyfile leafname "Bureaucrocy.gblorb"
-storyfile "/home/adri/Desktop/bureaucrocy_advanced/bureaucrocy.inform/Build/output.ulx" include
-ifiction "/home/adri/Desktop/bureaucrocy_advanced/bureaucrocy.inform/Metadata.iFiction" include
-cover "/home/adri/Desktop/bureaucrocy_advanced/bureaucrocy Materials/Cover.png"
-picture 1 "/home/adri/Desktop/bureaucrocy_advanced/bureaucrocy Materials/Cover.png"
-picture 3 "/home/adri/Desktop/bureaucrocy_advanced/bureaucrocy Materials/Figures/Gregarious Grange.png"
-picture 4 "/home/adri/Desktop/bureaucrocy_advanced/bureaucrocy Materials/Figures/Bureaucratic Hall.png"
-picture 5 "/home/adri/Desktop/bureaucrocy_advanced/bureaucrocy Materials/Figures/Subway Station.png"
-picture 6 "/home/adri/Desktop/bureaucrocy_advanced/bureaucrocy Materials/Figures/bureaucrat1.png"
-picture 7 "/home/adri/Desktop/bureaucrocy_advanced/bureaucrocy Materials/Figures/bureaucrat2.png"
-picture 8 "/home/adri/Desktop/bureaucrocy_advanced/bureaucrocy Materials/Figures/bureaucrat3.png"
-picture 9 "/home/adri/Desktop/bureaucrocy_advanced/bureaucrocy Materials/Figures/skill.png"
-picture 10 "/home/adri/Desktop/bureaucrocy_advanced/bureaucrocy Materials/Figures/ccq.png"
-picture 11 "/home/adri/Desktop/bureaucrocy_advanced/bureaucrocy Materials/Figures/yhp.png"
-picture 12 "/home/adri/Desktop/bureaucrocy_advanced/bureaucrocy Materials/Figures/swf.png"
+storyfile leafname "Bureaucrocy.zblorb"
+storyfile "/home/adri/Games/Interactive Fiction/Adri/bureaucrocy/bureaucrocy.inform/Build/output.z8" include
+ifiction "/home/adri/Games/Interactive Fiction/Adri/bureaucrocy/bureaucrocy.inform/Metadata.iFiction" include
+cover "/usr/local/share/inform7/Inform7/Extensions/Reserved/DefaultCover.jpg"
+picture 1 "/usr/local/share/inform7/Inform7/Extensions/Reserved/DefaultCover.jpg"
 
 ! Placeholder variables
 
@@ -37,7 +27,7 @@ placeholder [BLURB] = "[story title] is based on a scene from [italic type]Glitc
 
 ! Other material to release
 
-status instruction ||&nbsp;<a href="source:story.ni#line9"><img border=0 src=inform:/Reveal.png></a>||
+status alternative ||Using 'Release along with cover art', to provide something more distinctive than the default artwork above&nbsp;<a href=inform:/doc391.html><img border=0 src=inform:/help.png></a>||
 status alternative ||Using 'Release along with a website'&nbsp;<a href=inform:/doc393.html><img border=0 src=inform:/help.png></a>||
 status alternative ||Using 'Release along with an interpreter', for in-browser play on your website&nbsp;<a href=inform:/doc394.html><img border=0 src=inform:/help.png></a>||
 status alternative ||Using 'Release along with the "Such-and-Such" file called "whatever.pdf"', perhaps to add a manual, or a welcoming note&nbsp;<a href=inform:/doc389.html><img border=0 src=inform:/help.png></a>||
