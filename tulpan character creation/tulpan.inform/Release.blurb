@@ -1,18 +1,18 @@
 ! Blurb file created by Inform build 6G60
 
-status "/usr/local/share/inform7/Inform7/Extensions/Reserved/CblorbModel.html" "/home/adri/Desktop/ectocomp.inform/Build/StatusCblorb.html"
+status "/usr/local/share/inform7/Inform7/Extensions/Reserved/CblorbModel.html" "/home/adri/Games/Interactive Fiction/Adri/tulpan character creation/tulpan.inform/Build/StatusCblorb.html"
 
 
 ! Identification
 
-project folder "/home/adri/Desktop/ectocomp.inform"
-release to "/home/adri/Desktop/ectocomp Materials/Release"
+project folder "/home/adri/Games/Interactive Fiction/Adri/tulpan character creation/tulpan.inform"
+release to "/home/adri/Games/Interactive Fiction/Adri/tulpan character creation/tulpan Materials/Release"
 
 ! Blorb instructions
 
 storyfile leafname "Character Creator.zblorb"
-storyfile "/home/adri/Desktop/ectocomp.inform/Build/output.z8" include
-ifiction "/home/adri/Desktop/ectocomp.inform/Metadata.iFiction" include
+storyfile "/home/adri/Games/Interactive Fiction/Adri/tulpan character creation/tulpan.inform/Build/output.z8" include
+ifiction "/home/adri/Games/Interactive Fiction/Adri/tulpan character creation/tulpan.inform/Metadata.iFiction" include
 cover "/usr/local/share/inform7/Inform7/Extensions/Reserved/DefaultCover.jpg"
 picture 1 "/usr/local/share/inform7/Inform7/Extensions/Reserved/DefaultCover.jpg"
 
