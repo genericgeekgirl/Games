@@ -193,7 +193,7 @@ Instead of kicking the pile of rubble:
 say "You kick at the rubble. Rocks fly off in various directions." 
         
 Check entering the pile of rubble:
-say "That doesn't seem like a very comfortable place to sit."
+try climbing the pile of rubble.
         
 Check climbing the pile of rubble:
 say "You scramble to the top of the pile. Your foot slips and you fall back to the ground. Ouch!" instead.
@@ -210,7 +210,7 @@ Understand "dig in/through [pile of rubble]" as searching.
 
 Instead of searching the pile of rubble, say "You dig through the rubble, but you don't find anything else."
 
-Instead of going from Castle Ruins when the player is indecent, say "Perhaps you should find something[if the player wears the handful of rags] more substantial[end if] to wear first."
+Instead of going from Castle Ruins when the player is indecent, say "You might get hurt if you walk naked through the forest."
 
 Instead of going nowhere from Castle Ruins:
 	say "The only possible path appears to be through the forest to the north."
@@ -352,7 +352,7 @@ Chapter - The Forest
 
 Section - The Burnt Forest
 
-The Burnt Forest is north of Castle Ruins. "There's a trail of burned trees and what appear to be teeth leading to the northeast. One tree in particular catches your eye."
+The Burnt Forest is north of Castle Ruins. "There's a trail of burned trees and what appear to be teeth leading to the northeast. One tree in particular catches your eye. The remains of your castle are back to the south."
 
 The tree is scenery in the burnt forest. The description is "You examine the tree more closely. Someone has carved 'PLUGH' into the trunk." Understand "trunk" and "carving" as tree.
 
@@ -407,7 +407,7 @@ Carry out making a torch:
 		now the oil is part of the torch;
     now the player carries the torch.
 		
-The torch is a thing. The description is "It is a torch crafted from a branch and the remains of your wedding gown.[if the torch is lit] It is on fire.[end if]". Understand "branch" and "handful of rags" as torch.
+The torch is a thing. The description is "It is a torch crafted from a branch and the remains of your wedding gown.[if the torch is lit] It is on fire.[otherwise if the oil is part of the torch] The rags have been doused in an oily black liquid.[end if]". Understand "branch" and "handful of rags" as torch.
 
 Understand "combine [something] with [something]" as combining it with.
 Combining it with is an action applying to two carried things. 
@@ -620,7 +620,7 @@ Carry out shining it with:
 		say "That doesn't seem to work."	
 
 The handful of rags are a plural-named thing. The indefinite article is "a".
-The description is "The tattered remains of your wedding gown."
+The description is "The tattered remains of your wedding gown.[if the oil is part of the rags] They have been doused in a black oily liquid.[end if]"
 Understand "rag" and "wedding dress" and "wedding gown" and "gown" as handful of rags.
 Understand "dress" as handful of rags when the paper bag has not been worn.
 
@@ -648,14 +648,19 @@ Carry out making-roland-male:
 	say "Ok!";
 	now Roland is male.
 	
+Roland is a person in the Garden. "Your betrothed, [Roland], stands before you." Roland can be male or female. Roland is male. The printed name is "[if Roland is male]Roland[otherwise]Rolande".
+The description is "[Roland] is the most attractive [gender] you have ever laid eyes on."
+
 Understand "betrothed" as Roland.
 Understand "man" or "prince" or "fiance" or "groom" as Roland when Roland is male.
 Understand "woman" or "fiancee" or "princess" or "bride" or  "rolande" as Roland when Roland is female.
-Understand "bum" or "toad" or "jerk" as Roland when the Aftermath is happening.
-
-Roland is a person in the Garden. "Your betrothed, [Roland], stands before you." Roland can be male or female. Roland is male. The printed name is "[if Roland is male]Roland[otherwise]Rolande".
-
-The description is "[Roland] is the most attractive [gender] you have ever laid eyes on.[if The Aftermath is happening] Too bad [subjective]'s also the biggest bum you've ever met![end if]"
+       
+The Jerk is a person in the Cave Interior.
+The printed name is "[if Roland is male]Roland[otherwise]Rolande".
+The description is "[Roland] is the most attractive [gender] you have ever laid eyes on. Too bad [subjective]'s also the biggest jerk you've ever met![end if]"
+Understand "man" or "prince" or "roland" as the Jerk when Roland is male.
+Understand "woman" or "princess" or "rolande" as the Jerk when Roland is female.
+Understand "bum" or "toad" as the Jerk.
 
 [Roland/e's pronouns]
 To say gender: say "[if Roland is male]man[otherwise]woman".
@@ -665,7 +670,6 @@ To say subjective: say "[if Roland is male]he[otherwise]she".
 To say objective: say "[if Roland is male]him[otherwise]her".
 To say possessive: say "[if Roland is male]his[otherwise]her".
 To say reflexive: say "[objective]self".
-
 
 Chapter - Dragon
 
@@ -699,9 +703,8 @@ When Wedding Ceremony ends:
 	move the player to the Castle Ruins;
 	remove the wedding gown from play;
 	remove the bouquet from play;
-	now the player wears the handful of rags;
-        move Roland to Cave Interior.
-
+	now the player wears the handful of rags.
+        
 Instead of waiting during the Wedding Ceremony:
 say "You beam happily at [Roland]."
 
@@ -813,8 +816,11 @@ After doing anything except shouting at the dragon when the dragon is impatient:
 		now the dragon is not impatient;
 		move the dragon to the Cave Interior.
 	
-Instead of knocking the Cave Door while the dragon is in the Cave Exterior:
+Instead of knocking the Cave Door while the dragon is in the Cave Exterior and the dragon is awake:
 	say "You already have the dragon's attention."
+
+Instead of knocking the Cave Door while the dragon is not awake:
+    say "Shhhhh. Don't wake up the dragon. You can enter the cave now."
         
 Instead of going from Cave Exterior when the dragon is in the location and the dragon is awake:
 say "[The dragon] is blocking the doorway and will not allow you to pass."
@@ -875,10 +881,15 @@ say "The dragon says, 'Thank you for the offer, but I am not hungry right now.'"
               
 [TODO: differentiate between ask/tell, to add some more flavor text; also wedding, parents, etc; maybe ask about dragons, plural]
 
+Understand "sing to dragon" as singing when the dragon is in the location.
+    
 Instead of singing when the awake dragon is in the location:
 say "You sing a few bars of a lullaby your mother used to sing to you.[paragraph break][one of]The dragon seems to relax at the sound[or]It seems to be having the desired effect on the dragon[stopping].";
 	increase exhaustion by 1;
 
+Instead of singing when the dragon is in the location and the dragon is not awake:
+    say "The dragon has fallen asleep. You should go rescue your [if Roland is male]prince[otherwise]princess[end if]."
+    
 [Feed berries to friendly dragon]
 
 response of dragon when asked-or-told about player:
@@ -971,14 +982,12 @@ The Aftermath begins when the player is in the Cave Interior for the first time.
 When the Aftermath begins:
 say "[Roland] looks at you and says, 'Elizabeth, you are a mess! You smell like ashes, your hair is all tangled, and you are wearing a dirty paper bag. Come back when you are dressed like a real princess.'"
 
-Instead of shouting when the Aftermath is happening:
+Instead of shouting when the Jerk is in the location:
 try shouting at Roland.
 
 Understand "tell [someone] off" as shouting at.
 
-[TODO: New character to play Roland at the end, instead of "during Aftermath" and "during Wedding"]
-    
-Instead of taking off the paper bag during Aftermath:
+Instead of taking off the paper bag when the Jerk is in the location:
 say "You take off the bag, crumple it up and throw it at Roland.[paragraph break]";
 try shouting at Roland.
 
@@ -988,37 +997,37 @@ Understand "throw [something] at [something]" as throwing it at.
 Carry out throwing it at:
     try attacking the second noun.
 
-Instead of throwing something at Roland when the Aftermath is happening:
-    say "You throw [the noun] at Roland. He ducks, just barely.[paragraph break]";
-    try shouting at Roland.
+Instead of throwing something at the Jerk.
+    say "You throw [the noun] at [Roland]. [Subjective] ducks, just barely.[paragraph break]";
+    try shouting at the Jerk.
         
-Instead of shouting at Roland when the Aftermath is happening:
+Instead of shouting at the Jerk:
 say "'[Roland],' you say, 'your clothes are really pretty, and your hair is very neat. You look like a real [title], but you are also a real toad.'[paragraph break]You turn around and walk out the door.";
 end the story finally saying "And Elizabeth lived happily ever after!"
 
 Instead of going when the Aftermath is happening:
-try shouting at Roland.
+try shouting at the Jerk.
 
 Instead of exiting when the Aftermath is happening:
-try shouting at Roland.
+try shouting at the Jerk.
 
 Understand the command "slap" as "attack".
 
 Understand the command "shove" as "push".
 
-Instead of pushing Roland when the Aftermath is happening:
+Instead of pushing the Jerk.
 say "You give [Roland] a hard shove![paragraph break]";
-try shouting at Roland.
+try shouting at the Jerk.
 
-Before burning Roland with the lit torch:
+Before burning the Jerk with a lit torch:
 say "You briefly consider burning Roland, but settle for giving him a hard shove.[paragraph break]";
-try shouting at Roland instead.
+try shouting at the Jerk instead.
 
-Instead of kicking Roland when the Aftermath is happening:
+Instead of kicking the Jerk:
     say "You kick [Roland] in the shin![paragraph break]";
-    try shouting at Roland.
+    try shouting at the Jerk.
     
-Instead of attacking Roland when the Aftermath is happening:
+Instead of attacking the Jerk:
 say "You slap [Roland]![paragraph break]";
 try shouting at Roland.
 
@@ -1055,17 +1064,17 @@ Instead of swearing mildly when the Wedding Ceremony is happening:
 
 Chapter - Affection
 
-[love,kiss,hug,marry,slap]
-
+Understand "slap" as "attack".
+    
 Instead of attacking Roland when the Wedding Ceremony is happening:
 say "You would never attack [Roland]! Except possibly with kisses."
 
+[embrace, hug]
 Instead of kissing Roland when the Wedding Ceremony is happening:
 say "You'll have your chance soon enough!"
 
-Instead of hugging Roland when the Wedding Ceremony is happening:
-    say "You'll have your chance soon enough!"  
-    
+[TODO: kissing/etc anyone who isn't Roland, including the Player]
+
 Instead of taking Roland:
 say "To be your lawfully wedded [if Roland is male]husband[otherwise]wife[end if]? Yes, Elizabeth. Be patient."
 
@@ -1090,11 +1099,9 @@ say "No. Absolutely not."
 Instead of kissing Roland when the Aftermath is happening:
 say "You're really not in the mood to do that."
 
-[TODO: is hug and kiss the same?]
-    
-Understand the command "pet" as "hug".
+Understand the command "pet" as "kiss".
 
-Instead of hugging the dragon: say "The dragons nostrils flare as you move closer. You take a step back."
+Instead of kissing the dragon: say "The dragons nostrils flare as you move closer. You take a step back."
     
 Loving is an action applying to one thing.
 Understand "love [someone]" as loving.
@@ -1208,6 +1215,9 @@ try drinking the oil.
 Instead of drinking the vial:
 try drinking the oil.
 
+Before pouring the oil onto something:
+if the vial is not open, open the vial.
+
 Instead of pouring the vial onto something:
 try pouring the oil onto the second noun.
 
@@ -1236,7 +1246,7 @@ Instead of pouring the oil onto something:
 	otherwise if the second noun is the oil or the second noun is the vial:
 		say "It is rather difficult to pour something on itself.";
 	otherwise if the second noun is the branch:
-		say "The oil drips right off the branch."
+		say "The oil drips right off the branch. Maybe if you wrapped something around the branch first."
 	otherwise if the second noun is the player:
 		say "Ew. You really don't want that all over your skin.";
 	otherwise if the second noun is the embers:

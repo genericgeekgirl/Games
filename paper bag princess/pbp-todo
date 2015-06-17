@@ -51,44 +51,11 @@ I do think that you could cue the "ask dragon about fire" and "ask dragon about 
 
 Found it curious that "put out fire" yields "you put out the flames", as that 1) doesn't actually happen and 2) if it did, at that point it would make the game unwinnable.
 
+The second problem was right at the end with the conversation with the dragon. I had trouble with that (as others did) identifying the triggers I needed, which has again been much improved in the update, so all is now smooth. But it would have been really cool if the dragon were equipped, beyond the few topics that really matter, with a wide range of subjects. It would have added interactivity, which the story otherwise somewhat lacks, and character and, I think, charm.
 
-
-
+"I found it unfortunate that Elizabeth talks the dragon into incinerating 150 forests." Hahaha, maybe I can do something about this..
+    
 -----------------------------
-
-
-
-
-
-
->x crown
-Your gold crown.
-
-
->kiss rolande
-You'll have your chance soon enough!
-
->hug rolande
-You'll have your chance soon enough!
-
->kiss father
-Keep your mind on the game.
-
->* Maybe another response
-Noted.
-
-* TODO: Should probably be able to just walk off and leave during the ceremony as a bad ending.
-
->hug me
-If you think that'll help.
-
-"Elizabeth, do you take Rolande to be your wife?"
-
->x chapel
-You can't see any such thing.
-
->x love
-You can't see any such thing.
 
 >think about love
 I only understood you as far as wanting to think.
@@ -102,141 +69,14 @@ Noted.
 >think
 What a good idea.
 
->witness joining
-That's not a verb I recognize.
-
-> * possibly a note about 'heteronormativity off' somewhere or other
-Noted.
-
-
->kick rubble
-You dig frantically through the rubble.
-
-You don't find anything else.
-
->* kick is attack, but..
-Noted.
-
->sit on rubble
-That doesn't seem like a very comfortable place to sit.
-
->stand on rubble
-That doesn't seem like a very comfortable place to sit.
-
->* GAH.
-Noted.
-
-
->make dress
-I didn't understand that sentence.
-
->* GODDAMNIT
-Noted.
-
->* Oh, I get it. Trees and Trail are the same. Ehhhhhh.
-Noted.
-
-
-
->plugh
-POOF! Your fairy godmother appears. "Tsk," she says. "Poor girl. I'm not sure I
-can help you with this one." She pauses and rummages around in her pockets,
-pulling out a vial. She hands it to you. "This is the best I can do. Use it
-wisely." Then she vanishes, as quickly as she appeared.
-
->xyzzy
-You hear a faint sound in the distance. Help does not arrive.
-
->plugh
-You hear a faint sound in the distance. Help does not arrive.
-
->
-* Maybe this can be different. Maybe only xyzzy works in the beginning. Plugh works on the locket. But this is a lame response either way.
-Noted.
-
->use it wisely
-That's not a verb I recognize.
-
->* heh
-Noted.
-
-
->climb tree
-You climb about mid-way up the tree. To the south lie the remains of your
-castle. In the other directions, there is nothing to see except miles and miles
-of ruined trees. You climb back down the tree.
-
->l
-Burnt Forest
-There's a trail of burned trees and what appear to be teeth leading to the
-northeast. One tree in particular catches your eye.
-
-
->l
-Burnt Forest
-There's a trail of burned trees and what appear to be teeth leading to the
-northeast. One tree in particular catches your eye.
-
->* Mention which way the castle is.
-Noted.
-
->s
-
-The only road away from the castle now ends abruptly at the river bank. The
-forest surrounds you thickly on all sides, except for an area to the north where
-the trees have been broken and scorched.
-
-
->go swimming
-You can't see any such thing.
-
->* feh
-Noted.
-
-
->light rags
-This dangerous act would achieve little.
-
->* comment this
-Noted.
-
-
 >open vial
 You open the vial.
 
 >take all
 oily black liquid: You don't want to touch that with your bare hands.
 
->* This shouldn't respond to that.
-Noted.
-
-
->put vial in flames
-This dangerous act would achieve little.
-
 >pour vial on flames
 The vial isn't open.
-
->open vial
-You open the vial.
-
->pour liquid on flames
-Be careful! That liquid is highly flammable.
-
->* need better responses to other wording
-Noted.
-
-
-
-
->pour vial on rags
-The vial isn't open.
-
->open vial
-You open the vial.
-
->pour vial on rags
-Maybe you should remove them first.
 
 >* open vial automatically; better statement about not pouring oil on you
 Noted.

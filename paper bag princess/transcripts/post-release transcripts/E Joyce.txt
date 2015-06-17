@@ -1,4 +1,0 @@
-Also, Rolande is still being stored as a subject as a "him" and not a "her"--that is, if you say ">x rolande >kiss her" the game doesn't know who "her" is supposed to be referring to, but ">x rolande >kiss him" works.
-
-I do think that you could cue the "ask dragon about fire" and "ask dragon about flight" a little better, maybe in the response to "talk to dragon". I pretty much only figured those out because I know the story, and even then I had to poke at it a bit to get the right wording.
-
