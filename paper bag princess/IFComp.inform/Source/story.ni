@@ -1,6 +1,6 @@
 "The Paper Bag Princess" by "Adri".
 
-The release number is 1.
+The release number is 4.
 The story creation year is 2013.
 The story headline is "An interactive fairy tale".
 The story genre is "fairy tale".
@@ -11,12 +11,11 @@ The story description is "Princess Elizabeth is about to marry the love of her l
 
 Part - Basic Setup
 
-Use no scoring.
+Use no scoring. [TODO]
 Use American dialect, full-length room descriptions, and the serial comma.
 
 Chapter - Extensions
 
-Include Hidden Items by Krister Fundin.
 Include Basic Screen Effects by Emily Short.
 Include Conversational Defaults by Eric Eve.
 Include Conversation Responses by Eric Eve.
@@ -29,7 +28,6 @@ Chapter - Help Menu
 Understand "menu" as asking for help.
 Understand "about" and "credits" as asking for help.
 Understand "walkthrough" and "walkthru" as asking for help.
-[Understand "hint" as asking for help.]
 
 Understand "start" as restarting the game.
 
@@ -46,11 +44,10 @@ title	subtable	description	toggle
 
 To say author: say "The author can be contacted at <genericgeekgirl@gmail.com>."
 
-to say credits: say "[story title] is loosely based upon the book of the same name by Robert Munsch. Permission to write the game was requested from and granted by Mister Munsch himself.[paragraph break]The cover art of Elizabeth was graciously provided by Stacey, aka 'iduck' on deviantART.[paragraph break]Thank you so much to my beta testers: Brendan Desilets, Dan Shiovitz, Dan Kelly, David Sturgis, Doug Orleans, Emily Boegheim, Jason McIntosh, Johnny Rivera, Kevin Jackson-Mead, Matthew Miller, Scott Snyder and Z Goddard. Post-release feedback from Adam Myers, Andrew Schultz, E Joyce, Felix Plesoianu and Victor Gijsbers was also particularly helpful to me."
+to say credits: say "[story title] is loosely based upon the book of the same name by Robert Munsch. Permission to write the game was requested from and granted by Mister Munsch himself.[paragraph break]Thank you so much to my beta testers: Brendan Desilets, Dan Shiovitz, Dan Kelly, David Sturgis, Doug Orleans, Emily Boegheim, Jason McIntosh, Johnny Rivera, Kevin Jackson-Mead, Matthew Miller, Scott Snyder and Z Goddard. Post-release feedback from Adam Myers, Andrew Schultz, E Joyce, Felix Plesoianu and Victor Gijsbers was also particularly helpful to me."
 
+[TODO: update this]
 To say walkthrough: say "This walkthrough results in the 'traditional' ending. [paragraph break]wait[line break]wait[line break]wait[line break]wait[line break]wait[line break]yes[line break]press space[line break]search rubble[line break]take bag[line break]make dress[line break]north[line break]x trail[line break]take branch[line break]x tree[line break]plugh[line break]make torch[line break]open vial[line break]pour oil on torch[line break]south[line break]light torch[line break]north[line break]northeast[line break]the maze is entirely random... sorry![line break]knock on door[line break]again[line break]shout[line break]ask dragon about fire[line break]y[line break]y[line break]ask dragon about flight[line break]y[line break]in[line break]shout at roland[paragraph break]Most puzzles have alternate solutions, and there are multiple endings to the game. Have fun exploring!".
-
-To say hints: say "There will be hints here one day. I promise."
 
 Chapter - Blocking superbrief/brief modes
 
@@ -106,12 +103,21 @@ say "The garden always smells so lovely."
 
 The castle building is scenery in the Garden. Understand "castle" and "stones" as castle building. The description is "It's a modestly-sized building fashioned out of grey stones. You have lived here your entire life."
 
-The minister is a proper-named man in the Garden. The printed name is "Father Alfred".
-Understand "father alfred" and "alfred" and "father" and "priest" and "officiant" as minister. The description is "Father Alfred has been your family's minister for as long as you can remember."	
+Father Alfred is a proper-named man in the Garden.
+The description is "Father Alfred has been your family's minister for as long as you can remember."	
+Understand "minister" and "priest" and "officiant" as father alfred. 
 
-[TODO: flesh these out a bit -- also add your father?]
-Some guests are scenery in the Garden. The description is "You are surrounded by your family and friends, as well as [Roland]'s mother, the queen of the neighboring kingdom." Understand "family" and "friends" and "parents" and "king" and "mother" and "queen" as guests.
+Some guests are scenery in the Garden. The description is "You are surrounded by your family and friends."
 
+The parents are scenery in the Garden. The description is "Your parents, Queen Katherine and King Theodore are here, as well as [Roland]'s mother, Queen Anne" Understand "family" as parents.
+
+Instead of doing anything except examining to the parents:
+    say "Please refer to the parents (Katherine, Theodore, Anne) individually."
+    
+King Theodore is scenery in the Garden. The description is "Your father beams at you proudly." Understand "father" as King Theodore.
+Queen Katherine is scenery in the Garden. The description is "Your future mother-in-law gazes dotingly upon her [if Roland is female]daughter[otherwise]son[end if]."
+Queen Anne is scenery in the Garden. The description is "Your mother smiles at you as she wipes tears from her eyes with an embroidered handkerchief." Understand "mother" as Queen Anne.
+    
 Section - Bouquet
 
 The bouquet is a thing carried by the player. The description is "Your bouquet contains a collection of purple and orange flowers, tied up with a white ribbon. You don't even know what most of those flowers are called." Understand "flowers" as bouquet.
@@ -129,13 +135,18 @@ say "It is not time to throw the bouquet yet."
 
 Instead of eating the bouquet:
 say "You're pretty certain some of those flowers are poisonous."
-
+    
+[TODO: what happens to the bouquet after the fire?]
+    
 Section - Castle Ruins
 
-The description of the Castle Ruins is "This used to be your home. Now it is nothing more than a smoking pile of [rubble]. The [smoke] obscures your view of the [stars], and the primary source of light is the burning remains of your furniture.[paragraph break]The only [road] away from the castle now ends abruptly at the river bank. The forest surrounds you thickly on all sides, except for an area to the north where the trees have been broken and scorched."
+The description of the Castle Ruins is "This used to be your home. Now it is nothing more than a smoking [pile of rubble]. The [smoke] obscures your view of the [stars], and the primary source of light is the burning remains of your furniture.[paragraph break]The only [road] away from the castle now ends abruptly at the river bank. The forest surrounds you thickly on all sides, except for an area to the north where the trees have been broken and scorched."
 
 The forest is scenery in the Castle Ruins. Understand "trees" and "tree" as forest. The description is "The forest surrounds you thickly on all sides, except for an area to the north where the trees have been broken and scorched."
 
+Instead of climbing the tree:
+    say "You climb about mid-way up the tree. To the south lie the remains of your castle. In the other directions, there is nothing to see except miles and miles of ruined trees. You climb back down the tree."
+    
 Instead of climbing something:
 say "You have always been a great climber, but there is no time for that."
 
@@ -157,41 +168,63 @@ The sharks are scenery in the Castle Ruins. They are plural-named. The descripti
 
 The stars are scenery in the Castle Ruins. They are plural-named. The description is "The sky is usually full of them this time of year, but you cannot see them through the thick smoke."
 
+Understand "bathe" as swimming when the river is in the location.
+    
 Instead of swimming when the river is in the location:
 say "You are a powerful swimmer, but you would freeze to death before you could reach the other side."
 
-The pile of rubble is scenery in the Castle Ruins. The printed name is "rubble". The description is "These piles of stones and wood used to be your home[if the paper bag is hidden]. You catch a glimpse of something colorful hidden in one of the piles[end if]."
-Understand "castle" and "stones" as rubble when the location is Castle Ruins.
-Understand "ruins" and "piles" and "home" and "brick" and "debris" and "remains" and "smoking pile" as rubble.
-Understand "burning remains" as rubble.
+The pile of rubble is scenery in the Castle Ruins. The description is "These piles of stones and wood used to be your home[if the paper bag is part of the pile the rubble]. You catch a glimpse of something colorful hidden in one of the piles[end if]."
+Understand "castle" and "stones" as pile of rubble when the location is Castle Ruins.
+Understand "ruins" and "piles" and "home" and "brick" and "debris" and "remains" and "smoking pile" as pile of rubble.
+Understand "burning remains" as pile of rubble.
+
+[
+Instead of attacking the rubble
+Check wearing the rubble
+Instead of taking the rubble
+]
+
+Kicking is an action applying to one thing.
+Understand "kick [something]" as kicking.
+Carry out kicking:
+    say "You kick at [the noun]."
+        
+Instead of kicking the pile of rubble:
+say "You kick at the rubble. Rocks fly off in various directions." 
+        
+Check entering the pile of rubble:
+say "That doesn't seem like a very comfortable place to sit."
+        
+Check climbing the pile of rubble:
+say "You scramble to the top of the pile. Your foot slips and you fall back to the ground. Ouch!" instead.
 
 Understand "colourful" as glimpse of something colorful.
 
 A glimpse of something colorful is scenery in the Castle Ruins. The description is "You can't quite make it out from here. Why don't you try digging through the rubble?"
 
 Instead of taking the glimpse of something colorful:
-try searching the rubble.
+try searching the pile of rubble.
 
-Understand "dig [rubble]" as searching.
-Understand "dig in/through [rubble]" as searching.
+Understand "dig [pile of rubble]" as searching.
+Understand "dig in/through [pile of rubble]" as searching.
 
-Instead of searching the rubble, say "You don't find anything else."
+Instead of searching the pile of rubble, say "You dig through the rubble, but you don't find anything else."
 
-Instead of going from Castle Ruins when the player is indecent, say "Perhaps you should find something[if the player wears the rags] more substantial[end if] to wear first."
+Instead of going from Castle Ruins when the player is indecent, say "Perhaps you should find something[if the player wears the handful of rags] more substantial[end if] to wear first."
 
 Instead of going nowhere from Castle Ruins:
 	say "The only possible path appears to be through the forest to the north."
 	
 Section - Paper Bag
 
-The paper bag is a hidden wearable thing in the Castle Ruins. Understand "paperbag" and "gift bag" as paper bag. The description is "It's a gift bag made out of paper. It looks like it used to have polka dots on it, but now it's just scorched.[if the paper bag has been worn] It has been fashioned into a crude dress.[end if]". Understand "dress" as paper bag when the paper bag has been worn.
+The paper bag is a wearable thing and is part of the pile of rubble. Understand "paperbag" and "gift bag" as paper bag. The description is "It's a gift bag made out of paper. It looks like it used to have polka dots on it, but now it's just scorched.[if the paper bag has been worn] It has been fashioned into a crude dress.[end if]". Understand "dress" as paper bag when the paper bag has been worn.
 
-The printed name of the paper bag is "[if the player wears the paper bag]gift bag that has been fashioned into a rather respectable dress[otherwise]paper bag[end if]"
+The printed name of the paper bag is "[if the player wears the paper bag]gift bag that has been fashioned into a rather fashionable dress[otherwise]paper bag[end if]"
 
-Instead of searching the rubble when the paper bag is hidden:
-	reveal the paper bag;
+Instead of searching the pile of rubble when the paper bag is part of the pile of rubble:
+    move the paper bag to the location; 
 	remove the glimpse of something colorful from play;
-	say "You dig through the piles of rubble until you find a [paper bag]."
+	say "You dig through the rubble until you find a [paper bag]."
 
 Making a dress is an action applying to nothing.
 Understand "make a dress" or "make dress" as making a dress.
@@ -208,24 +241,21 @@ say "You take [the noun]."
 After dropping something:
 say "You drop [the noun]."
 
-Instead of making a dress when the paper bag is not hidden and the paper bag has not been worn:
+Instead of making a dress when the paper bag is not part of the pile of rubble and the paper bag has not been worn:
 try wearing the paper bag.
 
-Instead of making a dress when the paper bag has been worn:
-say "You have already done that."
-        
 Before wearing the paper bag for the first time:
 	if the paper bag is not carried by the player, try taking the paper bag;
 	say "You quickly fashion a dress out of the gift bag. It's not as fancy as you're used to, but it'll get the job done.";
-	if the rags are worn by the player, try taking off the rags.
+	if the handful of rags are worn by the player, try taking off the handful of rags.
 
-After taking off the rags:
+After taking off the handful of rags:
 	say "You strip off the remains of your wedding gown";
-	now the player carries the rags;
-	now the rags are not wearable;
+	now the player carries the handful of rags;
+	now the handful of rags are not wearable;
 	if the player encloses the necklace:
-		say " and discard them in a pile of [rubble]";
-		remove the rags from play;
+		say " and discard them in a [pile of rubble]";
+		remove the handful of rags from play;
 	say "."
 
 After taking off the paper bag, say "You remove the gift bag, folding it carefully."
@@ -253,11 +283,20 @@ try burning the noun.
 Instead of putting anything on the embers:
 try burning the noun.
 
+Instead of burning the handful of rags:
+    say "That seems dangerous. Maybe if you wrapped the rags around something first."
+    
+Instead of burning the oil:
+    say "Be careful! That liquid is highly flammable."
+
+Instead of burning the branch:
+    say "The branch catches on fire, and then quickly fizzles out. Hmm. Maybe there's something you can add to make the fire last longer."
+            
 Instead of burning the torch:
 	if the torch is lit:
 		say "That is already on fire.";
-	otherwise if the torch is not flammable:
-		say "The torch needs something else.";
+	otherwise if the oil is not part of the torch:
+		say "The torch catches fire, but then fizzles out almost immediately. Maybe you can add something else to the torch to make it more flammable?";
  	otherwise if the awake dragon is in the location:
 		say "You could probably ask the dragon to light it for you. But that seems like an altogether bad idea.";
 	otherwise if the embers are not in the location:
@@ -322,6 +361,11 @@ The teeth are plural-named scenery in the Burnt Forest. The description is "[fir
 Instead of taking the teeth:
 say "You have absolutely no need for those. What are you going to do, make a necklace?"
 
+The bones are plural-named scenery in the Burnt Forest.
+
+Instead of doing anything with the bones:
+    say "You don't know where they are, nor do you wish to know."
+    
 Before saying yes when Decision Making has ended:
 say "That was a rhetorical question." instead.
 
@@ -330,12 +374,12 @@ say "That was a rhetorical question." instead.
 
 The trail is scenery in the burnt forest. Understand "burned trees" and "trees" as trail. The description is "The trail disappears into the woods."
 
-After examining the tree when the branch is hidden:
-reveal the branch;
+After examining the tree when the branch is part of the tree:
+move the branch to the location;
 say "There is a large branch propped up against the base of the tree."
 
-After examining the trail when the branch is hidden:
-reveal the branch;
+After examining the trail when the branch is part of the tree:
+move the branch to the location;
 say "You notice a large branch lying on the trail."
 
 Instead of going nowhere from the Burnt Forest:
@@ -352,18 +396,18 @@ Making a torch is an action applying to nothing.
 Understand "make torch" or "make a torch" as making a torch.
 
 Check making a torch:
-	if the rags are not held or the branch is not held:
+	if the handful of rags are not held or the branch is not held:
 		say "How do you plan to do that?" instead.
 
 Carry out making a torch:
 	say "You fashion a torch from [the branch] and the remains of your wedding gown.";
-	if the rags are flammable:
-		now the torch is flammable;
-	now the rags are part of the branch;
+	now the handful of rags are part of the branch;
 	remove the branch from play;
-	now the player carries the torch.
+	if the oil is part of the handful of rags:
+		now the oil is part of the torch;
+    now the player carries the torch.
 		
-The torch is a thing. The description is "It is a torch crafted from a branch and the remains of your wedding gown.[if the torch is lit] It is on fire.[end if]". Understand "branch" and "rags" as torch.
+The torch is a thing. The description is "It is a torch crafted from a branch and the remains of your wedding gown.[if the torch is lit] It is on fire.[end if]". Understand "branch" and "handful of rags" as torch.
 
 Understand "combine [something] with [something]" as combining it with.
 Combining it with is an action applying to two carried things. 
@@ -378,16 +422,16 @@ try combining the noun with the second noun.
 Carry out combining something with something:
 say "You're not quite certain how to put those two things together."
 
-Understand "wrap [rags] around [something]" as combining it with.
-Understand "tie [rags] to [something]" as combining it with.
+Understand "wrap [handful of rags] around [something]" as combining it with.
+Understand "tie [handful of rags] to [something]" as combining it with.
 
-Instead of combining the rags with the branch:
+Instead of combining the handful of rags with the branch:
 try making a torch.
 
-Instead of combining the branch with the rags:
-try combining the rags with the branch.
+Instead of combining the branch with the handful of rags:
+try combining the handful of rags with the branch.
 
-The branch is a hidden thing in the burnt forest. The description is "It's a large branch. It looks pretty sturdy." Understand "stick" as branch.
+The branch is part of the tree. The description is "It's a large branch. It looks pretty sturdy." Understand "stick" as branch.
 
 Section - Forest Maze
 
@@ -426,8 +470,6 @@ Instead of going when in darkness:
 
 A Forest Room is a kind of Room. The printed name of a Forest Room is usually "Dimly Lit Forest". A Forest Room is usually dark. 
 
-The maze is scenery and a backdrop. The description is "Don't worry. You'll figure it out."
-
 The dark trees are scenery and a backdrop. They are plural-named. Instead of examining the dark trees, try looking.
 
 When play begins:
@@ -448,6 +490,9 @@ end the game saying "You have displeased the foxes."
 Forest1, Forest2, Forest3, Forest4, Forest5, Forest6, Forest7, Forest8, Forest9, Forest10, Forest11, Forest12, Forest13, Forest14 and Forest15 are Forest Rooms.
 
 [
+"It's an electric torch. The battery compartment is empty."
+"There is a flashlight here." TODO: maybe this is found if you search the rubble a second time.
+    
 An unimplemented thing is a kind of a thing.
 The mushrooms are a plural-named unimplemented thing in Forest13. "There is a patch of mushrooms here." The description is "A patch of small white mushrooms with orange spots."
 Understand "pick [mushrooms]" as taking.
@@ -475,6 +520,7 @@ say "There is nowhere to go in that direction."
 
 The last direction is a direction that varies.
 
+[TODO: completely need to redo the maze]
 Before going a direction (called way) when the location is a Forest Room:
 	if path is 0:
 		change the way exit of the location to Cave Exterior;
@@ -495,7 +541,7 @@ Before going a direction (called way) when the location is a Forest Room:
 		if last direction is way:
 			increase path by 1;
 		otherwise if last direction is reverse:
-			increase path by 3;
+			increase path by 1;
 		now last direction is way;
 		decrease path by 1.
 		
@@ -528,7 +574,7 @@ Section - Inventory (Wearing)
 After examining the player:
 	If the number of things worn by the player is 0:
 		say "You are elegantly clad in only your birthday suit.";
-	otherwise if the player is not wearing the wedding gown and the player is not wearing the paper bag and the player is not wearing the rags:
+	otherwise if the player is not wearing the wedding gown and the player is not wearing the paper bag and the player is not wearing the handful of rags:
 		say "You are stark naked, save for [a list of things worn by the player]." instead;
 	otherwise:
 		say "You are wearing [a list of things worn by the player].";
@@ -549,7 +595,7 @@ Section - Wedding Gown
 
 The wedding gown is a thing worn by the player.
 
-The description is "[if Wedding Ceremony is happening]A long, white wedding gown[else]The tattered remains of your wedding gown[end if]."
+The description is "[if Wedding Ceremony is happening]A long, white wedding gown with purple trim[else]The tattered remains of your wedding gown[end if]."
 
 The printed name is "[if Wedding Ceremony has ended]handful of rags[otherwise]wedding gown". Understand "dress" and "wedding dress" as wedding gown.
 
@@ -568,15 +614,15 @@ Carry out shining:
 say "How would you like to do that?"
 
 Carry out shining it with:
-	if the second noun is the rags:
-		say "You attempt to polish the [noun] with the [rags]. It's not super effective.";
+	if the second noun is the handful of rags:
+		say "You attempt to polish the [noun] with the [handful of rags]. It's not super effective.";
 	otherwise:
 		say "That doesn't seem to work."	
 
-The rags are a plural-named thing. The indefinite article is "a".
+The handful of rags are a plural-named thing. The indefinite article is "a".
 The description is "The tattered remains of your wedding gown."
-The printed name is "handful of rags". Understand "rag" and "wedding dress" and "wedding gown" and "gown" as rags.
-Understand "dress" as rags when the paper bag has not been worn.
+Understand "rag" and "wedding dress" and "wedding gown" and "gown" as handful of rags.
+Understand "dress" as handful of rags when the paper bag has not been worn.
 
 Section - Crown
 
@@ -642,7 +688,7 @@ Wedding Ceremony is a scene.
 Wedding Ceremony begins when play begins.
 
 When play begins:
-say "This is the day you've always dreamed of. You are finally marrying the love of your life, Prince [Roland]."
+say "This is the day you've always dreamed of. You are finally marrying the love of your life, Prince [Roland]. (Hint: Type 'heteronormativity off' to marry a princess instead.)"
 
 Rule for printing the banner text during the Wedding Ceremony: do nothing.
 
@@ -653,7 +699,7 @@ When Wedding Ceremony ends:
 	move the player to the Castle Ruins;
 	remove the wedding gown from play;
 	remove the bouquet from play;
-	now the player wears the rags;
+	now the player wears the handful of rags;
         move Roland to Cave Interior.
 
 Instead of waiting during the Wedding Ceremony:
@@ -661,7 +707,7 @@ say "You beam happily at [Roland]."
 
 Table of Priestly Ramblings
 Quip
-"[Minister] begins the ceremony, 'We are gathered here today to witness the joining of two hearts.' [Roland] smiles shyly at you."
+"[Father Alfred] begins the ceremony, 'We are gathered here today to witness the joining of two hearts.' [Roland] smiles shyly at you."
 "'If anyone has a reason why these two should not be wed, speak now or forever hold your peace.' You hold your breath for a second, wondering whether anyone will speak up. Fortunately, nobody does and you relax."
 "'Who gives this woman--' You glare icily at the minister. You are nobody[']s property. 'Ahem. Moving on,' says the minister, visibly flustered. [Roland] looks at you questioningly, but says nothing."
 "'Love is a wonderful thing.' And so on. You're too excited to pay attention to every word."
@@ -682,7 +728,7 @@ Decision Making is a scene.
 
 Decision Making begins when the number of filled rows in the Table of Priestly Ramblings is 0.
 Decision Making ends when the dragon is in the Garden for the first time.
-
+*
 default response for the player:
 say "They say talking to oneself is a sign of genius. Or maybe that was madness. Is there really a difference?"
 
@@ -697,7 +743,7 @@ Instead of speaking up when Wedding Ceremony is happening:
 	end the game saying "And they didn't get married after all!"
 
 When Decision Making begins:
-        now the current interlocutor is the minister.
+        now the current interlocutor is Father Alfred.
 
 Instead of saying yes when Decision Making is happening:
 	say "Of course you do![paragraph break]The minister smiles at you and turns to [Roland]. 'And, [Roland], do you take Elizabeth to be your wife?'[paragraph break][Roland] grins at you and exclaims, 'I do!'[paragraph break]'I now pronounce you [gender] and... dragon?!?' The minister's eyes go wide, seconds before he is incinerated by a burst of flame.";
@@ -744,7 +790,7 @@ The Rescue begins when Wandering ends.
 The Rescue ends when exhaustion is 3.
 
 Instead of knocking the Cave Door for the first time:
-say "You grab the knocker and bang on the door.[paragraph break]The door opens and the dragon sticks its nose through the opening. It says, 'Well, a princess! I love to eat princesses, but I have already eaten a whole castle today. I am a very tired dragon. Come back tomorrow.' [paragraph break]Then it slams the door in your face."
+say "You stand on your tiptoes, grab the knocker, and bang on the door.[paragraph break]The door opens, almost knocking you over, and the dragon sticks its nose through the opening. It says, 'Well, a princess! I love to eat princesses, but I have already eaten a whole castle today. I am a very tired dragon. Come back tomorrow.' [paragraph break]Then it slams the door in your face."
 
 Instead of knocking the Cave Door:
 say "You bang on the door again.[paragraph break]The dragon sticks its nose out the door and says, 'I am sure you are very delicious, but I am rather tired and stuffed. Please do come back tomorrow.'[paragraph break]This time, however, he does not immediately return to his cave.";
@@ -795,7 +841,7 @@ Instead of shouting at the dragon when the dragon is asleep:
 say "[one of]You whisper very softly, 'Hey, dragon.'[paragraph break]The dragon doesn't stir.[or]You lift the dragon's ear and put your head right inside. You shout as loudly as you can, 'Hey, dragon!'[paragraph break]The dragon doesn't react.[or]The dragon seems to be fast asleep. You could probably sneak right past it now.[stopping]"
 
 default give-show response for Dragon:
-say "The dragon sniffs at you and says dryly, 'I am not interested in that.'"
+say "The dragon sniffs at you and says dryly, 'That doesn't look edible. No thank you."
 
 After asking the awake dragon about a topic listed in the Table of Draconic Boasts:
 	say "[reply entry][line break]"; 
@@ -822,7 +868,7 @@ Instead of telling the dragon about a topic:
 	try asking the dragon about the topic understood.
 
 default ask-tell response for Dragon:
-	say "[The dragon] says, 'I'm afraid I don't know anything about that.'"
+	say "[The dragon] pointedly ignores you."
 			
 Before asking the dragon to try eating something:
 say "The dragon says, 'Thank you for the offer, but I am not hungry right now.'"
@@ -876,7 +922,7 @@ say "The dragon laughs at you."
 instead of quizzing dragon about dragon:
 try asking dragon about "dragon".
 
-After asking dragon about "dragon" for the third time:
+After asking dragon about "dragon" for the second time:
 try silently flattering the dragon.
 
 response of dragon when asked-or-told about wings:
@@ -915,7 +961,7 @@ Chapter - The Aftermath
 
 The Aftermath is a scene.
 
-Instead of going from Cave Exterior when the player is indecent, say "You ought to cover up first."
+Instead of going from Cave Exterior when the player is indecent, say "You ought to cover up before seeing [Roland]"
 
 After opening the Cave Door for the first time:
 say "You step over the dragon and open the door to the cave."
@@ -930,10 +976,22 @@ try shouting at Roland.
 
 Understand "tell [someone] off" as shouting at.
 
+[TODO: New character to play Roland at the end, instead of "during Aftermath" and "during Wedding"]
+    
 Instead of taking off the paper bag during Aftermath:
 say "You take off the bag, crumple it up and throw it at Roland.[paragraph break]";
 try shouting at Roland.
 
+Throwing it at is an action applying to two things.
+Understand "throw [something] at [something]" as throwing it at.
+
+Carry out throwing it at:
+    try attacking the second noun.
+
+Instead of throwing something at Roland when the Aftermath is happening:
+    say "You throw [the noun] at Roland. He ducks, just barely.[paragraph break]";
+    try shouting at Roland.
+        
 Instead of shouting at Roland when the Aftermath is happening:
 say "'[Roland],' you say, 'your clothes are really pretty, and your hair is very neat. You look like a real [title], but you are also a real toad.'[paragraph break]You turn around and walk out the door.";
 end the story finally saying "And Elizabeth lived happily ever after!"
@@ -956,6 +1014,10 @@ Before burning Roland with the lit torch:
 say "You briefly consider burning Roland, but settle for giving him a hard shove.[paragraph break]";
 try shouting at Roland instead.
 
+Instead of kicking Roland when the Aftermath is happening:
+    say "You kick [Roland] in the shin![paragraph break]";
+    try shouting at Roland.
+    
 Instead of attacking Roland when the Aftermath is happening:
 say "You slap [Roland]![paragraph break]";
 try shouting at Roland.
@@ -1001,6 +1063,9 @@ say "You would never attack [Roland]! Except possibly with kisses."
 Instead of kissing Roland when the Wedding Ceremony is happening:
 say "You'll have your chance soon enough!"
 
+Instead of hugging Roland when the Wedding Ceremony is happening:
+    say "You'll have your chance soon enough!"  
+    
 Instead of taking Roland:
 say "To be your lawfully wedded [if Roland is male]husband[otherwise]wife[end if]? Yes, Elizabeth. Be patient."
 
@@ -1025,8 +1090,12 @@ say "No. Absolutely not."
 Instead of kissing Roland when the Aftermath is happening:
 say "You're really not in the mood to do that."
 
+[TODO: is hug and kiss the same?]
+    
 Understand the command "pet" as "hug".
 
+Instead of hugging the dragon: say "The dragons nostrils flare as you move closer. You take a step back."
+    
 Loving is an action applying to one thing.
 Understand "love [someone]" as loving.
 
@@ -1043,31 +1112,25 @@ Chapter - Magic Words
 
 Casting xyzzy is an action applying to nothing.
 Understand "xyzzy" or "say xyzzy" as casting xyzzy.
-Understand "plugh" or "say plugh" as casting xyzzy.
+Casting plugh is an action applying to nothing.
+Understand "plugh" or "say plugh" as casting plugh.
 
 The necklace is a wearable thing. The description is "A heart-shaped pendant on a gold chain[if the necklace is lit]. It is glowing with a soft white light[end if]." Understand "chain" and "heart" and "pendant" as necklace. Understand "light" as necklace when the necklace is lit.
 
-Instead of casting xyzzy for the first time:
-	say "POOF! Your fairy godmother appears. [run paragraph on]";
-	if the Wedding Ceremony has ended:
-		say "'Tsk,' she says. 'Poor girl. I'm not sure I can help you with this one.' She pauses and rummages around in her pockets, pulling out [a vial]. She hands it to you. 'This is the best I can do. Use it wisely.' Then she vanishes, as quickly as she appeared.";
-		move the vial to the player;
-	otherwise:
+Instead of casting XYZZY:
+    if the Wedding Ceremony is happening and the player does not enclose the necklace:
+    	say "POOF! Your fairy godmother appears. [run paragraph on]";
 		say "She smiles at you and places [a necklace] around your neck. Then she fades out of view.";
 		now the player wears the necklace.
+    otherwise:
+        say "Nothing happens." [TODO]
 
-Instead of attacking the vial:
-	say "You are not strong enough to do that."
-
-After dropping the vial:
-	say "You drop [the vial]. It bounces harmlessly on the ground";
-	if the vial is open and the oil is in the vial:
-		say ". The lid snaps shut in the process, and you don't lose more than a few drops of [the oil]";
-		now the vial is closed;
-	say ".".
-		
-Carry out casting xyzzy:
-	if the player encloses the necklace:
+Instead of casting PLUGH:
+    if the Wedding Ceremony has ended and the player does not enclose the necklace and the vial has not been handled:
+    	say "POOF! Your fairy godmother appears. [run paragraph on]";
+        say "'Tsk,' she says. 'Poor girl. I'm not sure I can help you with this one.' She pauses and rummages around in her pockets, pulling out [a vial]. She hands it to you. 'This is the best I can do. Use it wisely.' Then she vanishes, as quickly as she appeared.";
+		move the vial to the player;
+    otherwise if the player encloses the necklace:
 		if the necklace is lit:
 			say "[The necklace] abruptly stops glowing.";
 			now the necklace is not lit;
@@ -1077,12 +1140,23 @@ Carry out casting xyzzy:
 	otherwise if the necklace is in the location:
 		say "You need to be holding [the necklace] for that to work.";
 	otherwise:
-		say "You hear a faint sound in the distance. Help does not arrive."
-                
+		say "Nothing happens." [TODO]
+    
+Instead of attacking the vial:
+	say "The vial seems to be made out of indestructible glass."
+
+After dropping the vial:
+	say "You drop [the vial]. It bounces harmlessly on the ground";
+	if the vial is open and the oil is in the vial:
+		say ". The lid snaps shut in the process, and you don't lose more than a few drops of [the oil]";
+		now the vial is closed;
+	say ".".
+		
 Chapter - Other
 
 Instead of going nowhere from the Garden:
-say "You can[']t leave yet! The ceremony hasn't ended."
+"You're not sure you actually want to get married. How well do you even know [Roland]? You hand your bouquet to the nearest guest and walk off.";
+end the game saying "And they didn't get married after all!"
 
 Instead of singing:
 say "You sing a few bars of a lullaby your mother used to sing to you."
@@ -1152,29 +1226,23 @@ try pouring the noun onto the second noun.
 Instead of putting a fluid container on something:
 try pouring the noun onto the second noun.
 
-Instead of burning the branch:
-say "Not quite, but you seem to be on the right track.";
-
 Instead of pouring the oil onto something:
-	if the second noun is the rags and the player is wearing the rags:
-		say "Maybe you should remove them first.";
-	otherwise if the second noun is the torch or the second noun is the rags:
+	if the second noun is the handful of rags and the player is wearing the handful of rags:
+		say "Maybe you should remove them first. You don't really want the oil all over your skin.";
+	otherwise if the second noun is the torch or the second noun is the handful of rags:
 		say "You pour [the oil] onto [the second noun] and discard the empty [vial].";
-		now the second noun is flammable;
 		now the oil is part of the second noun;
 		remove the vial from play;
 	otherwise if the second noun is the oil or the second noun is the vial:
 		say "It is rather difficult to pour something on itself.";
 	otherwise if the second noun is the branch:
-		say "Not quite, but you seem to be on the right track.";
+		say "The oil drips right off the branch."
 	otherwise if the second noun is the player:
 		say "Ew. You really don't want that all over your skin.";
 	otherwise if the second noun is the embers:
 		try burning the oil;
 	otherwise:
-		say "There isn't very much in the bottle. You shouldn't waste it."
-
-A thing can be flammable or not flammable. A thing is usually not flammable.
+		say "You annoint [the second noun] with a few drops of oil."
 
 Chapter - Fire
 
@@ -1194,6 +1262,8 @@ Before knocking an open door, say "The door is already open." instead.
 Carry out knocking a locked door:
 say "You grab the knocker and bang on [the noun]."
 
+The knocker is part of the Cave Door. The description is "It's a golden knocker in the shape of a dragon's tail."
+    
 Before knocking an unlocked door, say "You knock on [the noun], but there is no response." instead.
 
 Before opening a locked door:
@@ -1226,7 +1296,7 @@ Instead of crying when the Wedding Ceremony is happening:
 say "You're suddenly overcome with emotion. You dab at your eyes with the end of the ribbon on your bouquet."
 
 default response for minister:
-  say "[minister] smiles kindly at you and continues the ceremony."
+  say "[father alfred] smiles kindly at you and continues the ceremony."
   
 Instead of asking Roland to try doing anything during Wedding Ceremony:
 say "You lean in towards [Roland] and whisper in [possessive] ear. [Roland] smiles at you, shaking [possessive] head."
