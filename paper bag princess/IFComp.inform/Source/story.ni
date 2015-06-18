@@ -491,22 +491,21 @@ Carry out being a jerk:
 say "Rocks fall. You die.";
 end the game saying "You have displeased the foxes."
     
-Forest1, Forest2, Forest3, Forest4, Forest5, Forest6, Forest7, Forest8, Forest9, Forest10, Forest11, Forest12, Forest13, Forest14 and Forest15 are Forest Rooms.
+Forest1, Forest2, Forest3, Forest4, Forest5, Forest6, Forest7, Forest8, Forest9, Forest10, Forest11, Forest12, Forest13, Forest14, Forest15 and Forest16 are Forest Rooms.
+ 
+[Forest1-5 connect in some order; other rooms are more "random", but strewn with trinkets. Cut down number of rooms to 9. They're not laid out in a grid.]
 
 [
 "It's an electric torch. The battery compartment is empty."
 "There is a flashlight here." TODO: maybe this is found if you search the rubble a second time.
-    
-An unimplemented thing is a kind of a thing.
-The mushrooms are a plural-named unimplemented thing in Forest13. "There is a patch of mushrooms here." The description is "A patch of small white mushrooms with orange spots."
-Understand "pick [mushrooms]" as taking.
-The berries are a plural-named unimplemented thing in Forest9. "There is a bush here covered with berries." Understand "bush" as berries. The description is "A bush covered in bright, red berries."
-Understand "pick [berries]" as taking.
-The ring is a wearable unimplemented thing in Forest3. "There is a shiny ring here." The description is "A very pretty ring."
-The dagger is an unimplemented thing in Forest2. "There is a dagger here." The description is "A jeweled dagger. It looks very sharp."
-Instead of taking an unimplemented thing:
-say "You have no need for that right now."
 ]
+    
+The mushrooms are a plural-named thing in Forest13. "There is a patch of mushrooms here." The description is "A patch of small white mushrooms with orange spots."
+Understand "pick [mushrooms]" as taking.
+The berries are a plural-named thing in Forest9. "There is a bush here covered with berries." Understand "bush" as berries. The description is "A bush covered in bright, red berries."
+Understand "pick [berries]" as taking.
+The ring is a wearable thing in Forest3. "There is a shiny ring here." The description is "A very pretty ring."
+The dagger is an unimplemented thing in Forest2. "There is a dagger here." The description is "A jeweled dagger. It looks very sharp."
 
 Path is a number that varies. Path is usually 0.
 Halfway is a number that varies. Halfway is usually 0.
@@ -975,6 +974,9 @@ say "The door leads into the cave. The only escape is back into the forest. You 
 
 Chapter - The Aftermath
 
+Does the player mean doing anything to Roland during Aftermath: it is unlikely.
+Does the player mean doing anything to the Jerk during Aftermath: it is likely.
+
 The Aftermath is a scene.
 
 Instead of going from Cave Exterior when the player is indecent, say "You ought to cover up before seeing [Roland]"
@@ -997,6 +999,7 @@ say "You take off the bag, crumple it up and throw it at Roland.[paragraph break
 try shouting at Roland.
 
 Instead of throwing something at the Jerk:
+    if the noun is worn by the player, try silently taking off the noun;
     say "You throw [the noun] at [Roland]. [Subjective] ducks, just barely.[paragraph break]";
     try shouting at the Jerk.
         
@@ -1009,6 +1012,16 @@ try shouting at the Jerk.
 
 Instead of exiting when the Aftermath is happening:
 try shouting at the Jerk.
+
+Understand the command "kill" as something new.
+Killing is an action applying to one thing.
+Understand "kill [someone]" as killing.
+
+Instead of killing someone:
+try attacking the noun.
+
+Instead of killing Roland:
+say "That's a bit harsh, don't you think?"
 
 Understand the command "slap" as "attack".
 
@@ -1028,7 +1041,7 @@ Instead of kicking the Jerk:
     
 Instead of attacking the Jerk:
 say "You slap [Roland]![paragraph break]";
-try shouting at Roland.
+try shouting at the Jerk.
 
 Attacking it with is an action applying to two things.
 Understand "attack [something] with [something]" as attacking it with.
@@ -1311,9 +1324,12 @@ say "You lean in towards [Roland] and whisper in [possessive] ear. [Roland] smil
 default response for Roland during Wedding Ceremony:
 say "You lean in towards [Roland] and whisper in [possessive] ear. [Roland] smiles at you and holds a finger over [possessive] lips in an exaggerated 'shush' motion."	
 
-default response for Roland during Aftermath:
-	say "[Roland] glares at you."
+default give-show response for the Jerk:
+say "[Roland] doesn't seem interested in that."
 
+default ask-tell response for the Jerk:
+say "[Roland] glares at you."
+    
 Instead of saying hello to someone when the greeting type is explicit:
 	try quizzing the noun about the noun instead. 
 	
@@ -1347,6 +1363,7 @@ say "You smile warmly at [the noun]."
 Instead of smiling at Roland during Aftermath:
 say "You grit your teeth and force yourself to smile at [Roland]."
 
+[TODO]
 Rule for amusing a victorious player:
 say "[LINE BREAK]Have you tried...[LINE BREAK]- casting xyzzy during the wedding ceremony?[LINE BREAK]- marrying another princess?[LINE BREAK]- not getting married?[LINE BREAK]- singing? (You might find it quite soothing.)[LINE BREAK]- dying? (Not particularly soothing, to anyone involved.)"
 

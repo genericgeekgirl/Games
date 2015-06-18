@@ -249,77 +249,77 @@
     </dict>
     <key>35</key><dict>
         <key>Filename</key><string>/home/amills/Games/paper bag princess/IFComp.inform/Source/story.ni</string>
-        <key>Line</key><integer>1041</integer>
+        <key>Line</key><integer>1055</integer>
         <key>Title</key><string>Part - Additional Actions</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>36</key><dict>
         <key>Filename</key><string>/home/amills/Games/paper bag princess/IFComp.inform/Source/story.ni</string>
-        <key>Line</key><integer>1050</integer>
+        <key>Line</key><integer>1064</integer>
         <key>Title</key><string>Chapter - Inappropriate Conduct</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>37</key><dict>
         <key>Filename</key><string>/home/amills/Games/paper bag princess/IFComp.inform/Source/story.ni</string>
-        <key>Line</key><integer>1064</integer>
+        <key>Line</key><integer>1078</integer>
         <key>Title</key><string>Chapter - Affection</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>38</key><dict>
         <key>Filename</key><string>/home/amills/Games/paper bag princess/IFComp.inform/Source/story.ni</string>
-        <key>Line</key><integer>1115</integer>
+        <key>Line</key><integer>1129</integer>
         <key>Title</key><string>Chapter - Magic Words</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>39</key><dict>
         <key>Filename</key><string>/home/amills/Games/paper bag princess/IFComp.inform/Source/story.ni</string>
-        <key>Line</key><integer>1159</integer>
+        <key>Line</key><integer>1173</integer>
         <key>Title</key><string>Chapter - Other</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>40</key><dict>
         <key>Filename</key><string>/home/amills/Games/paper bag princess/IFComp.inform/Source/story.ni</string>
-        <key>Line</key><integer>1171</integer>
+        <key>Line</key><integer>1185</integer>
         <key>Title</key><string>Chapter - Liquids</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>41</key><dict>
         <key>Filename</key><string>/home/amills/Games/paper bag princess/IFComp.inform/Source/story.ni</string>
-        <key>Line</key><integer>1189</integer>
+        <key>Line</key><integer>1203</integer>
         <key>Title</key><string>Section - Oil</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>5</integer>
     </dict>
     <key>42</key><dict>
         <key>Filename</key><string>/home/amills/Games/paper bag princess/IFComp.inform/Source/story.ni</string>
-        <key>Line</key><integer>1254</integer>
+        <key>Line</key><integer>1268</integer>
         <key>Title</key><string>Chapter - Fire</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>43</key><dict>
         <key>Filename</key><string>/home/amills/Games/paper bag princess/IFComp.inform/Source/story.ni</string>
-        <key>Line</key><integer>1256</integer>
+        <key>Line</key><integer>1270</integer>
         <key>Title</key><string>Chapter - Knocking</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>44</key><dict>
         <key>Filename</key><string>/home/amills/Games/paper bag princess/IFComp.inform/Source/story.ni</string>
-        <key>Line</key><integer>1285</integer>
+        <key>Line</key><integer>1299</integer>
         <key>Title</key><string>Chapter - Conversation</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>45</key><dict>
         <key>Filename</key><string>/home/amills/Games/paper bag princess/IFComp.inform/Source/story.ni</string>
-        <key>Line</key><integer>1353</integer>
+        <key>Line</key><integer>1371</integer>
         <key>Title</key><string>Volume - Testing</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>

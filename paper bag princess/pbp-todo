@@ -145,91 +145,15 @@ The dragon says, "I'm afraid I don't know anything about that."
 
 
 
->ask about torch
-The dragon laughs at you.
-
-
-
-f>open door
-The door is locked. Perhaps you should try knocking.
-
->; ah small goof
-That's not a verb I recognize.
-
-
->kiss dragon
-Keep your mind on the game.
-
-
-
->ask about door
-The dragon says, "That is my home, and you are not welcome in there."
-
->ask about cave
-The dragon says, "That is my home, and you are not welcome in there."
-
->ask about entrance
-The dragon says, "That is my home, and you are not welcome in there."
-
->ask about wedding
-The dragon says, "I'm afraid I don't know anything about that."
-
->ask about later
-The dragon says, "I'm afraid I don't know anything about that."
-
->ask about eating
-The dragon says, "I'm afraid I don't know anything about that."
-
->ask about eat
-The dragon says, "I'm afraid I don't know anything about that."
-
-
-
-
->kiss roland
-You're really not in the mood to do that.
-
->remove bag
-You remove the gift bag, folding it carefully.
-
 >give all to roland
 You can't use multiple objects with that verb.
 
 >give torch to roland
 Roland glares at you.
 
->x torch
-It is a torch crafted from a branch and the remains of your wedding gown.
-
->remove gown
-You can't see any such thing.
-
->take gown
-You can't see any such thing.
-
->get branch
-You already have that.
-
->untie torch
-That's not a verb I recognize.
-
-
-
->sleep
-You aren't feeling especially drowsy.
-
->jump
-You jump on the spot, fruitlessly.
-
 >ask roland about me
 Roland glares at you.
 
 >ask roland about dragon
 Roland glares at you.
-
->xyzzy
-You hear a faint sound in the distance. Help does not arrive.
-
->x dragon
-You can't see any such thing.
 
