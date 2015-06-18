@@ -9,12 +9,12 @@ The story description is "Princess Elizabeth is about to marry the love of her l
 
 [Release along with cover art and an interpreter.]
 
-Part - Basic Setup
+Volume - Basic Setup
 
 Use no scoring. [TODO]
 Use American dialect, full-length room descriptions, and the serial comma.
 
-Chapter - Extensions
+Book - Extensions
 
 Include Basic Screen Effects by Emily Short.
 Include Conversational Defaults by Eric Eve.
@@ -23,7 +23,7 @@ Include Reversed Persuasion Correction by Juhana Leinonen.
 Include Basic Help Menu by Emily Short.
 Include Punctuation Removal by Emily Short.
 
-Chapter - Help Menu
+Book - Help Menu
 
 Understand "menu" as asking for help.
 Understand "about" and "credits" as asking for help.
@@ -49,7 +49,7 @@ to say credits: say "[story title] is loosely based upon the book of the same na
 [TODO: update this]
 To say walkthrough: say "This walkthrough results in the 'traditional' ending. [paragraph break]wait[line break]wait[line break]wait[line break]wait[line break]wait[line break]yes[line break]press space[line break]search rubble[line break]take bag[line break]make dress[line break]north[line break]x trail[line break]take branch[line break]x tree[line break]plugh[line break]make torch[line break]open vial[line break]pour oil on torch[line break]south[line break]light torch[line break]north[line break]northeast[line break]the maze is entirely random... sorry![line break]knock on door[line break]again[line break]shout[line break]ask dragon about fire[line break]y[line break]y[line break]ask dragon about flight[line break]y[line break]in[line break]shout at roland[paragraph break]Most puzzles have alternate solutions, and there are multiple endings to the game. Have fun exploring!".
 
-Chapter - Blocking superbrief/brief modes
+Book - Blocking superbrief/brief modes
 
 Use full-length room descriptions.
 
@@ -65,7 +65,7 @@ The brief mode disabled rule is listed first in the check preferring abbreviated
 
 The superbrief mode disabled rule is listed first in the check preferring abbreviated room descriptions rules.
 
-Chapter - Parsing Commands
+Book - Parsing Commands
 
 Understand "* [text]" as a mistake ("Noted.").
 
@@ -81,16 +81,16 @@ Fast quitting is an action out of world.
 Understand "quitr" as fast quitting.
 Carry out fast quitting: follow the immediately quit rule.
 
-Part - Setting
+Volume - Setting
 
-Chapter - Castle Area
+Book - Castle Area
 
 The Castle Garden is a room. The printed name is "Castle Garden".
 The Castle Ruins is a room.
 The Castle Area is a region.
 The Garden and Castle Ruins are in the Castle Area.
 
-Section - Garden
+Chapter - Garden
 
 The description of the Garden is "You are standing in the garden behind your family's castle. On this lovely fall evening, it is doing double duty as a wedding chapel." 
 
@@ -109,16 +109,16 @@ Understand "minister" and "priest" and "officiant" as father alfred.
 
 Some guests are scenery in the Garden. The description is "You are surrounded by your family and friends."
 
-The parents are scenery in the Garden. The description is "Your parents, Queen Katherine and King Theodore are here, as well as [Roland]'s mother, Queen Anne" Understand "family" as parents.
+The parents are scenery in the Garden. The description is "Your parents, Queen Katherine and King Theodore are here, as well as [Roland]'s mother, Queen Anne." Understand "family" as parents.
 
 Instead of doing anything except examining to the parents:
     say "Please refer to the parents (Katherine, Theodore, Anne) individually."
     
-King Theodore is scenery in the Garden. The description is "Your father beams at you proudly." Understand "father" as King Theodore.
-Queen Katherine is scenery in the Garden. The description is "Your future mother-in-law gazes dotingly upon her [if Roland is female]daughter[otherwise]son[end if]."
-Queen Anne is scenery in the Garden. The description is "Your mother smiles at you as she wipes tears from her eyes with an embroidered handkerchief." Understand "mother" as Queen Anne.
+King Theodore is a man in the Garden. The description is "Your father beams at you proudly." Understand "father" as King Theodore.
+Queen Katherine is a woman in the Garden. The description is "Your future mother-in-law gazes dotingly upon her [if Roland is female]daughter[otherwise]son[end if]."
+Queen Anne is a woman in the Garden. The description is "Your mother smiles at you as she wipes tears from her eyes with an embroidered handkerchief." Understand "mother" as Queen Anne.
     
-Section - Bouquet
+Chapter - Bouquet
 
 The bouquet is a thing carried by the player. The description is "Your bouquet contains a collection of purple and orange flowers, tied up with a white ribbon. You don't even know what most of those flowers are called." Understand "flowers" as bouquet.
 
@@ -138,10 +138,12 @@ say "You're pretty certain some of those flowers are poisonous."
     
 [TODO: what happens to the bouquet after the fire?]
     
-Section - Castle Ruins
+Book - Castle Ruins
 
 The description of the Castle Ruins is "This used to be your home. Now it is nothing more than a smoking [pile of rubble]. The [smoke] obscures your view of the [stars], and the primary source of light is the burning remains of your furniture.[paragraph break]The only [road] away from the castle now ends abruptly at the river bank. The forest surrounds you thickly on all sides, except for an area to the north where the trees have been broken and scorched."
 
+Chapter - Scenery
+    
 The forest is scenery in the Castle Ruins. Understand "trees" and "tree" as forest. The description is "The forest surrounds you thickly on all sides, except for an area to the north where the trees have been broken and scorched."
 
 Instead of climbing the tree:
@@ -173,7 +175,10 @@ Understand "bathe" as swimming when the river is in the location.
 Instead of swimming when the river is in the location:
 say "You are a powerful swimmer, but you would freeze to death before you could reach the other side."
 
-The pile of rubble is scenery in the Castle Ruins. The description is "These piles of stones and wood used to be your home[if the paper bag is part of the pile the rubble]. You catch a glimpse of something colorful hidden in one of the piles[end if]."
+Chapter - Rubble
+    
+The pile of rubble is scenery in the Castle Ruins.
+The description is "These piles of stones and wood used to be your home[if the paper bag is part of the pile of rubble]. You catch a glimpse of something colorful hidden in one of the piles[end if]."
 Understand "castle" and "stones" as pile of rubble when the location is Castle Ruins.
 Understand "ruins" and "piles" and "home" and "brick" and "debris" and "remains" and "smoking pile" as pile of rubble.
 Understand "burning remains" as pile of rubble.
@@ -210,14 +215,14 @@ Understand "dig in/through [pile of rubble]" as searching.
 
 Instead of searching the pile of rubble, say "You dig through the rubble, but you don't find anything else."
 
-Instead of going from Castle Ruins when the player is indecent, say "You might get hurt if you walk naked through the forest."
+Instead of going northeast from Burnt Forest when the player is indecent, say "You might get hurt if you walk naked through the forest."
 
 Instead of going nowhere from Castle Ruins:
 	say "The only possible path appears to be through the forest to the north."
 	
-Section - Paper Bag
+Part - Paper Bag
 
-The paper bag is a wearable thing and is part of the pile of rubble. Understand "paperbag" and "gift bag" as paper bag. The description is "It's a gift bag made out of paper. It looks like it used to have polka dots on it, but now it's just scorched.[if the paper bag has been worn] It has been fashioned into a crude dress.[end if]". Understand "dress" as paper bag when the paper bag has been worn.
+The paper bag is a wearable thing. The paper bag is part of the pile of rubble. Understand "paperbag" and "gift bag" as paper bag. The description is "It's a gift bag made out of paper. It looks like it used to have polka dots on it, but now it's just scorched.[if the paper bag has been worn] It has been fashioned into a crude dress.[end if]". Understand "dress" as paper bag when the paper bag has been worn.
 
 The printed name of the paper bag is "[if the player wears the paper bag]gift bag that has been fashioned into a rather fashionable dress[otherwise]paper bag[end if]"
 
@@ -264,7 +269,7 @@ After wearing the paper bag, say "You slip the makeshift dress over your head an
 	
 Instead of dropping the paper bag, say "You may wish to hold on to that."
 
-Section - Fire Handling (Embers, Torch)
+Volume - Fire Handling (Embers, Torch)
 
 The embers are a plural-named undescribed thing in the Castle Ruins. It is fixed in place. The embers are lit. Understand "burning" and "fire" and "flames" and "flame" as embers when wandering is happening. The printed name is "flames". The description is "The flames burn brightly." Understand "light" as embers when the location is Castle Ruins.
 
@@ -405,7 +410,7 @@ Carry out making a torch:
 	remove the branch from play;
 	if the oil is part of the handful of rags:
 		now the oil is part of the torch;
-    now the player carries the torch.
+	now the player carries the torch.
 		
 The torch is a thing. The description is "It is a torch crafted from a branch and the remains of your wedding gown.[if the torch is lit] It is on fire.[otherwise if the oil is part of the torch] The rags have been doused in an oily black liquid.[end if]". Understand "branch" and "handful of rags" as torch.
 
@@ -433,7 +438,7 @@ try combining the handful of rags with the branch.
 
 The branch is part of the tree. The description is "It's a large branch. It looks pretty sturdy." Understand "stick" as branch.
 
-Section - Forest Maze
+Section - Forest Maze TODO
 
 Instead of dropping something when in darkness:
 say "That's a great way to lose something."
@@ -473,7 +478,6 @@ A Forest Room is a kind of Room. The printed name of a Forest Room is usually "D
 The dark trees are scenery and a backdrop. They are plural-named. Instead of examining the dark trees, try looking.
 
 When play begins:
-move the maze backdrop to all forest rooms;
 move the dark trees backdrop to all forest rooms.
 
 The description of a Forest Room is "You feel as if you are in a [one of]giant maze of twisting trees[or]giant maze of twisty trees[or]giant twisty maze of trees[or]maze of giant twisting trees[or]maze of giant twisty trees[or]maze of twisting giant trees[or]maze of twisty giant trees[or]twisting giant maze of trees[or]twisting maze of giant trees[or]twisty giant maze of trees[or]twisty maze of giant trees[purely at random]."
@@ -546,8 +550,7 @@ Before going a direction (called way) when the location is a Forest Room:
 		decrease path by 1.
 		
 Instead of casting xyzzy when the player does not enclose the necklace and the location is a forest room:
-say "You sense that you are heading in the right direction."
-
+	say "You sense that you are heading in the right direction."
 
 Chapter - Dragons Cave
 
@@ -591,7 +594,7 @@ Instead of taking inventory:
     otherwise list the contents of the player, as a sentence, tersely, giving brief inventory information, listing marked items only; 
     say ".[paragraph break]".
 
-Section - Wedding Gown
+Book - Wedding Gown
 
 The wedding gown is a thing worn by the player.
 
@@ -602,8 +605,10 @@ The printed name is "[if Wedding Ceremony has ended]handful of rags[otherwise]we
 Instead of taking off the wedding gown when the Wedding Ceremony is happening (this is the no nudity at the wedding rule):
 say "It took a very long time to get you laced into that gown. You ought to leave it on for now."
 	
-Section - Rags
+Book - Rags
 
+Part - Shining
+    
 Shining is an action applying to one thing.
 Shining it with is an action applying to two things.
 
@@ -620,18 +625,18 @@ Carry out shining it with:
 		say "That doesn't seem to work."	
 
 The handful of rags are a plural-named thing. The indefinite article is "a".
-The description is "The tattered remains of your wedding gown.[if the oil is part of the rags] They have been doused in a black oily liquid.[end if]"
+The description is "The tattered remains of your wedding gown.[if the oil is part of the rags] They have been doused in a black oily liquid.[end if]".
 Understand "rag" and "wedding dress" and "wedding gown" and "gown" as handful of rags.
 Understand "dress" as handful of rags when the paper bag has not been worn.
 
-Section - Crown
+Book - Crown
 
 The crown is worn by the player. The description is "Your gold crown.[if Wedding Ceremony has ended] It's looking a little worse for the wear." The printed name is "[if Wedding Ceremony has ended]tarnished [otherwise]sparkly [end if]gold crown".
 
 Instead of taking off the crown (this is the princess should always be prepared rule):
 	say "You should leave that on. A princess should never be without her crown."
 
-Chapter - Roland
+Volume - Roland
 
 Making-Roland-Female is an action out of world.
 Making-Roland-Male is an action out of world.
@@ -657,7 +662,7 @@ Understand "woman" or "fiancee" or "princess" or "bride" or  "rolande" as Roland
        
 The Jerk is a person in the Cave Interior.
 The printed name is "[if Roland is male]Roland[otherwise]Rolande".
-The description is "[Roland] is the most attractive [gender] you have ever laid eyes on. Too bad [subjective]'s also the biggest jerk you've ever met![end if]"
+The description is "[Roland] is the most attractive [gender] you have ever laid eyes on. Too bad [subjective]'s also the biggest jerk you've ever met!".
 Understand "man" or "prince" or "roland" as the Jerk when Roland is male.
 Understand "woman" or "princess" or "rolande" as the Jerk when Roland is female.
 Understand "bum" or "toad" as the Jerk.
@@ -671,7 +676,7 @@ To say objective: say "[if Roland is male]him[otherwise]her".
 To say possessive: say "[if Roland is male]his[otherwise]her".
 To say reflexive: say "[objective]self".
 
-Chapter - Dragon
+Volume - Dragon
 
 An animal can be asleep or awake.
 An animal can be impatient or not impatient. An animal is usually not impatient.
@@ -683,9 +688,9 @@ The wings are part of the dragon. The description is "Even furled, the wings nea
 
 Understand "snout" and "nose" and "scales" and "tail" and "claws" and "smoke" as dragon.
 
-Part - Scenes
+Volume - Scenes
 
-Chapter - Wedding Ceremony
+Book - Wedding Ceremony
 
 Wedding Ceremony is a scene.
 
@@ -731,7 +736,7 @@ Decision Making is a scene.
 
 Decision Making begins when the number of filled rows in the Table of Priestly Ramblings is 0.
 Decision Making ends when the dragon is in the Garden for the first time.
-*
+
 default response for the player:
 say "They say talking to oneself is a sign of genius. Or maybe that was madness. Is there really a difference?"
 
@@ -991,13 +996,7 @@ Instead of taking off the paper bag when the Jerk is in the location:
 say "You take off the bag, crumple it up and throw it at Roland.[paragraph break]";
 try shouting at Roland.
 
-Throwing it at is an action applying to two things.
-Understand "throw [something] at [something]" as throwing it at.
-
-Carry out throwing it at:
-    try attacking the second noun.
-
-Instead of throwing something at the Jerk.
+Instead of throwing something at the Jerk:
     say "You throw [the noun] at [Roland]. [Subjective] ducks, just barely.[paragraph break]";
     try shouting at the Jerk.
         
@@ -1015,7 +1014,7 @@ Understand the command "slap" as "attack".
 
 Understand the command "shove" as "push".
 
-Instead of pushing the Jerk.
+Instead of pushing the Jerk:
 say "You give [Roland] a hard shove![paragraph break]";
 try shouting at the Jerk.
 
@@ -1064,8 +1063,6 @@ Instead of swearing mildly when the Wedding Ceremony is happening:
 
 Chapter - Affection
 
-Understand "slap" as "attack".
-    
 Instead of attacking Roland when the Wedding Ceremony is happening:
 say "You would never attack [Roland]! Except possibly with kisses."
 
@@ -1125,19 +1122,19 @@ Understand "plugh" or "say plugh" as casting plugh.
 The necklace is a wearable thing. The description is "A heart-shaped pendant on a gold chain[if the necklace is lit]. It is glowing with a soft white light[end if]." Understand "chain" and "heart" and "pendant" as necklace. Understand "light" as necklace when the necklace is lit.
 
 Instead of casting XYZZY:
-    if the Wedding Ceremony is happening and the player does not enclose the necklace:
-    	say "POOF! Your fairy godmother appears. [run paragraph on]";
+	if the Wedding Ceremony is happening and the player does not enclose the necklace:
+		say "POOF! Your fairy godmother appears. [run paragraph on]";
 		say "She smiles at you and places [a necklace] around your neck. Then she fades out of view.";
-		now the player wears the necklace.
-    otherwise:
-        say "Nothing happens." [TODO]
+		now the player wears the necklace;
+	otherwise:
+		say "Nothing happens." [TODO]
 
 Instead of casting PLUGH:
-    if the Wedding Ceremony has ended and the player does not enclose the necklace and the vial has not been handled:
-    	say "POOF! Your fairy godmother appears. [run paragraph on]";
-        say "'Tsk,' she says. 'Poor girl. I'm not sure I can help you with this one.' She pauses and rummages around in her pockets, pulling out [a vial]. She hands it to you. 'This is the best I can do. Use it wisely.' Then she vanishes, as quickly as she appeared.";
+	if the Wedding Ceremony has ended and the player does not enclose the necklace and the vial has not been handled:
+		say "POOF! Your fairy godmother appears. [run paragraph on]";
+		say "'Tsk,' she says. 'Poor girl. I'm not sure I can help you with this one.' She pauses and rummages around in her pockets, pulling out [a vial]. She hands it to you. 'This is the best I can do. Use it wisely.' Then she vanishes, as quickly as she appeared.";
 		move the vial to the player;
-    otherwise if the player encloses the necklace:
+	otherwise if the player encloses the necklace:
 		if the necklace is lit:
 			say "[The necklace] abruptly stops glowing.";
 			now the necklace is not lit;
@@ -1162,7 +1159,7 @@ After dropping the vial:
 Chapter - Other
 
 Instead of going nowhere from the Garden:
-"You're not sure you actually want to get married. How well do you even know [Roland]? You hand your bouquet to the nearest guest and walk off.";
+say "You're not sure you actually want to get married. How well do you even know [Roland]? You hand your bouquet to the nearest guest and walk off.";
 end the game saying "And they didn't get married after all!"
 
 Instead of singing:
@@ -1216,7 +1213,7 @@ Instead of drinking the vial:
 try drinking the oil.
 
 Before pouring the oil onto something:
-if the vial is not open, open the vial.
+if the vial is not open, try silently opening the vial.
 
 Instead of pouring the vial onto something:
 try pouring the oil onto the second noun.
@@ -1246,7 +1243,7 @@ Instead of pouring the oil onto something:
 	otherwise if the second noun is the oil or the second noun is the vial:
 		say "It is rather difficult to pour something on itself.";
 	otherwise if the second noun is the branch:
-		say "The oil drips right off the branch. Maybe if you wrapped something around the branch first."
+		say "The oil drips right off the branch. Maybe if you wrapped something around the branch first.";
 	otherwise if the second noun is the player:
 		say "Ew. You really don't want that all over your skin.";
 	otherwise if the second noun is the embers:
@@ -1305,7 +1302,7 @@ say "You sit down and have a good cry. It makes you feel better."
 Instead of crying when the Wedding Ceremony is happening:
 say "You're suddenly overcome with emotion. You dab at your eyes with the end of the ribbon on your bouquet."
 
-default response for minister:
+default response for Father Alfred:
   say "[father alfred] smiles kindly at you and continues the ceremony."
   
 Instead of asking Roland to try doing anything during Wedding Ceremony:
@@ -1353,6 +1350,8 @@ say "You grit your teeth and force yourself to smile at [Roland]."
 Rule for amusing a victorious player:
 say "[LINE BREAK]Have you tried...[LINE BREAK]- casting xyzzy during the wedding ceremony?[LINE BREAK]- marrying another princess?[LINE BREAK]- not getting married?[LINE BREAK]- singing? (You might find it quite soothing.)[LINE BREAK]- dying? (Not particularly soothing, to anyone involved.)"
 
+Volume - Testing
+    
 test wedding with "z/z/z/z/z/yes".
 test ruins with "search rubble/take bag/make dress/n".
 test burnt with "x trail/take branch/x tree/plugh".
