@@ -1,0 +1,1667 @@
+
+
+
+
+This is the day you've always dreamed of. You are finally marrying the love of your life, Prince Roland.
+
+
+Castle Garden
+You are standing in the garden behind your family's castle. On this lovely fall evening, it is doing double duty as a wedding chapel.
+
+Your betrothed, Roland, stands before you.
+
+You can also see Father Alfred here.
+
+>kiss Father Alfred
+Keep your mind on the game.
+
+Father Alfred begins the ceremony, "We are gathered here today to witness the joining of two hearts." Roland smiles shyly at you.
+
+>hold Roland's hand
+I only understood you as far as wanting to hold Roland.
+
+>hold Roland
+To be your lawfully wedded husband? Yes, Elizabeth. Be patient.
+
+"If anyone has a reason why these two should not be wed, speak now or forever hold your peace." You hold your breath for a second, wondering whether anyone will speak up. Fortunately, nobody does and you relax.
+
+>kiss roland
+You'll have your chance soon enough!
+
+"Who gives this woman--" You glare icily at the minister. You are nobody's property. "Ahem. Moving on," says the minister, visibly flustered. Roland looks at you questioningly, but says nothing.
+
+>kiss roland
+You'll have your chance soon enough!
+
+"Love is a wonderful thing." And so on. You're too excited to pay attention to every word.
+
+>smile
+You smile happily.
+
+"Elizabeth, do you take Roland to be your husband?"
+
+>yes
+Of course you do!
+
+The minister smiles at you and turns to Roland. "And, Roland, do you take Elizabeth to be your wife?"
+
+Roland grins at you and exclaims, "I do!"
+
+"I now pronounce you man and... dragon?!?" The minister's eyes go wide, seconds before he is incinerated by a burst of flame.
+
+A large dragon flies overhead. The wedding guests scatter in every direction. You cower against Roland, but he pushes you towards the dragon and runs towards the road.
+
+The dragon eats all the guests it can catch, and when it has had its fill, it smashes your castle to smithereens with its heavy tail and sets the remains on fire. You are nearly caught in a blaze of flame as you duck behind what used to be the stone wall of the garden. You are unhurt, but your fine gown snags on a rose bush and tears.
+
+As the dragon finally turns to go, it catches sight of Roland, running down the road towards the river. It swoops down and smashes the bridge just as Roland is about to cross it and catches him up in its claws. The dragon flies away with your beloved prince.
+
+
+Please press SPACE to continue.
+<space>
+
+
+The Paper Bag Princess
+An interactive fairy tale by Adri
+Release 1 / Serial number 131007 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) 
+
+Castle Ruins
+This used to be your home. Now it is nothing more than a smoking pile of rubble. The smoke obscures your view of the stars, and the primary source of light is the burning remains of your furniture.
+
+The only road away from the castle now ends abruptly at the river bank. The forest surrounds you thickly on all sides, except for an area to the north where the trees have been broken and scorched.
+
+>Walk north
+Perhaps you should find something more substantial to wear first.
+
+>Find clothes
+You can't see any such thing.
+
+>Find paper bag
+You can't see any such thing.
+
+>Wear something
+(first taking the glimpse of something colorful)
+You dig through the piles of rubble until you find a paper bag.
+
+>Put on paper bag
+You take the paper bag.
+
+You quickly fashion a dress out of the gift bag. It's not as fancy as you're used to, but it'll get the job done.
+
+You strip off the remains of your wedding gown.
+
+You slip the makeshift dress over your head and pull it down past your hips.
+
+>walk north
+
+Burnt Forest
+There's a trail of burned trees and what appear to be teeth leading to the northeast. One tree in particular catches your eye.
+
+>look at tree
+You examine the tree more closely. Someone has carved "PLUGH" into the trunk.
+
+There is a large branch propped up against the base of the tree.
+
+>climb tree
+You have always been a great climber, but there is no time for that.
+
+>walk north
+The trees are impassable in that direction. The trail seems to be leading northeast.
+
+>follow trail
+That's not a verb I recognize.
+
+>walk northeast
+The woods seem pretty dark. Maybe you should find a light source.
+
+>get flashlight
+You can't see any such thing.
+
+>use branch for torch
+That's not a verb I recognize.
+
+>pick up branch
+You take the branch.
+
+>light branch on fire
+I only understood you as far as wanting to light the branch.
+
+>make fire
+I didn't understand that sentence.
+
+>set branch on fire
+Not quite, but you seem to be on the right track.
+
+>use branch as torch
+That's not a verb I recognize.
+
+>sleep under tree
+I only understood you as far as wanting to sleep.
+
+>sleep
+You aren't feeling especially drowsy.
+
+>walk northeast
+The woods seem pretty dark. Maybe you should find a light source.
+
+>Find a light source
+You can't see any such thing.
+
+>make a fire
+I didn't understand that sentence.
+
+>fire
+That's not a verb I recognize.
+
+>set branch on fire
+Not quite, but you seem to be on the right track.
+
+>light branch
+Not quite, but you seem to be on the right track.
+
+>burn branch
+Not quite, but you seem to be on the right track.
+
+>fire branch
+That's not a verb I recognize.
+
+>throw branch
+You drop the branch.
+
+>walk northeast
+The woods seem pretty dark. Maybe you should find a light source.
+
+>pick up branch
+You take the branch.
+
+>throw branch
+You drop the branch.
+
+>set branch on fire
+Not quite, but you seem to be on the right track.
+
+>light branch
+Not quite, but you seem to be on the right track.
+
+>burn branch
+Not quite, but you seem to be on the right track.
+
+>fire branch
+That's not a verb I recognize.
+
+>hold branch
+You take the branch.
+
+>drop branch
+You drop the branch.
+
+>kill branch
+Violence isn't the answer to this one.
+
+>make fire
+I didn't understand that sentence.
+
+>light a fire
+You can't see any such thing.
+
+>get matches
+You can't see any such thing.
+
+>get lighter
+You can't see any such thing.
+
+>what can I do
+That's not a verb I recognize.
+
+>help
+ > About "The Paper Bag Princess"
+   How to Play
+   Walkthrough
+<enter>
+
+Princess Elizabeth is about to marry the love of her life when a dragon attacks the castle and kidnaps her betrothed.
+
+The Paper Bag Princess is loosely based upon the book of the same name by Robert Munsch. Permission to write the game was requested from and granted by Mister Munsch himself.
+
+The cover art of Elizabeth was graciously provided by Stacey, aka "iduck" on deviantART.
+
+Thank you so much to my beta testers: Brendan Desilets, Dan Shiovitz, Dan Kelly, David Sturgis, Doug Orleans, Emily Boegheim, Jason McIntosh, Johnny Rivera, Kevin Jackson-Mead, Matthew Miller, Scott Snyder and Z Goddard. Post-release feedback from Adam Myers, Andrew Schultz, E Joyce, Felix Plesoianu and Victor Gijsbers was also particularly helpful to me.
+
+
+The author can be contacted at <genericgeekgirl@gmail.com>.
+
+
+
+
+Please press SPACE to continue.
+<space>
+ > About "The Paper Bag Princess"
+   How to Play
+   Walkthrough
+ > About "The Paper Bag Princess"
+   How to Play
+   Walkthrough
+N
+
+   About "The Paper Bag Princess"
+ > How to Play
+   Walkthrough
+   About "The Paper Bag Princess"
+ > How to Play
+   Walkthrough
+<enter>
+
+ > About Interactive Fiction
+   What to do with >
+   Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+<enter>
+
+The game you are playing is a work of Interactive Fiction.  In interactive fiction you play the main character of a story.  You type commands which determine the actions of the character and the flow of the plot.  Some IF games include graphics, but most do not: the imagery is provided courtesy of your imagination.  On the other hand, there's a wide range of action available: whereas in other games you may be restricted to shooting, movement, or searching items you can click on with a mouse, IF allows you a wide range of verbs.
+
+
+
+Please press SPACE to continue.
+<space>
+ > About Interactive Fiction
+   What to do with >
+   Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+ > About Interactive Fiction
+   What to do with >
+   Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+N
+
+   About Interactive Fiction
+ > What to do with >
+   Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+   About Interactive Fiction
+ > What to do with >
+   Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+<enter>
+
+The > sign is where the game says, "Okay, what do you want to do now?"  You may respond by typing an instruction -- usually an imperative verb, possibly followed by prepositions and objects.  So, for instance, LOOK, LOOK AT FISH, TAKE FISH.
+
+
+
+Please press SPACE to continue.
+<space>
+   About Interactive Fiction
+ > What to do with >
+   Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+   About Interactive Fiction
+ > What to do with >
+   Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+N
+
+   About Interactive Fiction
+   What to do with >
+ > Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+   About Interactive Fiction
+   What to do with >
+ > Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+<enter>
+
+The first thing you want to do when starting a game is acquaint yourself with your surroundings and get a sense of your goal. To this end, you should read the introductory text carefully. Sometimes it contains clues. You will also want to look at the room you are in. Notice where the exits from the room are, and what objects are described here. If any of these seem interesting, you may want to EXAMINE them. 
+
+You might also want to examine yourself (EXAMINE ME) to see whether the author has left you any clues about your character. TAKE INVENTORY will tell you what you're carrying, as well.
+
+Once you've gotten your bearings, you may want to explore. Move from room to room, and check out every location available.
+
+
+
+Please press SPACE to continue.
+<space>
+   About Interactive Fiction
+   What to do with >
+ > Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+   About Interactive Fiction
+   What to do with >
+ > Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+N
+
+   About Interactive Fiction
+   What to do with >
+   Getting Started
+ > Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+   About Interactive Fiction
+   What to do with >
+   Getting Started
+ > Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+<enter>
+
+At any given time, you are in a specific location, or room. When you go into a room, the game will print a description of what you can see there. This description will contain two vital kinds of information: things in the room you can interact with or take, and a list of exits, or ways out. If you want to see the description again, you may just type LOOK. 
+
+When you want to leave a location and go to another one, you may communicate this to the game using compass directions: eg, GO NORTH. For simplicity's sake, you are allowed to omit the word GO, and to abbreviate the compass directions. So you may use NORTH, SOUTH, EAST, WEST, NORTHEAST, SOUTHEAST, NORTHWEST, SOUTHWEST, UP, and DOWN, or in short form N, S, E, W, NE, SE, NW, SW, U, and D.
+
+In some locations, IN and OUT will also be useful.
+
+
+
+Please press SPACE to continue.
+<space>
+   About Interactive Fiction
+   What to do with >
+   Getting Started
+ > Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+   About Interactive Fiction
+   What to do with >
+   Getting Started
+ > Rooms and Travel
+   Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+N
+
+   About Interactive Fiction
+   What to do with >
+   Getting Started
+   Rooms and Travel
+ > Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+   About Interactive Fiction
+   What to do with >
+   Getting Started
+   Rooms and Travel
+ > Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+<enter>
+
+Throughout the game there will be assorted objects that you can do things with. Most importantly, you may TAKE or GET items, and (when you are tired of them) DROP them again. INVENTORY (abbreviated I) will list the items you are currently holding. 
+
+There are usually assorted things you may do with these objects. OPEN, CLOSE, WEAR, EAT, LOCK, and UNLOCK are especially common.
+
+Occasionally, you will find that the game does not recognize the name of an object even though it has been described as being in the room with you. If this is the case, the object is just there for scenery, and you may assume that you do not need to interact with it.
+
+
+
+Please press SPACE to continue.
+<space>
+   About Interactive Fiction
+   What to do with >
+   Getting Started
+   Rooms and Travel
+ > Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+   About Interactive Fiction
+   What to do with >
+   Getting Started
+   Rooms and Travel
+ > Objects
+   Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+N
+
+   About Interactive Fiction
+   What to do with >
+   Getting Started
+   Rooms and Travel
+   Objects
+ > Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+   About Interactive Fiction
+   What to do with >
+   Getting Started
+   Rooms and Travel
+   Objects
+ > Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+<enter>
+
+There are a few simple commands for controlling the game itself. These are: 
+
+SAVE saves a snapshot of the game as it is now. 
+RESTORE puts the game back to a previous saved state. You may keep as many saved games as you like. 
+RESTART puts the game back to the way it was at the beginning. 
+QUIT ends the game.
+
+
+
+Please press SPACE to continue.
+<space>
+   About Interactive Fiction
+   What to do with >
+   Getting Started
+   Rooms and Travel
+   Objects
+ > Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+   About Interactive Fiction
+   What to do with >
+   Getting Started
+   Rooms and Travel
+   Objects
+ > Controlling the Game
+   How the World is Assembled
+   If You Get Stuck
+N
+
+   About Interactive Fiction
+   What to do with >
+   Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+ > How the World is Assembled
+   If You Get Stuck
+   About Interactive Fiction
+   What to do with >
+   Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+ > How the World is Assembled
+   If You Get Stuck
+<enter>
+
+ > Space
+   Containment
+   Types of Action
+   Other Characters
+<enter>
+
+Most IF games are set in a world made up of rooms without internal division. Movement between rooms is possible; movement within a room does not always amount to anything. >WALK OVER TO THE DESK is rarely a useful sort of command. On the other hand, if something is described as being high or out of reach, it is sometimes relevant to stand on an object to increase your height. This kind of activity tends to be important only if prompted by the game text.
+
+
+
+Please press SPACE to continue.
+<space>
+ > Space
+   Containment
+   Types of Action
+   Other Characters
+ > Space
+   Containment
+   Types of Action
+   Other Characters
+N
+
+   Space
+ > Containment
+   Types of Action
+   Other Characters
+   Space
+ > Containment
+   Types of Action
+   Other Characters
+<enter>
+
+One thing that IF does tend to model thoroughly is containment. Is something in or on something else? The game keeps track of this, and many puzzles have to do with where things are -- in the player's possession, lying on the floor of the room, on a table, in a box, etc.
+
+
+
+Please press SPACE to continue.
+<space>
+   Space
+ > Containment
+   Types of Action
+   Other Characters
+   Space
+ > Containment
+   Types of Action
+   Other Characters
+N
+
+   Space
+   Containment
+ > Types of Action
+   Other Characters
+   Space
+   Containment
+ > Types of Action
+   Other Characters
+<enter>
+
+Most of the actions you can perform in the world of IF are brief and specific. >WALK WEST or >OPEN DOOR are likely to be provided. >TAKE A JOURNEY or >BUILD A TABLE are not. Things like >GO TO THE HOTEL are on the borderline: some games allow them, but most do not. In general, abstract, multi-stage behavior usually has to be broken down in order for the game to understand it. 
+
+
+
+Please press SPACE to continue.
+<space>
+   Space
+   Containment
+ > Types of Action
+   Other Characters
+   Space
+   Containment
+ > Types of Action
+   Other Characters
+N
+
+   Space
+   Containment
+   Types of Action
+ > Other Characters
+   Space
+   Containment
+   Types of Action
+ > Other Characters
+<enter>
+
+Other characters in IF games are sometimes rather limited. On the other hand, there are also games in which character interaction is the main point of the game. You should be able to get a feel early on for the characters -- if they seem to respond to a lot of questions, remember what they're told, move around on their own, etc., then they may be fairly important. If they have a lot of stock responses and don't seem to have been the game designer's main concern, then they are most likely present either as local color or to provide the solution to a specific puzzle or set of puzzles. Characters in very puzzle-oriented games often have to be bribed, threatened, or cajoled into doing something that the player cannot do -- giving up a piece of information or an object, reaching something high, allowing the player into a restricted area, and so on.
+
+
+
+Please press SPACE to continue.
+<space>
+   Space
+   Containment
+   Types of Action
+ > Other Characters
+   Space
+   Containment
+   Types of Action
+ > Other Characters
+<enter>
+
+Other characters in IF games are sometimes rather limited. On the other hand, there are also games in which character interaction is the main point of the game. You should be able to get a feel early on for the characters -- if they seem to respond to a lot of questions, remember what they're told, move around on their own, etc., then they may be fairly important. If they have a lot of stock responses and don't seem to have been the game designer's main concern, then they are most likely present either as local color or to provide the solution to a specific puzzle or set of puzzles. Characters in very puzzle-oriented games often have to be bribed, threatened, or cajoled into doing something that the player cannot do -- giving up a piece of information or an object, reaching something high, allowing the player into a restricted area, and so on.
+
+
+
+Please press SPACE to continue.
+<space>
+   Space
+   Containment
+   Types of Action
+ > Other Characters
+   Space
+   Containment
+   Types of Action
+ > Other Characters
+Q
+
+   About Interactive Fiction
+   What to do with >
+   Getting Started
+   Rooms and Travel
+   Objects
+   Controlling the Game
+ > How the World is Assembled
+   If You Get Stuck
+Q
+
+   About "The Paper Bag Princess"
+ > How to Play
+   Walkthrough
+N
+
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+<enter>
+
+This is only one solution to the game, resulting in the "traditional" ending.
+
+wait
+wait
+wait
+wait
+wait
+yes
+press space
+search rubble
+take bag
+make dress
+north
+x trail
+take branch
+x tree
+plugh
+make torch
+open vial
+pour oil on torch
+south
+light torch
+north
+northeast
+go in any direction until you reach the cave
+knock on door
+again
+shout
+ask dragon about fire
+y
+y
+ask dragon about flight
+y
+in
+shout at roland
+
+
+
+Please press SPACE to continue.
+<space>
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+Q
+
+Burnt Forest
+There's a trail of burned trees and what appear to be teeth leading to the northeast. One tree in particular catches your eye.
+
+You can see a branch here.
+
+>make torch
+How do you plan to do that?
+
+>light fire
+You can't see any such thing.
+
+>make torch with branch
+I only understood you as far as wanting to make torch.
+
+>make torch
+How do you plan to do that?
+
+>burn stick
+Not quite, but you seem to be on the right track.
+
+>examine
+What do you want to examine?
+
+>examine branch
+It's a large branch. It looks pretty sturdy.
+
+>make fire
+I didn't understand that sentence.
+
+>help
+ > About "The Paper Bag Princess"
+   How to Play
+   Walkthrough
+(
+
+   About "The Paper Bag Princess"
+ > How to Play
+   Walkthrough
+   About "The Paper Bag Princess"
+ > How to Play
+   Walkthrough
+(
+
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+<enter>
+
+This is only one solution to the game, resulting in the "traditional" ending.
+
+wait
+wait
+wait
+wait
+wait
+yes
+press space
+search rubble
+take bag
+make dress
+north
+x trail
+take branch
+x tree
+plugh
+make torch
+open vial
+pour oil on torch
+south
+light torch
+north
+northeast
+go in any direction until you reach the cave
+knock on door
+again
+shout
+ask dragon about fire
+y
+y
+ask dragon about flight
+y
+in
+shout at roland
+
+
+
+Please press SPACE to continue.
+<space>
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+Q
+
+Burnt Forest
+There's a trail of burned trees and what appear to be teeth leading to the northeast. One tree in particular catches your eye.
+
+You can see a branch here.
+
+>inventory
+You are carrying a handful of rags.
+
+>help
+ > About "The Paper Bag Princess"
+   How to Play
+   Walkthrough
+(
+
+   About "The Paper Bag Princess"
+ > How to Play
+   Walkthrough
+   About "The Paper Bag Princess"
+ > How to Play
+   Walkthrough
+(
+
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+<enter>
+
+This is only one solution to the game, resulting in the "traditional" ending.
+
+wait
+wait
+wait
+wait
+wait
+yes
+press space
+search rubble
+take bag
+make dress
+north
+x trail
+take branch
+x tree
+plugh
+make torch
+open vial
+pour oil on torch
+south
+light torch
+north
+northeast
+go in any direction until you reach the cave
+knock on door
+again
+shout
+ask dragon about fire
+y
+y
+ask dragon about flight
+y
+in
+shout at roland
+
+
+
+Please press SPACE to continue.
+<space>
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+Q
+
+Burnt Forest
+There's a trail of burned trees and what appear to be teeth leading to the northeast. One tree in particular catches your eye.
+
+You can see a branch here.
+
+>x tree
+You examine the tree more closely. Someone has carved "PLUGH" into the trunk.
+
+>plugh
+POOF! Your fairy godmother appears. "Tsk," she says. "Poor girl. I'm not sure I can help you with this one." She pauses and rummages around in her pockets, pulling out a vial. She hands it to you. "This is the best I can do. Use it wisely." Then she vanishes, as quickly as she appeared.
+
+>open vial
+You open the vial.
+
+>smell vial
+It's pretty foul-smelling.
+
+>x vial
+In the vial is an oily black liquid.
+
+>make fire
+I didn't understand that sentence.
+
+>pour oil on branch
+Not quite, but you seem to be on the right track.
+
+>oil on branch
+That's not a verb I recognize.
+
+>oil the branch
+That's not a verb I recognize.
+
+>light oily branch on fire
+You can't see any such thing.
+
+>help
+ > About "The Paper Bag Princess"
+   How to Play
+   Walkthrough
+(
+
+   About "The Paper Bag Princess"
+ > How to Play
+   Walkthrough
+   About "The Paper Bag Princess"
+ > How to Play
+   Walkthrough
+(
+
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+<enter>
+
+This is only one solution to the game, resulting in the "traditional" ending.
+
+wait
+wait
+wait
+wait
+wait
+yes
+press space
+search rubble
+take bag
+make dress
+north
+x trail
+take branch
+x tree
+plugh
+make torch
+open vial
+pour oil on torch
+south
+light torch
+north
+northeast
+go in any direction until you reach the cave
+knock on door
+again
+shout
+ask dragon about fire
+y
+y
+ask dragon about flight
+y
+in
+shout at roland
+
+
+
+Please press SPACE to continue.
+<space>
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+Q
+
+Burnt Forest
+There's a trail of burned trees and what appear to be teeth leading to the northeast. One tree in particular catches your eye.
+
+You can see a branch here.
+
+>make torch
+How do you plan to do that?
+
+>pour oil on torch
+You can't see any such thing.
+
+>vial
+That's not a verb I recognize.
+
+>x vial
+In the vial is an oily black liquid.
+
+>pour oil on torch
+You can't see any such thing.
+
+>open vial
+That's already open.
+
+>close vial
+You close the vial.
+
+>open vial
+You open the vial.
+
+>pour vial on torch
+You can't see any such thing.
+
+>make torch
+How do you plan to do that?
+
+>pour vial on branch
+Not quite, but you seem to be on the right track.
+
+>help
+ > About "The Paper Bag Princess"
+   How to Play
+   Walkthrough
+(
+
+   About "The Paper Bag Princess"
+ > How to Play
+   Walkthrough
+   About "The Paper Bag Princess"
+ > How to Play
+   Walkthrough
+(
+
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+<enter>
+
+This is only one solution to the game, resulting in the "traditional" ending.
+
+wait
+wait
+wait
+wait
+wait
+yes
+press space
+search rubble
+take bag
+make dress
+north
+x trail
+take branch
+x tree
+plugh
+make torch
+open vial
+pour oil on torch
+south
+light torch
+north
+northeast
+go in any direction until you reach the cave
+knock on door
+again
+shout
+ask dragon about fire
+y
+y
+ask dragon about flight
+y
+in
+shout at roland
+
+
+
+Please press SPACE to continue.
+<space>
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+Q
+
+Burnt Forest
+There's a trail of burned trees and what appear to be teeth leading to the northeast. One tree in particular catches your eye.
+
+You can see a branch here.
+
+>pour oil on torch
+You can't see any such thing.
+
+>pour oil
+What do you want to pour the oily black liquid on?
+
+>on torch
+You can't see any such thing.
+
+>pour oil
+What do you want to pour the oily black liquid on?
+
+>on branch
+You can't see any such thing.
+
+>drop branch
+The branch is already here.
+
+>inventory
+You are carrying a vial and a handful of rags.
+
+>pick up branch
+You take the branch.
+
+>pour oil
+What do you want to pour the oily black liquid on?
+
+>on branch
+You can't see any such thing.
+
+>put down branch
+You drop the branch.
+
+>pour oil
+What do you want to pour the oily black liquid on?
+
+>on branch
+You can't see any such thing.
+
+>pour oil on branch
+Not quite, but you seem to be on the right track.
+
+>pour oil on torch
+You can't see any such thing.
+
+>branch is torch
+That's not a verb I recognize.
+
+>help
+ > About "The Paper Bag Princess"
+   How to Play
+   Walkthrough
+(
+
+   About "The Paper Bag Princess"
+ > How to Play
+   Walkthrough
+   About "The Paper Bag Princess"
+ > How to Play
+   Walkthrough
+(
+
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+<enter>
+
+This is only one solution to the game, resulting in the "traditional" ending.
+
+wait
+wait
+wait
+wait
+wait
+yes
+press space
+search rubble
+take bag
+make dress
+north
+x trail
+take branch
+x tree
+plugh
+make torch
+open vial
+pour oil on torch
+south
+light torch
+north
+northeast
+go in any direction until you reach the cave
+knock on door
+again
+shout
+ask dragon about fire
+y
+y
+ask dragon about flight
+y
+in
+shout at roland
+
+
+
+Please press SPACE to continue.
+<space>
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+Q
+
+Burnt Forest
+There's a trail of burned trees and what appear to be teeth leading to the northeast. One tree in particular catches your eye.
+
+You can see a branch here.
+
+>south
+
+Castle Ruins
+This used to be your home. Now it is nothing more than a smoking pile of rubble. The smoke obscures your view of the stars, and the primary source of light is the burning remains of your furniture.
+
+The only road away from the castle now ends abruptly at the river bank. The forest surrounds you thickly on all sides, except for an area to the north where the trees have been broken and scorched.
+
+>examine rubble
+These piles of stones and wood used to be your home.
+
+>inventory
+You are carrying a vial and a handful of rags.
+
+>north
+
+Burnt Forest
+There's a trail of burned trees and what appear to be teeth leading to the northeast. One tree in particular catches your eye.
+
+You can see a branch here.
+
+>plugh
+You hear a faint sound in the distance. Help does not arrive.
+
+>pick up branch
+You take the branch.
+
+>south
+
+Castle Ruins
+This used to be your home. Now it is nothing more than a smoking pile of rubble. The smoke obscures your view of the stars, and the primary source of light is the burning remains of your furniture.
+
+The only road away from the castle now ends abruptly at the river bank. The forest surrounds you thickly on all sides, except for an area to the north where the trees have been broken and scorched.
+
+>pour oil on branch
+Not quite, but you seem to be on the right track.
+
+>close vial
+You close the vial.
+
+>inventory
+You are carrying a branch, a vial (closed), and a handful of rags.
+
+>help
+ > About "The Paper Bag Princess"
+   How to Play
+   Walkthrough
+(
+
+   About "The Paper Bag Princess"
+ > How to Play
+   Walkthrough
+   About "The Paper Bag Princess"
+ > How to Play
+   Walkthrough
+(
+
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+<enter>
+
+This is only one solution to the game, resulting in the "traditional" ending.
+
+wait
+wait
+wait
+wait
+wait
+yes
+press space
+search rubble
+take bag
+make dress
+north
+x trail
+take branch
+x tree
+plugh
+make torch
+open vial
+pour oil on torch
+south
+light torch
+north
+northeast
+go in any direction until you reach the cave
+knock on door
+again
+shout
+ask dragon about fire
+y
+y
+ask dragon about flight
+y
+in
+shout at roland
+
+
+
+Please press SPACE to continue.
+<space>
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+Q
+
+Castle Ruins
+This used to be your home. Now it is nothing more than a smoking pile of rubble. The smoke obscures your view of the stars, and the primary source of light is the burning remains of your furniture.
+
+The only road away from the castle now ends abruptly at the river bank. The forest surrounds you thickly on all sides, except for an area to the north where the trees have been broken and scorched.
+
+>make torch
+You fashion a torch from the branch and the remains of your wedding gown.
+
+>pour oil on torch
+The vial isn't open.
+
+>open vial
+You open the vial.
+
+>pour oil on torch
+You pour the oily black liquid onto the torch and discard the empty vial.
+
+>light torch
+You light the torch with the flames.
+
+>south
+The only possible path appears to be through the forest to the north.
+
+>north
+
+Burnt Forest
+There's a trail of burned trees and what appear to be teeth leading to the northeast. One tree in particular catches your eye.
+
+>northeast
+
+Dimly Lit Forest
+You feel as if you are in a giant maze of twisty trees.
+
+>go
+You'll have to say which compass direction to go in.
+
+>ne
+
+Dimly Lit Forest
+You feel as if you are in a giant twisty maze of trees.
+
+>ne
+
+Dimly Lit Forest
+You feel as if you are in a giant maze of twisty trees.
+
+>ne
+
+Dimly Lit Forest
+You feel as if you are in a maze of giant twisty trees.
+
+>nw
+
+Dimly Lit Forest
+You feel as if you are in a maze of giant twisty trees.
+
+>sw
+You somehow sense that you have reached the very center of the forest.
+
+Dimly Lit Forest
+You feel as if you are in a twisty giant maze of trees.
+
+>sw
+The torch starts to flicker. It will probably burn out soon.
+
+Dimly Lit Forest
+You feel as if you are in a giant twisty maze of trees.
+
+>n
+
+Dimly Lit Forest
+You feel as if you are in a maze of giant twisty trees.
+
+>n
+As you emerge from the forest, the torch suddenly fizzles out.
+
+Outside the Dragon's Cave
+You are standing before a large cave. The entrance has been blocked by a large wooden door.
+
+>x door
+The large door almost perfectly fills in the natural opening in the rock. There is a golden knocker in the shape of a dragon's tail about a foot above your head.
+
+>knock
+(the cave door)
+You grab the knocker and bang on the door.
+
+The door opens and the dragon sticks its nose through the opening. It says, "Well, a princess! I love to eat princesses, but I have already eaten a whole castle today. I am a very tired dragon. Come back tomorrow." 
+
+Then it slams the door in your face.
+
+>x door
+The large door almost perfectly fills in the natural opening in the rock. There is a golden knocker in the shape of a dragon's tail about a foot above your head.
+
+>knock
+(the cave door)
+You bang on the door again.
+
+The dragon sticks its nose out the door and says, "I am sure you are very delicious, but I am rather tired and stuffed. Please do come back tomorrow."
+
+This time, however, he does not immediately return to his cave.
+
+>punch dragon
+The dragon is much larger and stronger than you. Perhaps you can outwit it in some way.
+
+>climb on dragon
+You can't see any such thing.
+
+>talk to dragon
+"Wait!" you exclaim.
+
+Surprised, the dragon steps entirely out of the cave, nudging the door shut with its tail.
+
+You say, "Is it true that you are the fastest and fiercest dragon in the whole world?"
+
+"Yes," says the dragon. Boastful fellow, isn't he?
+
+>talk to dragon
+You say, "Is it true that you are the fastest and fiercest dragon in the whole world?"
+
+"Yes," says the dragon. Boastful fellow, isn't he?
+
+>talk to dragon
+Dragons are well known for breathing FIRE and their ability to FLY. Maybe you could try asking about one of those.
+
+>talk to dragon
+You say, "Is it true that you are the fastest and fiercest dragon in the whole world?"
+
+"Yes," says the dragon. Boastful fellow, isn't he?
+
+>talk to dragon
+You say, "Is it true that you are the fastest and fiercest dragon in the whole world?"
+
+"Yes," says the dragon. Boastful fellow, isn't he?
+
+>ask dragon if he can breath fire
+I didn't understand that sentence.
+
+>say "can you fly?
+(to the dragon)
+The dragon says, "I'm afraid I don't know anything about that."
+
+>
+I beg your pardon?
+
+>
+I beg your pardon?
+
+>say "Can you breath fire?"
+(to the dragon)
+The dragon says, "I'm afraid I don't know anything about that."
+
+>help
+ > About "The Paper Bag Princess"
+   How to Play
+   Walkthrough
+(
+
+   About "The Paper Bag Princess"
+ > How to Play
+   Walkthrough
+   About "The Paper Bag Princess"
+ > How to Play
+   Walkthrough
+(
+
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+<enter>
+
+This is only one solution to the game, resulting in the "traditional" ending.
+
+wait
+wait
+wait
+wait
+wait
+yes
+press space
+search rubble
+take bag
+make dress
+north
+x trail
+take branch
+x tree
+plugh
+make torch
+open vial
+pour oil on torch
+south
+light torch
+north
+northeast
+go in any direction until you reach the cave
+knock on door
+again
+shout
+ask dragon about fire
+y
+y
+ask dragon about flight
+y
+in
+shout at roland
+
+
+
+Please press SPACE to continue.
+<enter>
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+   About "The Paper Bag Princess"
+   How to Play
+ > Walkthrough
+Q
+
+Outside the Dragon's Cave
+You are standing before a large cave. The entrance has been blocked by a large wooden door.
+
+You can see a dragon here.
+
+>x dragon
+Up close, you realize this dragon isn't actually very large, only about fifteen cubits from the tip of its nose to the spiked end of its tail. Its wings are folded neatly at its sides, and a swirl of smoke escapes its nostrils.
+
+>ask dragon about fire
+"Is it true," you say, "that you can burn up ten forests with your fiery breath?"
+
+"Oh, yes," says the dragon, and it takes a huge, deep breath and breathes out so much fire that it burns up fifty forests.
+
+Were you impressed by that display? (Y/N)
+
+>Y
+yes
+"Fantastic!" you exclaim. "Do it again!"
+
+The dragon takes another huge breath and breathes out so much fire that it burns up one hundred forests.
+
+Wasn't that amazing? 
+
+>Y
+yes
+"Magnificent!" you shout. "Do it again!"
+
+The dragon takes another huge breath. But this time, nothing comes out.
+
+>
+I beg your pardon?
+
+>y
+That was a rhetorical question.
+
+>y
+That was a rhetorical question.
+
+>ask dragon about flight
+You say, "Dragon, is it true that you can fly around the world in just ten seconds?"
+
+"Why, yes," says the dragon, and it jumps up and flies around the world in just ten seconds. It seems very tired when it returns.
+
+Were you impressed by that display? 
+
+>Y
+yes
+"Fantastic!" you exclaim. "Do it again!"
+
+The dragon jumps up and flies around the whole world in just twenty seconds. When it returns, it flops down on the ground.
+
+The dragon is so tired that he falls fast asleep.
+
+>
+I beg your pardon?
+
+>y
+That was a rhetorical question.
+
+>kill dragon
+The dragon is harmless to you while asleep.
+
+>x dragon
+The dragon is finally asleep. You should rescue Roland and leave, before it wakes up.
+
+>rescue roland
+That's not a verb I recognize.
+
+>x door
+The large door almost perfectly fills in the natural opening in the rock. There is a golden knocker in the shape of a dragon's tail about a foot above your head.
+
+>go inside cave
+(first opening the cave door)
+You step over the dragon and open the door to the cave.
+
+The Dragon's Cave
+This is where the dragon lives. Piles of treasure fill the room, reflecting light in every direction.
+
+Your betrothed, Roland, stands before you.
+
+Roland looks at you and says, "Elizabeth, you are a mess! You smell like ashes, your hair is all tangled, and you are wearing a dirty paper bag. Come back when you are dressed like a real princess."
+
+>hug roland
+You're really not in the mood to do that.
+
+>leave
+"Roland," you say, "your clothes are really pretty, and your hair is very neat. You look like a real prince, but you are also a real toad."
+
+You turn around and walk out the door.
+
+
+
+    *** And Elizabeth lived happily ever after! ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
+> 
