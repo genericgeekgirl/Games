@@ -474,6 +474,8 @@ Instead of going when in darkness:
 		say "You stumble and cannot find your way."
 
 A Forest Room is a kind of Room. The printed name of a Forest Room is usually "Dimly Lit Forest". A Forest Room is usually dark. 
+A numerical forest room is a kind of Forest Room.
+An alphabetical forest room is a kind of Forest Room.
 
 The dark trees are scenery and a backdrop. They are plural-named. Instead of examining the dark trees, try looking.
 
@@ -491,29 +493,22 @@ Carry out being a jerk:
 say "Rocks fall. You die.";
 end the game saying "You have displeased the foxes."
     
-Forest1, Forest2, Forest3, Forest4, Forest5, Forest6, Forest7, Forest8, Forest9, Forest10, Forest11, Forest12, Forest13, Forest14, Forest15 and Forest16 are Forest Rooms.
- 
-[Forest1-5 connect in some order; other rooms are more "random", but strewn with trinkets. Cut down number of rooms to 9. They're not laid out in a grid.]
+Forest1, Forest2, Forest3, Forest4 and Forest5 are Numerical Forest Rooms.
+ForestA, ForestB, ForestC, ForestD and ForestE are Alphabetical Forest Rooms.
 
-[
-"It's an electric torch. The battery compartment is empty."
-"There is a flashlight here." TODO: maybe this is found if you search the rubble a second time.
-]
-    
-The mushrooms are a plural-named thing in Forest13. "There is a patch of mushrooms here." The description is "A patch of small white mushrooms with orange spots."
+Forest1 is west of Forest2.
+Forest2 is north of Forest3.
+Forest3 is northwest of Forest4.
+Forest4 is east of Forest5.
+Forest5 is south of Cave Exterior.
+
+The flashlight is a in ForestD. "There is an electric torch here." The description is "An electric torch. The battery compartment is empty."
+The mushrooms are a plural-named thing in ForestC. "There is a patch of mushrooms here." The description is "A patch of small white mushrooms with orange spots."
 Understand "pick [mushrooms]" as taking.
-The berries are a plural-named thing in Forest9. "There is a bush here covered with berries." Understand "bush" as berries. The description is "A bush covered in bright, red berries."
+The berries are a plural-named thing in ForestA. "There is a bush here covered with berries." Understand "bush" as berries. The description is "A bush covered in bright, red berries."
 Understand "pick [berries]" as taking.
-The ring is a wearable thing in Forest3. "There is a shiny ring here." The description is "A very pretty ring."
-The dagger is an unimplemented thing in Forest2. "There is a dagger here." The description is "A jeweled dagger. It looks very sharp."
-
-Path is a number that varies. Path is usually 0.
-Halfway is a number that varies. Halfway is usually 0.
-
-When play begins:
-let N be a random number between 7 and 14;
-increase path by N;
-increase halfway by N divided by 2.
+The ring is a wearable thing in ForestE. "There is a shiny ring here." The description is "A very pretty ring."
+The dagger is in ForestB. "There is a dagger here." The description is "A jeweled dagger. It looks very sharp."
 
 Instead of going up:
 say "You, unlike the dragons, are not able to fly."
@@ -521,32 +516,22 @@ say "You, unlike the dragons, are not able to fly."
 Instead of going down:
 say "There is nowhere to go in that direction."
 
-The last direction is a direction that varies.
-
-[TODO: completely need to redo the maze]
 Before going a direction (called way) when the location is a Forest Room:
-	if path is 0:
-		change the way exit of the location to Cave Exterior;
-		if the player carries the lit torch:
-			say "As you emerge from the forest, [the torch] suddenly fizzles out.";
-			now the torch is not lit;           
-		otherwise:
-			say "You finally emerge from the forest.";
-	otherwise:
-		if path is halfway:
-			say "You somehow sense that you have reached the very center of the forest.";
-		if path is 2 and the player carries the lit torch:
-			say "[The torch] starts to flicker. It will probably burn out soon.";
-		let the next location be a random Forest Room;
+	if the room way from the location is nothing:
+		let the next location be a random Alphabetical Forest Room;
 		change the way exit of the location to the next location;
-		let reverse be the opposite of the way;
-		change the reverse exit of the next location to the location;
-		if last direction is way:
-			increase path by 1;
-		otherwise if last direction is reverse:
-			increase path by 1;
-		now last direction is way;
-		decrease path by 1.
+		repeat with new-way running through directions:
+			change the new-way exit of the next location to the location.
+
+Before going north from Forest5:
+ 	if the player carries the lit torch:
+		say "As you emerge from the forest, [the torch] suddenly fizzles out.";
+		now the torch is not lit;           
+	otherwise:
+		say "You finally emerge from the forest.";
+
+Before going southeast from Forest3:
+	say "[The torch] starts to flicker. It will probably burn out soon.";                
 		
 Instead of casting xyzzy when the player does not enclose the necklace and the location is a forest room:
 	say "You sense that you are heading in the right direction."
@@ -775,9 +760,6 @@ Chapter - Wandering
 
 Wandering is a scene.
 Wandering begins when Wedding Ceremony ends. 
-
-when wandering begins:
-now last direction is north.
 
 Wandering ends when the Cave Exterior has been visited.
 

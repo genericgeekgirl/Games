@@ -1,16 +1,12 @@
 Debugging log of Inform 7
-<<<<<<< Updated upstream
-Inform called as: /usr/local/libexec/ni --rules /usr/local/share/inform7/Inform7/Extensions --extension=z8 --package /home/amills/Games/paper bag princess/IFComp.inform 
-=======
 Inform called as: /usr/local/libexec/ni --rules /usr/local/share/inform7/Inform7/Extensions --extension=z8 --package /home/adri/Games/Interactive Fiction/Adri/paper bag princess/IFComp.inform 
->>>>>>> Stashed changes
 
 
 -----------------------------------------------------
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 10136 words long.
+I've now read your source text, which is 10177 words long.
 
 
 -----------------------------------------------------
@@ -166,11 +162,7 @@ Providing for a total heap of 8192, given requirement of 8192
 Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
-<<<<<<< Updated upstream
 Total of 196 files written as streams.
-=======
-Total of 194 files written as streams.
->>>>>>> Stashed changes
 
 That concludes the debugging log from this run of Inform.
 Its contents were as follows, and can be changed by placing

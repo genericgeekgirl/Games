@@ -1,27 +1,18 @@
 ! Blurb file created by Inform build 6G60
 
-<<<<<<< Updated upstream
-status "/usr/local/share/inform7/Inform7/Extensions/Reserved/CblorbModel.html" "/home/amills/Games/paper bag princess/IFComp.inform/Build/StatusCblorb.html"
-=======
 status "/usr/local/share/inform7/Inform7/Extensions/Reserved/CblorbModel.html" "/home/adri/Games/Interactive Fiction/Adri/paper bag princess/IFComp.inform/Build/StatusCblorb.html"
->>>>>>> Stashed changes
 
 
 ! Identification
 
-project folder "/home/amills/Games/paper bag princess/IFComp.inform"
-release to "/home/amills/Games/paper bag princess/IFComp Materials/Release"
+project folder "/home/adri/Games/Interactive Fiction/Adri/paper bag princess/IFComp.inform"
+release to "/home/adri/Games/Interactive Fiction/Adri/paper bag princess/IFComp Materials/Release"
 
 ! Blorb instructions
 
 storyfile leafname "The Paper Bag Princess.zblorb"
-<<<<<<< Updated upstream
-storyfile "/home/amills/Games/paper bag princess/IFComp.inform/Build/output.z8" include
-ifiction "/home/amills/Games/paper bag princess/IFComp.inform/Metadata.iFiction" include
-=======
 storyfile "/home/adri/Games/Interactive Fiction/Adri/paper bag princess/IFComp.inform/Build/output.z8" include
 ifiction "/home/adri/Games/Interactive Fiction/Adri/paper bag princess/IFComp.inform/Metadata.iFiction" include
->>>>>>> Stashed changes
 cover "/usr/local/share/inform7/Inform7/Extensions/Reserved/DefaultCover.jpg"
 picture 1 "/usr/local/share/inform7/Inform7/Extensions/Reserved/DefaultCover.jpg"
 
