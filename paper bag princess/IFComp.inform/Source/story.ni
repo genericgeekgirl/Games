@@ -502,19 +502,22 @@ Forest3 is northwest of Forest4.
 Forest4 is east of Forest5.
 Forest5 is south of Cave Exterior.
 
-The flashlight is a in ForestD. "There is an electric torch here." The description is "An electric torch. The battery compartment is empty."
-The mushrooms are a plural-named thing in ForestC. "There is a patch of mushrooms here." The description is "A patch of small white mushrooms with orange spots."
-Understand "pick [mushrooms]" as taking.
 The berries are a plural-named thing in ForestA. "There is a bush here covered with berries." Understand "bush" as berries. The description is "A bush covered in bright, red berries."
 Understand "pick [berries]" as taking.
-The ring is a wearable thing in ForestE. "There is a shiny ring here." The description is "A very pretty ring."
 The dagger is in ForestB. "There is a dagger here." The description is "A jeweled dagger. It looks very sharp."
+The mushrooms are a plural-named thing in ForestC. "There is a patch of mushrooms here." The description is "A patch of small white mushrooms with orange spots."
+Understand "pick [mushrooms]" as taking.
+The flashlight is in ForestD. "There is a flashlight here." The description is "An electric torch. The battery compartment is empty."
+The ring is a wearable thing in ForestE. "There is a shiny ring here." The description is "A very pretty ring."
 
 Instead of going up:
 say "You, unlike the dragons, are not able to fly."
 
 Instead of going down:
 say "There is nowhere to go in that direction."
+
+Before going from an Alphabetical Forest Room:
+say "You seem to be walking in circles."
 
 Before going a direction (called way) when the location is a Forest Room:
 	if the room way from the location is nothing:
