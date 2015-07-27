@@ -11,7 +11,7 @@ The story description is "Princess Elizabeth is about to marry the love of her l
 
 Volume - Basic Setup
 
-Use no scoring. [TODO]
+Use no scoring.
 Use American dialect, full-length room descriptions, and the serial comma.
 
 Book - Extensions
@@ -46,8 +46,7 @@ To say author: say "The author can be contacted at <genericgeekgirl@gmail.com>."
 
 to say credits: say "[story title] is loosely based upon the book of the same name by Robert Munsch. Permission to write the game was requested from and granted by Mister Munsch himself.[paragraph break]Thank you so much to my beta testers: Brendan Desilets, Dan Shiovitz, Dan Kelly, David Sturgis, Doug Orleans, Emily Boegheim, Jason McIntosh, Johnny Rivera, Kevin Jackson-Mead, Matthew Miller, Scott Snyder and Z Goddard. Post-release feedback from Adam Myers, Andrew Schultz, E Joyce, Felix Plesoianu and Victor Gijsbers was also particularly helpful to me."
 
-[TODO: update this]
-To say walkthrough: say "This walkthrough results in the 'traditional' ending. [paragraph break]wait[line break]wait[line break]wait[line break]wait[line break]wait[line break]yes[line break]press space[line break]search rubble[line break]take bag[line break]make dress[line break]north[line break]x trail[line break]take branch[line break]x tree[line break]plugh[line break]make torch[line break]open vial[line break]pour oil on torch[line break]south[line break]light torch[line break]north[line break]northeast[line break]the maze is entirely random... sorry![line break]knock on door[line break]again[line break]shout[line break]ask dragon about fire[line break]y[line break]y[line break]ask dragon about flight[line break]y[line break]in[line break]shout at roland[paragraph break]Most puzzles have alternate solutions, and there are multiple endings to the game. Have fun exploring!".
+To say walkthrough: say "This walkthrough results in the 'traditional' ending. [paragraph break]wait[line break]wait[line break]wait[line break]wait[line break]wait[line break]yes[line break]press space[line break]search rubble[line break]take bag[line break]make dress[line break]north[line break]x trail[line break]take branch[line break]x tree[line break]plugh[line break]make torch[line break]open vial[line break]pour oil on torch[line break]south[line break]light torch[line break]north[line break]northeast[line break]east[line break]south[line break]southeast[line break]west[line break]north[line break]knock on door[line break]again[line break]shout[line break]ask dragon about fire[line break]y[line break]y[line break]ask dragon about flight[line break]y[line break]in[line break]shout at roland[paragraph break]Most puzzles have alternate solutions, and there are multiple endings to the game. Have fun exploring!".
 
 Book - Blocking superbrief/brief modes
 
@@ -183,12 +182,6 @@ Understand "castle" and "stones" as pile of rubble when the location is Castle R
 Understand "ruins" and "piles" and "home" and "brick" and "debris" and "remains" and "smoking pile" as pile of rubble.
 Understand "burning remains" as pile of rubble.
 
-[
-Instead of attacking the rubble
-Check wearing the rubble
-Instead of taking the rubble
-]
-
 Kicking is an action applying to one thing.
 Understand "kick [something]" as kicking.
 Carry out kicking:
@@ -196,16 +189,16 @@ Carry out kicking:
         
 Instead of kicking the pile of rubble:
 say "You kick at the rubble. Rocks fly off in various directions." 
-        
+
 Check entering the pile of rubble:
 try climbing the pile of rubble.
-        
-Check climbing the pile of rubble:
-say "You scramble to the top of the pile. Your foot slips and you fall back to the ground. Ouch!" instead.
 
-Understand "colourful" as glimpse of something colorful.
+Instead of climbing the pile of rubble:
+say "You scramble to the top of the pile. Your foot slips and you fall back to the ground. Ouch!".
+[TODO: How do I block "that's not something you can sit/stand on" response?]
 
 A glimpse of something colorful is scenery in the Castle Ruins. The description is "You can't quite make it out from here. Why don't you try digging through the rubble?"
+Understand "colourful" as glimpse of something colorful.
 
 Instead of taking the glimpse of something colorful:
 try searching the pile of rubble.
@@ -237,8 +230,8 @@ Understand "make a dress" or "make dress" as making a dress.
 Instead of making a dress when the wedding ceremony is happening:
 say "You already have a very fine wedding gown."
 
-Carry out making a dress:
-say "How do you intend to do that?"
+Instead of making a dress when the paper bag has been worn:
+say "You have already done that."
 
 After taking something:
 say "You take [the noun]."
@@ -288,6 +281,9 @@ try burning the noun.
 Instead of putting anything on the embers:
 try burning the noun.
 
+Instead of burning the handful of rags when the player is wearing the handful of rags:
+say "That seems like a really bad idea."
+
 Instead of burning the handful of rags:
     say "That seems dangerous. Maybe if you wrapped the rags around something first."
     
@@ -300,12 +296,10 @@ Instead of burning the branch:
 Instead of burning the torch:
 	if the torch is lit:
 		say "That is already on fire.";
-	otherwise if the oil is not part of the torch:
-		say "The torch catches fire, but then fizzles out almost immediately. Maybe you can add something else to the torch to make it more flammable?";
  	otherwise if the awake dragon is in the location:
 		say "You could probably ask the dragon to light it for you. But that seems like an altogether bad idea.";
-	otherwise if the embers are not in the location:
-		say "There is no source of fire here.";
+	otherwise if the oil is not part of the torch:
+		say "The torch catches fire, but then fizzles out almost immediately. Maybe you can add something else to the torch to make it more flammable?";
 	otherwise:
 		now the noun is lit; 
 		say "You light [the torch] with [the embers].".
@@ -315,6 +309,9 @@ Understand "burn [something] with [something]" as burning it with.
 Understand "light [something] with [something]" as burning it with.
 
 Understand "set [something] on fire" as burning.
+
+Instead of burning something when the embers are not in the location:
+say "There is no source of fire here."
 
 Instead of burning someone:
 	if the noun is the player:
@@ -479,8 +476,14 @@ An alphabetical forest room is a kind of Forest Room.
 
 The dark trees are scenery and a backdrop. They are plural-named. Instead of examining the dark trees, try looking.
 
+The other tree is scenery and a backdrop. Instead of examining the other tree, try looking.
+
+Instead of climbing the other tree:
+say "You can't reach any branches."
+
 When play begins:
-move the dark trees backdrop to all forest rooms.
+move the dark trees backdrop to all forest rooms;
+move the other tree backdrop to all forest rooms.
 
 The description of a Forest Room is "You feel as if you are in a [one of]giant maze of twisting trees[or]giant maze of twisty trees[or]giant twisty maze of trees[or]maze of giant twisting trees[or]maze of giant twisty trees[or]maze of twisting giant trees[or]maze of twisty giant trees[or]twisting giant maze of trees[or]twisting maze of giant trees[or]twisty giant maze of trees[or]twisty maze of giant trees[purely at random]."
 
@@ -502,6 +505,7 @@ Forest3 is northwest of Forest4.
 Forest4 is east of Forest5.
 Forest5 is south of Cave Exterior.
 
+[TODO!]
 The berries are a plural-named thing in ForestA. "There is a bush here covered with berries." Understand "bush" as berries. The description is "A bush covered in bright, red berries."
 Understand "pick [berries]" as taking.
 The dagger is in ForestB. "There is a dagger here." The description is "A jeweled dagger. It looks very sharp."
@@ -672,8 +676,10 @@ An animal can be friendly or not friendly. An animal is usually not friendly.
 The dragon is a neuter animal in the Cave Interior. The dragon is awake. The description is "Up close, you realize this dragon isn't actually very large, only about fifteen cubits from the tip of its nose to the spiked end of its tail.[if the player encloses a lit thing] Its green scales shimmer in the glow of your [random lit thing enclosed by player].[end if] Its wings are folded neatly at its sides, and a swirl of smoke escapes its nostrils.[if the dragon is asleep] The dragon is sleeping peacefully, with its tail curled around its snout.[end if]"
 
 The wings are part of the dragon. The description is "Even furled, the wings nearly double the size of the dragon."
+The dragon smoke is part of the dragon. The description is "Black smoke swirls around the dragon's snout." Understand "snout" and "nose" as dragon smoke.
 
-Understand "snout" and "nose" and "scales" and "tail" and "claws" and "smoke" as dragon.
+[TODO]
+Understand "scales" and "tail" and "claws" as dragon.
 
 Volume - Scenes
 
@@ -852,7 +858,7 @@ After asking the awake dragon about a topic listed in the Table of Draconic Boas
 		say "[not-impressed]";
 	try asking the dragon about topic understood.
 
-To say wow: say "[one of]Were you impressed by that display[or]Wasn't that amazing[at random]? [first time](Y/N)[only][paragraph break]";
+To say wow: say "[one of]Were you impressed by that display[or]Wasn't that amazing[at random]? (Y/N)[paragraph break]";
 To say impressed: say "'[one of]Fantastic[or]Magnificent[cycling]!' you [one of]exclaim[or]shout[cycling]. 'Do it again!'[paragraph break]";
 To say not-impressed: say "Apparently it takes a lot to impress you! But you force yourself to look delighted as you shout, 'Do it again!'[paragraph break]";
 
@@ -869,6 +875,10 @@ Before asking the dragon to try eating something:
 say "The dragon says, 'Thank you for the offer, but I am not hungry right now.'"
               
 [TODO: differentiate between ask/tell, to add some more flavor text; also wedding, parents, etc; maybe ask about dragons, plural]
+
+Humming is an action applying to nothing.
+Understand "hum" as humming.
+Carry out humming: say "You quietly hum to yourself."
 
 Understand "sing to dragon" as singing when the dragon is in the location.
     
@@ -1038,9 +1048,25 @@ Understand the command "slay" as "attack".
 
 Part - Additional Actions
 
+Table of Ponderances
+topic	reply
+"Roland/Rolande"	"You smile dreamily as you think about your beloved."
+"love/wuv"	"Wuv, tru wuv, will fowow you foweva. So tweasure your wuv."
+
+Instead of thinking about a topic listed in the Table of Ponderances:
+say "[reply entry][line break]"
+
+Instead of thinking:
+try thinking about "Roland".
+
+Thinking about is an action applying to one topic.
+Understand "think about [text]" as thinking about.
+Carry out thinking about a text (called T):
+try thinking.
+
 Swimming is an action applying to nothing.
 
-Understand "swim" as swimming.
+Understand "swim" and "go swimming" as swimming.
 
 Carry out swimming:
 say "There is nothing here for you to swim in."
@@ -1067,6 +1093,12 @@ say "You would never attack [Roland]! Except possibly with kisses."
 [embrace, hug]
 Instead of kissing Roland when the Wedding Ceremony is happening:
 say "You'll have your chance soon enough!"
+
+Instead of kissing the player:
+say "Not right now, perhaps."
+
+Instead of kissing someone when the Wedding Ceremony is happening:
+say "There will be time for that later."
 
 [TODO: kissing/etc anyone who isn't Roland, including the Player]
 
@@ -1163,8 +1195,8 @@ end the game saying "And they didn't get married after all!"
 Instead of singing:
 say "You sing a few bars of a lullaby your mother used to sing to you."
 
-Instead of singing when the Wedding Ceremony is happening:
-say "There will be plenty of time to sing later."
+Instead of singing or humming when the Wedding Ceremony is happening:
+say "You're so happy you could literally burst into song. But you don't. Because there will be plenty of time for singing after the ceremony."
 
 Chapter - Liquids
 
@@ -1200,6 +1232,8 @@ Instead of taking the oil:
 say "You don't want to touch that with your bare hands."
 
 The oil is a fluid in the vial. The description is "A thick, black liquid that appears to be oil." Understand "liquid" and "oily black liquid" as oil. The printed name is "oily black liquid".
+
+Rule for deciding whether all includes the oil: it does not.
 
 Instead of tasting the vial:
 try drinking the vial.
@@ -1294,6 +1328,13 @@ say "You shuffle your feet unnoticeably underneath your floor-length gown."
 Crying is an action applying to nothing.
 Understand "cry" or "sob" or "wail" as crying.
 
+Pouting is an action applying to nothing.
+Understand "pout" as pouting.
+Carry out pouting: say "You pout sullenly."
+
+Instead of pouting when the Wedding Ceremony is happening:
+say "You stick your bottom lip out cutely. [Roland] smiles at you."
+
 Carry out crying:
 say "You sit down and have a good cry. It makes you feel better."
 
@@ -1357,8 +1398,7 @@ Volume - Testing
 test wedding with "z/z/z/z/z/yes".
 test ruins with "search rubble/take bag/make dress/n".
 test burnt with "x trail/take branch/x tree/plugh".
-test torch with "make torch/open vial/pour oil on torch/s/light torch".
-test maze with "n/ne/n/n/n/n/n/n/n/n/n/n/n/n/n/n/n/n/n/n/n/n/n".
+test torch with "make torch/pour vial on torch/s/light torch".
+test maze with "n/ne/e/s/se/w/n".
 test dragon with "knock on door/g".
 test me with "test wedding/test ruins/test burnt/test torch/test maze/test dragon".
-test alternate with "xyzzy/xyzzy/z/z/z/yes/test ruins/ne".

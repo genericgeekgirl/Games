@@ -6,7 +6,7 @@ Inform called as: /usr/local/libexec/ni --rules /usr/local/share/inform7/Inform7
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 10213 words long.
+I've now read your source text, which is 10487 words long.
 
 
 -----------------------------------------------------
@@ -162,7 +162,7 @@ Providing for a total heap of 8192, given requirement of 8192
 Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
-Total of 196 files written as streams.
+Total of 199 files written as streams.
 
 That concludes the debugging log from this run of Inform.
 Its contents were as follows, and can be changed by placing
