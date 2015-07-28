@@ -347,11 +347,10 @@ Instead of burning something with the lit necklace:
 Blowing out is an action applying to one thing.
 Understand "blow out [something]" or "extinguish [something]" or "put out [something]" as blowing out. Understand the command "snuff" as "extinguish".
 
-Instead of blowing out the torch when the location is a dark room:
-	say "That seems like a very bad idea."
-
-Instead of dropping the torch:
-say "You ought to hold on to that."
+Instead of dropping the lit torch:
+say "You drop the torch on the ground and the flame goes out.";
+now the torch is unlit;
+move the torch to the location.
 
 Carry out blowing out something:
 	if the noun is lit:
@@ -448,7 +447,7 @@ try combining the handful of rags with the branch.
 
 The branch is part of the tree. The description is "It's a large branch. It looks pretty sturdy." Understand "stick" as branch.
 
-Section - Forest Maze TODO
+Section - Forest Maze
 
 Instead of dropping something when in darkness:
 say "That's a great way to lose something."
@@ -498,7 +497,17 @@ When play begins:
 move the dark trees backdrop to all forest rooms;
 move the other tree backdrop to all forest rooms.
 
-The description of a Forest Room is "You feel as if you are in a [one of]giant maze of twisting trees[or]giant maze of twisty trees[or]giant twisty maze of trees[or]maze of giant twisting trees[or]maze of giant twisty trees[or]maze of twisting giant trees[or]maze of twisty giant trees[or]twisting giant maze of trees[or]twisting maze of giant trees[or]twisty giant maze of trees[or]twisty maze of giant trees[purely at random]."
+The description of Forest1 is "You feel as if you are in a giant maze of twisting trees."
+The description of Forest2 is "You feel as if you are in a giant maze of twisty trees."
+The description of Forest3 is "You feel as if you are in a giant twisty maze of trees."
+The description of Forest4 is "You feel as if you are in a maze of giant twisting trees."
+The description of Forest5 is "You feel as if you are in a maze of giant twisty trees."
+The description of ForestA is "You feel as if you are in a maze of twisting giant trees."
+The description of ForestB is "You feel as if you are in a maze of twisty giant trees."
+The description of ForestC is "You feel as if you are in a twisting giant maze of trees."
+The description of ForestD is "You feel as if you are in a twisting maze of giant trees."
+The description of ForestE is "You feel as if you are in a twisty giant maze of trees."
+[Extra: twisty maze of giant trees]
 
 Instead of listening when the location is a forest room:
     say "[one of]You listen intently, but you can hear nothing[or]As you pause to listen, something flies past your head[or]You can hear a fox screaming in the distance[or]You hear the occasional hoot of an owl on the hunt[cycling]."
@@ -514,18 +523,66 @@ ForestA, ForestB, ForestC, ForestD and ForestE are Alphabetical Forest Rooms.
 
 Forest1 is west of Forest2.
 Forest2 is north of Forest3.
-Forest3 is northwest of Forest4.
+Forest3 is north of Forest4.
 Forest4 is east of Forest5.
 Forest5 is south of Cave Exterior.
 
-[TODO!]
-The berries are a plural-named thing in ForestA. "There is a bush here covered with berries." Understand "bush" as berries. The description is "A bush covered in bright, red berries."
+The bush is scenery in ForestA. The description is "A bush covered in bright, red berries."
+The berries are a plural-named thing and part of the bush.
+The description is "[if the berries are enclosed by the player]A handful of bright, red berries.[otherwise]Clusters of bright, red berries.[end if]".
+
 Understand "pick [berries]" as taking.
-The dagger is in ForestB. "There is a dagger here." The description is "A jeweled dagger. It looks very sharp."
-The mushrooms are a plural-named thing in ForestC. "There is a patch of mushrooms here." The description is "A patch of small white mushrooms with orange spots."
+Instead of taking the berries:
+say "You pick a handful of berries.";
+move the berries to the player.
+[TODO: multiple handfuls of berries]
+
+Instead of eating the berries:
+say "You'd better not. They're probably poisonous."
+
+[TODO: give berries to dragon]
+[TODO: give mushrooms to dragon]
+
+The dagger is in ForestB. "There is a dagger here." The description is "A jeweled dagger. It doesn't look very sharp." Understand "blade" as dagger.
+The jewels are part of the dagger. The description is "The dagger is encrusted with emeralds and rubies."
+
+Cutting it with is an action applying to two things.
+Understand "cut [something] with [something]" as cutting it with.
+Carry out cutting it with:
+say "That isn't sharp enough to cut anything."
+
+Instead of cutting something with the dagger:
+say "The blade is purely ornamental."
+
+Instead of cutting the dragon with the dagger:
+say "The blade is purely ornamental. It could never cut through dragon scales."
+
+Instead of cutting something:
+say "How do you expect to do that without a blade?"
+
+Instead of cutting something when the dagger is enclosed by the player:
+try cutting the noun with the dagger.
+
+The mushrooms are a plural-named thing in ForestC. "[if the mushrooms have not been handled]There is a patch of mushrooms here." The description is "A patch of small white mushrooms with orange spots."
+
 Understand "pick [mushrooms]" as taking.
-The flashlight is in ForestD. "There is a flashlight here." The description is "An electric torch. The battery compartment is empty."
+Instead of taking the mushrooms:
+say "You pick every last mushroom.";
+move the mushrooms to the player.
+
+Instead of eating the mushrooms:
+say "You've never liked mushrooms, and you're not hungry enough to force yourself to eat these."
+
+The flashlight is a device in ForestD. "There is a flashlight here." The description is "An electric torch. The battery compartment is empty." Understand "electric torch" as flashlight.
+Understand "torch" as flashlight when the torch is not in the location.
+
+Instead of switching on the flashlight:
+say "You switch the flashlight on, but it doesn't work. You turn if off again, out of habit."
+
 The ring is a wearable thing in ForestE. "There is a shiny ring here." The description is "A very pretty ring."
+Instead of wearing the ring:
+say "As you slip the ring on your finger, it vanishes. You find yourself transported to a clearing.";
+move the player to the cave exterior.
 
 Instead of going up:
 say "You, unlike the dragons, are not able to fly."
@@ -541,7 +598,7 @@ Before going a direction (called way) when the location is a Forest Room:
 		let the next location be a random Alphabetical Forest Room;
 		change the way exit of the location to the next location;
 		repeat with new-way running through directions:
-			change the new-way exit of the next location to the location.
+			change the new-way exit of the next location to the location;
 
 Before going north from Forest5:
  	if the player carries the lit torch:
@@ -550,12 +607,15 @@ Before going north from Forest5:
 	otherwise:
 		say "You finally emerge from the forest.";
 
-Before going southeast from Forest3:
-	say "[The torch] starts to flicker. It will probably burn out soon.";                
-		
-Instead of casting xyzzy when the player does not enclose the necklace and the location is a forest room:
-	say "You sense that you are heading in the right direction."
+After going south from Forest2:
+	say "You seem to sense that you are going in the correct direction."                        
 
+Before going south from Forest3:
+	say "[The torch] starts to flicker. It will probably burn out soon.";                
+
+After going west from Forest4:
+	say "Yes, you are definitely heading in the right direction."
+        
 Chapter - Dragons Cave
 
 The Cave Exterior is a room. The printed name is "Outside the Dragon's Cave". "You are standing before a large cave. The entrance has been blocked by a large wooden door."
@@ -811,7 +871,7 @@ now the dragon is impatient;
 now the Cave Door is unlocked;
 move the dragon to the Cave Exterior.
 
-Instead of shouting when the dragon is in the location:
+Instead of shouting when the dragon is impatient:
 try shouting at the dragon.
 
 Before saying hello to the dragon when the dragon is impatient:
@@ -843,6 +903,7 @@ say "[The dragon] is blocking the doorway and will not allow you to pass."
 When Rescue ends:
 	say "The dragon is so tired that he falls fast asleep.";
 	now the dragon is asleep;
+        now the dragon is not impatient;
 	now the current interlocutor is nothing.
 	
 Instead of doing anything except attacking to an asleep animal:
@@ -854,11 +915,11 @@ say "[The noun] is much larger and stronger than you. Perhaps you can outwit it 
 Instead of attacking an asleep animal:
 say "[The noun] is harmless to you while asleep."
 
-Instead of saying hello to the dragon when the dragon is asleep:
-try shouting at the dragon.
-
 Instead of shouting at the dragon when the dragon is asleep:
-say "[one of]You whisper very softly, 'Hey, dragon.'[paragraph break]The dragon doesn't stir.[or]You lift the dragon's ear and put your head right inside. You shout as loudly as you can, 'Hey, dragon!'[paragraph break]The dragon doesn't react.[or]The dragon seems to be fast asleep. You could probably sneak right past it now.[stopping]"
+try saying hello to the dragon.
+
+Instead of saying hello to the dragon when the dragon is asleep:
+say "[one of]You whisper very softly, 'Hey, dragon.'[paragraph break]The dragon doesn't stir.[or]You lift the dragon's ear and put your head right inside. You shout as loudly as you can, 'Hey, dragon!'[paragraph break]The dragon doesn't react.[or]The dragon seems to be fast asleep. You could probably sneak right past it now.[stopping]".
 
 default give-show response for Dragon:
 say "The dragon sniffs at you and says dryly, 'That doesn't look edible. No thank you."
@@ -893,6 +954,7 @@ default ask-tell response for Dragon:
 Before asking the dragon to try eating something:
 say "The dragon says, 'Thank you for the offer, but I am not hungry right now.'" instead.
 
+[TODO]
 Before asking the dragon to try burning something:
 say "The dragon says, 'Oh, I couldn't possibly.'" instead.
               
@@ -905,10 +967,8 @@ say "You sing a few bars of a lullaby your mother used to sing to you.[paragraph
 	increase exhaustion by 1;
 
 Instead of singing when the dragon is in the location and the dragon is not awake:
-    say "The dragon has fallen asleep. You should go rescue your [if Roland is male]prince[otherwise]princess[end if]."
+    say "The dragon has fallen asleep. You should go rescue your [title]."
     
-[Feed berries to friendly dragon]
-
 response of dragon when asked-or-told about player:
 	say "[The dragon] says, 'I do love to eat princesses, but I have already eaten a whole castle today. Please come back tomorrow.'"
 	
@@ -948,14 +1008,70 @@ response of dragon when asked-or-told about the torch:
 say "'Can you light my torch?', you say. The dragon snorts in laughter, but obliges. The torch burns brighter than ever.";
 now the torch is lit.
 
+response of dragon when asked-or-told about the berries:
+say "The dragon looks eagerly at the berries. 'Ooh, I could sure use a snack.', it says."
+
+response of dragon when asked-or-told about the mushrooms:
+say "The dragon looks eagerly at the mushrooms. 'I love mushrooms!', it says."
+
+instead of showing the berries to the dragon:
+try quizzing the dragon about the berries.
+
+Instead of showing the mushrooms to the dragon:
+try quizzing the dragon about the mushrooms.
+
+Instead of giving the berries to the dragon:
+	say "The dragon scarfs down the berries. Almost immediately, it begins to look ill. 'I don't feel so well', says the dragon. 'I think I'll take a nap.'[paragraph break]";
+	remove the berries from play;
+	now the dragon is asleep;
+        now the dragon is not impatient;
+	now the current interlocutor is nothing;
+	say "The dragon curls up and falls asleep, right there in front of you."
+
+Instead of giving the mushrooms to the dragon:
+	say "The dragon scarfs down the mushrooms. 'Mmmmm', it says. 'That sure hit the spot. But now I'm feeling rather tired. Please excuse me.'[paragraph break]'";
+	remove the mushrooms from play;
+	now the dragon is asleep;
+        now the dragon is not impatient;
+	now the current interlocutor is nothing;
+	say "The dragon curls up and falls asleep, right there in front of you."
+        
+response of dragon when asked-or-told about the flashlight:
+say "The dragon sniffs, 'I'm afraid I can't do anything about that.'"
+ 
+response of dragon when asked-or-told about the dagger or the ring:
+say "The dragon exclaims, 'Oh! How lovely!'"
+
+Instead of showing the ring to the dragon:
+try quizzing the dragon about the ring.
+
+Instead of showing the dagger to the dragon:
+try quizzing the dragon about the dagger.
+
+Instead of giving the dagger to the dragon:
+	say "The dragon says, 'I accept your kind gift. In exchange, I shall return your [title] to you. Now, if you don't mind, I've had a long day, and I'm feeling awfully tired.'[paragraph break]";
+	remove the dagger from play;
+	now the dragon is asleep;
+        now the dragon is not impatient;
+	now the current interlocutor is nothing;
+	say "The dragon curls up and falls asleep, right there in front of you."
+
+Instead of giving the ring to the dragon:
+	say "The dragon says, 'I accept your kind gift. In exchange, I shall return your [title] to you. Now, if you don't mind, I've had a long day, and I'm feeling awfully tired.'[paragraph break]";
+	remove the ring from play;
+	now the dragon is asleep;
+        now the dragon is not impatient;
+	now the current interlocutor is nothing;
+	say "The dragon curls up and falls asleep, right there in front of you."
+
 response of dragon when asked-or-told about the crown:
-say "The dragon says, 'Oh yes, it is a very nice crown!'"
+say "The dragon scoffs, 'It's not very shiny', but you can tell that he seems quite interested in the crown."
 
 Instead of showing the crown to the dragon:
 try quizzing the dragon about the crown.
 
 Before giving the crown to the dragon:
-say "Oh no, you couldn't possibly do that."
+say "Oh no, you couldn't possibly do that." instead.
 
 Instead of quizzing dragon about dragon:
 try asking dragon about "dragon".
@@ -1020,6 +1136,12 @@ Understand "tell [someone] off" as shouting at.
 Instead of taking off the paper bag when the Jerk is in the location:
 say "You take off the bag, crumple it up and throw it at [Roland].[paragraph break]";
 try shouting at the Jerk.
+
+Instead of attacking the dragon with the dagger:
+try cutting the dragon with the dagger.
+
+Instead of throwing the dagger at the dragon:
+try cutting the dragon with the dagger.
 
 Instead of throwing something at the dragon:
 try attacking the dragon.
@@ -1177,7 +1299,7 @@ say "You're really not in the mood to do that."
 
 Understand the command "pet" as "kiss".
 
-Instead of kissing the dragon: say "The dragons nostrils flare as you move closer. You take a step back."
+Instead of kissing the awake dragon: say "The dragons nostrils flare as you move closer. You take a step back."
     
 Loving is an action applying to one thing.
 Understand "love [someone]" as loving.
@@ -1205,6 +1327,9 @@ Instead of casting XYZZY:
 		say "POOF! Your fairy godmother appears. [run paragraph on]";
 		say "She smiles at you and places [a necklace] around your neck. Then she fades out of view.";
 		now the player wears the necklace;
+	otherwise if the location is a forest room and the torch is unlit and the torch is enclosed by the player:
+		say "POOF! The torch suddenly flares up with light.";
+		now the torch is lit;
 	otherwise:
 		say "Nothing happens." [TODO]
 
@@ -1464,7 +1589,7 @@ say "You smile gently and say, 'It's ok, Dragon. I forgive you.' The dragon just
 
 [TODO]
 Rule for amusing a victorious player:
-say "[LINE BREAK]Have you tried...[LINE BREAK]- casting xyzzy during the wedding ceremony?[LINE BREAK]- marrying another princess?[LINE BREAK]- not getting married?[LINE BREAK]- singing? (You might find it quite soothing.)[LINE BREAK]- dying? (Not particularly soothing, to anyone involved.)"
+say "[LINE BREAK]Have you tried...[LINE BREAK]- casting xyzzy during the wedding ceremony?[LINE BREAK]- marrying another princess?[LINE BREAK]- not getting married?[LINE BREAK]- bribing the dragon?[LINE BREAK]- singing? (You might find it quite soothing.)[LINE BREAK]- dying? (Not particularly soothing, to anyone involved.)"
 
 Volume - Testing
     
@@ -1472,6 +1597,9 @@ test wedding with "z/z/z/z/z/yes".
 test ruins with "search rubble/take bag/make dress/n".
 test burnt with "x trail/take branch/x tree/plugh".
 test torch with "make torch/pour vial on torch/s/light torch".
-test maze with "n/ne/e/s/se/w/n".
+test maze with "ne/e/s/se/w/n".
 test dragon with "knock on door/g".
-test me with "test wedding/test ruins/test burnt/test torch/test maze/test dragon" [/sing/sing/sing/in".]
+test sing with "sing/g/g/in".
+test me1 with "test wedding/test ruins/test burnt/test torch/n".
+test me with "test me1/test maze/test dragon".
+test me2 with "test me/test sing".

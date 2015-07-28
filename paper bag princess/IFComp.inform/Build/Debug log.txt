@@ -1,12 +1,12 @@
 Debugging log of Inform 7
-Inform called as: /usr/local/libexec/ni --rules /usr/local/share/inform7/Inform7/Extensions --extension=z8 --package /home/adri/Games/Interactive Fiction/Adri/paper bag princess/IFComp.inform 
+Inform called as: /usr/local/libexec/ni --release --rules /usr/local/share/inform7/Inform7/Extensions --extension=z8 --package /home/adri/Games/Interactive Fiction/Adri/paper bag princess/IFComp.inform 
 
 
 -----------------------------------------------------
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 10859 words long.
+I've now read your source text, which is 11808 words long.
 
 
 -----------------------------------------------------
