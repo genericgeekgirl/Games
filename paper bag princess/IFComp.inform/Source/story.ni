@@ -174,6 +174,11 @@ Understand "bathe" as swimming when the river is in the location.
 Instead of swimming when the river is in the location:
 say "You are a powerful swimmer, but you would freeze to death before you could reach the other side."
 
+Giving up is an action applying to nothing.
+Understand "give up" as giving up.
+Carry out giving up:
+try quitting the game.
+
 Chapter - Rubble
     
 The pile of rubble is scenery in the Castle Ruins.
@@ -282,7 +287,7 @@ Instead of putting anything on the embers:
 try burning the noun.
 
 Instead of burning the handful of rags when the player is wearing the handful of rags:
-say "That seems like a really bad idea."
+try burning the player.
 
 Instead of burning the handful of rags:
     say "That seems dangerous. Maybe if you wrapped the rags around something first."
@@ -310,16 +315,22 @@ Understand "light [something] with [something]" as burning it with.
 
 Understand "set [something] on fire" as burning.
 
-Instead of burning something when the embers are not in the location:
-say "There is no source of fire here."
+Check burning something:
+	if the Wedding Ceremony is happening:
+		say "Brightly burning though it may be, you cannot set things on fire with love alone." instead;
+	otherwise if the embers are not in the location and the player does not enclose the lit torch:
+		say "How do you expect to do that without a flame?" instead.
 
-Instead of burning someone:
-	if the noun is the player:
-		say "This dangerous act would achieve little.";
-	otherwise if a lit thing is enclosed by the player:
-		try burning the noun with a random lit thing enclosed by player;
-	otherwise:
-		say "You have no way to do that."
+[TODO: responses instead of "This dangerous act would achieve little." when you try to set things on fire.]
+
+Instead of attacking the player:
+	say "No."
+                
+Instead of burning someone when the player encloses the torch:
+	try attacking the noun.
+
+Instead of burning someone when the player does not enclose the lit torch:
+	say "How do you expect to do that without a flame?"
 
 Instead of burning someone with a lit thing:
   try attacking the noun.
@@ -331,8 +342,8 @@ Instead of burning something with a not lit thing:
 	say "Whatever you expected to happen has not happened."
 	
 Instead of burning something with the lit necklace:
-	say "The necklace is imbued with a magical light. It is not on fire."
-	
+	say "The necklace is imbued with a magical light. It is cold to the touch."
+        	
 Blowing out is an action applying to one thing.
 Understand "blow out [something]" or "extinguish [something]" or "put out [something]" as blowing out. Understand the command "snuff" as "extinguish".
 
@@ -410,6 +421,8 @@ Carry out making a torch:
 	now the player carries the torch.
 		
 The torch is a thing. The description is "It is a torch crafted from a branch and the remains of your wedding gown.[if the torch is lit] It is on fire.[otherwise if the oil is part of the torch] The rags have been doused in an oily black liquid.[end if]". Understand "branch" and "handful of rags" as torch.
+
+[TODO: Show in inventory whether torch is on fire or not.]
 
 Understand "combine [something] with [something]" as combining it with.
 Combining it with is an action applying to two carried things. 
@@ -638,6 +651,7 @@ Carry out making-roland-female:
 	now Roland is female.
 
 Understand "her" as Roland when Roland is female.
+[TODO: 'him' is still understood]
 	
 Understand "heteronormativity on" as making-roland-male.
 Carry out making-roland-male:
@@ -651,7 +665,7 @@ Understand "betrothed" as Roland.
 Understand "man" or "prince" or "fiance" or "groom" as Roland when Roland is male.
 Understand "woman" or "fiancee" or "princess" or "bride" or  "rolande" as Roland when Roland is female.
        
-The Jerk is a person in the Cave Interior.
+The Jerk is a proper-named person in the Cave Interior.
 The printed name is "[if Roland is male]Roland[otherwise]Rolande".
 The description is "[Roland] is the most attractive [gender] you have ever laid eyes on. Too bad [subjective]'s also the biggest jerk you've ever met!".
 Understand "man" or "prince" or "roland" as the Jerk when Roland is male.
@@ -663,6 +677,7 @@ To say gender: say "[if Roland is male]man[otherwise]woman".
 To say partner: say "[if Roland is male]husband[otherwise]wife".
 To say title: say "[if Roland is male]prince[otherwise]princess".
 To say subjective: say "[if Roland is male]he[otherwise]she".
+To say capital-subjective: say "[if Roland is male]He[otherwise]She".
 To say objective: say "[if Roland is male]him[otherwise]her".
 To say possessive: say "[if Roland is male]his[otherwise]her".
 To say reflexive: say "[objective]self".
@@ -676,7 +691,7 @@ An animal can be friendly or not friendly. An animal is usually not friendly.
 The dragon is a neuter animal in the Cave Interior. The dragon is awake. The description is "Up close, you realize this dragon isn't actually very large, only about fifteen cubits from the tip of its nose to the spiked end of its tail.[if the player encloses a lit thing] Its green scales shimmer in the glow of your [random lit thing enclosed by player].[end if] Its wings are folded neatly at its sides, and a swirl of smoke escapes its nostrils.[if the dragon is asleep] The dragon is sleeping peacefully, with its tail curled around its snout.[end if]"
 
 The wings are part of the dragon. The description is "Even furled, the wings nearly double the size of the dragon."
-The dragon smoke is part of the dragon. The description is "Black smoke swirls around the dragon's snout." Understand "snout" and "nose" as dragon smoke.
+The smoke swirl is part of the dragon. The description is "Black smoke swirls around the dragon's snout." Understand "snout" and "nose" as smoke swirl.
 
 [TODO]
 Understand "scales" and "tail" and "claws" as dragon.
@@ -690,7 +705,7 @@ Wedding Ceremony is a scene.
 Wedding Ceremony begins when play begins.
 
 When play begins:
-say "This is the day you've always dreamed of. You are finally marrying the love of your life, Prince [Roland]. (Hint: Type 'heteronormativity off' to marry a princess instead.)"
+say "This is the day you've always dreamed of. You are finally marrying the love of your life, Prince [Roland]. (Tip: Type 'heteronormativity off' to marry a princess instead.)"
 
 Rule for printing the banner text during the Wedding Ceremony: do nothing.
 
@@ -793,6 +808,7 @@ say "You stand on your tiptoes, grab the knocker, and bang on the door.[paragrap
 Instead of knocking the Cave Door:
 say "You bang on the door again.[paragraph break]The dragon sticks its nose out the door and says, 'I am sure you are very delicious, but I am rather tired and stuffed. Please do come back tomorrow.'[paragraph break]This time, however, he does not immediately return to his cave.";
 now the dragon is impatient;
+now the Cave Door is unlocked;
 move the dragon to the Cave Exterior.
 
 Instead of shouting when the dragon is in the location:
@@ -809,6 +825,7 @@ After doing anything except shouting at the dragon when the dragon is impatient:
 	If the dragon has been impatient for 5 turns:
 		say "The dragon sighs and slams the door. You need to find a way to get its attention.";
 		now the dragon is not impatient;
+		now the Cave Door is locked;
 		move the dragon to the Cave Interior.
 	
 Instead of knocking the Cave Door while the dragon is in the Cave Exterior and the dragon is awake:
@@ -816,15 +833,17 @@ Instead of knocking the Cave Door while the dragon is in the Cave Exterior and t
 
 Instead of knocking the Cave Door while the dragon is not awake:
     say "Shhhhh. Don't wake up the dragon. You can enter the cave now."
-        
+
+Instead of opening the Cave Door when the dragon is in the location and the dragon is awake:
+say "[The dragon] says, 'No, I don't think so.'"
+       
 Instead of going from Cave Exterior when the dragon is in the location and the dragon is awake:
 say "[The dragon] is blocking the doorway and will not allow you to pass."
         
 When Rescue ends:
 	say "The dragon is so tired that he falls fast asleep.";
 	now the dragon is asleep;
-	now the current interlocutor is nothing;
-	now the Cave Door is unlocked.
+	now the current interlocutor is nothing.
 	
 Instead of doing anything except attacking to an asleep animal:
 say "[The noun] is finally asleep. You should rescue [Roland] and leave, before it wakes up."
@@ -872,13 +891,12 @@ default ask-tell response for Dragon:
 	say "[The dragon] pointedly ignores you."
 			
 Before asking the dragon to try eating something:
-say "The dragon says, 'Thank you for the offer, but I am not hungry right now.'"
+say "The dragon says, 'Thank you for the offer, but I am not hungry right now.'" instead.
+
+Before asking the dragon to try burning something:
+say "The dragon says, 'Oh, I couldn't possibly.'" instead.
               
 [TODO: differentiate between ask/tell, to add some more flavor text; also wedding, parents, etc; maybe ask about dragons, plural]
-
-Humming is an action applying to nothing.
-Understand "hum" as humming.
-Carry out humming: say "You quietly hum to yourself."
 
 Understand "sing to dragon" as singing when the dragon is in the location.
     
@@ -895,7 +913,7 @@ response of dragon when asked-or-told about player:
 	say "[The dragon] says, 'I do love to eat princesses, but I have already eaten a whole castle today. Please come back tomorrow.'"
 	
 response of dragon when asked-or-told about the castle building:
-	say "[The dragon] says, 'That's very kind of you to offer, but I have already eaten a whole castle today.'[paragraph break]'That was my home!' you shout.[paragraph break]The dragon shrugs. It doesn't seem particularly inclined to apologize."
+	say "[The dragon] says, 'I have already eaten a whole castle today.'[paragraph break]'That was my home!' you shout.[paragraph break]The dragon shrugs. It doesn't seem particularly inclined to apologize."
 	
 response of dragon when asked-or-told about cave door:
 	say "[The dragon] says, 'That is my home, and you are not welcome in there.'"
@@ -927,9 +945,19 @@ Carry out flattering:
 say "Dragons are well known for breathing FIRE and their ability to FLY. Maybe you could try asking about one of those."
 
 response of dragon when asked-or-told about the torch:
-say "The dragon laughs at you."
- 
-instead of quizzing dragon about dragon:
+say "'Can you light my torch?', you say. The dragon snorts in laughter, but obliges. The torch burns brighter than ever.";
+now the torch is lit.
+
+response of dragon when asked-or-told about the crown:
+say "The dragon says, 'Oh yes, it is a very nice crown!'"
+
+Instead of showing the crown to the dragon:
+try quizzing the dragon about the crown.
+
+Before giving the crown to the dragon:
+say "Oh no, you couldn't possibly do that."
+
+Instead of quizzing dragon about dragon:
 try asking dragon about "dragon".
 
 After asking dragon about "dragon" for the second time:
@@ -985,22 +1013,40 @@ When the Aftermath begins:
 say "[Roland] looks at you and says, 'Elizabeth, you are a mess! You smell like ashes, your hair is all tangled, and you are wearing a dirty paper bag. Come back when you are dressed like a real princess.'"
 
 Instead of shouting when the Jerk is in the location:
-try shouting at Roland.
+try shouting at the Jerk.
 
 Understand "tell [someone] off" as shouting at.
 
 Instead of taking off the paper bag when the Jerk is in the location:
-say "You take off the bag, crumple it up and throw it at Roland.[paragraph break]";
-try shouting at Roland.
+say "You take off the bag, crumple it up and throw it at [Roland].[paragraph break]";
+try shouting at the Jerk.
+
+Instead of throwing something at the dragon:
+try attacking the dragon.
+
+Instead of throwing a lit torch at the jerk:
+try burning the jerk.
+
+Instead of burning the jerk:
+try killing the jerk.
 
 Instead of throwing something at the Jerk:
     if the noun is worn by the player, try silently taking off the noun;
-    say "You throw [the noun] at [Roland]. [Subjective] ducks, just barely.[paragraph break]";
+    say "You throw [the noun] at [Roland]. [capital-subjective] ducks, just barely.[paragraph break]";
     try shouting at the Jerk.
         
 Instead of shouting at the Jerk:
-say "'[Roland],' you say, 'your clothes are really pretty, and your hair is very neat. You look like a real [title], but you are also a real toad.'[paragraph break]You turn around and walk out the door.";
+say "'[Roland],' you say, 'your clothes are really pretty, and your hair is very neat. You may look like a real [title], but you are also a real toad.'[paragraph break]You turn around and walk out the door.";
 end the story finally saying "And Elizabeth lived happily ever after!"
+
+Instead of going nowhere when the Aftermath is happening:
+say "There is nothing in that direction but piles of gold."
+
+The gold is plural-named scenery in the Cave Interior.
+The description is "Piles of treasure fill the room."
+
+Instead of taking the gold:
+say "No, that would be stealing. Princesses do not take things that do not belong to them."
 
 Instead of going when the Aftermath is happening:
 try shouting at the Jerk.
@@ -1015,7 +1061,7 @@ Understand "kill [someone]" as killing.
 Instead of killing someone:
 try attacking the noun.
 
-Instead of killing Roland:
+Instead of killing the Jerk:
 say "That's a bit harsh, don't you think?"
 
 Understand the command "slap" as "attack".
@@ -1026,8 +1072,11 @@ Instead of pushing the Jerk:
 say "You give [Roland] a hard shove![paragraph break]";
 try shouting at the Jerk.
 
+Instead of throwing a lit torch at something:
+try burning the second noun.
+
 Before burning the Jerk with a lit torch:
-say "You briefly consider burning Roland, but settle for giving him a hard shove.[paragraph break]";
+say "You briefly consider burning [Roland], but settle for giving him a hard shove.[paragraph break]";
 try shouting at the Jerk instead.
 
 Instead of kicking the Jerk:
@@ -1087,18 +1136,18 @@ Instead of swearing mildly when the Wedding Ceremony is happening:
 
 Chapter - Affection
 
-Instead of attacking Roland when the Wedding Ceremony is happening:
+Instead of attacking Roland:
 say "You would never attack [Roland]! Except possibly with kisses."
 
 [embrace, hug]
-Instead of kissing Roland when the Wedding Ceremony is happening:
+Instead of kissing Roland:
 say "You'll have your chance soon enough!"
 
 Instead of kissing the player:
 say "Not right now, perhaps."
 
 Instead of kissing someone when the Wedding Ceremony is happening:
-say "There will be time for that later."
+say "There will be time for affections later."
 
 [TODO: kissing/etc anyone who isn't Roland, including the Player]
 
@@ -1117,13 +1166,13 @@ say "That would be very weird."
 Does the player mean marrying Roland:
 it is likely.
 
-Instead of marrying Roland when the Wedding Ceremony is happening:
+Instead of marrying Roland:
 say "Yes, Elizabeth. That's why you[']re here."
 
-Instead of marrying Roland when the Aftermath is happening:
+Instead of marrying the Jerk:
 say "No. Absolutely not."
 
-Instead of kissing Roland when the Aftermath is happening:
+Instead of kissing the Jerk:
 say "You're really not in the mood to do that."
 
 Understand the command "pet" as "kiss".
@@ -1136,10 +1185,10 @@ Understand "love [someone]" as loving.
 Carry out loving something:
 say "You are such a kind, loving person."
 
-Instead of loving Roland when the Wedding Ceremony is happening:
+Instead of loving Roland:
 say "You do!"
 
-Instead of loving Roland when the Aftermath is happening:
+Instead of loving the Jerk:
 say "You're no longer certain that you do."
 
 Chapter - Magic Words
@@ -1194,6 +1243,10 @@ end the game saying "And they didn't get married after all!"
 
 Instead of singing:
 say "You sing a few bars of a lullaby your mother used to sing to you."
+
+Humming is an action applying to nothing.
+Understand "hum" as humming.
+Carry out humming: say "You quietly hum to yourself."
 
 Instead of singing or humming when the Wedding Ceremony is happening:
 say "You're so happy you could literally burst into song. But you don't. Because there will be plenty of time for singing after the ceremony."
@@ -1347,14 +1400,14 @@ default response for Father Alfred:
 Instead of asking Roland to try doing anything during Wedding Ceremony:
 say "You lean in towards [Roland] and whisper in [possessive] ear. [Roland] smiles at you, shaking [possessive] head."
 
-default response for Roland during Wedding Ceremony:
+default response for Roland:
 say "You lean in towards [Roland] and whisper in [possessive] ear. [Roland] smiles at you and holds a finger over [possessive] lips in an exaggerated 'shush' motion."	
 
 default give-show response for the Jerk:
 say "[Roland] doesn't seem interested in that."
 
 default ask-tell response for the Jerk:
-say "[Roland] glares at you."
+say "[Roland] quietly glares at you."
     
 Instead of saying hello to someone when the greeting type is explicit:
 	try quizzing the noun about the noun instead. 
@@ -1366,7 +1419,10 @@ Understand "scream" and "yell" and "shout" as shouting.
 Understand "scream at [someone]" and "yell at [someone]" and "shout at [someone]" as shouting at.
 
 carry out shouting:
-say "Shout! Shout! Let it all out!"
+say "You let out a high-pitched cry."
+
+Instead of shouting when the Wedding Ceremony is happening:
+say "You're very excited, but there's no need to yell."
 
 carry out shouting at someone:
 say "You shout at [the noun]."
@@ -1386,8 +1442,25 @@ Understand "smile at [someone]" as smiling at.
 Carry out smiling at someone:
 say "You smile warmly at [the noun]."
 
-Instead of smiling at Roland during Aftermath:
+Instead of smiling at the Jerk:
 say "You grit your teeth and force yourself to smile at [Roland]."
+
+Forgiving is an action applying to one thing.
+Understand "forgive [someone]" as forgiving.
+Carry out forgiving: try apologizing instead.
+
+Apologizing is an action applying to nothing.
+Understand "apologize" as apologizing.
+Carry out apologizing: say "You are such a kind person."
+
+Instead of apologizing during aftermath: try forgiving the Jerk.
+
+Instead of forgiving the Jerk:
+say "You sigh and reach out to take [Roland]'s hand. [capital-Subjective] jerks away at your touch. '[Roland]...', you start, but [subjective] walks out of the cave, slamming the door behind [objective].";
+end the game saying "And they didn't get married after all!"
+
+Instead of forgiving the dragon:
+say "You smile gently and say, 'It's ok, Dragon. I forgive you.' The dragon just laughs." [TODO: possible alternative solution]
 
 [TODO]
 Rule for amusing a victorious player:
@@ -1401,4 +1474,4 @@ test burnt with "x trail/take branch/x tree/plugh".
 test torch with "make torch/pour vial on torch/s/light torch".
 test maze with "n/ne/e/s/se/w/n".
 test dragon with "knock on door/g".
-test me with "test wedding/test ruins/test burnt/test torch/test maze/test dragon".
+test me with "test wedding/test ruins/test burnt/test torch/test maze/test dragon" [/sing/sing/sing/in".]
