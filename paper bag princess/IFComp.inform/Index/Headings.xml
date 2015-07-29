@@ -109,217 +109,217 @@
     </dict>
     <key>15</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/paper bag princess/IFComp.inform/Source/story.ni</string>
-        <key>Line</key><integer>363</integer>
+        <key>Line</key><integer>365</integer>
         <key>Title</key><string>Chapter - The Forest</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>16</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/paper bag princess/IFComp.inform/Source/story.ni</string>
-        <key>Line</key><integer>365</integer>
+        <key>Line</key><integer>367</integer>
         <key>Title</key><string>Section - The Burnt Forest</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>17</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/paper bag princess/IFComp.inform/Source/story.ni</string>
-        <key>Line</key><integer>405</integer>
+        <key>Line</key><integer>407</integer>
         <key>Title</key><string>Section - Making a Torch</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>18</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/paper bag princess/IFComp.inform/Source/story.ni</string>
-        <key>Line</key><integer>450</integer>
+        <key>Line</key><integer>452</integer>
         <key>Title</key><string>Section - Forest Maze</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>19</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/paper bag princess/IFComp.inform/Source/story.ni</string>
-        <key>Line</key><integer>619</integer>
+        <key>Line</key><integer>621</integer>
         <key>Title</key><string>Chapter - Dragons Cave</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>20</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/paper bag princess/IFComp.inform/Source/story.ni</string>
-        <key>Line</key><integer>633</integer>
+        <key>Line</key><integer>635</integer>
         <key>Title</key><string>Part - Characters</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>21</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/paper bag princess/IFComp.inform/Source/story.ni</string>
-        <key>Line</key><integer>635</integer>
+        <key>Line</key><integer>637</integer>
         <key>Title</key><string>Chapter - Elizabeth (PC)</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>22</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/paper bag princess/IFComp.inform/Source/story.ni</string>
-        <key>Line</key><integer>639</integer>
+        <key>Line</key><integer>641</integer>
         <key>Title</key><string>Section - Inventory (Wearing)</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>23</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/paper bag princess/IFComp.inform/Source/story.ni</string>
-        <key>Line</key><integer>651</integer>
+        <key>Line</key><integer>653</integer>
         <key>Title</key><string>Section - Inventory (Carrying)</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>24</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/paper bag princess/IFComp.inform/Source/story.ni</string>
-        <key>Line</key><integer>661</integer>
+        <key>Line</key><integer>663</integer>
         <key>Title</key><string>Book - Wedding Gown</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>25</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/paper bag princess/IFComp.inform/Source/story.ni</string>
-        <key>Line</key><integer>672</integer>
+        <key>Line</key><integer>674</integer>
         <key>Title</key><string>Book - Rags</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>26</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/paper bag princess/IFComp.inform/Source/story.ni</string>
-        <key>Line</key><integer>674</integer>
+        <key>Line</key><integer>676</integer>
         <key>Title</key><string>Part - Shining</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>27</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/paper bag princess/IFComp.inform/Source/story.ni</string>
-        <key>Line</key><integer>696</integer>
+        <key>Line</key><integer>698</integer>
         <key>Title</key><string>Book - Crown</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>28</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/paper bag princess/IFComp.inform/Source/story.ni</string>
-        <key>Line</key><integer>703</integer>
+        <key>Line</key><integer>705</integer>
         <key>Title</key><string>Volume - Roland</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>29</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/paper bag princess/IFComp.inform/Source/story.ni</string>
-        <key>Line</key><integer>745</integer>
+        <key>Line</key><integer>747</integer>
         <key>Title</key><string>Volume - Dragon</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>30</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/paper bag princess/IFComp.inform/Source/story.ni</string>
-        <key>Line</key><integer>759</integer>
+        <key>Line</key><integer>761</integer>
         <key>Title</key><string>Volume - Scenes</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>31</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/paper bag princess/IFComp.inform/Source/story.ni</string>
-        <key>Line</key><integer>761</integer>
+        <key>Line</key><integer>763</integer>
         <key>Title</key><string>Book - Wedding Ceremony</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>32</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/paper bag princess/IFComp.inform/Source/story.ni</string>
-        <key>Line</key><integer>843</integer>
+        <key>Line</key><integer>845</integer>
         <key>Title</key><string>Chapter - Wandering</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>33</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/paper bag princess/IFComp.inform/Source/story.ni</string>
-        <key>Line</key><integer>850</integer>
+        <key>Line</key><integer>852</integer>
         <key>Title</key><string>Chapter - The Rescue</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>34</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/paper bag princess/IFComp.inform/Source/story.ni</string>
-        <key>Line</key><integer>1114</integer>
+        <key>Line</key><integer>1116</integer>
         <key>Title</key><string>Chapter - The Aftermath</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>35</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/paper bag princess/IFComp.inform/Source/story.ni</string>
-        <key>Line</key><integer>1220</integer>
+        <key>Line</key><integer>1222</integer>
         <key>Title</key><string>Part - Additional Actions</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>36</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/paper bag princess/IFComp.inform/Source/story.ni</string>
-        <key>Line</key><integer>1245</integer>
+        <key>Line</key><integer>1247</integer>
         <key>Title</key><string>Chapter - Inappropriate Conduct</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>37</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/paper bag princess/IFComp.inform/Source/story.ni</string>
-        <key>Line</key><integer>1259</integer>
+        <key>Line</key><integer>1261</integer>
         <key>Title</key><string>Chapter - Affection</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>38</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/paper bag princess/IFComp.inform/Source/story.ni</string>
-        <key>Line</key><integer>1316</integer>
+        <key>Line</key><integer>1318</integer>
         <key>Title</key><string>Chapter - Magic Words</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>39</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/paper bag princess/IFComp.inform/Source/story.ni</string>
-        <key>Line</key><integer>1363</integer>
+        <key>Line</key><integer>1365</integer>
         <key>Title</key><string>Chapter - Other</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>40</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/paper bag princess/IFComp.inform/Source/story.ni</string>
-        <key>Line</key><integer>1379</integer>
+        <key>Line</key><integer>1381</integer>
         <key>Title</key><string>Chapter - Liquids</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>41</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/paper bag princess/IFComp.inform/Source/story.ni</string>
-        <key>Line</key><integer>1397</integer>
+        <key>Line</key><integer>1399</integer>
         <key>Title</key><string>Section - Oil</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>5</integer>
     </dict>
     <key>42</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/paper bag princess/IFComp.inform/Source/story.ni</string>
-        <key>Line</key><integer>1464</integer>
+        <key>Line</key><integer>1466</integer>
         <key>Title</key><string>Chapter - Fire</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>43</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/paper bag princess/IFComp.inform/Source/story.ni</string>
-        <key>Line</key><integer>1466</integer>
+        <key>Line</key><integer>1468</integer>
         <key>Title</key><string>Chapter - Knocking</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>44</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/paper bag princess/IFComp.inform/Source/story.ni</string>
-        <key>Line</key><integer>1495</integer>
+        <key>Line</key><integer>1497</integer>
         <key>Title</key><string>Chapter - Conversation</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>45</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/paper bag princess/IFComp.inform/Source/story.ni</string>
-        <key>Line</key><integer>1594</integer>
+        <key>Line</key><integer>1596</integer>
         <key>Title</key><string>Volume - Testing</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>

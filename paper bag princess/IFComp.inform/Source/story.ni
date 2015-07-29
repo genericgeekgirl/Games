@@ -301,8 +301,10 @@ Instead of burning the branch:
 Instead of burning the torch:
 	if the torch is lit:
 		say "That is already on fire.";
- 	otherwise if the awake dragon is in the location:
+	otherwise if the awake dragon is in the location:
 		say "You could probably ask the dragon to light it for you. But that seems like an altogether bad idea.";
+	otherwise if the embers are not in the location:
+		say "There is no source of fire here.";
 	otherwise if the oil is not part of the torch:
 		say "The torch catches fire, but then fizzles out almost immediately. Maybe you can add something else to the torch to make it more flammable?";
 	otherwise:
