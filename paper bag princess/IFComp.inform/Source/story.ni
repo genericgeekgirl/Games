@@ -46,7 +46,7 @@ To say author: say "The author can be contacted at <genericgeekgirl@gmail.com>."
 
 to say credits: say "[story title] is loosely based upon the book of the same name by Robert Munsch. Permission to write the game was requested from and granted by Mister Munsch himself.[paragraph break]Thank you so much to my beta testers: Brendan Desilets, Dan Shiovitz, Dan Kelly, David Sturgis, Doug Orleans, Emily Boegheim, Jason McIntosh, Johnny Rivera, Kevin Jackson-Mead, Matthew Miller, Scott Snyder and Z Goddard. Post-release feedback from Adam Myers, Andrew Schultz, E Joyce, Felix Plesoianu and Victor Gijsbers was also particularly helpful to me."
 
-To say walkthrough: say "This walkthrough results in the 'traditional' ending. [paragraph break]wait[line break]wait[line break]wait[line break]wait[line break]wait[line break]yes[line break]press space[line break]search rubble[line break]take bag[line break]make dress[line break]north[line break]x trail[line break]take branch[line break]x tree[line break]plugh[line break]make torch[line break]open vial[line break]pour oil on torch[line break]south[line break]light torch[line break]north[line break]northeast[line break]east[line break]south[line break]southeast[line break]west[line break]north[line break]knock on door[line break]again[line break]shout[line break]ask dragon about fire[line break]y[line break]y[line break]ask dragon about flight[line break]y[line break]in[line break]shout at roland[paragraph break]Most puzzles have alternate solutions, and there are multiple endings to the game. Have fun exploring!".
+To say walkthrough: say "This walkthrough results in the 'traditional' ending. [paragraph break]wait[line break]wait[line break]wait[line break]wait[line break]wait[line break]yes[line break]press space[line break]search rubble[line break]take bag[line break]make dress[line break]north[line break]x trail[line break]take branch[line break]x tree[line break]plugh[line break]make torch[line break]open vial[line break]pour oil on torch[line break]south[line break]light torch[line break]north[line break]northeast[line break]east[line break]south[line break]south[line break]west[line break]north[line break]knock on door[line break]again[line break]shout[line break]ask dragon about fire[line break]y[line break]y[line break]ask dragon about flight[line break]y[line break]in[line break]shout at roland[paragraph break]Most puzzles have alternate solutions. Have fun exploring!".
 
 Book - Blocking superbrief/brief modes
 
@@ -141,6 +141,9 @@ Book - Castle Ruins
 
 The description of the Castle Ruins is "This used to be your home. Now it is nothing more than a smoking [pile of rubble]. The [smoke] obscures your view of the [stars], and the primary source of light is the burning remains of your furniture.[paragraph break]The only [road] away from the castle now ends abruptly at the river bank. The forest surrounds you thickly on all sides, except for an area to the north where the trees have been broken and scorched."
 
+Instead of examining north when the location is Castle Ruins:
+say "The trees in this direction have been broken and scorched, creating a path into the woods."
+
 Chapter - Scenery
     
 The forest is scenery in the Castle Ruins. Understand "trees" and "tree" as forest. The description is "The forest surrounds you thickly on all sides, except for an area to the north where the trees have been broken and scorched."
@@ -164,6 +167,7 @@ Instead of taking furniture:
 say "None of the furniture is worth saving."
 
 The smoke is scenery in the Castle Ruins. The description is "You can barely see anything through the smoke."
+Instead of smelling the smoke: say "Smoke fills your lungs, making you cough."
 
 The sharks are scenery in the Castle Ruins. They are plural-named. The description is "You're pretty certain he was joking about the sharks. But you would rather not take the chance."
 
@@ -183,9 +187,12 @@ Chapter - Rubble
     
 The pile of rubble is scenery in the Castle Ruins.
 The description is "These piles of stones and wood used to be your home[if the paper bag is part of the pile of rubble]. You catch a glimpse of something colorful hidden in one of the piles[end if]."
-Understand "castle" and "stones" as pile of rubble when the location is Castle Ruins.
+Understand "castle" and "stones" and "stone" as pile of rubble when the location is Castle Ruins.
 Understand "ruins" and "piles" and "home" and "brick" and "debris" and "remains" and "smoking pile" as pile of rubble.
 Understand "burning remains" as pile of rubble.
+
+Instead of taking the pile of rubble:
+say "You don't need that." [TODO: maybe you can pick up a rock, or multiple rocks, and do something with it.]
 
 Kicking is an action applying to one thing.
 Understand "kick [something]" as kicking.
@@ -195,8 +202,11 @@ Carry out kicking:
 Instead of kicking the pile of rubble:
 say "You kick at the rubble. Rocks fly off in various directions." 
 
+Check entering the embers:
+say "Suicide is not the solution." instead.
+
 Check entering the pile of rubble:
-try climbing the pile of rubble.
+try climbing the pile of rubble instead.
 
 Instead of climbing the pile of rubble:
 say "You scramble to the top of the pile. Your foot slips and you fall back to the ground. Ouch!".
@@ -328,7 +338,7 @@ Check burning something:
 Instead of attacking the player:
 	say "No."
                 
-Instead of burning someone when the player encloses the torch:
+Instead of burning someone when the player encloses the lit torch:
 	try attacking the noun.
 
 Instead of burning someone when the player does not enclose the lit torch:
@@ -429,6 +439,8 @@ Understand "combine [something] with [something]" as combining it with.
 Combining it with is an action applying to two carried things. 
 Understand the command "connect" as "combine".
 
+Understand "add [something] to [something]" as combining it with.
+
 Understand the command "attach" as something new. 
 Understand "attach [something] to [something]" as combining it with.
 
@@ -438,8 +450,11 @@ try combining the noun with the second noun.
 Carry out combining something with something:
 say "You're not quite certain how to put those two things together."
 
+Understand "wrap [something] with [handful of rags]" as combining it with.
+Understand "wrap [handful of rags] on [something]" as combining it with.
 Understand "wrap [handful of rags] around [something]" as combining it with.
 Understand "tie [handful of rags] to [something]" as combining it with.
+Understand "tie [handful of rags] on [something]" as combining it with.
 
 Instead of combining the handful of rags with the branch:
 try making a torch.
@@ -448,6 +463,12 @@ Instead of combining the branch with the handful of rags:
 try combining the handful of rags with the branch.
 
 The branch is part of the tree. The description is "It's a large branch. It looks pretty sturdy." Understand "stick" as branch.
+
+Understand "dip [something] in [vial]" as inserting it into.
+Understand "dip [something] in [oil]" as inserting it into.
+
+Instead of inserting the branch into the oil:
+try inserting the branch into the vial.
 
 Section - Forest Maze
 
@@ -576,7 +597,7 @@ Instead of eating the mushrooms:
 say "You've never liked mushrooms, and you're not hungry enough to force yourself to eat these."
 
 The flashlight is a device in ForestD. "There is a flashlight here." The description is "An electric torch. The battery compartment is empty." Understand "electric torch" as flashlight.
-Understand "torch" as flashlight when the torch is not in the location.
+Understand "torch" as flashlight when the torch is not enclosed by the player and the torch is not in the location.
 
 Instead of switching on the flashlight:
 say "You switch the flashlight on, but it doesn't work. You turn if off again, out of habit."
@@ -584,6 +605,7 @@ say "You switch the flashlight on, but it doesn't work. You turn if off again, o
 The ring is a wearable thing in ForestE. "There is a shiny ring here." The description is "A very pretty ring."
 Instead of wearing the ring:
 say "As you slip the ring on your finger, it vanishes. You find yourself transported to a clearing.";
+remove the ring from play;
 move the player to the cave exterior.
 
 Instead of going up:
@@ -625,12 +647,15 @@ The Cave Interior is a room. The printed name is "The Dragon's Cave". "This is w
 The Dragons Cave is a region.
 The Cave Exterior and Cave Interior are in the Dragons Cave.
 
-The cave door is scenery and a closed locked door. It is inside from Cave Exterior and outside of Cave Interior. Understand "entrance" and "door" and "knocker" as Cave Door. "The large door almost perfectly fills in the natural opening in the rock. There is a golden knocker in the shape of a dragon's tail about a foot above your head."
+The cave door is scenery and a closed locked door. It is inside from Cave Exterior and outside of Cave Interior. Understand "entrance" and "door" as Cave Door. "The large door almost perfectly fills in the natural opening in the rock. There is a golden knocker in the shape of a dragon's tail about a foot above your head."
 
-The treasure is scenery in the Cave Interior. The description is "There is more gold and precious gems here than you have ever seen before in your life."
+The treasure is scenery in the Cave Interior. The description is "There is more gold and precious gems here than you have ever seen before in your life." Understand "gold" and "gems" as treasure.
 
 Instead of taking the treasure:
 say "No, Elizabeth. You were raised better than that."
+
+Instead of searching the treasure:
+try examining the treasure.
 
 Part - Characters
 
@@ -1007,9 +1032,15 @@ Carry out flattering:
 say "Dragons are well known for breathing FIRE and their ability to FLY. Maybe you could try asking about one of those."
 
 response of dragon when asked-or-told about the torch:
-say "'Can you light my torch?', you say. The dragon snorts in laughter, but obliges. The torch burns brighter than ever.";
-now the torch is lit.
+	if the torch is not lit:
+		say "'Can you light my torch?', you say. The dragon snorts in laughter, but obliges. The torch burns brighter than ever.";
+		now the torch is lit;
+	otherwise: 
+		say "The dragon just laughs."
 
+Instead of showing the torch to the dragon:
+try quizzing the dragon about the torch.
+                
 response of dragon when asked-or-told about the berries:
 say "The dragon looks eagerly at the berries. 'Ooh, I could sure use a snack.', it says."
 
@@ -1089,9 +1120,9 @@ try asking dragon about "fire".
 
 Table of Draconic Boasts
 topic	reply
-"fast/fastest/flying/flight/wings/fly"	"[flight-boast]"
-"fierce/fiercest/fire/flame/flames/breath/smoke/burning"	"[fire-boast]"
-"fierce/fiercest/fire/flame/flames/breath/smoke/burning"	"[fire-boast]"
+"flying ability/ability to fly/fast/fastest/flying/flight/wings/fly"	"[flight-boast]"
+"breathing fire/fierce/fiercest/fire/flame/flames/breath/smoke/burning"	"[fire-boast]"
+"breathing fire/fierce/fiercest/fire/flame/flames/breath/smoke/burning"	"[fire-boast]"
 
 To say dragon-boast:
 say "You say, 'Is it true that you are the fastest and fiercest dragon in the whole world?'[paragraph break]'Yes,' says [the dragon]. Boastful fellow, isn't he?"
@@ -1130,6 +1161,14 @@ The Aftermath begins when the player is in the Cave Interior for the first time.
 When the Aftermath begins:
 say "[Roland] looks at you and says, 'Elizabeth, you are a mess! You smell like ashes, your hair is all tangled, and you are wearing a dirty paper bag. Come back when you are dressed like a real princess.'"
 
+Dumping is an action applying to one thing.
+Understand "dump [something]" as dumping.
+Carry out dumping:
+say "That's not a verb I recognize."
+
+Instead of dumping the Jerk:
+try shouting at the Jerk.
+
 Instead of shouting when the Jerk is in the location:
 try shouting at the Jerk.
 
@@ -1151,8 +1190,8 @@ try attacking the dragon.
 Instead of throwing a lit torch at the jerk:
 try burning the jerk.
 
-Instead of burning the jerk:
-try killing the jerk.
+Before burning the jerk:
+try burning the Jerk with the torch instead.
 
 Instead of throwing something at the Jerk:
     if the noun is worn by the player, try silently taking off the noun;
@@ -1165,12 +1204,6 @@ end the story finally saying "And Elizabeth lived happily ever after!"
 
 Instead of going nowhere when the Aftermath is happening:
 say "There is nothing in that direction but piles of gold."
-
-The gold is plural-named scenery in the Cave Interior.
-The description is "Piles of treasure fill the room."
-
-Instead of taking the gold:
-say "No, that would be stealing. Princesses do not take things that do not belong to them."
 
 Instead of going when the Aftermath is happening:
 try shouting at the Jerk.
@@ -1198,6 +1231,10 @@ try shouting at the Jerk.
 
 Instead of throwing a lit torch at something:
 try burning the second noun.
+
+Before burning the Jerk with an unlit torch:
+say "You threateningly brandish the unlit torch at [Roland].";
+try shouting at the Jerk instead.
 
 Before burning the Jerk with a lit torch:
 say "You briefly consider burning [Roland], but settle for giving him a hard shove.[paragraph break]";
@@ -1235,7 +1272,7 @@ try thinking about "Roland".
 Thinking about is an action applying to one topic.
 Understand "think about [text]" as thinking about.
 Carry out thinking about a text (called T):
-try thinking.
+say "You daydream briefly."
 
 Swimming is an action applying to nothing.
 
@@ -1243,6 +1280,20 @@ Understand "swim" and "go swimming" as swimming.
 
 Carry out swimming:
 say "There is nothing here for you to swim in."
+
+Instead of jumping:
+say "You jump on the spot."
+
+Glaring is an action applying to nothing.
+Understand "glare" as glaring.
+Carry out glaring: say "You glower angrily at nothing in particular."
+
+Instead of glaring when the Jerk is in the location:
+try glaring at the jerk.
+
+Glaring at is an action applying to one thing.
+Understand "glare at [something]" as glaring at.
+Carry out glaring at: say "You glower angrily at [the noun]."
 
 Chapter - Inappropriate Conduct
 
@@ -1263,15 +1314,18 @@ Chapter - Affection
 Instead of attacking Roland:
 say "You would never attack [Roland]! Except possibly with kisses."
 
+Check kissing when the Wedding Ceremony is happening:
+say "There will be time for affections later." instead.
+
 [embrace, hug]
 Instead of kissing Roland:
 say "You'll have your chance soon enough!"
 
+Instead of touching Roland:
+say "You give [Roland]'s hand a squeeze."
+
 Instead of kissing the player:
 say "Not right now, perhaps."
-
-Instead of kissing someone when the Wedding Ceremony is happening:
-say "There will be time for affections later."
 
 [TODO: kissing/etc anyone who isn't Roland, including the Player]
 
@@ -1298,6 +1352,9 @@ say "No. Absolutely not."
 
 Instead of kissing the Jerk:
 say "You're really not in the mood to do that."
+
+Instead of touching the Jerk:
+try kissing the Jerk.
 
 Understand the command "pet" as "kiss".
 
@@ -1427,6 +1484,12 @@ try drinking the oil.
 Before pouring the oil onto something:
 if the vial is not open, try silently opening the vial.
 
+Before putting the oil on something:
+if the vial is not open, try silently opening the vial.
+
+Before combining the oil with something:
+if the vial is not open, try silently opening the vial.
+
 Instead of pouring the vial onto something:
 try pouring the oil onto the second noun.
 
@@ -1485,11 +1548,16 @@ The knocker is part of the Cave Door. The description is "It's a golden knocker 
     
 Before knocking an unlocked door, say "You knock on [the noun], but there is no response." instead.
 
+Before knocking an unlocked door when the dragon is in the location and the dragon is not asleep, say "There's no need to knock on the door. The dragon is right here." instead.
+
 Before opening a locked door:
 say "The door is locked. Perhaps you should try knocking." instead.
 
 Check knocking a person (this is the redirect knocking a person to attacking rule): 
 try attacking the noun instead. 
+
+Instead of knocking the knocker:
+try knocking the Cave Door.
 
 Check knocking when the noun is not a door and the noun is not a person (this is the generic block knocking rule): 
 say "You give [the noun] a gentle rap." instead.
@@ -1599,7 +1667,7 @@ test wedding with "z/z/z/z/z/yes".
 test ruins with "search rubble/take bag/make dress/n".
 test burnt with "x trail/take branch/x tree/plugh".
 test torch with "make torch/pour vial on torch/s/light torch".
-test maze with "ne/e/s/se/w/n".
+test maze with "ne/e/s/s/w/n".
 test dragon with "knock on door/g".
 test sing with "sing/g/g/in".
 test me1 with "test wedding/test ruins/test burnt/test torch/n".
