@@ -969,7 +969,7 @@ To say wow: say "[one of]Were you impressed by that display[or]Wasn't that amazi
 To say impressed: say "'[one of]Fantastic[or]Magnificent[cycling]!' you [one of]exclaim[or]shout[cycling]. 'Do it again!'[paragraph break]";
 To say not-impressed: say "Apparently it takes a lot to impress you! But you force yourself to look delighted as you shout, 'Do it again!'[paragraph break]";
 
-After asking the dragon about a topic listed in the Table of Draconic Conversation:
+After asking the awake dragon about a topic listed in the Table of Draconic Conversation:
 	say "[reply entry]".
 
 Instead of telling the dragon about a topic:
@@ -1120,9 +1120,9 @@ try asking dragon about "fire".
 
 Table of Draconic Boasts
 topic	reply
-"flying ability/ability to fly/fast/fastest/flying/flight/wings/fly"	"[flight-boast]"
-"breathing fire/fierce/fiercest/fire/flame/flames/breath/smoke/burning"	"[fire-boast]"
-"breathing fire/fierce/fiercest/fire/flame/flames/breath/smoke/burning"	"[fire-boast]"
+"fast/fastest/flying/flight/wings/fly"	"[flight-boast]"
+"fierce/fiercest/fire/flame/flames/breath/smoke/burning"	"[fire-boast]"
+"fierce/fiercest/fire/flame/flames/breath/smoke/burning"	"[fire-boast]"
 
 To say dragon-boast:
 say "You say, 'Is it true that you are the fastest and fiercest dragon in the whole world?'[paragraph break]'Yes,' says [the dragon]. Boastful fellow, isn't he?"
@@ -1130,7 +1130,7 @@ say "You say, 'Is it true that you are the fastest and fiercest dragon in the wh
 Table of Draconic Conversation
 topic	reply
 "dragon/dragons/itself"	"[dragon-boast]"
-"fast/fastest/flying/flight/wings"	"[flight-boast]"
+"fast/fastest/flying/flight/wings/fly"	"[flight-boast]"
 "fierce/fiercest/fire/flame/flames/breath/smoke/burning"	"[fire-boast]"
 
 Exhaustion is a number that varies. Exhaustion is usually 0.

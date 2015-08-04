@@ -30,7 +30,7 @@ Constant Story "The Paper Bag Princess";
 Constant Headline SC_2;
 Constant Story_Author SC_3;
 Release 4;
-Serial "150801";
+Serial "150804";
 
 Default Story 0;
 Default Headline 0;
@@ -16575,8 +16575,8 @@ self = noun;
 ! Rule 9/18 ! After taking something when in darkness:
 !   >>> I - Number of aspects constrained >>>
 ! Rule 10/18 ! After asking the awake dragon about a topic listed in the Table of Draconic Boasts:
-!   >>> III.3.2 - Action/What/Thing Acted On >>>
-! Rule 11/18 ! After asking the dragon about a topic listed in the Table of Draconic Conversation:
+!   === which is equally specific with ===
+! Rule 11/18 ! After asking the awake dragon about a topic listed in the Table of Draconic Conversation:
 !   >>> III.3.1 - Action/What/Second Thing Acted On >>>
 ! Rule 12/18 ! After taking off the handful of rags:
 !   === which is equally specific with ===
@@ -16798,11 +16798,11 @@ self = noun;
    rfalse;
 ];
 ! No specific request
-! After asking the dragon about a topic listed in the Table of Draconic Conversation:
+! After asking the awake dragon about a topic listed in the Table of Draconic Conversation:
 [ R_1061 
     ct_0 ct_1 ! Used for table searches
     ;
-   if ((action ==##Ask) &&  (actor==player) && ((noun == I160_dragon) && (true)) && (ct_1=ExistsTableRowCorr(ct_0=T16_draconic_conversation,102,parsed_number))) { ! Runs only when pattern matches
+   if ((action ==##Ask) &&  (actor==player) && ((noun == I160_dragon) && ((Adj_84_t1_v9(noun)))) && (ct_1=ExistsTableRowCorr(ct_0=T16_draconic_conversation,102,parsed_number))) { ! Runs only when pattern matches
 self = noun;
    if (debug_rules) DB_Rule(R_1061, 1061);
       ! phrase 1
@@ -33973,7 +33973,7 @@ Array RulebookNames -->
 		if (R == R_1055) { print "Instead of saying hello to the dragon when the dragon is asleep"; return; } ! 1123, case 2
 		if (R == R_1056) { print "default give-show response for Dragon"; return; } ! 1124, case 2
 		if (R == R_1057) { print "After asking the awake dragon about a topic listed in the Table of Draconic Boasts"; return; } ! 1125, case 2
-		if (R == R_1061) { print "After asking the dragon about a topic listed in the Table of Draconic Conversation"; return; } ! 1126, case 2
+		if (R == R_1061) { print "After asking the awake dragon about a topic listed in the Table of Draconic Conversation"; return; } ! 1126, case 2
 		if (R == R_1062) { print "Instead of telling the dragon about a topic"; return; } ! 1127, case 2
 		if (R == R_1063) { print "default ask-tell response for Dragon"; return; } ! 1128, case 2
 		if (R == R_1064) { print "Before asking the dragon to try eating something"; return; } ! 1129, case 2
@@ -41392,37 +41392,25 @@ Verb 'apologize'
     rv  ! for use by individual grammar lines
     ;
     wn = range_from; original_wn = wn; rv = GPR_PREPOSITION;
-        if (NextWordStopped() ~= 'flying') jump Fail_1;
         group_wn = wn;
         .group_321_1_1; wn = group_wn;
-        if (NextWordStopped() ~= 'ability') jump group_321_1_2;
+        if (NextWordStopped() ~= 'fast') jump group_321_1_2;
         jump group_321_1_end;
         .group_321_1_2; wn = group_wn;
-        if (NextWordStopped() ~= 'ability') jump Fail_1;
-        .group_321_1_end;
-        if (NextWordStopped() ~= 'to') jump Fail_1;
-        group_wn = wn;
-        .group_321_2_1; wn = group_wn;
-        if (NextWordStopped() ~= 'fly') jump group_321_2_2;
-        jump group_321_2_end;
-        .group_321_2_2; wn = group_wn;
-        if (NextWordStopped() ~= 'fast') jump group_321_2_3;
-        jump group_321_2_end;
-        .group_321_2_3; wn = group_wn;
-        if (NextWordStopped() ~= 'fastest') jump group_321_2_4;
-        jump group_321_2_end;
-        .group_321_2_4; wn = group_wn;
-        if (NextWordStopped() ~= 'flying') jump group_321_2_5;
-        jump group_321_2_end;
-        .group_321_2_5; wn = group_wn;
-        if (NextWordStopped() ~= 'flight') jump group_321_2_6;
-        jump group_321_2_end;
-        .group_321_2_6; wn = group_wn;
-        if (NextWordStopped() ~= 'wings') jump group_321_2_7;
-        jump group_321_2_end;
-        .group_321_2_7; wn = group_wn;
+        if (NextWordStopped() ~= 'fastest') jump group_321_1_3;
+        jump group_321_1_end;
+        .group_321_1_3; wn = group_wn;
+        if (NextWordStopped() ~= 'flying') jump group_321_1_4;
+        jump group_321_1_end;
+        .group_321_1_4; wn = group_wn;
+        if (NextWordStopped() ~= 'flight') jump group_321_1_5;
+        jump group_321_1_end;
+        .group_321_1_5; wn = group_wn;
+        if (NextWordStopped() ~= 'wings') jump group_321_1_6;
+        jump group_321_1_end;
+        .group_321_1_6; wn = group_wn;
         if (NextWordStopped() ~= 'fly') jump Fail_1;
-        .group_321_2_end;
+        .group_321_1_end;
         if ((range_words==0) || (wn-range_from==range_words)) return rv;
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
     return GPR_FAIL;
@@ -41437,33 +41425,29 @@ Verb 'apologize'
     rv  ! for use by individual grammar lines
     ;
     wn = range_from; original_wn = wn; rv = GPR_PREPOSITION;
-        if (NextWordStopped() ~= 'breathing') jump Fail_1;
         group_wn = wn;
         .group_322_1_1; wn = group_wn;
-        if (NextWordStopped() ~= 'fire') jump group_322_1_2;
+        if (NextWordStopped() ~= 'fierce') jump group_322_1_2;
         jump group_322_1_end;
         .group_322_1_2; wn = group_wn;
-        if (NextWordStopped() ~= 'fierce') jump group_322_1_3;
+        if (NextWordStopped() ~= 'fiercest') jump group_322_1_3;
         jump group_322_1_end;
         .group_322_1_3; wn = group_wn;
-        if (NextWordStopped() ~= 'fiercest') jump group_322_1_4;
+        if (NextWordStopped() ~= 'fire') jump group_322_1_4;
         jump group_322_1_end;
         .group_322_1_4; wn = group_wn;
-        if (NextWordStopped() ~= 'fire') jump group_322_1_5;
+        if (NextWordStopped() ~= 'flame') jump group_322_1_5;
         jump group_322_1_end;
         .group_322_1_5; wn = group_wn;
-        if (NextWordStopped() ~= 'flame') jump group_322_1_6;
+        if (NextWordStopped() ~= 'flames') jump group_322_1_6;
         jump group_322_1_end;
         .group_322_1_6; wn = group_wn;
-        if (NextWordStopped() ~= 'flames') jump group_322_1_7;
+        if (NextWordStopped() ~= 'breath') jump group_322_1_7;
         jump group_322_1_end;
         .group_322_1_7; wn = group_wn;
-        if (NextWordStopped() ~= 'breath') jump group_322_1_8;
+        if (NextWordStopped() ~= 'smoke') jump group_322_1_8;
         jump group_322_1_end;
         .group_322_1_8; wn = group_wn;
-        if (NextWordStopped() ~= 'smoke') jump group_322_1_9;
-        jump group_322_1_end;
-        .group_322_1_9; wn = group_wn;
         if (NextWordStopped() ~= 'burning') jump Fail_1;
         .group_322_1_end;
         if ((range_words==0) || (wn-range_from==range_words)) return rv;
@@ -41480,33 +41464,29 @@ Verb 'apologize'
     rv  ! for use by individual grammar lines
     ;
     wn = range_from; original_wn = wn; rv = GPR_PREPOSITION;
-        if (NextWordStopped() ~= 'breathing') jump Fail_1;
         group_wn = wn;
         .group_323_1_1; wn = group_wn;
-        if (NextWordStopped() ~= 'fire') jump group_323_1_2;
+        if (NextWordStopped() ~= 'fierce') jump group_323_1_2;
         jump group_323_1_end;
         .group_323_1_2; wn = group_wn;
-        if (NextWordStopped() ~= 'fierce') jump group_323_1_3;
+        if (NextWordStopped() ~= 'fiercest') jump group_323_1_3;
         jump group_323_1_end;
         .group_323_1_3; wn = group_wn;
-        if (NextWordStopped() ~= 'fiercest') jump group_323_1_4;
+        if (NextWordStopped() ~= 'fire') jump group_323_1_4;
         jump group_323_1_end;
         .group_323_1_4; wn = group_wn;
-        if (NextWordStopped() ~= 'fire') jump group_323_1_5;
+        if (NextWordStopped() ~= 'flame') jump group_323_1_5;
         jump group_323_1_end;
         .group_323_1_5; wn = group_wn;
-        if (NextWordStopped() ~= 'flame') jump group_323_1_6;
+        if (NextWordStopped() ~= 'flames') jump group_323_1_6;
         jump group_323_1_end;
         .group_323_1_6; wn = group_wn;
-        if (NextWordStopped() ~= 'flames') jump group_323_1_7;
+        if (NextWordStopped() ~= 'breath') jump group_323_1_7;
         jump group_323_1_end;
         .group_323_1_7; wn = group_wn;
-        if (NextWordStopped() ~= 'breath') jump group_323_1_8;
+        if (NextWordStopped() ~= 'smoke') jump group_323_1_8;
         jump group_323_1_end;
         .group_323_1_8; wn = group_wn;
-        if (NextWordStopped() ~= 'smoke') jump group_323_1_9;
-        jump group_323_1_end;
-        .group_323_1_9; wn = group_wn;
         if (NextWordStopped() ~= 'burning') jump Fail_1;
         .group_323_1_end;
         if ((range_words==0) || (wn-range_from==range_words)) return rv;
@@ -41561,7 +41541,10 @@ Verb 'apologize'
         if (NextWordStopped() ~= 'flight') jump group_325_1_5;
         jump group_325_1_end;
         .group_325_1_5; wn = group_wn;
-        if (NextWordStopped() ~= 'wings') jump Fail_1;
+        if (NextWordStopped() ~= 'wings') jump group_325_1_6;
+        jump group_325_1_end;
+        .group_325_1_6; wn = group_wn;
+        if (NextWordStopped() ~= 'fly') jump Fail_1;
         .group_325_1_end;
         if ((range_words==0) || (wn-range_from==range_words)) return rv;
         .Fail_1; rv = GPR_PREPOSITION; wn = original_wn;
