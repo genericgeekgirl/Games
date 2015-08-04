@@ -867,11 +867,16 @@ Instead of saying no when Decision Making is happening:
 	end the game saying "And they didn't get married after all!"
 	
 Instead of waiting when Decision Making is happening:
-say "The minister is waiting for your answer. Please say 'yes' or 'no'."
+say "[minister-waiting]".
 
-Instead of doing anything except saying yes or saying no when Decision Making is happening:
-say "The minister is waiting for your answer. Please say 'yes' or 'no'."
-		
+Instead of doing anything except looking or examining or saying yes or saying no when Decision Making is happening:
+say "[minister-waiting]".
+
+After looking or examining when Decision Making is happening:
+try silently waiting.
+
+To say minister-waiting: say "The minister is waiting for your answer. Please say 'yes' or 'no'."
+
 To say doom:
 say "A large dragon flies overhead. The wedding guests scatter in every direction. You cower against [Roland], but [subjective] pushes you towards the dragon and runs towards the road.[paragraph break]The dragon eats all the guests it can catch, and when it has had its fill, it smashes your castle to smithereens with its heavy tail and sets the remains on fire. You are nearly caught in a blaze of flame as you duck behind what used to be the stone wall of the garden. You are unhurt, but your fine gown snags on a rose bush and tears.[paragraph break]As the dragon finally turns to go, it catches sight of [Roland], running down the road towards the river. It swoops down and smashes the bridge just as [Roland] is about to cross it and catches [objective] up in its claws. The dragon flies away with your beloved [title]."
 

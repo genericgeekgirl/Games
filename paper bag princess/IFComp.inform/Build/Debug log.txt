@@ -6,7 +6,7 @@ Inform called as: /usr/local/libexec/ni --rules /usr/local/share/inform7/Inform7
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 12254 words long.
+I've now read your source text, which is 12268 words long.
 
 
 -----------------------------------------------------
@@ -77,92 +77,37 @@ Phase X ... Tables and grammar
 Phase XI ... Phrases and rules
 -----------------------------------------------------
 
+PHUD: <after looking or examining or examining the player when decision making is happening>: rule attachment mode RULE_IN_RULEBOOK_RAM
+  Rule preamble: <after looking or examining or examining the player>
+  Rule parameter: <looking or examining or examining the player when decision making is happening>
+  Owned by rulebook: Rulebook 24 (after)
+  Placement: MIDDLE_PLACEMENT
+Bad action pattern: looking or examining or examining the player when decision making is happening =   [Invalid]  Action: unspecified  Noun: (A)'the player'/STORAGE_FMY/NONLOCAL_VARIABLE_SPC
+
+PAP failure reason: 6
+Problem C22APWithImmiscible issued from Chapter 22/Phrase Usage.w, line 785
+
+In Volume - Scenes, Book - Wedding Ceremony:
+
+
+  >--> You wrote 'After looking or examining or examining the player when
+    Decision Making is happening' (source text, line 875), which seems to
+    introduce a rule taking effect only 'looking or examining or examining the
+    player when Decision Making is happening'. But this is a combination of
+    actions which cannot be mixed. The only alternatives where 'or' is allowed
+    are cases where a choice of actions is given but applying to the same
+    objects in each case. (So 'taking or dropping the CD' is allowed, but
+    'dropping the CD or inserting the CD into the jewel box' is not, because
+    the alternatives there would make different use of objects from each
+    other.)
+
 
 
 -----------------------------------------------------
-Phase XII ... Code generation
+Phase XII ... Compilation now complete
 -----------------------------------------------------
 
-
-
-==== Phase XII.1 ... Compiling the storage for the model world ====
-
-
-
-==== Phase XII.2 ... Compiling the tables ====
-
-
-
-==== Phase XII.3 ... Compiling the equations ====
-
-
-
-==== Phase XII.4 ... Compiling the named action patterns ====
-
-
-
-==== Phase XII.5 ... Compiling the action routines ====
-
-
-
-==== Phase XII.6 ... Compiling first block of phrases ====
-
-
-
-==== Phase XII.7 ... Compiling the rulebooks ====
-
-
-
-==== Phase XII.8 ... Compiling scene details ====
-
-
-
-==== Phase XII.9 ... CTNL ====
-
-
-
-==== Phase XII.10 ... Slashing grammar (G1) ====
-
-
-
-==== Phase XII.11 ... Determining grammar (G2) ====
-
-
-
-==== Phase XII.12 ... Compiling GPR tokens for parsing various kinds of value ====
-
-
-
-==== Phase XII.13 ... Compiling noun and scope filter tokens ====
-
-
-
-==== Phase XII.14 ... Compiling second block of phrases ====
-
-
-
-==== Phase XII.15 ... Compiling chronology ====
-
-
-
-==== Phase XII.16 ... Compiling I6 Verb directives ====
-
-
-
-==== Phase XII.17 ... Sorting and compiling non-value grammar (G3, G4) ====
-
-
-
-==== Phase XII.18 ... Compiling routines from predicate calculus ====
-
-Providing for a total heap of 8192, given requirement of 8192
-
-
------------------------------------------------------
-Phase XIII ... Compilation now complete
------------------------------------------------------
-
-Total of 207 files written as streams.
+Total of 4 files written as streams.
 
 That concludes the debugging log from this run of Inform.
 Its contents were as follows, and can be changed by placing
