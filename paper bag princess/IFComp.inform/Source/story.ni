@@ -108,7 +108,15 @@ Understand "minister" and "priest" and "officiant" as father alfred.
 
 Some guests are scenery in the Garden. The description is "You are surrounded by your family and friends."
 
-The parents are scenery in the Garden. The description is "Your parents, Queen Katherine and King Theodore are here, as well as [Roland]'s mother, Queen Anne." Understand "family" as parents.
+The parents are scenery in the Garden.  The description is "Your parents, Queen Katherine and King Theodore are here, as well as [Roland]'s mother, Queen Anne." Understand "family" as parents.
+
+The friends are scenery in the Garden. The description is "Your friends have traveled far and wide in order to celebrate your big day."
+
+rule for printing a locale paragraph about a person (called P):
+	if P is not Roland:
+		now P is mentioned;
+	otherwise:
+		say "Your betrothed, [Roland], stands before you."
 
 Instead of doing anything except examining to the parents:
     say "Please refer to the parents (Katherine, Theodore, Anne) individually."
@@ -119,7 +127,7 @@ Queen Anne is a woman in the Garden. The description is "Your mother smiles at y
     
 Chapter - Bouquet
 
-The bouquet is a thing carried by the player. The description is "Your bouquet contains a collection of purple and orange flowers, tied up with a white ribbon. You don't even know what most of those flowers are called." Understand "flowers" as bouquet.
+The bouquet is a thing carried by the player. The description is "Your bouquet contains a collection of purple and orange flowers, tied up with a white ribbon. You don't even know what most of these flowers are called." Understand "flowers" as bouquet.
 
 Instead of smelling the bouquet:
 say "You hold the bouquet up to your face and breathe in deeply."
@@ -431,7 +439,7 @@ Carry out making a torch:
 		now the oil is part of the torch;
 	now the player carries the torch.
 		
-The torch is a thing. The description is "It is a torch crafted from a branch and the remains of your wedding gown.[if the torch is lit] It is on fire.[otherwise if the oil is part of the torch] The rags have been doused in an oily black liquid.[end if]". Understand "branch" and "handful of rags" as torch.
+The torch is a thing. The description is "It is a torch crafted from a branch and the remains of your wedding gown.[if the torch is lit] It is on fire.[otherwise if the oil is part of the torch] The rags have been doused in an oily black liquid.[end if]". Understand "branch" and "rags" and "handful of rags" as torch.
 
 [TODO: Show in inventory whether torch is on fire or not.]
 
@@ -632,14 +640,14 @@ Before going north from Forest5:
 		say "You finally emerge from the forest.";
 
 After going south from Forest2:
-	say "You seem to sense that you are going in the correct direction."                        
+	say "You have a gut feeling that you are heading in the right direction."
 
 Before going south from Forest3:
 	say "[The torch] starts to flicker. It will probably burn out soon.";                
 
 After going west from Forest4:
-	say "Yes, you are definitely heading in the right direction."
-        
+	say "The forest seems a little less dark and dense somehow."
+                
 Chapter - Dragons Cave
 
 The Cave Exterior is a room. The printed name is "Outside the Dragon's Cave". "You are standing before a large cave. The entrance has been blocked by a large wooden door."
@@ -745,7 +753,7 @@ Carry out making-roland-male:
 	say "Ok!";
 	now Roland is male.
 	
-Roland is a person in the Garden. "Your betrothed, [Roland], stands before you." Roland can be male or female. Roland is male. The printed name is "[if Roland is male]Roland[otherwise]Rolande".
+Roland is a person in the Garden. Roland can be male or female. Roland is male. The printed name is "[if Roland is male]Roland[otherwise]Rolande".
 The description is "[Roland] is the most attractive [gender] you have ever laid eyes on."
 
 Understand "betrothed" as Roland.
