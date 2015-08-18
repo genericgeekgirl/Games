@@ -80,6 +80,9 @@ Fast quitting is an action out of world.
 Understand "quitr" as fast quitting.
 Carry out fast quitting: follow the immediately quit rule.
 
+Rule for printing a parser error when the latest parser error is the I beg your pardon error (this is the do something useful with blank lines rule):
+	try looking.
+
 Volume - Setting
 
 Book - Castle Area
@@ -192,6 +195,8 @@ say "The water is too cold to bathe in. And probably infested with sharks."
 
 Carry out bathing:
 say "There is nothing here for you to bathe in."
+
+Understand "dive" as swimming.
 
 Instead of swimming when the river is in the location:
 say "You are a powerful swimmer, but you would freeze to death before you could reach the other side."
@@ -1340,6 +1345,9 @@ Understand "swim" and "go swimming" as swimming.
 Carry out swimming:
 say "There is nothing here for you to swim in."
 
+Instead of jumping when wedding ceremony is happening:
+say "You shuffle your feet under your gown."
+
 Instead of jumping:
 say "You jump on the spot."
 
@@ -1521,6 +1529,7 @@ Instead of examining a fluid container, say "In [the noun] [is-are a list of thi
 The description of the vial is "It's a vial, containing a dark liquid."
 
 Check inserting anything into the open vial:
+if the noun is the river, try drinking the river instead;
 if the noun is not a fluid, say "The vial is too small to contain that." instead;
 if the noun is the oil, say "That is already in the vial." instead.
 
@@ -1573,7 +1582,7 @@ Instead of pouring the oil onto something:
 	otherwise if the second noun is the torch or the second noun is the handful of rags:
 		say "You pour [the oil] onto [the second noun] and discard the empty [vial].";
 		now the oil is part of the second noun;
-		remove the vial from play;
+		move the vial to the location;
 	otherwise if the second noun is the oil or the second noun is the vial:
 		say "It is rather difficult to pour something on itself.";
 	otherwise if the second noun is the branch:
@@ -1741,3 +1750,4 @@ test sing with "sing/g/g/in".
 test me1 with "test wedding/test ruins/test burnt/test torch/n".
 test me with "test me1/test maze/test dragon".
 test me2 with "test me/test sing".
+
