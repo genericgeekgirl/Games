@@ -46,7 +46,7 @@ To say author: say "The author can be contacted at <genericgeekgirl@gmail.com>."
 
 to say credits: say "[story title] is loosely based upon the book of the same name by Robert Munsch. Permission to write the game was requested from and granted by Mister Munsch himself.[paragraph break]Thank you so much to my beta testers: Brendan Desilets, Dan Shiovitz, Dan Kelly, David Sturgis, Doug Orleans, Emily Boegheim, Jason McIntosh, Johnny Rivera, Kevin Jackson-Mead, Matthew Miller, Scott Snyder and Z Goddard. Post-release feedback from Adam Myers, Andrew Schultz, E Joyce, Felix Plesoianu and Victor Gijsbers was also particularly helpful to me."
 
-To say walkthrough: say "This walkthrough results in the 'traditional' ending. [paragraph break]wait[line break]wait[line break]wait[line break]wait[line break]wait[line break]yes[line break]press space[line break]search rubble[line break]take bag[line break]make dress[line break]north[line break]x trail[line break]take branch[line break]x tree[line break]plugh[line break]make torch[line break]open vial[line break]pour oil on torch[line break]south[line break]light torch[line break]north[line break]northeast[line break]east[line break]south[line break]south[line break]west[line break]north[line break]knock on door[line break]again[line break]shout[line break]ask dragon about fire[line break]y[line break]y[line break]ask dragon about flight[line break]y[line break]in[line break]shout at roland[paragraph break]Most puzzles have alternate solutions. Have fun exploring!".
+To say walkthrough: say "This walkthrough results in the 'traditional' ending. [paragraph break]wait[line break]wait[line break]wait[line break]wait[line break]wait[line break]yes[line break]press space[line break]search rubble[line break]take bag[line break]make dress[line break]take rags[line break]north[line break]x trail[line break]take branch[line break]x tree[line break]plugh[line break]make torch[line break]open vial[line break]pour oil on torch[line break]south[line break]light torch[line break]north[line break]northeast[line break]east[line break]south[line break]south[line break]west[line break]north[line break]knock on door[line break]again[line break]shout[line break]ask dragon about fire[line break]y[line break]y[line break]ask dragon about flight[line break]y[line break]in[line break]shout at roland[paragraph break]Most puzzles have alternate solutions. Have fun exploring!".
 
 Book - Blocking superbrief/brief modes
 
@@ -154,7 +154,7 @@ say "The trees in this direction have been broken and scorched, creating a path 
 
 Chapter - Scenery
     
-The forest is scenery in the Castle Ruins. Understand "trees" and "tree" as forest. The description is "The forest surrounds you thickly on all sides, except for an area to the north where the trees have been broken and scorched."
+The forest is scenery in the Castle Ruins. Understand "trees" and "tree" and "wood" and "woods" as forest. The description is "The forest surrounds you thickly on all sides, except for an area to the north where the trees have been broken and scorched."
 
 Instead of climbing the tree:
     say "You climb about mid-way up the tree. To the south lie the remains of your castle. In the other directions, there is nothing to see except miles and miles of ruined trees. You climb back down the tree."
@@ -169,6 +169,9 @@ The road is scenery in the Castle Ruins. The description is "This well-traveled 
 
 The river is scenery in the Castle Ruins. Understand "river bank" and "riverbank" and "water" as river. The description is "The water is very deep here, and it moves quickly. Your father used to scare you with stories of sharks, although you have never actually seen one."
 
+Instead of entering the river:
+try swimming.
+
 The furniture is scenery in the Castle Ruins. The description is "You think you can make out the leg of a chair somewhere in that mess. It's mostly just a blaze of fire." Understand "wood" and "leg" and "chair" as furniture.
 
 Instead of taking furniture:
@@ -181,10 +184,20 @@ The sharks are scenery in the Castle Ruins. They are plural-named. The descripti
 
 The stars are scenery in the Castle Ruins. They are plural-named. The description is "The sky is usually full of them this time of year, but you cannot see them through the thick smoke."
 
-Understand "bathe" as swimming when the river is in the location.
-    
+Bathing is an action applying to nothing.
+Understand "bathe" and "wash myself" and "wash self" as bathing.
+
+Instead of bathing when the river is in the location:
+say "The water is too cold to bathe in. And probably infested with sharks."
+
+Carry out bathing:
+say "There is nothing here for you to bathe in."
+
 Instead of swimming when the river is in the location:
 say "You are a powerful swimmer, but you would freeze to death before you could reach the other side."
+
+Instead of drinking the river:
+say "The water level is too low. You would fall in and freeze to death."
 
 Giving up is an action applying to nothing.
 Understand "give up" as giving up.
@@ -238,9 +251,17 @@ Instead of going nowhere from Castle Ruins:
 	
 Part - Paper Bag
 
-The paper bag is a wearable thing. The paper bag is part of the pile of rubble. Understand "paperbag" and "gift bag" as paper bag. The description is "It's a gift bag made out of paper. It looks like it used to have polka dots on it, but now it's just scorched.[if the paper bag has been worn] It has been fashioned into a crude dress.[end if]". Understand "dress" as paper bag when the paper bag has been worn.
+The paper bag is a wearable thing. The paper bag is part of the pile of rubble. Understand "paperbag" and "gift bag" as paper bag. The description is "It's a gift bag made out of paper. It looks like it used to have polka dots on it, but now it's just scorched. [if the paper bag has been worn] It has been fashioned into a crude dress.[otherwise] There's a large hole in the bottom.[end if]". Understand "dress" as paper bag when the paper bag has been worn.
 
 The printed name of the paper bag is "[if the player wears the paper bag]gift bag that has been fashioned into a rather fashionable dress[otherwise]paper bag[end if]"
+
+Tearing is an action applying to one thing.
+Understand "tear [something]" and "rip [something]" as tearing.
+Instead of tearing something:
+try attacking the noun.
+
+Instead of opening the paper bag:
+say "There is nothing inside the bag."
 
 Instead of searching the pile of rubble when the paper bag is part of the pile of rubble:
     move the paper bag to the location; 
@@ -272,7 +293,7 @@ Before wearing the paper bag for the first time:
 
 After taking off the handful of rags:
 	say "You strip off the remains of your wedding gown";
-	now the player carries the handful of rags;
+	move the handful of rags to the location;
 	now the handful of rags are not wearable;
 	if the player encloses the necklace:
 		say " and discard them in a [pile of rubble]";
@@ -386,9 +407,14 @@ Section - The Burnt Forest
 
 The Burnt Forest is north of Castle Ruins. "There's a trail of burned trees and what appear to be teeth leading to the northeast. One tree in particular catches your eye. The remains of your castle are back to the south."
 
-The tree is scenery in the burnt forest. The description is "You examine the tree more closely. Someone has carved 'PLUGH' into the trunk." Understand "trunk" and "carving" as tree.
+The tree is scenery in the burnt forest. The description is "You examine the tree more closely. Someone has carved 'PLUGH' into the trunk." Understand "trunk" and "carving" and "letters" as tree.
 
-The teeth are plural-named scenery in the Burnt Forest. The description is "[first time]Yes, those are definitely teeth. [only]They come in a variety of shapes and sizes, most of which do not appear to be human. You wonder briefly where the rest of the bones are."
+Instead of kissing the tree:
+say "You do. Somehow it makes you feel a little better."
+
+The other forest is scenery in the Burnt Forest. Understand "trees" and "wood" and "woods" as other forest. The description is "You are surrounded by the forest." The printed name is "burnt forest". Understand "burnt forest" as other forest.
+
+The teeth are plural-named scenery in the Burnt Forest. The description is "[first time]Yes, those are definitely teeth. [only]They come in a variety of shapes and sizes, most of which do not appear to be human. You wonder briefly where the rest of the bones are." Understand "tooth" as teeth.
 
 Instead of taking the teeth:
 say "You have absolutely no need for those. What are you going to do, make a necklace?"
@@ -439,7 +465,7 @@ Carry out making a torch:
 		now the oil is part of the torch;
 	now the player carries the torch.
 		
-The torch is a thing. The description is "It is a torch crafted from a branch and the remains of your wedding gown.[if the torch is lit] It is on fire.[otherwise if the oil is part of the torch] The rags have been doused in an oily black liquid.[end if]". Understand "branch" and "rags" and "handful of rags" as torch.
+The torch is a thing. The description is "It is [if the torch is lit]a[otherwise]an unlit[end if] torch crafted from a branch and the remains of your wedding gown.[if the torch is lit] It is on fire.[otherwise if the oil is part of the torch] The rags have been doused in an oily black liquid.[end if]". Understand "branch" and "rags" and "handful of rags" as torch.
 
 [TODO: Show in inventory whether torch is on fire or not.]
 
@@ -493,6 +519,9 @@ say "You are now alone in the dark. You remember the stories your father used to
 
 Finding is an action applying to one thing. 
 Understand "find [anything]" as finding.
+Understand "look for [anything]" as finding.
+
+Carry out finding: say "That's right in front of you."
 
 After deciding the scope of the player when in darkness:
 	place the location in scope.
@@ -518,6 +547,8 @@ A numerical forest room is a kind of Forest Room.
 An alphabetical forest room is a kind of Forest Room.
 
 The dark trees are scenery and a backdrop. They are plural-named. Instead of examining the dark trees, try looking.
+
+Understand "forest" and "woods" and "wood" as dark trees.
 
 The other tree is scenery and a backdrop. Instead of examining the other tree, try looking.
 
@@ -611,7 +642,8 @@ Instead of switching on the flashlight:
 say "You switch the flashlight on, but it doesn't work. You turn if off again, out of habit."
 
 The ring is a wearable thing in ForestE. "There is a shiny ring here." The description is "A very pretty ring."
-Instead of wearing the ring:
+
+Instead of wearing the ring when the location is a forest room:
 say "As you slip the ring on your finger, it vanishes. You find yourself transported to a clearing.";
 remove the ring from play;
 move the player to the cave exterior.
@@ -657,7 +689,10 @@ The Cave Exterior and Cave Interior are in the Dragons Cave.
 
 The cave door is scenery and a closed locked door. It is inside from Cave Exterior and outside of Cave Interior. Understand "entrance" and "door" as Cave Door. "The large door almost perfectly fills in the natural opening in the rock. There is a golden knocker in the shape of a dragon's tail about a foot above your head."
 
-The treasure is scenery in the Cave Interior. The description is "There is more gold and precious gems here than you have ever seen before in your life." Understand "gold" and "gems" as treasure.
+The treasure is scenery in the Cave Interior. The description is "There is more gold and precious gems here than you have ever seen before in your life." Understand "gold" and "gems" and "piles" as treasure.
+
+Instead of climbing the treasure:
+say "Bits of treasure have been thrown haphazardly into large piles. They don't look very stable."
 
 Instead of taking the treasure:
 say "No, Elizabeth. You were raised better than that."
@@ -673,26 +708,26 @@ The description of the player is "You are young and beautiful, too lovely to be 
 
 Section - Inventory (Wearing)
 
+Definition: a person is indecent if she is not wearing the paper bag.
+
 After examining the player:
-	If the number of things worn by the player is 0:
+	if the number of things worn by the player is 0:
 		say "You are elegantly clad in only your birthday suit.";
 	otherwise if the player is not wearing the wedding gown and the player is not wearing the paper bag and the player is not wearing the handful of rags:
 		say "You are stark naked, save for [a list of things worn by the player]." instead;
 	otherwise:
-		say "You are wearing [a list of things worn by the player].";
-			
-Definition: a person is indecent if she is not wearing the paper bag.
+		say "You are wearing [a list of things worn by the player].".
 
 Section - Inventory (Carrying)
 
 Instead of taking inventory: 
-    say "You are carrying "; 
-    now all things carried by the player are marked for listing; 
-    now all things worn by the player are unmarked for listing; 
-    if no things carried by the player are marked for listing, say "nothing"; 
-    otherwise list the contents of the player, as a sentence, tersely, giving brief inventory information, listing marked items only; 
-    say ".[paragraph break]".
-
+	say "You are carrying "; 
+	now all things carried by the player are marked for listing; 
+	now all things worn by the player are unmarked for listing; 
+	if no things carried by the player are marked for listing, say "nothing"; 
+	otherwise list the contents of the player, as a sentence, tersely, giving brief inventory information, listing marked items only; 
+	say ".[paragraph break]".
+    
 Book - Wedding Gown
 
 The wedding gown is a thing worn by the player.
@@ -914,12 +949,12 @@ move the dragon to the Cave Exterior.
 Instead of shouting when the dragon is impatient:
 try shouting at the dragon.
 
-Before saying hello to the dragon when the dragon is impatient:
+Instead of saying hello to the dragon when the dragon is impatient:
 try shouting at the dragon.
 
-Instead of shouting at the dragon for the first time:
-say "'Wait!' you exclaim.[paragraph break]Surprised, the dragon steps entirely out of the cave, nudging the door shut with its tail.";
-now the dragon is not impatient.
+Instead of shouting at the dragon when the dragon is impatient:
+now the dragon is not impatient;
+say "'Wait!' you exclaim.[paragraph break]Surprised, the dragon steps entirely out of the cave, nudging the door shut with its tail."
 
 After doing anything except shouting at the dragon when the dragon is impatient:
 	If the dragon has been impatient for 5 turns:
@@ -939,7 +974,10 @@ say "[The dragon] says, 'No, I don't think so.'"
        
 Instead of going from Cave Exterior when the dragon is in the location and the dragon is awake:
 say "[The dragon] is blocking the doorway and will not allow you to pass."
-        
+
+Instead of unlocking the cave door with something:
+say "The door doesn't seem to have a keyhole."
+
 When Rescue ends:
 	say "The dragon is so tired that he falls fast asleep.";
 	now the dragon is asleep;
@@ -956,6 +994,9 @@ Instead of attacking an asleep animal:
 say "[The noun] is harmless to you while asleep."
 
 Instead of shouting at the dragon when the dragon is asleep:
+try saying hello to the dragon.
+
+Instead of shouting when the dragon is in the location and the dragon is asleep:
 try saying hello to the dragon.
 
 Instead of saying hello to the dragon when the dragon is asleep:
@@ -1001,7 +1042,10 @@ say "The dragon says, 'Oh, I couldn't possibly.'" instead.
 [TODO: differentiate between ask/tell, to add some more flavor text; also wedding, parents, etc; maybe ask about dragons, plural]
 
 Understand "sing to dragon" as singing when the dragon is in the location.
-    
+
+After singing when the dragon is impatient:
+now the dragon is not impatient.
+
 Instead of singing when the awake dragon is in the location:
 say "You sing a few bars of a lullaby your mother used to sing to you.[paragraph break][one of]The dragon seems to relax at the sound[or]It seems to be having the desired effect on the dragon[stopping].";
 	increase exhaustion by 1;
@@ -1190,6 +1234,8 @@ Understand "tell [someone] off" as shouting at.
 Instead of taking off the paper bag when the Jerk is in the location:
 say "You take off the bag, crumple it up and throw it at [Roland].[paragraph break]";
 try shouting at the Jerk.
+
+Understand the command "stab" as "cut".
 
 Instead of attacking the dragon with the dagger:
 try cutting the dragon with the dagger.
@@ -1586,6 +1632,15 @@ say "You practice a few steps of the Pemberletten waltz."
 Instead of dancing when the Wedding Ceremony is happening:
 say "You shuffle your feet unnoticeably underneath your floor-length gown."
 
+Laughing is an action applying to nothing.
+Understand "laugh" as laughing.
+
+Instead of laughing when the Wedding Ceremony is happening:
+say "You stifle a laugh."
+
+Carry out laughing:
+say "You laugh loudly."
+
 Crying is an action applying to nothing.
 Understand "cry" or "sob" or "wail" as crying.
 
@@ -1677,7 +1732,7 @@ say "[LINE BREAK]Have you tried...[LINE BREAK]- casting xyzzy during the wedding
 Volume - Testing
     
 test wedding with "z/z/z/z/z/yes".
-test ruins with "search rubble/take bag/make dress/n".
+test ruins with "search rubble/take bag/make dress/take rags/n".
 test burnt with "x trail/take branch/x tree/plugh".
 test torch with "make torch/pour vial on torch/s/light torch".
 test maze with "ne/e/s/s/w/n".
