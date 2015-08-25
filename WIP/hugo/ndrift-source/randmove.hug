@@ -1,0 +1,119 @@
+!\ Here's a replacement routine for Hugo 2.1 that allows for random NPC movement
+via character scripting. To use it, you will simply make the call to CharMove
+with the object parameter set to 0, e.g.:
+
+setscript[Script (Bozo, 3)] = &CharMove, 0, &CharMove, 0, &LoopScript, 0
+
+Well, ok, it's actually not quite that simple. You also have to provide an
+"npc_move" property for all your locations, listing the direction objects
+corresponding to valid moves for your NPC:
+
+room lobby "Lobby"
+{
+  npc_move e_obj, w_obj, n_obj, s_obj
+}
+
+That's it. Just make sure you declare the new npc_move property at the
+beginning or your source before you try to use it.
+
+Note:
+This supercedes my previous effort, which didn't require the extra property
+but suffered from some other serious defects because of it. All in all, the
+benefit is worth the added work, I think. Of course, none of this is
+required if you don't plan on moving your NPC's around randomly.
+\!
+
+
+!---------------------------------------------------------------------------
+! CharMove
+! Script usage:  &CharMove, <direction object>
+
+!property npc_move       ! put this before first room object, not here
+
+array pdir[11]
+
+replace CharMove(char, dir)
+{
+        local newroom, a
+        
+#ifclear NO_OBJLIB
+
+	general = 1                     ! for signalling a character move
+					! to, for example, door.door_to
+	
+        if dir = 0                      ! if random move
+        {
+          while a < parent(char).#npc_move
+          { 
+		if parent(char).npc_move#(a+1)
+	              pdir[a]=parent(char).npc_move#(a+1)
+            a=a+1
+          }
+
+          a=a-1
+
+          if pdir[0] = 0
+	            return true                 ! if no available move, just skip
+
+          dir = pdir[random(a)]
+
+          while a >= 0
+
+          { pdir[a] = 0 : a=a-1 }       ! flush array
+        }
+
+        newroom = parent(char).(dir.dir_to)
+
+        if char in location and general = 1             ! door.door_to sets
+							! general = 2 if it
+							! prints a message
+	{
+		print "\n"; CThe(char);
+		print " head"; MatchSubject(char); " ";
+		if dir = u_obj or dir = d_obj
+			print dir.name; "ward."
+		else
+		{
+			print "off to the ";
+			print dir.name; "."
+		}
+		event_flag = true
+	}
+	elseif char in location
+		event_flag = true
+	
+	move char to newroom
+	
+!#ifset DEBUG        
+!	if _sc_flag
+!	{
+!		print "["; CThe(char); IsorAre(char, true); " now in:  ";
+!		print capital parent(char).name; ".]"
+!	}
+!#endif
+
+	if char in location and general = 1
+	{
+		!print "\n"; CThe(char);
+		print "\n"; CArt(char);
+		print " arrive"; MatchSubject(char); " from ";
+		if dir ~= u_obj and dir ~= d_obj
+			print "the "; (dir.dir_from).name; "."
+		elseif dir = u_obj
+			print "below."
+		else
+			print "above."
+		event_flag = true
+	}
+	elseif char in location
+		event_flag = true
+
+	general = 0                     ! always reset it
+
+#endif  ! ifclear NO_OBJLIB
+
+	run parent(char).after
+	
+	return true
+}
+

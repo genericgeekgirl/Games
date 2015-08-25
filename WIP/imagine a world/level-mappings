@@ -1,0 +1,32 @@
+Volume - Imagination to Level Mappings
+
+The notify score changes rule is not listed in any rulebook.
+Understand the command "score" as something new.
+
+To decide which text is the level:
+	repeat through the table of rankings in reverse order:
+		if the score is not less than score entry, decide on the level entry;
+
+Table of Rankings
+Score	Level
+0	"1"	
+400	"2"	
+691	"3"	
+1089	"4"	
+1615	"5"	
+2290	"6"	
+3134	"7"	
+4174	"8"	
+5433	"9"	
+6940	"10"	
+8724	"11"	
+10815	"12"	
+13246	"13"	
+16053	"14"	
+19272	"15"	
+22943	"16"	
+27105	"17"	
+31802	"18"	
+37080	"19"	
+42987	"20"	
+

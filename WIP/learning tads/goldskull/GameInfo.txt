@@ -1,0 +1,13 @@
+IFID: 5b252939-8c87-0a51-dd3f-eafb1c07da05
+Name: Gold Skull
+Byline: by A TADS 3 Tyro
+HtmlByline: by <a href="mailto:$EMAIL$">  $AUTHOR$</a>
+AuthorEmail: $AUTHOR$ <$EMAIL$>
+Desc: $DESC$
+HtmlDesc: $HTMLDESC$
+Version: 1
+ReleaseDate: 2014-10-27
+Language: en-US
+LicenseType: Freeware
+CopyingRules: Nominal cost only; compilations allowed
+PresentationProfile: Default

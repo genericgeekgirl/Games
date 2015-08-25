@@ -1,29 +1,29 @@
 ! Blurb file created by Inform build 6G60
 
-status "/usr/local/share/inform7/Inform7/Extensions/Reserved/CblorbModel.html" "/home/adri/Dropbox/ectocomp/hippo.inform/Build/StatusCblorb.html"
+status "/usr/local/share/inform7/Inform7/Extensions/Reserved/CblorbModel.html" "/home/adri/Games/Interactive Fiction/Adri/WIP/hippo on elm street/hippo.inform/Build/StatusCblorb.html"
 
 
 ! Identification
 
-project folder "/home/adri/Dropbox/ectocomp/hippo.inform"
-release to "/home/adri/Dropbox/ectocomp/hippo Materials/Release"
+project folder "/home/adri/Games/Interactive Fiction/Adri/WIP/hippo on elm street/hippo.inform"
+release to "/home/adri/Games/Interactive Fiction/Adri/WIP/hippo on elm street/hippo Materials/Release"
 
 ! Blorb instructions
 
 storyfile leafname "A Hippo on Elm Street.zblorb"
-storyfile "/home/adri/Dropbox/ectocomp/hippo.inform/Build/output.z8" include
-ifiction "/home/adri/Dropbox/ectocomp/hippo.inform/Metadata.iFiction" include
+storyfile "/home/adri/Games/Interactive Fiction/Adri/WIP/hippo on elm street/hippo.inform/Build/output.z8" include
+ifiction "/home/adri/Games/Interactive Fiction/Adri/WIP/hippo on elm street/hippo.inform/Metadata.iFiction" include
 cover "/usr/local/share/inform7/Inform7/Extensions/Reserved/DefaultCover.jpg"
 picture 1 "/usr/local/share/inform7/Inform7/Extensions/Reserved/DefaultCover.jpg"
 
 ! Placeholder variables
 
 placeholder [IFID] = "C818F80C-1968-4482-BA62-6F1C4BE4A8A1"
-placeholder [RELEASE] = "2"
-placeholder [YEAR] = "2014"
+placeholder [RELEASE] = "1"
+placeholder [YEAR] = "2015"
 placeholder [TITLE] = "A Hippo on Elm Street"
-placeholder [AUTHOR] = "Adri"
-placeholder [BLURB] = "'[story title]' was created for Ectocomp 2014, an annual minicomp for Halloween-themed games written in three hours or less."
+placeholder [AUTHOR] = "Erin Gigglecreek"
+placeholder [BLURB] = "'[story title]' was started for Ectocomp 2014, but failed to write itself in under three hours."
 
 ! Other material to release
 

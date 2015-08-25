@@ -1,0 +1,34 @@
+Part - Scoring
+
+Table of Tasks Achieved 
+Points	Citation	Turn Stamp
+1	"being adorable"	-1
+1	"decorating your nest"	-1
+3	"satisfying your hunger"	-1
+3	"satisfying your thirst"	-1
+2	"drying the mitten"	-1
+1	"...without trying to burn down the house"	-1
+1	"adding the mitten to the nest"	-1
+1	"adding the garland to the nest"	-1
+1	"disposing of the cat"	-1
+1	"...without being unnecessarily destructive"	-1
+
+To record (T - text) as achieved: 
+	choose row with a citation of T in the Table of Tasks Achieved; 
+	if turn stamp entry is less than 0:
+		now the turn stamp entry is the turn count;
+		increase the score by the points entry.
+
+Requesting the full score is an action out of world. Understand "full" or "full score" as requesting the full score.
+
+Carry out requesting the full score (this is the announce the full score rule):
+	say "You have so far scored [score] out of a possible [maximum score], in [turn count] turn[if turn count is greater than 1]s[end if].";
+	sort the Table of Tasks Achieved in turn stamp order;
+	repeat through the Table of Tasks Achieved:
+		if the turn stamp entry is greater than 0:
+			say "[line break] [citation entry]: [points entry] point[if points entry is greater than 1]s[end if]";
+	say "[line break]".
+
+Table of Final Question Options (continued)
+final question wording	only if victorious	topic	final response rule	final response activity
+"see the FULL score for that game"	false	"full" or "score" or "full score"	announce the full score rule	--

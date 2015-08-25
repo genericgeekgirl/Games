@@ -1,15 +1,13 @@
-"A Hippo on Elm Street" by "Adri".
+"A Hippo on Elm Street" by "Erin Gigglecreek".
 
-The story creation year is 2014.
+The story creation year is 2015.
 The release number is 1.
 The story headline is "a not-so-scary story".
 The story genre is "fantasy".
-The story description is "'[story title]' was started for Ectocomp 2014, but failed to write itself in under three hours."
+The story description is "'[story title]' was started for Ectocomp 2014, but failed to write itself in under three hours." [TODO]
 
 Part - Basic Setup
  
-[Release along with cover art, an interpreter and a "Genericgeekgirl" website.]
-
 Chapter - Extensions
 
 Include Conversation Framework for Sand-dancer by Aaron Reed.
@@ -243,7 +241,7 @@ Instead of sleeping: say "You couldn't possibly fall asleep with so much excitem
 
 Instead of wearing something worn by the player: say "You are already wearing that."
 
-Instead of listening: say "You hear [one of]gleeful laughter[of]a loud shriek[or]a creaking door[or]a moaning ghost[or]a slamming door[or]a low growl[or]a howling wolf[at random]."
+Instead of listening: say "You hear [one of]gleeful laughter[or]a loud shriek[or]a creaking door[or]a moaning ghost[or]a slamming door[or]a low growl[or]a howling wolf[at random]."
 
 Instead of eating something that is not edible: try tasting the noun.
 

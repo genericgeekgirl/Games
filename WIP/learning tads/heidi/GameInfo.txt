@@ -1,0 +1,13 @@
+IFID: DA0F1D1A-0ABA-4E31-A2CC-87C8AFFEB09B
+Name: The Further Adventures of Heidi
+Byline: by Adri
+HtmlByline: by <a href="mailto:your-email@your-address.com"> Adri</a>
+AuthorEmail: Adri <your-email@your-address.com>
+Desc: This is an unexciting tutorial game based loosely on The Adventures of Heidi by Roger Firth and Sonja Kesserich.
+HtmlDesc: This is an unexciting tutorial game based loosely on <i>The Adventures of Heidi</i> by Roger Firth and Sonja Kesserich.
+Version: 1.0
+ReleaseDate: 2014-11-11
+Language: en-US
+LicenseType: Freeware
+CopyingRules: Nominal cost only; compilations allowed
+PresentationProfile: Default

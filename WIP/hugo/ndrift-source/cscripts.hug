@@ -1,0 +1,1049 @@
+!----------------------------------------------------------------------------
+! CharExclaim
+! Script usage:  &CharExclaim, <char> <obj>
+
+routine CharShout(char, obj)
+{
+
+select (char)
+	case Audrey:
+		{
+		select(obj)
+			case ShoutArray[1]
+				{
+				"\n\"Jarret!\" screams Audrey, \I\"Help!\"\i"
+				}
+			case ShoutArray[2]
+				{
+				Pang is hero
+				Criswell is hero
+
+				if location = Duffy_Bedroom
+				{
+					"\n\"Oh, Jesus Christ!\" exclaims Audrey from the other room. \"What the hell are you two 
+					chimps doing? \IGoddess,\i I don't need this shit. Goodbye!\""
+				}
+				else
+				{
+					"\n\"Oh, Jesus Christ!\" exclaims Audrey. \"What the hell are you two chimps doing? \IGoddess,\i I 
+					don't need this shit. Goodbye!\""
+				}
+				}
+		}
+	case Barnaby: 
+		{
+		select(obj)
+			case ShoutArray[1]
+				{
+				"\nI hear Gibs swear violently from within the Sporting Goods store."
+
+				Activate(Casey_Disappointed)
+
+				LocationState[12] = 3
+
+				}
+		}
+	case Skeleton: 
+		{
+		select(obj)
+			case ShoutArray[1]
+				{	
+
+				LocationState[3] = 9
+
+				move Skeleton to MallStore3
+
+				move severed_head to MallStore3
+
+				"\nAn animate human skeleton staggers into the store from outside. Its walk is slow, considered
+				and focused, as if controlled by an inexperienced puppeteer. It has in its fingers a bloody
+				and seeping severed head, which it discards to one side of the room.\n"
+				
+				"Audrey lets out a quick scream of shock when she sees it hobble in, and I grab her arm and 
+				get her behind me. The skeleton's head swivels quickly from right to left as it gives the 
+				four of us on the ground a haunting peer.\n"
+
+				if Ball_Stand not in Player
+				{
+					"I scan the room and recall what's in my pockets and trying to find a decent weapon."
+				}
+				else
+				{
+					"It occurs to me that skeletons can't handle blunt objects very well... and I'm carrying
+					an enormous blunt object in the crystal ball holder."
+				}
+				}
+		}
+		
+
+}
+
+routine CharExclaim(char, obj)
+{
+
+if (((char in location) or (char is following)) and (char.conscious = 1))
+{
+
+select (char)
+	case Audrey:
+		{
+		select(obj)
+			case ExclaimArray[1]:
+				{
+				if GameEvents[76] = 1
+				{
+				"\n\"Hello, Jarret,\" says Audrey at last. She makes eye contact for only a split-second before directing her 
+				line of sight downwards and away from me. \"Can I speak with you for a moment?\""
+				}
+				else
+				{
+				"\n\"Hello, Jarret,\" says Audrey. She makes eye contact for only a split-second before directing her 
+				line of sight downwards and away from me. \"Can I speak with you for a moment?\""
+				}
+				SetQuip(3,10,1)
+				SetQuip(3,11,1)
+				SetQuip(3,51,0)
+				SetQuip(3,52,0)
+				}
+
+			case ExclaimArray[2]:
+				{
+				"\n\"Goddess!\" yells Audrey, as the Mall shakes from the shockwave, \"What on Earth was \Ithat?\i\""
+				}
+			
+			case ExclaimArray[3]:
+				{
+				"\nAudrey gives Casey a dirty look."
+				CharExclaim(Casey,ExclaimArray[2])
+				}
+			case ExclaimArray[4]: 
+				{
+				Audrey is following
+				Casey is following
+
+				SetQuip(3,14,1)
+
+				! Turn off Audrey's quip for the "mallcop turned into zombie" quip
+				QuipsKiller(4,3,14,0)
+
+				"\n\"Hey, Dungeon Master,\" says Audrey. \"Did you find Trott?\"\n"
+				"\"Yeah. He's back operating the security console for us.\" Huh. 'DM,' she said. She normally
+				only calls me that when she's in a good mood about our chances.\n"
+				"\"He didn't want to come with you?\" she asks.\n"
+
+				if phone in Duffy
+				{
+					"\"Maybe he would have, but he'll be able to open the gates we want if I contact him
+					through this,\" I show her the phone."
+				}
+
+				else
+				{
+					"\"Maybe, but he'll be able to open whatever gates we want if I contact him from -- shit!
+					What did I do with the phone?\"\n"
+					"\"That's my boy,\" she says, in a more good-natured manner than not. \"You'd lose those
+					sideburns if they weren't deeply anchored into your pores, wouldn't you? It couldn't have
+					gone far. We'll find it.\""
+				}
+
+				"\n\"Did you guys try the gate at the Sporting Good store already?\" asks Gibs.\n"
+				"\"No, not yet,\" says Audrey. \"We just got bored waiting for you, so we headed over this way.\""
+
+				if Corridor4 is not visited
+				{
+					"\n\"Also,\" says Casey, \"We went over to where the escalator was. You wouldn't believe how
+					foul it smells over there!\"\n"
+					"\"How bad is it? My previous high score in this department is my roommate Pang's custom
+					\BDance Dance Revolution\b pad that he keeps downstairs and only uses with bare feet in some
+					bizarro-logic attempt to keep it 'nice.' I mean, is it worse than -- \"\n"
+					"\"It's worse,\" Audrey says softly, her eyes closed in the pain of the persistence of this
+					memory, \"Much, much worse.\""
+					
+				}
+				}
+			case ExclaimArray[5]: 
+				{
+				SetQuip(4,4,0)
+				SetQuip(4,5,0)
+
+				SetQuip(5,6,0)
+				SetQuip(5,7,0)
+
+				"\n\"What the hell was that?\" asks Audrey. \"When are you going to get it... this has got to stop.\""
+				}
+
+			case ExclaimArray[6]: 
+				{
+				"\nAudrey pulls on my hand, to begin to drag me towards the far side of the Mall. \"Jarret, let's
+				go this way,\" she says. \"The elevator is on the over this way. I think I know how we can get
+				to it.\""
+				}
+			case ExclaimArray[7]:
+				{
+				"\n\"So you found a comb, I see,\" says Audrey. \"Maybe you can do something with that mound of
+				straight hay on top of your head with it.\" She gives me a smile after she says that to let me
+				know it was said with affection.\n"
+
+				"\"It's a silver comb,\" I tell her. \"I'm sure it's quite valuable.\"\n"
+
+				"\"Isn't silver a type of bane to wraiths?\" asks Audrey.\n"
+
+				"I try to bring up the memory of what affects wraiths from the back of my mind, but my memory is 
+				hardly photographic. \"I think you're right,\" I say to her. \"I think it works against a
+				lot of undead. A little trinket like this might just scare it off, but that's a big maybe. I don't
+				really want to throw the comb and find out.\""
+				}
+			case ExclaimArray[8]:
+				{
+				"\n\"Do you see the symbolism in this picture, Jarret?\"\n"
+				"\"The girl? No. Is she ashamed? Is that why she's looking down?\"\n"
+				"\"No... I mean, around her neck. The key.\"\n"
+				"\"What's the key to?\" I ask.\n"
+				"\"It's... well, actually, maybe it isn't really symbolism. But I think that's to a chastity belt.\"
+				She releases her study of the picture and gives me a subtle, wry smile. \"You know, my father wanted 
+				to put me in one when we first started dating.\"\n"
+				"\"It's good that he didn't. I would have just picked it.\"\n"
+				"\"Oh, really?\" she says, with a bit of faux, exaggerated inquiry. \"You know, skills from a game
+				don't always translate to real life.\"\n"
+				"\"I know. I would have done it with my tongue. I have like a cold iron fetish, I just haven't told you
+				yet because the subject hasn't come up and that's a tough one to drop on somebody.\" We stare at each 
+				other's eyes for a moment, 'till she breaks the gaze with a smile she unsuccessfully tries to hide."
+				}
+			case ExclaimArray[9]: 
+				{
+				! No new line, as this appears before the description of the room
+				"\"Well, we're here,\" says Audrey, indicating that the Bead Store is to the south.\n"
+				}
+			
+			case ExclaimArray[10]:
+				{
+				"\n\"Shut up,\" suggests Audrey. \"We know how to exorcise you, and we're going to do exactly that.\"\n"
+				"Audrey turns towards me and looks at me with a kind of love and somber happiness that I have never
+				before seen. \"Read the passage from the book, Jarret...\""
+				}
+
+			case ExclaimArray[11]:
+				{
+				! Set Gibs's virgin quip
+				SetQuip(2,21,1)
+				ScoreArray[32] = 1
+				"\n\"We need someone to drink the water... But whoever does needs to be a virgin,\" says Audrey."
+				}
+			case ExclaimArray[12]:
+				{
+				! Have Duffy getting strangled or something by Sydney
+				ScoreArray[33] = 1
+				"\n\"Now light the candle, Jarret,\" says Audrey."
+				}
+
+			case ExclaimArray[13]:
+				{
+				"\nAudrey lets out a little surprised 'yip!' and runs over towards me.\n"
+				"\"Jarret!\" she says, \"I felt something brush up against my leg! Something's here, in 
+				this area with us!\" Before I can pooh-pooh her objections to this area, a metal chair comes
+				flying at us. It appears as if a poltergeist has infected the food court."
+				}
+			case ExclaimArray[14]:
+				{
+				"\n\"Jarret, are you okay? What happened down there?\"\n"
+				"\"The mummy... it touched me,\" I say. It's tough to get the words out of my throat as it seems so
+				dry and craggy.\n"
+				"\"Do you think -- \" Audrey pauses for a sec -- \"Did it infect you with something? Oh, goddess. Okay,
+				let's find something to put on it. Something's got to help the pain.\""
+				}
+			case ExclaimArray[15]: 
+				{
+				"\nAudrey wipes some tears and sweat from her eyes. \"Jarret, we have to do something -- he's going to kill
+				Barnaby if we don't stop him somehow. Please...\""
+				SetQuip(3,47,1)
+				SetQuip(3,48,1)
+				SetQuip(3,49,1)
+				}
+			case ExclaimArray[16]:
+				{
+				"\n\"You realize,\" says Audrey, \"That this is why we can't have nice things.\""
+				}
+
+		}
+
+	case Barnaby:
+		{
+		select(obj)
+			case ExclaimArray[1]:
+				{
+				"\n\"Hey, Duffy, solid. Glad you're here,\" says Barnaby. He puts his big gulp drink down by the counter.
+				\"Got a question for you.\""
+
+				move big_gulp to GameStore_counter
+
+				Activate(Cold_Counter1)
+
+				SetQuip(2,7,1)
+				SetQuip(2,8,1)
+				}
+
+			case ExclaimArray[2]:
+				{
+				"\nBarnaby nods over to Trott. \"What's going on, man?\" he asks."
+				Trott_Script_1()				
+				}
+
+			case ExclaimArray[3]:
+				{
+				"\n\"I'd be delighted to help out,\" says Barnaby. \"I've never done this before, so just let me
+				know what to do and where to go. Did I mention that I am famous? I'm famous.\""
+				}
+			case ExclaimArray[4]:
+				{
+				"\n\"Look, let's head down the way we came, back towards your store, Duffy,\" says Gibs. \"You're 
+				across from the sporting goods store, right? We'll pick up some rifles and see what happened to 
+				Trott. All this D&D shit is scary and spooky only because nobody had pump action shotguns back
+				then. That would work.\"\n"
+
+				"\"Actually,\" I say, \"The arquebus is a valid weapon, and -- \"\n"
+
+				"Gibs's eyes glaze over. \"You guys'll be OK for a couple minutes, right?\" he asks. Audrey and Casey nod. \"All right, 
+				Jarret, let's get going.\""
+				}
+			case ExclaimArray[5]:
+				{
+				"\n\"So, let me ask you this,\" says Gibs. \"Are you still trying to get back together with your 
+				girl there? There's a lot of non-verbal stuff that I didn't pick up on there.\""
+				}
+			case ExclaimArray[6]:
+				{
+				"\nGibs goes over to the gate of the Sporting Goods store and gives it a tug. \"It's locked... what, do
+				all the gates fall down when the power goes out or something?\"\n"
+
+				"\"That's my understanding, yes.\" I casually inspect the gate. \"Ever since somebody brought a bomb into the arcade there have been a
+				host of security procedures not in other, normal malls. Trott knows how to work the security console,
+				though. Let's go find him.\""
+				}
+
+			case ExclaimArray[7]:
+				{
+				Barnaby is following 
+
+				"\nGibs slowly staggers up, gently feeling his throat. \"Ooof... guess you got him. Thanks, 
+				man,\" he says.\n"
+				"\"You bet,\" I say. \"You OK?\"\n"
+				"\"Yeah... my throat's a bit sore, but I'll be all right.\""
+				}
+			case ExclaimArray[8]:
+				{
+				"\n\"Hey, Duffy, ask Trott to unlock the gate.\""
+				}
+
+			case ExclaimArray[9]: 
+				{
+
+				LocationState[5] = 7
+
+				Barnaby is not hidden
+				Casey is not hidden
+
+				"\n\"Heya there, Duffy,\" says Gibs, no longer paralyzed. Casey is with him. \"Any luck with the elevator?\"\n"
+				"\"Not yet. We encountered a vision ";
+
+				if shadow.hitpoints <= 0 
+				{
+					", shadow ";
+				}
+					
+				"and wraith, though.\"\n"
+
+				"\"So what's changed?\" asks Gibs.\n"
+
+				"\"Well, the Jewelry Store is open and the makeup kiosk is broken down. Other than that...\""
+
+				if ghast not in Corridor5
+				{
+					"\n\"Oh, right, with the ghast and God knows whatever else crushed down there, we just need
+					to get over the stench and we can use the elevator.\""
+				}
+				}
+			case ExclaimArray[10]: 
+				{
+				"\n\"This isn't what I expected a Mall lounge to look like,\" says Gibs."
+				}
+			case ExclaimArray[11]:
+				{
+				"\n\"I'm ready when you're ready,\" says Gibs."
+				}
+			case ExclaimArray[12]:
+				{
+				"\n\"Well, we got this far,\" says Gibs. \"What's the plan, now? How are we getting out?\"\n"
+
+				"\"We could try the exit by the big Outlet Tech Store, can't we?\" asks Casey.\n"
+
+				"\"They went bankrupt,\" I say. \"When the Septium Computer Processor was declared an instrument of
+				bedevilment and banned by the Mayor in 2012, the hottest selling item that Christmas had to be removed
+				from the store. We can try to go that way, but I am almost positive that exit access was cemented
+				over.\" I shrug.\n"
+
+				"\"So we'll probably have to slog through the Food Court, speedily going about our business with as much
+				haste as molasses slow-fucking a giant land turtle.\" says Gibs. He spits with disgust -- the 
+				Food Court floor never gets cleaned. It's kind of gross.\n"
+
+				"\"Yeah, everyone jump over the ochre jellies,\" whispers Audrey, almost to herself. After a beat, she
+				realizes what she said and turns towards me. \"Hey! You've got \Ime\i doing it now!\"\n"			
+
+				"Gibs laughs. \"Duffy's veritable roster of sexually transmitted diseases is \Bnot\b the only thing infectious 
+				about him,\" he offers."
+				}
+			case ExclaimArray[13]:
+				{
+
+				GameEvents[34] = 1 
+				Move Barnaby to Corridor6
+				Move Audrey to Corridor6
+				Move Casey to Corridor6
+				Barnaby.hitpoints = 0 
+
+				"\nWhile Audrey, Casey and myself are checking out the fountain (and momentarily entranced by the 
+				beauty thereof) Gibs wanders off and goes further down the corridor. I forget him for a moment until
+				he lets out a blood-curdling scream.\n"
+
+				"\"Duffy! Look out! It's the fucking ghast!\"\n"
+
+				"I turn and look -- that's exactly what it is. A green-skinned feral beast with glazed-over eyes and
+				torn clothes. Gibs falls to the floor, presumably knocked out by the ghast's stench and so far from 
+				where the perfume bottle broke open. The ghast stomps once on his head and runs over towards us. 
+				I motion for Audrey and Casey to get back behind the fountain."
+				}
+
+			case ExclaimArray[14]:
+				{
+				"\n\"Where do we go from here?\" asks Gibs. \"There's an exit past the Food Court, right?\" He 
+				gestures over towards the west.\n"
+				"\"Yeah. I don't think we can get out going to the Tech SuperStore.\" The SuperStore is to the
+				south. \"Audrey and I can take a jaunt down there and make sure, though.\"\n"
+				"\"Either way,\" says Gibs. \"Just be careful. Who knows what's lurking about down there?\"\n"
+				"\"Well, as my father always said, 'He who fights with monsters might take care lest he 
+				thereby become a monster. \"\n"
+				"Gibs thinks about that for a second. \"Your dad didn't say that. Freddie Nietzsche did, dummy.\"\n"
+				"\"What? No he didn't. You're completely wrong.\" I am really not sure if Barnaby is correct or not, 
+				so I just immediately go on the defensive.\n"
+				"\"Did Papa Duffy also say 'In heaven, all the interesting people are missing?' Or maybe 'Only 
+				sick music makes money today?\"\n"
+				
+				"(Truth to tell, my dad \Idid\i used to say the latter, but I don't tell Gibs that.)\n"
+
+				"\"Your father is really weird,\" says Audrey, unhelpfully.\n"
+				"\"Look, enough with ragging on poor, old Nichodeimos. He liked all of you well enough.\"\n"
+				"\"He \Ihated\i me,\" says Audrey.\n"
+				"\"He called me 'fruitier than a blueberry pudding pop.'\" says Gibs.\n"
+				"\"I never met him\" says Casey.\n"
+				"\"Yeah, well, he hated Goths,\" says Gibs.\n"
+				"\"He hated \Ieverybody\i,\" says Audrey."
+				}
+			case ExclaimArray[15]:
+				{
+				"\n\"This is the way out, isn't it?\" asks Gibs. I nod, sagely, in the affirmative.\n"
+				"He looks over the mess.\n"
+				"\"Look,\" says Gibs, \"Why don't you and Audrey see if you can find any items that we'll need 
+				to get past whatever horrors are in store for us on the other side of this wall of junk? I'll
+				start digging away at this and clear a path. Your sissy, atrophied she-muscles won't be able
+				to really help any, Duffy.\""
+				}
+			case ExclaimArray[16]:
+				{
+				move Casey to Food_Court1
+
+				Casey is not following
+				Casey is bitten
+
+				Barnaby is following
+
+				! Set Casey to have the different pic 
+				GameEvents[37] = 1 
+
+				"\n\"She was here, Duffy. She was beautiful.\"\n"
+				"\"Who was? Casey? Where's Casey?\"\n"
+				"\"Casey... \" Gibs turns and looks at me for the first time since I came back. \"No... not poor
+				Casey. We finished up getting all the wreckage out of the way and as I looked up Casey was entranced
+				by the most beautiful creature I have ever seen. Her skin was so pale, so fragile. She had this
+				dark shock of bangs that framed her perfect face. As soon as I looked up, I froze. But she had locked
+				eyes with Casey. I knew her name was Kali, but not how. Casey didn't seem to be able to move, at first,
+				just like me. Then -- \"\n"
+
+				"\"It was a vampire, Gibs. I was hoping we'd avoid one, but -- \"\n"
+
+				"\"She took Casey by the hand and they both walked that way... into the darkness.\""
+
+				Activate(Casey_Becomes_Vampire)
+				}
+
+			case ExclaimArray[17]:
+				{
+				"\n\"Hey, Duffy... Casey's got maybe 12 minutes left by my count,\" says Gibs."
+				}
+			case ExclaimArray[18]:
+				{
+				"\nGibs pipes up for a moment. \"Casey's got probably ten minutes left at my count before the
+				ichor spreads.\""
+				}
+			case ExclaimArray[19]:
+				{
+				"\n\"I have a knock-knock joke for you,\" says Gibs.\n"
+				"\"Now is not a good time. OK?\"\n"
+				"\"Knock knock.\"\n"
+				"\"Jesus Fuck. 'Who's there?'\"\n"
+				"\"Not Casey. Casey's dying in eight minutes.\" Gibs stares furiously ahead."
+				}
+
+			case ExclaimArray[20]:
+				{
+				"\n\"Six minutes, Jarret,\" says Gibs."
+				}
+
+			case ExclaimArray[21]:
+				{
+				"\n\"I don't mean to be annoying,\" says Gibs, \"Not now, anyway, but Casey's got maybe four minutes
+				left before she can no longer be saved.\""			
+
+				}
+			case ExclaimArray[22]:
+				{
+				"\n\"Three minutes for Casey,\" says Gibs."
+				}
+			case ExclaimArray[23]:
+				{
+				"\n\"Two minutes, Jarret,\" says Gibs.\""
+				}
+			case ExclaimArray[24]:
+				{
+				"\n\"Casey doesn't have much time left, Duff,\" says Gibs, quietly."
+				}
+			case ExclaimArray[25]:
+				{
+				"\n\"I'm not going to say that I am an expert on the supernatural, but I can't imagine that
+				we could still save Casey,\" whispers Gibs."
+				}
+			case ExclaimArray[26]:
+				{
+				"\n\"Hey, dummy, go get your phone so you can call Trott and have him open the gate,\" says Gibs."
+				}
+			case ExclaimArray[27]:
+				{
+				GameEvents[44] = 2 
+				"\n\"This isn't the right way,\" says Gibs. \"The Sporting Goods Store is to the east.\""
+				}
+			case ExclaimArray[28]:
+				{
+				"\n\"What do you mean? Why would I want to go there?\"\n"
+				"\"We can pick up some rifles there. They have them there, right? We can pick up some guns and shoot our way
+				out of the Mall. As your earthly advisor and your one friend with both feet securely on Terra Firma, I would
+				suggest that plan of action.\"\n"
+				
+				"Gibs makes a lot of sense here. The Sporting Goods Store is a few blocks over
+				to the east."
+				}
+			case ExclaimArray[29]:
+				{
+				"\n\"What's with the discount sound-proofing in this shithole?\" asks Gibs."
+				}
+			case ExclaimArray[30]:
+				{
+				"\n\"Duffy, look out! Somebody's followin' you!\"\n"
+				"\"Christ, I know, Gibs! Help me kill it!\""
+				}
+			case ExclaimArray[31]:
+				{
+				"\n\"Really?\" says Gibs, ";
+				
+				if Player in Security_Room
+				{
+					"looking at the girl outside, ";
+				}
+				"\"'Cos it \Iraises\i some questions for me...\""
+
+				}
+			case ExclaimArray[32]:
+				{
+				!Don't need a \n here
+				"Casey whispers something into Gibs's ear.\n"
+				"\"Hey, Duffy... hey, I think Casey and I are going to hang out here for a bit. We're gonna look for 'ghosts' right
+				here. ... Why don't you and Audrey scout what's south of here and we'll stay put?\"\n"
+				"'Whatever,' I think to myself. I then \Iupgrade\i my thought one level.\n"
+				"\"Whatever,\" I say. Pow!"
+				}
+			case ExclaimArray[33]: 
+				{
+				!Don't need a \n here
+				"Gibs spits once off the guardrail because he's a filthy, disgusting animal at heart.\n"
+				}
+		}
+
+	case Casey: 
+		{
+		select(obj)
+			case ExclaimArray[1]:
+				{
+				"\n\"So, Barnaby,\" says Casey, \"Would you like to help us in our little seance?\""
+				CharExclaim(Audrey,ExclaimArray[3])
+				}
+
+			case ExclaimArray[2]:
+				{
+				"\n\"What?\" murmurs Casey to Audrey, \"You're the one who told me I was gonna get a boyfriend at the mall.\""
+
+				}
+			case ExclaimArray[3]:
+				{
+				"\n\"Jarret!\" exclaims Casey, \"Listen! You have to get in there and help them! What on \Iearth\i
+				are you waiting for?\""
+				}
+		}
+		
+
+	case Clerk:
+		{
+		select(obj)
+			case ExclaimArray[1]: 
+				{
+				"\n\"Hey man, nice going!\" says the clerk. \"I can't tell you how many times I've wanted to do just
+				that myself. AWP Wallhack Fag! Ah-ha-ha!\" I guess the clerk feels that he has bonded
+				with me over this. \"I only regret that I have but one piece of subhuman crap for you to pulp.
+				Ah, it was probably just a bot anyway.\"\n"
+
+				"Pang and Criswell come out from underneath the racks they were hiding behind.\n"
+
+				"\"Look, your rentals are on me,\" says the clerk. \"I gotta run, though, so get lost before the 
+				cops come. The fascist bully-boy who walks this beat was humiliated by two hackers a couple
+				weeks ago and just starts whaling on people when he suspects a crime has been committed.\"\n"
+
+				"The clerk opens the door to the video store."
+				}
+		}
+
+	case Mummy:
+		{
+		UpdateOpponentWindow(Mummy)
+		select(obj)
+			case ExclaimArray[1]:
+				{
+				"\n\"The mummy's arms twitch a little bit."
+				}
+			case ExclaimArray[2]:
+				{
+				"\n\"There is a deep groan coming from the mummy's dry vocal chords, but it otherwise does not
+				move."
+				}
+			case ExclaimArray[3]:
+				{
+				"\n\"The mummy thrashes about, active once again!"
+				mummy.peaceful= FALSE
+				mummy is not paralyzed
+
+				if mummy in location and mummy.conscious = 1
+				{
+					mummy is following
+					fight_active = 1
+				}
+
+
+				}
+		}
+
+	case Randolph:
+		{
+		UpdateOpponentWindow(Randolph)
+
+		select(obj)
+			case ExclaimArray[1]: 
+				{
+				"\n\"Hi there, sir!\" says Randolph. \"Would you like to make ten dollars?\"\n"
+				"I mumble out a 'sorry' and turn around."
+				}
+			case ExclaimArray[2]: 
+				{
+				"\n\"Hi there! How would you like to see some free movie previews and make ten dollars?\"\n"
+				"I give Randolph a barely-audible apology and get the hell out of there."
+				}
+			case ExclaimArray[3]: 
+				{
+				"\n\"Sir!\" says Randolph. \"Hi there! Can I interest you in a money-making opportunity?\"\n"
+				"\"Randolph? It's me, Duffy. You've ask me this every time I come to work. Don't you know who
+				I am? Don't you remember me?\"\n"
+				"Randolph's cheerful grin doesn't even flicker. I shrug and turn around."
+				}
+			case ExclaimArray[4]: 
+				{
+				"\n\"Hi there, sir!\" says Randolph. \"Would you like to make ten dollars?\"\n"
+				"I mumble out a sorry and turn around."
+				}
+			case ExclaimArray[5]: 
+				{
+				"\n\"Hi there, sir!\" says Randolph. \"Would you like to make ten dollars?\"\n"
+				"\"Sorry,\" I say, and turn around."
+				}
+			case ExclaimArray[6]: 
+				{
+				"\n\"Hi there, citizen!\" says Randolph. \"Would you like to make ten dollars?\"\n"
+				"I shake my head in the negative and leave the area he's claimed for himself."
+				}
+			case ExclaimArray[7]:
+				{
+				"\n\"Greetings and Salutations!\" exclaims Randolph.\n"
+				"\"Argh! My eyes! The pain! \IThe pain!\i\" I stagger away from the survey guy."
+				}
+			case ExclaimArray[8]:
+				{
+				"\n\"Hello there, Mall denizen!\" says the survey guy. \"How would you like to make five
+				dollars?\"\n"
+				"Hm. Usually it's ten dollars. What, is this clown skimming off the top or something?
+				I turn tail and leave very slowly."
+				}
+			case ExclaimArray[9]:
+				{
+				"\nThe survey guy greets me, but I pretend at that moment that I just forgot what I had to do
+				on the other side of the Mall."
+				}
+			case ExclaimArray[10]:
+				{
+				"\nThe survey guy is nearby, but he doesn't quite see me. I have no idea how he gets up each
+				morning without putting a bullet through his head. Then it occurs to me that maybe today is
+				the day he is going to put a bullet through everyone in the Mall's head, so I turn around
+				and head back."
+				}
+		}
+
+	case Revenant
+		{
+		select(obj)
+			case ExclaimArray[1]:
+				{
+				"\nThe Revenant mumbles something to itself about finding his killer."
+				}
+			case ExclaimArray[2]:
+				{
+				"\n\"MY KILLER \ISHALL PAY!\i\" exclaims the Revenant."
+				}
+			case ExclaimArray[3]
+				{
+				"\n\"Beelzebub take my killer's eyes...\" whispers the Revenant to nobody in particular."
+				}
+		}
+
+
+	case Skeleton
+		{
+		select(obj)
+			case ExclaimArray[1]:
+				{
+				"\nThe skeleton screeches horribly -- a dry, dusty rasp somehow escaping from its ribs
+				and jaw."
+
+				! Remove these quips from Sydney
+				SetQuip(10,4,0)
+				SetQuip(10,5,0)
+
+				! And add one that is removed afterwards
+
+				SetQuip(10,6,1)
+
+				GameEvents[8] = 2
+				}
+		}
+
+	case Sydney:
+		{
+		select(obj)
+			case ExclaimArray[1]: 
+				{
+
+				ScoreArray[6] = 1
+
+				"\n\"Excellent, Jarret,\" Sydney rasps to me, from above. \"It could not handle being hit that way...\"\n"
+
+				"\"Skeletons are susceptible to blunt attacks.\" I shrug in a despondent attempt to mask my 
+				fear. \"Y'know,
+				Syd, I was thinking of just pulling off my trousers there for a second and breaking it into kibble with
+				the Hammer of Thunderbolts that lives in my pants, but I didn't want to knock down all my friends in
+				the process.\"\n"
+
+				"She ignores my comment, as if unable to process it and feeling me not worthy of inquiry. The skeleton's
+				weakness has been in every revision of the \IMonster Manual\i over the years. It's one of the first -- \n"
+
+				"\"It's one of the first things you learn when playing D&D,\" says Sydney. A terrible smile crosses
+				her face.\n"
+
+				"It's terribly effective.\n"
+
+				"I try to show no fear. (No additional fear, anyway.) \"But that's an artifact of the game,\" I say. \"It's
+				a made-up construct. Something to give them a little more personality. There's no real-world basis for
+				any of it.\" Keep thinking, Duffy, keep your mind busy, don't let this telepath get into your hea--\n"
+
+				"\"Probably not,\" she says. Her eyes turn empty and glow. \"But who can tell? You have complicated
+				my return slightly, but not for much longer. The look into your mind I obtained when we touched was
+				so insightful. You're made up of so many deep, arbitrary little undead rules, rules you need to
+				learn and exceptions you need to note.\"\n"
+
+				"\"What? Those aren't mine! I didn't make them!\"\n"
+
+				"\"They will be. They are. You will find this place governed by them when you return to it. My power
+				within this world will grow and that should keep you busy...\"\n"
+
+				"The room becomes much colder. Barnaby grabs me by the collar and leads the four of us out of the Bead 
+				Store."
+
+				Switch_Chapter(4) 
+
+				}
+		}
+
+	case Trott:
+		{
+		select(obj)
+			case ExclaimArray[1]:
+				{
+				"\n\"It's all great here, man,\" says Trott to Barnaby. \"Yourself?\" he asks.\n"
+				"\"Bitchin'\" says Gibs in reply."
+				}
+			case ExclaimArray[2]:
+				{
+				"\n\"Aw, Christ,\" says Trott. \"The goddamn lock just burst on the counter shelf. Cheap plastic crap.\""
+				}
+			case ExclaimArray[3]:
+				{
+				"\n\"Aw, Christ!!\" shrieks Trott, \"The \Ifuck\i is that thing? Jesus, Mary, Mother of God!!\""
+				}
+		}
+	case Vampire:
+		{
+		select(obj)
+			case ExclaimArray[1]:
+				{
+				"\n\"Oh, Dzharret, I am so pleased that you have made it! This so fascinating, - no? You should 
+				admit, what keeps the special moment for your heart. It is not enough than differing from the priest 
+				conducting a moment, one with a devil, is it not?\" She giggles slightly to herself."
+				}
+		}
+} !if
+} !routine
+
+routine CharAttack(char, obj)
+{
+	if ((char in location) and (char.conscious = 1))
+	{
+!		print "running char attack"
+
+		char is not hero
+		char is villain
+		char.peaceful = false
+		fight_active = 1 
+	}
+	
+
+}
+
+
+routine CharMisc3(char, obj)
+{
+	select(obj)
+	case 0
+		{
+			if Player in Food_Court2
+			{
+			
+				SetQuip(27,9,1)
+				SetQuip(27,10,1)
+				LocationState[6] = 5
+				remove vampire
+
+				"\nThe Revenant walks calmly up to the vampire. Nothing betrays its psychotic anti-socialism until
+				it reaches deep within its cloak to pull out a darkened, smoke-blasted sword.\n"
+
+				"\"Apres vie, vile cunt!\" he screams. I make a mental note to remember that battle cry when the
+				vampire suddenly transforms herself -- she becomes far more beast-like. Her eyes change from a deep
+				black to little narrow slits. Her fangs, seemingly dozens of fangs, extend... she avoids the first
+				few thrusts of the Revenant's nightblade and tears away a few meaty chunks of his flesh.\n"
+
+				"The Revenant gets one solid thrust in with his sword which the vampire does not react well to. 			
+				She hisses at him one final time and staggers back into the concrete wall. The Revenant gives her
+				only a moment to recover, but it's enough. She quietly turns gaseous and regains her silent dignity.\n"
+
+				"After a long pause, the Revenant speaks. \"I do not believe that harlot was, in fact, my killer.\""
+
+			}
+			else
+			{
+				"\nA horrible scream pierces the air, originating from the far end of the Food Court."
+
+				LocationState[6] = 5
+				remove vampire
+
+				SetQuip(27,10,1)
+				SetQuip(27,11,1)
+
+			}
+		}
+}
+
+
+routine CharMisc2(char, obj)
+{
+	select (obj)
+	case 0
+		{
+			if Player in Corridor5
+			{
+				"\nThe Revenant looks at the elevator and a sneer spreads across his face. 
+				He shuts his eyes and wills himself transparent. He walks briskly through the physical 
+				matter of the elevator and ascends."
+			}
+
+			move Revenant to Corridor4
+		}
+}
+
+
+routine CharMisc(char, obj)
+{
+	select (obj)
+	case 0
+		{
+			"\nI notice something moving over in the far corner of the Food Court. It's a girl. She is wearing a reserved
+			violet dress and has the most perfect, slim little figure I have ever seen.\n"
+			
+			"The vampire, I guess. It has to be; she's just as stunning as Gibs said.\n"
+
+			"Focusing harder, I see Casey beside her, unmoving, defeated, completely obedient. The vampire whispers 
+			softly to her -- Casey snaps back into proper consciousness, and after a moment begins to look at her with 
+			loving trust. They are both several yards away, but I can make what the vampire says to her 
+			perfectly: \IFollow me, my pet.\i\n"
+			
+			"The vampire heads off to the west."
+
+			Move Vampire to Food_Court2
+
+			SetQuip(21,1,1)
+			SetQuip(21,2,1)
+			SetQuip(21,3,1)
+			SetQuip(21,4,1)
+
+		}
+	case 2
+		{
+			if Player in MallStore3
+			{
+				"\n\"Apres vie, vile cunt!\" screams the Revenant. He reaches within his robe and pulls out a dark, smoke-blasted
+				sword. He swings it once in a salute to Sydney.\n"
+
+				"\"Oh, poorest of boys,\" says Sydney, levitating a few feet up in the air. \"I don't know or care the identity
+				of your first killer, but I am sure to possess the answer to the riddle of your last...\"\n"
+
+				"The Revenant chops at Sydney!\n"
+
+				"The Revenant's sword goes right through Sydney. She is unhurt.\n"
+
+				"Sydney closes her eyes. A very self-satisfied smile crosses her lips. She points her right little finger at the
+				Revenant and says a single word.\n"
+
+				"\I\"Die.\"\i\n"
+
+				remove Revenant 
+
+				"An explosion of light rocks the store! A cacophony of sound and sun and heat flash from Sydney's hand, causing me
+				to wrap my eyes and head in my hands -- to do anything to look away.\n"
+
+				"The light quiets. I open my eyes... the Revenant is gone.\n"
+
+				"Sydney just laughs."
+			}
+			else
+			{
+				remove Revenant
+			}
+		}
+
+}
+
+
+routine Gibs_Script_1
+{
+setscript[Script(Barnaby, 4)] =		&Charwait, 0,
+					&CharMove, s_obj,
+					&CharExclaim, ExclaimArray[1],
+					&CharExclaim, ExclaimArray[2]
+}
+
+
+routine Audrey_Script_1
+{
+setscript[Script(Audrey,4)] =		&CharMove, e_obj,
+					&CharMove, e_obj,
+					&CharMove, s_obj,
+					&CharExclaim, ExclaimArray[1]
+}
+
+
+routine Audrey_Script_2
+{
+setscript[Script(Audrey,4)] =		&CharMove, n_obj,
+					&CharMove, w_obj,
+					&CharMove, w_obj,
+					&CharMove, s_obj
+}
+
+
+routine Trott_Script_1
+{
+setscript[Script(Trott,2)] =		&Charwait, 0,
+					&CharExclaim, ExclaimArray[1]
+}
+
+routine Skeleton_Script_1
+{
+setscript[Script(Skeleton, 4)] =	&Charwait, 0,
+					&CharShout,ShoutArray[1],     ! Add things to its initial appearance
+					&CharAttack, 0,			! Character Attack Character #1 (Duffy in this case)
+					&CharExclaim,ExclaimArray[1]
+}
+
+routine Casey_Script_1
+{
+setscript[Script(Casey, 1)] =		&CharMove, spectre_w_obj
+}
+
+routine Revenant_Script_1
+! Used for it attacking Sydney
+{
+setscript[Script(Revenant, 12)] =	&Charwait, 0,
+					&CharMove, e_obj,
+					&CharMove, n_obj,
+					&CharMove, e_obj,
+					&CharMove, e_obj,
+					&Charwait, 0,
+					&CharMisc2, 0,
+					&Charwait, 0,
+					&Charwait, 0,
+					&CharMove, e_obj,
+					&CharMove, s_obj,
+					&CharMisc, 2
+}
+
+
+routine Revenant_Script_2
+!Used for attacking Kali
+{
+setscript[Script(Revenant, 9)] =	&CharWait, 0,
+					&CharMove, e_obj,
+					&CharMove, n_obj,
+					&Charwait, 0,
+					&CharMove, w_obj,
+					&CharMove, w_obj,
+					&CharMove, w_obj,
+					&Charwait, 0,
+					&CharMisc3, 0
+}
+					
+
+
+
+routine Vampire_Script_1
+{
+setscript[Script(Vampire, 1)] =		&CharMisc, 0
+}
+

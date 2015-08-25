@@ -7,19 +7,19 @@
         </identification>
         <bibliographic>
             <title>A Hippo on Elm Street</title>
-            <author>Adri</author>
-            <headline>an interactive horrorfest</headline>
+            <author>Erin Gigglecreek</author>
+            <headline>a not-so-scary story</headline>
             <genre>fantasy</genre>
-            <firstpublished>2014</firstpublished>
-            <description>'[story title]' was created for Ectocomp 2014, an annual minicomp for Halloween-themed games written in three hours or less.</description>
+            <firstpublished>2015</firstpublished>
+            <description>'[story title]' was started for Ectocomp 2014, but failed to write itself in under three hours.</description>
             <language>en</language>
             <group>Inform</group>
         </bibliographic>
         <releases>
             <attached>
                 <release>
-                    <releasedate>2014-10-30</releasedate>
-                    <version>2</version>
+                    <releasedate>2015-08-21</releasedate>
+                    <version>1</version>
                     <compiler>Inform 7</compiler>
                     <compilerversion>6G60</compilerversion>
                 </release>
@@ -28,11 +28,11 @@
         <colophon>
             <generator>Inform 7</generator>
             <generatorversion>6G60</generatorversion>
-            <originated>2014-10-30</originated>
+            <originated>2015-08-21</originated>
         </colophon>
         <zcode>
-            <serial>141030</serial>
-            <release>2</release>
+            <serial>150821</serial>
+            <release>1</release>
             <compiler>Inform 7 build 6G60</compiler>
         </zcode>
     </story>

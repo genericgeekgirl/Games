@@ -1,0 +1,7 @@
+
+routine Main
+{
+print "Hello, Sailor!"
+pause
+quit
+}

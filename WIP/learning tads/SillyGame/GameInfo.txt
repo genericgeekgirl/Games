@@ -1,0 +1,12 @@
+IFID: 6E5B71E2-5ECA-401D-BAB3-3585740505CC
+Name: Working Title
+Headline: An interactive something or other - TODO
+Byline: by Adri
+AuthorEmail: Adri <genericgeekgirl@gmail.com>
+Desc: This is a silly little game while I tried to learn TADS 3.
+Version: 1
+ReleaseDate: 2014-11-11
+Language: en-US
+LicenseType: Freeware
+CopyingRules: Nominal cost only; compilations allowed
+PresentationProfile: Default
