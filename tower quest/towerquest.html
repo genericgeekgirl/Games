@@ -1,0 +1,511 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Glitch: Gwendolyn's Quest</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
+
+    <link media="screen" rel="stylesheet" href="media/css/undum.css">
+
+    <meta name="viewport" content="user-scalable=no, width=device-width">
+    <link rel="apple-touch-icon" href="media/img/iphone/icon.png">
+    <link rel="apple-touch-startup-image" href="media/img/iphone/splash.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!--[if !IE]>-->
+    <link media="only screen and (max-width: 640px)"
+          rel="stylesheet" type="text/css" href="media/css/undum-mobile.css">
+    <!--<![endif]-->
+
+  </head>
+  <body>
+    
+    <div id="toolbar">
+      <h1>Gwendolyn's Quest</h1>
+      <div class="nav">
+        <a href="#" class="button" id="menu-button">Menu</a>
+      </div>
+    </div>
+    <ul id="menu">
+      <li><a href="#title, #content_wrapper">Story</a></li>
+      <li><a href="#character_panel">Settings</a></li>
+    </ul>
+
+    <div id="page">
+
+      <!-- <div id="tools_wrapper"> -->
+      <!--   <div id="character_panel" class="tools right"> -->
+      <!--     <div id="character"> -->
+      <!--       <div class='buttons'> -->
+      <!--         <button id="save">Save</button> <button id="restore">Restore</button><button id="erase">Restart</button> -->
+      <!--       </div> -->
+      <!--     </div> -->
+      <!--   </div> -->
+      <!-- </div> -->
+      
+      <div id="mid_panel">
+        <div id="title">
+          <div class="label">
+
+            <h1>Gwendolyn's Quest</h1>
+            <h2>adapted by Adri</h2>
+
+            <noscript><p class="noscript_message">This game requires Javascript.</p></noscript>
+            <p class="click_message">click to begin</p>
+          </div>
+        </div>
+
+        <div id="content_wrapper">
+          <div id="content">
+          </div>
+          <a name="end_of_content"></a>
+        </div>
+
+      </div>
+    </div> <!-- End of div.page -->
+
+
+    <!-- Holds UI elements that will be cloned and placed in the main
+         page. This block itself is always hidden. -->
+    <div id="ui_library">
+      <div id="quality" class="quality">
+        <span class="name" data-attr="name"></span>
+        <span class="value" data-attr="value"></span>
+      </div>
+
+      <div id="quality_group" class="quality_group">
+        <h2 data-attr="title"></h2>
+        <div class="qualities_in_group">
+        </div>
+      </div>
+
+      <div id="progress_bar" class="progress_bar">
+        <span class="name" data-attr="name"></span>
+        <span class="value" data-attr="value"></span>
+        <div class="progress_bar_track">
+          <div class="progress_bar_color" data-attr="width">
+          </div>
+        </div>
+        <span class="left_label" data-attr="left_label"></span>
+        <span class="right_label" data-attr="right_label"></span>
+      </div>
+
+      <hr id="turn_separator">
+
+    </div>
+
+    <div id="content_library">
+
+      <div id="start" class="situation">
+        <h1>Room 23</h1>
+        <p>You can see a door and the <a href="greeterbot">Greeterbot Sentry G-42</a> here.</p>
+      </div>
+
+      <div id="greeterbot" class="situation">
+	    <p class="transient">The patented Greeterbot Sentry G-42 does mainly what it said on the oversized Greeterbot Sentry G-42 box - greets, stands sentry
+          (to the fragile world of the Ghost of Gwendolyn) and charges admission for things he will never get to experience for himself. A sad, but worthwhile, life.</p>
+
+        <img class="transient" src="media/img/widget.png">
+        
+        <ul class="options">
+            <li><a href="talk-to-bot-1">Talk to Greeterbot Sentry G-42</a></li>
+        </ul>
+
+      </div>
+
+      <div id="talk-to-bot-1" class="situation">
+        <p>"'Well met, adventurer. I am Greeterbot Sentry G-42. I sense you're ready for what is about to be revealed.<span class="transient">"</span></p>
+        <ul class="options">
+          <li><a href="talk-to-bot-2">"Ok."</a></li>
+        </ul>
+      </div>
+
+      <div id="talk-to-bot-2" class="situation">
+        <p>"I am not the one to reveal it though. Proceed upstairs. The Ghost of Gwendolyn is waiting to speak to you."</p>
+        <ul class="options">
+          <li><a href="talk-to-bot-3">"Ghost?"</a></li>
+        </ul>
+      </div>
+
+      <div id="talk-to-bot-3" class="situation">
+        <p>"Ghost?"</p>
+        <p>"Yes, Ghost. My mistress will tell you that story herself.<span class="transient">"</span></p>
+        <ul class="options">
+          <li><a href="talk-to-bot-4">"Ok."</a></li>
+        </ul>
+      </div>
+
+      <div id="talk-to-bot-4" class="situation">
+        <p>"This way; <a href="gwendolyns-chamber-1">follow me</a>."</p>
+      </div>
+      
+      <div id="gwendolyns-chamber-1" class="situation">
+        <h1>Gwendolyn's Chamber</h1>
+        <p>This room is pitch-black, save for the glowing ghost of <a href="gwendolyn-desc">Gwendolyn</a> herself.</p>
+      </div>
+
+      <div id="gwendolyn-desc" class="situation">
+        <p class="transient">The ethereal manifestation of one of the ancients that used to inhabit Ur, long before the Glitchen arrived.
+        She claims to be a disciple of Cosma, who died when the age of Grendaline overtook the world with a
+        great flood. But who can tell? Ghosts are notoriously inconsistent.</p>
+
+        <img class="transient" src="media/img/gwendolyn.png">
+        
+        <ul class="options">
+          <li><a href="talk-to-gwen-1">Learn of Gwendolyn's Fate</a></li>
+        </ul>
+
+      </div>
+
+      <div id="talk-to-gwen-1" class="situation">
+        <p>"Hear me. I am Gwendolyn, disciple of Cosma, daughter of Egeria, drowned as I lived in the waters of Grendaline's Rising.<span class="transient">"</span></p>
+        <ul class="options">
+          <li><a href="talk-to-gwen-2">"Whoa."</a></li>
+        </ul>
+      </div>
+      
+      <div id="talk-to-gwen-2" class="situation">
+        <p>"I have watched the giants battle and build, the worlds consume each other, imaginations turned inside out, and generations disappear
+          beneath the layers.<span class="transient">"</span></p>
+        <ul class="options">
+          <li><a href="talk-to-gwen-3">"Holy."</a></li>
+        </ul>
+      </div>
+      
+      <div id="talk-to-gwen-3" class="situation">
+        <p>"So long we searched for Cosma – lying in the gutter, gazing at the stars, watching the wind, waiting for her
+          instruction…<span class="transient">"</span></p>
+        <ul class="options">
+          <li><a href="talk-to-gwen-4">"…"</a></li>
+        </ul>
+      </div>
+
+      <div id="talk-to-gwen-4" class="situation">
+        <p>"…so long we lay, so long we gazed, we never noticed the coming of the age of Grendaline, lapping at our heels,
+          washing over our faces.<span class="transient">"</span></p>
+        <ul class="options">
+          <li><a href="talk-to-gwen-5">"Cripes!"</a></li>
+        </ul>
+      </div>
+      
+      <div id="talk-to-gwen-5" class="situation">
+        <p>"Learn from our mistakes, I beg you. You must not lose yourself to the world, but find yourself within it.
+          You must learn a measure of mastery over your own mind.<span class="transient">"</span></p>
+        <ul class="options">
+          <li><a href="talk-to-gwen-6">"I will try."</a></li>
+        </ul>
+      </div>
+      
+      <div id="talk-to-gwen-6" class="situation">
+        <p>"If you are ready, I will send you on a journey where you can learn to avoid
+          the fate of my people. Are you ready?"</p>
+        <ul class="options">
+          <li><a href="area-42">"Kind of."</a></li>
+        </ul>
+      </div>
+            
+      <div id="area-42" class="situation">
+        <p>"Kind of."</p>
+        <h1>Area 42</h1>
+        <p>You have been transported to the desert. The dry heat immediately overwhelms you and feel your mood take a turn for the worse.</p>
+        <p>You see a <a href="cactus-desc">cactus</a> and a butterfly.</p>
+      </div>
+
+      <div id="cactus-desc" class="situation">
+        <p class="transient">Hidden away in a scorching place, the Cactus has seen things he can never unsee. You can try to help, but help is limited. Do not, whatever you do, consider hugging the cactus.</em></p>
+        <img class="transient" src="media/img/cactus.png">
+        <p>The <a href="swoonerfly">butterfly</a> falls out of the sky.</p>
+      </div>
+
+      <div id="swoonerfly" class="situation">
+        <p class="transient">A blue butterfly, wilted from the heat. This one won't be producing milk ever again.</p>
+
+        <img class="transient" src="media/img/swoonerfly.png">
+        
+        <p>The cactus says, "Ack! Pfft! Get it OFF ME it’s BURNY!<span class="transient">"</span></p>
+        <ul class="options">
+          <li><a href="talk-to-cactus-1">"What?"</a></li>
+        </ul>
+      </div>
+
+      <div id="talk-to-cactus-1" class="situation">
+        <p>"TAKE the AIR away. Suck it out. Suck it out & blow it into the North … the northwest. Mybialded. Mebber. … ACK!<span class="transient">"</span></p>
+        <ul class="options">
+          <li><a href="talk-to-cactus-2">"Um…"</a></li>
+        </ul>
+      </div>
+      
+      <div id="talk-to-cactus-2" class="situation">
+        <p>"SUCK IT AWAY AND TAKE IT AWAY. Put it in the bubbles and take it to someone who needs to know what burning is. I know too well already.<span class="transient">"</span></p>
+        <ul class="options">
+          <li><a href="talk-to-cactus-3">"Listen, I …"</a></li>
+        </ul>
+      </div>
+
+      <div id="talk-to-cactus-3" class="situation">
+        <p>"Tii boiled down the sky and poured it into the caves, and the caves spat it out into the air, and the air has come here to punish me. It’s BURNY. Make it STOP."</p>
+        <ul class="options">
+          <li><a href="zzybzfrx">"Oh … kay"</a></li>
+        </ul>
+      </div>
+
+      <div id="zzybzfrx" class="situation">
+        <p>Suddenly you hear a voice say, "That cactus is CrAzY! Hee hee!" The speaker appears to be a blue paper bag with tentacles. You suppose it
+          might be a squid of some sort. The heat is obviously beginning to get to you.</p>
+        <img class="transient" src="media/img/blue_squid.png">
+        <ul class="options">
+          <li><a href="talk-to-squid-1">"Yes."</a></li>
+        </ul>
+      </div>
+
+      <div id="talk-to-squid-1" class="situation">
+        <p>"It is damn hot out, though.<span class="transient">"</span></p>
+        <ul class="options">
+          <li><a href="talk-to-squid-2">"It is."</a></li>
+        </ul>
+      </div>
+        
+      <div id="squid-desc" class="situation">
+        <p>A creature as mysterious as it is legless, Zzybzfrx knows what you have seen, and where you have been, and will never tell a soul.</p>
+      </div>
+
+      <div id="talk-to-squid-2" class="situation">
+        <p>"Don't worry," it tells you. "This is how vision quests always start.<span class="transient">"</span></p>
+        <ul class="options">
+          <li><a href="talk-to-squid-3">:(</a></li>
+        </ul>
+      </div>
+
+      <div id="talk-to-squid-3" class="situation">
+        <p>"<a href="talk-to-squid-4">Follow me...</a><span class="transient">"</span></p>
+      </div>
+      
+      <div id="talk-to-squid-4" class="situation">
+        <p>"It might be scary for you here.<span class="transient">"</span></p>
+        <ul class="options">
+          <li><a href="talk-to-squid-5">"It is."</a></li>
+        </ul>
+      </div>
+
+      <div id="talk-to-squid-5" class="situation">
+        <p>"It's cool, though."</p>
+        <ul class="options">
+          <li><a href="talk-to-squid-6">"Doesn't seem like it."</a></li>
+        </ul>
+      </div>
+
+      <div id="talk-to-squid-6" class="situation">
+        <p>
+          The squid pauses to study you. "Seriously. It's cool. It's cool. Everything's cool."
+        </p>
+        <ul class="options">
+          <li><a href="talk-to-squid-7">
+              "..."
+          </a></li>
+        </ul>
+      </div>
+      
+      <div id="talk-to-squid-7" class="situation">
+        <p>Poof. For a  moment you could have sworn the heat had dropped. You let out a soft "Ahh..." And then the dry, oppressing heat is back,
+          just as quickly as it disappeared.</p>
+        <p>The squid continues to talk, "I'm telling you, everything will be cool. It will all BE cool, if you
+          just learn to step into your own head and shut all of this out."</p>
+        <ul class="options">
+          <li><a href="talk-to-squid-8">
+              "I'll try."
+          </a></li>
+        </ul>
+      </div>
+
+      <div id="talk-to-squid-8" class="situation">
+        <p>As the squid talks, you feel the temperature fluxuating between impossibly hot and perfectly comfortable. He gestures at your forehead
+          with a short, writhing tentacle. He says, "It's all cool in there. Are you ready to meet your mind?"</p>
+        <ul class="options">
+          <li><a href="talk-to-squid-9">
+              "Just get me out of here."
+          </a></li>
+        </ul>
+      </div>
+
+      <div id="talk-to-squid-9" class="situation">
+        <p>"Just get me out of here."</p>
+        <p>"Coooooooooool..."</p>
+        <ul class="options">
+          <li><a href="outer-mind-1">
+              "Cool."
+          </a></li>
+        </ul>
+      </div>
+
+      <div id="outer-mind-1" class="situation">
+        <p>"Cool."</p>
+        <h1>The Outer Mind</h1>
+        <p>You are in a room that is as psychadelic as it is oddly comforting. The walls are a kaledioscope of pink and orange.
+          Two giant disembodied eyeballs float upon you, and the floor you walk on appears to be a pink tongue, ramping up towards a third eyeball.</p>
+        <ul class="options">
+          <li><a href="outer-mind-2">Start walking up the tongue.</a></li>
+        </ul>
+      </div>
+      
+      <div id="outer-mind-2" class="situation">
+        <p>You hear a loud voice: "TRAVELLER: EXAMINE THE PATH. WALK THE PATH WITH HEART. THE ONLY WORTHWHILE CHALLENGE IS TO TRAVERSE THE FULL LENGTH.<span class="transient">"</span></p>
+        <ul class="options">
+          <li><a href="outer-mind-3">Keep walking.</a></li>
+        </ul>
+      </div>
+      
+      <div id="outer-mind-3" class="situation">
+        <p>"BE AWARE, THIS IS YOUR OWN MIND. DO NOT LITTER. PLEASE LEAVE IT AS YOU WOULD WISH TO FIND IT. YOUR NEAREST EXIT MAY BE ABOVE YOU.<span class="transient">"</span></p>
+        <ul class="options">
+          <li><a href="outer-mind-4">Just a little further.</a></li>
+        </ul>
+      </div>
+
+      <div id="outer-mind-4" class="situation">
+        <p>"THE ONES WHO CAME BEFORE YOU DID NOT HAVE WHAT YOU HAVE. THEY DID NOT KNOW WHAT YOU KNOW.<span class="transient">"</span></p>
+        <ul class="options">
+          <li><a href="outer-mind-5">You're almost there.</a></li>
+        </ul>
+      </div>
+
+      <div id="outer-mind-5" class="situation">
+        <p>"KNOWLEDGE IS YOUR RAFT. YOUR PATH IS YOUR OWN. DO NOT GO BACK. DO NOT PASS GO. BE IN YOUR MIND ALWAYS. EVEN WHEN YOU ARE WITHOUT IT."</p>
+        <ul class="options">
+          <li><a href="outer-mind-6">Approach the third eyeball.</a></li>
+        </ul>
+      </div>
+
+      <div id="outer-mind-6" class="situation">
+        <p>As you approach the third eyeball, the squid reappears, but now it is purple. "Hee hee! Neat! C'mere!", it says.</p>
+        <img class="transient" src="media/img/purple_squid.png">
+        <ul class="options">
+          <li><a href="talk-to-squid-10">
+              "Ok."
+          </a></li>
+        </ul>
+      </div>
+
+      <div id="talk-to-squid-10" class="situation">
+        <p>
+          "See. Zzybzfrx told you it would be cool, and cool it is.<span class="transient">"</span></p>
+        </p>
+        <ul class="options">
+          <li><a href="talk-to-squid-11">
+              "Who Zzybzfrx?"
+          </a></li>
+        </ul>
+      </div>
+      
+      <div id="talk-to-squid-11" class="situation">
+        <p>
+          "I. Zzybzfrx. No one knows where I am really from, or who I am for certain. But know this: you have reached the apex of your brain.<span class="transient">"</span></p>
+        </p>
+        <ul class="options">
+          <li><a href="talk-to-squid-12">
+              "Guess so, yep."
+          </a></li>
+        </ul>
+      </div>
+
+      <div id="talk-to-squid-12" class="situation">
+        <p>
+          "You've been to paradise. And you've also been to you. I told you it was cool, right?<span class="transient">"</span></p>
+        </p>
+        <ul class="options">
+          <li><a href="talk-to-squid-13">
+              "Ok."
+          </a></li>
+        </ul>
+      </div>
+
+      <div id="talk-to-squid-13" class="situation">
+        <p>
+          "Damn right. Never say Zzybzfrx doesn't take you where the cool kids go. One more challenge lies before you.
+          Complete it, and I will have no problem awarding you a Measure of Self-Mastery. You can do it?<span class="transient">"</span></p>
+        </p>
+        <ul class="options">
+          <li><a href="talk-to-squid-14">
+              "I can do it."
+          </a></li>
+        </ul>
+      </div>
+
+      <div id="talk-to-squid-14" class="situation">
+        <p>"I can do it."</p>
+        <p>
+          "Then let's do it."
+        </p>
+        <ul class="options">
+          <li><a href="inner-mind">
+              "OK!"
+          </a></li>
+        </ul>
+      </div>
+
+      <div id="inner-mind" class="situation">
+        <h1>The Inner Mind</h1>
+        <p>
+          This room is full of colorful shapes. The floor is white and quite possibly the shiniest thing you have ever seen.
+        </p>
+        <ul class="options">
+          <li><a href="gwendolyns-chamber-2">
+              Pass through this room.
+          </a></li>
+        </ul>
+      </div>
+
+      <div id="gwendolyns-chamber-2" class="situation">
+        <h1>Gwendolyn's Chamber</h1>
+        <p>This room is pitch-black, save for the glowing ghost of Gwendolyn herself.</p>
+        
+        <ul class="options">
+          <li><a href="talk-to-gwen-7">Talk to the Ghost of Gwendolyn</a></li>
+        </ul>
+      </div>
+
+      <div id="talk-to-gwen-7" class="situation">
+
+        <img class="transient" src="media/img/gwendolyn.png">
+        <p>
+          "This is not the end. You have completed today's challenge, and must be on your way, but your self-knowledge
+          is only begun. You may not see Zzybzfrx, that friendly Figment, but he will be there.<span class="transient">"</span></p>
+        </p>
+        <ul class="options">
+          <li><a href="talk-to-gwen-8">
+              "I see."
+          </a></li>
+        </ul>
+      </div>
+
+      <div id="talk-to-gwen-8" class="situation">
+        <p>
+          "I too am always here, somewhere. Remember me, and heed my warning – do not follow the ways of those who
+          have gone before. You will make your own path.<span class="transient">"</span></p>
+        </p>
+        <ul class="options">
+          <li><a href="talk-to-gwen-9">
+              "I always try to..."
+          </a></li>
+        </ul>
+      </div>
+
+      <div id="talk-to-gwen-9" class="situation">
+        <p>
+          "As for me, I will return one day, to tell you of my beautiful, lost-so-long, Butterfly-Bone Hair Clip.
+          For now, take my warnings, and my blessing."
+        </p>
+        <ul class="options">
+          <li><a href="talk-to-gwen-10">
+              "Ok."
+          </a></li>
+        </ul>
+      </div>
+
+      <script type="text/javascript" src="media/js/jquery-1.11.0.min.js"></script>
+      <script type="text/javascript" src="media/js/undum.js"></script>
+      <script type="text/javascript" src="towerquest.js"></script>
+
+  </body>
+
+</html>
