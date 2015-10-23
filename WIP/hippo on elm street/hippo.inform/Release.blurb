@@ -10,7 +10,7 @@ release to "/home/adri/Games/Interactive Fiction/Adri/WIP/hippo on elm street/hi
 
 ! Blorb instructions
 
-storyfile leafname "A Hippo on Elm Street.zblorb"
+storyfile leafname "Hippo on Elm Street.zblorb"
 storyfile "/home/adri/Games/Interactive Fiction/Adri/WIP/hippo on elm street/hippo.inform/Build/output.z8" include
 ifiction "/home/adri/Games/Interactive Fiction/Adri/WIP/hippo on elm street/hippo.inform/Metadata.iFiction" include
 cover "/usr/local/share/inform7/Inform7/Extensions/Reserved/DefaultCover.jpg"
@@ -21,9 +21,9 @@ picture 1 "/usr/local/share/inform7/Inform7/Extensions/Reserved/DefaultCover.jpg
 placeholder [IFID] = "C818F80C-1968-4482-BA62-6F1C4BE4A8A1"
 placeholder [RELEASE] = "1"
 placeholder [YEAR] = "2015"
-placeholder [TITLE] = "A Hippo on Elm Street"
+placeholder [TITLE] = "Hippo on Elm Street"
 placeholder [AUTHOR] = "Erin Gigglecreek"
-placeholder [BLURB] = "'[story title]' was started for Ectocomp 2014, but failed to write itself in under three hours."
+placeholder [BLURB] = "Story description goes here. TODO."
 
 ! Other material to release
 

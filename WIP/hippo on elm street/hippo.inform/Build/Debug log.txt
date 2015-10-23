@@ -6,7 +6,7 @@ Inform called as: /usr/local/libexec/ni --rules /usr/local/share/inform7/Inform7
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 3706 words long.
+I've now read your source text, which is 7743 words long.
 
 
 -----------------------------------------------------
@@ -14,15 +14,10 @@ Phase II ... Semantic analysis Ia
 -----------------------------------------------------
 
 I've also read Standard Rules by Graham Nelson, which is 39455 words long.
-I've also read Conversation Framework for Sand-dancer by Aaron Reed, which is 3765 words long.
 I've also read Case Management by Emily Short, which is 166 words long.
 I've also read Punctuation Removal by Emily Short, which is 900 words long.
 I've also read Reversed Persuasion Correction by Juhana Leinonen, which is 810 words long.
-I've also read Smarter Parser by Aaron Reed, which is 11332 words long.
 I've also read Basic Help Menu by Emily Short, which is 2369 words long.
-I've also read Poor Man's Mistype by Aaron Reed, which is 812 words long.
-I've also read Epistemology by Eric Eve, which is 1485 words long.
-I've also read Plurality by Emily Short, which is 3141 words long.
 I've also read Menus by Emily Short, which is 2015 words long.
 I've also read Basic Screen Effects by Emily Short, which is 2155 words long.
 
@@ -164,7 +159,7 @@ Providing for a total heap of 8192, given requirement of 8192
 Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
-Total of 185 files written as streams.
+Total of 171 files written as streams.
 
 That concludes the debugging log from this run of Inform.
 Its contents were as follows, and can be changed by placing
