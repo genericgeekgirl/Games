@@ -23,7 +23,7 @@ placeholder [RELEASE] = "1"
 placeholder [YEAR] = "2015"
 placeholder [TITLE] = "Hippo on Elm Street"
 placeholder [AUTHOR] = "Erin Gigglecreek"
-placeholder [BLURB] = "Story description goes here. TODO."
+placeholder [BLURB] = "The house hippo discovers Halloween."
 
 ! Other material to release
 

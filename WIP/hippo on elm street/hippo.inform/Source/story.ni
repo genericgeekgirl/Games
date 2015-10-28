@@ -4,7 +4,7 @@ The story creation year is 2015.
 The release number is 1.
 The story headline is "a not-so-scary story".
 The story genre is "fantasy".
-The story description is "Story description goes here. TODO.".
+The story description is "The house hippo discovers Halloween."
 
 Part - Basic Setup
  
@@ -28,7 +28,7 @@ choose row 2 in the Table of Basic Help Options;
 change title entry to "New to text adventures?".
 
 To say author: say "The author can be contacted at <gigglecreek@gmail.com>."
-To say credits: say "The house hippo was created by the Concerned Children's Advertisers, and appears here without permission. [italic type]Felis terribulus[as normal] is a joke based on worstcats.tumblr.com, which is adorable and funny and worth checking out. Musical references are to 'The Monster Mash' and 'This is Halloween' (from [italic type]The Nightmare Before Christmas[as normal]). Beta testers include  Naomi Hinchen, Zachary Barryte, Michael Andryauskas, Marius Müller, Tuukka Turto, Scott Snyder and a few unnamed people from Boston Indies and Women in Games Boston."
+To say credits: say "The house hippo was created by the Concerned Children's Advertisers, and appears here without permission. [italic type]Felis terribulus[as normal] is a joke based on worstcats.tumblr.com, which is adorable and funny and worth checking out. Musical references are to 'The Monster Mash' and 'This is Halloween' (from [italic type]The Nightmare Before Christmas[as normal]). Beta testers include  Naomi Hinchen, Zachary Barryte, Michael Andryauskas, Marius Müller, Tuukka Turto, Scott Snyder, Thomas Bøvith, Felix Pleșoianu, verityvirtue, Melvin Rangasamy, and a few unnamed people from Boston Indies and Women in Games Boston."
 
 Chapter - Parsing Commands
 
@@ -54,7 +54,7 @@ Chapter - Other Setup
 
 Use American dialect, full-length room descriptions, and the serial comma.
 
-The maximum score is 45.
+The maximum score is 40.
 
 When play begins:
 say "Baby, it's cold outside. All you want to do is snuggle up in a warm sock and take a nap. But you're distracted by loud, scary sounds. Also the scent of something delicious. You're not quite sure what's going on, but you're determined to find out. And maybe find a snack in the process."
@@ -109,11 +109,11 @@ Before going inside when the location is Porch and the cat is not in the locatio
 
 Chapter - Porch
 
-The Porch is a room. "[if the location is porch]You are standing on the porch in front of the house. A flap in the front door leads back inside. [end if]There [if the location of the jack o lantern is the porch or the basket of apples is spilled]are[otherwise]is[end if][if the basket of apples is spilled] apples all over the porch[otherwise] a basket of apples[end if][if the location of the jack o lantern is the porch] and a jack o['] lantern[end if] [if the location is porch]here[otherwise]out there[end if]."
+The Porch is a room. "[if the location is porch]You are standing on the porch in front of the house. A flap in the front door leads back inside. [end if]There are[if the basket of apples is spilled] an overturned basket, a bunch of apples,[otherwise] a basket of apples[end if] and a jack o['] lantern [if the location is porch]here[otherwise]out there[end if]."
 
 Chapter - Jack O Lantern
 
-The jack o lantern is scenery. Understand "pumpkin" as jack o lantern. The printed name is "jack o['] lantern". The description is "This pumpkin has a face carved into it, with a wide, grinning mouth and triangular eyes[if the location of the player is the porch]. It is glowing with a pleasant warmth[end if]."
+The jack o lantern is scenery in the porch. Understand "pumpkin" as jack o lantern. The printed name is "jack o['] lantern". The description is "This pumpkin has a face carved into it, with a wide, grinning mouth and triangular eyes[if the location of the player is the porch]. It is glowing with a pleasant warmth[end if]."
 
 Before eating the jack o lantern:
 	if the location of the player is the porch:
@@ -121,10 +121,17 @@ Before eating the jack o lantern:
 	otherwise:
 		say "You take a mouthful of raw pumpkin. You can't figure out whether it tastes good or not." instead.
 
-Inside-the-pumpkin is a room. "You are inside the jack o['] lantern. There is a plastic flame here, flickering with an orange glow. The porch is outside."
+Inside-the-pumpkin is a room. The printed name is "Inside the Pumpkin". "You are inside the jack o['] lantern. There is a plastic flame here, flickering with an orange glow. The porch is outside."
+
+Instead of searching the jack o lantern:
+say "Inside the pumpkin is a fake candle."
+
+The flame is part of the pumpkin. The description is "A plastic flame, flickering with an orange glow." Understand "candle" as flame.
 
 After deciding the scope of the player while the location of the player is inside-the-pumpkin:
 place jack o lantern in scope.
+
+The face is part of the jack o lantern. The description is "A face with triangular eyes and a wide, grinning mouth."
 
 The mouth is part of the jack o lantern. The description is "The pumpkin has a wide, grinning mouth."
 The eyes are part of the jack o lantern. The description is "The pumpkin has two triangular eyes."
@@ -132,6 +139,11 @@ The eyes are part of the jack o lantern. The description is "The pumpkin has two
 Instead of entering the jack o lantern when the location is porch: try entering the mouth.
 
 Before entering the jack o lantern when the location is inside-the-pumpkin: say "You are already inside the pumpkin." instead.
+
+Before entering the mouth:
+	if the player encloses an apple:
+		say "There's no way the apple is going to fit through that hole.";
+		stop the action.
 
 Before entering the mouth:
 	if the location is porch:
@@ -145,8 +157,7 @@ Pumpkin-mouth is a scenery and an open, unopenable door. It is outside from insi
 
 Instead of pushing the jack o lantern:
 say "You manage to nudge the pumpkin off the porch. Luckily the candle inside wasn't real.";
-remove the jack o lantern from play;
-record "pushed pumpkin off porch" as achieved.
+remove the jack o lantern from play.
 
 Blowing out is an action applying to one thing.
 Understand "blow out [something]" as blowing out.
@@ -157,18 +168,29 @@ say "You huff and you puff, but the flame barely wavers."
 
 Chapter - Basket of Apples
 
-The basket of apples is scenery in the Porch. The description is "[if the basket of apples is full]This basket is full of red apples. There is a small hole in the side of the basket, about the size of a mouse. Or a house hippo.[otherwise]This basket was, moments ago, filled with apples. Now it lies empty, surrounded by apples.[end if]"
+The basket of apples is scenery in the Porch. The description is "This basket is full of red apples. There is a small hole in the side of the basket, about the size of a mouse. Or a house hippo."
 
-The basket of apples can be spilled or full. The basket of apples is full.
+The basket of apples can be spilled. The basket of apples is not spilled.
 
 The hole is a backdrop. It is in porch and bottom-of-basket. The description is "A mouse-sized hole in the side of the basket."
+
+The other-apple is part of the basket of apples. Understand "apple" as other-apple when the location is porch and the shiny red apple is not enclosed by the porch. The printed name is "apple".
+Instead of taking the other-apple: say "You can't reach any apples from out here."
+
+Instead of taking the basket of apples:
+say "What are you going to do with an entire basket of apples?"
+
+Instead of examining the other-apple:
+try examining the basket of apples.
 
 Hiding is an action applying to nothing.
 Understand "hide" as hiding.
 
 Carry out hiding:
-	if the location is the porch:
+	if the location is the porch and the basket of apples is in the location:
 		say "Maybe you could hide in the basket of apples.";
+	otherwise if the location is the porch and the overturned basket is in the location:
+		say "Maybe you could hide inside the basket. Or perhaps there is a better location.";
 	otherwise if the location is the floor:
 		say "You could hide under either the table or the sofa.";
 	otherwise:
@@ -182,18 +204,24 @@ Instead of entering the hole:
 	otherwise if the location is bottom-of-basket:
 		try going outside.
 
-Hole-in-basket is a scenery and an open, unopenable door. It is outside from bottom-of-basket. Through it is the porc.h
+Hole-in-basket is a scenery and an open, unopenable door. It is outside from bottom-of-basket. Through it is the porch.
 
 Instead of examining hole-in-basket:
 try examining the hole.
 
 The basket of apples can be spilled. The basket of apples is not spilled.
 
+The overturned basket is scenery. The description is "This basket was, moments ago, filled with apples. Now it lies empty, surrounded by apples." Understand "apples" as overturned basket.
+
+In-the-basket is a room. The printed name is "Inside the basket". "You are hiding inside the overturned basket."
+Basket-door is an open, unopenable door and scenery. It is outside from in-the-basket. Through it is the porch.
+Instead of entering the basket: move the player to in-the-basket.
+
 Bottom-of-basket is a room. "You are at the bottom of the basket, surrounded by apples. There is a small hole leading outside. You could probably climb to the top of the basket if you're careful." The printed name is "Basket of Apples".
 
-Top-of-Basket is a room. "You are at the top of the basket, standing on a pile of apples[if an apple is not enclosed by the player and the shiny red apple is not enclosed by the player]. There is one particularly shiny red apple here[end if].[paragraph break]From here, you can see the giant spider." The printed name is "Basket of Apples".
+Top-of-Basket is a room. "You are at the top of the basket, standing on a pile of apples[if an apple is not enclosed by the player and the shiny red apple is not enclosed by the player]. There is one particularly shiny red apple here[end if].[if the location of the spider cat is the porch][paragraph break]From here, you can see the giant spider.[end if]". The printed name is "Basket of Apples".
 
-The pile of apples is an open, unopenable door and scenery. It is above bottom-of-basket and below Top-of-Basket.
+The pile of apples is an open, unopenable door and scenery. It is above bottom-of-basket and below Top-of-Basket. The description is "A bunch of juicy red apples."
 
 Instead of climbing the pile of apples when the location is bottom-of-basket:
 try going up.
@@ -210,8 +238,11 @@ Before going down from top-of-basket:
 		move the shiny red apple to bottom-of-basket.
 
 Instead of taking the pile of apples:
-	try taking the shiny red apple.
+	say "These apples are about the same size as you are. You only need one!"
 
+Instead of taking the shiny red apple when the location is bottom-of-basket:
+say "You'd better not. Taking an apple from the bottom may cause the entire pile to cave in."
+        
 Understand the command "grab" as "take".
         
 An apple is a kind of thing. An apple is undescribed.
@@ -235,7 +266,7 @@ Check going outside from Bottom-of-Basket:
 		stop the action.
 
 After deciding the scope of the player while the location of the player is Top-of-Basket:
-place spider cat in scope;
+if the spider cat is in the porch, place spider cat in scope;
 place basket of apples in scope.
 
 After deciding the scope of the player while the location of the player is Bottom-of-Basket:
@@ -243,27 +274,32 @@ place basket of apples in scope.
 
 Before climbing the basket of apples: try climbing the pile of apples instead.
 
-Instead of dropping the shiny red apple when the location is top-of-basket:
+Instead of dropping the shiny red apple when the location is top-of-basket and the location of the spider cat is the porch:
 try throwing the shiny red apple at the spider cat.
 
-Instead of pushing the shiny red apple when the location is top-of-basket:
+Instead of pushing the shiny red apple when the location is top-of-basket and the location of the spider cat is the porch:
 try throwing the shiny red apple at the spider cat.
 
 Instead of throwing the shiny red apple at the spider cat:
 say "You toss the apple at the giant spider, hitting it squarely in the head. The spider screeches and pounces on the basket, knocking apples--and you--all over the porch.";
-the human arrives in two turns from now;
 move the shiny red apple to the porch;
 now the spider cat is angry;
 now the basket of apples is spilled;
+remove the basket of apples from play;
+move the overturned basket to the porch;
 move the player to the porch.
 
+Before entering the mouth for the first time:
+the human arrives in two turns from now.
+
 At the time when the human arrives:
-say "A black cat walking on two legs opens the front door. She sets down the pumpkin she's carrying, scoops the apples back into the basket and picks up the spider, clutching it to her chest. The spider yowls angrily as the large cat carries it away. You almost feel sorry for it. Almost.";
+say "A black cat walking on two legs opens the front door. She scoops the apples back into the basket and picks up the spider, clutching it to her chest. The spider yowls angrily as the large cat carries it away. You almost feel sorry for it. Almost.";
 remove the spider cat from play;
 if the shiny red apple is not carried by the player, move the shiny red apple to bottom-of-basket;
-move the jack o lantern to the porch;
 now the basket of apples is not spilled;
-record "got rid of the spider" as achieved.
+record "got rid of the spider" as achieved;
+move the basket of apples to the porch;
+remove the overturned basket from play.
 
 Chapter - Non-Existent Rooms
 
@@ -288,7 +324,7 @@ Chapter - On the Floor
 
 The floor is a room in the Living Room. The printed name is "Living Room". "There is a table here, the top of which is somewhere high above your head. A length of black shiny fabric covers the table, reaching nearly to the floor. The sofa is behind you. A thick white spiderweb leads from the floor up to the window ledge above you[if the spider cat has been in the floor or the porch has been visited]. A flap in the front door leads outside to the porch[end if]."
 
-The carpet is scenery in the floor. The description is "The floor is covered with a soft, shaggy red carpet." Understand "floor" as carpet.
+The carpet is a backdrop. it is in the floor and under-the-table and under-the-sofa. The description is "The floor is covered with a soft, shaggy red carpet." Understand "floor" as carpet.
 
 Wiping feet on is an action applying to one thing.
 Understand "wipe feet on [something]" as wiping feet on.
@@ -327,6 +363,9 @@ say "You tug on the web with your teeth. You end up with a mouthful of cotton. B
 now the player carries the wad of cotton.
 
 The window ledge is scenery in On-the-Window-Ledge. The description is "From here, you can see the window ledge high above your head. A spiderweb reaches from the floor to the ledge." Understand "ledge" as window ledge.
+
+Before climbing the window ledge when the location is floor:
+say "Perhaps you can reach the ledge by climbing up the spiderweb." instead.
 
 Instead of examining the window ledge when the location is on-the-window-ledge:
 try looking.
@@ -377,7 +416,9 @@ Carry out going by name:
 let aim be the best route from the location to the noun, using doors;
 try going aim.
 
-The sofa is a backdrop. It is in the Living Room and under-the-sofa. The description is "[if the location is the floor]One wall of the room is taken up with a large grey sofa[otherwise]You look up at the underside of the sofa. It's not very interesting[end if]." Understand "couch" as sofa.
+The sofa is a backdrop. It is in the Living Room and under-the-sofa. The description is "[if the location is under-the-sofa]You look up at the underside of the sofa. It's got springs and things. It's not very interesting[otherwise]One wall of the room is taken up with a large grey sofa[end if]." Understand "couch" as sofa.
+
+The springs are part of the sofa. The description is "The underside of the sofa is made up of flat, zigzaggy springs." Understand "things" as springs. Understand "spring" as springs.
 
 The nest is scenery in under-the-sofa. The description is "A nest made of socks, purloined from the laundry basket. It's very soft and warm and smells strongly of flowers." Understand "socks" and "sock" as nest.
 
@@ -385,11 +426,17 @@ Before eating the nest: say "Bleh. Socks don't taste very good." instead.
 
 Before entering the nest: try sleeping instead.
 
-Instead of taking the nest: say "This is the best place for your nest."
+Instead of taking the nest: say "This is the safest place for your nest."
 
 Instead of touching the nest: say "It's warm and soft."
 
 Instead of smelling the nest: say "The socks smell like flowers."
+
+Instead of searching the nest: say "You find a bit of dryer lint mixed in with the socks."
+
+The dryer lint is part of the nest. The description is "A bit of grey and pink dryer lint lines the nest to make it extra warm."
+
+Instead of taking the dryer lint: say "No, that belongs with the nest."
 
 Understand the command "sit" as something new.
 Understand the command "stand" as something new.
@@ -415,11 +462,15 @@ Under-the-Sofa is a room in the Living Room. The printed name is "Underneath the
 
 Sofa-door is an open, unopenable door and scenery. It is outside from Under-the-Sofa and foobarbaz from the Floor.
 
-Instead of looking under the sofa: move the player to Under-the-Sofa.
+Instead of looking under the sofa when the location is floor: say "Your nest of socks is underneath the sofa."
+Instead of looking under the sofa when the location is under-the-sofa: try looking.
+Instead of looking under the sofa: say "You can't do that from here."
 
 Chapter - Under the Table
 
-Instead of looking under the shiny black fabric: move the player to Under-the-Table.
+Instead of looking under the shiny black fabric when the location is floor: say "[if the dragon is in under-the-table]There is a dragon under there![otherwise]There is a napkin and lollipop under there.[end if]".
+Instead of looking under the shiny black fabric when the location is under-the-table: try looking.
+Instead of looking under the shiny black fabric: say "You can't do that from here."
 
 Under-the-Table is a room in the Living Room. The printed name is "Underneath the Table". "You are hiding underneath the table." Understand "under the table" and "under table" and "under tablecloth" and "under fabric" as under-the-table.
 
@@ -429,6 +480,8 @@ place table in scope.
 Chapter - Tablecloth and Table
 
 The table is scenery in the Floor. The description is "[if the location is the Floor]You can only imagine what wonders the table holds. All you can see from here is a curtain of black fabric. There is just enough clearance for a hippo of your size[otherwise if the location is under-the-table]You gaze up at the bottom of the table. It's very high[otherwise]The table is covered with treats of all sorts[end if]."
+
+The treats are part of the table. Instead of examining the treats, try examining the table.
 
 The table-cloth is an open unopenable door and scenery. It is outside of Under-the-Table and zabraboof from the floor.
 
@@ -469,7 +522,7 @@ Instead of looking under the table: try looking under the shiny black fabric.
 Chapter - mp3 player
 
 The box of scary sounds is a device in on-the-table. It is switched on. It is undescribed. Understand "device" and "ipod" and "iphone" as box of scary sounds.
-The description is "It's a flat white box with a mini television screen and a small circle at one end[if the box of scary sounds is switched on]. The scary sounds seem to be coming out of it[end if][if the player is wearing the wad of cotton]. You're so close to the source that you can hear the sounds despite the cotton blocking your ears[end if]."
+The description is "It's a flat white box with a mini television screen and a small circle at one end[if the box of scary sounds is switched on]. The scary sounds seem to be coming out of it[end if][if the player is wearing the wad of cotton and the box of scary sounds is switched on]. You're so close to the source that you can hear the sounds despite the cotton blocking your ears[end if]."
 
 Before eating the box of scary sounds:
 say "You chomp down on metal. Ouch." instead.
@@ -480,6 +533,8 @@ The circle button is part of the box of scary sounds. The description is "It's a
 
 The mini television screen is part of the box of scary sounds. The description is "The screen shows some funny symbols that you don't understand."
 
+The symbols are part of the mini television screen. Instead of examining the symbols, try examining the mini television screen.
+
 Instead of examining the box of scary sounds:
 say "[description of box of scary sounds][line break]"
 
@@ -487,7 +542,6 @@ Understand "step on [something]" as touching.
 
 After switching off the box of scary sounds:
 say "You step on the button. The sounds stop immediately.";
-record "turned off device" as achieved;
 the human comes into the living room in three turns from now.
 
 The vampire is a person. A person can be seen. The vampire is not seen.
@@ -513,7 +567,7 @@ to say vampire-box:
 	say "[if the vampire is not seen]A vampire strolls into the living room![run paragraph on][otherwise]The vampire comes back into the living room.[run paragraph on][end if]";
 	say "[if the location is on-the-table] You dodge behind [one of]a pile of cookies[or]a plate of cupcakes[or]a bowl of candy[cycling] as he approaches the table.[run paragraph on][end if]";
 	say " He picks up the box, stares at it for a moment and presses the button[if the wad of cotton is not worn by the player or the location is on-the-table], turning the sounds back on.[run paragraph on][end if]";
-	say "[if the location is on-the-table] Then he walks away, thankfully without noticing you[end if]."
+	say " Then he walks away[if the location is on-the-table], thankfully without noticing you[end if]."
                                 
 After switching on the box of scary sounds:
 say "You step on the button. The sounds start again."
@@ -531,38 +585,70 @@ Chapter - Sweets
                 
 A sweet is a kind of thing. Sweets are undescribed. Sweets are edible.
 
-The other-sweets is a plural-named sweet in on-the-table. It is undescribed. Understand "sweets" and "other sweets" as other-sweets. The description is "There's a plate of cupcakes and a pan of brownies."
+The other-sweets is a plural-named sweet in on-the-table. It is undescribed. Understand "sweet" and "sweets" and "other sweets" as other-sweets. The description is "There's a plate of cupcakes and a pan of brownies."
 
-Before eating the other-sweets:
-say "You'll need to be more specific." instead.
+Before eating the other-sweets: say "You'll need to be more specific." instead.
 
-The cupcake is a sweet in on-the-table. Understand "cupcakes" as cupcake.
+The plate of cupcakes is scenery in on-the-table. The description is "There is a plate of orange and black cupcakes."
+Instead of taking the plate of cupcakes: say "You don't need the entire plate of cupcakes. Not that you could move it anyway."
 
-The brownie is sweet in on-the-table. Understand "brownies" as brownie.
+The cupcake is a sweet in on-the-table. The description is "A vanilla cupcake with orange and black icing."
 
-Instead of examining the cupcake:
-try examining the other-sweets.
+The other-cupcake is a sweet in on-the-table. The printed name is "cupcake".
+The description is "A vanilla cupcake with orange and black icing." Understand "cupcake" as other-cupcake when the cupcake is not enclosed by the location.
+Instead of taking the other-cupcake: say "You've already got a cupcake! There's no need to be greedy."
 
-Instead of examining the brownie:
-try examining the other-sweets.
+The pan of brownies is scenery in on-the-table. The description is "There is a pan of fudge brownies."
 
-The cookie is a sweet in on-the-table. Understand "cookies" as cookie. The description is "There's a plate full of chocolate chip cookies."
+Instead of taking the pan of brownies: say "There's no way you could move the entire pan of brownies. Anyway, you'd be stuffed after eating just one."
 
-The candy is a sweet in on-the-table. Understand "candies" as candy. The printed name is "piece of candy". The description is "There are bowls full of assorted candies in brightly colored wrappers."
+The brownie is a sweet in on-the-table. The description is "A chocolate fudge brownie."
 
-Before eating a sweet:
+The other-brownie is a sweet in on-the-table. The printed name is "brownie".
+The description is "A chocolate fudge brownie." Understand "brownie" as other-brownie when the brownie is not enclosed by the location.
+Instead of taking the other-brownie: say "You've already got a brownie! There's no need to be greedy."
+
+The plate of cookies is scenery in on-the-table. The description is "There's a plate full of chocolate chip cookies." 
+
+Instead of taking the plate of cookies: say "You try to drag the plate of cookies, but it's very heavy."
+
+The chocolate chip cookie is a sweet in on-the-table. The description is "A chocolate chip cookie."
+
+The other-cookie is a sweet in on-the-table. The printed name is "cookie".
+The description is "A chocolate chip cookie." Understand "cookie" as other-cookie when the cookie is not enclosed by the location.
+Instead of taking the other-cookie: say "You've already got a cookie! There's no need to be greedy."
+
+The bowl of candies is an undescribed, edible thing in on-the-table. The description is "There are bowls full of assorted candies in brightly colored wrappers."
+
+Instead of taking the bowl of candies: say "You attempt to walk off with the entire bowl of candies, but it is too heavy for you."
+
+The piece of candy is an undescribed, edible thing in on-the-table. The description is "A piece of candy in a colorful wrapper."
+
+The other-candy is an undescribed, edible thing in on-the-table. The printed name is "piece of candy".
+The description is "A piece of candy in a colorful wrapper." Understand "candy" as other-candy when the piece of candy is not enclosed by the location.
+Instead of taking the other-candy: say "You've already got a piece of candy. There's no need to be greedy."
+
+The wrappers is part of the bowl of candies. The description is "These colorful wrappers hold all sorts of candy."
+
+The wrapper is part of the piece of candy. The description is "The discarded wrapper from a piece of candy."
+
+Before eating the piece of candy:
+say "You awkwardly open the cellophane wrapper and chew on the tasty candy inside.";
+now the piece of candy is undescribed;
+move the piece of candy to on-the-table instead.
+
+Before eating a sweet (called T):
 say "You nibble on [a noun]. It is delicious!";
 now the player is not hungry;
+now T is undescribed;
+move T to on-the-table;
 record "had a snack" as achieved instead.
-
-After going to under-the-sofa when the player carries a sweet:
-record "brought a snack home" as achieved.
 
 Chapter - Top of Table
 
 On-the-table is a room in the Living Room. The printed name is "On the Table". "You are on top of the table. It is covered with a shiny black tablecloth. There are candies and cookies and other sweets as far as your little eyes can see[if the box of scary sounds is in the location]. There is also a flat rectangular box, about the same size as you[end if]."
 
-Every turn when the location is on-the-table and the box of scary sounds is switched on and the player does not wear the wad of cotton:
+Every turn when location is on-the-table and the box of scary sounds is switched on and not listening:
 try listening.
 
 The tabletop is scenery in on-the-table. Understand "table" as tabletop.
@@ -587,8 +673,7 @@ Carry out folding: say "You try to fold [the noun], but it refuses to bend."
 
 Instead of folding the napkin:
 say "You try to make a hippo out of the napkin, but it looks more like a duck. An origami master you are not.";
-now the napkin is not smoothed;
-Record "made origami" as achieved.
+now the napkin is not smoothed.
 
 Instead of folding the shiny black fabric:
 say "The slippery fabric refuses to stay in place."
@@ -624,9 +709,6 @@ say "You pick up [the noun] in your mouth."
 
 After wearing the napkin: say "You drape the napkin over your back like a tiny cape. Super Hippo!"
 
-Before wearing the napkin for the first time:
-record "super hippo!" as achieved.
-
 Instead of taking the soiled napkin:
 say "Ew, gross."
 
@@ -635,19 +717,19 @@ Understand "make a parachute" and "use napkin as parachute" as making a parachut
 Carry out making a parachute: say "How do you expect to do that?"
 
 Instead of making a parachute when the player carries the napkin:
-say "You try to take the corners of the napkin in your mouth, but as you reach for the fourth, you accidentally release two.";
-record "tried to make a parachute" as achieved.
+say "You try to take the corners of the napkin in your mouth, but as you reach for the fourth, you accidentally release two.".
 
 Chapter - Candy
 
-The lollipop is an edible thing. The printed name is "partially-eaten lollipop." The description is "It's sticky, but looks awfully tasty. It's purple, which is your favorite color." Understand "candy" as lollipop.
+The lollipop is an edible thing. The printed name is "partially-eaten lollipop". The description is "It's sticky, but looks awfully tasty. It's purple, which is your favorite color." Understand "candy" as lollipop when the piece of candy is not enclosed by the location.
 
 Instead of taking the lollipop:
-say "It seems to be stuck to the floor. And now you are sticking to the floor.";
+say "It seems to be stuck to the floor[if the player is not sticky]. And now you are sticking to the floor[end if].";
 now the player is sticky.
 
 Before eating the lollipop:
-say "Crunch crunch crunch. Yummy!" instead.
+say "You crunch on the lollipop. It's extremely sticky[if the player is not sticky]. And now you are sticky, too[end if].";
+now the player is sticky instead.
 
 Before tasting the lollipop:
 say "You lick the lollipop. It tastes like grapes!" instead.
@@ -656,7 +738,7 @@ Part - Player
 
 A person can be sticky. The player is not sticky.
 
-The description of the player is "You are a very fine specimen of [italic type][if the napkin is worn by the player]Hippopotamus heroica[otherwise]Felis terribulus[end if][as normal]."
+The description of the player is "You are a very fine specimen of [if the napkin is worn by the player][italic type]Hippopotamus heroica[as normal][otherwise][italic type]Felis terribulus[as normal], also known as [italic type]Hippopotamus domestica[as normal][end if][as normal]."
 
 Instead of tasting the player: say "Nope, you're still not able to lick your own ear."
 
@@ -676,6 +758,16 @@ Chapter - Child
 
 The dragon is a woman in Under-the-Table. The initial appearance is "There is [a dragon] sitting under the table!" The description is "You've never seen [a dragon] this small before! Well, technically, you've never seen [a dragon] before. But you've heard stories and always envisoned them as being quite large. It's larger than [italic type]you[as normal], of course. But still. This one is about the size of a small human with orange wings and a long blue tail[first time]. It's sobbing quietly[only]." Understand "child" as dragon.
 
+Before giving a sweet (called T) to the dragon:
+say "You give [the T] to the dragon. It devours it quickly.";
+now T is undescribed;
+move T to on-the-table instead.
+
+Before giving piece of candy to the dragon:
+say "You give the piece of candy to the dragon. It smiles gleefully at you before eating it.";
+now the piece of candy is undescribed;
+move the piece of candy to on-the-table instead.
+
 The wings are part of the dragon. The description is "The dragon has small orange wings on its back."
 
 The tail is part of the dragon. The description is "The dragon has a long blue tail."
@@ -692,7 +784,10 @@ Instead of climbing the dragon: say "You climb into the dragon's lap. It strokes
 
 Instead of kissing the dragon: say "You nudge the dragon with your head. It looks down at you in surprise."
 
-Understand the command "console" and "comfort" as "hug".
+Understand the command "console" and "comfort" and "tickle" as "hug".
+
+Instead of touching the dragon:
+try kissing the dragon.
 
 Instead of showing or giving the napkin to the dragon:
 say "You offer the napkin to the dragon. The dragon accepts the napkin, dabs its eyes, blows its nose and gives you a grateful smile. Then it crawls out from under the table, leaving behind the soiled napkin and the sticky remains of a lollipop.";
@@ -708,7 +803,7 @@ The spider cat is an animal in the porch. The description is "It smells curiousl
 
 The spider cat can be angry. The spider cat is not angry.
 
-Every turn when the spider cat is in the Floor and the location of the player is not under-the-sofa and the location of the player is not under-the-table:
+Every turn when the spider cat is in the Floor and the location of the player is the floor:
 if the remainder after dividing the turn count by 11 is 0, say "The spider slinks around looking vaguely embarrassed."
 
 When play begins: 
@@ -793,12 +888,21 @@ say "You coast slowly down to the top of the table.";
 move the player to on-the-table;
 record "made it to the table 1" as achieved.
 
-Instead of jumping off the basket of apples when the location is top-of-basket:
+Before jumping off the basket of apples when the location is top-of-basket:
 say "You jump down from the top of the basket.";
-move the player to the porch.
+move the player to the porch instead.
 
 Does the player mean jumping off the ledge: it is likely.
 Does the player mean jumping off the table: it is likely.
+
+Instead of jumping to the sofa when the location is floor:
+say "You can't jump that high!"
+
+Before jumping to the window ledge when the location is floor:
+say "You can't jump that high!" instead.
+
+Before jumping to the table when the location is floor:
+say "You can't jump that high!" instead.
 
 Chapter - Other
 
@@ -812,10 +916,12 @@ Carry out mashing: say "It caught on in a flash!"
 
 Instead of wearing something worn by the player: say "You are already wearing that."
 
+Instead of listening when the box of scary sounds is switched on: say "You hear [one of]gleeful laughter[or]a loud shriek[or]a creaking door[or]a moaning ghost[or]a slamming door[or]a low growl[or]a howling wolf[at random]."
+
 Instead of listening when the wad of cotton is worn by the player:
 say "You can't hear anything with the cotton in your ears."
 
-Instead of listening when the box of scary sounds is switched on: say "You hear [one of]gleeful laughter[or]a loud shriek[or]a creaking door[or]a moaning ghost[or]a slamming door[or]a low growl[or]a howling wolf[at random]."
+Instead of listening when the location is under-the-table and the dragon is in under-the-table: say "The dragon sniffles."
 
 Instead of listening when the box of scary sounds is switched off and the dragon is in under-the-table: say "You hear someone crying. It is coming from underneath the table."
 
@@ -836,13 +942,14 @@ A person can be hungry. The player is hungry.
 
 Instead of sleeping:
 	if the player is spooked:
-		say "You couldn't possibly fall asleep with so much excitement going on!";
+		say "You're too spooked by the scary sounds to fall asleep.";
 	otherwise if the player is hungry:
 		say "Your tummy rumbles. You were hoping to get a small snack before bedtime.";
 	otherwise if the location is not under-the-sofa:
 		say "You ought to return to your nest before you go to sleep.";
 	otherwise:
 		say "You snuggle up in your nest of socks and fall fast asleep.";
+		record "won the game" as achieved;
 		end the story finally saying "Pleasant dreams!"
 
 Chapter - Magic Words
@@ -954,18 +1061,13 @@ Part - Scoring
 Table of Tasks Achieved 
 Points	Citation	Turn Stamp
 5	"got rid of the spider"	-1
-5	"super hippo!"	-1
 5	"made it to the table 1"	-1
 5	"made it to the table 2"	-1
 5	"cheered up a dragon"	-1
 5	"plugged ears with cotton"	-1
 5	"got rid of the device"	-1
 5	"had a snack"	-1
-1	"brought a snack home"	-1
-1	"tried to make a parachute"	-1
-1	"made origami"	-1
-1	"turned off device"	-1
-1	"pushed pumpkin off porch"	-1
+5	"won the game"	-1
 
 To record (T - text) as achieved: 
 	choose row with a citation of T in the Table of Tasks Achieved; 
@@ -994,5 +1096,6 @@ final question wording	only if victorious	topic	final response rule	final respon
 Part - Testing
 
 test table with "abstract lollipop to me/drop lollipop/take lollipop/climb table/turn device off".
+test napkin with "climb web.take napkin.wear napkin.jump off ledge".
 test cotton with "abstract cotton to me/wear cotton".
 test cat with "out/enter hole/up/throw apple".
