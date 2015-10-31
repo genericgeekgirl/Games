@@ -28,7 +28,7 @@ choose row 2 in the Table of Basic Help Options;
 change title entry to "New to text adventures?".
 
 To say author: say "The author can be contacted at <gigglecreek@gmail.com>."
-To say credits: say "The house hippo was created by the Concerned Children's Advertisers, and appears here without permission. [italic type]Felis terribulus[as normal] is a joke based on worstcats.tumblr.com, which is adorable and funny and worth checking out. Musical references are to 'The Monster Mash' and 'This is Halloween' (from [italic type]The Nightmare Before Christmas[as normal]). Beta testers include  Naomi Hinchen, Zachary Barryte, Michael Andryauskas, Marius Müller, Tuukka Turto, Scott Snyder, Thomas Bøvith, Felix Pleșoianu, verityvirtue, Melvin Rangasamy, Wade Clark, and a few unnamed people from Boston Indies and Women in Games Boston."
+To say credits: say "The house hippo was created by the Concerned Children's Advertisers, and appears here without permission. [italic type]Felis terribulus[as normal] is a joke based on worstcats.tumblr.com, which is adorable and funny and worth checking out. Musical references are to 'The Monster Mash' and 'This is Halloween' (from [italic type]The Nightmare Before Christmas[as normal]). Beta testers include  Naomi Hinchen, Zachary Barryte, Michael Andryauskas, Marius Müller, Tuukka Turto, Scott Snyder, Thomas Bøvith, Felix Pleșoianu, verityvirtue, Melvin Rangasamy, Wade Clark, Ben Collins-Sussman, and a few unnamed people from Boston Indies and Women in Games Boston."
 
 Chapter - Parsing Commands
 

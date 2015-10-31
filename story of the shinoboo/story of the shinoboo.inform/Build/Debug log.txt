@@ -1,5 +1,5 @@
 Debugging log of Inform 7
-Inform called as: /usr/local/libexec/ni --rules /usr/local/share/inform7/Inform7/Extensions --extension=z5 --package /home/adri/Desktop/story of the shinoboo.inform 
+Inform called as: /usr/local/libexec/ni --rules /usr/local/share/inform7/Inform7/Extensions --extension=z5 --package /home/adri/Games/Interactive Fiction/Adri/story of the shinoboo/story of the shinoboo.inform 
 
 
 -----------------------------------------------------

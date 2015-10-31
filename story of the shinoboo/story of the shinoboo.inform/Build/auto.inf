@@ -30,7 +30,7 @@ Constant Story "The Story of the Shinoboo";
 Constant Headline SC_2;
 Constant Story_Author SC_3;
 Release 1;
-Serial "151030";
+Serial "151031";
 
 Default Story 0;
 Default Headline 0;
@@ -471,7 +471,7 @@ Array EMPTY_RULEBOOK -> $ff $ff $ff $ff;
 
 [ Prop_Falsity reason obj; return 0; ];
 
-Global MAX_SCORE = 100;
+Global MAX_SCORE = 5;
 
 #Ifndef MAX_SCORE;
 Global MAX_SCORE = 0;
@@ -10086,7 +10086,7 @@ Array T1_locale_priorities table  tab_1_0 tab_1_1;
 Array tab_1_0 table $0869 NULL  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
 Array tab_1_1 table $446a 5  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
 Array T2_tasks_achieved table  tab_2_0 tab_2_1 tab_2_2;
-Array tab_2_0 table $446b 8  (20)  (20)  (20)  (20)  (20) ;
+Array tab_2_0 table $446b 8  (1)  (1)  (1)  (1)  (1) ;
 Array tab_2_1 table $006c 9  (SC_28)  (SC_29)  (SC_30)  (SC_31)  (SC_32) ;
 Array tab_2_2 table $446d 10  (-1)  (-1)  (-1)  (-1)  (-1) ;
 Array TB_Blanks -> 

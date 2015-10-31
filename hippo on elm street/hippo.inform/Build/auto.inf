@@ -30,7 +30,7 @@ Constant Story "Hippo on Elm Street";
 Constant Headline SC_2;
 Constant Story_Author SC_3;
 Release 1;
-Serial "151030";
+Serial "151031";
 
 Default Story 0;
 Default Headline 0;
@@ -34028,7 +34028,7 @@ Array printed_text --> 64;
 ! To say credits:
 [ PHR_809_r19 ;
       ! phrase 1
-      ! [1: say ~The house hippo was created by the Concerned Children's Advertisers, and appears here without permission. [italic type]Felis terribulus[as normal] is a joke based on worstcats.tumblr.com, which is adorable and funny and worth checking out. Musical references are to 'The Monster Mash' and 'This is Halloween' (from [italic type]The Nightmare Before Christmas[as normal]). Beta testers include  Naomi Hinchen, Zachary Barryte, Michael Andryauskas, Marius Müller, Tuukka Turto, Scott Snyder, Thomas Bøvith, Felix Ple[unicode 537]oianu, verityvirtue, Melvin Rangasamy, Wade Clark, and a few unnamed people from Boston Indies and Women in Games Boston.~]
+      ! [1: say ~The house hippo was created by the Concerned Children's Advertisers, and appears here without permission. [italic type]Felis terribulus[as normal] is a joke based on worstcats.tumblr.com, which is adorable and funny and worth checking out. Musical references are to 'The Monster Mash' and 'This is Halloween' (from [italic type]The Nightmare Before Christmas[as normal]). Beta testers include  Naomi Hinchen, Zachary Barryte, Michael Andryauskas, Marius Müller, Tuukka Turto, Scott Snyder, Thomas Bøvith, Felix Ple[unicode 537]oianu, verityvirtue, Melvin Rangasamy, Wade Clark, Ben Collins-Sussman, and a few unnamed people from Boston Indies and Women in Games Boston.~]
       say__p=1;ParaContent();  print (PrintText) SC_376; ParaContent();  style underline; ParaContent();  print (PrintText) SC_377; ParaContent(); (PHR_812_r4 ());ParaContent();  print (PrintText) SC_378; ParaContent();  style underline; ParaContent();  print (PrintText) SC_379; ParaContent(); (PHR_812_r4 ());ParaContent();  print (PrintText) SC_380; ParaContent();  #ifdef TARGET_ZCODE; @push self; self = 537; @print_unicode self; @pull self;
 	#ifnot; if (unicode_gestalt_ok) glk_put_char_uni(537); else print "?"; #endif; ParaContent();  print (PrintText) SC_381;  new_line; .L_Say282; .L_SayX276;
    rfalse;
@@ -38253,7 +38253,7 @@ Constant SC_285 = "it is ";
 Constant SC_397 = "jack o";
 Constant SC_98 = "made it to the table 1";
 Constant SC_99 = "made it to the table 2";
-Constant SC_381 = "oianu, verityvirtue, Melvin Rangasamy, Wade Clark, and a few unnamed people from Boston Indies and Women in Games Boston.";
+Constant SC_381 = "oianu, verityvirtue, Melvin Rangasamy, Wade Clark, Ben Collins-Sussman, and a few unnamed people from Boston Indies and Women in Games Boston.";
 Constant SC_396 = "out there";
 Constant SC_55 = "partially-eaten lollipop";
 Constant SC_39 = "piece of candy";

@@ -10,7 +10,7 @@ Requesting story information is an action out of world.
 Understand "about" as requesting story information.
 Carry out requesting story information: say "[story description][line break]".
     
-The maximum score is 100.
+The maximum score is 5.
 
 The bedroom is a region.
 Rule for printing the name of a room in the bedroom:
@@ -159,11 +159,11 @@ Every turn:
     
 Table of Tasks Achieved 
 Points	Citation	Turn Stamp
-20	"blue ninja"	-1
-20	"black ninja"	-1
-20	"green ninja"	-1
-20	"carved pumpkin"	-1
-20	"costume"	-1
+1	"blue ninja"	-1
+1	"black ninja"	-1
+1	"green ninja"	-1
+1	"carved pumpkin"	-1
+1	"costume"	-1
 
 To record (T - text) as achieved: 
 	choose row with a citation of T in the Table of Tasks Achieved; 
