@@ -4,7 +4,7 @@ The story creation year is 2015.
 The release number is 1.
 The story headline is "a tiny story about four tiny ninjas and tiny treats".
 The story genre is "slice of life".
-The story description is "[story title] was written for Ectocomp 2015 in significantly less than three hours. It has not been tested."
+The story description is "[story title] was written for Ectocomp 2015 in significantly less than three hours. Thanks to Laurence Muller and busterwrites for discovering and reporting bugs!"
 
 Requesting story information is an action out of world.
 Understand "about" as requesting story information.
@@ -148,13 +148,21 @@ Understand "throw away [something]" and "throw [something] away" as throwing awa
 Carry out throwing away: say "I understand your desire for neatness, but you don't need to throw that away."
 
 Instead of taking the pumpkin guts: try throwing away the pumpkin guts.
+
+Instead of taking the pumpkin: say "That's too big for you to carry!"
+
+Instead of pushing the pumpkin: say "You give the pumpkin a hard shove, but it barely moves."
+
+Instead of pulling the pumpkin: say "Your tiny hands slide over the surface of the pumpkin. There's nothing to grab onto."
+
+Instead of pulling the pumpkin when the pumpkin is glowing: say "You grab hold of a carved edge and pull, but the pumpkin barely moves."
      
 The trashcan is a backdrop in the bedroom. The description is "A trashcan stands in one corner of the room. It is much, much larger than you are."
 
 Part - Scoring
 
 Every turn:
-	if the score is 100:
+	if the score is 5:
 		end the story finally saying "Happy Halloween!"
     
 Table of Tasks Achieved 

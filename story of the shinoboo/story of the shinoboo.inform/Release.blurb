@@ -23,7 +23,7 @@ placeholder [RELEASE] = "1"
 placeholder [YEAR] = "2015"
 placeholder [TITLE] = "The Story of the Shinoboo"
 placeholder [AUTHOR] = "Adri"
-placeholder [BLURB] = "[story title] was written for Ectocomp 2015 in significantly less than three hours. It has not been tested."
+placeholder [BLURB] = "[story title] was written for Ectocomp 2015 in significantly less than three hours. Thanks to Laurence Muller and busterwrites for discovering and reporting bugs!"
 
 ! Other material to release
 

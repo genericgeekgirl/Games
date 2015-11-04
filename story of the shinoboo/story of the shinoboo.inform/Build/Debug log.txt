@@ -6,7 +6,7 @@ Inform called as: /usr/local/libexec/ni --rules /usr/local/share/inform7/Inform7
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 1538 words long.
+I've now read your source text, which is 1620 words long.
 
 
 -----------------------------------------------------
