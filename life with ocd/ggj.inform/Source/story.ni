@@ -312,7 +312,7 @@ The keys are a thing.
 Instead of dropping the keys when the location is not the house:
 say "No! You need your house keys."
 
-After going through the house door:
+Before going through the house door:
 now the player carries the keys;
 now the house door is closed;                
 now situational anxiety is 5;
