@@ -615,10 +615,16 @@ Employee lounge is a room in work. "You are at the employee lounge. Your office 
 
 Employee bathroom is a room in work. It is west of the employee lounge. "You are in the bathroom. The lounge is east."
 
-Your office is a room in work. It is east of the employee lounge. "You are in your office. You let no one else touch or move anything in the office. You should get started on your work. The lounge is west."
+Your office is a room in work. It is east of the employee lounge. "You are in your office. The lounge is west."
 
 Cleanness is a number that varies. Cleanness is 0.
 The hands are part of the player.
+
+After going to your office:
+	say "You are in your office. You should do work as soon as possible, but you usually make sure your hands are clean before you touch anything on your desk.";
+	raise anxiety;
+	now situational anxiety is 10;
+	reset perseverence.
 
 Instead of cleaning hands:
 	if the player is not in employee bathroom:
@@ -630,7 +636,7 @@ Instead of cleaning hands:
 		if cleanness is 3:
 			say "Your hands should be clean now.";
 			drop anxiety.
-                        
+
 Working is an action applying to nothing.
 Understand "work" as working.
 Understand "do work" as working.
@@ -639,8 +645,14 @@ work-score is a number that varies. work-score is 0.
 Check working when the player is not in your office:
 say "You have to be in your office at work to do work." instead.
 
-Check working when cleanness is 0:
-say "You refuse to touch your computer with dirty hands." instead.
+Check working when cleanness is 0 and situational anxiety is greater than 0 and persevere count is less than 2:
+	say "You refuse to touch your computer with dirty hands.";
+	persevere instead.
+
+Check working when persevere count is 2:
+	say "You realize that your hands are not that dirty at all and do work.";
+	persevere;
+	now situational anxiety is 0.
 
 Check working when hungry is true:
 	if a random chance of 1 in 2 succeeds:
@@ -649,10 +661,14 @@ Check working when hungry is true:
 Carry out working:
 	say "You get some work done.";
 	increase work-score by 1;
-	if a random chance of 1 in 5 succeeds:
+	if a random chance of 1 in 10 succeeds:
 		say "Your hands are sweating.";
-		decrease cleanness by 1;
-		raise anxiety.
+		if cleanness is greater than 0:
+			decrease cleanness by 1;
+		otherwise:
+			raise anxiety;
+			now situational anxiety is 10;
+			reset perseverence.
 
 Chapter - Work (lunch)
 
