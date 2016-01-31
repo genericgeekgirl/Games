@@ -620,12 +620,6 @@ Your office is a room in work. It is east of the employee lounge. "You are in yo
 Cleanness is a number that varies. Cleanness is 0.
 The hands are part of the player.
 
-After entering your office:
-  say "You usually make sure your hands are clean before you touch anything on your desk.";
-  raise anxiety;
-  now situational anxiety is 10;
-  reset perseverence.
-
 Instead of cleaning hands:
 	if the player is not in employee bathroom:
 		say "You have to go to the bathroom to wash your hands.";
@@ -645,13 +639,8 @@ work-score is a number that varies. work-score is 0.
 Check working when the player is not in your office:
 say "You have to be in your office at work to do work." instead.
 
-Check working when cleanness is 0 and situational anxiety is greater than 0 and persevere count is less than 3:
-  say "You refuse to touch your computer with dirty hands.";
-  persevere instead.
-
-Check working when persevere count is greater than 2:
-  say "You realize that your hands are not that dirty at all and do work.";
-  now situational anxiety is 0.
+Check working when cleanness is 0:
+say "You refuse to touch your computer with dirty hands." instead.
 
 Check working when hungry is true:
 	if a random chance of 1 in 2 succeeds:
@@ -660,7 +649,7 @@ Check working when hungry is true:
 Carry out working:
 	say "You get some work done.";
 	increase work-score by 1;
-	if a random chance of 1 in 10 succeeds:
+	if a random chance of 1 in 5 succeeds:
 		say "Your hands are sweating.";
 		decrease cleanness by 1;
 		raise anxiety.
