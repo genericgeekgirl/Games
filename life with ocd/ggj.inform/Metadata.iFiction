@@ -2,23 +2,23 @@
 <ifindex version="1.0" xmlns="http://babel.ifarchive.org/protocol/iFiction/">
     <story>
         <identification>
-            <ifid>F949BCBF-BA1E-4A44-9E1F-F3D0F03AED29</ifid>
+            <ifid>C99B1522-525D-4EDF-9C81-575D70559F1A</ifid>
             <format>zcode</format>
         </identification>
         <bibliographic>
-            <title>The Story of the Shinoboo</title>
-            <author>Adri</author>
-            <headline>a tiny story about four tiny ninjas and tiny treats</headline>
+            <title>Life With OCD</title>
+            <author>Adri, Rob and Sin</author>
+            <headline>A game for empathy</headline>
             <genre>slice of life</genre>
-            <firstpublished>2015</firstpublished>
-            <description>[story title] was written for Ectocomp 2015 in significantly less than three hours. Thanks to Laurence Muller and busterwrites for discovering and reporting bugs!</description>
+            <firstpublished>2016</firstpublished>
+            <description>This game was created for the Global Game Jam 2016, and was written in under 48 hours. The team members were Adri, Robb Pitts and Sin Kim. The theme was 'ritual', and we used the 'Do you even care?' diversifier. Cover art was found on freepik.com and tweaked.</description>
             <language>en</language>
             <group>Inform</group>
         </bibliographic>
         <releases>
             <attached>
                 <release>
-                    <releasedate>2015-11-04</releasedate>
+                    <releasedate>2016-01-31</releasedate>
                     <version>1</version>
                     <compiler>Inform 7</compiler>
                     <compilerversion>6G60</compilerversion>
@@ -28,10 +28,10 @@
         <colophon>
             <generator>Inform 7</generator>
             <generatorversion>6G60</generatorversion>
-            <originated>2015-11-04</originated>
+            <originated>2016-01-31</originated>
         </colophon>
         <zcode>
-            <serial>151104</serial>
+            <serial>160131</serial>
             <release>1</release>
             <compiler>Inform 7 build 6G60</compiler>
         </zcode>
