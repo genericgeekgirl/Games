@@ -904,7 +904,7 @@ Book - Bedtime (Bedding)
 
 [clear away the spare clothing]
 Before going to the bedroom when the time of day is after 6:00 PM:
-	repeat with item running through things in the bedroom:
+	repeat with item running through clothing in the bedroom:
 		move the item to the dresser.
 
 Check sleeping when the time of day is before 10:00 PM:

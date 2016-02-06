@@ -1,12 +1,12 @@
 Debugging log of Inform 7
-Inform called as: /usr/local/libexec/ni --release --rules /usr/local/share/inform7/Inform7/Extensions --extension=z8 --package /home/adri/Dropbox/OCD/ggj.inform 
+Inform called as: /usr/local/libexec/ni --release --rules /usr/local/share/inform7/Inform7/Extensions --extension=z8 --package /home/adri/Games/Interactive Fiction/Adri/life with ocd/ggj.inform 
 
 
 -----------------------------------------------------
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 6408 words long.
+I've now read your source text, which is 6490 words long.
 
 
 -----------------------------------------------------
