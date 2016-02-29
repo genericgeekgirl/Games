@@ -6,6 +6,8 @@ The story headline is "A simple two-player game".
 The story genre is "slice of life".
 The story description is "[story title] was created for the [italic type]Ryan Veeder Exposition for Good Interactive Fiction[roman type]. Author and beta testers are currently anonymous, per the rules of the exposition."
 
+[Zachary Barryte, verityvertue, Oreolek]
+
 Volume - Basic Setup
 
 Include Hiding Under by Eric Eve.
@@ -162,8 +164,14 @@ The Living Room is a room in house. "You are standing in the living room. The fr
 
 The cat tree is a supporter and scenery in the Living Room. It is behindable. "A cardboard and carpet cat tree."
 
-The sofa is a supporter and scenery in the Living Room. It is behindable and underneathable. The description is "A grey sofa, with a single throw pillow."
+The sofa is a supporter and scenery in the Living Room. It is behindable and underneathable. The description is "A grey sofa, with deep cushions and a single throw pillow."
+The cushions is a plural-named container and part of the sofa. The description is "Sofa cushions." Understand "cushion" as cushions.
 The throw pillow is a closed openable container and scenery on the sofa. It is underneathable. The description is "A pink and grey throw pillow."
+
+The coin is a thing in the cushions. The description is "A shiny copper coin with a kangaroo on it."
+
+Instead of inserting something into the sofa:
+try inserting the noun into the cushions.
 
 After opening the throw pillow:
 say "You unzip the pillow."
@@ -185,7 +193,7 @@ say "There's no reason to do that."
 The mantel is a supporter and scenery in the Living Room. The description is "A shelf above the fireplace, containing [a list of things on the mantel]."
 
 The decorative_egg is a closed openable container and scenery on the mantel. The description is "A beautiful jeweled egg with a hinge[if the decorative_egg is open]. It is open[end if]."
-The printed name is "decorative egg". Understand "decorative" and "egg" and "decorative egg" as decorative_egg.
+The printed name is "decorative egg". Understand "decorative" and "decorative egg" as decorative_egg.
 
 Does the player mean opening the decorative_egg: it is likely.
 
@@ -209,6 +217,8 @@ Instead of switching on the lamp:
 
 Instead of switching off the lamp:
 try switching on the lamp.
+
+The carrying capacity of the lamp is 1.
 
 Before inserting something into the lamp when the lightbulb is in the lamp:
 say "You unscrew the lightbulb first.";
@@ -321,9 +331,12 @@ The clothes hamper is a closed openable container and scenery in the Bedroom. It
 
 The window is scenery in the Bedroom. It is fixed in place. The description is "A four-paned window with a gauzy pink curtain."
 The curtain is part of the window. The description is "A gauzy pink curtain."
-The window sill is part of the window. It is a supporter. The description is "A white window sill."
+The sill is part of the window. It is a supporter. The description is "A white window sill."
 
-Instead of putting something on the window sill:
+Instead of searching the window:
+say "You can see the backyard from here."
+
+Instead of putting something on the sill:
 hide the noun behind the curtain.
 
 The dresser is a closed container and scenery in the bedroom. It is fixed in place. The description is "A green dresser."
@@ -346,6 +359,8 @@ The player is the bilby.
 
 The girl is a woman on the bed. The description is "A little girl lies fast asleep, visions of jelly beans dancing in her head." Understand "Julie" as the girl. The girl is underneathable.
 
+The dress is part of the girl. The description is "A pink dress with purple flowers and green lace."
+
 Volume - NPCs
 
 The tabby cat is a male animal. The description is "An orange tabby cat."
@@ -358,7 +373,7 @@ Volume - Inventory
 
 Book - Pouch
 
-The carrying capacity of the bilby is 1.
+The carrying capacity of the bilby is 2.
 
 The pouch is an open unopenable container. The pouch is part of the bilby. The pouch is the player's holdall.
 
@@ -371,29 +386,42 @@ Instead of taking inventory when the player is the bilby:
 
 Rule for deciding whether all includes something enclosed by the pouch while taking: it does not.
 
-Before doing anything with a noun:
-	if the noun is enclosed by the pouch:
-		now the player carries the noun.
+Before dropping something enclosed by the pouch:
+	try silently taking the noun.
 
+Before placing something enclosed by the pouch behind a behindable thing:
+	try silently taking the noun.
+        
+Before placing something enclosed by the pouch under an underneathable thing:
+	try silently taking the noun.
+        
+Before inserting something enclosed by the pouch into something:
+	try silently taking the noun.
+
+Before putting something enclosed by the pouch on something:
+	try silently taking the noun.
+
+Before giving something enclosed by the pouch to something:
+	try silently taking the noun.
+        
 Check taking anything when the player is the bilby:
 	if the noun is not an egg and the noun is not the lightbulb:
-		say "You don't need that!" instead.
+		say "It's not nice to steal!" instead.
 
 Book - Basket
                 
-The carrying capacity of the girl is 4.
-                
 The basket is an open unopenable container. The printed name is "Easter basket". The basket is the player's holdall. The description is "A pink and orange woven plastic basket, filled with green grass[if the number of eggs contained by the basket is not 0] and a collection of colorful eggs[end if]. [if the plush bilby is in the basket]A plush toy sits in the basket.[end if]"
 
-The plush bilby is a thing in the basket. The description is "A tiny stuffed bilby. He wears a blue bowtie." Understand "plush toy" and "toy" as plush bilby.
+The plush bilby is a male animal in the basket. The description is "A tiny stuffed bilby. He wears a blue bowtie." Understand "plush toy" and "toy" as plush bilby.
 
-[TODO: hugging the plush toy]
+Instead of kissing the plush bilby:
+say "You give the plush bilby a squeeze."
 
 Instead of taking the plush bilby:
 say "You pick up the stuffed bilby.";
 now the player carries the plush bilby.
 
-The green grass is a thing in the basket. The description is "Plastic green grass fills the bottom of the basket."
+The green grass is part of the basket. The description is "Plastic green grass fills the bottom of the basket."
 
 Instead of taking the green grass:
 say "You should leave that where it is."
@@ -413,10 +441,6 @@ Instead of taking inventory when the player is the girl:
 
 Rule for deciding whether all includes something enclosed by the basket while taking: it does not.
                 
-Before doing anything with a noun:
-	if the noun is enclosed by the basket:
-		now the player carries the noun.
-                
 Check taking anything when the player is the girl:
 	if the noun is not an egg and the noun is not the basket and the noun is not the plush bilby:
 		say "You don't need that right now. You should focus on finding the eggs." instead.
@@ -426,15 +450,19 @@ Volume - Eggs
 
 An egg is a kind of thing. The description of an egg is "A colorful, handpainted egg."
 
-The dinosaur egg is an egg in the pouch.
-The rainbow egg is an egg in the pouch.
-The floral egg is an egg in the pouch.
-The princess egg is an egg in the pouch.
-The ladybug egg is an egg in the pouch.
-The abstract egg is an egg in the pouch.
-The golden egg is an egg in the pouch.
-The newsprint egg is an egg in the pouch.
-The camouflage egg is an egg in the pouch.
+The dinosaur egg is an egg in the pouch. The description is "This egg is painted to look like a green dinosaur." Understand "dino egg" and "dino" as dinosaur egg.
+The rainbow egg is an egg in the pouch. The description is "This egg is painted with every color of the rainbow."
+The floral egg is an egg in the pouch. The description is "This egg is covered in flowers." Understand "flowers" as floral egg.
+The princess egg is an egg in the pouch. The description is "This egg is painted pink with a golden crown." Understand "crown" as princess egg.
+The ladybug egg is an egg in the pouch. The description is "This egg is painted to look like a ladybug."
+The abstract egg is an egg in the pouch. The description is "This egg is splashed with lots of different colors."
+The golden egg is an egg in the pouch. The description is "This egg is gold and sparkly."
+The camouflage egg is an egg in the pouch. The description is "This egg is painted with green, brown and black splotches."
+The newsprint egg is an egg in the pouch. The description is "This egg is covered in tiny black text."
+
+The tiny black text is part of the newsprint egg. The description is "Looking closely at the egg, you see that the text doesn't actually make any sense."
+
+Test me with "drop dino / drop rainbow / drop floral / drop princess / drop ladybug / drop abstract / drop golden / drop newsprint / drop camouflage".
 
 Book - Assorted Actions
 
@@ -449,12 +477,17 @@ Instead of opening an egg (called E):
 try cracking E.
 
 Instead of cracking an egg (called E):
-say "You crack the egg open.";
+say "You crack the shell and discard it.";
 now E is edible.
-[TODO]
 
-Instead of cracking an egg when the player is the bilby:
+Check eating an egg (called E):
+if E is not edible, say "You'll need to crack the egg open first." instead.
+
+Instead of cracking or eating an egg when the player is the bilby:
 say "No, you need to hide the eggs, not eat them."
+
+Instead of giving an egg to the girl:
+say "She's asleep."
 
 Instead of giving an egg (called E) to the spider:
 now the spider carries E;
@@ -466,6 +499,26 @@ say "Nope."
 Instead of giving an egg (called E) to the tabby cat:
 say "You try to offer [the E] to the cat, but it doesn't seem interested.";
 [try the tabby cat eating E.]
+
+Definition: a thing is matched if it fits the parse list.
+
+To decide whether (N - an object) fits the parse list: 
+    (- (FindInParseList({N})) -)
+
+Include (- 
+[ FindInParseList obj i k marker; 
+    marker = 0; 
+    for (i=1 : i<=number_of_classes : i++) { 
+    while (((match_classes-->marker) ~= i) && ((match_classes-->marker) ~= -i)) marker++; 
+    k = match_list-->marker; 
+    if (k==obj) rtrue; 
+    } 
+    rfalse; 
+]; 
+-)
+
+Rule for asking which do you mean when everything matched is an egg:
+say "You'll have to be more specific. Which egg do you mean?"
 
 Book - Hiding Eggs
 
@@ -502,6 +555,10 @@ Carry out examining a supporter when something is on the noun:
         rule succeeds.
 
 Volume - Other Actions
+
+Understand "take all" and "take everything" as a mistake ("There are none at all available.")
+
+Understand "take all from pouch" as a mistake ("There are none at all available.")
 
 Instead of attacking an animal:
 say "That would be cruel!"
