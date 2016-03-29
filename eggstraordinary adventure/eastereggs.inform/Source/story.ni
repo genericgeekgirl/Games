@@ -1,12 +1,10 @@
-"Eggstraordinary Adventure" by "Anonymous"
+"Eggstraordinary Adventure" by "Adri"
 
 The story creation year is 2016.
 The release number is 1.
 The story headline is "A simple two-player game".
 The story genre is "slice of life".
-The story description is "[story title] was created for the [italic type]Ryan Veeder Exposition for Good Interactive Fiction[roman type]. Author and beta testers are currently anonymous, per the rules of the exposition."
-
-[Zachary Barryte, verityvertue, Oreolek]
+The story description is "[story title] was created for the [italic type]Ryan Veeder Exposition for Good Interactive Fiction[roman type]. Beta testers included Zachary Barryte, Matthew Patterson, verityvirtue and Oreolek."
 
 Volume - Basic Setup
 
@@ -48,12 +46,7 @@ Book - Hiding Eggs
 
 Hiding eggs is a scene.
 Hiding eggs begins when play begins.
-Hiding eggs ends when the player is done.
-
-A person can be done. The player is not done.
-
-Before going through the cat flap when the player is the bilby and the score is maximum score and the location is the living room:
-now the player is done.
+Hiding Eggs ends when score is maximum score.
 
 When play begins:
 say "Once a year, the Easter bilby brings handpainted eggs to all the good children."
@@ -63,7 +56,7 @@ say "[paragraph break][bold type]This game has two parts. Player One will hide t
 say "[line break][italic type](Press any key.)[roman type]";
 wait for any key;
 clear the screen;
-say "[bold type]Player One: It is time to hide the Easter eggs! When you're done, return to the front stoop.[roman type][paragraph break]";
+say "[bold type]Player One: It is time to hide the Easter eggs! Try hiding eggs in, on, under and behind things.[roman type][paragraph break]";
 
 When hiding eggs begins:
 now the right hand status line is "[score] eggs hidden";
@@ -85,7 +78,6 @@ Finding eggs is a scene.
 Finding eggs begins when hiding eggs ends.
 
 When finding eggs begins:
-	now the player is not done;
 	now the right hand status line is "[score] eggs found";
 	now the score is 0;
 	now the turn count is 0;
@@ -122,6 +114,9 @@ A thing can be underneathable. A thing is usually not underneathable.
 
 Book - Doors
 
+Before going through a closed door (called D):
+try silently opening D instead.
+
 Instead of opening a door when the player is the bilby and the door is not the cat flap:
 say "You're unable to reach the doorknob."
 
@@ -141,7 +136,7 @@ The Front Stoop is a room. "You are standing outside. You can enter the house th
 
 The front door is a backdrop. It is in the Front Stoop and the Living Room.
 
-The cat flap is an open unopenable door and scenery. It is west of the Living Room and east of the Front Stoop.
+The cat flap is an open unopenable door and scenery. It is west of the Living Room and east of the Front Stoop. Understand "house" as cat flap.
 
 Instead of opening the front door when the player is the bilby:
 say "You can't reach the doorknob. You'll need to use the cat flap."
@@ -183,9 +178,15 @@ Instead of dropping the pillow:
 say "That's not what that means!"
 
 The bookcase is a supporter and scenery in the Living Room. It is behindable and underneathable. The description is "A tall wooden bookcase, full of books."
-The books are a plural-named thing and scenery on the bookcase. It is behindable. The description is "Rows and rows of colorfully-bound books."
+The books are a plural-named thing and scenery on the bookcase. It is behindable. The description is "Rows and rows of colorfully-bound books." Understand "book" as the books.
+
+Instead of opening the books:
+say "You pick up a book and flip to a random page. Then you close the book and put it back."
 
 The fireplace is scenery in the Living Room. It is fixed in place. "It's one of those fake electric fireplaces. It is turned off."
+
+Instead of inserting something into the fireplace:
+say "The fireplace is covered with a sheet of glass. It can't contain things."
 
 Instead of switching on the fireplace:
 say "There's no reason to do that."
@@ -228,7 +229,7 @@ The tissue box is a container and scenery on the side table. The description is 
 The tissues are a plural-named thing in the tissue box. The description is "A collection of tissues."
 
 The plant is a container and scenery in the Living Room. It is fixed in place. It is behindable. The description is "A tall leafy green plant stands in the corner."
-Understand "planter" as plant.
+Understand "planter" as plant. Understand "tall plant" as plant.
 
 Book - Kitchen
 
@@ -252,8 +253,8 @@ The breadbox is a closed openable container and scenery on the counter. It is be
 
 The drawer is part of the counter. The drawer is a closed openable container. The description is "A drawer[if the drawer is open]. It is open[end if]."
 
-The range is a supporter and scenery in the Kitchen. The description is "Gas range with four burners. There is a lidded pot on the front right burner."
-The oven is part of the range. The oven is a closed openable container. The description is "A range and oven combo."
+The range is a supporter and scenery in the Kitchen. The description is "Gas range with four burners. There is a lidded pot on the front right burner." Understand "stove top" as range.
+The oven is part of the range. The oven is a closed openable container. The description is "A stove top and oven combo."
 The pot is a closed openable container and scenery on the range. "A silver pot with a lid[if the pot is open]. It is open[end if]."
 
 The recycling bin is a container and scenery in the kitchen. It is fixed in place. It is behindable. The description is "A blue recycling bin with a white logo on the side. It is overflowing with paper goods."
@@ -261,7 +262,7 @@ The trash can is a container and scenery in the kitchen. It is fixed in place. I
 
 Book - Hallway
 
-The Northern Hallway is a room in the house. It is south of the Living Room. The printed name is "Hallway". "The hallway continues to the south.[if the player is the girl] The bathroom is east, and the closet is west.[otherwise] To the east is a closed door. To the west is a closet.[end if]"
+The Northern Hallway is a room in the house. It is south of the Living Room. The printed name is "Hallway". "The hallway continues to the south.[if the player is the girl] The bathroom is east, and the closet is west.[otherwise] To the east is a closed door. To the west is a closet. [end if]The living room is north."
 
 The Southern Hallway is a room in the house. It is south of the Northern Hallway. The printed name is "Hallway". "The hallway continues to the north.[if the player is the girl] Your bedroom is east, and your parents['] bedroom is west.[otherwise] To the east is a bedroom. To the west is a closed door.[end if]"
 
@@ -304,11 +305,15 @@ The Closet Door is an open door and scenery. It is west of the Northern Hallway 
 Instead of closing the closet door when the location is the closet and the player is the bilby:
 say "Be careful, you don't want to get stuck in here!"
 
-The shoes are a plural-named container in the closet. The description is "A pair of white sneakers."
+The shoes are a plural-named container in the closet. The description is "A pair of white sneakers." Understand "sneakers" as shoes.
 
 The coat is a thing in the closet. The description is "A long black coat with two pockets."
-The left pocket is part of the coat. It is a container. The description is "The left pocket of the coat."
-The right pocket is part of the coat. It is a container. The description is "The right pocket of the coat."
+The left coat pocket is part of the coat. It is a container. The description is "The left pocket of the coat."
+The right coat pocket is part of the coat. It is a container. The description is "The right pocket of the coat."
+
+The coat pockets is a plural-named part of the coat.
+Instead of doing anything with the coat pockets:
+say "You'll have to be more specific. Do you mean the left pocket or the right pocket?"
 
 The plastic box is a closed openable container in the closet. The description is "A box containing holiday decorations."
 The ornaments are a plural-named thing in the plastic box. The description is "A jumble of ornaments." Understand "decorations" as ornaments.
@@ -329,17 +334,29 @@ The slipper is a container and scenery in the bedroom. The description is "A sin
 
 The clothes hamper is a closed openable container and scenery in the Bedroom. It is behindable. The description is "A wicker clothes hamper[if the clothes hamper is open]. It is open[otherwise]. It is closed[end if]."
 
-The window is scenery in the Bedroom. It is fixed in place. The description is "A four-paned window with a gauzy pink curtain."
-The curtain is part of the window. The description is "A gauzy pink curtain."
-The sill is part of the window. It is a supporter. The description is "A white window sill."
+The window is scenery in the Bedroom. It is fixed in place. The description is "A four-paned window." [ with a gauzy pink curtain."]
+[TODO: curtain and sill don't work properly.]
+[The curtain is part of the window. It is behindable. The description is "A gauzy pink curtain."]
+[The sill is part of the window. It is a supporter. The description is "A white window sill." Understand "window sill" as sill.]
+
+Looking outside is an action applying to nothing.
+Understand "look out window" and "look outside" as looking outside.
+
+Carry out looking outside:
+try searching the window.
 
 Instead of searching the window:
 say "You can see the backyard from here."
 
-Instead of putting something on the sill:
-hide the noun behind the curtain.
+[Instead of putting something on the sill:
+hide the noun behind the curtain;
+say "You put [the noun] behind the curtain."
 
-The dresser is a closed container and scenery in the bedroom. It is fixed in place. The description is "A green dresser."
+Instead of searching the sill:
+try looking behind the curtain.
+]
+
+The dresser is a closed openable container and scenery in the bedroom. It is fixed in place. The description is "A green dresser."
 
 Book - Other Bedroom (Inaccessible)
 
@@ -411,6 +428,8 @@ Check taking anything when the player is the bilby:
 Book - Basket
                 
 The basket is an open unopenable container. The printed name is "Easter basket". The basket is the player's holdall. The description is "A pink and orange woven plastic basket, filled with green grass[if the number of eggs contained by the basket is not 0] and a collection of colorful eggs[end if]. [if the plush bilby is in the basket]A plush toy sits in the basket.[end if]"
+
+Understand "Easter basket" as basket.
 
 The plush bilby is a male animal in the basket. The description is "A tiny stuffed bilby. He wears a blue bowtie." Understand "plush toy" and "toy" as plush bilby.
 

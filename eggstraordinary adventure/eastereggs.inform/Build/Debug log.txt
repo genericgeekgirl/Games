@@ -1,12 +1,12 @@
 Debugging log of Inform 7
-Inform called as: /usr/local/libexec/ni --release --rules /usr/local/share/inform7/Inform7/Extensions --extension=z5 --package /home/adri/Games/Interactive Fiction/Adri/eggstraordinary adventure/eastereggs.inform 
+Inform called as: /usr/local/libexec/ni --release --rules /usr/local/share/inform7/Inform7/Extensions --extension=z5 --package /home/adri/Games/Interactive Fiction/Adri/eggstraordinary adventure/eastereggs.inform/ 
 
 
 -----------------------------------------------------
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 4646 words long.
+I've now read your source text, which is 4707 words long.
 
 
 -----------------------------------------------------
@@ -156,7 +156,7 @@ Phase XII ... Code generation
 Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
-Total of 143 files written as streams.
+Total of 144 files written as streams.
 
 That concludes the debugging log from this run of Inform.
 Its contents were as follows, and can be changed by placing

@@ -1,18 +1,18 @@
 ! Blurb file created by Inform build 6G60
 
-status "/usr/local/share/inform7/Inform7/Extensions/Reserved/CblorbModel.html" "/home/adri/Games/Interactive Fiction/Adri/eggstraordinary adventure/eastereggs.inform/Build/StatusCblorb.html"
+status "/usr/local/share/inform7/Inform7/Extensions/Reserved/CblorbModel.html" "/home/adri/Games/Interactive Fiction/Adri/eggstraordinary adventure/eastereggs.inform//Build/StatusCblorb.html"
 
 
 ! Identification
 
-project folder "/home/adri/Games/Interactive Fiction/Adri/eggstraordinary adventure/eastereggs.inform"
+project folder "/home/adri/Games/Interactive Fiction/Adri/eggstraordinary adventure/eastereggs.inform/"
 release to "/home/adri/Games/Interactive Fiction/Adri/eggstraordinary adventure/eastereggs Materials/Release"
 
 ! Blorb instructions
 
 storyfile leafname "Eggstraordinary Adventure.zblorb"
-storyfile "/home/adri/Games/Interactive Fiction/Adri/eggstraordinary adventure/eastereggs.inform/Build/output.z5" include
-ifiction "/home/adri/Games/Interactive Fiction/Adri/eggstraordinary adventure/eastereggs.inform/Metadata.iFiction" include
+storyfile "/home/adri/Games/Interactive Fiction/Adri/eggstraordinary adventure/eastereggs.inform//Build/output.z5" include
+ifiction "/home/adri/Games/Interactive Fiction/Adri/eggstraordinary adventure/eastereggs.inform//Metadata.iFiction" include
 cover "/usr/local/share/inform7/Inform7/Extensions/Reserved/DefaultCover.jpg"
 picture 1 "/usr/local/share/inform7/Inform7/Extensions/Reserved/DefaultCover.jpg"
 
@@ -22,8 +22,8 @@ placeholder [IFID] = "191A908D-DEB2-4756-BA7F-C30AFB08E42F"
 placeholder [RELEASE] = "1"
 placeholder [YEAR] = "2016"
 placeholder [TITLE] = "Eggstraordinary Adventure"
-placeholder [AUTHOR] = "Anonymous"
-placeholder [BLURB] = "[story title] was created for the [italic type]Ryan Veeder Exposition for Good Interactive Fiction[roman type]. Author and beta testers are currently anonymous, per the rules of the exposition."
+placeholder [AUTHOR] = "Adri"
+placeholder [BLURB] = "[story title] was created for the [italic type]Ryan Veeder Exposition for Good Interactive Fiction[roman type]. Beta testers included Zachary Barryte, Matthew Patterson, verityvirtue and Oreolek."
 
 ! Other material to release
 
