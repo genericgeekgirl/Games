@@ -52,7 +52,7 @@ When play begins:
 say "Once a year, the Easter bilby brings handpainted eggs to all the good children."
 
 After printing the banner text:
-say "[paragraph break][bold type]This game has two parts. Player One will hide the eggs, and Player Two will hunt for them.[roman type]";
+say "[paragraph break][bold type]This game has two parts. Player One will hide the eggs, and Player Two will hunt for them. This can be done on the same computer, or you can share save files.[roman type]";
 say "[line break][italic type](Press any key.)[roman type]";
 wait for any key;
 clear the screen;

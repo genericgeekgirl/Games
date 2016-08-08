@@ -1,18 +1,18 @@
 ! Blurb file created by Inform build 6G60
 
-status "/usr/local/share/inform7/Inform7/Extensions/Reserved/CblorbModel.html" "/home/adri/Desktop/mismash.inform/Build/StatusCblorb.html"
+status "/usr/local/share/inform7/Inform7/Extensions/Reserved/CblorbModel.html" "/home/adri/Games/Interactive Fiction/Adri/WIP/mismash.inform/Build/StatusCblorb.html"
 
 
 ! Identification
 
-project folder "/home/adri/Desktop/mismash.inform"
-release to "/home/adri/Desktop/mismash Materials/Release"
+project folder "/home/adri/Games/Interactive Fiction/Adri/WIP/mismash.inform"
+release to "/home/adri/Games/Interactive Fiction/Adri/WIP/mismash Materials/Release"
 
 ! Blorb instructions
 
 storyfile leafname "A Game of Sorts.zblorb"
-storyfile "/home/adri/Desktop/mismash.inform/Build/output.z5" include
-ifiction "/home/adri/Desktop/mismash.inform/Metadata.iFiction" include
+storyfile "/home/adri/Games/Interactive Fiction/Adri/WIP/mismash.inform/Build/output.z5" include
+ifiction "/home/adri/Games/Interactive Fiction/Adri/WIP/mismash.inform/Metadata.iFiction" include
 cover "/usr/local/share/inform7/Inform7/Extensions/Reserved/DefaultCover.jpg"
 picture 1 "/usr/local/share/inform7/Inform7/Extensions/Reserved/DefaultCover.jpg"
 
@@ -20,10 +20,10 @@ picture 1 "/usr/local/share/inform7/Inform7/Extensions/Reserved/DefaultCover.jpg
 
 placeholder [IFID] = "0872E877-84DF-48F2-8BDB-3E6F13709B67"
 placeholder [RELEASE] = "1"
-placeholder [YEAR] = "2014"
+placeholder [YEAR] = "2016"
 placeholder [TITLE] = "A Game of Sorts"
 placeholder [AUTHOR] = "Adri"
-placeholder [BLURB] = "TODO"
+placeholder [BLURB] = "A dumb idea inspired by DougO"
 
 ! Other material to release
 
