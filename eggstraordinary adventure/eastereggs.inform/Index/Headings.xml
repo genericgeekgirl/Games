@@ -151,42 +151,42 @@
     </dict>
     <key>21</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/eggstraordinary adventure/eastereggs.inform/Source/story.ni</string>
-        <key>Line</key><integer>474</integer>
+        <key>Line</key><integer>476</integer>
         <key>Title</key><string>Volume - Eggs</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>22</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/eggstraordinary adventure/eastereggs.inform/Source/story.ni</string>
-        <key>Line</key><integer>492</integer>
+        <key>Line</key><integer>494</integer>
         <key>Title</key><string>Book - Assorted Actions</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>23</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/eggstraordinary adventure/eastereggs.inform/Source/story.ni</string>
-        <key>Line</key><integer>548</integer>
+        <key>Line</key><integer>550</integer>
         <key>Title</key><string>Book - Hiding Eggs</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>24</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/eggstraordinary adventure/eastereggs.inform/Source/story.ni</string>
-        <key>Line</key><integer>582</integer>
+        <key>Line</key><integer>584</integer>
         <key>Title</key><string>Volume - Other Actions</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>25</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/eggstraordinary adventure/eastereggs.inform/Source/story.ni</string>
-        <key>Line</key><integer>617</integer>
+        <key>Line</key><integer>619</integer>
         <key>Title</key><string>Volume - Auto-hiding eggs</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>26</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/eggstraordinary adventure/eastereggs.inform/Source/story.ni</string>
-        <key>Line</key><integer>634</integer>
+        <key>Line</key><integer>636</integer>
         <key>Title</key><string>Volume - Finding eggs</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>

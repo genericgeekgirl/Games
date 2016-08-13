@@ -462,7 +462,9 @@ Instead of taking inventory when the player is the girl:
 			say "You are carrying:[line break]";
 		otherwise:
 			say "You are also carrying:[line break]";
-		list the contents of the player, with newlines, indented, with extra indentation, listing marked items only.
+		list the contents of the player, with newlines, indented, with extra indentation, listing marked items only;
+	otherwise:
+		say "You are carrying nothing."
 
 Rule for deciding whether all includes something enclosed by the basket while taking: it does not.
                 

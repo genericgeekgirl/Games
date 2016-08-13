@@ -12870,7 +12870,7 @@ self = noun;
    if (debug_rules) DB_Rule(R_933, 933);
       ! phrase 1
       ! [1: hide the noun behind the second noun]
-      (Resolver_2(noun,second,"source", 551));
+      (Resolver_2(noun,second,"source", 553));
       ! phrase 2
       ! [2: say ~You put [the noun] behind [the second noun].~]
       say__p=1;ParaContent();  print (PrintText) SC_95; ParaContent();  print (the) noun; ParaContent();  print (PrintText) SC_96; ParaContent();  print (the) second; ParaContent();  print (PrintText) SC_97;  new_line; .L_Say18; .L_SayX18;
@@ -12887,7 +12887,7 @@ self = noun;
    if (debug_rules) DB_Rule(R_934, 934);
       ! phrase 1
       ! [1: hide the noun under the second noun]
-      (Resolver_3(noun,second,"source", 555));
+      (Resolver_3(noun,second,"source", 557));
       ! phrase 2
       ! [2: say ~You put [the noun] under [the second noun].~]
       say__p=1;ParaContent();  print (PrintText) SC_95; ParaContent();  print (the) noun; ParaContent();  print (PrintText) SC_98; ParaContent();  print (the) second; ParaContent();  print (PrintText) SC_97;  new_line; .L_Say19; .L_SayX19;
@@ -13290,7 +13290,14 @@ self = noun;
          ! [13: list the contents of the player , with newlines , indented , with extra indentation , listing marked items only]
           WriteListFrom(child(player), 8707); 
          ! phrase 14
-         ! [14: end if]
+         ! [14: otherwise]
+         } else {
+
+         ! phrase 15
+         ! [15: say ~You are carrying nothing.~]
+         say__p=1;ParaContent();  print (PrintText) SC_130;  new_line; .L_Say44; .L_SayX44;
+         ! phrase 16
+         ! [16: end if]
          }
 
       RulebookFails(); rtrue;
@@ -13322,7 +13329,7 @@ self = noun;
    if (debug_rules) DB_Rule(R_745, 745);
       ! phrase 1
       ! [1: say reveal-hidden-under the noun]
-      say__p=1;ParaContent(); (Resolver_4(noun,"source", 83)); .L_Say44; .L_SayX44;
+      say__p=1;ParaContent(); (Resolver_4(noun,"source", 83)); .L_Say45; .L_SayX45;
       ! phrase 2
       ! [2: now everything hidden under the noun is in the place taken from]
        Prop_8(); 
@@ -13343,7 +13350,7 @@ self = noun;
    if (debug_rules) DB_Rule(R_753, 753);
       ! phrase 1
       ! [1: say reveal-hidden-behind the noun]
-      say__p=1;ParaContent(); (Resolver_5(noun,"source", 68)); .L_Say45; .L_SayX45;
+      say__p=1;ParaContent(); (Resolver_5(noun,"source", 68)); .L_Say46; .L_SayX46;
       ! phrase 2
       ! [2: now everything hidden behind the noun is in the place taken from]
        Prop_11(); 
@@ -13366,11 +13373,11 @@ self = noun;
        if ((((Global_Vars-->12) == 1)))  {
          ! phrase 2
          ! [2: say ~Oh! There is a giant spider here[if the number of eggs enclosed by the spider is not 0]. It seems to be sitting on a clutch of brightly colored eggs[end if]. You quickly back out of the bathroom and shut the door behind you.~]
-         say__p=1;ParaContent();  print (PrintText) SC_130; 
-	if (~~((((~~(( (Prop_13())  == 0))))))) jump L_Say46;
-		ParaContent();  print (PrintText) SC_131; 
-	.L_Say46; .L_SayX46;
-		ParaContent();  print (PrintText) SC_132;  new_line; .L_Say47; .L_SayX47;
+         say__p=1;ParaContent();  print (PrintText) SC_131; 
+	if (~~((((~~(( (Prop_13())  == 0))))))) jump L_Say47;
+		ParaContent();  print (PrintText) SC_132; 
+	.L_Say47; .L_SayX47;
+		ParaContent();  print (PrintText) SC_133;  new_line; .L_Say48; .L_SayX48;
          ! phrase 3
          ! [3: move the player to the northern hallway]
           MoveObject(player, I126_northern_hallway, 0, false); 
@@ -13382,7 +13389,7 @@ self = noun;
           } else if ((((Global_Vars-->12) == 2))) { 
          ! phrase 6
          ! [6: say ~The spider is still there. It waves a leg or three at you. Nope nope nope. Back into the hallway you go, closing the door tightly behind you.~]
-         say__p=1;ParaContent();  print (PrintText) SC_133;  new_line; .L_Say48; .L_SayX48;
+         say__p=1;ParaContent();  print (PrintText) SC_134;  new_line; .L_Say49; .L_SayX49;
          ! phrase 7
          ! [7: move the player to the northern hallway]
           MoveObject(player, I126_northern_hallway, 0, false); 
@@ -13401,7 +13408,7 @@ self = noun;
           RemoveFromPlay(I157_spider); 
          ! phrase 12
          ! [12: say ~The spider seems to have wandered off.~]
-         say__p=1;ParaContent();  print (PrintText) SC_134;  new_line; .L_Say49; .L_SayX49;
+         say__p=1;ParaContent();  print (PrintText) SC_135;  new_line; .L_Say50; .L_SayX50;
          ! phrase 13
          ! [13: try looking]
           TryAction(0, player, ##Look, 0, 0);; 
@@ -13422,7 +13429,7 @@ self = noun;
    if (debug_rules) DB_Rule(R_885, 885);
       ! phrase 1
       ! [1: say ~You unzip the pillow.~]
-      say__p=1;ParaContent();  print (PrintText) SC_135;  new_line; .L_Say50; .L_SayX50;
+      say__p=1;ParaContent();  print (PrintText) SC_136;  new_line; .L_Say51; .L_SayX51;
       RulebookSucceeds(); rtrue;
    } ! Runs only when pattern matches
    else if (debug_rules > 1) DB_Rule(R_885, 885, true);
@@ -13436,7 +13443,7 @@ self = noun;
    if (debug_rules) DB_Rule(R_886, 886);
       ! phrase 1
       ! [1: say ~You zip the pillow closed again.~]
-      say__p=1;ParaContent();  print (PrintText) SC_136;  new_line; .L_Say51; .L_SayX51;
+      say__p=1;ParaContent();  print (PrintText) SC_137;  new_line; .L_Say52; .L_SayX52;
       RulebookSucceeds(); rtrue;
    } ! Runs only when pattern matches
    else if (debug_rules > 1) DB_Rule(R_886, 886, true);
@@ -13587,7 +13594,7 @@ self = noun;
    if (debug_rules) DB_Rule(R_59, 59);
       ! phrase 1
       ! [1: say the printed plural name of the item]
-      say__p=1;ParaContent(); @push self;  print (PrintText) GProperty(9, self=t_0,plural); @pull self;  .L_Say52; .L_SayX52;
+      say__p=1;ParaContent(); @push self;  print (PrintText) GProperty(9, self=t_0,plural); @pull self;  .L_Say53; .L_SayX53;
       RulebookSucceeds(); rtrue;
    } ! Runs only when pattern matches
    else if (debug_rules > 1) DB_Rule(R_59, 59, true);
@@ -13610,7 +13617,7 @@ self = noun;
    if (debug_rules) DB_Rule(R_60, 60);
       ! phrase 1
       ! [1: say ~[listing group size in words] ~]
-      say__p=1;ParaContent();  print (number) say__n=(listing_size); ParaContent();  print (PrintText) SC_137;  .L_Say53; .L_SayX53;
+      say__p=1;ParaContent();  print (number) say__n=(listing_size); ParaContent();  print (PrintText) SC_138;  .L_Say54; .L_SayX54;
       ! phrase 2
       ! [2: carry out the printing the plural name activity with the item]
        CarryOutActivity(V1_printing_the_plural_name_, t_0); 
@@ -13682,10 +13689,10 @@ self = noun;
 [ R_867 ;
       ! phrase 1
       ! [1: say ~[paragraph break][bold type]This game has two parts. Player One will hide the eggs, and Player Two will hunt for them. This can be done on the same computer, or you can share save files.[roman type]~]
-      say__p=1;ParaContent();  DivideParagraphPoint(); new_line; ParaContent();  style bold; ParaContent();  print (PrintText) SC_138; ParaContent();  style roman;  .L_Say54; .L_SayX54;
+      say__p=1;ParaContent();  DivideParagraphPoint(); new_line; ParaContent();  style bold; ParaContent();  print (PrintText) SC_139; ParaContent();  style roman;  .L_Say55; .L_SayX55;
       ! phrase 2
       ! [2: say ~[line break][italic type](Press any key.)[roman type]~]
-      say__p=1;ParaContent();  new_line; ParaContent();  style underline; ParaContent();  print (PrintText) SC_139; ParaContent();  style roman;  .L_Say55; .L_SayX55;
+      say__p=1;ParaContent();  new_line; ParaContent();  style underline; ParaContent();  print (PrintText) SC_140; ParaContent();  style roman;  .L_Say56; .L_SayX56;
       ! phrase 3
       ! [3: wait for any key]
        KeyPause(); 
@@ -13694,7 +13701,7 @@ self = noun;
        VM_ClearScreen(0); 
       ! phrase 5
       ! [5: say ~[bold type]Player One: It is time to hide the Easter eggs! Try hiding eggs in, on, under and behind things.[roman type][paragraph break]~]
-      say__p=1;ParaContent();  style bold; ParaContent();  print (PrintText) SC_140; ParaContent();  style roman; ParaContent();  DivideParagraphPoint(); new_line;  .L_Say56; .L_SayX56;
+      say__p=1;ParaContent();  style bold; ParaContent();  print (PrintText) SC_141; ParaContent();  style roman; ParaContent();  DivideParagraphPoint(); new_line;  .L_Say57; .L_SayX57;
    rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -13806,7 +13813,7 @@ self = noun;
    if (debug_rules) DB_Rule(R_932, 932);
       ! phrase 1
       ! [1: say ~You'll have to be more specific. Which egg do you mean?~]
-      say__p=1;ParaContent();  print (PrintText) SC_141;  new_line; .L_Say57; .L_SayX57;
+      say__p=1;ParaContent();  print (PrintText) SC_142;  new_line; .L_Say58; .L_SayX58;
       RulebookSucceeds(); rtrue;
    } ! Runs only while condition holds
    else if (debug_rules > 1) DB_Rule(R_932, 932, true);
@@ -13941,7 +13948,7 @@ self = noun;
        if (((t_0 < 1))) {  if (ProcessRulebook(IMMEDIATELY_QUIT_R)) rtrue;   }
       ! phrase 10
       ! [10: say ~Would you like to ~]
-      say__p=1;ParaContent();  print (PrintText) SC_142;  .L_Say58; .L_SayX58;
+      say__p=1;ParaContent();  print (PrintText) SC_143;  .L_Say59; .L_SayX59;
       ! phrase 11
       ! [11: repeat through the table of final question options begin]
        @push ct_0; @push ct_1;
@@ -13959,7 +13966,7 @@ self = noun;
                 if (( (ExistsTableLookUpEntry(ct_0,100,ct_1)) ))  {
                   ! phrase 15
                   ! [15: say final question wording entry]
-                  say__p=1;ParaContent();  print (PrintText) TableLookUpEntry(ct_0,100,ct_1);  .L_Say59; .L_SayX59;
+                  say__p=1;ParaContent();  print (PrintText) TableLookUpEntry(ct_0,100,ct_1);  .L_Say60; .L_SayX60;
                   ! phrase 16
                   ! [16: decrease named options count by 1]
                    t_0 = t_0 - 1; 
@@ -13968,23 +13975,23 @@ self = noun;
                    if (((t_0 == 0)))  {
                      ! phrase 18
                      ! [18: say ~?[line break]~]
-                     say__p=1;ParaContent();  print (PrintText) SC_143; ParaContent();  new_line;  .L_Say60; .L_SayX60;
+                     say__p=1;ParaContent();  print (PrintText) SC_144; ParaContent();  new_line;  .L_Say61; .L_SayX61;
                      ! phrase 19
                      ! [19: otherwise if the named options count is 1]
                       } else if (((t_0 == 1))) { 
                      ! phrase 20
                      ! [20: if the serial comma option is active , say ~,~]
-                      if ((((Adj_22_t1_v15(5))))) { say__p=1;ParaContent();  print (PrintText) SC_144;  .L_Say61; .L_SayX61;  }
+                      if ((((Adj_22_t1_v15(5))))) { say__p=1;ParaContent();  print (PrintText) SC_145;  .L_Say62; .L_SayX62;  }
                      ! phrase 21
                      ! [21: say ~ or ~]
-                     say__p=1;ParaContent();  print (PrintText) SC_145;  .L_Say62; .L_SayX62;
+                     say__p=1;ParaContent();  print (PrintText) SC_146;  .L_Say63; .L_SayX63;
                      ! phrase 22
                      ! [22: otherwise]
                      } else {
 
                      ! phrase 23
                      ! [23: say ~, ~]
-                     say__p=1;ParaContent();  print (PrintText) SC_146;  .L_Say63; .L_SayX63;
+                     say__p=1;ParaContent();  print (PrintText) SC_147;  .L_Say64; .L_SayX64;
                      ! phrase 24
                      ! [24: end if]
                      }
@@ -14013,7 +14020,7 @@ self = noun;
 [ R_68 ;
       ! phrase 1
       ! [1: say ~> [run paragraph on]~]
-      say__p=1;ParaContent();  print (PrintText) SC_147; ParaContent();  RunParagraphOn();  .L_Say64; .L_SayX64;
+      say__p=1;ParaContent();  print (PrintText) SC_148; ParaContent();  RunParagraphOn();  .L_Say65; .L_SayX65;
    rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -14266,40 +14273,40 @@ self = noun;
                 if (((t_0 ofclass K1_room)))  {
                   ! phrase 22
                   ! [22: if the domain is the location , say ~You ~]
-                   if (((t_0 == real_location))) { say__p=1;ParaContent();  print (PrintText) SC_148;  .L_Say65; .L_SayX65;  }
+                   if (((t_0 == real_location))) { say__p=1;ParaContent();  print (PrintText) SC_149;  .L_Say66; .L_SayX66;  }
                   ! phrase 23
                   ! [23: otherwise say ~In [the domain] you ~]
-                   else { say__p=1;ParaContent();  print (PrintText) SC_149; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_150;  .L_Say66; .L_SayX66;  }
+                   else { say__p=1;ParaContent();  print (PrintText) SC_150; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_151;  .L_Say67; .L_SayX67;  }
                   ! phrase 24
                   ! [24: otherwise if the domain is a supporter]
                    } else if (((t_0 ofclass K6_supporter))) { 
                   ! phrase 25
                   ! [25: say ~On [the domain] you ~]
-                  say__p=1;ParaContent();  print (PrintText) SC_151; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_150;  .L_Say67; .L_SayX67;
+                  say__p=1;ParaContent();  print (PrintText) SC_152; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_151;  .L_Say68; .L_SayX68;
                   ! phrase 26
                   ! [26: otherwise if the domain is an animal]
                    } else if (((t_0 ofclass K12_animal))) { 
                   ! phrase 27
                   ! [27: say ~On [the domain] you ~]
-                  say__p=1;ParaContent();  print (PrintText) SC_151; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_150;  .L_Say68; .L_SayX68;
+                  say__p=1;ParaContent();  print (PrintText) SC_152; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_151;  .L_Say69; .L_SayX69;
                   ! phrase 28
                   ! [28: otherwise]
                   } else {
 
                   ! phrase 29
                   ! [29: say ~In [the domain] you ~]
-                  say__p=1;ParaContent();  print (PrintText) SC_149; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_150;  .L_Say69; .L_SayX69;
+                  say__p=1;ParaContent();  print (PrintText) SC_150; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_151;  .L_Say70; .L_SayX70;
                   ! phrase 30
                   ! [30: end if]
                   }
 
                ! phrase 31
                ! [31: say ~can [if the locale paragraph count is greater than 0]also [end if]see ~]
-               say__p=1;ParaContent();  print (PrintText) SC_152; 
-	if (~~(((((Global_Vars-->8) > 0))))) jump L_Say70;
-		ParaContent();  print (PrintText) SC_153; 
-	.L_Say70; .L_SayX70;
-		ParaContent();  print (PrintText) SC_154;  .L_Say71; .L_SayX71;
+               say__p=1;ParaContent();  print (PrintText) SC_153; 
+	if (~~(((((Global_Vars-->8) > 0))))) jump L_Say71;
+		ParaContent();  print (PrintText) SC_154; 
+	.L_Say71; .L_SayX71;
+		ParaContent();  print (PrintText) SC_155;  .L_Say72; .L_SayX72;
                ! phrase 32
                ! [32: let the common holder be nothing]
                 t_2 = nothing; 
@@ -14342,13 +14349,13 @@ self = noun;
 		give subst__v workflag2; else give subst__v ~workflag2;
 		WriteListOfMarkedObjects(ENGLISH_BIT+RECURSE_BIT+PARTINV_BIT+
 			TERSE_BIT+CONCEAL_BIT);
-		@pull subst__v;  .L_Say72; .L_SayX72;  }
+		@pull subst__v;  .L_Say73; .L_SayX73;  }
                ! phrase 44
                ! [44: if the domain is the location , say ~ here~]
-                if (((t_0 == real_location))) { say__p=1;ParaContent();  print (PrintText) SC_155;  .L_Say73; .L_SayX73;  }
+                if (((t_0 == real_location))) { say__p=1;ParaContent();  print (PrintText) SC_156;  .L_Say74; .L_SayX74;  }
                ! phrase 45
                ! [45: say ~.[paragraph break]~]
-               say__p=1;ParaContent();  print (PrintText) SC_97; ParaContent();  DivideParagraphPoint(); new_line;  .L_Say74; .L_SayX74;
+               say__p=1;ParaContent();  print (PrintText) SC_97; ParaContent();  DivideParagraphPoint(); new_line;  .L_Say75; .L_SayX75;
                ! phrase 46
                ! [46: unfilter list recursion]
                 list_filter_routine = 0; 
@@ -14527,7 +14534,7 @@ self = noun;
        if (((~~(((Adj_56_t1_v9(t_0)))))))  {
          ! phrase 2
          ! [2: if a paragraph break is pending , say ~[conditional paragraph break]~]
-          if (( (say__p) )) { say__p=1;ParaContent();  DivideParagraphPoint();  .L_Say75; .L_SayX75;  }
+          if (( (say__p) )) { say__p=1;ParaContent();  DivideParagraphPoint();  .L_Say76; .L_SayX76;  }
          ! phrase 3
          ! [3: carry out the writing a paragraph about activity with the item]
           CarryOutActivity(V6_writing_a_paragraph_about, t_0); 
@@ -14542,7 +14549,7 @@ self = noun;
              (Adj_56_t2_v9(t_0)); 
             ! phrase 7
             ! [7: say ~[command clarification break]~]
-            say__p=1;ParaContent();  CommandClarificationBreak();  .L_Say76; .L_SayX76;
+            say__p=1;ParaContent();  CommandClarificationBreak();  .L_Say77; .L_SayX77;
             ! phrase 8
             ! [8: end if]
             }
@@ -14580,10 +14587,10 @@ self = noun;
              (Global_Vars-->8) = (Global_Vars-->8) + 1; 
             ! phrase 4
             ! [4: say ~[initial appearance of the item]~]
-            say__p=1;ParaContent(); @push self;  print (PrintText) GProperty(9, self=t_0,initial); @pull self;  .L_Say77; .L_SayX77;
+            say__p=1;ParaContent(); @push self;  print (PrintText) GProperty(9, self=t_0,initial); @pull self;  .L_Say78; .L_SayX78;
             ! phrase 5
             ! [5: say ~[paragraph break]~]
-            say__p=1;ParaContent();  DivideParagraphPoint(); new_line;  .L_Say78; .L_SayX78;
+            say__p=1;ParaContent();  DivideParagraphPoint(); new_line;  .L_Say79; .L_SayX79;
             ! phrase 6
             ! [6: if a locale-supportable thing is on the item begin]
              if ((Prop_23(,t_0)))  {
@@ -14609,13 +14616,13 @@ self = noun;
 
                ! phrase 13
                ! [13: say ~On [the item] ~]
-               say__p=1;ParaContent();  print (PrintText) SC_151; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_137;  .L_Say79; .L_SayX79;
+               say__p=1;ParaContent();  print (PrintText) SC_152; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_138;  .L_Say80; .L_SayX80;
                ! phrase 14
                ! [14: list the contents of the item , as a sentence , including contents , giving brief inventory information , tersely , not listing concealed items , prefacing with is/are , listing marked items only]
                 WriteListFrom(child(t_0), 3800); 
                ! phrase 15
                ! [15: say ~.[paragraph break]~]
-               say__p=1;ParaContent();  print (PrintText) SC_97; ParaContent();  DivideParagraphPoint(); new_line;  .L_Say80; .L_SayX80;
+               say__p=1;ParaContent();  print (PrintText) SC_97; ParaContent();  DivideParagraphPoint(); new_line;  .L_Say81; .L_SayX81;
                ! phrase 16
                ! [16: end if]
                }
@@ -14683,13 +14690,13 @@ self = noun;
              (Global_Vars-->8) = (Global_Vars-->8) + 1; 
             ! phrase 11
             ! [11: say ~On [the item] ~]
-            say__p=1;ParaContent();  print (PrintText) SC_151; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_137;  .L_Say81; .L_SayX81;
+            say__p=1;ParaContent();  print (PrintText) SC_152; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_138;  .L_Say82; .L_SayX82;
             ! phrase 12
             ! [12: list the contents of the item , as a sentence , including contents , giving brief inventory information , tersely , not listing concealed items , prefacing with is/are , listing marked items only]
              WriteListFrom(child(t_0), 3800); 
             ! phrase 13
             ! [13: say ~.[paragraph break]~]
-            say__p=1;ParaContent();  print (PrintText) SC_97; ParaContent();  DivideParagraphPoint(); new_line;  .L_Say82; .L_SayX82;
+            say__p=1;ParaContent();  print (PrintText) SC_97; ParaContent();  DivideParagraphPoint(); new_line;  .L_Say83; .L_SayX83;
             ! phrase 14
             ! [14: end if]
             }
@@ -14739,7 +14746,7 @@ self = noun;
        GL__M(##Inv,2,noun); 
       ! phrase 2
       ! [2: say ~:[line break]~]
-      say__p=1;ParaContent();  print (PrintText) SC_156; ParaContent();  new_line;  .L_Say83; .L_SayX83;
+      say__p=1;ParaContent();  print (PrintText) SC_157; ParaContent();  new_line;  .L_Say84; .L_SayX84;
       ! phrase 3
       ! [3: list the contents of the player , with newlines , indented , including contents , giving inventory information , with extra indentation]
        WriteListFrom(child(player), 8215); 
@@ -14812,7 +14819,7 @@ self = noun;
        if ((((~~((noun ofclass K16_egg))))) && (((~~((noun == I107_lightbulb))))))  {
          ! phrase 2
          ! [2: say ~It's not nice to steal!~ instead]
-         say__p=1;ParaContent();  print (PrintText) SC_157;  new_line; rtrue; .L_Say84; .L_SayX84; rtrue;
+         say__p=1;ParaContent();  print (PrintText) SC_158;  new_line; rtrue; .L_Say85; .L_SayX85; rtrue;
          ! phrase 3
          ! [3: end if]
          }
@@ -14832,7 +14839,7 @@ self = noun;
        if ((((~~((noun ofclass K16_egg))))) && ((((~~((noun == I159_basket))))) && (((~~((noun == I160_plush_bilby)))))))  {
          ! phrase 2
          ! [2: say ~You don't need that right now. You should focus on finding the eggs.~ instead]
-         say__p=1;ParaContent();  print (PrintText) SC_158;  new_line; rtrue; .L_Say85; .L_SayX85; rtrue;
+         say__p=1;ParaContent();  print (PrintText) SC_159;  new_line; rtrue; .L_Say86; .L_SayX86; rtrue;
          ! phrase 3
          ! [3: end if]
          }
@@ -15889,7 +15896,7 @@ self = noun;
    if (debug_rules) DB_Rule(R_924, 924);
       ! phrase 1
       ! [1: if e is not edible , say ~You'll need to crack the egg open first.~ instead]
-       if (((~~(((Adj_44_t1_v9(t_0))))))) { say__p=1;ParaContent();  print (PrintText) SC_159;  new_line; .L_Say86; .L_SayX86;  rtrue; }
+       if (((~~(((Adj_44_t1_v9(t_0))))))) { say__p=1;ParaContent();  print (PrintText) SC_160;  new_line; .L_Say87; .L_SayX87;  rtrue; }
    } ! Runs only when pattern matches
    else if (debug_rules > 1) DB_Rule(R_924, 924, true);
    rfalse;
@@ -16396,7 +16403,7 @@ self = noun;
           if (((~~(((MStack-->MstVO(20007,3)) == nothing)))))  {
             ! phrase 49
             ! [49: say ~ ~]
-            say__p=1;ParaContent();  print (PrintText) SC_137;  .L_Say87; .L_SayX87;
+            say__p=1;ParaContent();  print (PrintText) SC_138;  .L_Say88; .L_SayX88;
             ! phrase 50
             ! [50: if the vehicle gone by is a supporter , issue actor-based library message going action number 20 for the vehicle gone by]
              if ((((MStack-->MstVO(20007,3)) ofclass K6_supporter))) {  AGL__M(##Go,20,(MStack-->MstVO(20007,3)));   }
@@ -16451,7 +16458,7 @@ self = noun;
              AGL__M(##Go,26,noun); 
             ! phrase 66
             ! [66: say ~.~]
-            say__p=1;ParaContent();  print (PrintText) SC_97;  new_line; .L_Say88; .L_SayX88;
+            say__p=1;ParaContent();  print (PrintText) SC_97;  new_line; .L_Say89; .L_SayX89;
             ! phrase 67
             ! [67: try looking]
              TryAction(0, player, ##Look, 0, 0);; 
@@ -16464,7 +16471,7 @@ self = noun;
 
          ! phrase 70
          ! [70: say ~.~]
-         say__p=1;ParaContent();  print (PrintText) SC_97;  new_line; .L_Say89; .L_SayX89;
+         say__p=1;ParaContent();  print (PrintText) SC_97;  new_line; .L_Say90; .L_SayX90;
          ! phrase 71
          ! [71: end if]
          }
@@ -17051,7 +17058,7 @@ self = noun;
    if (debug_rules) DB_Rule(R_172, 172);
       ! phrase 1
       ! [1: say bold type]
-      say__p=1;ParaContent();  style bold;  .L_Say90; .L_SayX90;
+      say__p=1;ParaContent();  style bold;  .L_Say91; .L_SayX91;
       ! phrase 2
       ! [2: if the visibility level count is 0 begin]
        if ((((MStack-->MstVO(20011,2)) == 0)))  {
@@ -17069,21 +17076,21 @@ self = noun;
           } else if ((((MStack-->MstVO(20011,3)) == real_location))) { 
          ! phrase 7
          ! [7: say ~[visibility ceiling]~]
-         say__p=1;ParaContent();  print (PrintShortName) (MStack-->MstVO(20011,3));  .L_Say91; .L_SayX91;
+         say__p=1;ParaContent();  print (PrintShortName) (MStack-->MstVO(20011,3));  .L_Say92; .L_SayX92;
          ! phrase 8
          ! [8: otherwise]
          } else {
 
          ! phrase 9
          ! [9: say ~[The visibility ceiling]~]
-         say__p=1;ParaContent();  print (The) (MStack-->MstVO(20011,3));  .L_Say92; .L_SayX92;
+         say__p=1;ParaContent();  print (The) (MStack-->MstVO(20011,3));  .L_Say93; .L_SayX93;
          ! phrase 10
          ! [10: end if]
          }
 
       ! phrase 11
       ! [11: say roman type]
-      say__p=1;ParaContent();  style roman;  .L_Say93; .L_SayX93;
+      say__p=1;ParaContent();  style roman;  .L_Say94; .L_SayX94;
       ! phrase 12
       ! [12: let intermediate level be the visibility-holder of the actor]
        t_0 =  VisibilityParent(actor) ; 
@@ -17102,10 +17109,10 @@ self = noun;
 
       ! phrase 17
       ! [17: say line break]
-      say__p=1;ParaContent();  new_line;  .L_Say94; .L_SayX94;
+      say__p=1;ParaContent();  new_line;  .L_Say95; .L_SayX95;
       ! phrase 18
       ! [18: say run paragraph on with special look spacing]
-      say__p=1;ParaContent();  SpecialLookSpacingBreak();  .L_Say95; .L_SayX95;
+      say__p=1;ParaContent();  SpecialLookSpacingBreak();  .L_Say96; .L_SayX96;
    } ! Runs only when actor is the player
    else if (debug_rules > 1) DB_Rule(R_172, 172, true);
    rfalse;
@@ -17312,7 +17319,7 @@ self = noun;
    if (debug_rules) DB_Rule(R_940, 940);
       ! phrase 1
       ! [1: say ~[description of the noun][paragraph break]~]
-      say__p=1;ParaContent(); @push self;  print (PrintText) GProperty(OBJECT_TY, self=noun,description); @pull self; ParaContent();  DivideParagraphPoint(); new_line;  .L_Say96; .L_SayX96;
+      say__p=1;ParaContent(); @push self;  print (PrintText) GProperty(OBJECT_TY, self=noun,description); @pull self; ParaContent();  DivideParagraphPoint(); new_line;  .L_Say97; .L_SayX97;
       ! phrase 2
       ! [2: rule succeeds]
        RulebookSucceeds(); rtrue; 
@@ -17328,7 +17335,7 @@ self = noun;
    if (debug_rules) DB_Rule(R_941, 941);
       ! phrase 1
       ! [1: say ~[description of the noun][paragraph break]~]
-      say__p=1;ParaContent(); @push self;  print (PrintText) GProperty(OBJECT_TY, self=noun,description); @pull self; ParaContent();  DivideParagraphPoint(); new_line;  .L_Say97; .L_SayX97;
+      say__p=1;ParaContent(); @push self;  print (PrintText) GProperty(OBJECT_TY, self=noun,description); @pull self; ParaContent();  DivideParagraphPoint(); new_line;  .L_Say98; .L_SayX98;
       ! phrase 2
       ! [2: rule succeeds]
        RulebookSucceeds(); rtrue; 
@@ -17347,7 +17354,7 @@ self = noun;
        if ((((WhetherProvides(noun, false, description)))) && (((~~((GProperty(OBJECT_TY, noun,description) == EMPTY_TEXT_VALUE))))))  {
          ! phrase 2
          ! [2: say ~[the description of the noun][line break]~]
-         say__p=1;ParaContent(); @push self;  print (PrintText) GProperty(OBJECT_TY, self=noun,description); @pull self; ParaContent();  new_line;  .L_Say98; .L_SayX98;
+         say__p=1;ParaContent(); @push self;  print (PrintText) GProperty(OBJECT_TY, self=noun,description); @pull self; ParaContent();  new_line;  .L_Say99; .L_SayX99;
          ! phrase 3
          ! [3: now examine text printed is true]
           (MStack-->MstVO(20012,0)) = 1; 
@@ -17551,7 +17558,7 @@ self = noun;
           Prop_42(, (HolderOf(noun)) ); 
          ! phrase 3
          ! [3: say find-hidden-under the noun]
-         say__p=1;ParaContent(); (Resolver_9(noun,"source", 59)); .L_Say99; .L_SayX99;
+         say__p=1;ParaContent(); (Resolver_9(noun,"source", 59)); .L_Say100; .L_SayX100;
          ! phrase 4
          ! [4: now nothing is hidden under the noun]
           Prop_43(); 
@@ -17561,7 +17568,7 @@ self = noun;
 
          ! phrase 6
          ! [6: say ~There is nothing under [the noun].~]
-         say__p=1;ParaContent();  print (PrintText) SC_160; ParaContent();  print (the) noun; ParaContent();  print (PrintText) SC_97;  new_line; .L_Say100; .L_SayX100;
+         say__p=1;ParaContent();  print (PrintText) SC_161; ParaContent();  print (the) noun; ParaContent();  print (PrintText) SC_97;  new_line; .L_Say101; .L_SayX101;
          ! phrase 7
          ! [7: end if]
          }
@@ -20033,12 +20040,12 @@ self = noun;
       ! phrase 1
       ! [1: say ~[if the story has ended][otherwise][score request][end if]~ instead]
       say__p=1;
-	if (~~((( (deadflag~=0) )))) jump L_Say101;
+	if (~~((( (deadflag~=0) )))) jump L_Say102;
 		
-	jump L_SayX101; .L_Say101;
+	jump L_SayX102; .L_Say102;
 		ParaContent(); (PHR_864_r11 ());
-	.L_Say102; .L_SayX101;
-		 rtrue; .L_Say103; .L_SayX102; rtrue;
+	.L_Say103; .L_SayX102;
+		 rtrue; .L_Say104; .L_SayX103; rtrue;
    } ! Runs only when actor is the player
    else if (debug_rules > 1) DB_Rule(R_865, 865, true);
    rfalse;
@@ -20059,7 +20066,7 @@ self = noun;
    if (debug_rules) DB_Rule(R_742, 742);
       ! phrase 1
       ! [1: say ~You can't put anything under [the second noun].~ instead]
-      say__p=1;ParaContent();  print (PrintText) SC_161; ParaContent();  print (the) second; ParaContent();  print (PrintText) SC_97;  new_line; rtrue; .L_Say104; .L_SayX103; rtrue;
+      say__p=1;ParaContent();  print (PrintText) SC_162; ParaContent();  print (the) second; ParaContent();  print (PrintText) SC_97;  new_line; rtrue; .L_Say105; .L_SayX104; rtrue;
    } ! Runs only when pattern matches
    else if (debug_rules > 1) DB_Rule(R_742, 742, true);
    rfalse;
@@ -20080,7 +20087,7 @@ self = noun;
    if (debug_rules) DB_Rule(R_750, 750);
       ! phrase 1
       ! [1: say ~You can't put anything behind [the second noun].~ instead]
-      say__p=1;ParaContent();  print (PrintText) SC_162; ParaContent();  print (the) second; ParaContent();  print (PrintText) SC_97;  new_line; rtrue; .L_Say105; .L_SayX104; rtrue;
+      say__p=1;ParaContent();  print (PrintText) SC_163; ParaContent();  print (the) second; ParaContent();  print (PrintText) SC_97;  new_line; rtrue; .L_Say106; .L_SayX105; rtrue;
    } ! Runs only when pattern matches
    else if (debug_rules > 1) DB_Rule(R_750, 750, true);
    rfalse;
@@ -20106,7 +20113,7 @@ self = noun;
           Prop_47(, (HolderOf(noun)) ); 
          ! phrase 3
          ! [3: say find-hidden-behind the noun]
-         say__p=1;ParaContent(); (Resolver_10(noun,"source", 48)); .L_Say106; .L_SayX105;
+         say__p=1;ParaContent(); (Resolver_10(noun,"source", 48)); .L_Say107; .L_SayX106;
          ! phrase 4
          ! [4: now nothing is hidden behind the noun]
           Prop_48(); 
@@ -20116,7 +20123,7 @@ self = noun;
 
          ! phrase 6
          ! [6: say ~There is nothing behind [the noun].~]
-         say__p=1;ParaContent();  print (PrintText) SC_163; ParaContent();  print (the) noun; ParaContent();  print (PrintText) SC_97;  new_line; .L_Say107; .L_SayX106;
+         say__p=1;ParaContent();  print (PrintText) SC_164; ParaContent();  print (the) noun; ParaContent();  print (PrintText) SC_97;  new_line; .L_Say108; .L_SayX107;
          ! phrase 7
          ! [7: end if]
          }
@@ -20158,7 +20165,7 @@ self = noun;
    if (debug_rules) DB_Rule(R_861, 861);
       ! phrase 1
       ! [1: say ~[story description][line break]~]
-      say__p=1;ParaContent();  print (PrintText) (Global_Vars-->5); ParaContent();  new_line;  .L_Say108; .L_SayX107;
+      say__p=1;ParaContent();  print (PrintText) (Global_Vars-->5); ParaContent();  new_line;  .L_Say109; .L_SayX108;
    } ! Runs only when actor is the player
    else if (debug_rules > 1) DB_Rule(R_861, 861, true);
    rfalse;
@@ -20177,7 +20184,7 @@ self = noun;
    if (debug_rules) DB_Rule(R_862, 862);
       ! phrase 1
       ! [1: say ~If you're stuck, try 'find eggs' to see the location of all eggs in the game.~]
-      say__p=1;ParaContent();  print (PrintText) SC_164;  new_line; .L_Say109; .L_SayX108;
+      say__p=1;ParaContent();  print (PrintText) SC_165;  new_line; .L_Say110; .L_SayX109;
    } ! Runs only when actor is the player
    else if (debug_rules > 1) DB_Rule(R_862, 862, true);
    rfalse;
@@ -20212,10 +20219,10 @@ self = noun;
 [ R_870 ;
       ! phrase 1
       ! [1: say ~[bold type]Great! Now give the game to Player Two.[roman type]~]
-      say__p=1;ParaContent();  style bold; ParaContent();  print (PrintText) SC_165; ParaContent();  style roman;  .L_Say110; .L_SayX109;
+      say__p=1;ParaContent();  style bold; ParaContent();  print (PrintText) SC_166; ParaContent();  style roman;  .L_Say111; .L_SayX110;
       ! phrase 2
       ! [2: say ~[line break][italic type](Press any key.)[roman type]~]
-      say__p=1;ParaContent();  new_line; ParaContent();  style underline; ParaContent();  print (PrintText) SC_139; ParaContent();  style roman;  .L_Say111; .L_SayX110;
+      say__p=1;ParaContent();  new_line; ParaContent();  style underline; ParaContent();  print (PrintText) SC_140; ParaContent();  style roman;  .L_Say112; .L_SayX111;
       ! phrase 3
       ! [3: wait for any key]
        KeyPause(); 
@@ -20224,7 +20231,7 @@ self = noun;
        VM_ClearScreen(0); 
       ! phrase 5
       ! [5: say ~[bold type]Player Two: It is time to hunt for the Easter eggs! Try looking in, on, under and behind things.[roman type][paragraph break]~]
-      say__p=1;ParaContent();  style bold; ParaContent();  print (PrintText) SC_166; ParaContent();  style roman; ParaContent();  DivideParagraphPoint(); new_line;  .L_Say112; .L_SayX111;
+      say__p=1;ParaContent();  style bold; ParaContent();  print (PrintText) SC_167; ParaContent();  style roman; ParaContent();  DivideParagraphPoint(); new_line;  .L_Say113; .L_SayX112;
    rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -20260,7 +20267,7 @@ self = noun;
        MoveObject(I154_girl, I143_bedroom, 0, false); 
       ! phrase 7
       ! [7: now the description of the girl is ~You are a four-year-old girl named Julie. You are wearing your new Easter dress.~]
-       WriteGProperty(9, I154_girl,description,SC_167); 
+       WriteGProperty(9, I154_girl,description,SC_168); 
       ! phrase 8
       ! [8: move the basket to the living room]
        MoveObject(I159_basket, I93_living_room, 0, false); 
@@ -20311,10 +20318,10 @@ self = noun;
 [ R_873 ;
       ! phrase 1
       ! [1: say ~Congratulations! You have found all the eggs!~]
-      say__p=1;ParaContent();  print (PrintText) SC_168;  new_line; .L_Say113; .L_SayX112;
+      say__p=1;ParaContent();  print (PrintText) SC_169;  new_line; .L_Say114; .L_SayX113;
       ! phrase 2
       ! [2: end the story finally saying ~Happy Easter!~]
-       deadflag=SC_169; story_complete=true; 
+       deadflag=SC_170; story_complete=true; 
    rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
@@ -20357,7 +20364,7 @@ self = noun;
    if (debug_rules) DB_Rule(R_904, 904);
       ! phrase 1
       ! [1: say ~There is no response. Your parents must still be asleep.~ instead]
-      say__p=1;ParaContent();  print (PrintText) SC_170;  new_line; rtrue; .L_Say114; .L_SayX113; rtrue;
+      say__p=1;ParaContent();  print (PrintText) SC_171;  new_line; rtrue; .L_Say115; .L_SayX114; rtrue;
    } ! Runs only when pattern matches
    else if (debug_rules > 1) DB_Rule(R_904, 904, true);
    rfalse;
@@ -20370,7 +20377,7 @@ self = noun;
    if (debug_rules) DB_Rule(R_877, 877);
       ! phrase 1
       ! [1: say ~There is no response.~ instead]
-      say__p=1;ParaContent();  print (PrintText) SC_171;  new_line; rtrue; .L_Say115; .L_SayX114; rtrue;
+      say__p=1;ParaContent();  print (PrintText) SC_172;  new_line; rtrue; .L_Say116; .L_SayX115; rtrue;
    } ! Runs only when pattern matches
    else if (debug_rules > 1) DB_Rule(R_877, 877, true);
    rfalse;
@@ -20383,7 +20390,7 @@ self = noun;
    if (debug_rules) DB_Rule(R_878, 878);
       ! phrase 1
       ! [1: say ~The door is already open. There is no need to knock.~ instead]
-      say__p=1;ParaContent();  print (PrintText) SC_172;  new_line; rtrue; .L_Say116; .L_SayX115; rtrue;
+      say__p=1;ParaContent();  print (PrintText) SC_173;  new_line; rtrue; .L_Say117; .L_SayX116; rtrue;
    } ! Runs only when pattern matches
    else if (debug_rules > 1) DB_Rule(R_878, 878, true);
    rfalse;
@@ -20399,7 +20406,7 @@ self = noun;
        if ((((~~((noun ofclass K4_door))))) || (((~~((noun == I92_front_door))))))  {
          ! phrase 2
          ! [2: say ~You can only do that to a door.~ instead]
-         say__p=1;ParaContent();  print (PrintText) SC_173;  new_line; rtrue; .L_Say117; .L_SayX116; rtrue;
+         say__p=1;ParaContent();  print (PrintText) SC_174;  new_line; rtrue; .L_Say118; .L_SayX117; rtrue;
          ! phrase 3
          ! [3: end if]
          }
@@ -20445,7 +20452,7 @@ self = noun;
    if (debug_rules) DB_Rule(R_946, 946);
       ! phrase 1
       ! [1: say ~You do the bilby hop. Hop hop hop.~]
-      say__p=1;ParaContent();  print (PrintText) SC_174;  new_line; .L_Say118; .L_SayX117;
+      say__p=1;ParaContent();  print (PrintText) SC_175;  new_line; .L_Say119; .L_SayX118;
    } ! Runs only when actor is the player
    } ! Runs only while condition holds
    else if (debug_rules > 1) DB_Rule(R_946, 946, true);
@@ -20459,7 +20466,7 @@ self = noun;
    if (debug_rules) DB_Rule(R_947, 947);
       ! phrase 1
       ! [1: say ~You twirl around.~]
-      say__p=1;ParaContent();  print (PrintText) SC_175;  new_line; .L_Say119; .L_SayX118;
+      say__p=1;ParaContent();  print (PrintText) SC_176;  new_line; .L_Say120; .L_SayX119;
    } ! Runs only when actor is the player
    } ! Runs only while condition holds
    else if (debug_rules > 1) DB_Rule(R_947, 947, true);
@@ -20539,7 +20546,7 @@ self = noun;
 		objectloop (subst__v ofclass Object) if (((subst__v ofclass K16_egg) && ((subst__v.p57_behindconcealment) == t_0)))
 		give subst__v workflag2; else give subst__v ~workflag2;
 		WriteListOfMarkedObjects(ENGLISH_BIT);
-		@pull subst__v; ParaContent();  print (PrintText) SC_176; ParaContent();  print (the) t_0; ParaContent();  new_line;  .L_Say120; .L_SayX119;
+		@pull subst__v; ParaContent();  print (PrintText) SC_177; ParaContent();  print (the) t_0; ParaContent();  new_line;  .L_Say121; .L_SayX120;
             ! phrase 4
             ! [4: end if]
             }
@@ -20562,7 +20569,7 @@ self = noun;
 		objectloop (subst__v ofclass Object) if (((subst__v ofclass K16_egg) && ((subst__v.p56_underconcealment) == t_0)))
 		give subst__v workflag2; else give subst__v ~workflag2;
 		WriteListOfMarkedObjects(ENGLISH_BIT);
-		@pull subst__v; ParaContent();  print (PrintText) SC_177; ParaContent();  print (the) t_0; ParaContent();  new_line;  .L_Say121; .L_SayX120;
+		@pull subst__v; ParaContent();  print (PrintText) SC_178; ParaContent();  print (the) t_0; ParaContent();  new_line;  .L_Say122; .L_SayX121;
             ! phrase 9
             ! [9: end if]
             }
@@ -20585,7 +20592,7 @@ self = noun;
 		objectloop (subst__v ofclass Object) if (((subst__v ofclass K16_egg) && (t_0 == ContainerOf(subst__v))))
 		give subst__v workflag2; else give subst__v ~workflag2;
 		WriteListOfMarkedObjects(ENGLISH_BIT);
-		@pull subst__v; ParaContent();  print (PrintText) SC_178; ParaContent();  print (the) t_0; ParaContent();  new_line;  .L_Say122; .L_SayX121;
+		@pull subst__v; ParaContent();  print (PrintText) SC_179; ParaContent();  print (the) t_0; ParaContent();  new_line;  .L_Say123; .L_SayX122;
             ! phrase 14
             ! [14: end if]
             }
@@ -20608,7 +20615,7 @@ self = noun;
 		objectloop (subst__v ofclass Object) if (((subst__v ofclass K16_egg) && (t_0 == SupporterOf(subst__v))))
 		give subst__v workflag2; else give subst__v ~workflag2;
 		WriteListOfMarkedObjects(ENGLISH_BIT);
-		@pull subst__v; ParaContent();  print (PrintText) SC_179; ParaContent();  print (the) t_0; ParaContent();  new_line;  .L_Say123; .L_SayX122;
+		@pull subst__v; ParaContent();  print (PrintText) SC_180; ParaContent();  print (the) t_0; ParaContent();  new_line;  .L_Say124; .L_SayX123;
             ! phrase 19
             ! [19: end if]
             }
@@ -29843,11 +29850,11 @@ Array printed_text --> 64;
     ;
       ! phrase 1
       ! [1: say ~Taking [the noun] reveals [a list of things hidden under the noun] [previously-hidden-under the noun].~]
-      say__p=1;ParaContent();  print (PrintText) SC_180; ParaContent();  print (the) noun; ParaContent();  print (PrintText) SC_181; ParaContent();  @push subst__v;
+      say__p=1;ParaContent();  print (PrintText) SC_181; ParaContent();  print (the) noun; ParaContent();  print (PrintText) SC_182; ParaContent();  @push subst__v;
 		objectloop (subst__v ofclass Object) if (((subst__v ofclass K2_thing) && ((subst__v.p56_underconcealment) == noun)))
 		give subst__v workflag2; else give subst__v ~workflag2;
 		WriteListOfMarkedObjects(ENGLISH_BIT);
-		@pull subst__v; ParaContent();  print (PrintText) SC_137; ParaContent(); (Resolver_11(noun,"source", 90));ParaContent();  print (PrintText) SC_97;  new_line; .L_Say124; .L_SayX123;
+		@pull subst__v; ParaContent();  print (PrintText) SC_138; ParaContent(); (Resolver_11(noun,"source", 90));ParaContent();  print (PrintText) SC_97;  new_line; .L_Say125; .L_SayX124;
    rfalse;
 ];
 ! Request 6: phrase thing -> nothing
@@ -29858,11 +29865,11 @@ Array printed_text --> 64;
     ;
       ! phrase 1
       ! [1: say ~Taking [the noun] reveals [a list of things hidden behind the noun] [previously-hidden-behind the noun].~]
-      say__p=1;ParaContent();  print (PrintText) SC_180; ParaContent();  print (the) noun; ParaContent();  print (PrintText) SC_181; ParaContent();  @push subst__v;
+      say__p=1;ParaContent();  print (PrintText) SC_181; ParaContent();  print (the) noun; ParaContent();  print (PrintText) SC_182; ParaContent();  @push subst__v;
 		objectloop (subst__v ofclass Object) if (((subst__v ofclass K2_thing) && ((subst__v.p57_behindconcealment) == noun)))
 		give subst__v workflag2; else give subst__v ~workflag2;
 		WriteListOfMarkedObjects(ENGLISH_BIT);
-		@pull subst__v; ParaContent();  print (PrintText) SC_137; ParaContent(); (Resolver_12(noun,"source", 75));ParaContent();  print (PrintText) SC_97;  new_line; .L_Say125; .L_SayX124;
+		@pull subst__v; ParaContent();  print (PrintText) SC_138; ParaContent(); (Resolver_12(noun,"source", 75));ParaContent();  print (PrintText) SC_97;  new_line; .L_Say126; .L_SayX125;
    rfalse;
 ];
 ! Request 7: phrase thing -> nothing
@@ -29957,11 +29964,11 @@ Array printed_text --> 64;
     ;
       ! phrase 1
       ! [1: say ~Under [the obj] you find [a list of things hidden under the obj].~]
-      say__p=1;ParaContent();  print (PrintText) SC_182; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_183; ParaContent();  @push subst__v;
+      say__p=1;ParaContent();  print (PrintText) SC_183; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_184; ParaContent();  @push subst__v;
 		objectloop (subst__v ofclass Object) if (((subst__v ofclass K2_thing) && ((subst__v.p56_underconcealment) == t_0)))
 		give subst__v workflag2; else give subst__v ~workflag2;
 		WriteListOfMarkedObjects(ENGLISH_BIT);
-		@pull subst__v; ParaContent();  print (PrintText) SC_97;  new_line; .L_Say126; .L_SayX125;
+		@pull subst__v; ParaContent();  print (PrintText) SC_97;  new_line; .L_Say127; .L_SayX126;
    rfalse;
 ];
 ! Request 11: phrase nothing -> nothing
@@ -29969,13 +29976,13 @@ Array printed_text --> 64;
 [ PHR_864_r11 ;
       ! phrase 1
       ! [1: say ~You have [if hiding eggs is happening]hidden[otherwise]found[end if] [score] eggs out of [maximum score].~]
-      say__p=1;ParaContent();  print (PrintText) SC_184; 
-	if (~~(((((scene_status-->(I88_hiding_eggs-1)==1)))))) jump L_Say127;
-		ParaContent();  print (PrintText) SC_185; 
-	jump L_SayX126; .L_Say127;
+      say__p=1;ParaContent();  print (PrintText) SC_185; 
+	if (~~(((((scene_status-->(I88_hiding_eggs-1)==1)))))) jump L_Say128;
 		ParaContent();  print (PrintText) SC_186; 
-	.L_Say128; .L_SayX126;
-		ParaContent();  print (PrintText) SC_137; ParaContent();  print (say__n=score); ParaContent();  print (PrintText) SC_187; ParaContent();  print (say__n=MAX_SCORE); ParaContent();  print (PrintText) SC_97;  new_line; .L_Say129; .L_SayX127;
+	jump L_SayX127; .L_Say128;
+		ParaContent();  print (PrintText) SC_187; 
+	.L_Say129; .L_SayX127;
+		ParaContent();  print (PrintText) SC_138; ParaContent();  print (say__n=score); ParaContent();  print (PrintText) SC_188; ParaContent();  print (say__n=MAX_SCORE); ParaContent();  print (PrintText) SC_97;  new_line; .L_Say130; .L_SayX128;
    rfalse;
 ];
 ! Request 12: phrase thing -> nothing
@@ -29986,11 +29993,11 @@ Array printed_text --> 64;
     ;
       ! phrase 1
       ! [1: say ~Behind [the obj] you find [a list of things hidden behind the obj].~]
-      say__p=1;ParaContent();  print (PrintText) SC_188; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_183; ParaContent();  @push subst__v;
+      say__p=1;ParaContent();  print (PrintText) SC_189; ParaContent();  print (the) t_0; ParaContent();  print (PrintText) SC_184; ParaContent();  @push subst__v;
 		objectloop (subst__v ofclass Object) if (((subst__v ofclass K2_thing) && ((subst__v.p57_behindconcealment) == t_0)))
 		give subst__v workflag2; else give subst__v ~workflag2;
 		WriteListOfMarkedObjects(ENGLISH_BIT);
-		@pull subst__v; ParaContent();  print (PrintText) SC_97;  new_line; .L_Say130; .L_SayX128;
+		@pull subst__v; ParaContent();  print (PrintText) SC_97;  new_line; .L_Say131; .L_SayX129;
    rfalse;
 ];
 ! Request 13: phrase nothing -> nothing
@@ -30032,7 +30039,7 @@ Array printed_text --> 64;
     ;
       ! phrase 1
       ! [1: say ~hidden underneath~]
-      say__p=1;ParaContent();  print (PrintText) SC_189;  .L_Say131; .L_SayX129;
+      say__p=1;ParaContent();  print (PrintText) SC_190;  .L_Say132; .L_SayX130;
    rfalse;
 ];
 ! Request 17: phrase thing -> nothing
@@ -30043,7 +30050,7 @@ Array printed_text --> 64;
     ;
       ! phrase 1
       ! [1: say ~hidden behindneath~]
-      say__p=1;ParaContent();  print (PrintText) SC_190;  .L_Say132; .L_SayX130;
+      say__p=1;ParaContent();  print (PrintText) SC_191;  .L_Say133; .L_SayX131;
    rfalse;
 ];
 ! Request 18: phrase nothing -> nothing
@@ -30052,7 +30059,7 @@ Array printed_text --> 64;
 [ PHR_762_r18 ;
       ! phrase 1
       ! [1: say ~[paragraph break]Please press SPACE to continue.~]
-      say__p=1;ParaContent();  DivideParagraphPoint(); new_line; ParaContent();  print (PrintText) SC_191;  new_line; .L_Say133; .L_SayX131;
+      say__p=1;ParaContent();  DivideParagraphPoint(); new_line; ParaContent();  print (PrintText) SC_192;  new_line; .L_Say134; .L_SayX132;
       ! phrase 2
       ! [2: wait for the space key]
        SPACEPause(); 
@@ -30092,7 +30099,7 @@ Array printed_text --> 64;
           I7VM_MoveCursorInStatusLine(t_2); 
          ! phrase 6
          ! [6: say ~[left entry]~]
-         say__p=1;ParaContent();  print (PrintText) TableLookUpEntry(ct_0,107,ct_1);  .L_Say134; .L_SayX132;
+         say__p=1;ParaContent();  print (PrintText) TableLookUpEntry(ct_0,107,ct_1);  .L_Say135; .L_SayX133;
          ! phrase 7
          ! [7: center central entry at row __index]
           CenterPrint(TableLookUpEntry(ct_0,108,ct_1), t_2); 
@@ -30101,7 +30108,7 @@ Array printed_text --> 64;
           RightAlign(t_2); 
          ! phrase 9
          ! [9: say ~[right entry]~]
-         say__p=1;ParaContent();  print (PrintText) TableLookUpEntry(ct_0,109,ct_1);  .L_Say135; .L_SayX133;
+         say__p=1;ParaContent();  print (PrintText) TableLookUpEntry(ct_0,109,ct_1);  .L_Say136; .L_SayX134;
          ! phrase 10
          ! [10: increase __index by 1]
           t_2 = t_2 + 1; 
@@ -30138,7 +30145,7 @@ Array printed_text --> 64;
 [ PHR_795_r21 ;
       ! phrase 1
       ! [1: say is-are of prior named noun]
-      say__p=1;ParaContent(); (PHR_796_r22 ((Global_Vars-->11))); .L_Say136; .L_SayX134;
+      say__p=1;ParaContent(); (PHR_796_r22 ((Global_Vars-->11))); .L_Say137; .L_SayX135;
    rfalse;
 ];
 ! Request 22: phrase thing -> nothing
@@ -30152,10 +30159,10 @@ Array printed_text --> 64;
        (Global_Vars-->11) = t_0; 
       ! phrase 2
       ! [2: if prior named noun acts plural or the prior named noun is the player , say ~are~]
-       if ((((PHR_794_r20 ((Global_Vars-->11))))) || ((((Global_Vars-->11) == player)))) { say__p=1;ParaContent();  print (PrintText) SC_192;  .L_Say137; .L_SayX135;  }
+       if ((((PHR_794_r20 ((Global_Vars-->11))))) || ((((Global_Vars-->11) == player)))) { say__p=1;ParaContent();  print (PrintText) SC_193;  .L_Say138; .L_SayX136;  }
       ! phrase 3
       ! [3: otherwise say ~is~]
-       else { say__p=1;ParaContent();  print (PrintText) SC_193;  .L_Say138; .L_SayX136;  }
+       else { say__p=1;ParaContent();  print (PrintText) SC_194;  .L_Say139; .L_SayX137;  }
    rfalse;
 ];
 ! Request 23: phrase nothing -> nothing
@@ -30164,7 +30171,7 @@ Array printed_text --> 64;
 [ PHR_797_r23 ;
       ! phrase 1
       ! [1: say is-are of prior named noun]
-      say__p=1;ParaContent(); (PHR_800_r26 ((Global_Vars-->11))); .L_Say139; .L_SayX137;
+      say__p=1;ParaContent(); (PHR_800_r26 ((Global_Vars-->11))); .L_Say140; .L_SayX138;
    rfalse;
 ];
 ! Request 24: phrase thing -> nothing
@@ -30178,10 +30185,10 @@ Array printed_text --> 64;
        (Global_Vars-->11) = t_0; 
       ! phrase 2
       ! [2: if prior named noun acts plural or the prior named noun is the player , say ~Are~]
-       if ((((PHR_794_r20 ((Global_Vars-->11))))) || ((((Global_Vars-->11) == player)))) { say__p=1;ParaContent();  print (PrintText) SC_194;  .L_Say140; .L_SayX138;  }
+       if ((((PHR_794_r20 ((Global_Vars-->11))))) || ((((Global_Vars-->11) == player)))) { say__p=1;ParaContent();  print (PrintText) SC_195;  .L_Say141; .L_SayX139;  }
       ! phrase 3
       ! [3: otherwise say ~Is~]
-       else { say__p=1;ParaContent();  print (PrintText) SC_195;  .L_Say141; .L_SayX139;  }
+       else { say__p=1;ParaContent();  print (PrintText) SC_196;  .L_Say142; .L_SayX140;  }
    rfalse;
 ];
 ! Request 25: phrase nothing -> nothing
@@ -30190,7 +30197,7 @@ Array printed_text --> 64;
 [ PHR_799_r25 ;
       ! phrase 1
       ! [1: say is-are of prior named noun]
-      say__p=1;ParaContent(); (PHR_800_r26 ((Global_Vars-->11))); .L_Say142; .L_SayX140;
+      say__p=1;ParaContent(); (PHR_800_r26 ((Global_Vars-->11))); .L_Say143; .L_SayX141;
    rfalse;
 ];
 ! Request 26: phrase thing -> nothing
@@ -30204,10 +30211,10 @@ Array printed_text --> 64;
        (Global_Vars-->11) = t_0; 
       ! phrase 2
       ! [2: if prior named noun acts plural or the prior named noun is the player , say ~Are~]
-       if ((((PHR_794_r20 ((Global_Vars-->11))))) || ((((Global_Vars-->11) == player)))) { say__p=1;ParaContent();  print (PrintText) SC_194;  .L_Say143; .L_SayX141;  }
+       if ((((PHR_794_r20 ((Global_Vars-->11))))) || ((((Global_Vars-->11) == player)))) { say__p=1;ParaContent();  print (PrintText) SC_195;  .L_Say144; .L_SayX142;  }
       ! phrase 3
       ! [3: otherwise say ~Is~]
-       else { say__p=1;ParaContent();  print (PrintText) SC_195;  .L_Say144; .L_SayX142;  }
+       else { say__p=1;ParaContent();  print (PrintText) SC_196;  .L_Say145; .L_SayX143;  }
    rfalse;
 ];
 ! Request 27: phrase nothing -> nothing
@@ -30216,7 +30223,7 @@ Array printed_text --> 64;
 [ PHR_801_r27 ;
       ! phrase 1
       ! [1: say has-have of prior named noun]
-      say__p=1;ParaContent(); (PHR_802_r28 ((Global_Vars-->11))); .L_Say145; .L_SayX143;
+      say__p=1;ParaContent(); (PHR_802_r28 ((Global_Vars-->11))); .L_Say146; .L_SayX144;
    rfalse;
 ];
 ! Request 28: phrase thing -> nothing
@@ -30230,14 +30237,14 @@ Array printed_text --> 64;
        if ((((PHR_794_r20 (t_0)))) || (((t_0 == player))))  {
          ! phrase 2
          ! [2: say ~have~]
-         say__p=1;ParaContent();  print (PrintText) SC_196;  .L_Say146; .L_SayX144;
+         say__p=1;ParaContent();  print (PrintText) SC_197;  .L_Say147; .L_SayX145;
          ! phrase 3
          ! [3: otherwise]
          } else {
 
          ! phrase 4
          ! [4: say ~has~]
-         say__p=1;ParaContent();  print (PrintText) SC_197;  .L_Say147; .L_SayX145;
+         say__p=1;ParaContent();  print (PrintText) SC_198;  .L_Say148; .L_SayX146;
          ! phrase 5
          ! [5: end if]
          }
@@ -30255,14 +30262,14 @@ Array printed_text --> 64;
        if ((((PHR_794_r20 (t_0)))) || (((t_0 == player))))  {
          ! phrase 2
          ! [2: say ~Have~]
-         say__p=1;ParaContent();  print (PrintText) SC_198;  .L_Say148; .L_SayX146;
+         say__p=1;ParaContent();  print (PrintText) SC_199;  .L_Say149; .L_SayX147;
          ! phrase 3
          ! [3: otherwise]
          } else {
 
          ! phrase 4
          ! [4: say ~Has~]
-         say__p=1;ParaContent();  print (PrintText) SC_199;  .L_Say149; .L_SayX147;
+         say__p=1;ParaContent();  print (PrintText) SC_200;  .L_Say150; .L_SayX148;
          ! phrase 5
          ! [5: end if]
          }
@@ -30275,7 +30282,7 @@ Array printed_text --> 64;
 [ PHR_804_r30 ;
       ! phrase 1
       ! [1: say has-have of prior named noun]
-      say__p=1;ParaContent(); (PHR_803_r29 ((Global_Vars-->11))); .L_Say150; .L_SayX148;
+      say__p=1;ParaContent(); (PHR_803_r29 ((Global_Vars-->11))); .L_Say151; .L_SayX149;
    rfalse;
 ];
 ! Request 31: phrase thing -> nothing
@@ -30292,14 +30299,14 @@ Array printed_text --> 64;
        if ((((PHR_794_r20 (t_0)))) || (((t_0 == player))))  {
          ! phrase 3
          ! [3: say ~[']re~]
-         say__p=1;ParaContent();  print "'"; ParaContent();  print (PrintText) SC_200;  .L_Say151; .L_SayX149;
+         say__p=1;ParaContent();  print "'"; ParaContent();  print (PrintText) SC_201;  .L_Say152; .L_SayX150;
          ! phrase 4
          ! [4: otherwise]
          } else {
 
          ! phrase 5
          ! [5: say ~[']s~]
-         say__p=1;ParaContent();  print "'"; ParaContent();  print (PrintText) SC_201;  .L_Say152; .L_SayX150;
+         say__p=1;ParaContent();  print "'"; ParaContent();  print (PrintText) SC_202;  .L_Say153; .L_SayX151;
          ! phrase 6
          ! [6: end if]
          }
@@ -30312,7 +30319,7 @@ Array printed_text --> 64;
 [ PHR_806_r32 ;
       ! phrase 1
       ! [1: say 's-'re of the prior named noun]
-      say__p=1;ParaContent(); (PHR_805_r31 ((Global_Vars-->11))); .L_Say153; .L_SayX151;
+      say__p=1;ParaContent(); (PHR_805_r31 ((Global_Vars-->11))); .L_Say154; .L_SayX152;
    rfalse;
 ];
 ! Request 33: phrase nothing -> nothing
@@ -30321,7 +30328,7 @@ Array printed_text --> 64;
 [ PHR_812_r33 ;
       ! phrase 1
       ! [1: say es of prior named noun]
-      say__p=1;ParaContent(); (PHR_813_r34 ((Global_Vars-->11))); .L_Say154; .L_SayX152;
+      say__p=1;ParaContent(); (PHR_813_r34 ((Global_Vars-->11))); .L_Say155; .L_SayX153;
    rfalse;
 ];
 ! Request 34: phrase thing -> nothing
@@ -30335,14 +30342,14 @@ Array printed_text --> 64;
        if ((((PHR_794_r20 (t_0)))) || (((t_0 == player))))  {
          ! phrase 2
          ! [2: say ~~]
-         say__p=1;ParaContent();  print (PrintText) EMPTY_TEXT_VALUE;  .L_Say155; .L_SayX153;
+         say__p=1;ParaContent();  print (PrintText) EMPTY_TEXT_VALUE;  .L_Say156; .L_SayX154;
          ! phrase 3
          ! [3: otherwise]
          } else {
 
          ! phrase 4
          ! [4: say ~es~]
-         say__p=1;ParaContent();  print (PrintText) SC_202;  .L_Say156; .L_SayX154;
+         say__p=1;ParaContent();  print (PrintText) SC_203;  .L_Say157; .L_SayX155;
          ! phrase 5
          ! [5: end if]
          }
@@ -30355,7 +30362,7 @@ Array printed_text --> 64;
 [ PHR_814_r35 ;
       ! phrase 1
       ! [1: say ies of prior named noun]
-      say__p=1;ParaContent(); (PHR_815_r36 ((Global_Vars-->11))); .L_Say157; .L_SayX155;
+      say__p=1;ParaContent(); (PHR_815_r36 ((Global_Vars-->11))); .L_Say158; .L_SayX156;
    rfalse;
 ];
 ! Request 36: phrase thing -> nothing
@@ -30369,14 +30376,14 @@ Array printed_text --> 64;
        if ((((PHR_794_r20 (t_0)))) || (((t_0 == player))))  {
          ! phrase 2
          ! [2: say ~y~]
-         say__p=1;ParaContent();  print (PrintText) SC_203;  .L_Say158; .L_SayX156;
+         say__p=1;ParaContent();  print (PrintText) SC_204;  .L_Say159; .L_SayX157;
          ! phrase 3
          ! [3: otherwise]
          } else {
 
          ! phrase 4
          ! [4: say ~ies~]
-         say__p=1;ParaContent();  print (PrintText) SC_204;  .L_Say159; .L_SayX157;
+         say__p=1;ParaContent();  print (PrintText) SC_205;  .L_Say160; .L_SayX158;
          ! phrase 5
          ! [5: end if]
          }
@@ -30389,7 +30396,7 @@ Array printed_text --> 64;
 [ PHR_816_r37 ;
       ! phrase 1
       ! [1: say that-those prior named noun]
-      say__p=1;ParaContent(); (PHR_820_r41 ((Global_Vars-->11))); .L_Say160; .L_SayX158;
+      say__p=1;ParaContent(); (PHR_820_r41 ((Global_Vars-->11))); .L_Say161; .L_SayX159;
    rfalse;
 ];
 ! Request 38: phrase nothing -> nothing
@@ -30398,7 +30405,7 @@ Array printed_text --> 64;
 [ PHR_817_r38 ;
       ! phrase 1
       ! [1: say that-those prior named noun]
-      say__p=1;ParaContent(); (PHR_821_r42 ((Global_Vars-->11))); .L_Say161; .L_SayX159;
+      say__p=1;ParaContent(); (PHR_821_r42 ((Global_Vars-->11))); .L_Say162; .L_SayX160;
    rfalse;
 ];
 ! Request 39: phrase nothing -> nothing
@@ -30407,7 +30414,7 @@ Array printed_text --> 64;
 [ PHR_818_r39 ;
       ! phrase 1
       ! [1: say that-those prior named noun]
-      say__p=1;ParaContent(); (PHR_821_r42 ((Global_Vars-->11))); .L_Say162; .L_SayX160;
+      say__p=1;ParaContent(); (PHR_821_r42 ((Global_Vars-->11))); .L_Say163; .L_SayX161;
    rfalse;
 ];
 ! Request 40: phrase thing -> nothing
@@ -30427,32 +30434,32 @@ Array printed_text --> 64;
        if (((PHR_794_r20 (t_0))))  {
          ! phrase 4
          ! [4: say ~Those~]
-         say__p=1;ParaContent();  print (PrintText) SC_205;  .L_Say163; .L_SayX161;
+         say__p=1;ParaContent();  print (PrintText) SC_206;  .L_Say164; .L_SayX162;
          ! phrase 5
          ! [5: otherwise if the item is the player]
           } else if (((t_0 == player))) { 
          ! phrase 6
          ! [6: say ~You~]
-         say__p=1;ParaContent();  print (PrintText) SC_206;  .L_Say164; .L_SayX162;
+         say__p=1;ParaContent();  print (PrintText) SC_207;  .L_Say165; .L_SayX163;
          ! phrase 7
          ! [7: otherwise if the item is male and item is not neuter]
           } else if (((((Adj_69_t1_v9(t_0))))) && (((~~(((Adj_70_t1_v9(t_0)))))))) { 
          ! phrase 8
          ! [8: say ~He~]
-         say__p=1;ParaContent();  print (PrintText) SC_207;  .L_Say165; .L_SayX163;
+         say__p=1;ParaContent();  print (PrintText) SC_208;  .L_Say166; .L_SayX164;
          ! phrase 9
          ! [9: otherwise if the item is female and item is not neuter]
           } else if (((((Adj_68_t1_v9(t_0))))) && (((~~(((Adj_70_t1_v9(t_0)))))))) { 
          ! phrase 10
          ! [10: say ~She~]
-         say__p=1;ParaContent();  print (PrintText) SC_208;  .L_Say166; .L_SayX164;
+         say__p=1;ParaContent();  print (PrintText) SC_209;  .L_Say167; .L_SayX165;
          ! phrase 11
          ! [11: otherwise]
          } else {
 
          ! phrase 12
          ! [12: say ~That~]
-         say__p=1;ParaContent();  print (PrintText) SC_209;  .L_Say167; .L_SayX165;
+         say__p=1;ParaContent();  print (PrintText) SC_210;  .L_Say168; .L_SayX166;
          ! phrase 13
          ! [13: end if]
          }
@@ -30476,32 +30483,32 @@ Array printed_text --> 64;
        if (((PHR_794_r20 (t_0))))  {
          ! phrase 4
          ! [4: say ~those~]
-         say__p=1;ParaContent();  print (PrintText) SC_210;  .L_Say168; .L_SayX166;
+         say__p=1;ParaContent();  print (PrintText) SC_211;  .L_Say169; .L_SayX167;
          ! phrase 5
          ! [5: otherwise if the item is the player]
           } else if (((t_0 == player))) { 
          ! phrase 6
          ! [6: say ~you~]
-         say__p=1;ParaContent();  print (PrintText) SC_211;  .L_Say169; .L_SayX167;
+         say__p=1;ParaContent();  print (PrintText) SC_212;  .L_Say170; .L_SayX168;
          ! phrase 7
          ! [7: otherwise if the item is male and item is not neuter]
           } else if (((((Adj_69_t1_v9(t_0))))) && (((~~(((Adj_70_t1_v9(t_0)))))))) { 
          ! phrase 8
          ! [8: say ~he~]
-         say__p=1;ParaContent();  print (PrintText) SC_212;  .L_Say170; .L_SayX168;
+         say__p=1;ParaContent();  print (PrintText) SC_213;  .L_Say171; .L_SayX169;
          ! phrase 9
          ! [9: otherwise if the item is female and item is not neuter]
           } else if (((((Adj_68_t1_v9(t_0))))) && (((~~(((Adj_70_t1_v9(t_0)))))))) { 
          ! phrase 10
          ! [10: say ~she~]
-         say__p=1;ParaContent();  print (PrintText) SC_213;  .L_Say171; .L_SayX169;
+         say__p=1;ParaContent();  print (PrintText) SC_214;  .L_Say172; .L_SayX170;
          ! phrase 11
          ! [11: otherwise]
          } else {
 
          ! phrase 12
          ! [12: say ~that~]
-         say__p=1;ParaContent();  print (PrintText) SC_214;  .L_Say172; .L_SayX170;
+         say__p=1;ParaContent();  print (PrintText) SC_215;  .L_Say173; .L_SayX171;
          ! phrase 13
          ! [13: end if]
          }
@@ -30525,32 +30532,32 @@ Array printed_text --> 64;
        if (((PHR_794_r20 (t_0))))  {
          ! phrase 4
          ! [4: say ~Those~]
-         say__p=1;ParaContent();  print (PrintText) SC_205;  .L_Say173; .L_SayX171;
+         say__p=1;ParaContent();  print (PrintText) SC_206;  .L_Say174; .L_SayX172;
          ! phrase 5
          ! [5: otherwise if the item is the player]
           } else if (((t_0 == player))) { 
          ! phrase 6
          ! [6: say ~You~]
-         say__p=1;ParaContent();  print (PrintText) SC_206;  .L_Say174; .L_SayX172;
+         say__p=1;ParaContent();  print (PrintText) SC_207;  .L_Say175; .L_SayX173;
          ! phrase 7
          ! [7: otherwise if the item is male and item is not neuter]
           } else if (((((Adj_69_t1_v9(t_0))))) && (((~~(((Adj_70_t1_v9(t_0)))))))) { 
          ! phrase 8
          ! [8: say ~He~]
-         say__p=1;ParaContent();  print (PrintText) SC_207;  .L_Say175; .L_SayX173;
+         say__p=1;ParaContent();  print (PrintText) SC_208;  .L_Say176; .L_SayX174;
          ! phrase 9
          ! [9: otherwise if the item is female and item is not neuter]
           } else if (((((Adj_68_t1_v9(t_0))))) && (((~~(((Adj_70_t1_v9(t_0)))))))) { 
          ! phrase 10
          ! [10: say ~She~]
-         say__p=1;ParaContent();  print (PrintText) SC_208;  .L_Say176; .L_SayX174;
+         say__p=1;ParaContent();  print (PrintText) SC_209;  .L_Say177; .L_SayX175;
          ! phrase 11
          ! [11: otherwise]
          } else {
 
          ! phrase 12
          ! [12: say ~That~]
-         say__p=1;ParaContent();  print (PrintText) SC_209;  .L_Say177; .L_SayX175;
+         say__p=1;ParaContent();  print (PrintText) SC_210;  .L_Say178; .L_SayX176;
          ! phrase 13
          ! [13: end if]
          }
@@ -30574,32 +30581,32 @@ Array printed_text --> 64;
        if (((PHR_794_r20 (t_0))))  {
          ! phrase 4
          ! [4: say ~Those~]
-         say__p=1;ParaContent();  print (PrintText) SC_205;  .L_Say178; .L_SayX176;
+         say__p=1;ParaContent();  print (PrintText) SC_206;  .L_Say179; .L_SayX177;
          ! phrase 5
          ! [5: otherwise if the item is the player]
           } else if (((t_0 == player))) { 
          ! phrase 6
          ! [6: say ~You~]
-         say__p=1;ParaContent();  print (PrintText) SC_206;  .L_Say179; .L_SayX177;
+         say__p=1;ParaContent();  print (PrintText) SC_207;  .L_Say180; .L_SayX178;
          ! phrase 7
          ! [7: otherwise if the item is male and item is not neuter]
           } else if (((((Adj_69_t1_v9(t_0))))) && (((~~(((Adj_70_t1_v9(t_0)))))))) { 
          ! phrase 8
          ! [8: say ~He~]
-         say__p=1;ParaContent();  print (PrintText) SC_207;  .L_Say180; .L_SayX178;
+         say__p=1;ParaContent();  print (PrintText) SC_208;  .L_Say181; .L_SayX179;
          ! phrase 9
          ! [9: otherwise if the item is female and item is not neuter]
           } else if (((((Adj_68_t1_v9(t_0))))) && (((~~(((Adj_70_t1_v9(t_0)))))))) { 
          ! phrase 10
          ! [10: say ~She~]
-         say__p=1;ParaContent();  print (PrintText) SC_208;  .L_Say181; .L_SayX179;
+         say__p=1;ParaContent();  print (PrintText) SC_209;  .L_Say182; .L_SayX180;
          ! phrase 11
          ! [11: otherwise]
          } else {
 
          ! phrase 12
          ! [12: say ~That~]
-         say__p=1;ParaContent();  print (PrintText) SC_209;  .L_Say182; .L_SayX180;
+         say__p=1;ParaContent();  print (PrintText) SC_210;  .L_Say183; .L_SayX181;
          ! phrase 13
          ! [13: end if]
          }
@@ -30623,32 +30630,32 @@ Array printed_text --> 64;
        if (((PHR_794_r20 (t_0))))  {
          ! phrase 4
          ! [4: say ~those~]
-         say__p=1;ParaContent();  print (PrintText) SC_210;  .L_Say183; .L_SayX181;
+         say__p=1;ParaContent();  print (PrintText) SC_211;  .L_Say184; .L_SayX182;
          ! phrase 5
          ! [5: otherwise if the item is the player]
           } else if (((t_0 == player))) { 
          ! phrase 6
          ! [6: say ~you~]
-         say__p=1;ParaContent();  print (PrintText) SC_211;  .L_Say184; .L_SayX182;
+         say__p=1;ParaContent();  print (PrintText) SC_212;  .L_Say185; .L_SayX183;
          ! phrase 7
          ! [7: otherwise if the item is male and item is not neuter]
           } else if (((((Adj_69_t1_v9(t_0))))) && (((~~(((Adj_70_t1_v9(t_0)))))))) { 
          ! phrase 8
          ! [8: say ~he~]
-         say__p=1;ParaContent();  print (PrintText) SC_212;  .L_Say185; .L_SayX183;
+         say__p=1;ParaContent();  print (PrintText) SC_213;  .L_Say186; .L_SayX184;
          ! phrase 9
          ! [9: otherwise if the item is female and item is not neuter]
           } else if (((((Adj_68_t1_v9(t_0))))) && (((~~(((Adj_70_t1_v9(t_0)))))))) { 
          ! phrase 10
          ! [10: say ~she~]
-         say__p=1;ParaContent();  print (PrintText) SC_213;  .L_Say186; .L_SayX184;
+         say__p=1;ParaContent();  print (PrintText) SC_214;  .L_Say187; .L_SayX185;
          ! phrase 11
          ! [11: otherwise]
          } else {
 
          ! phrase 12
          ! [12: say ~that~]
-         say__p=1;ParaContent();  print (PrintText) SC_214;  .L_Say187; .L_SayX185;
+         say__p=1;ParaContent();  print (PrintText) SC_215;  .L_Say188; .L_SayX186;
          ! phrase 13
          ! [13: end if]
          }
@@ -30672,32 +30679,32 @@ Array printed_text --> 64;
        if (((PHR_794_r20 (t_0))))  {
          ! phrase 4
          ! [4: say ~Those~]
-         say__p=1;ParaContent();  print (PrintText) SC_205;  .L_Say188; .L_SayX186;
+         say__p=1;ParaContent();  print (PrintText) SC_206;  .L_Say189; .L_SayX187;
          ! phrase 5
          ! [5: otherwise if the item is the player]
           } else if (((t_0 == player))) { 
          ! phrase 6
          ! [6: say ~You~]
-         say__p=1;ParaContent();  print (PrintText) SC_206;  .L_Say189; .L_SayX187;
+         say__p=1;ParaContent();  print (PrintText) SC_207;  .L_Say190; .L_SayX188;
          ! phrase 7
          ! [7: otherwise if the item is male and item is not neuter]
           } else if (((((Adj_69_t1_v9(t_0))))) && (((~~(((Adj_70_t1_v9(t_0)))))))) { 
          ! phrase 8
          ! [8: say ~He~]
-         say__p=1;ParaContent();  print (PrintText) SC_207;  .L_Say190; .L_SayX188;
+         say__p=1;ParaContent();  print (PrintText) SC_208;  .L_Say191; .L_SayX189;
          ! phrase 9
          ! [9: otherwise if the item is female and item is not neuter]
           } else if (((((Adj_68_t1_v9(t_0))))) && (((~~(((Adj_70_t1_v9(t_0)))))))) { 
          ! phrase 10
          ! [10: say ~She~]
-         say__p=1;ParaContent();  print (PrintText) SC_208;  .L_Say191; .L_SayX189;
+         say__p=1;ParaContent();  print (PrintText) SC_209;  .L_Say192; .L_SayX190;
          ! phrase 11
          ! [11: otherwise]
          } else {
 
          ! phrase 12
          ! [12: say ~That~]
-         say__p=1;ParaContent();  print (PrintText) SC_209;  .L_Say192; .L_SayX190;
+         say__p=1;ParaContent();  print (PrintText) SC_210;  .L_Say193; .L_SayX191;
          ! phrase 13
          ! [13: end if]
          }
@@ -30710,7 +30717,7 @@ Array printed_text --> 64;
 [ PHR_825_r46 ;
       ! phrase 1
       ! [1: say it-they of prior named noun]
-      say__p=1;ParaContent(); (PHR_826_r47 ((Global_Vars-->11))); .L_Say193; .L_SayX191;
+      say__p=1;ParaContent(); (PHR_826_r47 ((Global_Vars-->11))); .L_Say194; .L_SayX192;
    rfalse;
 ];
 ! Request 47: phrase thing -> nothing
@@ -30730,32 +30737,32 @@ Array printed_text --> 64;
        if (((PHR_794_r20 (t_0))))  {
          ! phrase 4
          ! [4: say ~they~]
-         say__p=1;ParaContent();  print (PrintText) SC_215;  .L_Say194; .L_SayX192;
+         say__p=1;ParaContent();  print (PrintText) SC_216;  .L_Say195; .L_SayX193;
          ! phrase 5
          ! [5: otherwise if the item is the player]
           } else if (((t_0 == player))) { 
          ! phrase 6
          ! [6: say ~you~]
-         say__p=1;ParaContent();  print (PrintText) SC_211;  .L_Say195; .L_SayX193;
+         say__p=1;ParaContent();  print (PrintText) SC_212;  .L_Say196; .L_SayX194;
          ! phrase 7
          ! [7: otherwise if the item is male and item is not neuter]
           } else if (((((Adj_69_t1_v9(t_0))))) && (((~~(((Adj_70_t1_v9(t_0)))))))) { 
          ! phrase 8
          ! [8: say ~he~]
-         say__p=1;ParaContent();  print (PrintText) SC_212;  .L_Say196; .L_SayX194;
+         say__p=1;ParaContent();  print (PrintText) SC_213;  .L_Say197; .L_SayX195;
          ! phrase 9
          ! [9: otherwise if the item is female and item is not neuter]
           } else if (((((Adj_68_t1_v9(t_0))))) && (((~~(((Adj_70_t1_v9(t_0)))))))) { 
          ! phrase 10
          ! [10: say ~she~]
-         say__p=1;ParaContent();  print (PrintText) SC_213;  .L_Say197; .L_SayX195;
+         say__p=1;ParaContent();  print (PrintText) SC_214;  .L_Say198; .L_SayX196;
          ! phrase 11
          ! [11: otherwise]
          } else {
 
          ! phrase 12
          ! [12: say ~it~]
-         say__p=1;ParaContent();  print (PrintText) SC_216;  .L_Say198; .L_SayX196;
+         say__p=1;ParaContent();  print (PrintText) SC_217;  .L_Say199; .L_SayX197;
          ! phrase 13
          ! [13: end if]
          }
@@ -30768,7 +30775,7 @@ Array printed_text --> 64;
 [ PHR_827_r48 ;
       ! phrase 1
       ! [1: say it-they of prior named noun]
-      say__p=1;ParaContent(); (PHR_830_r51 ((Global_Vars-->11))); .L_Say199; .L_SayX197;
+      say__p=1;ParaContent(); (PHR_830_r51 ((Global_Vars-->11))); .L_Say200; .L_SayX198;
    rfalse;
 ];
 ! Request 49: phrase thing -> nothing
@@ -30788,32 +30795,32 @@ Array printed_text --> 64;
        if (((PHR_794_r20 (t_0))))  {
          ! phrase 4
          ! [4: say ~They~]
-         say__p=1;ParaContent();  print (PrintText) SC_217;  .L_Say200; .L_SayX198;
+         say__p=1;ParaContent();  print (PrintText) SC_218;  .L_Say201; .L_SayX199;
          ! phrase 5
          ! [5: otherwise if the item is the player]
           } else if (((t_0 == player))) { 
          ! phrase 6
          ! [6: say ~You~]
-         say__p=1;ParaContent();  print (PrintText) SC_206;  .L_Say201; .L_SayX199;
+         say__p=1;ParaContent();  print (PrintText) SC_207;  .L_Say202; .L_SayX200;
          ! phrase 7
          ! [7: otherwise if the item is male and item is not neuter]
           } else if (((((Adj_69_t1_v9(t_0))))) && (((~~(((Adj_70_t1_v9(t_0)))))))) { 
          ! phrase 8
          ! [8: say ~He~]
-         say__p=1;ParaContent();  print (PrintText) SC_207;  .L_Say202; .L_SayX200;
+         say__p=1;ParaContent();  print (PrintText) SC_208;  .L_Say203; .L_SayX201;
          ! phrase 9
          ! [9: otherwise if the item is female and item is not neuter]
           } else if (((((Adj_68_t1_v9(t_0))))) && (((~~(((Adj_70_t1_v9(t_0)))))))) { 
          ! phrase 10
          ! [10: say ~She~]
-         say__p=1;ParaContent();  print (PrintText) SC_208;  .L_Say203; .L_SayX201;
+         say__p=1;ParaContent();  print (PrintText) SC_209;  .L_Say204; .L_SayX202;
          ! phrase 11
          ! [11: otherwise]
          } else {
 
          ! phrase 12
          ! [12: say ~It~]
-         say__p=1;ParaContent();  print (PrintText) SC_218;  .L_Say204; .L_SayX202;
+         say__p=1;ParaContent();  print (PrintText) SC_219;  .L_Say205; .L_SayX203;
          ! phrase 13
          ! [13: end if]
          }
@@ -30826,7 +30833,7 @@ Array printed_text --> 64;
 [ PHR_829_r50 ;
       ! phrase 1
       ! [1: say it-they of prior named noun]
-      say__p=1;ParaContent(); (PHR_830_r51 ((Global_Vars-->11))); .L_Say205; .L_SayX203;
+      say__p=1;ParaContent(); (PHR_830_r51 ((Global_Vars-->11))); .L_Say206; .L_SayX204;
    rfalse;
 ];
 ! Request 51: phrase thing -> nothing
@@ -30846,32 +30853,32 @@ Array printed_text --> 64;
        if (((PHR_794_r20 (t_0))))  {
          ! phrase 4
          ! [4: say ~They~]
-         say__p=1;ParaContent();  print (PrintText) SC_217;  .L_Say206; .L_SayX204;
+         say__p=1;ParaContent();  print (PrintText) SC_218;  .L_Say207; .L_SayX205;
          ! phrase 5
          ! [5: otherwise if the item is the player]
           } else if (((t_0 == player))) { 
          ! phrase 6
          ! [6: say ~You~]
-         say__p=1;ParaContent();  print (PrintText) SC_206;  .L_Say207; .L_SayX205;
+         say__p=1;ParaContent();  print (PrintText) SC_207;  .L_Say208; .L_SayX206;
          ! phrase 7
          ! [7: otherwise if the item is male and item is not neuter]
           } else if (((((Adj_69_t1_v9(t_0))))) && (((~~(((Adj_70_t1_v9(t_0)))))))) { 
          ! phrase 8
          ! [8: say ~He~]
-         say__p=1;ParaContent();  print (PrintText) SC_207;  .L_Say208; .L_SayX206;
+         say__p=1;ParaContent();  print (PrintText) SC_208;  .L_Say209; .L_SayX207;
          ! phrase 9
          ! [9: otherwise if the item is female and item is not neuter]
           } else if (((((Adj_68_t1_v9(t_0))))) && (((~~(((Adj_70_t1_v9(t_0)))))))) { 
          ! phrase 10
          ! [10: say ~She~]
-         say__p=1;ParaContent();  print (PrintText) SC_208;  .L_Say209; .L_SayX207;
+         say__p=1;ParaContent();  print (PrintText) SC_209;  .L_Say210; .L_SayX208;
          ! phrase 11
          ! [11: otherwise]
          } else {
 
          ! phrase 12
          ! [12: say ~It~]
-         say__p=1;ParaContent();  print (PrintText) SC_218;  .L_Say210; .L_SayX208;
+         say__p=1;ParaContent();  print (PrintText) SC_219;  .L_Say211; .L_SayX209;
          ! phrase 13
          ! [13: end if]
          }
@@ -30884,7 +30891,7 @@ Array printed_text --> 64;
 [ PHR_831_r52 ;
       ! phrase 1
       ! [1: say its-their of prior named noun]
-      say__p=1;ParaContent(); (PHR_832_r53 ((Global_Vars-->11))); .L_Say211; .L_SayX209;
+      say__p=1;ParaContent(); (PHR_832_r53 ((Global_Vars-->11))); .L_Say212; .L_SayX210;
    rfalse;
 ];
 ! Request 53: phrase thing -> nothing
@@ -30904,32 +30911,32 @@ Array printed_text --> 64;
        if (((PHR_794_r20 (t_0))))  {
          ! phrase 4
          ! [4: say ~their~]
-         say__p=1;ParaContent();  print (PrintText) SC_219;  .L_Say212; .L_SayX210;
+         say__p=1;ParaContent();  print (PrintText) SC_220;  .L_Say213; .L_SayX211;
          ! phrase 5
          ! [5: otherwise if the item is the player]
           } else if (((t_0 == player))) { 
          ! phrase 6
          ! [6: say ~your~]
-         say__p=1;ParaContent();  print (PrintText) SC_220;  .L_Say213; .L_SayX211;
+         say__p=1;ParaContent();  print (PrintText) SC_221;  .L_Say214; .L_SayX212;
          ! phrase 7
          ! [7: otherwise if the item is male and item is not neuter]
           } else if (((((Adj_69_t1_v9(t_0))))) && (((~~(((Adj_70_t1_v9(t_0)))))))) { 
          ! phrase 8
          ! [8: say ~his~]
-         say__p=1;ParaContent();  print (PrintText) SC_221;  .L_Say214; .L_SayX212;
+         say__p=1;ParaContent();  print (PrintText) SC_222;  .L_Say215; .L_SayX213;
          ! phrase 9
          ! [9: otherwise if the item is female and item is not neuter]
           } else if (((((Adj_68_t1_v9(t_0))))) && (((~~(((Adj_70_t1_v9(t_0)))))))) { 
          ! phrase 10
          ! [10: say ~her~]
-         say__p=1;ParaContent();  print (PrintText) SC_222;  .L_Say215; .L_SayX213;
+         say__p=1;ParaContent();  print (PrintText) SC_223;  .L_Say216; .L_SayX214;
          ! phrase 11
          ! [11: otherwise]
          } else {
 
          ! phrase 12
          ! [12: say ~its~]
-         say__p=1;ParaContent();  print (PrintText) SC_223;  .L_Say216; .L_SayX214;
+         say__p=1;ParaContent();  print (PrintText) SC_224;  .L_Say217; .L_SayX215;
          ! phrase 13
          ! [13: end if]
          }
@@ -30942,7 +30949,7 @@ Array printed_text --> 64;
 [ PHR_833_r54 ;
       ! phrase 1
       ! [1: say its-their of prior named noun]
-      say__p=1;ParaContent(); (PHR_836_r57 ((Global_Vars-->11))); .L_Say217; .L_SayX215;
+      say__p=1;ParaContent(); (PHR_836_r57 ((Global_Vars-->11))); .L_Say218; .L_SayX216;
    rfalse;
 ];
 ! Request 55: phrase thing -> nothing
@@ -30962,32 +30969,32 @@ Array printed_text --> 64;
        if (((PHR_794_r20 (t_0))))  {
          ! phrase 4
          ! [4: say ~Their~]
-         say__p=1;ParaContent();  print (PrintText) SC_224;  .L_Say218; .L_SayX216;
+         say__p=1;ParaContent();  print (PrintText) SC_225;  .L_Say219; .L_SayX217;
          ! phrase 5
          ! [5: otherwise if the item is the player]
           } else if (((t_0 == player))) { 
          ! phrase 6
          ! [6: say ~Your~]
-         say__p=1;ParaContent();  print (PrintText) SC_225;  .L_Say219; .L_SayX217;
+         say__p=1;ParaContent();  print (PrintText) SC_226;  .L_Say220; .L_SayX218;
          ! phrase 7
          ! [7: otherwise if the item is male and item is not neuter]
           } else if (((((Adj_69_t1_v9(t_0))))) && (((~~(((Adj_70_t1_v9(t_0)))))))) { 
          ! phrase 8
          ! [8: say ~His~]
-         say__p=1;ParaContent();  print (PrintText) SC_226;  .L_Say220; .L_SayX218;
+         say__p=1;ParaContent();  print (PrintText) SC_227;  .L_Say221; .L_SayX219;
          ! phrase 9
          ! [9: otherwise if the item is female and item is not neuter]
           } else if (((((Adj_68_t1_v9(t_0))))) && (((~~(((Adj_70_t1_v9(t_0)))))))) { 
          ! phrase 10
          ! [10: say ~Her~]
-         say__p=1;ParaContent();  print (PrintText) SC_227;  .L_Say221; .L_SayX219;
+         say__p=1;ParaContent();  print (PrintText) SC_228;  .L_Say222; .L_SayX220;
          ! phrase 11
          ! [11: otherwise]
          } else {
 
          ! phrase 12
          ! [12: say ~Its~]
-         say__p=1;ParaContent();  print (PrintText) SC_228;  .L_Say222; .L_SayX220;
+         say__p=1;ParaContent();  print (PrintText) SC_229;  .L_Say223; .L_SayX221;
          ! phrase 13
          ! [13: end if]
          }
@@ -31000,7 +31007,7 @@ Array printed_text --> 64;
 [ PHR_835_r56 ;
       ! phrase 1
       ! [1: say its-their of prior named noun]
-      say__p=1;ParaContent(); (PHR_836_r57 ((Global_Vars-->11))); .L_Say223; .L_SayX221;
+      say__p=1;ParaContent(); (PHR_836_r57 ((Global_Vars-->11))); .L_Say224; .L_SayX222;
    rfalse;
 ];
 ! Request 57: phrase thing -> nothing
@@ -31020,32 +31027,32 @@ Array printed_text --> 64;
        if (((PHR_794_r20 (t_0))))  {
          ! phrase 4
          ! [4: say ~Their~]
-         say__p=1;ParaContent();  print (PrintText) SC_224;  .L_Say224; .L_SayX222;
+         say__p=1;ParaContent();  print (PrintText) SC_225;  .L_Say225; .L_SayX223;
          ! phrase 5
          ! [5: otherwise if the item is the player]
           } else if (((t_0 == player))) { 
          ! phrase 6
          ! [6: say ~Your~]
-         say__p=1;ParaContent();  print (PrintText) SC_225;  .L_Say225; .L_SayX223;
+         say__p=1;ParaContent();  print (PrintText) SC_226;  .L_Say226; .L_SayX224;
          ! phrase 7
          ! [7: otherwise if the item is male and item is not neuter]
           } else if (((((Adj_69_t1_v9(t_0))))) && (((~~(((Adj_70_t1_v9(t_0)))))))) { 
          ! phrase 8
          ! [8: say ~His~]
-         say__p=1;ParaContent();  print (PrintText) SC_226;  .L_Say226; .L_SayX224;
+         say__p=1;ParaContent();  print (PrintText) SC_227;  .L_Say227; .L_SayX225;
          ! phrase 9
          ! [9: otherwise if the item is female and item is not neuter]
           } else if (((((Adj_68_t1_v9(t_0))))) && (((~~(((Adj_70_t1_v9(t_0)))))))) { 
          ! phrase 10
          ! [10: say ~Her~]
-         say__p=1;ParaContent();  print (PrintText) SC_227;  .L_Say227; .L_SayX225;
+         say__p=1;ParaContent();  print (PrintText) SC_228;  .L_Say228; .L_SayX226;
          ! phrase 11
          ! [11: otherwise]
          } else {
 
          ! phrase 12
          ! [12: say ~Its~]
-         say__p=1;ParaContent();  print (PrintText) SC_228;  .L_Say228; .L_SayX226;
+         say__p=1;ParaContent();  print (PrintText) SC_229;  .L_Say229; .L_SayX227;
          ! phrase 13
          ! [13: end if]
          }
@@ -31058,7 +31065,7 @@ Array printed_text --> 64;
 [ PHR_837_r58 ;
       ! phrase 1
       ! [1: say it-them of prior named noun]
-      say__p=1;ParaContent(); (PHR_838_r59 ((Global_Vars-->11))); .L_Say229; .L_SayX227;
+      say__p=1;ParaContent(); (PHR_838_r59 ((Global_Vars-->11))); .L_Say230; .L_SayX228;
    rfalse;
 ];
 ! Request 59: phrase thing -> nothing
@@ -31078,32 +31085,32 @@ Array printed_text --> 64;
        if (((PHR_794_r20 (t_0))))  {
          ! phrase 4
          ! [4: say ~them~]
-         say__p=1;ParaContent();  print (PrintText) SC_229;  .L_Say230; .L_SayX228;
+         say__p=1;ParaContent();  print (PrintText) SC_230;  .L_Say231; .L_SayX229;
          ! phrase 5
          ! [5: otherwise if the item is the player]
           } else if (((t_0 == player))) { 
          ! phrase 6
          ! [6: say ~you~]
-         say__p=1;ParaContent();  print (PrintText) SC_211;  .L_Say231; .L_SayX229;
+         say__p=1;ParaContent();  print (PrintText) SC_212;  .L_Say232; .L_SayX230;
          ! phrase 7
          ! [7: otherwise if the item is male and item is not neuter]
           } else if (((((Adj_69_t1_v9(t_0))))) && (((~~(((Adj_70_t1_v9(t_0)))))))) { 
          ! phrase 8
          ! [8: say ~him~]
-         say__p=1;ParaContent();  print (PrintText) SC_230;  .L_Say232; .L_SayX230;
+         say__p=1;ParaContent();  print (PrintText) SC_231;  .L_Say233; .L_SayX231;
          ! phrase 9
          ! [9: otherwise if the item is female and item is not neuter]
           } else if (((((Adj_68_t1_v9(t_0))))) && (((~~(((Adj_70_t1_v9(t_0)))))))) { 
          ! phrase 10
          ! [10: say ~her~]
-         say__p=1;ParaContent();  print (PrintText) SC_222;  .L_Say233; .L_SayX231;
+         say__p=1;ParaContent();  print (PrintText) SC_223;  .L_Say234; .L_SayX232;
          ! phrase 11
          ! [11: otherwise]
          } else {
 
          ! phrase 12
          ! [12: say ~it~]
-         say__p=1;ParaContent();  print (PrintText) SC_216;  .L_Say234; .L_SayX232;
+         say__p=1;ParaContent();  print (PrintText) SC_217;  .L_Say235; .L_SayX233;
          ! phrase 13
          ! [13: end if]
          }
@@ -31116,7 +31123,7 @@ Array printed_text --> 64;
 [ PHR_839_r60 ;
       ! phrase 1
       ! [1: say it-them of prior named noun]
-      say__p=1;ParaContent(); (PHR_842_r63 ((Global_Vars-->11))); .L_Say235; .L_SayX233;
+      say__p=1;ParaContent(); (PHR_842_r63 ((Global_Vars-->11))); .L_Say236; .L_SayX234;
    rfalse;
 ];
 ! Request 61: phrase thing -> nothing
@@ -31136,32 +31143,32 @@ Array printed_text --> 64;
        if (((PHR_794_r20 (t_0))))  {
          ! phrase 4
          ! [4: say ~Them~]
-         say__p=1;ParaContent();  print (PrintText) SC_231;  .L_Say236; .L_SayX234;
+         say__p=1;ParaContent();  print (PrintText) SC_232;  .L_Say237; .L_SayX235;
          ! phrase 5
          ! [5: otherwise if the item is the player]
           } else if (((t_0 == player))) { 
          ! phrase 6
          ! [6: say ~You~]
-         say__p=1;ParaContent();  print (PrintText) SC_206;  .L_Say237; .L_SayX235;
+         say__p=1;ParaContent();  print (PrintText) SC_207;  .L_Say238; .L_SayX236;
          ! phrase 7
          ! [7: otherwise if the item is male and item is not neuter]
           } else if (((((Adj_69_t1_v9(t_0))))) && (((~~(((Adj_70_t1_v9(t_0)))))))) { 
          ! phrase 8
          ! [8: say ~Him~]
-         say__p=1;ParaContent();  print (PrintText) SC_232;  .L_Say238; .L_SayX236;
+         say__p=1;ParaContent();  print (PrintText) SC_233;  .L_Say239; .L_SayX237;
          ! phrase 9
          ! [9: otherwise if the item is female and item is not neuter]
           } else if (((((Adj_68_t1_v9(t_0))))) && (((~~(((Adj_70_t1_v9(t_0)))))))) { 
          ! phrase 10
          ! [10: say ~Her~]
-         say__p=1;ParaContent();  print (PrintText) SC_227;  .L_Say239; .L_SayX237;
+         say__p=1;ParaContent();  print (PrintText) SC_228;  .L_Say240; .L_SayX238;
          ! phrase 11
          ! [11: otherwise]
          } else {
 
          ! phrase 12
          ! [12: say ~It~]
-         say__p=1;ParaContent();  print (PrintText) SC_218;  .L_Say240; .L_SayX238;
+         say__p=1;ParaContent();  print (PrintText) SC_219;  .L_Say241; .L_SayX239;
          ! phrase 13
          ! [13: end if]
          }
@@ -31174,7 +31181,7 @@ Array printed_text --> 64;
 [ PHR_841_r62 ;
       ! phrase 1
       ! [1: say it-them of prior named noun]
-      say__p=1;ParaContent(); (PHR_842_r63 ((Global_Vars-->11))); .L_Say241; .L_SayX239;
+      say__p=1;ParaContent(); (PHR_842_r63 ((Global_Vars-->11))); .L_Say242; .L_SayX240;
    rfalse;
 ];
 ! Request 63: phrase thing -> nothing
@@ -31194,32 +31201,32 @@ Array printed_text --> 64;
        if (((PHR_794_r20 (t_0))))  {
          ! phrase 4
          ! [4: say ~Them~]
-         say__p=1;ParaContent();  print (PrintText) SC_231;  .L_Say242; .L_SayX240;
+         say__p=1;ParaContent();  print (PrintText) SC_232;  .L_Say243; .L_SayX241;
          ! phrase 5
          ! [5: otherwise if the item is the player]
           } else if (((t_0 == player))) { 
          ! phrase 6
          ! [6: say ~You~]
-         say__p=1;ParaContent();  print (PrintText) SC_206;  .L_Say243; .L_SayX241;
+         say__p=1;ParaContent();  print (PrintText) SC_207;  .L_Say244; .L_SayX242;
          ! phrase 7
          ! [7: otherwise if the item is male and item is not neuter]
           } else if (((((Adj_69_t1_v9(t_0))))) && (((~~(((Adj_70_t1_v9(t_0)))))))) { 
          ! phrase 8
          ! [8: say ~Him~]
-         say__p=1;ParaContent();  print (PrintText) SC_232;  .L_Say244; .L_SayX242;
+         say__p=1;ParaContent();  print (PrintText) SC_233;  .L_Say245; .L_SayX243;
          ! phrase 9
          ! [9: otherwise if the item is female and item is not neuter]
           } else if (((((Adj_68_t1_v9(t_0))))) && (((~~(((Adj_70_t1_v9(t_0)))))))) { 
          ! phrase 10
          ! [10: say ~Her~]
-         say__p=1;ParaContent();  print (PrintText) SC_227;  .L_Say245; .L_SayX243;
+         say__p=1;ParaContent();  print (PrintText) SC_228;  .L_Say246; .L_SayX244;
          ! phrase 11
          ! [11: otherwise]
          } else {
 
          ! phrase 12
          ! [12: say ~It~]
-         say__p=1;ParaContent();  print (PrintText) SC_218;  .L_Say246; .L_SayX244;
+         say__p=1;ParaContent();  print (PrintText) SC_219;  .L_Say247; .L_SayX245;
          ! phrase 13
          ! [13: end if]
          }
@@ -31232,7 +31239,7 @@ Array printed_text --> 64;
 [ PHR_843_r64 ;
       ! phrase 1
       ! [1: say its-theirs of prior named noun]
-      say__p=1;ParaContent(); (PHR_844_r65 ((Global_Vars-->11))); .L_Say247; .L_SayX245;
+      say__p=1;ParaContent(); (PHR_844_r65 ((Global_Vars-->11))); .L_Say248; .L_SayX246;
    rfalse;
 ];
 ! Request 65: phrase thing -> nothing
@@ -31252,32 +31259,32 @@ Array printed_text --> 64;
        if (((PHR_794_r20 (t_0))))  {
          ! phrase 4
          ! [4: say ~theirs~]
-         say__p=1;ParaContent();  print (PrintText) SC_233;  .L_Say248; .L_SayX246;
+         say__p=1;ParaContent();  print (PrintText) SC_234;  .L_Say249; .L_SayX247;
          ! phrase 5
          ! [5: otherwise if the item is the player]
           } else if (((t_0 == player))) { 
          ! phrase 6
          ! [6: say ~yours~]
-         say__p=1;ParaContent();  print (PrintText) SC_234;  .L_Say249; .L_SayX247;
+         say__p=1;ParaContent();  print (PrintText) SC_235;  .L_Say250; .L_SayX248;
          ! phrase 7
          ! [7: otherwise if the item is male and item is not neuter]
           } else if (((((Adj_69_t1_v9(t_0))))) && (((~~(((Adj_70_t1_v9(t_0)))))))) { 
          ! phrase 8
          ! [8: say ~his~]
-         say__p=1;ParaContent();  print (PrintText) SC_221;  .L_Say250; .L_SayX248;
+         say__p=1;ParaContent();  print (PrintText) SC_222;  .L_Say251; .L_SayX249;
          ! phrase 9
          ! [9: otherwise if the item is female and item is not neuter]
           } else if (((((Adj_68_t1_v9(t_0))))) && (((~~(((Adj_70_t1_v9(t_0)))))))) { 
          ! phrase 10
          ! [10: say ~hers~]
-         say__p=1;ParaContent();  print (PrintText) SC_235;  .L_Say251; .L_SayX249;
+         say__p=1;ParaContent();  print (PrintText) SC_236;  .L_Say252; .L_SayX250;
          ! phrase 11
          ! [11: otherwise]
          } else {
 
          ! phrase 12
          ! [12: say ~its~]
-         say__p=1;ParaContent();  print (PrintText) SC_223;  .L_Say252; .L_SayX250;
+         say__p=1;ParaContent();  print (PrintText) SC_224;  .L_Say253; .L_SayX251;
          ! phrase 13
          ! [13: end if]
          }
@@ -31290,7 +31297,7 @@ Array printed_text --> 64;
 [ PHR_845_r66 ;
       ! phrase 1
       ! [1: say its-theirs of prior named noun]
-      say__p=1;ParaContent(); (PHR_848_r69 ((Global_Vars-->11))); .L_Say253; .L_SayX251;
+      say__p=1;ParaContent(); (PHR_848_r69 ((Global_Vars-->11))); .L_Say254; .L_SayX252;
    rfalse;
 ];
 ! Request 67: phrase thing -> nothing
@@ -31310,32 +31317,32 @@ Array printed_text --> 64;
        if (((PHR_794_r20 (t_0))))  {
          ! phrase 4
          ! [4: say ~Theirs~]
-         say__p=1;ParaContent();  print (PrintText) SC_236;  .L_Say254; .L_SayX252;
+         say__p=1;ParaContent();  print (PrintText) SC_237;  .L_Say255; .L_SayX253;
          ! phrase 5
          ! [5: otherwise if the item is the player]
           } else if (((t_0 == player))) { 
          ! phrase 6
          ! [6: say ~Yours~]
-         say__p=1;ParaContent();  print (PrintText) SC_237;  .L_Say255; .L_SayX253;
+         say__p=1;ParaContent();  print (PrintText) SC_238;  .L_Say256; .L_SayX254;
          ! phrase 7
          ! [7: otherwise if the item is male and item is not neuter]
           } else if (((((Adj_69_t1_v9(t_0))))) && (((~~(((Adj_70_t1_v9(t_0)))))))) { 
          ! phrase 8
          ! [8: say ~His~]
-         say__p=1;ParaContent();  print (PrintText) SC_226;  .L_Say256; .L_SayX254;
+         say__p=1;ParaContent();  print (PrintText) SC_227;  .L_Say257; .L_SayX255;
          ! phrase 9
          ! [9: otherwise if the item is female and item is not neuter]
           } else if (((((Adj_68_t1_v9(t_0))))) && (((~~(((Adj_70_t1_v9(t_0)))))))) { 
          ! phrase 10
          ! [10: say ~Hers~]
-         say__p=1;ParaContent();  print (PrintText) SC_238;  .L_Say257; .L_SayX255;
+         say__p=1;ParaContent();  print (PrintText) SC_239;  .L_Say258; .L_SayX256;
          ! phrase 11
          ! [11: otherwise]
          } else {
 
          ! phrase 12
          ! [12: say ~Its~]
-         say__p=1;ParaContent();  print (PrintText) SC_228;  .L_Say258; .L_SayX256;
+         say__p=1;ParaContent();  print (PrintText) SC_229;  .L_Say259; .L_SayX257;
          ! phrase 13
          ! [13: end if]
          }
@@ -31348,7 +31355,7 @@ Array printed_text --> 64;
 [ PHR_847_r68 ;
       ! phrase 1
       ! [1: say its-theirs of prior named noun]
-      say__p=1;ParaContent(); (PHR_848_r69 ((Global_Vars-->11))); .L_Say259; .L_SayX257;
+      say__p=1;ParaContent(); (PHR_848_r69 ((Global_Vars-->11))); .L_Say260; .L_SayX258;
    rfalse;
 ];
 ! Request 69: phrase thing -> nothing
@@ -31368,32 +31375,32 @@ Array printed_text --> 64;
        if (((PHR_794_r20 (t_0))))  {
          ! phrase 4
          ! [4: say ~Theirs~]
-         say__p=1;ParaContent();  print (PrintText) SC_236;  .L_Say260; .L_SayX258;
+         say__p=1;ParaContent();  print (PrintText) SC_237;  .L_Say261; .L_SayX259;
          ! phrase 5
          ! [5: otherwise if the item is the player]
           } else if (((t_0 == player))) { 
          ! phrase 6
          ! [6: say ~Yours~]
-         say__p=1;ParaContent();  print (PrintText) SC_237;  .L_Say261; .L_SayX259;
+         say__p=1;ParaContent();  print (PrintText) SC_238;  .L_Say262; .L_SayX260;
          ! phrase 7
          ! [7: otherwise if the item is male and item is not neuter]
           } else if (((((Adj_69_t1_v9(t_0))))) && (((~~(((Adj_70_t1_v9(t_0)))))))) { 
          ! phrase 8
          ! [8: say ~His~]
-         say__p=1;ParaContent();  print (PrintText) SC_226;  .L_Say262; .L_SayX260;
+         say__p=1;ParaContent();  print (PrintText) SC_227;  .L_Say263; .L_SayX261;
          ! phrase 9
          ! [9: otherwise if the item is female and item is not neuter]
           } else if (((((Adj_68_t1_v9(t_0))))) && (((~~(((Adj_70_t1_v9(t_0)))))))) { 
          ! phrase 10
          ! [10: say ~Hers~]
-         say__p=1;ParaContent();  print (PrintText) SC_238;  .L_Say263; .L_SayX261;
+         say__p=1;ParaContent();  print (PrintText) SC_239;  .L_Say264; .L_SayX262;
          ! phrase 11
          ! [11: otherwise]
          } else {
 
          ! phrase 12
          ! [12: say ~Its~]
-         say__p=1;ParaContent();  print (PrintText) SC_228;  .L_Say264; .L_SayX262;
+         say__p=1;ParaContent();  print (PrintText) SC_229;  .L_Say265; .L_SayX263;
          ! phrase 13
          ! [13: end if]
          }
@@ -31406,7 +31413,7 @@ Array printed_text --> 64;
 [ PHR_849_r70 ;
       ! phrase 1
       ! [1: say possessive of prior named noun]
-      say__p=1;ParaContent(); (PHR_850_r71 ((Global_Vars-->11))); .L_Say265; .L_SayX263;
+      say__p=1;ParaContent(); (PHR_850_r71 ((Global_Vars-->11))); .L_Say266; .L_SayX264;
    rfalse;
 ];
 ! Request 71: phrase thing -> nothing
@@ -31426,20 +31433,20 @@ Array printed_text --> 64;
        if (((t_0 == player)))  {
          ! phrase 4
          ! [4: say ~your~]
-         say__p=1;ParaContent();  print (PrintText) SC_220;  .L_Say266; .L_SayX264;
+         say__p=1;ParaContent();  print (PrintText) SC_221;  .L_Say267; .L_SayX265;
          ! phrase 5
          ! [5: otherwise if the item acts plural]
           } else if (((PHR_794_r20 (t_0)))) { 
          ! phrase 6
          ! [6: say ~[the item][apostrophe]~]
-         say__p=1;ParaContent();  print (the) t_0; ParaContent();  print "'";  .L_Say267; .L_SayX265;
+         say__p=1;ParaContent();  print (the) t_0; ParaContent();  print "'";  .L_Say268; .L_SayX266;
          ! phrase 7
          ! [7: otherwise]
          } else {
 
          ! phrase 8
          ! [8: say ~[the item][apostrophe]s~]
-         say__p=1;ParaContent();  print (the) t_0; ParaContent();  print "'"; ParaContent();  print (PrintText) SC_201;  .L_Say268; .L_SayX266;
+         say__p=1;ParaContent();  print (the) t_0; ParaContent();  print "'"; ParaContent();  print (PrintText) SC_202;  .L_Say269; .L_SayX267;
          ! phrase 9
          ! [9: end if]
          }
@@ -31452,7 +31459,7 @@ Array printed_text --> 64;
 [ PHR_851_r72 ;
       ! phrase 1
       ! [1: say possessive of prior named noun]
-      say__p=1;ParaContent(); (PHR_854_r75 ((Global_Vars-->11))); .L_Say269; .L_SayX267;
+      say__p=1;ParaContent(); (PHR_854_r75 ((Global_Vars-->11))); .L_Say270; .L_SayX268;
    rfalse;
 ];
 ! Request 73: phrase thing -> nothing
@@ -31472,20 +31479,20 @@ Array printed_text --> 64;
        if (((t_0 == player)))  {
          ! phrase 4
          ! [4: say ~Your~]
-         say__p=1;ParaContent();  print (PrintText) SC_225;  .L_Say270; .L_SayX268;
+         say__p=1;ParaContent();  print (PrintText) SC_226;  .L_Say271; .L_SayX269;
          ! phrase 5
          ! [5: otherwise if the item acts plural]
           } else if (((PHR_794_r20 (t_0)))) { 
          ! phrase 6
          ! [6: say ~[The item][apostrophe]~]
-         say__p=1;ParaContent();  print (The) t_0; ParaContent();  print "'";  .L_Say271; .L_SayX269;
+         say__p=1;ParaContent();  print (The) t_0; ParaContent();  print "'";  .L_Say272; .L_SayX270;
          ! phrase 7
          ! [7: otherwise]
          } else {
 
          ! phrase 8
          ! [8: say ~[The item][apostrophe]s~]
-         say__p=1;ParaContent();  print (The) t_0; ParaContent();  print "'"; ParaContent();  print (PrintText) SC_201;  .L_Say272; .L_SayX270;
+         say__p=1;ParaContent();  print (The) t_0; ParaContent();  print "'"; ParaContent();  print (PrintText) SC_202;  .L_Say273; .L_SayX271;
          ! phrase 9
          ! [9: end if]
          }
@@ -31498,7 +31505,7 @@ Array printed_text --> 64;
 [ PHR_853_r74 ;
       ! phrase 1
       ! [1: say possessive of prior named noun]
-      say__p=1;ParaContent(); (PHR_854_r75 ((Global_Vars-->11))); .L_Say273; .L_SayX271;
+      say__p=1;ParaContent(); (PHR_854_r75 ((Global_Vars-->11))); .L_Say274; .L_SayX272;
    rfalse;
 ];
 ! Request 75: phrase thing -> nothing
@@ -31518,20 +31525,20 @@ Array printed_text --> 64;
        if (((t_0 == player)))  {
          ! phrase 4
          ! [4: say ~Your~]
-         say__p=1;ParaContent();  print (PrintText) SC_225;  .L_Say274; .L_SayX272;
+         say__p=1;ParaContent();  print (PrintText) SC_226;  .L_Say275; .L_SayX273;
          ! phrase 5
          ! [5: otherwise if the item acts plural]
           } else if (((PHR_794_r20 (t_0)))) { 
          ! phrase 6
          ! [6: say ~[The item][apostrophe]~]
-         say__p=1;ParaContent();  print (The) t_0; ParaContent();  print "'";  .L_Say275; .L_SayX273;
+         say__p=1;ParaContent();  print (The) t_0; ParaContent();  print "'";  .L_Say276; .L_SayX274;
          ! phrase 7
          ! [7: otherwise]
          } else {
 
          ! phrase 8
          ! [8: say ~[The item][apostrophe]s~]
-         say__p=1;ParaContent();  print (The) t_0; ParaContent();  print "'"; ParaContent();  print (PrintText) SC_201;  .L_Say276; .L_SayX274;
+         say__p=1;ParaContent();  print (The) t_0; ParaContent();  print "'"; ParaContent();  print (PrintText) SC_202;  .L_Say277; .L_SayX275;
          ! phrase 9
          ! [9: end if]
          }
@@ -31553,171 +31560,171 @@ Array printed_text --> 64;
    rfalse;
 ];
 [ text_routine_0;
-say__p=1;ParaContent();  print (PrintText) SC_239; ParaContent();  DivideParagraphPoint(); new_line; ParaContent();  print (PrintText) SC_240;  .L_Say277; .L_SayX275;
+say__p=1;ParaContent();  print (PrintText) SC_240; ParaContent();  DivideParagraphPoint(); new_line; ParaContent();  print (PrintText) SC_241;  .L_Say278; .L_SayX276;
     rtrue;
 ];
 
 [ text_routine_1;
-say__p=1;ParaContent();  print (PrintText) SC_241; ParaContent();  @push subst__v;
+say__p=1;ParaContent();  print (PrintText) SC_242; ParaContent();  @push subst__v;
 		objectloop (subst__v ofclass Object) if (((subst__v ofclass K2_thing) && (I103_mantel == SupporterOf(subst__v))))
 		give subst__v workflag2; else give subst__v ~workflag2;
 		WriteListOfMarkedObjects(ENGLISH_BIT);
-		@pull subst__v; ParaContent();  print (PrintText) SC_97;  .L_Say278; .L_SayX276;
+		@pull subst__v; ParaContent();  print (PrintText) SC_97;  .L_Say279; .L_SayX277;
     rtrue;
 ];
 
 [ text_routine_2;
-say__p=1;ParaContent();  print (PrintText) SC_242; 
-	if (~~(((((Adj_61_t1_v9(I104_decorative_egg))))))) jump L_Say279;
-		ParaContent();  print (PrintText) SC_243; 
-	.L_Say279; .L_SayX277;
-		ParaContent();  print (PrintText) SC_97;  .L_Say280; .L_SayX278;
+say__p=1;ParaContent();  print (PrintText) SC_243; 
+	if (~~(((((Adj_61_t1_v9(I104_decorative_egg))))))) jump L_Say280;
+		ParaContent();  print (PrintText) SC_244; 
+	.L_Say280; .L_SayX278;
+		ParaContent();  print (PrintText) SC_97;  .L_Say281; .L_SayX279;
     rtrue;
 ];
 
 [ text_routine_3;
-say__p=1;ParaContent();  print (PrintText) SC_244; ParaContent();  @push subst__v;
+say__p=1;ParaContent();  print (PrintText) SC_245; ParaContent();  @push subst__v;
 		objectloop (subst__v ofclass Object) if (((subst__v ofclass K2_thing) && (I105_side_table == SupporterOf(subst__v))))
 		give subst__v workflag2; else give subst__v ~workflag2;
 		WriteListOfMarkedObjects(ENGLISH_BIT);
-		@pull subst__v; ParaContent();  print (PrintText) SC_97;  .L_Say281; .L_SayX279;
+		@pull subst__v; ParaContent();  print (PrintText) SC_97;  .L_Say282; .L_SayX280;
     rtrue;
 ];
 
 [ text_routine_4;
-say__p=1;ParaContent();  print (PrintText) SC_245; ParaContent();  DivideParagraphPoint(); new_line; ParaContent();  print (PrintText) SC_246;  .L_Say282; .L_SayX280;
+say__p=1;ParaContent();  print (PrintText) SC_246; ParaContent();  DivideParagraphPoint(); new_line; ParaContent();  print (PrintText) SC_247;  .L_Say283; .L_SayX281;
     rtrue;
 ];
 
 [ text_routine_5;
-say__p=1;ParaContent();  print (PrintText) SC_247; ParaContent();  @push subst__v;
+say__p=1;ParaContent();  print (PrintText) SC_248; ParaContent();  @push subst__v;
 		objectloop (subst__v ofclass Object) if (((subst__v ofclass K2_thing) && (I115_counter == SupporterOf(subst__v))))
 		give subst__v workflag2; else give subst__v ~workflag2;
 		WriteListOfMarkedObjects(ENGLISH_BIT);
-		@pull subst__v; ParaContent();  print (PrintText) SC_97;  .L_Say283; .L_SayX281;
+		@pull subst__v; ParaContent();  print (PrintText) SC_97;  .L_Say284; .L_SayX282;
     rtrue;
 ];
 
 [ text_routine_6;
-say__p=1;ParaContent();  print (PrintText) SC_248; 
-	if (~~(((((Adj_61_t1_v9(I123_pot))))))) jump L_Say284;
-		ParaContent();  print (PrintText) SC_243; 
-	.L_Say284; .L_SayX282;
-		ParaContent();  print (PrintText) SC_97;  .L_Say285; .L_SayX283;
+say__p=1;ParaContent();  print (PrintText) SC_249; 
+	if (~~(((((Adj_61_t1_v9(I123_pot))))))) jump L_Say285;
+		ParaContent();  print (PrintText) SC_244; 
+	.L_Say285; .L_SayX283;
+		ParaContent();  print (PrintText) SC_97;  .L_Say286; .L_SayX284;
     rtrue;
 ];
 
 [ text_routine_7;
-say__p=1;ParaContent();  print (PrintText) SC_249; 
-	if (~~(((((Adj_61_t1_v9(I120_drawer))))))) jump L_Say286;
-		ParaContent();  print (PrintText) SC_243; 
-	.L_Say286; .L_SayX284;
-		ParaContent();  print (PrintText) SC_97;  .L_Say287; .L_SayX285;
+say__p=1;ParaContent();  print (PrintText) SC_250; 
+	if (~~(((((Adj_61_t1_v9(I120_drawer))))))) jump L_Say287;
+		ParaContent();  print (PrintText) SC_244; 
+	.L_Say287; .L_SayX285;
+		ParaContent();  print (PrintText) SC_97;  .L_Say288; .L_SayX286;
     rtrue;
 ];
 
 [ text_routine_8;
-say__p=1;ParaContent();  print (PrintText) SC_250; 
-	if (~~((((player == I154_girl))))) jump L_Say288;
-		ParaContent();  print (PrintText) SC_251; 
-	jump L_SayX286; .L_Say288;
+say__p=1;ParaContent();  print (PrintText) SC_251; 
+	if (~~((((player == I154_girl))))) jump L_Say289;
 		ParaContent();  print (PrintText) SC_252; 
-	.L_Say289; .L_SayX286;
-		ParaContent();  print (PrintText) SC_253;  .L_Say290; .L_SayX287;
+	jump L_SayX287; .L_Say289;
+		ParaContent();  print (PrintText) SC_253; 
+	.L_Say290; .L_SayX287;
+		ParaContent();  print (PrintText) SC_254;  .L_Say291; .L_SayX288;
     rtrue;
 ];
 
 [ text_routine_9;
-say__p=1;ParaContent();  print (PrintText) SC_254; 
-	if (~~((((player == I154_girl))))) jump L_Say291;
-		ParaContent();  print (PrintText) SC_255; ParaContent();  print "'"; ParaContent();  print (PrintText) SC_256; 
-	jump L_SayX288; .L_Say291;
-		ParaContent();  print (PrintText) SC_257; 
-	.L_Say292; .L_SayX288;
-		 .L_Say293; .L_SayX289;
+say__p=1;ParaContent();  print (PrintText) SC_255; 
+	if (~~((((player == I154_girl))))) jump L_Say292;
+		ParaContent();  print (PrintText) SC_256; ParaContent();  print "'"; ParaContent();  print (PrintText) SC_257; 
+	jump L_SayX289; .L_Say292;
+		ParaContent();  print (PrintText) SC_258; 
+	.L_Say293; .L_SayX289;
+		 .L_Say294; .L_SayX290;
     rtrue;
 ];
 
 [ text_routine_10;
-say__p=1;ParaContent();  print (PrintText) SC_258; ParaContent();  DivideParagraphPoint(); new_line; ParaContent();  print (PrintText) SC_259;  .L_Say294; .L_SayX290;
+say__p=1;ParaContent();  print (PrintText) SC_259; ParaContent();  DivideParagraphPoint(); new_line; ParaContent();  print (PrintText) SC_260;  .L_Say295; .L_SayX291;
     rtrue;
 ];
 
 [ text_routine_11;
-say__p=1;ParaContent();  print (PrintText) SC_260; 
-	if (~~((((~~(( (Prop_60())  == 0))))))) jump L_Say295;
-		ParaContent();  print (PrintText) SC_261; 
-	.L_Say295; .L_SayX291;
-		 .L_Say296; .L_SayX292;
+say__p=1;ParaContent();  print (PrintText) SC_261; 
+	if (~~((((~~(( (Prop_60())  == 0))))))) jump L_Say296;
+		ParaContent();  print (PrintText) SC_262; 
+	.L_Say296; .L_SayX292;
+		 .L_Say297; .L_SayX293;
     rtrue;
 ];
 
 [ text_routine_12;
-say__p=1;ParaContent();  print (PrintText) SC_262; ParaContent();  DivideParagraphPoint(); new_line; ParaContent();  print (PrintText) SC_263;  .L_Say297; .L_SayX293;
+say__p=1;ParaContent();  print (PrintText) SC_263; ParaContent();  DivideParagraphPoint(); new_line; ParaContent();  print (PrintText) SC_264;  .L_Say298; .L_SayX294;
     rtrue;
 ];
 
 [ text_routine_13;
-say__p=1;ParaContent();  print (PrintText) SC_264; 
-	if (~~((((I145_bed == SupporterOf(I154_girl)))))) jump L_Say298;
-		ParaContent();  print (PrintText) SC_265; ParaContent(); 
-	jump L_SayX294; .L_Say298; if (~~(((Prop_61())))) jump L_Say299;
-		ParaContent();  print (PrintText) SC_266; ParaContent(); (PHR_795_r21 ());ParaContent();  print (PrintText) SC_137; ParaContent();  @push subst__v;
+say__p=1;ParaContent();  print (PrintText) SC_265; 
+	if (~~((((I145_bed == SupporterOf(I154_girl)))))) jump L_Say299;
+		ParaContent();  print (PrintText) SC_266; ParaContent(); 
+	jump L_SayX295; .L_Say299; if (~~(((Prop_61())))) jump L_Say300;
+		ParaContent();  print (PrintText) SC_267; ParaContent(); (PHR_795_r21 ());ParaContent();  print (PrintText) SC_138; ParaContent();  @push subst__v;
 		objectloop (subst__v ofclass Object) if (((subst__v ofclass K2_thing) && (I145_bed == SupporterOf(subst__v))))
 		give subst__v workflag2; else give subst__v ~workflag2;
 		WriteListOfMarkedObjects(ENGLISH_BIT);
 		@pull subst__v; 
-	.L_Say299; .L_SayX294;
-		ParaContent();  print (PrintText) SC_97;  .L_Say300; .L_SayX295;
+	.L_Say300; .L_SayX295;
+		ParaContent();  print (PrintText) SC_97;  .L_Say301; .L_SayX296;
     rtrue;
 ];
 
 [ text_routine_14;
-say__p=1;ParaContent();  print (PrintText) SC_267; 
-	if (~~(((((Adj_61_t1_v9(I148_clothes_hamper))))))) jump L_Say301;
-		ParaContent();  print (PrintText) SC_243; 
-	jump L_SayX296; .L_Say301;
-		ParaContent();  print (PrintText) SC_268; 
-	.L_Say302; .L_SayX296;
-		ParaContent();  print (PrintText) SC_97;  .L_Say303; .L_SayX297;
+say__p=1;ParaContent();  print (PrintText) SC_268; 
+	if (~~(((((Adj_61_t1_v9(I148_clothes_hamper))))))) jump L_Say302;
+		ParaContent();  print (PrintText) SC_244; 
+	jump L_SayX297; .L_Say302;
+		ParaContent();  print (PrintText) SC_269; 
+	.L_Say303; .L_SayX297;
+		ParaContent();  print (PrintText) SC_97;  .L_Say304; .L_SayX298;
     rtrue;
 ];
 
 [ text_routine_15;
-say__p=1;ParaContent();  print (PrintText) SC_269; 
-	if (~~((((~~(( (Prop_62())  == 0))))))) jump L_Say304;
-		ParaContent();  print (PrintText) SC_270; 
-	.L_Say304; .L_SayX298;
+say__p=1;ParaContent();  print (PrintText) SC_270; 
+	if (~~((((~~(( (Prop_62())  == 0))))))) jump L_Say305;
 		ParaContent();  print (PrintText) SC_271; 
-	if (~~((((I159_basket == ContainerOf(I160_plush_bilby)))))) jump L_Say305;
-		ParaContent();  print (PrintText) SC_272; 
 	.L_Say305; .L_SayX299;
-		 .L_Say306; .L_SayX300;
+		ParaContent();  print (PrintText) SC_272; 
+	if (~~((((I159_basket == ContainerOf(I160_plush_bilby)))))) jump L_Say306;
+		ParaContent();  print (PrintText) SC_273; 
+	.L_Say306; .L_SayX300;
+		 .L_Say307; .L_SayX301;
     rtrue;
 ];
 
 [ text_routine_16;
-say__p=1;ParaContent();  print (PrintText) Story; ParaContent();  print (PrintText) SC_273; ParaContent();  style underline; ParaContent();  print (PrintText) SC_274; ParaContent();  style roman; ParaContent();  print (PrintText) SC_275;  .L_Say307; .L_SayX301;
+say__p=1;ParaContent();  print (PrintText) Story; ParaContent();  print (PrintText) SC_274; ParaContent();  style underline; ParaContent();  print (PrintText) SC_275; ParaContent();  style roman; ParaContent();  print (PrintText) SC_276;  .L_Say308; .L_SayX302;
     rtrue;
 ];
 
 [ text_routine_17;
-say__p=1;ParaContent();  print (PrintShortName) real_location;  .L_Say308; .L_SayX302;
+say__p=1;ParaContent();  print (PrintShortName) real_location;  .L_Say309; .L_SayX303;
     rtrue;
 ];
 
 [ text_routine_18;
-say__p=1;ParaContent();  print (say__n=score); ParaContent();  print (PrintText) SC_276; ParaContent();  print (say__n=turns);  .L_Say309; .L_SayX303;
+say__p=1;ParaContent();  print (say__n=score); ParaContent();  print (PrintText) SC_277; ParaContent();  print (say__n=turns);  .L_Say310; .L_SayX304;
     rtrue;
 ];
 
 [ text_routine_19;
-say__p=1;ParaContent();  print (say__n=score); ParaContent();  print (PrintText) SC_277;  .L_Say310; .L_SayX304;
+say__p=1;ParaContent();  print (say__n=score); ParaContent();  print (PrintText) SC_278;  .L_Say311; .L_SayX305;
     rtrue;
 ];
 
 [ text_routine_20;
-say__p=1;ParaContent();  print (say__n=score); ParaContent();  print (PrintText) SC_278;  .L_Say311; .L_SayX305;
+say__p=1;ParaContent();  print (say__n=score); ParaContent();  print (PrintText) SC_279;  .L_Say312; .L_SayX306;
     rtrue;
 ];
 
@@ -35075,52 +35082,52 @@ ArgumentTypeFailed(filename, line);
 Array ConstantListPointers --> 
  0 0;
 
-Constant SC_137 = " ";
-Constant SC_176 = " - behind ";
-Constant SC_178 = " - inside ";
-Constant SC_179 = " - on ";
-Constant SC_177 = " - under ";
-Constant SC_261 = " It's sitting on a collection of brightly colored eggs.";
-Constant SC_251 = " The bathroom is east, and the closet is west.";
-Constant SC_257 = " To the east is a bedroom. To the west is a closed door.";
-Constant SC_252 = " To the east is a closed door. To the west is a closet. ";
-Constant SC_255 = " Your bedroom is east, and your parents";
-Constant SC_270 = " and a collection of colorful eggs";
+Constant SC_138 = " ";
+Constant SC_177 = " - behind ";
+Constant SC_179 = " - inside ";
+Constant SC_180 = " - on ";
+Constant SC_178 = " - under ";
+Constant SC_262 = " It's sitting on a collection of brightly colored eggs.";
+Constant SC_252 = " The bathroom is east, and the closet is west.";
+Constant SC_258 = " To the east is a bedroom. To the west is a closed door.";
+Constant SC_253 = " To the east is a closed door. To the west is a closet. ";
+Constant SC_256 = " Your bedroom is east, and your parents";
+Constant SC_271 = " and a collection of colorful eggs";
 Constant SC_114 = " and all.";
-Constant SC_256 = " bedroom is west.";
+Constant SC_257 = " bedroom is west.";
 Constant SC_96 = " behind ";
-Constant SC_278 = " eggs found";
-Constant SC_277 = " eggs hidden";
-Constant SC_187 = " eggs out of ";
-Constant SC_155 = " here";
-Constant SC_145 = " or ";
-Constant SC_181 = " reveals ";
+Constant SC_279 = " eggs found";
+Constant SC_278 = " eggs hidden";
+Constant SC_188 = " eggs out of ";
+Constant SC_156 = " here";
+Constant SC_146 = " or ";
+Constant SC_182 = " reveals ";
 Constant SC_93 = " to the cat, but it doesn't seem interested.";
 Constant SC_91 = " to the spider. It reaches out with two giant legs and gently takes the egg from you.";
 Constant SC_98 = " under ";
-Constant SC_273 = " was created for the ";
-Constant SC_150 = " you ";
-Constant SC_183 = " you find ";
-Constant SC_139 = "(Press any key.)";
-Constant SC_146 = ", ";
-Constant SC_265 = ", in which lies a young girl";
-Constant SC_266 = ", on which ";
+Constant SC_274 = " was created for the ";
+Constant SC_151 = " you ";
+Constant SC_184 = " you find ";
+Constant SC_140 = "(Press any key.)";
+Constant SC_147 = ", ";
+Constant SC_266 = ", in which lies a young girl";
+Constant SC_267 = ", on which ";
 Constant SC_110 = ", swallowing it ";
-Constant SC_144 = ",";
-Constant SC_271 = ". ";
-Constant SC_275 = ". Beta testers included Zachary Barryte, Matthew Patterson, verityvirtue and Oreolek.";
-Constant SC_268 = ". It is closed";
-Constant SC_243 = ". It is open";
-Constant SC_131 = ". It seems to be sitting on a clutch of brightly colored eggs";
-Constant SC_132 = ". You quickly back out of the bathroom and shut the door behind you.";
+Constant SC_145 = ",";
+Constant SC_272 = ". ";
+Constant SC_276 = ". Beta testers included Zachary Barryte, Matthew Patterson, verityvirtue and Oreolek.";
+Constant SC_269 = ". It is closed";
+Constant SC_244 = ". It is open";
+Constant SC_132 = ". It seems to be sitting on a clutch of brightly colored eggs";
+Constant SC_133 = ". You quickly back out of the bathroom and shut the door behind you.";
 Constant SC_97 = ".";
-Constant SC_276 = "/";
+Constant SC_277 = "/";
 Constant SC_79 = ": ";
-Constant SC_156 = ":";
-Constant SC_147 = "> ";
+Constant SC_157 = ":";
+Constant SC_148 = "> ";
 Constant SC_69 = ">";
-Constant SC_143 = "?";
-Constant SC_242 = "A beautiful jeweled egg with a hinge";
+Constant SC_144 = "?";
+Constant SC_243 = "A beautiful jeweled egg with a hinge";
 Constant SC_33 = "A black trash can. The trash has been taken out recently.";
 Constant SC_32 = "A blue recycling bin with a white logo on the side. It is overflowing with paper goods.";
 Constant SC_27 = "A bowl of fruit.";
@@ -35128,8 +35135,8 @@ Constant SC_44 = "A box containing holiday decorations.";
 Constant SC_9 = "A cardboard and carpet cat tree.";
 Constant SC_19 = "A collection of tissues.";
 Constant SC_4 = "A colorful, handpainted egg.";
-Constant SC_264 = "A cozy-looking bed";
-Constant SC_249 = "A drawer";
+Constant SC_265 = "A cozy-looking bed";
+Constant SC_250 = "A drawer";
 Constant SC_49 = "A fluffy white pillow.";
 Constant SC_52 = "A four-paned window.";
 Constant SC_29 = "A glass teapot with a lid.";
@@ -35138,17 +35145,17 @@ Constant SC_10 = "A grey sofa, with deep cushions and a single throw pillow.";
 Constant SC_45 = "A jumble of ornaments.";
 Constant SC_50 = "A little girl lies fast asleep, visions of jelly beans dancing in her head.";
 Constant SC_43 = "A long black coat with two pockets.";
-Constant SC_247 = "A marble counter top, on which are ";
+Constant SC_248 = "A marble counter top, on which are ";
 Constant SC_30 = "A metal breadbox.";
 Constant SC_42 = "A pair of white sneakers.";
 Constant SC_28 = "A pile of assorted fruit.";
 Constant SC_11 = "A pink and grey throw pillow.";
-Constant SC_269 = "A pink and orange woven plastic basket, filled with green grass";
+Constant SC_270 = "A pink and orange woven plastic basket, filled with green grass";
 Constant SC_54 = "A pink dress with purple flowers and green lace.";
-Constant SC_272 = "A plush toy sits in the basket.";
-Constant SC_241 = "A shelf above the fireplace, containing ";
+Constant SC_273 = "A plush toy sits in the basket.";
+Constant SC_242 = "A shelf above the fireplace, containing ";
 Constant SC_22 = "A shiny copper coin with a kangaroo on it.";
-Constant SC_248 = "A silver pot with a lid";
+Constant SC_249 = "A silver pot with a lid";
 Constant SC_17 = "A simple lightbulb.";
 Constant SC_2 = "A simple two-player game";
 Constant SC_51 = "A single slipper in the shape of a fuzzy blue monster.";
@@ -35163,84 +35170,84 @@ Constant SC_18 = "A tissue box full of tissues.";
 Constant SC_37 = "A white porcelain sink.";
 Constant SC_38 = "A white porcelain toilet.";
 Constant SC_39 = "A white porcelain tub.";
-Constant SC_267 = "A wicker clothes hamper";
-Constant SC_244 = "A wooden table, on which are ";
+Constant SC_268 = "A wicker clothes hamper";
+Constant SC_245 = "A wooden table, on which are ";
 Constant SC_3 = "Adri";
 Constant SC_25 = "An egg carton with space for twelve eggs.";
 Constant SC_55 = "An orange tabby cat.";
-Constant SC_194 = "Are";
+Constant SC_195 = "Are";
 Constant SC_6 = "As good-looking as ever.";
 Constant SC_84 = "Be careful, you don't want to get stuck in here!";
-Constant SC_188 = "Behind ";
+Constant SC_189 = "Behind ";
 Constant SC_105 = "Click. You switch the lamp off.";
 Constant SC_104 = "Click. You switch the lamp on.";
-Constant SC_168 = "Congratulations! You have found all the eggs!";
+Constant SC_169 = "Congratulations! You have found all the eggs!";
 Constant SC_65 = "Easter basket";
 Constant SC_31 = "Gas range with four burners. There is a lidded pot on the front right burner.";
-Constant SC_165 = "Great! Now give the game to Player Two.";
+Constant SC_166 = "Great! Now give the game to Player Two.";
 Constant SC_34 = "Half of the refrigerator consists of the freezer area.";
 Constant SC_36 = "Hallway";
-Constant SC_169 = "Happy Easter!";
-Constant SC_199 = "Has";
-Constant SC_198 = "Have";
-Constant SC_207 = "He";
-Constant SC_227 = "Her";
-Constant SC_238 = "Hers";
-Constant SC_232 = "Him";
-Constant SC_226 = "His";
-Constant SC_164 = "If you're stuck, try ~find eggs~ to see the location of all eggs in the game.";
-Constant SC_149 = "In ";
-Constant SC_195 = "Is";
-Constant SC_218 = "It";
-Constant SC_157 = "It's not nice to steal!";
+Constant SC_170 = "Happy Easter!";
+Constant SC_200 = "Has";
+Constant SC_199 = "Have";
+Constant SC_208 = "He";
+Constant SC_228 = "Her";
+Constant SC_239 = "Hers";
+Constant SC_233 = "Him";
+Constant SC_227 = "His";
+Constant SC_165 = "If you're stuck, try ~find eggs~ to see the location of all eggs in the game.";
+Constant SC_150 = "In ";
+Constant SC_196 = "Is";
+Constant SC_219 = "It";
+Constant SC_158 = "It's not nice to steal!";
 Constant SC_14 = "It's one of those fake electric fireplaces. It is turned off.";
-Constant SC_228 = "Its";
+Constant SC_229 = "Its";
 Constant SC_68 = "Looking closely at the egg, you see that the text doesn't actually make any sense.";
 Constant SC_88 = "No, you need to hide the eggs, not eat them.";
 Constant SC_123 = "Nope.";
 Constant SC_76 = "Noted.";
-Constant SC_130 = "Oh! There is a giant spider here";
-Constant SC_151 = "On ";
+Constant SC_131 = "Oh! There is a giant spider here";
+Constant SC_152 = "On ";
 Constant SC_78 = "Once a year, the Easter bilby brings handpainted eggs to all the good children.";
 Constant SC_67 = "Plastic green grass fills the bottom of the basket.";
-Constant SC_140 = "Player One: It is time to hide the Easter eggs! Try hiding eggs in, on, under and behind things.";
-Constant SC_166 = "Player Two: It is time to hunt for the Easter eggs! Try looking in, on, under and behind things.";
-Constant SC_191 = "Please press SPACE to continue.";
+Constant SC_141 = "Player One: It is time to hide the Easter eggs! Try hiding eggs in, on, under and behind things.";
+Constant SC_167 = "Player Two: It is time to hunt for the Easter eggs! Try looking in, on, under and behind things.";
+Constant SC_192 = "Please press SPACE to continue.";
 Constant SC_74 = "QUIT";
 Constant SC_71 = "RESTART";
 Constant SC_72 = "RESTORE a saved game";
 Constant SC_13 = "Rows and rows of colorfully-bound books.";
-Constant SC_274 = "Ryan Veeder Exposition for Good Interactive Fiction";
-Constant SC_208 = "She";
+Constant SC_275 = "Ryan Veeder Exposition for Good Interactive Fiction";
+Constant SC_209 = "She";
 Constant SC_89 = "She's asleep.";
 Constant SC_21 = "Sofa cushions.";
-Constant SC_180 = "Taking ";
+Constant SC_181 = "Taking ";
 Constant SC_119 = "That is unnecessary.";
 Constant SC_125 = "That would be cruel!";
-Constant SC_209 = "That";
+Constant SC_210 = "That";
 Constant SC_83 = "That's funny. It doesn't seem to work.";
 Constant SC_101 = "That's not what that means!";
-Constant SC_172 = "The door is already open. There is no need to knock.";
+Constant SC_173 = "The door is already open. There is no need to knock.";
 Constant SC_94 = "The fireplace is covered with a sheet of glass. It can't contain things.";
-Constant SC_254 = "The hallway continues to the north.";
-Constant SC_250 = "The hallway continues to the south.";
+Constant SC_255 = "The hallway continues to the north.";
+Constant SC_251 = "The hallway continues to the south.";
 Constant SC_46 = "The left pocket of the coat.";
-Constant SC_253 = "The living room is north.";
+Constant SC_254 = "The living room is north.";
 Constant SC_47 = "The right pocket of the coat.";
-Constant SC_133 = "The spider is still there. It waves a leg or three at you. Nope nope nope. Back into the hallway you go, closing the door tightly behind you.";
-Constant SC_134 = "The spider seems to have wandered off.";
-Constant SC_224 = "Their";
-Constant SC_236 = "Theirs";
-Constant SC_231 = "Them";
+Constant SC_134 = "The spider is still there. It waves a leg or three at you. Nope nope nope. Back into the hallway you go, closing the door tightly behind you.";
+Constant SC_135 = "The spider seems to have wandered off.";
+Constant SC_225 = "Their";
+Constant SC_237 = "Theirs";
+Constant SC_232 = "Them";
 Constant SC_77 = "There are none at all available.";
 Constant SC_100 = "There is no response. Perhaps the cat of the house is out tonight.";
 Constant SC_99 = "There is no response. Which is good, because no one is supposed to see you!";
-Constant SC_170 = "There is no response. Your parents must still be asleep.";
-Constant SC_171 = "There is no response.";
-Constant SC_163 = "There is nothing behind ";
-Constant SC_160 = "There is nothing under ";
+Constant SC_171 = "There is no response. Your parents must still be asleep.";
+Constant SC_172 = "There is no response.";
+Constant SC_164 = "There is nothing behind ";
+Constant SC_161 = "There is nothing under ";
 Constant SC_103 = "There's no reason to do that.";
-Constant SC_217 = "They";
+Constant SC_218 = "They";
 Constant SC_58 = "This egg is covered in flowers.";
 Constant SC_64 = "This egg is covered in tiny black text.";
 Constant SC_62 = "This egg is gold and sparkly.";
@@ -35250,39 +35257,40 @@ Constant SC_60 = "This egg is painted to look like a ladybug.";
 Constant SC_57 = "This egg is painted with every color of the rainbow.";
 Constant SC_63 = "This egg is painted with green, brown and black splotches.";
 Constant SC_61 = "This egg is splashed with lots of different colors.";
-Constant SC_138 = "This game has two parts. Player One will hide the eggs, and Player Two will hunt for them. This can be done on the same computer, or you can share save files.";
-Constant SC_260 = "This spider is about half as large as you are!";
-Constant SC_205 = "Those";
+Constant SC_139 = "This game has two parts. Player One will hide the eggs, and Player Two will hunt for them. This can be done on the same computer, or you can share save files.";
+Constant SC_261 = "This spider is about half as large as you are!";
+Constant SC_206 = "Those";
 Constant SC_75 = "UNDO the last command";
-Constant SC_182 = "Under ";
+Constant SC_183 = "Under ";
 Constant SC_87 = "Wait until you're inside the house!";
-Constant SC_142 = "Would you like to ";
-Constant SC_148 = "You ";
-Constant SC_167 = "You are a four-year-old girl named Julie. You are wearing your new Easter dress.";
+Constant SC_143 = "Would you like to ";
+Constant SC_149 = "You ";
+Constant SC_168 = "You are a four-year-old girl named Julie. You are wearing your new Easter dress.";
 Constant SC_127 = "You are also carrying:";
+Constant SC_130 = "You are carrying nothing.";
 Constant SC_129 = "You are carrying:";
-Constant SC_258 = "You are standing in the bathroom. The hallway is to the west.";
-Constant SC_262 = "You are standing in the bedroom. The hallway is to the west.";
+Constant SC_259 = "You are standing in the bathroom. The hallway is to the west.";
+Constant SC_263 = "You are standing in the bedroom. The hallway is to the west.";
 Constant SC_41 = "You are standing in the closet. The hallway is to the east.";
-Constant SC_245 = "You are standing in the kitchen. The living room is to the west.";
-Constant SC_239 = "You are standing in the living room. The front door is west, the kitchen is to the east, and the hallway leads south.";
+Constant SC_246 = "You are standing in the kitchen. The living room is to the west.";
+Constant SC_240 = "You are standing in the living room. The front door is west, the kitchen is to the east, and the hallway leads south.";
 Constant SC_7 = "You are standing outside. You can enter the house through the cat flap to the east.";
 Constant SC_8 = "You are the Easter bilby, a marsupial with a long muzzle, a long tail, and very long ears. You're about the size of a rabbit.";
-Constant SC_173 = "You can only do that to a door.";
-Constant SC_263 = "You can see a bed (next to which is a lone slipper), a dresser and a clothes hamper here. A single window looks out onto the back yard.";
-Constant SC_246 = "You can see a refrigerator, a counter, an oven, a recycling bin, and a trash can here.";
-Constant SC_240 = "You can see a sofa, a bookcase, a fireplace with a mantel, a side table, a cat tree, and a tall plant here.";
-Constant SC_259 = "You can see a toilet, a sink, and a tub here.";
+Constant SC_174 = "You can only do that to a door.";
+Constant SC_264 = "You can see a bed (next to which is a lone slipper), a dresser and a clothes hamper here. A single window looks out onto the back yard.";
+Constant SC_247 = "You can see a refrigerator, a counter, an oven, a recycling bin, and a trash can here.";
+Constant SC_241 = "You can see a sofa, a bookcase, a fireplace with a mantel, a side table, a cat tree, and a tall plant here.";
+Constant SC_260 = "You can see a toilet, a sink, and a tub here.";
 Constant SC_115 = "You can see the backyard from here.";
-Constant SC_162 = "You can't put anything behind ";
-Constant SC_161 = "You can't put anything under ";
+Constant SC_163 = "You can't put anything behind ";
+Constant SC_162 = "You can't put anything under ";
 Constant SC_85 = "You can't reach the doorknob. You'll need to use the cat flap.";
 Constant SC_124 = "You crack the shell and discard it.";
-Constant SC_174 = "You do the bilby hop. Hop hop hop.";
-Constant SC_158 = "You don't need that right now. You should focus on finding the eggs.";
+Constant SC_175 = "You do the bilby hop. Hop hop hop.";
+Constant SC_159 = "You don't need that right now. You should focus on finding the eggs.";
 Constant SC_106 = "You eat an ";
 Constant SC_116 = "You give the plush bilby a squeeze.";
-Constant SC_184 = "You have ";
+Constant SC_185 = "You have ";
 Constant SC_80 = "You need to finish hiding all the eggs!";
 Constant SC_90 = "You offer ";
 Constant SC_120 = "You pet the cat. It purrs softly.";
@@ -35293,65 +35301,65 @@ Constant SC_118 = "You should leave that where it is.";
 Constant SC_82 = "You should stay inside the house.";
 Constant SC_92 = "You try to offer ";
 Constant SC_121 = "You try to pick up the cat, but it wriggles out of your arms.";
-Constant SC_175 = "You twirl around.";
+Constant SC_176 = "You twirl around.";
 Constant SC_81 = "You unscrew the lightbulb first.";
-Constant SC_135 = "You unzip the pillow.";
-Constant SC_136 = "You zip the pillow closed again.";
-Constant SC_206 = "You";
+Constant SC_136 = "You unzip the pillow.";
+Constant SC_137 = "You zip the pillow closed again.";
+Constant SC_207 = "You";
 Constant SC_122 = "You'll have to be more specific. Do you mean the left pocket or the right pocket?";
-Constant SC_141 = "You'll have to be more specific. Which egg do you mean?";
-Constant SC_159 = "You'll need to crack the egg open first.";
+Constant SC_142 = "You'll have to be more specific. Which egg do you mean?";
+Constant SC_160 = "You'll need to crack the egg open first.";
 Constant SC_86 = "You're unable to reach the doorknob.";
 Constant SC_128 = "Your basket contains:";
 Constant SC_126 = "Your pouch contains:";
-Constant SC_225 = "Your";
-Constant SC_237 = "Yours";
-Constant SC_153 = "also ";
+Constant SC_226 = "Your";
+Constant SC_238 = "Yours";
+Constant SC_154 = "also ";
 Constant SC_107 = "apple";
-Constant SC_192 = "are";
+Constant SC_193 = "are";
 Constant SC_108 = "banana";
-Constant SC_152 = "can ";
+Constant SC_153 = "can ";
 Constant SC_111 = "core";
 Constant SC_15 = "decorative egg";
 Constant SC_24 = "egg carton";
-Constant SC_202 = "es";
-Constant SC_186 = "found";
+Constant SC_203 = "es";
+Constant SC_187 = "found";
 Constant SC_26 = "fruit bowl";
-Constant SC_197 = "has";
-Constant SC_196 = "have";
-Constant SC_212 = "he";
-Constant SC_222 = "her";
-Constant SC_235 = "hers";
-Constant SC_190 = "hidden behindneath";
-Constant SC_189 = "hidden underneath";
-Constant SC_185 = "hidden";
-Constant SC_230 = "him";
-Constant SC_221 = "his";
-Constant SC_204 = "ies";
-Constant SC_193 = "is";
-Constant SC_216 = "it";
-Constant SC_223 = "its";
+Constant SC_198 = "has";
+Constant SC_197 = "have";
+Constant SC_213 = "he";
+Constant SC_223 = "her";
+Constant SC_236 = "hers";
+Constant SC_191 = "hidden behindneath";
+Constant SC_190 = "hidden underneath";
+Constant SC_186 = "hidden";
+Constant SC_231 = "him";
+Constant SC_222 = "his";
+Constant SC_205 = "ies";
+Constant SC_194 = "is";
+Constant SC_217 = "it";
+Constant SC_224 = "its";
 Constant SC_109 = "orange";
 Constant SC_113 = "peel and seeds";
 Constant SC_112 = "peel";
 Constant SC_48 = "pillow";
-Constant SC_200 = "re";
-Constant SC_201 = "s";
-Constant SC_154 = "see ";
+Constant SC_201 = "re";
+Constant SC_202 = "s";
+Constant SC_155 = "see ";
 Constant SC_73 = "see some suggestions for AMUSING things to do";
-Constant SC_213 = "she";
+Constant SC_214 = "she";
 Constant SC_70 = "slice of life";
-Constant SC_214 = "that";
+Constant SC_215 = "that";
 Constant SC_5 = "the";
-Constant SC_219 = "their";
-Constant SC_233 = "theirs";
-Constant SC_229 = "them";
-Constant SC_215 = "they";
-Constant SC_210 = "those";
-Constant SC_203 = "y";
-Constant SC_211 = "you";
-Constant SC_220 = "your";
-Constant SC_234 = "yours";
+Constant SC_220 = "their";
+Constant SC_234 = "theirs";
+Constant SC_230 = "them";
+Constant SC_216 = "they";
+Constant SC_211 = "those";
+Constant SC_204 = "y";
+Constant SC_212 = "you";
+Constant SC_221 = "your";
+Constant SC_235 = "yours";
 
 #ifndef p0_specification; Constant p0_specification = 0; #endif;
 #ifndef p1_indefinite_appearance_tex; Constant p1_indefinite_appearance_tex = 0; #endif;
