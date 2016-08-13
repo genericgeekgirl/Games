@@ -1,12 +1,12 @@
 Debugging log of Inform 7
-Inform called as: /usr/local/libexec/ni --release --rules /usr/local/share/inform7/Inform7/Extensions --extension=z5 --package /home/adri/Games/Interactive Fiction/Adri/eggstraordinary adventure/eastereggs.inform/ 
+Inform called as: /usr/local/libexec/ni --release --rules /usr/local/share/inform7/Inform7/Extensions --extension=z5 --package /home/adri/Games/Interactive Fiction/Adri/eggstraordinary adventure/eastereggs.inform 
 
 
 -----------------------------------------------------
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 4707 words long.
+I've now read your source text, which is 5042 words long.
 
 
 -----------------------------------------------------
@@ -14,8 +14,8 @@ Phase II ... Semantic analysis Ia
 -----------------------------------------------------
 
 I've also read Standard Rules by Graham Nelson, which is 39455 words long.
-I've also read Hiding Under by Eric Eve, which is 3200 words long.
-I've also read Hiding Behind by Adri, which is 343 words long.
+I've also read Hiding Under by Adri, which is 3156 words long.
+I've also read Hiding Behind by Adri, which is 344 words long.
 I've also read Basic Screen Effects by Emily Short, which is 2155 words long.
 I've also read plurality by Emily Short, which is 3141 words long.
 
@@ -156,7 +156,7 @@ Phase XII ... Code generation
 Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
-Total of 144 files written as streams.
+Total of 147 files written as streams.
 
 That concludes the debugging log from this run of Inform.
 Its contents were as follows, and can be changed by placing

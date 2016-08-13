@@ -1,25 +1,25 @@
 ! Blurb file created by Inform build 6G60
 
-status "/usr/local/share/inform7/Inform7/Extensions/Reserved/CblorbModel.html" "/home/adri/Games/Interactive Fiction/Adri/eggstraordinary adventure/eastereggs.inform//Build/StatusCblorb.html"
+status "/usr/local/share/inform7/Inform7/Extensions/Reserved/CblorbModel.html" "/home/adri/Games/Interactive Fiction/Adri/eggstraordinary adventure/eastereggs.inform/Build/StatusCblorb.html"
 
 
 ! Identification
 
-project folder "/home/adri/Games/Interactive Fiction/Adri/eggstraordinary adventure/eastereggs.inform/"
+project folder "/home/adri/Games/Interactive Fiction/Adri/eggstraordinary adventure/eastereggs.inform"
 release to "/home/adri/Games/Interactive Fiction/Adri/eggstraordinary adventure/eastereggs Materials/Release"
 
 ! Blorb instructions
 
 storyfile leafname "Eggstraordinary Adventure.zblorb"
-storyfile "/home/adri/Games/Interactive Fiction/Adri/eggstraordinary adventure/eastereggs.inform//Build/output.z5" include
-ifiction "/home/adri/Games/Interactive Fiction/Adri/eggstraordinary adventure/eastereggs.inform//Metadata.iFiction" include
+storyfile "/home/adri/Games/Interactive Fiction/Adri/eggstraordinary adventure/eastereggs.inform/Build/output.z5" include
+ifiction "/home/adri/Games/Interactive Fiction/Adri/eggstraordinary adventure/eastereggs.inform/Metadata.iFiction" include
 cover "/usr/local/share/inform7/Inform7/Extensions/Reserved/DefaultCover.jpg"
 picture 1 "/usr/local/share/inform7/Inform7/Extensions/Reserved/DefaultCover.jpg"
 
 ! Placeholder variables
 
 placeholder [IFID] = "191A908D-DEB2-4756-BA7F-C30AFB08E42F"
-placeholder [RELEASE] = "1"
+placeholder [RELEASE] = "2"
 placeholder [YEAR] = "2016"
 placeholder [TITLE] = "Eggstraordinary Adventure"
 placeholder [AUTHOR] = "Adri"

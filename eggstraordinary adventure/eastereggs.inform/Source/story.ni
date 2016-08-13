@@ -1,14 +1,14 @@
 "Eggstraordinary Adventure" by "Adri"
 
 The story creation year is 2016.
-The release number is 1.
+The release number is 2.
 The story headline is "A simple two-player game".
 The story genre is "slice of life".
 The story description is "[story title] was created for the [italic type]Ryan Veeder Exposition for Good Interactive Fiction[roman type]. Beta testers included Zachary Barryte, Matthew Patterson, verityvirtue and Oreolek."
 
 Volume - Basic Setup
 
-Include Hiding Under by Eric Eve.
+Include Hiding Under by Adri.
 Include Hiding Behind by Adri.
 Include Basic Screen Effects by Emily Short.
 Include plurality by Emily Short.
@@ -24,6 +24,12 @@ Carry out fast quitting: follow the immediately quit rule.
 Requesting story information is an action out of world.
 Understand "about" and "credits" as requesting story information.
 Carry out requesting story information: say "[story description][line break]".
+
+Asking for help is an action applying to nothing.
+Understand "help" as asking for help.
+
+Carry out asking for help:
+say "If you're stuck, try 'find eggs' to see the location of all eggs in the game."
 
 Book - Scoring
 
@@ -374,13 +380,13 @@ Volume - Player Characters
 The bilby is a female animal in the Front Stoop. The description is "You are the Easter bilby, a marsupial with a long muzzle, a long tail, and very long ears. You're about the size of a rabbit."
 The player is the bilby.
 
-The girl is a woman on the bed. The description is "A little girl lies fast asleep, visions of jelly beans dancing in her head." Understand "Julie" as the girl. The girl is underneathable.
+The girl is a woman on the bed. The description is "A little girl lies fast asleep, visions of jelly beans dancing in her head." Understand "Julie" as the girl. The girl is underneathable and behindable.
 
 The dress is part of the girl. The description is "A pink dress with purple flowers and green lace."
 
 Volume - NPCs
 
-The tabby cat is a male animal. The description is "An orange tabby cat."
+The tabby cat is a male animal. The description is "An orange tabby cat." The tabby cat is underneathable.
 
 Does the player mean doing something to the tabby cat: it is likely.
 
@@ -575,6 +581,12 @@ Carry out examining a supporter when something is on the noun:
 
 Volume - Other Actions
 
+Before searching something underneathable:
+try looking under the noun.
+
+Before searching something behindable:
+try looking behind the noun.
+
 Understand "take all" and "take everything" as a mistake ("There are none at all available.")
 
 Understand "take all from pouch" as a mistake ("There are none at all available.")
@@ -601,3 +613,39 @@ say "You pet the cat. It purrs softly."
 
 Instead of taking the tabby cat:
 say "You try to pick up the cat, but it wriggles out of your arms."
+
+Volume - Auto-hiding eggs
+
+Autohiding is an action applying to nothing.
+Understand "autohide" as autohiding.
+
+Carry out autohiding:
+now the golden egg is in the lamp;
+remove the lightbulb from play;
+now the dinosaur egg is on the cat tree;
+now the floral egg is inside the throw pillow;
+now the princess egg is inside the decorative_egg;
+move the camouflage egg to the spider;
+now the ladybug egg is inside the plastic box;
+now the abstract egg is inside the slipper;
+now the rainbow egg is inside the hamper;
+now the newsprint egg is inside the right coat pocket.
+
+Volume - Finding eggs
+
+Finding eggs is an action applying to nothing.
+Understand "find eggs" as finding eggs.
+
+Report finding eggs:
+	repeat with obj running through things which are behindable:
+		if the number of eggs hidden behind the obj is greater than 0:
+ 			say "[a list of eggs hidden behind the obj] - behind [the obj][line break]";
+	repeat with obj running through things which are underneathable:
+		if the number of eggs hidden under the obj is greater than 0:
+			say "[a list of eggs hidden under the obj] - under [the obj][line break]";
+	repeat with obj running through things which are containers:
+		if the number of eggs inside the obj is greater than 0:
+			say "[a list of eggs inside the obj] - inside [the obj][line break]";
+	repeat with obj running through things which are supporters:
+		if the number of eggs on the obj is greater than 0:
+			say "[a list of eggs on the obj] - on [the obj][line break]".
