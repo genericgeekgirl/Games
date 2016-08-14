@@ -155,8 +155,19 @@ The shower is an enterable container in the bathroom. It is fixed in place.
 
 Understand "shower" as entering.
 
+Understand "exit shower" as exiting.
+
+Before entering the shower:
+	if the number of things carried by the player is greater than 0:
+		repeat with object running through things carried by the player:
+			move object to the location;
+ 		say "You drop everything you're carrying before entering the shower."
+
 Before taking the shower:
 try entering the shower instead.
+
+Check taking something in the bathroom when the player is in the shower:
+say "You can't reach that from inside the shower." instead.
 
 After entering the shower:
 say "You enter the shower and wash your hair and body. You are super clean!";
@@ -165,7 +176,7 @@ now situational anxiety is 10;
 reset perseverence.
 
 Check exiting when the player is in the shower and situational anxiety is greater than 0 and persevere count is less than 3:
-say "[one of]Did you wash your feet?[or]Are you sure you washed your feet?[or]You need to wash your feet![cycling]";
+say "You can't leave yet. [one of]Did you wash your feet?[or]Are you sure you washed your feet?[or]You need to wash your feet![cycling]";
 persevere instead.
 
 Instead of exiting when the player is in the shower and persevere count is 3:
@@ -233,11 +244,15 @@ decrease persevere count by 1.
 
 The dresser is a closed openable container in the bedroom. It is fixed in place.
 
+Check opening the dresser:
+	if the player is on the bed:
+		say "You can't reach that from the bed." instead.
+
 The blue shirt is a shirt in the dresser.
 The red shirt is a shirt in the dresser.
 The green shirt is a shirt in the dresser.
-The orange pants is a pants in the dresser.
-The purple pants is a pants in the dresser.
+The pair of orange pants is a pants in the dresser.
+The pair of purple pants is a pants in the dresser.
 
 Instead of wearing a clothing when the bathroom has not been visited:
 say "You need to take a shower before you can get dressed."
@@ -965,3 +980,4 @@ Test me with "flick bug / north / take shower / out / out / out / out / south / 
                 
 test train with "west / south / south / south / hold bar / resist / talk to man / sit / stand up".
 
+test shower with "flick bug / open dresser / take purple / north".

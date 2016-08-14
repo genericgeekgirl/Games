@@ -67,147 +67,147 @@
     </dict>
     <key>9</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/life with ocd/ggj.inform/Source/story.ni</string>
-        <key>Line</key><integer>191</integer>
+        <key>Line</key><integer>202</integer>
         <key>Title</key><string>Book - Bedroom (Clothing)</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>10</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/life with ocd/ggj.inform/Source/story.ni</string>
-        <key>Line</key><integer>254</integer>
+        <key>Line</key><integer>269</integer>
         <key>Title</key><string>Book - Living Room</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>11</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/life with ocd/ggj.inform/Source/story.ni</string>
-        <key>Line</key><integer>263</integer>
+        <key>Line</key><integer>278</integer>
         <key>Title</key><string>Book - Kitchen (breakfast)</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>12</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/life with ocd/ggj.inform/Source/story.ni</string>
-        <key>Line</key><integer>308</integer>
+        <key>Line</key><integer>323</integer>
         <key>Title</key><string>Book - Front Lawn</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>13</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/life with ocd/ggj.inform/Source/story.ni</string>
-        <key>Line</key><integer>348</integer>
+        <key>Line</key><integer>363</integer>
         <key>Title</key><string>Book - Train (designed by Rob)</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>14</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/life with ocd/ggj.inform/Source/story.ni</string>
-        <key>Line</key><integer>350</integer>
+        <key>Line</key><integer>365</integer>
         <key>Title</key><string>Chapter - Station</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>15</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/life with ocd/ggj.inform/Source/story.ni</string>
-        <key>Line</key><integer>354</integer>
+        <key>Line</key><integer>369</integer>
         <key>Title</key><string>Chapter - Train</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>16</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/life with ocd/ggj.inform/Source/story.ni</string>
-        <key>Line</key><integer>378</integer>
+        <key>Line</key><integer>393</integer>
         <key>Title</key><string>Chapter - Tapping (Vestibule / Front Car)</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>17</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/life with ocd/ggj.inform/Source/story.ni</string>
-        <key>Line</key><integer>411</integer>
+        <key>Line</key><integer>426</integer>
         <key>Title</key><string>Chapter - Bar</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>18</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/life with ocd/ggj.inform/Source/story.ni</string>
-        <key>Line</key><integer>442</integer>
+        <key>Line</key><integer>457</integer>
         <key>Title</key><string>Chapter - Homeless Man</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>19</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/life with ocd/ggj.inform/Source/story.ni</string>
-        <key>Line</key><integer>477</integer>
+        <key>Line</key><integer>492</integer>
         <key>Title</key><string>Chapter - Seat</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>20</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/life with ocd/ggj.inform/Source/story.ni</string>
-        <key>Line</key><integer>506</integer>
+        <key>Line</key><integer>521</integer>
         <key>Title</key><string>Chapter - Child</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>21</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/life with ocd/ggj.inform/Source/story.ni</string>
-        <key>Line</key><integer>526</integer>
+        <key>Line</key><integer>541</integer>
         <key>Title</key><string>Chapter - Exiting the Train</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>22</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/life with ocd/ggj.inform/Source/story.ni</string>
-        <key>Line</key><integer>559</integer>
+        <key>Line</key><integer>574</integer>
         <key>Title</key><string>Book - Downtown (designed by Rob)</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>23</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/life with ocd/ggj.inform/Source/story.ni</string>
-        <key>Line</key><integer>605</integer>
+        <key>Line</key><integer>620</integer>
         <key>Title</key><string>Book - Work (designed and written by Sin)</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>24</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/life with ocd/ggj.inform/Source/story.ni</string>
-        <key>Line</key><integer>673</integer>
+        <key>Line</key><integer>688</integer>
         <key>Title</key><string>Chapter - Work (lunch)</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>25</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/life with ocd/ggj.inform/Source/story.ni</string>
-        <key>Line</key><integer>741</integer>
+        <key>Line</key><integer>756</integer>
         <key>Title</key><string>Chapter - intermittent phone calls (Adri)</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>26</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/life with ocd/ggj.inform/Source/story.ni</string>
-        <key>Line</key><integer>787</integer>
+        <key>Line</key><integer>802</integer>
         <key>Title</key><string>Chapter - Work (client)</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>27</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/life with ocd/ggj.inform/Source/story.ni</string>
-        <key>Line</key><integer>841</integer>
+        <key>Line</key><integer>856</integer>
         <key>Title</key><string>Book - Social Event</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>28</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/life with ocd/ggj.inform/Source/story.ni</string>
-        <key>Line</key><integer>903</integer>
+        <key>Line</key><integer>918</integer>
         <key>Title</key><string>Book - Bedtime (Bedding)</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>29</key><dict>
         <key>Filename</key><string>/home/adri/Games/Interactive Fiction/Adri/life with ocd/ggj.inform/Source/story.ni</string>
-        <key>Line</key><integer>962</integer>
+        <key>Line</key><integer>977</integer>
         <key>Title</key><string>Volume - Testing</string>
         <key>Level</key><integer>1</integer>
         <key>Indentation</key><integer>1</integer>
