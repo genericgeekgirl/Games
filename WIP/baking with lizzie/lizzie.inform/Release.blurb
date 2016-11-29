@@ -1,0 +1,38 @@
+! Blurb file created by Inform build 6M62
+
+status "/usr/local/share/inform7/Internal/Miscellany/CblorbModel.html" "/home/adri/Games/Interactive Fiction/Adri/WIP/baking with lizzie/lizzie.inform/Build/StatusCblorb.html"
+
+
+! Identification
+
+project folder "/home/adri/Games/Interactive Fiction/Adri/WIP/baking with lizzie/lizzie.inform"
+release to "/home/adri/Games/Interactive Fiction/Adri/WIP/baking with lizzie/lizzie.materials/Release"
+
+! Blorb instructions
+
+storyfile leafname "Baking with Lizzie.gblorb"
+storyfile "/home/adri/Games/Interactive Fiction/Adri/WIP/baking with lizzie/lizzie.inform/Build/output.ulx" include
+ifiction "/home/adri/Games/Interactive Fiction/Adri/WIP/baking with lizzie/lizzie.inform/Metadata.iFiction" include
+cover "/usr/local/share/inform7/Internal/Miscellany/Cover.jpg"
+picture 1 "/usr/local/share/inform7/Internal/Miscellany/Cover.jpg"
+
+! Placeholder variables
+
+placeholder [IFID] = "C7E3093C-3C5A-4D1F-8935-0AEA8FCB6631"
+placeholder [RELEASE] = "1"
+placeholder [YEAR] = "2016"
+placeholder [TITLE] = "Baking with Lizzie"
+placeholder [AUTHOR] = "Adri"
+placeholder [BLURB] = "[story title] was created for the [italic type]Self-Care Jam[roman type]."
+
+! Other material to release
+
+status alternative ||Using 'Release along with cover art', to provide something more distinctive than the default artwork above&nbsp;<a href=inform:/doc403.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with a website'&nbsp;<a href=inform:/doc405.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with an interpreter', for in-browser play on your website&nbsp;<a href=inform:/doc406.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with a file of "Such-and-Such" called "whatever.pdf"', perhaps to add a manual, or a welcoming note&nbsp;<a href=inform:/doc401.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with the source text'&nbsp;<a href=inform:/doc412.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with a solution'&nbsp;<a href=inform:/doc411.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with the library card'&nbsp;<a href=inform:/doc412.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with the introductory booklet'&nbsp;<a href=inform:/doc404.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with the introductory postcard'&nbsp;<a href=inform:/doc404.html><img border=0 src=inform:/doc_images/help.png></a>||
