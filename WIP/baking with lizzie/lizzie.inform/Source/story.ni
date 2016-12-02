@@ -45,6 +45,8 @@ The ceiling is scenery in the kitchen. The description is "The ceiling is made o
 
 The walls are plural-named and scenery in the kitchen. "The walls have been dug out of the dirt and rock around you."
 
+Chapter - Rug
+
 The rug is part of the floor. The description is "It's a very colorful woven rug[if the recipe card is not enclosed by the kitchen]. One corner is flipped up[end if]."
 
 The corner is part of the rug. The description is "The corner of the rug is flipped up." Understand "corner of the rug" as corner.
@@ -98,6 +100,15 @@ The top of the refrigerator is a supporter and part of the mini refrigerator.
 
 The hooks are a plural-named supporter and part of the mini refrigerator. The description is "A set of white plastic hooks, glued to the side of the refrigerator."
 
+The crate is an open container on the top of the refrigerator. "It's a plastic crate containing assorted cooking implements." Understand "box" as crate.
+[TODO: Check taking the crate: confirm that stool was used somehow]
+
+The stream is scenery in the kitchen. The description is "A stream runs through one end of the room."
+The water is part of the stream. The description is "The water is clean and cold."
+[TODO: need to be able to take water and wash hands and stuff]
+ 
+Chapter - Stool
+
 The stool is a supporter in the kitchen. The stool is not fixed in place.
 The stool can be placed properly. The stool is not placed properly.
 
@@ -113,6 +124,11 @@ try climbing the stool instead.
 
 Before going when the player is on the stool:
 try getting off the stool instead.
+
+Check placing the stool:
+if the stool is placed properly, say "The stool is already in front of the refrigerator." instead.
+
+[TODO: open refrigerator with stool in front of it]
 
 Carry out placing the stool:
 say "You place the stool in front of the refrigerator.";
@@ -137,14 +153,6 @@ say "You can't reach that from down here." instead.
 Check taking the crate when the player is not on the stool and the stool is not placed properly:
 say "You can't reach that from here." instead.
 
-
-The crate is an open container on the top of the refrigerator. "It's a plastic crate containing assorted cooking implements." Understand "box" as crate.
-[TODO: Check taking the crate: confirm that stool was used somehow]
-
-The stream is scenery in the kitchen. The description is "A stream runs through one end of the room."
-The water is part of the stream. The description is "The water is clean and cold."
-[TODO: need to be able to take water and wash hands and stuff]
- 
 Chapter - Oven and Hot Plate
 
 The oven is a closed openable container and scenery in the kitchen. The description is "It's a small, purple oven, about the size of a toaster. There are a temperature dial and a timer on the front, next to the door."
