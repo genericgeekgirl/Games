@@ -101,7 +101,6 @@ The top of the refrigerator is a supporter and part of the mini refrigerator.
 The hooks are a plural-named supporter and part of the mini refrigerator. The description is "A set of white plastic hooks, glued to the side of the refrigerator."
 
 The crate is an open container on the top of the refrigerator. "It's a plastic crate containing assorted cooking implements." Understand "box" as crate.
-[TODO: Check taking the crate: confirm that stool was used somehow]
 
 The stream is scenery in the kitchen. The description is "A stream runs through one end of the room."
 The water is part of the stream. The description is "The water is clean and cold."
@@ -219,17 +218,31 @@ Instead of reading the recipe card: say "[recipe]"
 To say recipe:
 say "Lizzie's Chocolate Chip Cookies[line break]TODO."
 
-[ingredients]
+Part - Waiting More
+ 
+Waiting more is an action applying to one number.
 
-[remember to wash hands; clean up while cookies are baking]
+Understand "wait [number] minutes/turns" or "wait for [number] minutes/turns" or "wait [number]" as waiting more.
+
+Carry out waiting more:
+let duration be the number understood - 1;
+repeat with X running from 1 to duration
+begin;
+follow the turn sequence rules;
+end repeat.
+
+Report waiting more:
+say "Time passes."
+
+[Heater is broken, maybe need to melt butter over lamp?]
 
 [
 stick of butter
 brown sugar
 white sugar
-2 eggs
+an egg
 vanilla extract
-1 bag chocolate chips
+bag of chocolate chips
 flour
 baking soda
 salt
@@ -245,4 +258,41 @@ Roll dough into balls and place on pan.
 Bake 15 minutes.
 ]
 
+Part - Ingredients
 
+[eat responses for everything]
+
+An ingredient is a kind of edible thing.
+
+A stick of butter is an ingredient in the refrigerator.
+
+A bag of brown sugar is an ingredient.
+
+A box of white sugar is an ingredient.
+
+An egg is an ingredient in the refrigerator. [need to break egg]
+
+A bottle of vanilla extract is an ingredient. [drink response, not eat]
+
+A bag of chocolate chips is an ingredient.
+
+A bag of flour is an ingredient.
+
+A carton of baking soda is an ingredient. [drink response, in addition to eat]
+
+A container of salt is an ingredient.
+
+[remember to wash hands; clean up while cookies are baking]
+[bake cookies command]
+
+[wet versus dry ingredients]
+
+[
+After inserting an ingredient into the mixing bowl:
+  if the mixing bowl contains every ingredient:
+say "We're getting somewhere now! You mix the ingredients with your hands until you have a good dough.";
+now every ingredient is nowhere;
+now dough is in the mixing bowl;
+otherwise:
+ continue the action.
+]
