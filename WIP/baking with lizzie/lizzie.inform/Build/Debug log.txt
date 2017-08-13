@@ -1,5 +1,5 @@
 Debugging log of Inform 7
-Inform called as: /usr/local/libexec/ni --internal /usr/local/share/inform7/Internal --format=ulx --project /home/adri/Games/Interactive Fiction/Adri/WIP/baking with lizzie/lizzie.inform
+Inform called as: /usr/local/libexec/ni --internal /usr/local/share/inform7/Internal --format=z8 --project /home/adri/Games/Interactive Fiction/Adri/WIP/baking with lizzie/lizzie.inform
 Found language bundle 'French' (built in)
 Found language bundle 'Swedish' (built in)
 Found language bundle 'German' (built in)
@@ -14,7 +14,7 @@ Reading language definition from </usr/local/share/inform7/Internal/Languages/En
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 1811 words long.
+I've now read your source text, which is 4503 words long.
 
 
 -----------------------------------------------------
@@ -107,6 +107,9 @@ Phase XII ... Code generation
 
 ==== Phase XII.6 ... Compiling first block of phrases ====
 
+            0 = texts valued property. 1 = text
+                            0 = action. 1 = object
+                            0 = action. 1 = object
 
 
 ==== Phase XII.7 ... Compiling the rulebooks ====
@@ -174,8 +177,8 @@ Providing for a total heap of 8192, given requirement of 8192
 Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
-Total of 131 files written as streams.
-CPU time: 99 centiseconds
+Total of 146 files written as streams.
+CPU time: 151 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

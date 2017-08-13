@@ -10,8 +10,8 @@ release to "/home/adri/Games/Interactive Fiction/Adri/WIP/baking with lizzie/liz
 
 ! Blorb instructions
 
-storyfile leafname "Baking with Lizzie.gblorb"
-storyfile "/home/adri/Games/Interactive Fiction/Adri/WIP/baking with lizzie/lizzie.inform/Build/output.ulx" include
+storyfile leafname "Baking with Lizzie.zblorb"
+storyfile "/home/adri/Games/Interactive Fiction/Adri/WIP/baking with lizzie/lizzie.inform/Build/output.z8" include
 ifiction "/home/adri/Games/Interactive Fiction/Adri/WIP/baking with lizzie/lizzie.inform/Metadata.iFiction" include
 cover "/usr/local/share/inform7/Internal/Miscellany/Cover.jpg"
 picture 1 "/usr/local/share/inform7/Internal/Miscellany/Cover.jpg"
@@ -20,10 +20,10 @@ picture 1 "/usr/local/share/inform7/Internal/Miscellany/Cover.jpg"
 
 placeholder [IFID] = "C7E3093C-3C5A-4D1F-8935-0AEA8FCB6631"
 placeholder [RELEASE] = "1"
-placeholder [YEAR] = "2016"
+placeholder [YEAR] = "2017"
 placeholder [TITLE] = "Baking with Lizzie"
 placeholder [AUTHOR] = "Adri"
-placeholder [BLURB] = "[story title] was created for the [italic type]Self-Care Jam[roman type]."
+placeholder [BLURB] = "[story title] was created for the [italic type]Short and Sweet Jam[roman type]."
 
 ! Other material to release
 

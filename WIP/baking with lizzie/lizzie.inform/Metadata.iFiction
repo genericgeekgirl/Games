@@ -3,22 +3,22 @@
     <story>
         <identification>
             <ifid>C7E3093C-3C5A-4D1F-8935-0AEA8FCB6631</ifid>
-            <format>glulx</format>
+            <format>zcode</format>
         </identification>
         <bibliographic>
             <title>Baking with Lizzie</title>
             <author>Adri</author>
-            <headline>TODO</headline>
+            <headline>A sweet story</headline>
             <genre>slice of life</genre>
-            <firstpublished>2016</firstpublished>
-            <description>[story title] was created for the [italic type]Self-Care Jam[roman type].</description>
+            <firstpublished>2017</firstpublished>
+            <description>[story title] was created for the [italic type]Short and Sweet Jam[roman type].</description>
             <language>en</language>
             <group>Inform</group>
         </bibliographic>
         <releases>
             <attached>
                 <release>
-                    <releasedate>2016-12-05</releasedate>
+                    <releasedate>2017-08-12</releasedate>
                     <version>1</version>
                     <compiler>Inform 7</compiler>
                     <compilerversion>6M62</compilerversion>
@@ -28,12 +28,12 @@
         <colophon>
             <generator>Inform 7</generator>
             <generatorversion>6M62</generatorversion>
-            <originated>2016-12-05</originated>
+            <originated>2017-08-12</originated>
         </colophon>
-        <glulx>
-            <serial>161205</serial>
+        <zcode>
+            <serial>170812</serial>
             <release>1</release>
             <compiler>Inform 7 build 6M62</compiler>
-        </glulx>
+        </zcode>
     </story>
 </ifindex>
