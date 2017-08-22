@@ -35,7 +35,7 @@ say "Your friends are arriving soon, and you need to bake a batch of cookies! No
 
 Requesting story information is an action out of world.
 Understand "about" and "credits" as requesting story information.
-Carry out requesting story information: say "[story description][line break]Beta testers: Brett Witty, Angela Chang[line break]"
+Carry out requesting story information: say "[story description][line break]Beta testers: Brett Witty, Angela Chang, Seth Alter, Dan Barton, Chester Kwan[line break]"
 
 Part - Player
 
@@ -45,7 +45,7 @@ Understand "tail" and "eyes" and "mask" and "ears" and "coat" as yourself.
 
 Part - Environment
 
-The Kitchen is a room. "[if the player is not on the stool]You are standing in the kitchen area of your burrow. There is a small oven, a single hot plate, and a mini refrigerator. There is also a low, raccoon-sized table, under which are a set of cabinets. A small stream runs through one end of the room. A lamp, about the same height as you, illuminates the room. There is a colorful rug on the floor[otherwise]You are standing on a small stool in the kitchen room of your burrow. From here you can clearly see the top of the refrigerator[end if][if the stool is not placed properly], but you can't reach it[end if]."
+The Kitchen is a room. "[if the player is not on the stool]You are standing in your kitchen. There is a small oven, a single hot plate, and a mini refrigerator. There is also a low, raccoon-sized table, under which are a set of cabinets. A small stream runs through one end of the room. A lamp, about the same height as you, illuminates the room. There is a colorful rug on the floor[otherwise if the player is on the stool and the stool is placed properly]You are standing on a small stool in the kitchen. From here you can clearly see the top of the refrigerator[otherwise]You are standing on a small stool in the kitchen. From here you can clearly see the top of the refrigerator, but you can't reach it[end if]." 
 
 Instead of putting something on the floor:
 try dropping the noun.
@@ -65,6 +65,12 @@ The corner is part of the rug. The description is "The corner of the rug is flip
 Lifting is an action applying to one thing.
 
 Understand "lift [something]" as lifting.
+
+Instead of pushing the corner:
+try lifting the corner.
+
+Instead of pulling the corner:
+try lifting the corner.
 
 Carry out lifting something: try taking the noun instead.
 
@@ -108,6 +114,16 @@ Instead of touching the lamp:
 	otherwise:
 		say "The lamp is turned off."
 
+Check inserting the stick of butter into the oven:
+say "It would melt all over the inside of the oven!" instead.
+
+Check putting the stick of butter on the hot plate:
+say "It would melt all over!" instead.
+
+Check putting the stick of butter on the baking sheet:
+	if the baking sheet is in the oven:
+		say "The butter would just melt into a puddle all over the baking sheet." instead.
+	
 Check inserting the baking sheet into the oven:
 	if the stick of butter is on the baking sheet:
 		say "The butter would just melt into a puddle all over the baking sheet." instead.
@@ -161,8 +177,6 @@ Instead of taking the magnet: say "It looks good where it is."
 
 The top of the refrigerator is a supporter and part of the mini refrigerator. Understand "top of fridge" as top of the refrigerator.
 
-Does the player mean doing anything with the top of the refrigerator: it is unlikely.
-
 The hooks are a plural-named supporter and part of the mini refrigerator. The description is "A set of white plastic hooks, glued to the side of the refrigerator." Understand "hook" as hooks.
 
 Instead of taking the hooks: say "They're glued pretty well to the side of the refrigerator."
@@ -175,6 +189,13 @@ try putting the noun on the second noun.
 
 The crate is an open unopenable container on the top of the refrigerator. The description is "It's a plastic crate containing assorted cooking implements." Understand "box" as crate.
 
+Instead of examining the crate when the player is not on the stool:
+say "[description of crate][line break]".
+
+Before going up for the first time:
+	now the mixing bowl is in the crate;
+	now the coffee mug is in the crate.
+	
 Instead of opening the crate:
 say "It's not the sort of crate one needs to open."
 
@@ -262,6 +283,19 @@ Understand "sit" as sitting.
 Carry out sitting:
 try sitting on the floor.
 
+Understand the command "stand" as something new.
+Standing is an action applying to nothing.
+Understand "stand" and "stand up" as standing.
+
+Yourself can be sitting-down. Yourself is not sitting-down.
+
+Carry out standing:
+	if yourself is sitting-down:
+		say "You stand up.";
+		now the player is not sitting-down;
+	otherwise:
+		say "You are already standing."
+
 Sitting on is an action applying to one thing.
 Understand "sit on [something]" as sitting on.
 
@@ -269,15 +303,12 @@ Carry out sitting on:
 	if the noun is not the stool and the noun is not the floor:
 		say "That wasn't made for sitting on.";
 	otherwise:			
-		say "You sit on [the noun]."
-		
-Before placing the stool when the stool is carried by the player:
-try dropping the stool.
-
+		say "You sit on [the noun].";
+		now yourself is sitting-down.
+						
 Placing the stool is an action applying to two things.
 Understand "drop [stool] in front of [something]" as placing the stool.
 Understand "put [stool] in front of [something]" as placing the stool.
-Understand "place [stool] in front of [something]" as placing the stool.
 Understand "push [stool] in front of [something]" as placing the stool.
 Understand "push [stool] to [something]" as placing the stool.
 Understand "push [stool] near [something]" as placing the stool.
@@ -287,10 +318,24 @@ Check placing the stool:
 	if the second noun is not the mini refrigerator and the second noun is not the crate:
 		say "You move the stool to [the second noun]." instead.
 
+Unplacing the stool is an action applying to two things.
+Understand "push [stool] away from [something]" as unplacing the stool.
+
+Instead of unplacing the stool:
+try pushing the stool.
+
+Before placing the stool:
+	if the player is on the stool:
+		say "You can't move the stool while you're on it." instead.
+
 Instead of pushing the stool:
 say "You move the stool out of the way.";
 now the stool is not placed properly.
 
+Before pushing the stool:
+	if the player is on the stool:
+		say "You can't move the stool while you're on it." instead.
+		
 Instead of pulling the stool:
 try pushing the stool.
 
@@ -367,8 +412,8 @@ The oven can be switched on.
 Instead of putting something on the oven:
 say "The top of the oven is curved and cannot support that."
 
-The switch is part of the oven.
-Instead of examining the switch, try examining the oven.
+The switch is part of the oven. The description is "An on/off switch on the front. It is turned [if the oven is switched on]on[otherwise]off[end if]."
+
 Instead of switching on the switch, try switching on the oven.
 Instead of switching off the switch, try switching off the oven.
 
@@ -381,6 +426,9 @@ Instead of pushing the switch:
 Instead of inserting the coffee mug into the oven:
 say "The coffee mug is too tall for the oven."
 
+Instead of inserting the mixing bowl into the oven:
+say "The bowl would melt in the heat."
+
 Instead of touching the oven:
 	if the oven is switched on:
 		say "The oven is hot to the touch.";
@@ -390,6 +438,9 @@ Instead of touching the oven:
 Understand "preheat [something]" and "use [something]" as switching on.
 
 The timer is a thing on the table. The description is "A small tomato-shaped timer."
+
+Instead of switching on the timer:
+try setting the timer.
 
 Instead of turning the timer:
 try setting the timer.
@@ -423,13 +474,17 @@ The hot plate is a supporter and scenery in the kitchen. The description is "A s
 The hot plate can be switched on. The hot plate is switched off.
 The red light is part of the hot plate. The description is "A light on the front of the hot plate. It is off."
 Understand "stove" as hot plate.
-The dial is part of the hot plate. Instead of examining the dial, try examining the hot plate.
+The dial is part of the hot plate. The description is "A small dial on the front of the hot plate. It is switched off."
 Instead of switching on the dial, try switching on the hot plate.
 
 Instead of turning the dial: try switching on the dial.
 
-Instead of switching on the hot plate:
-say "The red light flickers on, but the plate doesn't appear to be emitting any heat. You turn it back off."
+After switching on the hot plate:
+say "The red light flickers on, but the plate doesn't appear to be emitting any heat. You turn it back off.";
+now the hot plate is switched off.
+
+Instead of switching on the hot plate for the fifth time:
+say "The hot plate is clearly broken."
 
 Instead of touching the hot plate:
 say "The hot plate is turned off."
@@ -461,9 +516,9 @@ The baking sheet can be warm or not warm. The baking sheet is not warm.
 Before switching on the oven:
 if the baking sheet is in the oven, now the baking sheet is warm.
 
-The coffee mug is an open unopenable container in the crate. The description is "A ceramic coffee mug with a butterfly on it." Understand "cup" as mug.
+The coffee mug is an open unopenable container. The description is "A ceramic coffee mug with a butterfly on it." Understand "cup" as mug.
 
-The mixing bowl is an open unopenable container in the crate. The description is "A large blue plastic bowl."
+The mixing bowl is an open unopenable container. The description is "A large blue plastic bowl."
 
 The bar of soap is a thing in the pocket. The description is "A bar of white soap."
 
@@ -501,6 +556,9 @@ Set the timer to 15 minutes.[paragraph break]
 Don't forget to wash up afterwards!"
 
 Part - Waiting More
+
+Instead of sleeping:
+say "You had a lot of coffee this morning. You aren't feeling particularly drowsy."
  
 Waiting more is an action applying to one number.
 
@@ -531,6 +589,9 @@ Pouring it into is an action applying to two things.
 Understand "pour [something] into [something]" as pouring it into.
 Understand "pour [something] in [something]" as pouring it into.
 
+Instead of pouring the carton of milk into the bowl:
+try inserting the carton of milk into the mixing bowl.
+
 Carry out pouring:
 try pouring the noun into the mixing bowl.
 
@@ -555,8 +616,7 @@ Check pouring something into something:
 		say "You can't do that." instead.
 
 Carry out pouring something into something:
-try silently inserting the noun into the second noun;
-say "You pour [the noun] into [the second noun]."
+try inserting the noun into the second noun.
 
 Check inserting something into the mixing bowl:
 	if the noun is not edible:
@@ -598,6 +658,18 @@ say "A [printed name of noun]."
 
 The carton of milk is an edible thing in the refrigerator. The description is "A carton of milk, with a cute picture of a cow on the front."
 Understand "cow" and "picture" as carton of milk.
+
+Drinking out of is an action applying to one thing.
+Understand "drink out of [something]" as drinking out of.
+
+Carry out drinking out of something:
+say "There's nothing suitable to drink there." instead.
+
+Instead of drinking out of the coffee mug:
+say "The mug is empty."
+
+Instead of drinking out of the carton of milk:
+say "Were you raised in a barn?"
 
 Check drinking the carton of milk:
 	if the player does not enclose the coffee mug:
@@ -767,6 +839,10 @@ After taking the baking sheet when the baking sheet is warm and the player is ca
 say "You carefully pick up the baking sheet with the potholder."
 
 Check putting the baking sheet on something:
+	if the second noun is the potholder:
+		say "You are holding the pan with the potholder." instead;
+	if the second noun is the hot plate:
+		say "The hot plate is too small for the baking sheet." instead;
 	if the baking sheet is warm and the towel is not on the second noun and the second noun is not the towel:
 		say "You should put something under the pan to protect [the second noun]." instead.
 
@@ -786,9 +862,8 @@ After inserting the baking sheet into the oven:
 		now the oven is closed;
 		if the oven is switched on:
 			the dough becomes cookies in 15 turns from now;
-			the cookies burn in 20 turns from now;
-			your friends arrive in 25 turns from now.
-
+			the cookies burn in 25 turns from now.
+			
 Instead of baking the balls of dough:
 try inserting the baking sheet into the oven.
 		
@@ -822,7 +897,7 @@ say "You roll out balls of dough and place them on the baking sheet.";
 now the dough is nowhere;
 now balls of dough are on the baking sheet.
 
-Instead of opening the oven when the baking sheet is in the oven and the dough is on the baking sheet:
+Instead of opening the oven when the baking sheet is in the oven and the balls of dough are on the baking sheet:
 say "The cookies aren't ready yet!"
 
 Check inserting the stick of butter into the mixing bowl:
@@ -844,6 +919,18 @@ After inserting an ingredient into the mixing bowl:
 	
 Mixing is an action applying to one thing.
 Understand "mix [something]" as mixing.
+
+Does the player mean mixing the mixing bowl: it is likely.
+
+Mixing all is an action applying to nothing.
+Understand "mix ingredients" as mixing all.
+
+Check mixing:
+	if the mixing bowl contains nothing:
+		say "There is nothing in the bowl!" instead.
+		
+Instead of mixing all:
+try mixing the mixing bowl.
 
 Check mixing:	
 	if the noun is not an ingredient and the noun is not the mixing bowl:
@@ -871,6 +958,10 @@ Carry out humming:
 say "You whistle a happy tune."
 
 Chapter - Smells
+
+Check taking the baking sheet:
+	if the cookies are on the baking sheet:
+		your friends arrive in 5 turns from now.
 
 Instead of smelling:
 	if the baking sheet is in the oven and the balls of dough are on the baking sheet:
