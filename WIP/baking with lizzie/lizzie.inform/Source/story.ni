@@ -18,7 +18,7 @@ Fast quitting is an action out of world.
 Understand "quitr" as fast quitting.
 Carry out fast quitting: follow the immediately quit rule.
 
-Part - Transcript (not for release)
+Chapter - Transcript (not for release)
 
 when play begins:
 try switching the story transcript on;
@@ -35,7 +35,7 @@ say "Your friends are arriving soon, and you need to bake a batch of cookies! No
 
 Requesting story information is an action out of world.
 Understand "about" and "credits" as requesting story information.
-Carry out requesting story information: say "[story description][line break]Beta testers: Brett Witty, Angela Chang, Seth Alter, Dan Barton, Chester Kwan[line break]"
+Carry out requesting story information: say "[story description][paragraph break]Beta testers: Brett Witty, Angela Chang, Seth Alter, Tim Adan, Dan Barton, Chester Kwan[line break]"
 
 Part - Player
 
@@ -60,7 +60,7 @@ Chapter - Rug
 
 The rug is part of the floor. The description is "It's a very colorful woven rug[if the recipe card is not enclosed by the kitchen]. One corner is flipped up[end if]."
 
-The corner is part of the rug. The description is "The corner of the rug is flipped up." Understand "corner of the rug" as corner.
+The corner is part of the rug. The description is "[if the recipe card is not enclosed by the kitchen]Something seems to be tucked under the rug here[otherwise]The rug has four corners[end if]." Understand "corner of rug" and "corner of the rug" as corner.
 
 Lifting is an action applying to one thing.
 
@@ -82,6 +82,19 @@ try lifting the corner.
 
 Instead of lifting the rug:
 try lifting the corner.
+
+Flipping is an action applying to one thing.
+Understand "flip [something]" as flipping.
+
+Carry out flipping:
+say "You're not sure how to do that."
+
+Instead of flipping the rug:
+try flipping the corner.
+
+Instead of flipping the corner:
+say "You flip the corner back.";
+now the description of the rug is "It's a very colorful woven rug.".
 
 Instead of lifting the corner for the first time:
 say "You look under the rug and find a recipe card.";
@@ -118,7 +131,7 @@ Check inserting the stick of butter into the oven:
 say "It would melt all over the inside of the oven!" instead.
 
 Check putting the stick of butter on the hot plate:
-say "It would melt all over!" instead.
+say "The butter would melt all over!" instead.
 
 Check putting the stick of butter on the baking sheet:
 	if the baking sheet is in the oven:
@@ -142,17 +155,23 @@ Understand "melt [something] over [something]" as melting it over.
 Understand "melt [something] on [something]" as melting it over.
 Understand "melt [something] with [something]" as melting it over.
 
+Instead of melting the mixing bowl over something:
+try melting the mixing bowl.
+
 Carry out melting something:
 say "You can't melt that." instead.
+
+Instead of melting the mixing bowl:
+say "You can't melt that. Or rather, you can, but you shouldn't."
 
 Instead of melting the stick of butter over the hot plate:
 say "The hot plate doesn't seem to be working. Maybe there's another way."
 
 Instead of melting the stick of butter over the lamp:
 	if the stick of butter is not in the coffee mug:
-		say "You can't melt that in your hands!";
+		say "You can't melt that in your bare hands.";
 	otherwise:
-		say "The butter melts into a puddle.";
+		say "The butter melts.";
 		now the stick of butter is melted.
                                 
 Instead of melting the stick of butter:
@@ -167,15 +186,15 @@ The cabinets are a closed openable container and part of the table. The descript
 Instead of looking under the table:
 say "There are cabinets underneath the table."
 
-The mini refrigerator is a closed openable container and scenery in the kitchen. The description is "It's a mini refrigerator, such as one might find in a dorm room. There is a magnet on the front. On the right side is glued a set of hooks, [if the number of things on the hooks is 1]on which is [a list of things on the hooks][otherwise if the number of things on the hooks is greater than 1]on which are [a list of things on the hooks][otherwise]which currently hold nothing[end if][if the number of things on the top of the refrigerator is 1]. There is [a list of things on the top  of the refrigerator] on top of the refrigerator[otherwise if the number of things on the top of the refrigerator is greater than 1]. There are  [a list of things on the top of the refrigerator] on top of the refrigerator[end if]." Understand "mini fridge" and "fridge" as mini refrigerator.
+The mini refrigerator is a closed openable container and scenery in the kitchen. The description is "It's a mini refrigerator, such as one might find in a dorm room. There is a magnet on the front. On the right side is glued a set of hooks, [if the number of things on the hooks is 1]on which is [a list of things on the hooks][otherwise if the number of things on the hooks is greater than 1]on which are [a list of things on the hooks][otherwise]which currently hold nothing[end if][if the number of things on the top of the icebox is 1]. There is [a list of things on the top  of the icebox] on top of the refrigerator[otherwise if the number of things on the top of the icebox is greater than 1]. There are  [a list of things on the top of the icebox] on top of the refrigerator[end if]." Understand "mini fridge" and "fridge" as mini refrigerator.
 
 Instead of looking under the mini refrigerator:
 say "You find nothing, not even a dust bunny."
 
-The magnet is part of the mini refrigerator. The description is "It says 'I <3 baking!'"
+The magnet is part of the mini refrigerator. The description is "It says 'I ♥ baking!'"
 Instead of taking the magnet: say "It looks good where it is."
 
-The top of the refrigerator is a supporter and part of the mini refrigerator. Understand "top of fridge" as top of the refrigerator.
+The top of the icebox is a supporter and part of the mini refrigerator. Understand "top of refrigerator" and "top of the refrigerator" and "top of the fridge" and "top of fridge" as top of the icebox.
 
 The hooks are a plural-named supporter and part of the mini refrigerator. The description is "A set of white plastic hooks, glued to the side of the refrigerator." Understand "hook" as hooks.
 
@@ -187,7 +206,11 @@ Understand "hang [something] on [something]" as hanging it on.
 Carry out hanging it on:
 try putting the noun on the second noun.
 
-The crate is an open unopenable container on the top of the refrigerator. The description is "It's a plastic crate containing assorted cooking implements." Understand "box" as crate.
+The crate is an open unopenable container on the top of the icebox. The description is "It's a wooden crate containing assorted cooking implements." Understand "box" as crate.
+
+Rule for printing the name of the crate when the crate is on the top of the icebox:
+	say "crate";
+	omit contents in listing.
 
 Instead of examining the crate when the player is not on the stool:
 say "[description of crate][line break]".
@@ -271,7 +294,7 @@ Rule for deciding whether all includes the stool: it does not.
 
 The stool is a supporter in the kitchen. The stool is not fixed in place.
 The stool can be placed properly. The stool is not placed properly.
-The description of the stool is "A wooden footstool[if the stool is placed properly], currently sitting in front of the fridge[end if] ."
+The description of the stool is "A wooden footstool[if the stool is placed properly], currently sitting in front of the refrigerator[end if] ."
 
 Instead of taking the stool:
 say "It's too heavy to carry, but it can be pushed around."
@@ -387,12 +410,12 @@ say "You can't take the stool while standing on it!" instead.
 Instead of climbing the stool:
 move the player to the stool.
 
-Check taking something enclosed by the top of the refrigerator:
+Check taking something enclosed by the top of the icebox:
 	if the stool is not placed properly and the player is not on the stool:
 		say "You can't reach that from down here." instead.
 
 Check taking something when the player is on the stool:
-	if the noun is not enclosed by the top of the refrigerator and the noun is not enclosed by the player:
+	if the noun is not enclosed by the top of the icebox and the noun is not enclosed by the player:
 		say "You can't reach that from up here." instead;
 	otherwise if the stool is not placed properly:
 		say "You can't quite reach that from here. Maybe if you got closer?" instead;
@@ -400,7 +423,7 @@ Check taking something when the player is on the stool:
 		continue the action. 
 		
 Instead of putting something on the mini refrigerator:
-try putting the noun on the top of the refrigerator.
+try putting the noun on the top of the icebox.
  
 Part - Items
 
@@ -416,6 +439,9 @@ The switch is part of the oven. The description is "An on/off switch on the fron
 
 Instead of switching on the switch, try switching on the oven.
 Instead of switching off the switch, try switching off the oven.
+
+Instead of flipping the switch:
+try pushing the switch.
 
 Instead of pushing the switch: 
 	if the oven is switched on:	
@@ -510,7 +536,7 @@ After examining the apron for the first time: now the pocket is open.
 
 The potholder is a thing on the hooks. The description is "A relatively large (for you, in any case) pot holder, blue with yellow flowers on it. It's been burned in a few places."
 
-The baking sheet is a supporter in the oven. The baking sheet is not fixed in place. The description is "A baking sheet." Understand "cookie sheet" as baking sheet. Understand "pan" as baking sheet.
+The baking sheet is a supporter in the oven. The baking sheet is not fixed in place. The description is "A baking sheet." Understand "cookie sheet" as baking sheet. Understand "pan" and "tray" as baking sheet.
 The baking sheet can be warm or not warm. The baking sheet is not warm.
 
 Before switching on the oven:
@@ -638,7 +664,7 @@ Check taking an ingredient:
 An ingredient has a text called an ingredient name.
  
 Check inserting something into something:
-	if the second noun is enclosed by the top of the refrigerator:
+	if the second noun is enclosed by the top of the icebox:
 		say "You can't reach that from here." instead.
 
 After inserting an ingredient into the mixing bowl:
@@ -707,7 +733,7 @@ Check drinking the water:
 
 A stick of butter is an ingredient in the refrigerator. The stick of butter can be melted or not melted. The stick of butter is not melted.
 The printed name is "[if the butter is melted]melted pool of butter[otherwise]stick of butter[end if]".
-The ingredient name is "stick of melted butter".
+The ingredient name is "[if the stick of butter is in the mixing bowl]pool of [end if]melted butter".
 The eat response is "You lick the stick of butter."
 
 Check inserting the stick of butter into the coffee mug:
@@ -720,10 +746,10 @@ try eating the stick of butter.
 Instead of eating the stick of butter when the stick of butter is melted:
 say "You would burn your mouth."
 
-A bag of brown sugar is an ingredient in the cabinets. The ingredient name is "scoop of brown sugar".
+A bag of brown sugar is an ingredient in the cabinets. The ingredient name is "handful of brown sugar".
 The eat response is "You eat a handful of brown sugar. It's very sweet."
 
-A box of white sugar is an ingredient in the cabinets. The ingredient name is "scoop of white sugar".
+A box of white sugar is an ingredient in the cabinets. The ingredient name is "handful of white sugar".
 The eat response is "You eat a handful of white sugar. It tastes good."
 
 An egg is an ingredient in the refrigerator. The ingredient name is "cracked egg".
@@ -738,11 +764,11 @@ Instead of cracking the egg into something:
 try attacking the egg.
 
 Instead of attacking the egg:
-	if the mixing bowl is visible and the mixing bowl is not enclosed by the top of the refrigerator:
+	if the mixing bowl is visible and the mixing bowl is not enclosed by the top of the icebox:
 		say "You crack the egg into the bowl.";
 		now the egg is broken;
 		now the egg is in the mixing bowl;
-	otherwise if the coffee mug is visible and the coffee mug is not enclosed by the top of the refrigerator:
+	otherwise if the coffee mug is visible and the coffee mug is not enclosed by the top of the icebox:
 		if the coffee mug contains something:
 			say "You can crack that into the coffee mug, but it needs to be empty first.";
 		otherwise:	
@@ -752,16 +778,19 @@ Instead of attacking the egg:
 	otherwise:
 		say "You'll need something to crack that into."
 
-A bottle of vanilla extract is an ingredient in the cabinets. The ingredient name is "tablespoon of vanilla extract".
+A bottle of vanilla extract is an ingredient in the cabinets. The ingredient name is "dash of vanilla extract".
 The eat response is "You gulp down a mouthful of vanilla extract. It burns."
 
 Instead of drinking the bottle of vanilla extract:
 try eating the bottle of vanilla extract.
 
+Instead of drinking out of the bottle of vanilla extract:
+try drinking the bottle of vanilla extract.
+
 A bag of chocolate chips is an ingredient in the cabinets. The ingredient name is "entire bag of chocolate chips".
 The eat response is "You nibble on a handful of chocolate chips. They're delicious."
 
-A bag of flour is an ingredient in the cabinets. The ingredient name is "scoop of flour".
+A bag of flour is an ingredient in the cabinets. The ingredient name is "double handful of flour".
 The eat response is "You put a handful of flour in your mouth and immediately spit it back out."
 
 A carton of baking soda is an ingredient in the cabinets. The ingredient name is "pinch of baking soda".
@@ -909,11 +938,11 @@ Check inserting the egg into the mixing bowl:
 		say "You need to break the egg first." instead.
                 
 After inserting an ingredient into the mixing bowl:
-	if the mixing bowl contains every ingredient:
-        		say "You put [the noun] into the mixing bowl.[paragraph break]";
-        		say "You mix the ingredients with your hands until you have a good dough.";
+	if the mixing bowl contains every ingredient:	
+		say "You put [the noun] into the mixing bowl.[paragraph break]";
+		say "You mix the ingredients with your hands until you have a good dough.";
 		now every ingredient is nowhere;
-                		now dough is in the mixing bowl;
+		now dough is in the mixing bowl;
 	otherwise:
 		continue the action.
 	
