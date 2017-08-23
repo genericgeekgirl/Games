@@ -35,11 +35,11 @@ say "Your friends are arriving soon, and you need to bake a batch of cookies! No
 
 Requesting story information is an action out of world.
 Understand "about" and "credits" as requesting story information.
-Carry out requesting story information: say "[story description][paragraph break]Beta testers: Brett Witty, Angela Chang, Seth Alter, Tim Adan, Dan Barton, Chester Kwan[line break]"
+Carry out requesting story information: say "[story description][paragraph break]Beta testers: Brett Witty, Angela Chang, Seth Alter, Tim Adan, Dan Barton, Chester Kwan, Michael Hilborn[line break]"
 
 Part - Player
 
-The description of the player is "You are a raccoon. You have large expressive eyes, hidden behind a mask of black on a white face; short, pointed ears tipped with white; and a long, bushy tail ringed in black. Your long coat is grey, almost silver, grizzled with black."
+The description of the player is "You are a raccoon. You have large expressive eyes, hidden behind a mask of black on a white face; short, pointed ears tipped with white; and a long, bushy tail ringed in black. Your long coat is grey, almost silver, grizzled with black[if the player is wearing the apron]. You are wearing a frilly pink apron[end if]."
 
 Understand "tail" and "eyes" and "mask" and "ears" and "coat" as yourself.
 
@@ -110,6 +110,7 @@ Chapter - Lamp
 
 The lamp is scenery in the kitchen. The description is "A wide lace lamp shade sits atop a glittery base."
 Understand "shade" and "base" and "lace" as lamp.
+Understand "light" as lamp.
 The lamp can be switched on. The lamp is switched on.
 
 After switching off the lamp:
@@ -431,6 +432,7 @@ Chapter - Oven, Timer, and Hot Plate
 
 The oven is a closed openable container and scenery in the kitchen. The description is "A small, purple oven, about the size of a toaster. There is an on/off switch on the front, next to the door."
 The oven can be switched on.
+Understand "door" as oven.
 
 Instead of putting something on the oven:
 say "The top of the oven is curved and cannot support that."
@@ -463,7 +465,7 @@ Instead of touching the oven:
 
 Understand "preheat [something]" and "use [something]" as switching on.
 
-The timer is a thing on the table. The description is "A small tomato-shaped timer."
+The timer is a thing on the table. The description is "A small tomato-shaped timer. It can be twisted to set the time."
 
 Instead of switching on the timer:
 try setting the timer.
@@ -478,6 +480,8 @@ Understand "set [something]" as setting.
 Setting it for is an action applying to one thing and one number.
 Understand "set [something] for [number] minutes" as setting it for.
 Understand "set [something] to [number] minutes" as setting it for.
+Understand "twist [something] to [number]" as setting it for.
+Understand "twist [something] to [number] minutes" as setting it for.
 
 Carry out setting something:
 say "You can't set that."
@@ -654,8 +658,13 @@ say "You don't need water for this recipe." instead.
 Check inserting the milk into the mixing bowl:
 say "That's not part of the recipe." instead.
                 
+Before inserting the broken egg into the mixing bowl:
+	if the broken egg is in the coffee mug:
+		now the player carries the egg.
+
 Before inserting the melted stick of butter into the mixing bowl:
-now the player carries the stick of butter.
+	if the melted stick of butter is in the coffee mug:
+		now the player carries the stick of butter.
 
 Check taking an ingredient:
 	if the noun is in the mixing bowl:
@@ -753,6 +762,7 @@ A box of white sugar is an ingredient in the cabinets. The ingredient name is "h
 The eat response is "You eat a handful of white sugar. It tastes good."
 
 An egg is an ingredient in the refrigerator. The ingredient name is "cracked egg".
+The printed name is "[if the egg is broken]cracked egg[otherwise]egg[end if]".
 The eat response is "No, you're not going to eat a raw egg."
 
 The egg can be broken or not broken. The egg is not broken.
@@ -760,8 +770,26 @@ The egg can be broken or not broken. The egg is not broken.
 Cracking it into is an action applying to two things.
 Understand "crack [something] into [something]" as cracking it into.
 
-Instead of cracking the egg into something:
-try attacking the egg.
+Instead of attacking the broken egg:
+say "The egg has already been cracked open."
+
+Instead of cracking the the broken egg into something:
+say "The egg has already been cracked open."
+
+Instead of cracking the not broken egg into something:
+	if second noun is the mixing bowl:
+		say "You crack the egg into the bowl.";
+		now the egg is broken;
+		now the egg is in the mixing bowl;
+	otherwise if the second noun is the coffee mug and the coffee mug contains something:
+		say "The mug needs to be empty first.";
+	otherwise if the second noun is the coffee mug:
+		say "You crack the egg into the coffee mug.";
+		now the egg is broken;
+		now the egg is in the coffee mug;
+	otherwise:
+		say "You'll need something else to crack that into."
+
 
 Instead of attacking the egg:
 	if the mixing bowl is visible and the mixing bowl is not enclosed by the top of the icebox:
@@ -805,6 +833,10 @@ The eat response is "You eat a pinch of salt. It's, well, it's salty."
 The dough is an edible proper-named thing. The description is "You've mixed the ingredients into cookie dough."
 
 The balls of dough are a plural-named edible thing. The description is "Balls of uncooked cookie dough."
+
+Check taking the balls of dough:
+	if the balls of dough are on the baking sheet:
+		say "They're already on the baking sheet." instead.
 
 Instead of eating the balls of dough:
 say "You nibble on a ball of dough. It's tasty, but it'll be even better once you bake it."
@@ -858,7 +890,7 @@ Understand "bake [something]" as baking.
 Carry out baking:
 say "You can't bake that!"
 
-Check baking the balls of dough:
+Check baking the dough:
 if the balls of dough are not on the baking sheet, say "You need to place the dough on a baking sheet first." instead.
 
 Check taking the baking sheet:
@@ -866,6 +898,18 @@ if baking sheet is warm and the player is not carrying the potholder, say "It's 
 
 After taking the baking sheet when the baking sheet is warm and the player is carrying the potholder:
 say "You carefully pick up the baking sheet with the potholder."
+
+Check dropping the potholder:
+	if the player is holding the baking sheet and the baking sheet is warm:
+		say "You are holding the pan with the potholder." instead; 
+
+Check putting the potholder on something:
+	if the player is holding the baking sheet and the baking sheet is warm:
+		say "You are holding the pan with the potholder." instead; 
+
+Check taking the towel:
+	if the towel is on the table and the baking sheet is on the table and the baking sheet is warm:
+		say "The towel is underneath the baking sheet." instead.
 
 Check putting the baking sheet on something:
 	if the second noun is the potholder:
@@ -882,6 +926,13 @@ Instead of putting the baking sheet on the towel:
 Instead of inserting the balls of dough into the oven:
 try inserting the baking sheet into the oven.
 
+Check inserting something into the oven:
+	if the noun is not the baking sheet and the noun is not enclosed by the baking sheet:
+		say "That doesn't belong in the oven." instead.
+
+Instead of inserting the dough into the oven:
+try baking the dough.
+
 After inserting the baking sheet into the oven:
 	now the baking sheet is in the oven;
 	if the oven is switched on:
@@ -891,7 +942,10 @@ After inserting the baking sheet into the oven:
 		now the oven is closed;
 		if the oven is switched on:
 			the dough becomes cookies in 15 turns from now;
-			the cookies burn in 25 turns from now.
+			the cookies burn in 25 turns from now;
+	otherwise:
+		say "You put the baking sheet into the oven.";
+
 			
 Instead of baking the balls of dough:
 try inserting the baking sheet into the oven.
@@ -929,9 +983,8 @@ now balls of dough are on the baking sheet.
 Instead of opening the oven when the baking sheet is in the oven and the balls of dough are on the baking sheet:
 say "The cookies aren't ready yet!"
 
-Check inserting the stick of butter into the mixing bowl:
-	if the stick of butter is not melted:
-		say "You need to melt the butter first." instead.
+Check inserting the not melted stick of butter into the mixing bowl:
+	say "You need to melt the butter first." instead.
 
 Check inserting the egg into the mixing bowl:
 	if the egg is not broken:
