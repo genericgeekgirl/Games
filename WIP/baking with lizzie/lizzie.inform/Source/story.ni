@@ -213,6 +213,9 @@ Rule for printing the name of the crate when the crate is on the top of the iceb
 	say "crate";
 	omit contents in listing.
 
+Instead of searching the crate when the player is not on the stool and the crate is on top of the icebox:
+say "You can't see inside the crate from here."
+
 Instead of examining the crate when the player is not on the stool:
 say "[description of crate][line break]".
 
