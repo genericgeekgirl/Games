@@ -207,7 +207,7 @@ Understand "hang [something] on [something]" as hanging it on.
 Carry out hanging it on:
 try putting the noun on the second noun.
 
-The crate is an open unopenable container on the top of the icebox. The description is "It's a wooden crate containing assorted cooking implements." Understand "box" as crate.
+The crate is an open unopenable container on the top of the icebox. The description is "A wooden crate with a painted nectarine on the side." Understand "box" as crate. Understand "nectarine" as crate.
 
 Rule for printing the name of the crate when the crate is on the top of the icebox:
 	say "crate";
