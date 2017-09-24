@@ -142,6 +142,22 @@ Check inserting the baking sheet into the oven:
 	if the stick of butter is on the baking sheet:
 		say "The butter would just melt into a puddle all over the baking sheet." instead.
 
+Check inserting the baking sheet into the oven:
+	if the mixing bowl is on the baking sheet:
+		say "The bowl would melt in the heat." instead.
+		
+Check putting the mixing bowl on the baking sheet:
+	if the baking sheet is in the oven:
+		say "The bowl would melt in the heat." instead.
+
+Check inserting the baking sheet into the oven:
+	if the coffee mug is on the baking sheet:
+		say "The coffee mug is too tall for the oven." instead.
+
+Check putting the coffee mug on the baking sheet:
+	if the baking sheet is in the oven:
+		say "The coffee mug is too tall for the oven." instead.
+
 Instead of putting the stick of butter on the lamp:
 try melting the butter over the lamp.
 
@@ -415,7 +431,7 @@ Instead of climbing the stool:
 move the player to the stool.
 
 Check taking something enclosed by the top of the icebox:
-	if the stool is not placed properly and the player is not on the stool:
+	if the stool is not placed properly or the player is not on the stool:
 		say "You can't reach that from down here." instead.
 
 Check taking something when the player is on the stool:
