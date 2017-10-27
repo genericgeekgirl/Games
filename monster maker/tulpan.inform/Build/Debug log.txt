@@ -1,19 +1,28 @@
 Debugging log of Inform 7
-Inform called as: /usr/local/libexec/ni --rules /usr/local/share/inform7/Inform7/Extensions --extension=z8 --package /home/adri/Games/Interactive Fiction/Adri/tulpan character creation/tulpan.inform 
+Inform called as: /usr/lib/x86_64-linux-gnu/gnome-inform7/ni -internal /usr/share/gnome-inform7 -format=z8 -project /home/adri/Games/Interactive Fiction/Adri/monster maker/tulpan.inform -release
+Found language bundle 'French' (built in)
+Found language bundle 'Swedish' (built in)
+Found language bundle 'German' (built in)
+Found language bundle 'English' (built in)
+Found language bundle 'Italian' (built in)
+Found language bundle 'Spanish' (built in)
+Reading language definition from </usr/share/gnome-inform7/Languages/English/Syntax.preform>
+720 declarations read (14183 words)
 
 
 -----------------------------------------------------
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 2244 words long.
+I've now read your source text, which is 2250 words long.
 
 
 -----------------------------------------------------
 Phase II ... Semantic analysis Ia
 -----------------------------------------------------
 
-I've also read Standard Rules by Graham Nelson, which is 39455 words long.
+I've also read Standard Rules by Graham Nelson, which is 42655 words long.
+I've also read English Language by Graham Nelson, which is 2297 words long.
 I've also read Questions by Michael Callaghan, which is 6586 words long.
 
 
@@ -125,11 +134,11 @@ Phase XII ... Code generation
 
 
 
-==== Phase XII.13 ... Compiling noun and scope filter tokens ====
+==== Phase XII.13 ... Compiling second block of phrases ====
 
 
 
-==== Phase XII.14 ... Compiling second block of phrases ====
+==== Phase XII.14 ... Compiling noun and scope filter tokens ====
 
 
 
@@ -141,11 +150,23 @@ Phase XII ... Code generation
 
 
 
-==== Phase XII.17 ... Sorting and compiling non-value grammar (G3, G4) ====
+==== Phase XII.17 ... Slashing grammar (G1) ====
 
 
 
-==== Phase XII.18 ... Compiling routines from predicate calculus ====
+==== Phase XII.18 ... Determining grammar (G2) ====
+
+
+
+==== Phase XII.19 ... Sorting and compiling non-value grammar (G3, G4) ====
+
+
+
+==== Phase XII.20 ... Compiling noun and scope filter tokens ====
+
+
+
+==== Phase XII.21 ... Compiling routines from predicate calculus ====
 
 Providing for a total heap of 8192, given requirement of 8192
 
@@ -154,7 +175,9 @@ Providing for a total heap of 8192, given requirement of 8192
 Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
-Total of 140 files written as streams.
+Total of 137 files written as streams.
+CPU time: 92 centiseconds
+
 
 That concludes the debugging log from this run of Inform.
 Its contents were as follows, and can be changed by placing
@@ -170,7 +193,7 @@ Omitted:
   implications    inferences    kind changes   kind checking   kind creations   lexical output 
   local variables   matching    meaning list allocation  memory allocation   noun resolution   object compilation 
   object creations   object tree   phrase comparisons   phrase compilation   phrase creations   phrase registration 
-  phrase usage   predicate calculus   predicate calculus workings  pronouns    property assignments   property creations 
-  property provision   property translations   relation definitions   rule attachments   rulebook compilation   spatial map 
-  spatial map workings  specification permissions   specification usage   specificities    table construction   template reading 
-  text substitutions   time periods   variable creations   verifications    vocabulary  
+  phrase usage   predicate calculus   predicate calculus workings  pronouns    property creations   property provision 
+  property translations   relation definitions   rule attachments   rulebook compilation   spatial map   spatial map workings
+  specification permissions   specification usage   specificities    table construction   template reading   text substitutions 
+  time periods   variable creations   verifications    vocabulary  

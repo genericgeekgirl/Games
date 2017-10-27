@@ -26,12 +26,19 @@ Carry out dancing: say "Mini dance break!"
 
 Chapter - Environment
 
-The starry floor is a backdrop. It is in the Starry Room. Understand "stars" as starry floor.
+The floor is a backdrop. It is in the Starry Room.
+
 The Starry Room is a room. "The room is entirely black, save only for the glowing stars painted on the floor."
 
 The stars are scenery in the Starry Room. The description is "These six- (and more!-) pointed stars provide the only light in this room."
 
-After examining the player for the first time:
+Instead of examining the floor:
+	try examining the stars.
+
+After examining the stars for the first time:
+the spotlight turns on in one turn from now.
+
+at the time when the spotlight turns on:
 say "Suddenly a spotlight turns on, revealing a strange looking bird.";
 move the strange-looking bird to the location.
 
@@ -184,7 +191,7 @@ Chapter - Player's Appearance
 
 The description of the player is "Your name is [player's name]."
 
-After examining the player when the location is costume shop:
+After examining the player:
 say "You have [a list of things worn by the player]."
 
 A body part is a kind of thing. A body part is wearable.
@@ -206,9 +213,8 @@ A body bag is a kind of container. A body bag is fixed in place.
 Instead of dropping a body part (called BP):
 try taking off the BP.
 
-Procedural rule while wearing something:
-ignore the carrying requirements rule;
-ignore the can't wear what's not held rule.
+The carrying requirements rule does nothing.
+The can't wear what's not held rule does nothing.
 
 Instead of taking a body part (called BP):
 	try wearing BP.
@@ -223,10 +229,10 @@ Section - Eyes
 
 Eye is worn by player. Understand "eyes" as eye. The printed name is "[eye_num in words] eye[if eye_num is greater than 1]s[end if]".
 
-A beeker of eyes is a thing. It is fixed in place. The beeker of eyes is in Costume Shop.
-The printed name is "beaker of eyes". Understand "beaker" as beeker of eyes.
+A beaker of eyes is a thing. It is fixed in place. The beaker of eyes is in Costume Shop.
+The description is "The beaker of eyes contains eyes."
 
-Does the player mean examining the beeker of eyes: it is likely.
+Does the player mean examining the beaker of eyes: it is likely.
 
 Adding an eye is an action applying to nothing.
 Understand "take eye" and "add eye" and "wear eye" as adding an eye.
@@ -235,7 +241,7 @@ Eye_num is a number that varies. Eye_num is 2.
 
 Carry out adding an eye:
 increase eye_num by 1;
-say "You take an eye from the beeker and affix it to your face.";
+say "You take an eye from the beaker and affix it to your face.";
 if eye_num is greater than 8, say "[line break]I'm not sure how you found room for that one, but carry on.";
 if eye_num is 1, say "[line break]You can see again."
 
@@ -272,13 +278,13 @@ Carry out wearing an nose when a nose (called the old nose) is worn by the playe
 
 Section - Tails
 
-A baggy of tails is a body bag in Costume Shop.
-A cotton tail, a long spiked tail, a long slender tail, a corkscrew tail and a demon tail are tails in the baggy of tails.
+A baggie of tails is a body bag in Costume Shop.
+A cotton tail, a long spiked tail, a long slender tail, a corkscrew tail and a demon tail are tails in the baggie of tails.
 The printed name of cotton tail is "cottontail".
 
 After taking off a tail (called T):
-move T to the baggy of tails;
-say "You yank off [the T] and drop it back into the baggy.";
+move T to the baggie of tails;
+say "You yank off [the T] and drop it back into the baggie.";
 stop the action.
 
 Carry out wearing an tail when a tail (called the old tail) is worn by the player:
