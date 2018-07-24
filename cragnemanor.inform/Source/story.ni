@@ -150,9 +150,15 @@ The adri-purple is a backdrop in END2.
 Understand "purple" and "sky" as adri-purple when the location is END2.
 Description of the adri-purple is "Purple. Nothing but endless purple. It used to be your favorite color, but now you're not so sure."
 
+Instead of taking the adri-purple:
+say "You can't take that. You don't want that. You don't need that."
+
 The adri-ground is a backdrop in END2.
 Understand "ground" and "floor" and "stone" as adri-ground when the location is END2.
 Description of the adri-ground is "The ground consists of flat, dark stone, but you're not certain what kind."
+
+Instead of taking the adri-ground:
+say "You can't find so much as a loose pebble."
 
 An adri-mask is a kind of thing. An adri-mask is scenery.
 
