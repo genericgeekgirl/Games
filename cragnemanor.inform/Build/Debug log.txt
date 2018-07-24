@@ -14,7 +14,7 @@ Reading language definition from </usr/local/share/inform7/Internal/Languages/En
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 1625 words long.
+I've now read your source text, which is 1665 words long.
 
 
 -----------------------------------------------------

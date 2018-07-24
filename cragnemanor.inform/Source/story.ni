@@ -139,7 +139,7 @@ After reading a command when the location is END2:
 		replace the matched text with "adriunlock"
 
 Adri unlocking is an action applying to one thing.
-Understand "adriunock [something]" as Adri unlocking when the location is END2.
+Understand "adriunlock [something]" as Adri unlocking when the location is END2.
 
 Instead of adri unlocking something:
 say "That isn't locked."
@@ -200,6 +200,13 @@ Instead of adri unlocking the adri-gate:
 	otherwise:
 		say "It's already open!"
 
+Instead of entering the adri-gate:
+	if the adri-gate is closed:
+		say "The gate is still closed.";
+	otherwise:
+		say "You take Peter's hand and walk forward, through the gate and into the night.";
+		end the story finally saying "The End"
+                
 Section 4 - NPCs
 
 Adri-Peter is a man in END2.
@@ -227,8 +234,3 @@ Instead of Adri hugging Adri-Peter:
 		say "You wrap your arms around [adri-Peter], trying to warm him up. It doesn't seem to help.";
 	otherwise:
 		say "You pull [adri-Peter] into an embrace. He hugs you back."
-                
-[final move is to "enter gate"]
-[through the open gate, you see Real Life, It is nighttime.]
-
-["You take Peter's hand and walk forward, through the gate and into the night."]
