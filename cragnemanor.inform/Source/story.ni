@@ -8,7 +8,7 @@ END2 is a room in END.
 
 Part 1 - END2 Finale
 
-Section 0 - Transcript and Fast Quitting (Not for release)
+Section - Transcript and Fast Quitting (Not for release)
 
 Understand "* [text]" as a mistake ("Noted.") when the location is END2.
 Understand "*[text]" as a mistake ("Noted.") when the location is END2.
@@ -22,7 +22,7 @@ when play begins:
 		try switching the story transcript on;
 		say "[bold type]You can annotate the transcript by prefixing your comment with *[paragraph break][roman type]"
 
-Section 1 - Room Setup
+Section - Room Setup
 
 Adri-room-color is a text that varies. Adri-room-color is usually "purple".
  
@@ -32,10 +32,10 @@ Description of END2 is "The world around you is [adri-room-color]. So much [adri
 
 Commentary of END2 is "TODO."
 
-Section 2 - Actions
+Section - Actions
 
 Instead of examining the player when the location is END2:
-say "You've looked better. And some day, you will again. You could really use a nice warm shower when all this is over."
+say "You've looked better. You could really use a nice warm shower when all this is over."
 
 Adri laughing is an action applying to nothing.
 Understand "laugh" as adri laughing when the location is END2.
@@ -72,7 +72,7 @@ Adri-laugh-count is a number that varies. Adri-laugh-count is 0.
 To say adri-unlock-peter:
 say "[line break]Suddenly Peter looks up at you. He stands up and walks over to you, taking your hand.";
 now the adri-Peter is unlocked;
-now the initial appearance of adri-Peter is "Peter is here. He towers over you, refusing to leave your side."
+now the initial appearance of adri-Peter is "[Adri-Peter] is here. He towers over you, refusing to leave your side."
 
 Adri casting xyzzy is an action applying to nothing.
 Understand "xyzzy" and "plugh" and "plover" as adri casting xyzzy when the location is END2.
@@ -80,20 +80,18 @@ Understand "xyzzy" and "plugh" and "plover" as adri casting xyzzy when the locat
 Instead of adri casting xyzzy:
 say "Magic won't help you now."
 
+Before showing something to someone:
+try adri pointing at the noun instead.
+
 Adri Pointing at is an action applying to one thing.
-Understand "point at [something]" as adri pointing at when the location is END2.
+Understand "point at [something]" and "gesture at [something]" as adri pointing at when the location is END2.
 
 Instead of adri pointing at something:
 	say "You point at [the noun]. [run paragraph on]";
 	if the adri-Peter is locked:
-		say "Peter doesn't notice.";
+		say "[Adri-Peter] doesn't notice.";
 	otherwise:
-		say "Peter shrugs."
-
-Instead of adri pointing at an adri-mask when adri-Peter is unlocked:
-say "You gesture at [the noun]. Peter nods and retrieves [if the noun is plural-named]them[otherwise]both masks[end if] for you.";
-now the player carries the adri-buskin-mask;
-now the player carries the adri-sock-mask.
+		say "[Adri-Peter] shrugs."
 
 Instead of saying goodbye to a person when the location is END2:
 try leavetaking.
@@ -106,6 +104,12 @@ Instead of saying hello to a person when the location is END2:
 
 Instead of leavetaking when the location is END2:
 say "Your lips form words, but no sound comes out."
+
+Before examining Adri-Peter for the first time:
+now the current interlocutor is Adri-Peter.
+
+Instead of speaking when the location is END2:
+try leavetaking.
 
 Adri hugging is an action applying to one thing.
 Understand "adrihug [someone]" as Adri hugging when the location is END2.
@@ -165,7 +169,7 @@ Understand "adriunlock [something]" as Adri unlocking when the location is END2.
 Instead of adri unlocking something:
 say "That isn't locked."
 
-Section 3 - Things
+Section - Scenery
 
 The adri-purple is scenery in END2.
 Understand "purple" and "sky" as adri-purple when the location is END2.
@@ -174,7 +178,7 @@ Description of the adri-purple is "Purple. Nothing but endless purple. It used t
 Instead of taking the adri-purple:
 say "You can't take that. You don't want that. You don't need that."
 
-The adri-orange is a scenery.
+The adri-sorange is a scenery.
 Understand "orange" and "sky" as adri-orange when the location is END2.
 Description of the adri-orange is "There is nothing but a sea of orange, everywhere you look."
 
@@ -195,18 +199,49 @@ Description of the adri-ground is "The ground consists of flat, dark stone, but 
 Instead of taking the adri-ground:
 say "You can't find so much as a loose pebble."
 
-An adri-mask is a kind of thing. An adri-mask is scenery. An adri-mask is wearable.
+Section - Masks
+
+An adri-mask is a kind of thing. An adri-mask is wearable.
 
 Instead of taking an adri-mask when the noun is part of the adri-gate:
 say "[if the noun is plural-named]They're[otherwise]It's[end if] just too high for you to reach."
 
-After wearing an adri-mask:
-say "You slip [the noun] over your face."
+Instead of adri pointing at an adri-mask when adri-Peter is unlocked:
+	say "You gesture at [the noun]. [run paragraph on]";
+	if the noun is part of the adri-gate:
+		say "[Adri-Peter] nods and retrieves [if the noun is plural-named]them[otherwise]both masks[end if] for you.";
+		now the player carries the adri-buskin-mask;
+		now the player carries the adri-sock-mask;
+		now the adri-set-of-masks is part of the player;
+	otherwise:
+		say "[Adri-Peter] shrugs."
+
+Instead of taking the adri-set-of-masks:
+say "[adri-sock-mask]: [run paragraph on]";
+try taking the adri-sock-mask;
+say "[adri-buskin-mask]: [run paragraph on]";
+try taking the adri-buskin-mask.
+
+Instead of dropping the adri-set-of-masks:
+say "[adri-sock-mask]: [run paragraph on]";
+try dropping the adri-sock-mask;
+say "[adri-buskin-mask]: [run paragraph on]";
+try dropping the adri-buskin-mask.
+
+Before giving the adri-set-of-masks to someone when the adri-set-of-masks is part of the player:
+say "[Adri-Peter] doesn't seem interested." instead.
+
+Instead of putting an adri-mask on adri-Peter:
+say "[Adri-Peter] shakes his head."
+
+Instead of wearing the adri-set-of-masks:
+say "You can only wear one mask at a time."
+
+Check wearing an adri-mask when an adri-mask is worn:
+say "You hold the other mask in front of your face and look through the eyes, and your vision goes black. You take the mask away." instead.
 
 After taking off an adri-mask:
 say "You take off [the noun].";
-
-[TODO: What do I do with set of masks after they've been taken?]
 
 The adri-set-of-masks is a plural-named adri-mask and part of the adri-gate.
 The printed name of the adri-set-of-masks is "set of masks".
@@ -218,30 +253,38 @@ Printed name of the adri-sock-mask is "sock mask".
 Understand "mask" and "sock" and "sock mask" and "comedy mask" and "laughing mask" and "gold mask" as adri-sock-mask when the location is END2.
 Description of the adri-sock-mask is "This gold mask depicts a gleeful face. It makes you want to laugh, despite yourself."
 
-Before wearing the adri-sock-mask:
+After wearing the adri-sock-mask:
 now adri-orange is in END2;
 now adri-purple is nowhere;
-now adri-room-color is "orange".
+now adri-room-color is "orange";
+now the adri-orange-spot is part of the adri-gate;
+say "You slip [the noun] over your face."
 
 Before taking off the adri-sock-mask:
 now adri-purple is in END2;
 now adri-orange is nowhere;
-now adri-room-color is "purple".
+now adri-room-color is "purple";
+now the adri-orange-spot is nowhere.
 
 The adri-buskin-mask is an adri-mask and part of the adri-gate.
 Printed name of the adri-buskin-mask is "buskin mask".
 Understand "mask" and "buskin" and "buskin mask" and "tragedy mask" and "crying mask" and "silver mask" as adri-buskin-mask when the location is END2.
 Description of the adri-buskin-mask is "The face depicted in this silver mask is so sad, it makes you feel like crying."
 
-Before  wearing the adri-buskin-mask:
+After wearing the adri-buskin-mask:
 now adri-green is in END2;
 now adri-purple is nowhere;
-now adri-room-color is "green".
+now adri-room-color is "green";
+now the adri-green-spot is part of the adri-gate;
+say "You slip [the noun] over your face."
 
 Before taking off the adri-buskin-mask:
 now adri-purple is in END2;
 now adri-green is nowhere;
-now adri-room-color is "purple".
+now adri-room-color is "purple";
+now the adri-green-spot is nowhere.
+
+Section - Gate
 
 The adri-gate is a closed unopenable door and scenery in END2.
 The adri-gate is southeast of END2.
@@ -249,39 +292,20 @@ Printed name of the adri-gate is "gate".
 Understand "gate" and "arch" as adri-gate when the location is END2.
 Description of the adri-gate is "[if the adri-gate is closed]A pair of closed metal gates, the sort that should swing open, if only you could figure out how they worked. The bars are too decorative and entwined to squeeze through, and the gate is too high to climb over, not that you think it would take you anywhere if you did. You can walk right around it, and the other side is near identical, minus the masks on the arch[otherwise]The gates are open, beckoning you to walk through[end if]."
 
+After examining the adri-gate when the adri-gate is closed:
+	if the adri-buskin-mask is worn:
+		say "You see a glowing green spot on the right side of the gate.";
+	otherwise if the adri-sock-mask is worn:
+		say "You see a glowing orange spot on the left side of the gate."
+
+Before searching the adri-gate when an adri-mask is worn:
+say "You can barely see with this mask on." instead.
+                
 Instead of searching the adri-gate:
 say "Looking more closely, you see a set of dials hidden in the decoration of the gate.";
 now the adri-set-of-dials is part of the adri-gate;
-now the adri-gold-dial is part of the adri-gate;
-now the adri-silver-dial is part of the adri-gate.
-
-An adri-dial is a kind of thing. An adri-dial is scenery.
-
-The adri-set-of-dials is a plural-named adri-dial.
-The printed name of the adri-set-of-dials is "set of dials".
-Understand "dials" as adri-set-of-dials when the location is END2.
-Description of adri-set-of-dials is "There are two dials here, like on a combination lock. One is gold and the other is silver."
-
-Adri-gold-dial-count is a number that varies. Adri-gold-dial-count is 0.
-
-Adri-silver-dial-count is a number that varies. Adri-silver-dial-count is 0.
-
-The adri-gold-dial is an adri-dial.
-Printed name of adri-gold-dial is "gold dial".
-Understand "dial" and "gold dial" and "gold" as adri-gold-dial when the location is END2.
-Description of adri-gold-dial is "It's a tiny golden dial. It can be turned to any number."
-
-The adri-silver-dial is adri-dial.
-Printed name of adri-silver-dial is "silver dial".
-Understand "dial" and "silver dial" and "silver" as adri-silver-dial when the location is END2.
-Description of adri-silver-dial is "It's a tiny silver dial. It can be turned to any number."
-
-[TODO: turning dials to numbers]
-
-Every turn when the adri-set-of-dials is part of the adri-gate and the location is END2:
-	if adri-gold-dial-count is adri-laugh-count and adri-silver-dial-count is adri-cry-count:
-		now the adri-gate is open;
-		say "The [adri-gate] suddenly swings open."
+now the adri-orange-left-dial is part of the adri-gate;
+now the adri-green-right-dial is part of the adri-gate.
 
 Instead of taking the adri-gate:
 say "Try as you might, you can't pull it out of the ground."
@@ -298,14 +322,80 @@ Instead of adri unlocking the adri-gate:
 	otherwise:
 		say "It's already open!"
 
+Instead of adri pointing at the adri-gate when the adri-gate is open:
+say "You gesture at the open gate. [Adri-Peter] nods and waves for you to go first."
+                
 Instead of entering the adri-gate:
 	if the adri-gate is closed:
 		say "The gate is still closed.";
 	otherwise:
-		say "You take Peter's hand and walk forward, through the gate and into the night.";
+		say "You take [Adri-Peter]'s hand and walk forward, through the gate and into the night.";
 		end the story finally saying "The End"
+
+Section - Spots
+
+An adri-spot is a kind of thing. An adri-spot is scenery.
+
+Instead of pushing or touching an adri-spot:
+say "You press [the noun], but nothing happens."
+
+The adri-orange-spot is an adri-spot.
+Printed name of adri-orange-spot is "orange spot".
+Understand "orange spot" and "spot" and "dot" and "orange dot" as adri-orange-spot when the location is END2.
+Description of adri-orange-spot is "A tiny dot of bright orange has appeared on the gate."
+
+The adri-green-spot is an adri-spot.
+Printed name of adri-green-spot is "green spot".
+Understand "green spot" and "spot" and "dot" and "green dot" as adri-green-spot when the location is END2.
+Description of adri-green-spot is "A tiny dot of bright green has appeared on the gate."
                 
-Section 4 - NPCs
+Section - Dials
+
+An adri-dial is a kind of thing. An adri-dial is scenery.
+
+The adri-set-of-dials is a plural-named adri-dial.
+The printed name of the adri-set-of-dials is "set of dials".
+Understand "dials" as adri-set-of-dials when the location is END2.
+Description of adri-set-of-dials is "There are two dials here, like on a combination lock."
+
+adri-orange-left-dial-count is a number that varies. adri-orange-left-dial-count is -1.
+
+adri-green-right-dial-count is a number that varies. adri-green-right-dial-count is -1.
+
+The adri-orange-left-dial is an adri-dial.
+Printed name of adri-orange-left-dial is "left dial".
+Understand "dial" and "left dial" as adri-orange-left-dial when the location is END2.
+Description of adri-orange-left-dial is "It's a tiny dial. It can be turned to any number. It currently reads [if adri-orange-left-dial-count is greater than 0][adri-orange-left-dial-count][otherwise]0[end if]."
+
+The adri-green-right-dial is adri-dial.
+Printed name of adri-green-right-dial is "right dial".
+Understand "dial" and "right dial" as adri-green-right-dial when the location is END2.
+Description of adri-green-right-dial is "It's a tiny dial. It can be turned to any number. It currently reads [if adri-green-right-dial-count is greater than 0][adri-green-right-dial-count][otherwise]0[end if]."
+
+Adri setting is an action applying to one thing and one number.
+Understand "turn [adri-dial] to [a number]" as Adri setting when the location is END2.
+
+Instead of turning an adri-dial:
+say "You need to turn a dial to a number."
+
+Instead of Adri setting an adri-dial:
+	let N be the number understood;
+	if the noun is the adri-set-of-dials:
+		say "You can only use one dial at a time.";
+	otherwise:
+		say "You turn [the noun] to [N].";
+		if the noun is the adri-orange-left-dial:
+			now adri-orange-left-dial-count is N;
+		otherwise if the noun is the adri-green-right-dial:
+			now adri-green-right-dial-count is N.
+
+Every turn when the adri-set-of-dials is part of the adri-gate and the location is END2 and the adri-gate is closed:
+	if adri-orange-left-dial-count is adri-laugh-count and adri-green-right-dial-count is adri-cry-count:
+		if adri-laugh-count is greater than 0 and adri-cry-count is greater than 0:
+			now the adri-gate is open;
+			say "The [adri-gate] suddenly swings open."
+
+Section - Peter
 
 Adri-Peter is a man in END2.
 Printed name of adri-Peter is "Peter".
@@ -332,3 +422,12 @@ Instead of Adri hugging Adri-Peter:
 		say "You wrap your arms around [adri-Peter], trying to warm him up. It doesn't seem to help.";
 	otherwise:
 		say "You pull [adri-Peter] into an embrace. He hugs you back."
+
+Section - Testing
+
+test adri-masks with "laugh / cry / point at masks / wear buskin / wear sock / x spot".
+test adri-emotions with "laugh / laugh / cry".
+test adri-gate with "search gate / turn left dial to 3 / turn right dial to 2".
+test adri-end with "enter gate".
+
+
