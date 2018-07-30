@@ -1,5 +1,5 @@
 Debugging log of Inform 7
-Inform called as: /usr/local/libexec/ni --internal /usr/local/share/inform7/Internal --format=z8 --project /home/adri/Games/Interactive Fiction/Adri/cragnemanor.inform
+Inform called as: /usr/local/libexec/ni --internal /usr/local/share/inform7/Internal --format=z8 --project /home/adri/Games/Interactive Fiction/Adri/cragne manor/cragnemanor.inform
 Found language bundle 'French' (built in)
 Found language bundle 'Swedish' (built in)
 Found language bundle 'German' (built in)
@@ -14,7 +14,7 @@ Reading language definition from </usr/local/share/inform7/Internal/Languages/En
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 4704 words long.
+I've now read your source text, which is 4745 words long.
 
 
 -----------------------------------------------------
@@ -180,7 +180,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 163 files written as streams.
-CPU time: 103 centiseconds
+CPU time: 95 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

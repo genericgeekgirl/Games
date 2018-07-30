@@ -1,18 +1,18 @@
 ! Blurb file created by Inform build 6M62
 
-status "/usr/local/share/inform7/Internal/Miscellany/CblorbModel.html" "/home/adri/Games/Interactive Fiction/Adri/cragnemanor.inform/Build/StatusCblorb.html"
+status "/usr/local/share/inform7/Internal/Miscellany/CblorbModel.html" "/home/adri/Games/Interactive Fiction/Adri/cragne manor/cragnemanor.inform/Build/StatusCblorb.html"
 
 
 ! Identification
 
-project folder "/home/adri/Games/Interactive Fiction/Adri/cragnemanor.inform"
-release to "/home/adri/Games/Interactive Fiction/Adri/cragnemanor.materials/Release"
+project folder "/home/adri/Games/Interactive Fiction/Adri/cragne manor/cragnemanor.inform"
+release to "/home/adri/Games/Interactive Fiction/Adri/cragne manor/cragnemanor.materials/Release"
 
 ! Blorb instructions
 
 storyfile leafname "story.zblorb"
-storyfile "/home/adri/Games/Interactive Fiction/Adri/cragnemanor.inform/Build/output.z8" include
-ifiction "/home/adri/Games/Interactive Fiction/Adri/cragnemanor.inform/Metadata.iFiction" include
+storyfile "/home/adri/Games/Interactive Fiction/Adri/cragne manor/cragnemanor.inform/Build/output.z8" include
+ifiction "/home/adri/Games/Interactive Fiction/Adri/cragne manor/cragnemanor.inform/Metadata.iFiction" include
 cover "/usr/local/share/inform7/Internal/Miscellany/Cover.jpg"
 picture 1 "/usr/local/share/inform7/Internal/Miscellany/Cover.jpg"
 

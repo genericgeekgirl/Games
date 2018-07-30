@@ -2,11 +2,15 @@ Chapter 1 - Do Not Change Any Of This
 
 Include Cragne Suite by Ryan Veeder.
 
+Use unabbreviated object names.
+
 END is a region.
 
 END2 is a room in END.
 
 Part 1 - END2 Finale
+
+Chapter - Setup
 
 Section - Transcript and Fast Quitting (Not for release)
 
@@ -30,7 +34,7 @@ Understand "about" and "credits" as Adri requesting story information when the l
 Carry out Adri requesting story information:
 say "Beta testers: Andrew Schultz, Michael Phipps, Michael Silverman, Brett Witty[line break]"
 
-Section - Room Setup
+Chapter - Environment
 
 Adri-room-color is a text that varies. Adri-room-color is usually "purple".
  
@@ -40,56 +44,13 @@ Description of END2 is "The world around you is [adri-room-color]. So much [adri
 
 Commentary of END2 is "There's a fly buzzing around here somewhere."
 
-Section - Actions
+Instead of listening when the location is END2:
+say "You hear nothing at all. It is eerily quiet."
 
-Instead of examining the player when the location is END2:
-say "You've looked better. You could really use a nice warm shower when all this is over."
+Chapter - Actions
 
-Instead of searching the player when the location is END2:
-say "You've left everything behind."
-
-Instead of thinking when the location is END2:
-say "You're too overwhelmed to think clearly."
-
-Instead of jumping when the location is END2:
-say "You jump, but the gravity here seems heavier than normal."
-
-Adri screaming is an action applying to nothing.
-Understand "scream" as Adri screaming when the location is END2.
-
-Instead of Adri screaming:
-say "You scream until your throat is sore, never making a sound."
-
-Adri blaspheming is an action applying to nothing.
-Understand "say Ialdabaoloth" and "Ialdabaoloth" as adri blaspheming.
-
-Instead of Adri blaspheming:
-	if adri-Peter is locked:
-		say "Suddenly [adri-peter] stands and approaches you. He slaps you hard across the face, knocking you to the ground. Then he walks off into the darkness. You stare after him for a while. When you finally turn around, you notice the gate is also gone.";
-		end the story saying "You have lost everything";
-	otherwise:
-		say "[Adri-Peter] wraps his hands tightly around your throat. You struggle, but he's much stronger than you. As you lose consciousness, you hear the sound of laughter.";
-		end the story saying "You have died";
-                
-Adri waking is an action applying to one thing.
-Understand "wake [someone]" and "rouse [someone]" and "shake [someone]" as Adri waking when the location is END2.
-
-Instead of Adri waking Adri-Peter:
-	if adri-Peter is locked:
-		say "You shake [Adri-Peter]. When you let go, his body continues to shake. His skin splits open, revealing the most beautiful creature you have ever seen. Overcome with happiness, you start to weep, tears of blood running down your cheeks.";
-		end the story saying "You have gone utterly mad";
-	otherwise:
-		say "He's already awake."
-
-Adri smiling is an action applying to nothing.
-Understand "smile" as adri smiling when the location is END2.
-
-Instead of adri smiling:
-	if adri-Peter is locked:
-		say "You don't really feel like smiling right now.";
-	otherwise:
-		say "You smile at [Adri-peter], and he smiles back."
-                
+Section - Laughing and Crying
+                                
 Adri laughing is an action applying to nothing.
 Understand "laugh" as adri laughing when the location is END2.
 
@@ -127,6 +88,43 @@ say "[line break]Suddenly Peter looks up at you. He stands up and walks over to 
 now the adri-Peter is unlocked;
 now the initial appearance of adri-Peter is "[Adri-Peter] is here. He towers over you, refusing to leave your side."
 
+Section - Other Actions
+
+Instead of thinking when the location is END2:
+say "You're too overwhelmed to think clearly."
+
+Instead of jumping when the location is END2:
+say "You jump, but the gravity here seems heavier than normal."
+
+Adri screaming is an action applying to nothing.
+Understand "scream" as Adri screaming when the location is END2.
+
+Instead of Adri screaming:
+say "You scream until your throat is sore, never making a sound."
+
+Adri blaspheming is an action applying to nothing.
+Understand "say Ialdabaoloth" and "Ialdabaoloth" as adri blaspheming.
+
+Instead of Adri blaspheming:
+	if adri-Peter is locked:
+		say "Suddenly [adri-peter] stands and approaches you. He slaps you hard across the face, knocking you to the ground. Then he walks off into the darkness. You stare after him for a while. When you finally turn around, you notice the gate is also gone.";
+		end the story saying "You have lost everything";
+	otherwise:
+		say "[Adri-Peter] wraps his hands tightly around your throat. You struggle, but he's much stronger than you. As you lose consciousness, you hear the sound of laughter.";
+		end the story saying "You have died";
+                
+Adri waking is an action applying to one thing.
+Understand "wake [someone]" and "rouse [someone]" and "shake [someone]" as Adri waking when the location is END2.
+
+Adri smiling is an action applying to nothing.
+Understand "smile" as adri smiling when the location is END2.
+
+Instead of adri smiling:
+	if adri-Peter is locked:
+		say "You don't really feel like smiling right now.";
+	otherwise:
+		say "You smile at [Adri-peter], and he smiles back."
+
 Adri casting xyzzy is an action applying to nothing.
 Understand "xyzzy" and "plugh" and "plover" as adri casting xyzzy when the location is END2.
 
@@ -145,27 +143,6 @@ Instead of adri pointing at something:
 		say "[Adri-Peter] doesn't notice.";
 	otherwise:
 		say "[Adri-Peter] shrugs."
-
-Instead of saying goodbye to a person when the location is END2:
-try leavetaking.
-
-Instead of saying hello to a person when the location is END2:
-	if the noun is the player:
-		say "You've always talked to yourself. It's not a sign that you're going crazy. Or is it?";
-	otherwise:
-		try leavetaking.
-
-Instead of leavetaking when the location is END2:
-say "[adri-silence]".
-
-To say adri-silence:
-say "Your lips form words, but no sound comes out."
-
-Before doing anything when the location is END2:
-now the current interlocutor is Adri-Peter.
-
-Instead of speaking when the location is END2:
-try leavetaking.
 
 Adri hugging is an action applying to one thing.
 Understand "adrihug [someone]" as Adri hugging when the location is END2.
@@ -209,6 +186,45 @@ Instead of Adri signing:
 	otherwise:
 		say "He smiles."
 
+After reading a command when the location is END2:
+	if the player's command includes "unlock":
+		replace the matched text with "adriunlock"
+
+Adri unlocking is an action applying to one thing.
+Understand "adriunlock [something]" as Adri unlocking when the location is END2.
+
+Instead of adri unlocking something:
+say "That isn't locked."
+ 
+Section - Conversation
+
+Persuasion rule for asking people to try doing something when the location is END2:
+say "[adri-silence]";
+persuasion fails.
+
+Instead of saying goodbye to a person when the location is END2:
+try leavetaking.
+
+Instead of saying hello to a person when the location is END2:
+	if the noun is the player:
+		say "You've always talked to yourself. It's not a sign that you're going crazy. Or is it?";
+	otherwise:
+		try leavetaking.
+
+Instead of leavetaking when the location is END2:
+say "[adri-silence]".
+
+To say adri-silence:
+say "Your lips form words, but no sound comes out."
+
+Before doing anything when the location is END2:
+now the current interlocutor is Adri-Peter.
+
+Instead of speaking when the location is END2:
+try leavetaking.
+
+Section - Going
+
 Instead of going when the location is END2:
 say "There is nothing but darkness in that direction."
 
@@ -227,20 +243,9 @@ say "You cannot fly."
 Instead of going down when the location is END2:
 say "The ground seems pretty solid."
 
-Instead of listening when the location is END2:
-say "You hear nothing at all. It is eerily quiet."
+Chapter - Scenery
 
-After reading a command when the location is END2:
-	if the player's command includes "unlock":
-		replace the matched text with "adriunlock"
-
-Adri unlocking is an action applying to one thing.
-Understand "adriunlock [something]" as Adri unlocking when the location is END2.
-
-Instead of adri unlocking something:
-say "That isn't locked."
-
-Section - Scenery
+Section - Backgrounds
 
 An adri-background is a kind of thing.
 An adri-background is scenery.
@@ -248,14 +253,6 @@ An adri-background is privately-named.
 
 Instead of tasting an adri-background:
 say "It tastes [one of]sweet[or]salty[or]bitter[at random]."
-
-The adri-darkness is privately-named scenery in END2.
-Printed name of adri-darkness is "darkness".
-Understand "darkness" as adri-darkness when the location is END2.
-Description of the adri-darkness is "You are surrounded by darkness in all directions."
-
-Instead of taking the adri-darkness:
-say "Taking the darkness? Unheard of."
 
 The adri-purple is an adri-background in END2.
 Printed name of adri-purple is "purple".
@@ -281,6 +278,8 @@ Description of the adri-green is "It's all green, as far as your eyes can see."
 Instead of taking the adri-green:
 say "That just isn't possible, even in this dimension."
 
+Section - The Fly
+
 adri-search-count is a number that varies. adri-search-count is 0.
 
 Does the player mean searching an adri-background: it is likely.
@@ -305,6 +304,16 @@ say "It flies out of your reach."
 Instead of attacking the adri-fly:
 say "You attempt to squash the [adri-fly]. As it dodges swiftly out of the way, it begins to multiply. Soon you are surrounded by flies. They swarm over your body, feasting on your flesh.";
 end the story saying "You have died".
+
+Section - Other
+
+The adri-darkness is privately-named scenery in END2.
+Printed name of adri-darkness is "darkness".
+Understand "darkness" as adri-darkness when the location is END2.
+Description of the adri-darkness is "You are surrounded by darkness in all directions."
+
+Instead of taking the adri-darkness:
+say "Taking the darkness? Unheard of."
                 
 The adri-ground is privately-named scenery in END2.
 Printed name of adri-ground is "ground".
@@ -316,6 +325,8 @@ say "You can't find so much as a loose pebble."
 
 Instead of taking the adri-ground:
 say "The ground is one solid piece of rock. There's nothing to take."
+
+Chapter - Items
 
 Section - Masks
 
@@ -595,6 +606,16 @@ Every turn when the adri-set-of-dials is part of the adri-gate and the location 
 		now the description of the adri-gate is "The gates are open, beckoning you to walk through.";
 		say "[The adri-gate] suddenly swings open."
 
+Chapter - People
+
+Section - The Player
+
+Instead of examining the player when the location is END2:
+say "You've looked better. You could really use a nice warm shower when all this is over."
+
+Instead of searching the player when the location is END2:
+say "You've left everything behind."
+
 Section - Peter
 
 Adri-Peter is a privately-named man in END2.
@@ -602,6 +623,8 @@ Printed name of adri-Peter is "Peter".
 Understand "peter" and "husband" and "my husband" as adri-Peter when the location is END2.
 Description of adri-Peter is "It's your husband, Peter[if the adri-Peter is locked]! He looks unharmed, but his eyes are dull, and he is unresponsive under your gaze[otherwise]. He looks as handsome as ever.[end if]."
 Initial appearance of Adri-Peter is "In the center of the lit area is Peter. He kneels on the ground, staring off into nothingness."
+
+Adri-Peter can be locked or unlocked. Adri-Peter is locked.
 
 Adri-Peter-eyes is a privately-named part of Adri-Peter.
 Printed name of adri-Peter-eyes is "Peter's eyes". 
@@ -620,12 +643,13 @@ Instead of taking adri-peter-hand:
 	otherwise:
 		say "You give [adri-peter-hand] a quick squeeze."
 
-Adri-Peter can be locked or unlocked. Adri-Peter is locked.
-
-Persuasion rule for asking people to try doing something when the location is END2:
-say "[adri-silence]";
-persuasion fails.
-
+Instead of Adri waking Adri-Peter:
+	if adri-Peter is locked:
+		say "You shake [Adri-Peter]. When you let go, his body continues to shake. His skin splits open, revealing the most beautiful creature you have ever seen. Overcome with happiness, you start to weep, tears of blood running down your cheeks.";
+		end the story saying "You have gone utterly mad";
+	otherwise:
+		say "He's already awake."
+                
 Instead of searching Adri-Peter:
 say "You find a note in his pocket.";
 now the adri-note is in the location.
@@ -677,8 +701,6 @@ Instead of Adri hugging Adri-Peter:
 	otherwise:
 		say "You pull [adri-Peter] into an embrace. He hugs you back."
 
-Section - Testing
+Chapter - Testing
 
 test adri-foo with "laugh / cry / point at masks / search gate / search buskin / search sock".
-
-
