@@ -34,6 +34,12 @@ Understand "about" and "credits" as Adri requesting story information when the l
 Carry out Adri requesting story information:
 say "Beta testers: Andrew Schultz, Michael Phipps, Michael Silverman, Brett Witty[line break]"
 
+Adri hinting is an action out of world.
+Understand "hint" and "help" as Adri hinting when the location is END2.
+
+Carry out Adri hinting:
+say "Have you tried searching everything?"
+
 Chapter - Environment
 
 Adri-room-color is a text that varies. Adri-room-color is usually "purple".
