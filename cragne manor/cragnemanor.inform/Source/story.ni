@@ -22,37 +22,33 @@ Section - Transcript and Fast Quitting (Not for release)
 Understand "* [text]" as a mistake ("Noted.").
 Understand "*[text]" as a mistake ("Noted.").
 
-Adri Fast quitting is an action out of world.
-Understand "quitr" as adri fast quitting.
-Carry out adri fast quitting: follow the immediately quit rule.
+Fast quitting is an action out of world.
+Understand "quitr" as fast quitting.
+Carry out fast quitting: follow the immediately quit rule.
 
-when play begins:
+When play begins:
 	if the location is END2:
 		try switching the story transcript on;
 		say "[bold type]You can annotate the transcript by prefixing your comment with *[paragraph break]Please send transcripts to genericgeekgirl@gmail.com.[paragraph break][roman type]"
 
 Section - Other Setup
 
-Adri requesting story information is an action out of world.
-Understand "about" and "credits" as Adri requesting story information.
+Requesting story information is an action out of world.
+Understand "about" and "credits" as requesting story information.
 
-Carry out Adri requesting story information:
+Carry out requesting story information:
 say "[story description][paragraph break]Beta testers: Andrew Schultz, Michael Phipps, Michael Silverman, Brett Witty, Brian Liberge[paragraph break][commentary of END2][line break]"
 
-Adri hinting is an action out of world.
-Understand "hint" and "help" as Adri hinting.
-
-Carry out Adri hinting:
-say "Have you tried searching everything?"
-[TODO]
+Hinting is an action out of world.
+Understand "hint" and "help" as hinting.
 
 Chapter - Environment
 
-room-color is a text that varies. room-color is usually "purple".
+Room-color is a text that varies. room-color is usually "purple".
  
 Printed name of END2 is "The Great [room-color in Sentence case] Unknown".
 
-Description of END2 is "The world around you is [room-color]. So much [room-color]. The immediate area is bright enough to see, but you don't see any obvious light source, and then there is darkness. [room-color in sentence case] darkness. The ground seems to be some sort of dark stone. There is a gate here, an ornate wrought-iron one with an arch over it, but it doesn't connect to any sort of fence. In fact, you can walk around the gate without any problem, and through it, you see only more [room-color][if the set-of-masks is part of the gate]. Above the gate, secured to the metal arch, are a set of masks[end if]."
+Description of END2 is "The world around you is [room-color]. So much [room-color]. The immediate area is bright enough to see, but you don't see any obvious light source, and then there is darkness. [room-color in sentence case] darkness. The ground seems to be some sort of dark stone. There is a gate here, an ornate wrought-iron one with an arch over it, but it doesn't connect to any sort of fence. In fact, you can walk the around gate without any problem, and through it, you see only more [room-color][if the set-of-masks is part of the gate]. Above the gate, secured to the metal arch, are a set of masks[end if]."
 
 Commentary of END2 is "There's a fly buzzing around here somewhere."
 
@@ -62,11 +58,13 @@ say "You hear nothing at all. It is eerily quiet."
 Chapter - Actions
 
 Section - Laughing and Crying
-                                
-Adri laughing is an action applying to nothing.
-Understand "laugh" as adri laughing.
 
-Instead of adri laughing:
+Understand the command "kick" as "attack".
+                      
+Laughing is an action applying to nothing.
+Understand "laugh" as laughing.
+
+Instead of laughing:
 	increase laugh-count by 1;
 	if Peter is locked:
 		say "You laugh. At first it feels forced, but soon you're laughing hysterically, albeit silently.";
@@ -77,10 +75,10 @@ Instead of adri laughing:
 	otherwise:
 		say "You look at [Peter], and you laugh. He's here, he's really here."
                         
-Adri crying is an action applying to nothing.
-Understand "cry" and "weep" as adri crying.
+Crying is an action applying to nothing.
+Understand "cry" and "weep" as crying.
 
-Instead of adri crying:
+Instead of crying:
 	increase cry-count by 1;
 	if Peter is locked:
 		say "You break down into tears, sobbing heavily, all without making a sound.";
@@ -91,9 +89,9 @@ Instead of adri crying:
 	otherwise:
 		say "You look at [Peter], and you cry, this time from happiness and relief."
 
-cry-count is a number that varies. cry-count is 0.
+Cry-count is a number that varies. Cry-count is 0.
 
-laugh-count is a number that varies. laugh-count is 0.
+Laugh-count is a number that varies. Laugh-count is 0.
 
 To say unlock-peter:
 say "[line break]Suddenly Peter looks up at you. He stands up and walks over to you, taking your hand.";
@@ -108,16 +106,16 @@ say "You're too overwhelmed to think clearly."
 Instead of jumping:
 say "You jump, but the gravity here seems heavier than normal."
 
-Adri screaming is an action applying to nothing.
-Understand "scream" as Adri screaming.
+screaming is an action applying to nothing.
+Understand "scream" as screaming.
 
-Instead of Adri screaming:
+Instead of screaming:
 say "You scream until your throat is sore, never making a sound."
 
-Adri blaspheming is an action applying to nothing.
-Understand "say Ialdabaoloth" and "Ialdabaoloth" as adri blaspheming.
+Blaspheming is an action applying to nothing.
+Understand "say Ialdabaoloth" and "Ialdabaoloth" as blaspheming.
 
-Instead of Adri blaspheming:
+Instead of blaspheming:
 	if Peter is locked:
 		say "Suddenly [peter] stands and approaches you. He slaps you hard across the face, knocking you to the ground. Then he walks off into the darkness. You stare after him for a while. When you finally turn around, you notice the gate is also gone.";
 		end the story saying "You have lost everything";
@@ -125,41 +123,41 @@ Instead of Adri blaspheming:
 		say "[Peter] wraps his hands tightly around your throat. You struggle, but he's much stronger than you. As you lose consciousness, you hear the sound of laughter.";
 		end the story saying "You have died";
                 
-Adri waking is an action applying to one thing.
-Understand "wake [someone]" and "rouse [someone]" and "shake [someone]" as Adri waking.
+Shaking is an action applying to one thing.
+Understand "wake [someone]" and "rouse [someone]" and "shake [someone]" as shaking.
 
-Adri smiling is an action applying to nothing.
-Understand "smile" as adri smiling.
+Smiling is an action applying to nothing.
+Understand "smile" as smiling.
 
-Instead of adri smiling:
+Instead of smiling:
 	if Peter is locked:
 		say "You don't really feel like smiling right now.";
 	otherwise:
 		say "You smile at [peter], and he smiles back."
 
-Adri casting xyzzy is an action applying to nothing.
-Understand "xyzzy" and "plugh" and "plover" as adri casting xyzzy.
+Casting xyzzy is an action applying to nothing.
+Understand "xyzzy" and "plugh" and "plover" as casting xyzzy.
 
-Instead of adri casting xyzzy:
+Instead of casting xyzzy:
 say "Magic can't save you now."
 
 Before showing something to someone:
-try adri pointing at the noun instead.
+try pointing at the noun instead.
 
-Adri Pointing at is an action applying to one thing.
-Understand "point to [something]" and "point at [something]" and "gesture at [something]" as adri pointing at.
+Pointing at is an action applying to one thing.
+Understand "point to [something]" and "point at [something]" and "gesture at [something]" as pointing at.
 
-Instead of adri pointing at something:
+Instead of pointing at something:
 	say "You point at [the noun]. [run paragraph on]";
 	if the Peter is locked:
 		say "[Peter] doesn't notice.";
 	otherwise:
 		say "[Peter] shrugs."
 
-Adri hugging is an action applying to one thing.
-Understand "adrihug [someone]" as Adri hugging.
+Hugging is an action applying to one thing.
+Understand "adrihug [someone]" as hugging.
 
-Instead of Adri hugging something when the noun is not Peter:
+Instead of hugging something when the noun is not Peter:
 try kissing the noun.
 
 After reading a command:
@@ -167,12 +165,12 @@ After reading a command:
 		replace the matched text with "adrihug"
                 
 Instead of waving:
-try adri waving at Peter.
+try waving at Peter.
 
-Adri waving at is an action applying to one thing.
-Understand "wave at [something]" as Adri waving at.
+Waving at is an action applying to one thing.
+Understand "wave at [something]" as waving at.
 
-Instead of Adri waving at something:
+Instead of waving at something:
 	say "You wave at [the noun]. [run paragraph on]";
 	if the noun is Peter:
 		if the Peter is locked:
@@ -182,16 +180,16 @@ Instead of Adri waving at something:
 	otherwise:
 		say "[paragraph break]"
 
-Adri signing is an action applying to nothing.
-Understand "use sign language" and "sign" as Adri signing.
+Signing is an action applying to nothing.
+Understand "use sign language" and "sign" as signing.
 
-Adri signing at is an action applying to one thing.
-Understand "sign at [Peter]" and "sign to [Peter]" as Adri signing at.
+Signing at is an action applying to one thing.
+Understand "sign at [Peter]" and "sign to [Peter]" as signing at.
 
-Instead of Adri signing at something:
-try Adri signing.
+Instead of signing at something:
+try signing.
 
-Instead of Adri signing:
+Instead of signing:
 	say "The only sign language you know is 'I love you.' You sign that at [Peter]. [run paragraph on]";
 	if Peter is locked:
 		say "He does not respond. He doesn't seem to be able to see you.";
@@ -202,10 +200,10 @@ After reading a command:
 	if the player's command includes "unlock":
 		replace the matched text with "adriunlock"
 
-Adri unlocking is an action applying to one thing.
-Understand "adriunlock [something]" as Adri unlocking.
+Unlocking is an action applying to one thing.
+Understand "adriunlock [something]" as unlocking.
 
-Instead of adri unlocking something:
+Instead of unlocking something:
 say "That isn't locked."
  
 Section - Conversation
@@ -261,53 +259,60 @@ Section - Backgrounds
 
 A background is a kind of thing.
 A background is scenery.
-A background is privately-named.
+
+Understand "sky" as a background.
 
 Instead of tasting a background:
 say "It tastes [one of]sweet[or]salty[or]bitter[at random]."
 
 The purple is a background in END2.
-Printed name of purple is "purple".
-Understand "purple" and "sky" as purple.
 Description of the purple is "Purple, nothing but endless purple."
 
 Instead of taking the purple:
 say "You can't take that. You don't want that. You don't need that."
 
 The orange is a background.
-Printed name of orange is "orange".
-Understand "orange" and "sky" as orange.
 Description of the orange is "It's just a sea of orange, everywhere you look."
 
 Instead of taking the orange:
 say "It's not a piece of fruit that you can just pick up."
 
 The green is a background.
-Printed name of green is "green".
-Understand "green" and "sky" as green.
 Description of the green is "It's all green, as far as your eyes can see."
 
 Instead of taking the green:
 say "That just isn't possible, even in this dimension."
 
+The darkness is a background in END2.
+Description of the darkness is "You are surrounded by darkness in all directions."
+
+Instead of tasting the darkness:
+say "It tastes... empty."
+
+Instead of taking the darkness:
+say "Taking the darkness? Unheard of."
+
 Section - The Fly
 
-search-count is a number that varies. search-count is 0.
+Search-count is a number that varies. search-count is 0.
 
 Does the player mean searching a background: it is likely.
 Does the player mean searching peter: it is unlikely.
 
 Instead of searching a background:
-	if search-count is 3:
+	increase search-count by 1;
+	if search-count is 4:
 		say "You find a horsefly, buzzing silently around your head.";
 		move the fly to the location;
 	otherwise:
-		say "There's nothing there, except more [room-color].";
-		increase search-count by 1.
+		if the noun is the darkness:
+			say "You find absolutely nothing.";
+		otherwise:
+			say "You find nothing, of interest or otherwise."
 
-The fly is privately-named scenery.
+The fly is scenery.
 Printed name of fly is "horsefly".
-Understand "fly" and "horsefly" as the fly.
+Understand "horsefly" as the fly.
 Description of the fly is "Disgusting little thing."
 
 Instead of taking the fly:
@@ -319,17 +324,8 @@ end the story saying "You have died".
 
 Section - Other
 
-The darkness is privately-named scenery in END2.
-Printed name of darkness is "darkness".
-Understand "darkness" as darkness.
-Description of the darkness is "You are surrounded by darkness in all directions."
-
-Instead of taking the darkness:
-say "Taking the darkness? Unheard of."
-                
-The ground is privately-named scenery in END2.
-Printed name of ground is "ground".
-Understand "ground" and "floor" and "stone" and "rock" as ground.
+The ground is scenery in END2.
+Understand "floor" and "stone" and "rock" as ground.
 Description of the ground is "The ground consists of flat, dark stone, but you're not certain what kind."
 
 Instead of searching the ground:
@@ -347,7 +343,7 @@ A mask is a kind of thing. A mask is wearable. A mask is privately-named.
 Instead of taking a mask when the noun is part of the gate:
 say "[if the noun is plural-named]They're[otherwise]It's[end if] just too high for you to reach, even standing on your toes."
 
-Instead of adri pointing at a mask when Peter is unlocked:
+Instead of pointing at a mask when Peter is unlocked:
 	say "You gesture at [the noun]. [run paragraph on]";
 	if the noun is part of the gate:
 		say "[Peter] nods and retrieves [if the noun is plural-named]them[otherwise]both masks[end if] for you.";
@@ -382,16 +378,19 @@ Before searching a mask when the noun is worn:
 say "You can't do that while wearing it." instead.
 
 Before giving the set-of-masks to someone when the set-of-masks is part of the player:
-say "[Peter] doesn't seem interested." instead.
+say "[Peter] takes the masks and inspects each one closely before handing them back to you." instead.
+
+Before giving a mask to Peter when the set-of-masks is part of the player:
+say "You hand [the noun] to [Peter]. He turns it over in his hands before handing it back to you." instead.
 
 Instead of putting a mask on Peter:
-say "[Peter] shakes his head."
+say "[Peter] shakes his head and mouths 'No.'"
 
-Instead of wearing the set-of-masks:
-say "You can only wear one mask at a time."
+Before wearing the set-of-masks:
+say "You can only wear one mask at a time." instead.
 
 Check wearing a mask when a mask is worn:
-say "You hold the other mask in front of your face and look through the eyes, and your vision goes black. You take the mask away." instead.
+say "You hold the [the noun] in front of your face. As you look through both sets of eyes, your vision goes black. You take the second mask away." instead.
 
 After taking off a mask:
 say "You take off [the noun].";
@@ -443,36 +442,31 @@ A Greek letter is a kind of value. The Greek letters are Alpha, Beta, Gamma, Del
 mask-letter is a Greek letter that varies. 
 
 Before wearing the buskin-mask for the first time:
-now mask-letter is a random Greek letter.
+now mask-letter is a random Greek letter between Beta and Omega.
 
 Instead of searching the buskin-mask:
 say "There was once something written here, but it's been scratched out, and it's impossible to read."
 
 Instead of searching the sock-mask:
-say "You wipe away some dirt, but don't find anything under it."
+say "You brush away some dirt, but don't find anything underneath."
 
 Section - Gate
 
-The gate is a privately-named closed unopenable door and scenery in END2.
+The gate is a closed unopenable door and scenery in END2.
 The gate is southeast of END2.
-Printed name of the gate is "gate".
-Understand "gate" and "gates" as gate.
+Understand "gates" as gate.
 Description of the gate is "A pair of closed metal gates, the sort that should swing open, if only you could figure out how they worked. The bars are too decorative and entwined to squeeze through, and the gate is too high to climb over, not that you think it would take you anywhere if you did. You can walk right around it, and the other side is [if the set-of-masks is part of the gate]near identical, minus the masks on the arch[otherwise]identical[end if][if the hook is part of the gate]. [found-items][otherwise if the dial is part of the gate]. [found-dial][end if]."
 
 to say found-items:
-say "You have found [if the dial is part of the gate]a very small dial on the left gate and [end if]a hook on the right gate"
+say "You have found [if the dial is part of the gate]a tiny dial on the left gate and [end if]a hook on the right gate"
 
 to say found-dial:
-say "You have found a very small dial on the left gate"
+say "You have found a tiny dial on the left gate"
 
-The bars are privately-named, plural-named, and part of the gate.
-Printed name of the bars are "bars".
-Understand "bars" as bars.
+The bars are plural-named, and part of the gate.
 Description of the bars is "The iron bars twist around each other, forming vines."
 
-The arch is privately-named scenery in END2.
-Printed name of the arch is "arch".
-Understand "arch" as arch.
+The arch is scenery in END2.
 Description of the arch is "A tall iron arch standing around the gates[if the set-of-masks is part of the gate]. A set of masks hang at the apex[end if]."
 
 Instead of searching the arch:
@@ -513,13 +507,13 @@ Instead of opening the gate:
 	otherwise:
 		say "It's already open!"
 
-Instead of adri unlocking the gate:
+Instead of unlocking the gate:
 	if the gate is closed:
 		say "You can't see an obvious way to unlock it.";
 	otherwise:
 		say "It's already open!"
 
-Instead of adri pointing at the gate when the gate is open:
+Instead of pointing at the gate when the gate is open:
 	if the Peter is locked:
 		say "You point at the [noun]. [peter] doesn't acknowledge it.";
 	otherwise:
@@ -565,9 +559,7 @@ Description of the green-letter is "A green symbol has appeared over the arch. Y
 
 Section - Hook
 
-The hook is privately-named scenery and a supporter.
-Printed name of hook is "hook".
-Understand "hook" and "right hook" as hook.
+The hook is scenery and a supporter.
 Description of hook is "The gate bars form a hooked area here, perfect to hang something on."
 
 Instead of pushing or pulling the hook:
@@ -585,24 +577,22 @@ Before putting a mask on the hook:
   
 Section - Dial
 
-dial-letter is a Greek letter that varies.
+Dial-letter is a Greek letter that varies.
 
-The dial is privately-named scenery.
-Printed name of dial is "dial".
-Understand "dial" as dial.
+The dial is scenery.
 Description of dial is "It's a tiny dial, like one might find on a combination lock. It currently displays the symbol for the Greek letter [dial-letter]."
 
 Instead of pulling or pushing the dial:
 say "It's a dial. Therefore it can be turned, but neither pushed nor pulled."
 
-Adri setting is an action applying to one thing and Greek letter.
-Understand "turn [dial] to [a Greek letter]" as Adri setting.
-Understand "set [dial] to [a Greek letter]" as Adri setting.
+Setting is an action applying to one thing and Greek letter.
+Understand "turn [dial] to [a Greek letter]" as setting.
+Understand "set [dial] to [a Greek letter]" as setting.
 
-Adri spinning is an action applying to one thing.
-Understand "spin [dial]" as Adri spinning.
+Spinning is an action applying to one thing.
+Understand "spin [dial]" as spinning.
 
-Instead of Adri spinning the dial:
+Instead of spinning the dial:
 	let N be a random Greek letter;
 	say "You spin the dial, and it randomly lands on the symbol for [N].";
 	now dial-letter is N.
@@ -610,7 +600,7 @@ Instead of Adri spinning the dial:
 Instead of turning the dial:
 say "You need to turn the dial to a letter."
 
-Instead of Adri setting the dial:
+Instead of setting the dial:
 	let N be the Greek letter understood;
 	say "You turn [the noun] to [N].";
 	now dial-letter is N;
@@ -633,9 +623,8 @@ say "You've left everything behind."
 
 Section - Peter
 
-Peter is a privately-named man in END2.
-Printed name of Peter is "Peter".
-Understand "peter" and "husband" and "my husband" as Peter.
+Peter is a man in END2.
+Understand "husband" and "my husband" as Peter.
 Description of Peter is "It's your husband, Peter[if the Peter is locked]! He looks unharmed, but his eyes are dull, and he is unresponsive under your gaze[otherwise]. He looks as handsome as ever.[end if]."
 Initial appearance of Peter is "In the center of the lit area is Peter. He kneels on the ground, staring off into nothingness."
 
@@ -658,7 +647,7 @@ Instead of taking peter-hand:
 	otherwise:
 		say "You give [peter-hand] a quick squeeze."
 
-Instead of Adri waking Peter:
+Instead of shaking Peter:
 	if Peter is locked:
 		say "You shake [Peter]. When you let go, his body continues to shake. His skin splits open, revealing the most beautiful creature you have ever seen. Overcome with happiness, you start to weep, tears of blood running down your cheeks.";
 		end the story saying "You have gone utterly mad";
@@ -672,13 +661,14 @@ Instead of searching Peter for the first time:
 say "You find a note in his pocket.";
 now the player carries the note.
 
-The note is a privately-named thing.
-Printed name of note is "note".
-Understand "note" as note.
+The note is a thing.
 
 Instead of examining the note:
 say "You unfold and read the note. The handwriting is unmistakably your husband's. 'Ialdabaoloth'. It's a single word, but suddenly everything makes sense. You start to laugh uncontrollably.";
 end the story saying "You have gone utterly mad"
+
+Instead of giving the note to peter when peter is unlocked:
+try showing the note to Peter.
 
 Before showing the note to peter when peter is unlocked:
 say "Peter starts to laugh. Then you start to laugh. You barely notice as he plunges his hand into your chest, ripping out your heart. You're too busy laughing.";
@@ -712,7 +702,7 @@ Instead of kissing Peter:
 	otherwise:
 		say "You kiss [Peter]. He kisses you back and holds you tightly for a moment."
 
-Instead of Adri hugging Peter:
+Instead of hugging Peter:
 	if the Peter is locked:
 		say "You wrap your arms around [Peter], trying to warm him up. You're about to give up, when he suddenly hugs you back. He's cold, so cold. You try to pull away, but he only holds you more tightly, squeezing you until you can barely breath. When he finally releases you, you find you are frozen in place. As the world around you goes black, all you can think is that at least your husband is alive.";
 		end the story saying "You have been lost";
