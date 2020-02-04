@@ -1,0 +1,142 @@
+! Blurb file created by Inform build 6G60
+
+status "/usr/local/share/inform7/Inform7/Extensions/Reserved/CblorbModel.html" "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World.inform/Build/StatusCblorb.html"
+
+
+! Identification
+
+project folder "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World.inform"
+release to "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Release"
+
+! Blorb instructions
+
+storyfile leafname "Discover the World.gblorb"
+storyfile "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World.inform/Build/output.ulx" include
+ifiction "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World.inform/Metadata.iFiction" include
+cover "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Cover.png"
+picture 1 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Cover.png"
+picture 31 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/banner.png"
+picture 32 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/blank.png"
+picture 33 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/logo.png"
+picture 34 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/spirits.png"
+picture 35 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/star.png"
+picture 36 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/Beginning.png"
+picture 37 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/Next Step.png"
+picture 38 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/Savanna Sunset.png"
+picture 39 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/Ortolana.png"
+picture 40 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/Namaste.png"
+picture 41 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/Namaste-sign.png"
+picture 42 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/Nylon Phool.png"
+picture 43 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/May Soup.png"
+picture 44 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/Shimla Shack.png"
+picture 45 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/Hell One.png"
+picture 46 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/Briarset Croft.png"
+picture 47 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/allspice.png"
+picture 48 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/bag.png"
+picture 49 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/basic cheese.png"
+picture 50 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/bunch of hellish grapes.png"
+picture 51 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/bun.png"
+picture 52 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/butterfly butter.png"
+picture 53 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/butterfly milk.png"
+picture 54 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/butterfly.png"
+picture 55 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/stinky cheese 1.png"
+picture 56 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/stinky cheese 2.png"
+picture 57 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/stinky cheese 3.png"
+picture 58 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/cheezy sammich.png"
+picture 59 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/cherry.png"
+picture 60 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/chicken.png"
+picture 61 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/common crudites.png"
+picture 62 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/flummery.png"
+picture 63 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/fruity juice.png"
+picture 64 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/grain.png"
+picture 65 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/graveside marker.png"
+picture 66 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/knifen board.png"
+picture 67 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/lazy salad.png"
+picture 68 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/meat.png"
+picture 69 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/piggy.png"
+picture 70 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/dead player.png"
+picture 71 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/player.png"
+picture 72 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/spicy grog.png"
+picture 73 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/tomato.png"
+picture 74 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/watering can.png"
+picture 75 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/butterfly lotion.png"
+picture 76 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/tomato seeds.png"
+picture 77 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/fruit tree.png"
+picture 78 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/bubble tree.png"
+picture 79 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/bean tree.png"
+picture 80 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/egg plant.png"
+picture 81 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/spice plant.png"
+picture 82 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/gas plant.png"
+picture 83 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/general vapour.png"
+picture 84 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/plain egg.png"
+picture 85 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/bean.png"
+picture 86 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/plain bubble.png"
+picture 87 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/plop.png"
+picture 88 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/skulls.png"
+picture 89 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/purple creature.png"
+picture 90 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/grass guys.png"
+picture 91 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/firebog hut.png"
+picture 92 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Figures/shrine tii.png"
+sound 3 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Sounds/game_loaded.ogg"
+sound 4 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Sounds/quest_complete.ogg"
+sound 5 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Sounds/discover_new_item.ogg"
+sound 6 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Sounds/Carefree.ogg"
+sound 7 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Sounds/env_underworld.ogg"
+sound 8 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Sounds/squish.ogg"
+sound 9 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Sounds/piggy_scoffs.ogg"
+sound 10 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Sounds/butterfly_sing.ogg"
+sound 11 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Sounds/squeeze_chicken.ogg"
+sound 12 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Sounds/pet_piggy.ogg"
+sound 13 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Sounds/nibble_piggy.ogg"
+sound 14 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Sounds/feed_piggy.ogg"
+sound 15 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Sounds/happy_chicken.ogg"
+sound 16 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Sounds/massage_butterfly.ogg"
+sound 17 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Sounds/butterfly_hmpf.ogg"
+sound 18 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Sounds/milk_butterfly.ogg"
+sound 19 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Sounds/piggy_plop.ogg"
+sound 20 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Sounds/eat.ogg"
+sound 21 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Sounds/drink.ogg"
+sound 22 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Sounds/knife_and_board.ogg"
+sound 23 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Sounds/watering_can.ogg"
+sound 24 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Sounds/pet_trant.ogg"
+sound 25 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Sounds/bean_tree.ogg"
+sound 26 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Sounds/fruit_tree.ogg"
+sound 27 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Sounds/bubble_tree.ogg"
+sound 28 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Sounds/spice_tree.ogg"
+sound 29 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Sounds/egg_tree.ogg"
+sound 30 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Sounds/gas_tree.ogg"
+
+! Placeholder variables
+
+placeholder [IFID] = "0048FBAD-AB8E-4BD7-B9F6-043F664F71A9"
+placeholder [RELEASE] = "2"
+placeholder [YEAR] = "2014"
+placeholder [TITLE] = "Discover the World"
+placeholder [AUTHOR] = "Adri"
+placeholder [BLURB] = "'Discover the World' is a lighthearted introduction to the world of Ur. The entire world and everything in it, including yourself, has been imagined by the Eleven Giants."
+
+! Other material to release
+
+
+! Website instructions
+
+placeholder [ENCODEDSTORYFILE] = "Discover the World.gblorb.js"
+template path "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Templates"
+template path "/home/adri/Inform/Templates"
+template path "/usr/local/share/inform7/Inform7/Extensions/Reserved/Templates"
+interpreter "Quixe" "g"
+base64 "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World.inform/Build/output.ulx" to "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Release/interpreter/Discover the World.gblorb.js"
+
+! Website instructions
+
+template path "/home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World Materials/Templates"
+template path "/home/adri/Inform/Templates"
+template path "/usr/local/share/inform7/Inform7/Extensions/Reserved/Templates"
+css
+website "Standard"
+status instruction ||&nbsp;<a href="source:story.ni#line9"><img border=0 src=inform:/Reveal.png></a>||
+status alternative ||Using 'Release along with the "Such-and-Such" file called "whatever.pdf"', perhaps to add a manual, or a welcoming note&nbsp;<a href=inform:/doc389.html><img border=0 src=inform:/help.png></a>||
+status alternative ||Using 'Release along with the source text'&nbsp;<a href=inform:/doc399.html><img border=0 src=inform:/help.png></a>||
+status alternative ||Using 'Release along with a solution'&nbsp;<a href=inform:/doc398.html><img border=0 src=inform:/help.png></a>||
+status alternative ||Using 'Release along with the library card'&nbsp;<a href=inform:/doc399.html><img border=0 src=inform:/help.png></a>||
+status alternative ||Using 'Release along with the introductory booklet'&nbsp;<a href=inform:/doc392.html><img border=0 src=inform:/help.png></a>||

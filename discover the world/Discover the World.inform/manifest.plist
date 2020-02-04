@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>Graphics</key>
+        <dict>
+            <key>1</key>
+            <string>Cover.jpg</string>
+            <key>31</key>
+            <string>Figures/banner.png</string>
+            <key>32</key>
+            <string>Figures/blank.png</string>
+            <key>33</key>
+            <string>Figures/logo.png</string>
+            <key>34</key>
+            <string>Figures/spirits.png</string>
+            <key>35</key>
+            <string>Figures/star.png</string>
+            <key>36</key>
+            <string>Figures/Beginning.png</string>
+            <key>37</key>
+            <string>Figures/Next Step.png</string>
+            <key>38</key>
+            <string>Figures/Savanna Sunset.png</string>
+            <key>39</key>
+            <string>Figures/Ortolana.png</string>
+            <key>40</key>
+            <string>Figures/Namaste.png</string>
+            <key>41</key>
+            <string>Figures/Namaste-sign.png</string>
+            <key>42</key>
+            <string>Figures/Nylon Phool.png</string>
+            <key>43</key>
+            <string>Figures/May Soup.png</string>
+            <key>44</key>
+            <string>Figures/Shimla Shack.png</string>
+            <key>45</key>
+            <string>Figures/Hell One.png</string>
+            <key>46</key>
+            <string>Figures/Briarset Croft.png</string>
+            <key>47</key>
+            <string>Figures/allspice.png</string>
+            <key>48</key>
+            <string>Figures/bag.png</string>
+            <key>49</key>
+            <string>Figures/basic cheese.png</string>
+            <key>50</key>
+            <string>Figures/bunch of hellish grapes.png</string>
+            <key>51</key>
+            <string>Figures/bun.png</string>
+            <key>52</key>
+            <string>Figures/butterfly butter.png</string>
+            <key>53</key>
+            <string>Figures/butterfly milk.png</string>
+            <key>54</key>
+            <string>Figures/butterfly.png</string>
+            <key>55</key>
+            <string>Figures/stinky cheese 1.png</string>
+            <key>56</key>
+            <string>Figures/stinky cheese 2.png</string>
+            <key>57</key>
+            <string>Figures/stinky cheese 3.png</string>
+            <key>58</key>
+            <string>Figures/cheezy sammich.png</string>
+            <key>59</key>
+            <string>Figures/cherry.png</string>
+            <key>60</key>
+            <string>Figures/chicken.png</string>
+            <key>61</key>
+            <string>Figures/common crudites.png</string>
+            <key>62</key>
+            <string>Figures/flummery.png</string>
+            <key>63</key>
+            <string>Figures/fruity juice.png</string>
+            <key>64</key>
+            <string>Figures/grain.png</string>
+            <key>65</key>
+            <string>Figures/graveside marker.png</string>
+            <key>66</key>
+            <string>Figures/knifen board.png</string>
+            <key>67</key>
+            <string>Figures/lazy salad.png</string>
+            <key>68</key>
+            <string>Figures/meat.png</string>
+            <key>69</key>
+            <string>Figures/piggy.png</string>
+            <key>70</key>
+            <string>Figures/dead player.png</string>
+            <key>71</key>
+            <string>Figures/player.png</string>
+            <key>72</key>
+            <string>Figures/spicy grog.png</string>
+            <key>73</key>
+            <string>Figures/tomato.png</string>
+            <key>74</key>
+            <string>Figures/watering can.png</string>
+            <key>75</key>
+            <string>Figures/butterfly lotion.png</string>
+            <key>76</key>
+            <string>Figures/tomato seeds.png</string>
+            <key>77</key>
+            <string>Figures/fruit tree.png</string>
+            <key>78</key>
+            <string>Figures/bubble tree.png</string>
+            <key>79</key>
+            <string>Figures/bean tree.png</string>
+            <key>80</key>
+            <string>Figures/egg plant.png</string>
+            <key>81</key>
+            <string>Figures/spice plant.png</string>
+            <key>82</key>
+            <string>Figures/gas plant.png</string>
+            <key>83</key>
+            <string>Figures/general vapour.png</string>
+            <key>84</key>
+            <string>Figures/plain egg.png</string>
+            <key>85</key>
+            <string>Figures/bean.png</string>
+            <key>86</key>
+            <string>Figures/plain bubble.png</string>
+            <key>87</key>
+            <string>Figures/plop.png</string>
+            <key>88</key>
+            <string>Figures/skulls.png</string>
+            <key>89</key>
+            <string>Figures/purple creature.png</string>
+            <key>90</key>
+            <string>Figures/grass guys.png</string>
+            <key>91</key>
+            <string>Figures/firebog hut.png</string>
+            <key>92</key>
+            <string>Figures/shrine tii.png</string>
+        </dict>
+        <key>Sounds</key>
+        <dict>
+            <key>3</key>
+            <string>Sounds/game_loaded.ogg</string>
+            <key>4</key>
+            <string>Sounds/quest_complete.ogg</string>
+            <key>5</key>
+            <string>Sounds/discover_new_item.ogg</string>
+            <key>6</key>
+            <string>Sounds/Carefree.ogg</string>
+            <key>7</key>
+            <string>Sounds/env_underworld.ogg</string>
+            <key>8</key>
+            <string>Sounds/squish.ogg</string>
+            <key>9</key>
+            <string>Sounds/piggy_scoffs.ogg</string>
+            <key>10</key>
+            <string>Sounds/butterfly_sing.ogg</string>
+            <key>11</key>
+            <string>Sounds/squeeze_chicken.ogg</string>
+            <key>12</key>
+            <string>Sounds/pet_piggy.ogg</string>
+            <key>13</key>
+            <string>Sounds/nibble_piggy.ogg</string>
+            <key>14</key>
+            <string>Sounds/feed_piggy.ogg</string>
+            <key>15</key>
+            <string>Sounds/happy_chicken.ogg</string>
+            <key>16</key>
+            <string>Sounds/massage_butterfly.ogg</string>
+            <key>17</key>
+            <string>Sounds/butterfly_hmpf.ogg</string>
+            <key>18</key>
+            <string>Sounds/milk_butterfly.ogg</string>
+            <key>19</key>
+            <string>Sounds/piggy_plop.ogg</string>
+            <key>20</key>
+            <string>Sounds/eat.ogg</string>
+            <key>21</key>
+            <string>Sounds/drink.ogg</string>
+            <key>22</key>
+            <string>Sounds/knife_and_board.ogg</string>
+            <key>23</key>
+            <string>Sounds/watering_can.ogg</string>
+            <key>24</key>
+            <string>Sounds/pet_trant.ogg</string>
+            <key>25</key>
+            <string>Sounds/bean_tree.ogg</string>
+            <key>26</key>
+            <string>Sounds/fruit_tree.ogg</string>
+            <key>27</key>
+            <string>Sounds/bubble_tree.ogg</string>
+            <key>28</key>
+            <string>Sounds/spice_tree.ogg</string>
+            <key>29</key>
+            <string>Sounds/egg_tree.ogg</string>
+            <key>30</key>
+            <string>Sounds/gas_tree.ogg</string>
+        </dict>
+    </dict>
+</plist>

@@ -1,0 +1,142 @@
+Debugging log of Inform 7
+Inform called as: /usr/local/libexec/ni --release --rules /usr/local/share/inform7/Inform7/Extensions --extension=ulx --package /home/adri/Games/Interactive Fiction/Adri/discover the world/Discover the World.inform 
+
+
+-----------------------------------------------------
+Phase I ... Lexical analysis
+-----------------------------------------------------
+
+I've now read your source text, which is 3653 words long.
+
+
+-----------------------------------------------------
+Phase II ... Semantic analysis Ia
+-----------------------------------------------------
+
+I've also read Standard Rules by Graham Nelson, which is 39455 words long.
+Extension failed: '/usr/local/share/inform7/Inform7/Extensions/helga/save and restore'
+Problem C5BogusExtension issued from Chapter 5/Read Source Text.w, line 145
+
+In Volume - Extensions:
+
+
+  >--> You wrote 'Include Save and Restore by Helga' (source text, line 17):
+    but I can't find that extension, which seems not to be installed. (You can
+    get hold of extensions which people have made public at the Inform
+    website.)
+
+Extension failed: '/usr/local/share/inform7/Inform7/Extensions/helga/audio'
+Problem C5BogusExtension issued from Chapter 5/Read Source Text.w, line 145
+
+  >--> You wrote 'Include Audio by Helga' (source text, line 18): again, I
+    can't find that extension.
+
+Extension failed: '/usr/local/share/inform7/Inform7/Extensions/helga/tutorial mode'
+Problem C5BogusExtension issued from Chapter 5/Read Source Text.w, line 145
+
+  >--> You wrote 'Include Tutorial Mode by Helga' (source text, line 19):
+    again, I can't find that extension.
+
+Extension failed: '/usr/local/share/inform7/Inform7/Extensions/helga/animals'
+Problem C5BogusExtension issued from Chapter 5/Read Source Text.w, line 145
+
+  >--> You wrote 'Include Animals by Helga' (source text, line 20): again, I
+    can't find that extension.
+
+Extension failed: '/usr/local/share/inform7/Inform7/Extensions/helga/food'
+Problem C5BogusExtension issued from Chapter 5/Read Source Text.w, line 145
+
+  >--> You wrote 'Include Food by Helga' (source text, line 21): again, I can't
+    find that extension.
+
+Extension failed: '/usr/local/share/inform7/Inform7/Extensions/helga/rocks'
+Problem C5BogusExtension issued from Chapter 5/Read Source Text.w, line 145
+
+  >--> You wrote 'Include Rocks by Helga' (source text, line 22): again, I
+    can't find that extension.
+
+Extension failed: '/usr/local/share/inform7/Inform7/Extensions/helga/trees'
+Problem C5BogusExtension issued from Chapter 5/Read Source Text.w, line 145
+
+  >--> You wrote 'Include Trees by Helga' (source text, line 23): again, I
+    can't find that extension.
+
+Extension failed: '/usr/local/share/inform7/Inform7/Extensions/helga/crops'
+Problem C5BogusExtension issued from Chapter 5/Read Source Text.w, line 145
+
+  >--> You wrote 'Include Crops by Helga' (source text, line 24): again, I
+    can't find that extension.
+
+Extension failed: '/usr/local/share/inform7/Inform7/Extensions/helga/world'
+Problem C5BogusExtension issued from Chapter 5/Read Source Text.w, line 145
+
+  >--> You wrote 'Include World by Helga' (source text, line 25): again, I
+    can't find that extension.
+
+Extension failed: '/usr/local/share/inform7/Inform7/Extensions/helga/graphics'
+Problem C5BogusExtension issued from Chapter 5/Read Source Text.w, line 145
+
+  >--> You wrote 'Include Graphics by Helga' (source text, line 26): again, I
+    can't find that extension.
+
+Extension failed: '/usr/local/share/inform7/Inform7/Extensions/helga/giants'
+Problem C5BogusExtension issued from Chapter 5/Read Source Text.w, line 145
+
+  >--> You wrote 'Include Giants by Helga' (source text, line 27): again, I
+    can't find that extension.
+
+I've also read Basic Help Menu by Emily Short, which is 2369 words long.
+I've also read Basic Screen Effects by Emily Short, which is 2155 words long.
+I've also read Case Management by Emily Short, which is 166 words long.
+I've also read Commonly Unimplemented by Aaron Reed, which is 1393 words long.
+I've also read Considerate Holdall by Jon Ingold, which is 2389 words long.
+I've also read Default Messages by David Fisher, which is 8315 words long.
+I've also read Dynamic Objects by Jesse McGrew, which is 1212 words long.
+I've also read Extended Grammar by Aaron Reed, which is 755 words long.
+I've also read Flexible Windows by Jon Ingold, which is 7221 words long.
+I've also read Glulx Image Centering by Emily Short, which is 256 words long.
+I've also read Multiple Sounds by Massimo Stella, which is 1194 words long.
+I've also read Plurality by Emily Short, which is 3141 words long.
+I've also read Poor Man's Mistype by Aaron Reed, which is 812 words long.
+I've also read Punctuation Removal by Emily Short, which is 900 words long.
+I've also read Glulx Status Window Control by Erik Temple, which is 2019 words long.
+I've also read Glulx Input Loops by Erik Temple, which is 9130 words long.
+Req is <section - handleglkevent routine> in <Glulx Entry Points> by <Emily Short>
+Extension failed: '/usr/local/share/inform7/Inform7/Extensions/helga/windows'
+Problem C5BogusExtension issued from Chapter 5/Read Source Text.w, line 145
+
+  >--> You wrote 'Include Windows by Helga' (source text, line 48): again, I
+    can't find that extension.
+
+Extension failed: '/usr/local/share/inform7/Inform7/Extensions/helga/actions'
+Problem C5BogusExtension issued from Chapter 5/Read Source Text.w, line 145
+
+  >--> You wrote 'Include Actions by Helga' (source text, line 49): again, I
+    can't find that extension.
+
+
+
+-----------------------------------------------------
+Phase III ... Compilation now complete
+-----------------------------------------------------
+
+Total of 3 files written as streams.
+
+That concludes the debugging log from this run of Inform.
+Its contents were as follows, and can be changed by placing
+text like 'Include property creations in the debugging log.'
+or 'Omit everything from the debugging log.' in the source.
+
+Included:
+  debugging log contents  debugging log inclusions
+Omitted:
+  action creations   action pattern compilation  action pattern parsing  assemblies    assertions    case insensitive filehandling
+  conditions    constructed past participles  constructed plurals   description compilation   excerpt meanings   excerpt parsing 
+  expressions    extensions census   figure creations   grammar    grammar construction   headings  
+  implications    inferences    kind changes   kind checking   kind creations   lexical output 
+  local variables   matching    meaning list allocation  memory allocation   noun resolution   object compilation 
+  object creations   object tree   phrase comparisons   phrase compilation   phrase creations   phrase registration 
+  phrase usage   predicate calculus   predicate calculus workings  pronouns    property assignments   property creations 
+  property provision   property translations   relation definitions   rule attachments   rulebook compilation   spatial map 
+  spatial map workings  specification permissions   specification usage   specificities    table construction   template reading 
+  text substitutions   time periods   variable creations   verifications    vocabulary  
